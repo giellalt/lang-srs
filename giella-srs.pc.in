@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=@libdir@
+datadir=@datarootdir@
+gtlang=srs
+dir=${datadir}/giella/${gtlang}
+srcdir=${datadir}/giella/${gtlang}
+
+Name: giella-srs
+Description: Finite-state language processing tools for Sarsi
+URL: http://giellatekno.uit.no/doc/index.html
+Version: @VERSION@
