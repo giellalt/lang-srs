@@ -13,12 +13,11 @@ This is free and open source South Sámi morphology.
              !!!Tsuut'ina morphological analyser                      !
 INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Tsuut'ina.
 
-
- !!!Multichar_Symbols definitions
+ !!!Definitions for Multichar_Symbols
 
 !!Analysis symbols
 The morphological analyses of wordforms of Tsuut'ina are presented
-in this system in terms of following symbols.
+in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
 
@@ -71,6 +70,15 @@ in this system in terms of following symbols.
  * UnspO+	 0, Unspecified person
  * UnspS+	 0, Unspecified person
 
+
+!!Prefixes
+
+
+!!our flags
+
+ * @R.ha.ON@   
+
+
 !!Flag diacritics
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
@@ -100,7 +108,5 @@ given the proper use of these flags.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
 The word forms in Dene Suline language start from noun and verb prefixes
-
-
 
 

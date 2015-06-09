@@ -1,11 +1,24 @@
-!! Verbs
-!! -----
-!! Verbs in UNDEFINED language are actions.
+LEXICON Verbs
+PERF_CLASS ;
+IPFV_CLASS ;
 
-LEXICON VerbPrefixes
-T1 ;
+LEXICON PERF_CLASS
+@U.asp.perf@ PERF_STEMS ;
 
-LEXICON T1 
-# ;
+LEXICON IPFV_CLASS
+@U.asp.ipfv@ IPFV_STEMS ;
+
+LEXICON PERF_STEMS ! the list of all verbs
+V+tsiy:tsày endlex ;
+V+geed:geed endlex ;
+
+LEXICON IPFV_STEMS ! ... and the same again, but ipfv
+V+tsiy:tsiy endlex ;
+
+@R.ha.ON@V+ha_geed:@R.ha.ON@geed # ;
 
 ! vim: set ft=xfst-lexc:
+
+LEXICON endlex
+@D.ha@ # ;
+
