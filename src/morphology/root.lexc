@@ -13,97 +13,87 @@
 ! giellatekno@hum.uit.no or feedback@divvun.no
 
 ! ========================================================================== !
-! !!            !!!Sarsi morphological analyser                      !
+! !!              !!!Tsuut'ina morphological analyser                      !
 ! ========================================================================== !
-!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Sarsi LANGUAGE.
- 
+!! INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Tsuut'ina.
+
 
 Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 !! !!Analysis symbols
-!! ----------------
-!! The morphological analyses of wordforms of UNDEFINED language are presented
+!    ----------------
+!! The morphological analyses of wordforms of Tsuut'ina are presented
 !! in this system in terms of following symbols.
 !! (It is highly suggested to follow existing standards when adding new tags).
 
-!! The parts-of-speech are:
- +N +A +Adv +V                                 !!≈
- +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
 
-!! The parts of speech are further split up into:
- +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
-
-!! The Usage extents are marked using following tags:
- +Err/Orth   
- +Use/-Spell 
-
-!! The nominals are inflected in the following Case and Number
- +Sg +Du +Pl
- +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
-
-!! The possession is marked as such:
- +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
-!! The comparative forms are:
- +Comp +Superl
-!! Numerals are classified under:
- +Attr +Card
- +Ord 
-!! Verb moods are:
- +Ind +Prs +Prt +Pot +Cond +Imprt
-!! Verb personal forms are:
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
-!! Other verb forms are
- +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
-
-! Abbreviated words are classified with:
- +ABBR +ACR 
-!! Special symbols are classified with:
-+CLB +PUNCT +LEFT +RIGHT
-!! The verbs are syntactically split according to transitivity:
- +TV +IV
-!! Special multiword units are analysed with:
- +Multi
-!! Non-dictionary words can be recognised with:
- +Guess
-
-!! Question and Focus particles:
- +Qst +Foc
-
-
-!! Semantics are classified with
- +Mal +Fem +Sur 
- +Plc 
- +Org
- +Obj
- +Ani
- +Hum
- +Plant
- +Group
- +Time 
- +Txt
- +Route
- +Measr 
- +Wthr
- +Build 
- +Edu
- +Veh
- +Clth
-
-
-!! Derivations are classified under the morphophonetic form of the suffix, the
-!! source and target part-of-speech.
- +V→N +V→V +V→A
- +Der/xxx
-
-
-!! Morphophonology
-!! ---------------
-!! To represent phonologic variations in word forms we use the following
-!! symbols in the lexicon files:
- {aä} {oö} {uü}
-
-!! And following triggers to control variation
- {front} {back}
++Asp	!!= * @CODE@ asp, aspect
++Dem	!!= * @CODE@ D, demonstrative
++Dim	!!= * @CODE@ dim, diminutive
++Du		!!= * @CODE@ du, dual
++Err/Orth !!= * @CODE@ Substandard, not implemented
++Foc	!!= * @CODE@ foc, focus
++Hab	!!= * @CODE@ hab, habitual
++Imprs	!!= * @CODE@ impers, impersonal (+Impers?)
++Inc	!!= * @CODE@ inc, inceptive (Incpt?)
++Inch	!!= * @CODE@ incho, inchoative
++Mod	!!= * @CODE@ M mode (this seems more like category than property)
++Mom	!!= * @CODE@ momentaneous
++N		!!= * @CODE@ N, noun
++Neg	!!= * @CODE@ neg, negative
++Num	!!= * @CODE@ num, Numeral
++PI+	!!= * @CODE@ postposition incorporation (this is not a Morphosyn tag :-(
++PNS    !!= * @CODE@ possessed noun suffix (this is not a Morphosyn tag :-(
++Part   !!= * @CODE@ Part, particle
++Pl		!!= * @CODE@ pl, Plural
++Po		!!= * @CODE@ P, Postposition
++Prt	!!= * @CODE@ T, tense (past)
++Qst	!!= * @CODE@ Q, question marker
++Qt		!!= * @CODE@ Qt, quantifier
++Sem/Hum		!!= * @CODE@ Human
++Sem/Obj	!!= * @CODE@ O, Object (have a look at this)
++V		!!= * @CODE@ V, verb
+12Du+	!!= * @CODE@ 12, first person dual inclusive
+13Du+	!!= * @CODE@ 13, first person dual exclusive
+1Pl+     !!= * @CODE@ 12, first person plural inclusive
+1PlO+   !!= * @CODE@ 12, first person plural inclusive O
+1Sg+	!!= * @CODE@ 1, first person singular
+1SgO+
+2Du+	!!= * @CODE@ 22, second person dual
+2Pl+
+2PlO+
+2Sg+	!!= * @CODE@ 2
+2SgO+
+3Du+	!!= * @CODE@ 33, third person dual
+3Pl+
+3Sg+	!!= * @CODE@ 3
+3SgO+
+4Sg+	!!= * @CODE@ 4, the other
+4SgO+
+Adv+
+Ar+		!!= * @CODE@ 5, areal subject, it (place, condition, weather)
+Cl/0+
+Cl/?+
+Cl/d+
+Cl/l+
+Distr+
+Gen1+
+Gen2+
+Gen3+
+Impf+	!!= * @CODE@ imp, imperfective (or prefix?)
+Incept+
+Iter+	!!= * @CODE@ iter, iterative
+NI+		!!= * @CODE@ NI, noun incorporation (probably not a tag)
+Opt+	!!= * @CODE@ opt, optative
+Prf+	!!= * @CODE@ perf, perfective
+Recipr+	!!= * @CODE@ rec, reciprocal
+Refl+	!!= * @CODE@ refl, reflexive
+Semel+
+Ser+
+Th+		!!= * @CODE@ Th, thematic prefix  (probably not a tag)
+Unsp+	!!= * @CODE@ 0, Unspecified person
+UnspO+	!!= * @CODE@ 0, Unspecified person
+UnspS+	!!= * @CODE@ 0, Unspecified person
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
@@ -134,13 +124,16 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
 LEXICON Root
-!! The word forms in UNDEFINED language start from the lexeme roots of basic
-!! word classes, or optionally from prefixes:
-0   Nouns       ;
-0   Verbs       ;
-0   Adjectives  ;
-0   Pronouns    ;
-0   Numerals    ;
-0   Prefixes    ;
+!! The word forms in Dene Suline language start from noun and verb prefixes
 
-! vim: set ft=xfst-lexc:
+NounPrefixes   ;
+VerbPrefixes   ;
+
+Adverbs ;
+Conjunctions ;
+Numerals ;
+Particles ;
+Postpositions ;
+Pronouns    ;
+
+
