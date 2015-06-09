@@ -2,14 +2,11 @@
 !! ---------------
 !! The UNDEFINED language nouns inflect in cases.
 
-LEXICON Cases
-+N+sg+nom:0     #   ;
-+N+pl+nom:i     #   ;
-+N+sg+loc:as    #   ;
-+N+pl+loc:ias   #   ;
-+N+sg+acc:at    #   ;
-+N+pl+acc:iat   #   ;
-#:0   Nouns   ;
+LEXICON NounPrefixes
++PxSg1:blabla     Nouns   ;
++PxSg2:blabla     Nouns   ;
++PxSg3:blabla    Nouns   ;
+Nouns ;
 
 ! vim: set ft=xfst-lexc:
 
