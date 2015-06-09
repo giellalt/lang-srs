@@ -66,9 +66,9 @@ in this system in terms of the following symbols.
  * Recipr+	 rec, reciprocal
  * Refl+	 refl, reflexive
  * Th+		 Th, thematic prefix  (probably not a tag)
- * Unsp+	 0, Unspecified person
- * UnspO+	 0, Unspecified person
- * UnspS+	 0, Unspecified person
+ * Unspec+	 0, Unspecified person
+ * UnspecO+	 0, Unspecified person
+ * UnspecS+	 0, Unspecified person
 
 
 !!Prefixes
@@ -76,7 +76,11 @@ in this system in terms of the following symbols.
 
 !!our flags
 
- * @R.ha.ON@   
+ * @R.xaH.ON@   
+
+ * @R.xaM.ON@   
+
+ * @R.xaL.ON@   
 
 
 !!Flag diacritics

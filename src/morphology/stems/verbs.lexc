@@ -1,24 +1,30 @@
-LEXICON Verbs
-PERF_CLASS ;
-IPFV_CLASS ;
+! Intransitive Verbs
 
-LEXICON PERF_CLASS
-@U.asp.perf@ PERF_STEMS ;
+LEXICON PERF_CLASS_1
+@U.asp.perf@Prf+V+:@U.asp.perf@ PERF_STEMS_1 ;
 
-LEXICON IPFV_CLASS
-@U.asp.ipfv@ IPFV_STEMS ;
+LEXICON IPFV_CLASS_1
+@U.asp.ipfv@Impf+V+:@U.asp.ipfv@ IPFV_STEMS_1 ;
 
-LEXICON PERF_STEMS ! the list of all verbs
-V+tsiy:tsày endlex ;
-V+geed:geed endlex ;
+LEXICON IPFV_CLASS_2
+@U.asp.ipfv@Impf+V+:@U.asp.ipfv@ IPFV_STEMS_2 ;
 
-LEXICON IPFV_STEMS ! ... and the same again, but ipfv
-V+tsiy:tsiy endlex ;
+LEXICON PERF_STEMS_1 ! the list of all verbs
+tsiy:tsày endlex ;
+gàd:gàd endlex ;
 
-@R.ha.ON@V+ha_geed:@R.ha.ON@geed # ;
+LEXICON IPFV_STEMS_1 ! ... and the same again, but ipfv
+tsiy:tsiy endlex ;
+dús:dús endlex ;
 
-! vim: set ft=xfst-lexc:
+LEXICON IPFV_STEMS_2 ! ... and the same again, but ipfv
+endlex ;
+
+! Transitive Verbs 
+
+@R.xaL.ON@V+xà_gàd:@R.xaL.ON@gàd # ;
 
 LEXICON endlex
-@D.ha@ # ;
+@D.xaL@ # ;
 
+! vim: set ft=xfst-lexc:

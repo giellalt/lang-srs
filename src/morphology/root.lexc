@@ -90,22 +90,36 @@ Refl+	!!= * @CODE@ refl, reflexive
 Semel+
 Ser+
 Th+		!!= * @CODE@ Th, thematic prefix  (probably not a tag)
-Unsp+	!!= * @CODE@ 0, Unspecified person
-UnspO+	!!= * @CODE@ 0, Unspecified person
-UnspS+	!!= * @CODE@ 0, Unspecified person
+Unspec+	!!= * @CODE@ 0, Unspecified person
+UnspecO+	!!= * @CODE@ 0, Unspecified person
+UnspecS+	!!= * @CODE@ 0, Unspecified person
 
+Areal+
+ArealS+
+ArealO+
 
 !! !!Prefixes
 
-Pref/ha+
+Pref/xà+
 
 !! !!our flags
 
 @U.asp.perf@
 @U.asp.ipfv@
-@U.ha.ON@
-@R.ha.ON@  !!= * @CODE@ 
-@D.ha@
+@U.xaH.ON@
+@R.xaH.ON@  !!= * @CODE@ 
+@D.xaH@
+
+@U.xaM.ON@
+@R.xaM.ON@  !!= * @CODE@ 
+@D.xaM@
+
+@U.xaL.ON@
+@R.xaL.ON@  !!= * @CODE@ 
+@D.xaL@
+@R.TV.ON@
+@U.TV.ON@
+@U.TV.OFF@
 
 
 !! !!Flag diacritics
@@ -139,6 +153,6 @@ Pref/ha+
 LEXICON Root
 !! The word forms in Dene Suline language start from noun and verb prefixes
 
-NounPrefixes   ;
+!NounPrefixes   ;
 VerbPrefixes   ;
 

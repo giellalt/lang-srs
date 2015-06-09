@@ -6,30 +6,71 @@
 LEXICON VerbPrefixes ! always empty
 T1 ;
 
-LEXICON T1
-Pref/ha+:ha T2 ; ! all
-@U.ha.ON@:@U.ha.ON@ha T2 ; ! lexicalised ha ! Lex/ha+Lex/di+
+LEXICON T1 ! srs15
+Pref/xà+:xà T2 ; ! all
+@U.xaL.ON@:@U.xaL.ON@xà T2 ; ! lexicalised xà ! Lex/ha+Lex/di+
 T2 ;
 
-LEXICON T2 
+LEXICON T2 ! 
 T3 ;
 
 LEXICON T3 
-T4 ;
+srs11 ;
 
-LEXICON T4 
-T5 ;
-Distr+:dà T5 ;
+LEXICON srs11
+srs10 ;
+Distr+:dà srs10 ;
 
-LEXICON T5 
-T6 ;
+LEXICON srs10
+srs9 ;
+srs8765 ;
 
-LEXICON T6
-T789 ;
+LEXICON srs9
+@U.TV.ON@1SgO+:@U.TV.ON@si srs8765 ;
+@U.TV.ON@2SgO+:@U.TV.ON@ni srs8765 ;
+@U.TV.ON@3SgO+:@U.TV.ON@mi srs8765 ;
+@U.TV.ON@3SgO+:@U.TV.ON@yi srs8765 ;
+@U.TV.ON@3SgO+:@U.TV.ON@di srs8765 ;
 
-LEXICON T789
-Verbs ;
+@U.TV.ON@4SgO+:@U.TV.ON@gi srs8765 ; 
+@U.TV.ON@3Pl+:@U.TV.ON@gimi srs8765 ;
 
+@U.TV.ON@ArealO+:@U.TV.ON@gu srs8765 ;
+@U.TV.ON@UnspecO+:@U.TV.ON@ʔi srs8765 ;
+@U.TV.ON@Uefl+:@U.TV.ON@idi srs8765 ;
+@U.TV.ON@Uecipr+:@U.TV.ON@atłi srs8765 ;
+
+
+LEXICON srs8765
+! I_IMPERFECTIVE CLASS 1
+@U.TV.OFF@1Sg+:@U.TV.OFF@ʔis   IPFV_CLASS_1 ;
+@U.TV.OFF@2Sg+:@U.TV.OFF@ni    IPFV_CLASS_1 ;
+@U.TV.OFF@3Sg+:@U.TV.OFF@ʔi    IPFV_CLASS_1 ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisaà IPFV_CLASS_1 ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisiì IPFV_CLASS_1 ;
+@U.TV.OFF@2Pl+:@U.TV.OFF@ʔas   IPFV_CLASS_1 ;
+@U.TV.OFF@3Pl+:@U.TV.OFF@gi    IPFV_CLASS_1 ;
+@U.TV.OFF@4Sg+:@U.TV.OFF@ts'i  IPFV_CLASS_1 ;
+! I_IMPERFECTIVE CLASS 2 !! This is a COPY!!
+!@U.TV.OFF@1Sg+:@U.TV.OFF@ʔis   IPFV_CLASS_2 ;
+!@U.TV.OFF@2Sg+:@U.TV.OFF@ni    IPFV_CLASS_2 ;
+!@U.TV.OFF@3Sg+:@U.TV.OFF@ʔi    IPFV_CLASS_2 ;
+!@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisaà IPFV_CLASS_2 ;
+!@U.TV.OFF@2Pl+:@U.TV.OFF@ʔas   IPFV_CLASS_2 ;
+!@U.TV.OFF@3Pl+:@U.TV.OFF@gi    IPFV_CLASS_2 ;
+!@U.TV.OFF@4Sg+:@U.TV.OFF@ts'i  IPFV_CLASS_2 ;
+
+! I_PERFECTIVE CLASS 1
+@U.TV.OFF@1Sg+:@U.TV.OFF@yis   PERF_CLASS_1 ;
+@U.TV.OFF@2Sg+:@U.TV.OFF@yí    PERF_CLASS_1 ;
+@U.TV.OFF@3Sg+:@U.TV.OFF@yí    PERF_CLASS_1 ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@yaà PERF_CLASS_1 ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@yiì PERF_CLASS_1 ;
+@U.TV.OFF@2Pl+:@U.TV.OFF@yas   PERF_CLASS_1 ;
+@U.TV.OFF@3Pl+:@U.TV.OFF@giyí    PERF_CLASS_1 ;
+@U.TV.OFF@4Sg+:@U.TV.OFF@ts'iyí  PERF_CLASS_1 ;
+
+! T IMPERFECTIVE CLASS 1
 
 
 ! vim: set ft=xfst-lexc:
