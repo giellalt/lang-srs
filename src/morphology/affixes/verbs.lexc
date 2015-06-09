@@ -2,15 +2,35 @@
 !! ---------------
 !! The UNDEFINED language verbs inflect in persons.
 
-LEXICON Persons
-+V+1sg:en   #   ;
-+V+2sg:et   #   ;
-+V+3sg:e    #   ;
-+V+1pl:ien  #   ;
-+V+2pl:iet  #   ;
-+V+3pl:iet  #   ;
-+V+inf:0    #   ;
-#:0   Nouns   ;
+
+LEXICON VerbPrefixes ! always empty
+T1 ;
+
+LEXICON T1
+Pref/ha+:ha T2 ; ! all
+@U.ha.ON@:@U.ha.ON@ha T2 ; ! lexicalised ha ! Lex/ha+Lex/di+
+T2 ;
+
+LEXICON T2 
+T3 ;
+
+LEXICON T3 
+T4 ;
+
+LEXICON T4 
+T5 ;
+Distr+:dà T5 ;
+
+LEXICON T5 
+T6 ;
+
+LEXICON T6
+T789 ;
+
+LEXICON T789
+Verbs ;
+
+
 
 ! vim: set ft=xfst-lexc:
 
