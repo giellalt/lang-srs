@@ -17,7 +17,7 @@ GENERATION_TESTS_IN=generate-adjective-lemmas.sh.in  \
 GENERATION_TESTS=$(basename $(GENERATION_TESTS_IN))
 
 if WANT_GENERATION
-TESTS+=$(GENERATION_TESTS)
+#TESTS+=$(GENERATION_TESTS)
 endif # WANT_GENERATION
 
 # List tests that are presently (expected) failures here, ie things that should
