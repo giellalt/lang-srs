@@ -10,54 +10,66 @@
 
 This is free and open source South Sámi morphology.
 
-           !!!Sarsi morphological analyser                      !
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Sarsi LANGUAGE.
+             !!!Tsuut'ina morphological analyser                      !
+INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Tsuut'ina.
 
 
  !!!Multichar_Symbols definitions
 
 !!Analysis symbols
-----------------
-The morphological analyses of wordforms of UNDEFINED language are presented
+The morphological analyses of wordforms of Tsuut'ina are presented
 in this system in terms of following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
-The parts-of-speech are:
 
-The parts of speech are further split up into:
-
-The Usage extents are marked using following tags:
-
-The nominals are inflected in the following Case and Number
-
-The possession is marked as such:
-The comparative forms are:
-Numerals are classified under:
-Verb moods are:
-Verb personal forms are:
-Other verb forms are
-
-Special symbols are classified with:
-The verbs are syntactically split according to transitivity:
-Special multiword units are analysed with:
-Non-dictionary words can be recognised with:
-
-Question and Focus particles:
-
-
-Semantics are classified with
-
-
-Derivations are classified under the morphophonetic form of the suffix, the
-source and target part-of-speech.
-
-
-Morphophonology
----------------
-To represent phonologic variations in word forms we use the following
-symbols in the lexicon files:
-
-And following triggers to control variation
+ * +Asp	 asp, aspect
+ * +Dem	 D, demonstrative
+ * +Dim	 dim, diminutive
+ * +Du		 du, dual
+ * +Err/Orth  Substandard, not implemented
+ * +Foc	 foc, focus
+ * +Hab	 hab, habitual
+ * +Imprs	 impers, impersonal (+Impers?)
+ * +Inc	 inc, inceptive (Incpt?)
+ * +Inch	 incho, inchoative
+ * +Mod	 M mode (this seems more like category than property)
+ * +Mom	 momentaneous
+ * +N		 N, noun
+ * +Neg	 neg, negative
+ * +Num	 num, Numeral
+ * +PI+	 postposition incorporation (this is not a Morphosyn tag :-(
+ * +PNS     possessed noun suffix (this is not a Morphosyn tag :-(
+ * +Part    Part, particle
+ * +Pl		 pl, Plural
+ * +Po		 P, Postposition
+ * +Prt	 T, tense (past)
+ * +Qst	 Q, question marker
+ * +Qt		 Qt, quantifier
+ * +Sem/Hum		 Human
+ * +Sem/Obj	 O, Object (have a look at this)
+ * +V		 V, verb
+ * 12Du+	 12, first person dual inclusive
+ * 13Du+	 13, first person dual exclusive
+ * 1Pl+      12, first person plural inclusive
+ * 1PlO+    12, first person plural inclusive O
+ * 1Sg+	 1, first person singular
+ * 2Du+	 22, second person dual
+ * 2Sg+	 2
+ * 3Du+	 33, third person dual
+ * 3Sg+	 3
+ * 4Sg+	 4, the other
+ * Ar+		 5, areal subject, it (place, condition, weather)
+ * Impf+	 imp, imperfective (or prefix?)
+ * Iter+	 iter, iterative
+ * NI+		 NI, noun incorporation (probably not a tag)
+ * Opt+	 opt, optative
+ * Prf+	 perf, perfective
+ * Recipr+	 rec, reciprocal
+ * Refl+	 refl, reflexive
+ * Th+		 Th, thematic prefix  (probably not a tag)
+ * Unsp+	 0, Unspecified person
+ * UnspO+	 0, Unspecified person
+ * UnspS+	 0, Unspecified person
 
 !!Flag diacritics
 We have manually optimised the structure of our lexicon using following
@@ -87,6 +99,8 @@ given the proper use of these flags.
  | @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
-The word forms in UNDEFINED language start from the lexeme roots of basic
-word classes, or optionally from prefixes:
+The word forms in Dene Suline language start from noun and verb prefixes
+
+
+
 
