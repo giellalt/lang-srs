@@ -1,0 +1,19 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - tsiy : #
+    1Sg+Impf+V+tsiy: ʔistsiy
+    2Sg+Impf+V+tsiy: nitsiy
+    3Sg+Impf+V+tsiy: ʔitsiy
+    1Pl+Impf+V+tsiy: ʔisaàtsiy
+    2Pl+Impf+V+tsiy: ʔastsiy
+    3Pl+Impf+V+tsiy: gitsiy
+    4Sg+Impf+V+tsiy: ts'itsiy
