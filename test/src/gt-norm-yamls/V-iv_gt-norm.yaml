@@ -9,11 +9,36 @@ Config:
 
 Tests:
   
-  Verb - tsiy : #
+  Verb - tsiy : # hello, antti
     1Sg+Impf+V+tsiy: ʔistsiy
     2Sg+Impf+V+tsiy: nitsiy
     3Sg+Impf+V+tsiy: ʔitsiy
-    1Pl+Impf+V+tsiy: ʔisaàtsiy
+    1Pl+Impf+V+tsiy: [ʔisiìtsiy, ʔisaàtsiy]
     2Pl+Impf+V+tsiy: ʔastsiy
     3Pl+Impf+V+tsiy: gitsiy
     4Sg+Impf+V+tsiy: ts'itsiy
+
+    1Sg+Prf+V+tsiy: yistsày
+    2Sg+Prf+V+tsiy: yítsày
+    3Sg+Prf+V+tsiy: yítsày
+    1Pl+Prf+V+tsiy: [yaàtsày, yiìtsày]
+    2Pl+Prf+V+tsiy: yastsày
+    3Pl+Prf+V+tsiy: giyítsày
+    4Sg+Prf+V+tsiy: ts'iyítsày
+
+    Distr+1Pl+Impf+V+tsiy: [dàsiìtsiy, dàsaàtsiy]
+    Distr+2Pl+Impf+V+tsiy: dàastsiy
+    Distr+3Pl+Impf+V+tsiy: dàgitsiy
+    Distr+4Sg+Impf+V+tsiy: dàts'itsiy
+    Distr+1Pl+Prf+V+tsiy: [dàyaàtsày, dàyiìtsày]
+    Distr+2Pl+Prf+V+tsiy: dàyastsày
+    Distr+3Pl+Prf+V+tsiy: dàgiyítsày
+
+  Verb - dús : # "crawl"
+    1Sg+Impf+V+dús: disdús
+    2Sg+Impf+V+dús: dídús
+    3Sg+Impf+V+dús: didús
+    1Pl+Impf+V+dús: [daàdús, diìdús]
+    2Pl+Impf+V+dús: dasdús
+    3Pl+Impf+V+dús: gididús
+    4Sg+Impf+V+dús: ts'ididús
