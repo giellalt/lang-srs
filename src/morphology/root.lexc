@@ -38,7 +38,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Inch	!!= * @CODE@ incho, inchoative
 +Mod	!!= * @CODE@ M mode (this seems more like category than property)
 +Mom	!!= * @CODE@ momentaneous
-+N		!!= * @CODE@ N, noun
+N+		!!= * @CODE@ N, noun
 +Neg	!!= * @CODE@ neg, negative
 +Num	!!= * @CODE@ num, Numeral
 +PI+	!!= * @CODE@ postposition incorporation (this is not a Morphosyn tag :-(
@@ -51,7 +51,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Qt		!!= * @CODE@ Qt, quantifier
 +Sem/Hum		!!= * @CODE@ Human
 +Sem/Obj	!!= * @CODE@ O, Object (have a look at this)
-+V		!!= * @CODE@ V, verb
+V+		!!= * @CODE@ V, verb
 12Du+	!!= * @CODE@ 12, first person dual inclusive
 13Du+	!!= * @CODE@ 13, first person dual exclusive
 1Pl+     !!= * @CODE@ 12, first person plural inclusive
@@ -153,6 +153,6 @@ Pref/xà+
 LEXICON Root
 !! The word forms in Dene Suline language start from noun and verb prefixes
 
-!NounPrefixes   ;
+NounPrefixes   ;
 VerbPrefixes   ;
 
