@@ -1,12 +1,24 @@
 !! Noun inflection
-!! ---------------
-!! The UNDEFINED language nouns inflect in cases.
+!  ---------------
+
 
 LEXICON NounPrefixes
-+PxSg1:blabla     Nouns   ;
-+PxSg2:blabla     Nouns   ;
-+PxSg3:blabla    Nouns   ;
-Nouns ;
+N+: BareNouns ;
+    PossessedPx ;
+    PossessedAndNot ;
+
+LEXICON PossessedPx
+PxSg1+N+:si PossessedNouns   ;
+PxSg2+N+:ni PossessedNouns   ;
+PxSg3+N+:mi PossessedNouns   ;
+PxSg4+N+:gi PossessedNouns   ;
+
+LEXICON PossessedAndNot
+N+:         Nouns ;
+PxSg1+N+:si Nouns   ;
+PxSg2+N+:ni Nouns   ;
+PxSg3+N+:mi Nouns   ;
+PxSg4+N+:gi Nouns   ;
 
 ! vim: set ft=xfst-lexc:
 
