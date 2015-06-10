@@ -33,7 +33,7 @@ in this system in terms of the following symbols.
  * +Inch	 incho, inchoative
  * +Mod	 M mode (this seems more like category than property)
  * +Mom	 momentaneous
- * +N		 N, noun
+ * N+		 N, noun
  * +Neg	 neg, negative
  * +Num	 num, Numeral
  * +PI+	 postposition incorporation (this is not a Morphosyn tag :-(
@@ -46,7 +46,7 @@ in this system in terms of the following symbols.
  * +Qt		 Qt, quantifier
  * +Sem/Hum		 Human
  * +Sem/Obj	 O, Object (have a look at this)
- * +V		 V, verb
+ * V+		 V, verb
  * 12Du+	 12, first person dual inclusive
  * 13Du+	 13, first person dual exclusive
  * 1Pl+      12, first person plural inclusive
