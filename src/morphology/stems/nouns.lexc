@@ -1,8 +1,23 @@
-!! Nouns
-!! -----
-!! Nouns in UNDEFINED language are things.
+!! Tsuut'ina Nouns
+! -----
+
+LEXICON BareNouns
+zòs # "snow" ;
+
+LEXICON PossessedNouns
+tsì # "head" ;
+
 
 LEXICON Nouns
-noun    #   ;
+kòlà # "husband" ; 
+dìná # "man" ;
+ts'òyá # "wife" ;
+ts'ìka # "woman" ;
+xāní # "buffalo" ;
+nàk'ús # "cloud" ;
+tłích'à # "dog" ;
+kù # "fire" ;
+gútł'ìs # "mud" ;
+tú # "water" ;
 
 ! vim: set ft=xfst-lexc:
