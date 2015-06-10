@@ -1,20 +1,22 @@
-!! Verb inflection
-!! ---------------
-!! The UNDEFINED language verbs inflect in persons.
+!! Verb inflection in Tsuut'ina
+!  ---------------
+
 
 
 LEXICON VerbPrefixes ! always empty
-T1 ;
+srs15 ;
 
-LEXICON T1 ! srs15
-Pref/xà+:xà T2 ; ! all
-@U.xaL.ON@:@U.xaL.ON@xà T2 ; ! lexicalised xà ! Lex/ha+Lex/di+
-T2 ;
+LEXICON srs15
+Pref/xà+:xà srs14 ; ! all
+@U.xaL.ON@:@U.xaL.ON@xà srs14 ; ! lexicalised xà ! Lex/ha+Lex/di+
+srs14 ;
 
-LEXICON T2 ! 
-T3 ;
+LEXICON srs14 ! 
+srs13 ;
 
-LEXICON T3 
+LEXICON srs13 
+srs12 ;
+LEXICON srs12 
 srs11 ;
 
 LEXICON srs11
