@@ -121,6 +121,14 @@ Pref/xà+
 @U.TV.ON@
 @U.TV.OFF@
 
+!! !!Archphonemes (multi-character definitions)
+
+%^VH      !!= * @CODE@ denoting floating high tone
+
+!! !!Border 
+
+%<  !!= * @CODE@ prefix border
+%>  !!= * @CODE@ suffix border
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
@@ -151,7 +159,7 @@ Pref/xà+
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
 LEXICON Root
-!! The word forms in Dene Suline language start from noun and verb prefixes
+!! The word forms in Tsuut'ina start from noun and verb prefixes
 
 NounPrefixes   ;
 VerbPrefixes   ;

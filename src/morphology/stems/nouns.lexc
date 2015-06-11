@@ -1,23 +1,55 @@
-!! Tsuut'ina Nouns
+!! !!!Tsuut'ina Nouns
 ! -----
+!! !!Classification
+!! # Always unpossessed nouns: nàk'ús "cloud"
+!! # Always possessed nouns: sitsì "my head" (body parts, kinship terms)
+!! # Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
 
-LEXICON BareNouns
-zòs # "snow" ;
+!!  Three (phonological) cases for the possessive prefixes:
+!!  # Consonant-initial stem: si- "1SG" tsì "head" -> sitsì "my head"
+!!  # Preceding H-tone stem: si- "1SG" V́tsí "nose" -> sítsí "my nose" 
+!!  # Vowel-initial stem: si- "1SG" óó "mother" -> sóó "my mother" \\
+!!    (cf. ʔinóó "mother" , ʔi- "UNSPEC.POSS" (n)óó;
+!!    {{{gu- "SOMEONE" óó "mother" -> gwóó gu > gw / _ [oa] ) Cu[oa] > Cw[oa]?}}}
 
-LEXICON PossessedNouns
-tsì # "head" ;
+!! Periphrastic / non-morphological constructions are used for always
+!! unpossessed nouns: sá(à) nàk'ús "my cloud", ná(à) ʔidínít'ùgù
+!! yiitł'áłí "your vehicle")
 
+!! !!Lexicons
 
-LEXICON Nouns
-kòlà # "husband" ; 
-dìná # "man" ;
-ts'òyá # "wife" ;
-ts'ìka # "woman" ;
-xāní # "buffalo" ;
-nàk'ús # "cloud" ;
-tłích'à # "dog" ;
-kù # "fire" ;
+LEXICON AlwaysUnpossessedNouns !!= * @CODE@ never Px
+diná # "man" ;
 gútł'ìs # "mud" ;
+ʔidínít'ùgù% yiitł'áłí # "automobile" ;
+nàk'ús # "cloud" ;
+ts'ìká # "woman" ;
+
+
+LEXICON AlwaysPossessedNouns  !!= * @CODE@ always Px, body part, kinship
+tsì # "head" ;
+0tsí:%^VHtsí # "nose" ;
+kòlà # "husband" ; 
+ts'òyá # "wife" ;       ! CHECK: unpossessed form, as well?
+
+
+LEXICON UnpossessedNouns  !!= * @CODE@ Px or not, here not. Cf. PossessedNouns
+kù # "fire" ;
+más # "knife" ;
+tìs # "cane, walking stick" ;
+tłích'á # "dog" ;
 tú # "water" ;
+xoní # "buffalo" ;
+zos # "snow; year" ;
+
+LEXICON PossessedNouns  !!= * @CODE@ Px or not, here Px. Cf. UnpossessedNouns
+kùwà # "fire" ;     ! CHECK
+lích'à # "dog" ; 
+mázà # "knife" ;
+tìsà # "cane" ;
+tùwà # "water" ;
+xonà # "buffalo" ;
+zosà # "snow; year" ;
+
 
 ! vim: set ft=xfst-lexc:
