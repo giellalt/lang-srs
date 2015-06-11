@@ -3,31 +3,31 @@
 
 !! The lexicon names srs15, srs14, etc. refers to traditional template names.
 
-LEXICON VerbPrefixes !! * @CODE@ from the Root lexicon, always empty
+LEXICON VerbPrefixes !!= * @CODE@ from the Root lexicon, always empty
 srs15 ;
 
-LEXICON srs15 !! * @CODE@ 
+LEXICON srs15 !!= * @CODE@ 
 Pref/xà+:xà srs14 ; ! all
 @U.xaL.ON@:@U.xaL.ON@xà srs14 ; ! lexicalised xà ! Lex/ha+Lex/di+
 srs14 ;
 
-LEXICON srs14 !! * @CODE@ empty
+LEXICON srs14 !!= * @CODE@ empty
 srs13 ;
 
-LEXICON srs13 !! * @CODE@ empty
+LEXICON srs13 !!= * @CODE@ empty
 srs12 ;
 
-LEXICON srs12 !! * @CODE@ empty
+LEXICON srs12 !!= * @CODE@ empty
 srs11 ;
 
-LEXICON srs11 !! * @CODE@ optional Distr+
+LEXICON srs11 !!= * @CODE@ optional Distr+
 srs10 ;
 Distr+:dà srs10 ;
 
-LEXICON srs10 !! * @CODE@ empty
+LEXICON srs10 !!= * @CODE@ empty
 srs9 ;
 
-LEXICON srs9 !! * @CODE@ empty
+LEXICON srs9 !!= * @CODE@ empty
 srs8765 ;
 ! @U.TV.ON@1SgO+:@U.TV.ON@si srs8765 ;
 ! @U.TV.ON@2SgO+:@U.TV.ON@ni srs8765 ;
@@ -44,7 +44,7 @@ srs8765 ;
 ! @U.TV.ON@Recipr+:@U.TV.ON@atłi srs8765 ;
 
 
-LEXICON srs8765 !! * @CODE@ contains the person-number complex
+LEXICON srs8765 !!= * @CODE@ contains the person-number complex
 !! ** I_IMPERFECTIVE CLASS 1a, no other prefix
 @U.TV.OFF@1Sg+:@U.TV.OFF@ʔis   IPFV_CLASS_1a ;
 @U.TV.OFF@2Sg+:@U.TV.OFF@ni    IPFV_CLASS_1a ; ! <=====
@@ -145,7 +145,7 @@ LEXICON srs8765 !! * @CODE@ contains the person-number complex
 @U.TV.ON@3PlO+4Sg+:@U.TV.ON@gits'i T_IPFV_CLASS_1a ; ! CHECK
 
 
-LEXICON Person12_IPFV_CLASS_1b  !! * @CODE@ contains the block of 1st and 2nd person
+LEXICON Person12_IPFV_CLASS_1b  !!= * @CODE@ contains the block of 1st and 2nd person
 @U.TV.OFF@1Sg+:@U.TV.OFF@is    IPFV_CLASS_1b ;
 @U.TV.OFF@2Sg+:@U.TV.OFF@í     IPFV_CLASS_1b ;
 @U.TV.OFF@3Sg+:@U.TV.OFF@i     IPFV_CLASS_1b ;
