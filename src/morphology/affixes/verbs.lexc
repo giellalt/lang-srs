@@ -1,79 +1,157 @@
-!! Verb inflection in Tsuut'ina
+!! !!!Verb inflection in Tsuut'ina
 !  ---------------
 
+!! The lexicon names srs15, srs14, etc. refers to traditional template names.
 
-
-LEXICON VerbPrefixes ! always empty
+LEXICON VerbPrefixes !! * @CODE@ from the Root lexicon, always empty
 srs15 ;
 
-LEXICON srs15
+LEXICON srs15 !! * @CODE@ 
 Pref/xà+:xà srs14 ; ! all
 @U.xaL.ON@:@U.xaL.ON@xà srs14 ; ! lexicalised xà ! Lex/ha+Lex/di+
 srs14 ;
 
-LEXICON srs14 ! 
+LEXICON srs14 !! * @CODE@ empty
 srs13 ;
 
-LEXICON srs13 
+LEXICON srs13 !! * @CODE@ empty
 srs12 ;
-LEXICON srs12 
+
+LEXICON srs12 !! * @CODE@ empty
 srs11 ;
 
-LEXICON srs11
+LEXICON srs11 !! * @CODE@ optional Distr+
 srs10 ;
 Distr+:dà srs10 ;
 
-LEXICON srs10
+LEXICON srs10 !! * @CODE@ empty
 srs9 ;
+
+LEXICON srs9 !! * @CODE@ empty
 srs8765 ;
+! @U.TV.ON@1SgO+:@U.TV.ON@si srs8765 ;
+! @U.TV.ON@2SgO+:@U.TV.ON@ni srs8765 ;
+! @U.TV.ON@3SgO+:@U.TV.ON@mi srs8765 ;
+! @U.TV.ON@3SgO+:@U.TV.ON@yi srs8765 ;
+! @U.TV.ON@3SgO+:@U.TV.ON@di srs8765 ;
 
-LEXICON srs9
-@U.TV.ON@1SgO+:@U.TV.ON@si srs8765 ;
-@U.TV.ON@2SgO+:@U.TV.ON@ni srs8765 ;
-@U.TV.ON@3SgO+:@U.TV.ON@mi srs8765 ;
-@U.TV.ON@3SgO+:@U.TV.ON@yi srs8765 ;
-@U.TV.ON@3SgO+:@U.TV.ON@di srs8765 ;
+! @U.TV.ON@4SgO+:@U.TV.ON@gi srs8765 ; 
+! @U.TV.ON@3Pl+:@U.TV.ON@gimi srs8765 ;
 
-@U.TV.ON@4SgO+:@U.TV.ON@gi srs8765 ; 
-@U.TV.ON@3Pl+:@U.TV.ON@gimi srs8765 ;
-
-@U.TV.ON@ArealO+:@U.TV.ON@gu srs8765 ;
-@U.TV.ON@UnspecO+:@U.TV.ON@ʔi srs8765 ;
-@U.TV.ON@Uefl+:@U.TV.ON@idi srs8765 ;
-@U.TV.ON@Uecipr+:@U.TV.ON@atłi srs8765 ;
+! @U.TV.ON@ArealO+:@U.TV.ON@gu srs8765 ;
+! @U.TV.ON@UnspecO+:@U.TV.ON@ʔi srs8765 ;
+! @U.TV.ON@Refl+:@U.TV.ON@idi srs8765 ;
+! @U.TV.ON@Recipr+:@U.TV.ON@atłi srs8765 ;
 
 
-LEXICON srs8765
-! I_IMPERFECTIVE CLASS 1
-@U.TV.OFF@1Sg+:@U.TV.OFF@ʔis   IPFV_CLASS_1 ;
-@U.TV.OFF@2Sg+:@U.TV.OFF@ni    IPFV_CLASS_1 ;
-@U.TV.OFF@3Sg+:@U.TV.OFF@ʔi    IPFV_CLASS_1 ;
-@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisaà IPFV_CLASS_1 ;
-@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisiì IPFV_CLASS_1 ;
-@U.TV.OFF@2Pl+:@U.TV.OFF@ʔas   IPFV_CLASS_1 ;
-@U.TV.OFF@3Pl+:@U.TV.OFF@gi    IPFV_CLASS_1 ;
-@U.TV.OFF@4Sg+:@U.TV.OFF@ts'i  IPFV_CLASS_1 ;
-! I_IMPERFECTIVE CLASS 2 !! This is a COPY!!
-!@U.TV.OFF@1Sg+:@U.TV.OFF@ʔis   IPFV_CLASS_2 ;
-!@U.TV.OFF@2Sg+:@U.TV.OFF@ni    IPFV_CLASS_2 ;
-!@U.TV.OFF@3Sg+:@U.TV.OFF@ʔi    IPFV_CLASS_2 ;
-!@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisaà IPFV_CLASS_2 ;
-!@U.TV.OFF@2Pl+:@U.TV.OFF@ʔas   IPFV_CLASS_2 ;
-!@U.TV.OFF@3Pl+:@U.TV.OFF@gi    IPFV_CLASS_2 ;
-!@U.TV.OFF@4Sg+:@U.TV.OFF@ts'i  IPFV_CLASS_2 ;
+LEXICON srs8765 !! * @CODE@ contains the person-number complex
+!! ** I_IMPERFECTIVE CLASS 1a, no other prefix
+@U.TV.OFF@1Sg+:@U.TV.OFF@ʔis   IPFV_CLASS_1a ;
+@U.TV.OFF@2Sg+:@U.TV.OFF@ni    IPFV_CLASS_1a ; ! <=====
+@U.TV.OFF@3Sg+:@U.TV.OFF@ʔi    IPFV_CLASS_1a ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisaà IPFV_CLASS_1a ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@ʔisiì IPFV_CLASS_1a ;
+@U.TV.OFF@2Pl+:@U.TV.OFF@ʔas   IPFV_CLASS_1a ;
+@U.TV.OFF@3Pl+:@U.TV.OFF@gi    IPFV_CLASS_1a ;
+@U.TV.OFF@4Sg+:@U.TV.OFF@ts'i  IPFV_CLASS_1a ;
 
-! I_PERFECTIVE CLASS 1
+!! ** I_IMPERFECTIVE CLASS 1b, inner prefix
+! 1st and 2nd person, Pref/di
+@U.di.ON@Pref/di+:@U.di.ON@d Person12_IPFV_CLASS_1b ;
+@U.zi.ON@Pref/zi+:@U.zi.ON@z Person12_IPFV_CLASS_1b ;
+@U.na.ON@Pref/na+:@U.na.ON@nas Person12_IPFV_CLASS_1b ;
+@U.ni.ON@Pref/ni+:@U.ni.ON@n Person12_IPFV_CLASS_1b ;
+
+!! ** 3rd person, directed to Pref/di, Pref/zi, etc.
+@U.TV.OFF@@U.di.ON@Pref/di+3Pl+:@U.TV.OFF@@U.di.ON@gidi   IPFV_CLASS_1b ;
+@U.TV.OFF@@U.zi.ON@Pref/zi+3Pl+:@U.TV.OFF@@U.zi.ON@gizi   IPFV_CLASS_1b ;
+@U.TV.OFF@@U.na.ON@Pref/na+3Pl+:@U.TV.OFF@@U.na.ON@gina   IPFV_CLASS_1b ;
+@U.TV.OFF@@U.ni.ON@Pref/ni+3Pl+:@U.TV.OFF@@U.ni.ON@gini   IPFV_CLASS_1b ;
+
+@U.TV.OFF@@U.di.ON@Pref/di+4Sg+:@U.TV.OFF@@U.di.ON@ts'idi IPFV_CLASS_1b ;
+@U.TV.OFF@@U.zi.ON@Pref/zi+4Sg+:@U.TV.OFF@@U.zi.ON@ts'izi IPFV_CLASS_1b ;
+@U.TV.OFF@@U.na.ON@Pref/na+4Sg+:@U.TV.OFF@@U.na.ON@ts'ina IPFV_CLASS_1b ;
+@U.TV.OFF@@U.ni.ON@Pref/ni+4Sg+:@U.TV.OFF@@U.ni.ON@ts'ini IPFV_CLASS_1b ;
+
+!! ** I_PERFECTIVE CLASS 1
 @U.TV.OFF@1Sg+:@U.TV.OFF@yis   PERF_CLASS_1 ;
 @U.TV.OFF@2Sg+:@U.TV.OFF@yí    PERF_CLASS_1 ;
 @U.TV.OFF@3Sg+:@U.TV.OFF@yí    PERF_CLASS_1 ;
-@U.TV.OFF@1Pl+:@U.TV.OFF@yaà PERF_CLASS_1 ;
-@U.TV.OFF@1Pl+:@U.TV.OFF@yiì PERF_CLASS_1 ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@yaà   PERF_CLASS_1 ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@yiì   PERF_CLASS_1 ;
 @U.TV.OFF@2Pl+:@U.TV.OFF@yas   PERF_CLASS_1 ;
 @U.TV.OFF@3Pl+:@U.TV.OFF@giyí    PERF_CLASS_1 ;
 @U.TV.OFF@4Sg+:@U.TV.OFF@ts'iyí  PERF_CLASS_1 ;
 
-! T IMPERFECTIVE CLASS 1
+!! ** T_IMPERFECTIVE CLASS 1a, no other prefix
+! FIXME: correct these forms
+@U.TV.ON@Refl+1Sg+:@U.TV.ON@ʔidis  T_IPFV_CLASS_1a ;
+@U.TV.ON@1SgO+2Sg+:@U.TV.ON@sí     T_IPFV_CLASS_1a ;
+@U.TV.ON@1SgO+3Sg+:@U.TV.ON@si     T_IPFV_CLASS_1a ;
+@U.TV.ON@1SgO+1Pl+:@U.TV.ON@sisaà  T_IPFV_CLASS_1a ;
+@U.TV.ON@1SgO+1Pl+:@U.TV.ON@sisiì  T_IPFV_CLASS_1a ;
+@U.TV.ON@1SgO+2Pl+:@U.TV.ON@sas    T_IPFV_CLASS_1a ;
+@U.TV.ON@1SgO+3Pl+:@U.TV.ON@sigi   T_IPFV_CLASS_1a ;
+@U.TV.ON@1SgO+4Sg+:@U.TV.ON@sits'i T_IPFV_CLASS_1a ;
+
+@U.TV.ON@2SgO+1Sg+:@U.TV.ON@nis    T_IPFV_CLASS_1a ;
+@U.TV.ON@Refl+2Sg+:@U.TV.ON@ʔidíí  T_IPFV_CLASS_1a ;
+@U.TV.ON@2SgO+3Sg+:@U.TV.ON@ni     T_IPFV_CLASS_1a ;
+@U.TV.ON@2SgO+1Pl+:@U.TV.ON@nisaà  T_IPFV_CLASS_1a ;
+@U.TV.ON@2SgO+1Pl+:@U.TV.ON@nisiì  T_IPFV_CLASS_1a ;
+@U.TV.ON@2SgO+2Pl+:@U.TV.ON@nas    T_IPFV_CLASS_1a ;
+@U.TV.ON@2SgO+3Pl+:@U.TV.ON@nigi   T_IPFV_CLASS_1a ;
+@U.TV.ON@2SgO+4Sg+:@U.TV.ON@nits'i T_IPFV_CLASS_1a ;
+
+@U.TV.ON@3SgO+1Sg+:@U.TV.ON@mis    T_IPFV_CLASS_1a ;
+@U.TV.ON@3SgO+2Sg+:@U.TV.ON@mí     T_IPFV_CLASS_1a ;
+@U.TV.ON@3SgO+3Sg+:@U.TV.ON@yi     T_IPFV_CLASS_1a ;
+@U.TV.ON@Refl+3Sg+:@U.TV.ON@ʔidii  T_IPFV_CLASS_1a ;
+@U.TV.ON@3SgO+1Pl+:@U.TV.ON@misaà  T_IPFV_CLASS_1a ;
+@U.TV.ON@3SgO+1Pl+:@U.TV.ON@misiì  T_IPFV_CLASS_1a ;
+@U.TV.ON@3SgO+2Pl+:@U.TV.ON@mas    T_IPFV_CLASS_1a ;
+@U.TV.ON@3SgO+3Pl+:@U.TV.ON@giyi   T_IPFV_CLASS_1a ;
+@U.TV.ON@3SgO+4Sg+:@U.TV.ON@mits'i T_IPFV_CLASS_1a ;
+
+@U.TV.ON@1PlO+1Sg+:@U.TV.ON@naas   T_IPFV_CLASS_1a ;
+@U.TV.ON@1PlO+2Sg+:@U.TV.ON@náá    T_IPFV_CLASS_1a ;
+@U.TV.ON@1PlO+3Sg+:@U.TV.ON@naa    T_IPFV_CLASS_1a ;
+@U.TV.ON@Refl+1Pl+:@U.TV.ON@ʔidisaà  T_IPFV_CLASS_1a ;
+@U.TV.ON@Refl+1Pl+:@U.TV.ON@ʔidisiì  T_IPFV_CLASS_1a ;
+@U.TV.ON@Recip+1Pl+:@U.TV.ON@ʔatłisaà  T_IPFV_CLASS_1a ;
+@U.TV.ON@Recip+1Pl+:@U.TV.ON@ʔatłisiì  T_IPFV_CLASS_1a ;
+@U.TV.ON@1PlO+2Pl+:@U.TV.ON@naas    T_IPFV_CLASS_1a ;
+@U.TV.ON@1PlO+3Pl+:@U.TV.ON@naagi   T_IPFV_CLASS_1a ;
+@U.TV.ON@1PlO+4Sg+:@U.TV.ON@naats'i T_IPFV_CLASS_1a ;
+
+@U.TV.ON@2PlO+1Sg+:@U.TV.ON@naas   T_IPFV_CLASS_1a ;
+@U.TV.ON@2PlO+2Sg+:@U.TV.ON@náá    T_IPFV_CLASS_1a ;
+@U.TV.ON@2PlO+3Sg+:@U.TV.ON@naa    T_IPFV_CLASS_1a ;
+@U.TV.ON@2PlO+1Pl+:@U.TV.ON@naasaà    T_IPFV_CLASS_1a ;
+@U.TV.ON@2PlO+1Pl+:@U.TV.ON@naasiì    T_IPFV_CLASS_1a ;
+@U.TV.ON@Refl+2Pl+:@U.TV.ON@ʔidisas  T_IPFV_CLASS_1a ;
+@U.TV.ON@Recip+2Pl+:@U.TV.ON@ʔatłisas  T_IPFV_CLASS_1a ;
+@U.TV.ON@2PlO+3Pl+:@U.TV.ON@naagi   T_IPFV_CLASS_1a ;
+@U.TV.ON@2PlO+4Sg+:@U.TV.ON@naats'i T_IPFV_CLASS_1a ;
+
+@U.TV.ON@3PlO+1Sg+:@U.TV.ON@gimis   T_IPFV_CLASS_1a ; ! CHECK THESE!
+@U.TV.ON@3PlO+2Sg+:@U.TV.ON@gimí    T_IPFV_CLASS_1a ;
+@U.TV.ON@3PlO+3Sg+:@U.TV.ON@gu    T_IPFV_CLASS_1a ; ! CHECK
+@U.TV.ON@3PlO+1Pl+:@U.TV.ON@gimisaà    T_IPFV_CLASS_1a ;
+@U.TV.ON@3PlO+1Pl+:@U.TV.ON@gimisiì    T_IPFV_CLASS_1a ;
+@U.TV.ON@3PlO+3Pl+:@U.TV.ON@gugi   T_IPFV_CLASS_1a ;
+@U.TV.ON@Refl+3Pl+:@U.TV.ON@ʔigidii T_IPFV_CLASS_1a ;
+@U.TV.ON@Recip+3Pl+:@U.TV.ON@ʔatłigi  T_IPFV_CLASS_1a ; ! CHECK
+@U.TV.ON@3PlO+4Sg+:@U.TV.ON@gits'i T_IPFV_CLASS_1a ; ! CHECK
+
+
+LEXICON Person12_IPFV_CLASS_1b  !! * @CODE@ contains the block of 1st and 2nd person
+@U.TV.OFF@1Sg+:@U.TV.OFF@is    IPFV_CLASS_1b ;
+@U.TV.OFF@2Sg+:@U.TV.OFF@í     IPFV_CLASS_1b ;
+@U.TV.OFF@3Sg+:@U.TV.OFF@i     IPFV_CLASS_1b ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@aà    IPFV_CLASS_1b ;
+@U.TV.OFF@1Pl+:@U.TV.OFF@iì    IPFV_CLASS_1b ;
+@U.TV.OFF@2Pl+:@U.TV.OFF@as    IPFV_CLASS_1b ;
 
 
 ! vim: set ft=xfst-lexc:
-
