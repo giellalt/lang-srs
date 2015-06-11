@@ -69,6 +69,12 @@ V+		!!= * @CODE@ V, verb
 3SgO+
 4Sg+	!!= * @CODE@ 4, the other
 4SgO+
+
+PxSg1+  !!= * @CODE@ Px
+PxSg2+  !!= * @CODE@ Px
+PxSg3+  !!= * @CODE@ Px
+PxSg4+  !!= * @CODE@ Px
+
 Adv+
 Ar+		!!= * @CODE@ 5, areal subject, it (place, condition, weather)
 Cl/0+
@@ -101,25 +107,47 @@ ArealO+
 !! !!Prefixes
 
 Pref/xà+
+Pref/di+
+Pref/zi+
+Pref/na+
+Pref/ni+
 
 !! !!our flags
 
-@U.asp.perf@
-@U.asp.ipfv@
-@U.xaH.ON@
+@U.asp.perf@ !!= * @CODE@ 
+@U.asp.ipfv@ !!= * @CODE@ 
+
+@U.xaH.ON@  !!= * @CODE@ 
 @R.xaH.ON@  !!= * @CODE@ 
-@D.xaH@
+@D.xaH@     !!= * @CODE@ 
 
-@U.xaM.ON@
+@U.xaM.ON@   !!= * @CODE@ 
 @R.xaM.ON@  !!= * @CODE@ 
-@D.xaM@
+@D.xaM@   !!= * @CODE@ 
 
-@U.xaL.ON@
-@R.xaL.ON@  !!= * @CODE@ 
-@D.xaL@
-@R.TV.ON@
-@U.TV.ON@
-@U.TV.OFF@
+@U.xaL.ON@  !!= * @CODE@ 
+@R.xaL.ON@     !!= * @CODE@ 
+@D.xaL@   !!= * @CODE@ 
+
+@U.di.ON@  !!= * @CODE@ 
+@R.di.ON@     !!= * @CODE@ 
+@D.di@   !!= * @CODE@ 
+
+@U.zi.ON@  !!= * @CODE@ 
+@R.zi.ON@     !!= * @CODE@ 
+@D.zi@   !!= * @CODE@ 
+
+@U.na.ON@  !!= * @CODE@ 
+@R.na.ON@     !!= * @CODE@ 
+@D.na@   !!= * @CODE@ 
+
+@U.ni.ON@  !!= * @CODE@ 
+@R.ni.ON@     !!= * @CODE@ 
+@D.ni@   !!= * @CODE@ 
+
+@R.TV.ON@  !!= * @CODE@ 
+@U.TV.ON@   !!= * @CODE@ 
+@U.TV.OFF@   !!= * @CODE@ 
 
 !! !!Archphonemes (multi-character definitions)
 
