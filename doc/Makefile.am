@@ -13,7 +13,8 @@ JSP_PAGES=root-morphology.jspwiki \
 nouns-stems.jspwiki              \
 verbs-stems.jspwiki              \
 nouns-affixes.jspwiki            \
-verbs-affixes.jspwiki
+verbs-affixes.jspwiki \
+srs-phon-phonology.jspwiki
 # clitics-morphology.jspwiki       \
 # compounding-morphology.jspwiki   \
 # abbreviations-stems.jspwiki      \
