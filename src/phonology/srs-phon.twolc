@@ -1,35 +1,37 @@
-!! =================================== !
 !! !!!The Tsuut'ina morphophonological/twolc rules file 
-!! =================================== !
 
+!! !!Alphabet and sets
 
+!! !Alphabet
 Alphabet
- a b c d e f g h i j k l ł m n o p q r s t u v w x y z 
- á é ó ú í ā ē ō ū ī à è ò ù ì ʔ 
+ a b c d e f g h i j k l ł m n o p q r s t u v w x y z  !!= * @CODE@
+ á é ó ú í ā ē ō ū ī à è ò ù ì ʔ                        !!= @CODE@
+ A B C D E F G H I J K L Ł M N O P Q R S T U V W X Y Z  !!= * @CODE@
+ Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ʔ                        !!= @CODE@
 
- A B C D E F G H I J K L Ł M N O P Q R S T U V W X Y Z 
- Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ʔ
+ %^VH:0       !!= * @CODE@
+ %> %<        !!=   @CODE@
+ ;
 
- %^VH:0
-
- %> %< ;
-
+!! !Sets
 Sets
 
- Vow = a e i o u  
-       á é ó ú í ā ē ō ū ī à è ò ù ì 
-       A E I O U  
-       Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ;
- Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ
-       B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ;
- 
+ Vow = a e i o u                                     !!= * @CODE@
+       á é ó ú í ā ē ō ū ī à è ò ù ì                 !!= @CODE@
+       A E I O U                                     !!= @CODE@
+       Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ;               !!= @CODE@
+ Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ   !!= * @CODE@
+       B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ; !!= @CODE@
+
+!! !!Rules
 Rules
 
 "Dock floating high tone on the preceeding vowel"
+!! * __@RULENAME@__ \\  si<^VHtsí to high-tone prefix sí
  Vx:Vy <=> _ %< %^VH: ;
     where Vx in (a e i o u )
           Vy in (á é í ó ú )
           matched ;
 
-!€ a
-!€ a
+!€ si<^VHtsí
+!€ sí<0tsí
