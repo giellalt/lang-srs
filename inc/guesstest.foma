@@ -1,0 +1,14 @@
+def C [b|c|d|f|g|h|k|l|m|n|p|q|r|s|t|v|w|x|z|%@];
+def V [a|e|i|o|u];
+
+def PhonWord [C* V (V) C*]+;
+
+read lexc guesstest.lexc
+substitute defined PhonWord for "^GUESSNOUNSTEM"
+
+def Grammar;
+
+def GuessGrammar  $[ "+GUESS" ] .o. Grammar ;
+def CleanGrammar ~$[ "+GUESS" ] .o. Grammar ;
+
+regex CleanGrammar .p. GuessGrammar ;  # Lower-side priority union
