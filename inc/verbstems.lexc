@@ -13,7 +13,7 @@ itsiy[cry]:na=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
 
 ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
 ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) **
+ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) CHECK
 ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
 
 ! CHECK
