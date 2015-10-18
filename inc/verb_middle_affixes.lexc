@@ -1,0 +1,13 @@
+LEXICON Root
+
+0-IPFV ;
+
+LEXICON 0-IPFV
+
+@U.ASPECT.IPFV@@U.TAMA.%0@  0-IPFV-AFF ;
+
+LEXICON 0-IPFV-AFF
+
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@gi    #;
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@ts'i  #;
+                                             #;
