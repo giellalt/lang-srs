@@ -11,25 +11,25 @@ itsiy[cry]:tsày                          INTR-yi-PFV-yi; ! (PFV; yi-PFV-yi)
 itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
 itsiy[cry]:na=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
 
-ts'ázid[wake.up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
-ts'ázid[wake.up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-ts'ázid[wake.up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) **
-ts'ázid[wake.up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
+ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
+ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
+ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) **
+ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
 
 ! CHECK
-nàgudiitłod[jump.down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-nàgudiitłod[jump.down]:nà=gu_di.tłòd     INTR-sii-PFV;   ! (PFV; sii-PFV)
-nàgudiitłod[jump.down]:nà=gu_di.tłół     INTR-yii-PROG;  ! (PROG; yii-PROG)
-nàgudiitłod[jump.down]:nàná=gu_di.tłozh  INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-nàgudiitłod[jump.down]:nìná=gu_di.tłozh  INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłòd     INTR-sii-PFV;   ! (PFV; sii-PFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłół     INTR-yii-PROG;  ! (PROG; yii-PROG)
+nàgudiitłod[jump-down]:nàná=gu_di.tłozh  INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nìná=gu_di.tłozh  INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 ! nàná == nìná == nìí
 
 ! CHECK
-tsídiitł'á[run.away]:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-tsídiitł'á[run.away]:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
-tsídiitł'á[run.away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
-tsídiitł'á[run.away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-tsídiitł'á[run.away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
+tsídiitł'á[run-away]:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
+tsídiitł'á[run-away]:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
+tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
+tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
 
 
 LEXICON INTR-0-IPFV
