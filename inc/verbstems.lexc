@@ -1,4 +1,4 @@
-Multichar_Symbols [PFV] [IPFV] [PROG] [POT] @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.ASPECT.IPFV@ @U.TAMA.%0@ @U.TAMA.%0i@
+Multichar_Symbols @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.PROG@ @U.ASPECT.POT@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.sii@ @U.TAMA.ni@ @U.TAMA.yi-y@ @U.TAMA.yi-a@ @U.TAMA.yi@ @U.TAMA.yii@
 
 LEXICON Root
 
@@ -7,7 +7,7 @@ Verbstems;
 LEXICON Verbstems
 
 itsiy[cry]:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
-itsiy[cry]:tsày                          INTR-yi-PFV-yi; ! (PFV; yi-PFV-yi)
+itsiy[cry]:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
 itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
 itsiy[cry]:na=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
 
@@ -31,34 +31,52 @@ tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PRO
 tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
 
-
+!
+! Non-past/imperfective (IPFV) forms
+!
 LEXICON INTR-0-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@ Verbsuffixes;
 
 LEXICON INTR-0i-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0i@ Verbsuffixes;
 
-LEXICON INTR-yi-PFV-yi
-[PFV]:0 Verbsuffixes;
-
-LEXICON INTR-yi-PROG
-[PROG]:0 Verbsuffixes;
-
-LEXICON INTR-yii-PROG
-[PROG]:0 Verbsuffixes;
-
 LEXICON INTR-ni-IPFV
-[IPFV]:0 Verbsuffixes;
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.ni@ Verbsuffixes;
 
+!
+! Past/perfective (PFV) forms
+!
 LEXICON INTR-ni-PFV
-[PFV]:0 Verbsuffixes;
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.ni@ Verbsuffixes;
 
 LEXICON INTR-sii-PFV
-[PFV]:0 Verbsuffixes;
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.sii@ Verbsuffixes;
 
+LEXICON INTR-yi-y-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@ Verbsuffixes;
+
+LEXICON INTR-yi-a-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@ Verbsuffixes;
+
+!
+! Progressive (PROG) forms
+!
+LEXICON INTR-yi-PROG
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@ Verbsuffixes;
+
+LEXICON INTR-yii-PROG
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yii@ Verbsuffixes;
+
+!
+! Potential (POT) forms
+!
 LEXICON INTR-yii-POT
-[POT]:0 Verbsuffixes;
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yii@ Verbsuffixes;
 
+
+!
+! Suffixes and enclitics.
+!
 Verbsuffixes;
 
 
