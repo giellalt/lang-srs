@@ -1,6 +1,6 @@
-# Test compilation for stems, affixes
+# Test compilation for verbs (stems, affixes)
 
-#set lexc-align ON
+set lexc-align ON
 
 read lexc verbstems.lexc
 def Stems
