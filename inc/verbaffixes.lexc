@@ -1,0 +1,87 @@
+Multichar_Symbols @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.ASPECT.IPFV@ @U.TAMA.%0@ @U.PERSON.1@ @U.PERSON.2@ @U.PERSON.3@ @U.PERSON.4@ @U.NUMBER.SG@ @U.NUMBER.PL@
+
+! tsiy "CRY" (INTR-0-IPFV)
+!
+! 1S ʔistsiy   (. = ʔis)
+! 2S nitsiy    (. = ni)
+! 3S ʔitsiy    (. = ʔi)
+! 1P ʔisaàtsiy (. = ʔisaà)
+! 1P ʔisiìtsiy (. = ʔisiì)
+! 2P ʔastsiy   (. = ʔas)
+! 3P gitsiy    (_ = gi, . = )
+! 4S ts'itsiy  (_ = ts'i, . = )
+
+! tsiy
+! = _ . tsiy        ! Pre-process to insert boundary symbols (if not present)
+
+
+LEXICON Root
+
+0-IPFV ;
+
+LEXICON 0-IPFV
+
+@U.ASPECT.IPFV@@U.TAMA.%0@  0-IPFV-AFF ;
+
+LEXICON 0-IPFV-AFF
+
+@U.PERSON.1@@U.NUMBER.SG@ʔis   #;
+@U.PERSON.2@@U.NUMBER.SG@ni    #;
+@U.PERSON.3@@U.NUMBER.SG@ʔi    #;
+@U.PERSON.1@@U.NUMBER.PL@ʔisaà #;
+@U.PERSON.1@@U.NUMBER.PL@ʔisiì #;
+@U.PERSON.2@@U.NUMBER.PL@ʔas   #;
+@U.PERSON.3@@U.NUMBER.PL@      #;
+@U.PERSON.4@@U.NUMBER.SG@      #;
+
+
+!
+! OLD NOTES
+!
+
+! tsiy
+! = _ . tsiy
+
+! ts'á=zíd
+! ts'á = _ . zíd
+
+! "LOOK AT INDEF.O" (nis-IPFV, INTR)
+! ʔinásʔí[look.at]:ʔi_ná.ʔí
+
+!nis    ! 1S ʔinánisʔí
+!       !        nis
+!nís    ! 2S ʔinánísʔí
+!       !        nís
+!s      ! 3S ʔinásʔí
+!       !        s
+!naà    ! 1P ʔinánaàʔí
+!       !        naà
+!nas    ! 2P ʔinánasʔí
+!       !        nas
+!gi_s   ! 3P ʔiginásʔí
+!       !      gi  s
+!ts'i_s ! 4S ʔits'inásʔí
+!       !      ts'i  s
+
+
+! RUN AWAY (0i-IPFV, INTR)
+! tsídiitł'á[run.away]:tsí=di.tł'á         INTR-0i-IPFV;
+!
+! tsí  =   di    .   tł'á
+! tsí  = _ di    .   tł'á
+! tsí  = _ di    .   tł'á  
+! tsí  = _ di   Cis  tł'á   !! Regexp for ^C: /([CONS])[V]+C/\1/
+! tsí  = _ d     is  tł'á
+! tsí  =   di    is  tł'á 
+! tsí      d     is  tł'á  
+!
+!Cis       ! 1S tsídistł'á
+!          !         s
+!Cíí       ! 2S tsídíítł'á
+!          !        íí
+!Cii       ! 3S tsídiitł'á
+!Caà       ! 1P [tsídaàtł'á, tsídiìtł'á]
+!Ciì       ! 1P [tsídaàtł'á, tsídiìtł'á]
+!Cas       ! 2P tsídastł'á
+!giCii     ! 3P tsígidiitł'á
+!ts'iCii   ! 4S tsíts'idiitł'á
