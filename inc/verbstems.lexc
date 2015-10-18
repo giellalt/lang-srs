@@ -18,10 +18,10 @@ ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
 
 ! CHECK
 nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłòd     INTR-sii-PFV;   ! (PFV; sii-PFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłół     INTR-yii-PROG;  ! (PROG; yii-PROG)
-nàgudiitłod[jump-down]:nàná=gu_di.tłozh  INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-nàgudiitłod[jump-down]:nìná=gu_di.tłozh  INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;   ! (PFV; sii-PFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG)
+nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 ! nàná == nìná == nìí
 
 ! CHECK
