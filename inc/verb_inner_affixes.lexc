@@ -15,8 +15,7 @@ Multichar_Symbols @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@
 @U.SUBJECTPERSON.4@ @R.SUBJECTPERSON.4@ 
 @U.SUBJECTNUMBER.SG@ @R.SUBJECTNUMBER.SG@ 
 @U.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.PL@
-@D.INNERPREFIX@ @R.INNERPREFIX@
-@D.OUTERPREFIX@ @R.OUTERPREFIX@
+@D.PREFIX@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ 
 
 
 ! Problem 1: gi-hopping
@@ -88,17 +87,20 @@ yi-POT ;
 !
 LEXICON 0-IPFV
 
-@U.ASPECT.IPFV@@U.TAMA.%0@@D.INNERPREFIX@@D.OUTERPREFIX@   0-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0@@R.INNERPREFIX@               0-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0@@R.OUTERPREFIX@               0-IPFV-AFF-OuterPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0@@D.PREFIX@         0-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0@@R.PREFIX.INNER@   0-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0@@R.PREFIX.MIDDLE@  0-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0@@R.PREFIX.OUTER@   0-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.%0s@@D.INNERPREFIX@@D.OUTERPREFIX@ 0s-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0s@@R.INNERPREFIX@             0s-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0s@@R.OUTERPREFIX@             0s-IPFV-AFF-OuterPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0s@@D.PREFIX@        0s-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0s@@R.PREFIX.INNER@  0s-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0s@@R.PREFIX.MIDDLE@ 0s-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0s@@R.PREFIX.OUTER@  0s-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.%0i@@D.INNERPREFIX@@D.OUTERPREFIX@ 0i-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0i@@R.INNERPREFIX@             0i-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0i@@R.OUTERPREFIX@             0i-IPFV-AFF-OuterPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0i@@D.PREFIX@        0i-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0i@@R.PREFIX.INNER@  0i-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0i@@R.PREFIX.MIDDLE@ 0i-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.%0i@@R.PREFIX.OUTER@  0i-IPFV-AFF-OuterPrefix ;
 
 LEXICON 0-IPFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
@@ -198,17 +200,20 @@ LEXICON 0i-IPFV-AFF-OuterPrefix
 !
 LEXICON ni-IPFV
 
-@U.ASPECT.IPFV@@U.TAMA.ni@@D.INNERPREFIX@@D.OUTERPREFIX@   ni-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ni@@R.INNERPREFIX@               ni-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ni@@R.OUTERPREFIX@               ni-IPFV-AFF-OuterPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.ni@@D.PREFIX@   ni-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.ni@@R.PREFIX.INNER@               ni-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.ni@@R.PREFIX.MIDDLE@              ni-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.ni@@R.PREFIX.OUTER@               ni-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.nis@@D.INNERPREFIX@@D.OUTERPREFIX@ nis-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nis@@R.INNERPREFIX@             nis-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nis@@R.OUTERPREFIX@             nis-IPFV-AFF-OuterPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nis@@D.PREFIX@ nis-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nis@@R.PREFIX.INNER@             nis-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nis@@R.PREFIX.MIDDLE@             nis-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nis@@R.PREFIX.OUTER@             nis-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.nii@@D.INNERPREFIX@@D.OUTERPREFIX@ nii-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nii@@R.INNERPREFIX@             nii-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nii@@R.OUTERPREFIX@             nii-IPFV-AFF-OuterPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nii@@D.PREFIX@ nii-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nii@@R.PREFIX.INNER@             nii-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nii@@R.PREFIX.MIDDLE@             nii-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.nii@@R.PREFIX.OUTER@             nii-IPFV-AFF-OuterPrefix ;
 
 LEXICON ni-IPFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
@@ -310,17 +315,20 @@ LEXICON nii-IPFV-AFF-OuterPrefix
 !
 LEXICON ni-PFV
 
-@U.ASPECT.PFV@@U.TAMA.ni@@D.INNERPREFIX@@D.OUTERPREFIX@   ni-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.ni@@R.INNERPREFIX@               ni-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.ni@@R.OUTERPREFIX@               ni-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.ni@@D.PREFIX@   ni-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.ni@@R.PREFIX.INNER@               ni-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.ni@@R.PREFIX.MIDDLE@               ni-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.ni@@R.PREFIX.OUTER@               ni-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.nis@@D.INNERPREFIX@@D.OUTERPREFIX@ nis-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nis@@R.INNERPREFIX@             nis-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nis@@R.OUTERPREFIX@             nis-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nis@@D.PREFIX@ nis-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nis@@R.PREFIX.INNER@             nis-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nis@@R.PREFIX.MIDDLE@             nis-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nis@@R.PREFIX.OUTER@             nis-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.nii@@D.INNERPREFIX@@D.OUTERPREFIX@ nii-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nii@@R.INNERPREFIX@             nii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nii@@R.OUTERPREFIX@             nii-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nii@@D.PREFIX@ nii-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nii@@R.PREFIX.INNER@             nii-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nii@@R.PREFIX.MIDDLE@             nii-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.nii@@R.PREFIX.OUTER@             nii-PFV-AFF-OuterPrefix ;
 
 LEXICON ni-PFV-AFF-NoPrefix
 ! FIXME: no documentation for this form; dummy values below
@@ -425,17 +433,20 @@ LEXICON nii-PFV-AFF-OuterPrefix
 !
 LEXICON si-PFV
 
-@U.ASPECT.PFV@@U.TAMA.si@@D.INNERPREFIX@@D.OUTERPREFIX@   si-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.si@@R.INNERPREFIX@               si-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.si@@R.OUTERPREFIX@               si-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.si@@D.PREFIX@   si-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.si@@R.PREFIX.INNER@               si-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.si@@R.PREFIX.MIDDLE@               si-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.si@@R.PREFIX.OUTER@               si-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.sis@@D.INNERPREFIX@@D.OUTERPREFIX@ sis-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sis@@R.INNERPREFIX@             sis-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sis@@R.OUTERPREFIX@             sis-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sis@@D.PREFIX@ sis-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sis@@R.PREFIX.INNER@             sis-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sis@@R.PREFIX.MIDDLE@             sis-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sis@@R.PREFIX.OUTER@             sis-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.sii@@D.INNERPREFIX@@D.OUTERPREFIX@ sii-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sii@@R.INNERPREFIX@             sii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sii@@R.OUTERPREFIX@             sii-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sii@@D.PREFIX@ sii-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sii@@R.PREFIX.INNER@             sii-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sii@@R.PREFIX.MIDDLE@             sii-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.sii@@R.PREFIX.OUTER@             sii-PFV-AFF-OuterPrefix ;
 
 
 LEXICON si-PFV-AFF-NoPrefix
@@ -538,13 +549,15 @@ LEXICON sii-PFV-AFF-OuterPrefix
 !
 LEXICON yi-y-PFV
 
-@U.ASPECT.PFV@@U.TAMA.yi-y@@D.INNERPREFIX@@D.OUTERPREFIX@   yi-y-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-y@@R.INNERPREFIX@               yi-y-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-y@@R.OUTERPREFIX@               yi-y-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-y@@D.PREFIX@   yi-y-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-y@@R.PREFIX.INNER@               yi-y-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-y@@R.PREFIX.MIDDLE@            yi-y-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-y@@R.PREFIX.OUTER@               yi-y-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.yis-y@@D.INNERPREFIX@@D.OUTERPREFIX@ yis-y-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yis-y@@R.INNERPREFIX@             yis-y-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yis-y@@R.OUTERPREFIX@             yis-y-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yis-y@@D.PREFIX@ yis-y-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yis-y@@R.PREFIX.INNER@             yis-y-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yis-y@@R.PREFIX.MIDDLE@           yis-y-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yis-y@@R.PREFIX.OUTER@             yis-y-PFV-AFF-OuterPrefix ;
 
 
 LEXICON yi-y-PFV-AFF-NoPrefix
@@ -615,13 +628,15 @@ LEXICON yis-y-PFV-AFF-OuterPrefix
 
 LEXICON yi-a-PFV
 
-@U.ASPECT.PFV@@U.TAMA.yi-a@@D.INNERPREFIX@@D.OUTERPREFIX@   yi-a-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-a@@R.INNERPREFIX@               yi-a-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-a@@R.OUTERPREFIX@               yi-a-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-a@@D.PREFIX@   yi-a-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-a@@R.PREFIX.INNER@               yi-a-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-a@@R.PREFIX.MIDDLE@             yi-a-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yi-a@@R.PREFIX.OUTER@               yi-a-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.yii-a@@D.INNERPREFIX@@D.OUTERPREFIX@ yii-a-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yii-a@@R.INNERPREFIX@             yii-a-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yii-a@@R.OUTERPREFIX@             yii-a-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yii-a@@D.PREFIX@ yii-a-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yii-a@@R.PREFIX.INNER@             yii-a-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yii-a@@R.PREFIX.MIDDLE@           yii-a-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.yii-a@@R.PREFIX.OUTER@             yii-a-PFV-AFF-OuterPrefix ;
 
 
 LEXICON yi-a-PFV-AFF-NoPrefix
@@ -691,17 +706,20 @@ LEXICON yii-a-PFV-AFF-OuterPrefix
 !
 LEXICON yi-PROG
 
-@U.ASPECT.PROG@@U.TAMA.yi@@D.INNERPREFIX@@D.OUTERPREFIX@   yi-PROG-AFF-NoPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yi@@R.INNERPREFIX@               yi-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yi@@R.OUTERPREFIX@               yi-PROG-AFF-OuterPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yi@@D.PREFIX@   yi-PROG-AFF-NoPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yi@@R.PREFIX.INNER@               yi-PROG-AFF-InnerPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yi@@R.PREFIX.MIDDLE@              yi-PROG-AFF-InnerPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yi@@R.PREFIX.OUTER@               yi-PROG-AFF-OuterPrefix ;
 
-@U.ASPECT.PROG@@U.TAMA.yis@@D.INNERPREFIX@@D.OUTERPREFIX@ yis-PROG-AFF-NoPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yis@@R.INNERPREFIX@             yis-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yis@@R.OUTERPREFIX@             yis-PROG-AFF-OuterPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yis@@D.PREFIX@ yis-PROG-AFF-NoPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yis@@R.PREFIX.INNER@             yis-PROG-AFF-InnerPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yis@@R.PREFIX.MIDDLE@            yis-PROG-AFF-InnerPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yis@@R.PREFIX.OUTER@             yis-PROG-AFF-OuterPrefix ;
 
-@U.ASPECT.PROG@@U.TAMA.yii@@D.INNERPREFIX@@D.OUTERPREFIX@ yii-PROG-AFF-NoPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yii@@R.INNERPREFIX@             yii-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yii@@R.OUTERPREFIX@             yii-PROG-AFF-OuterPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yii@@D.PREFIX@ yii-PROG-AFF-NoPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yii@@R.PREFIX.INNER@             yii-PROG-AFF-InnerPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yii@@R.PREFIX.MIDDLE@            yii-PROG-AFF-InnerPrefix ;
+@U.ASPECT.PROG@@U.TAMA.yii@@R.PREFIX.OUTER@             yii-PROG-AFF-OuterPrefix ;
 
 LEXICON yi-PROG-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -801,17 +819,20 @@ LEXICON yii-PROG-AFF-OuterPrefix
 !
 LEXICON yi-POT
 
-@U.ASPECT.POT@@U.TAMA.yi@@D.INNERPREFIX@@D.OUTERPREFIX@   yi-POT-AFF-NoPrefix ;
-@U.ASPECT.POT@@U.TAMA.yi@@R.INNERPREFIX@               yi-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yi@@R.OUTERPREFIX@               yi-POT-AFF-OuterPrefix ;
+@U.ASPECT.POT@@U.TAMA.yi@@D.PREFIX@   yi-POT-AFF-NoPrefix ;
+@U.ASPECT.POT@@U.TAMA.yi@@R.PREFIX.INNER@               yi-POT-AFF-InnerPrefix ;
+@U.ASPECT.POT@@U.TAMA.yi@@R.PREFIX.MIDDLE@              yi-POT-AFF-InnerPrefix ;
+@U.ASPECT.POT@@U.TAMA.yi@@R.PREFIX.OUTER@               yi-POT-AFF-OuterPrefix ;
 
-@U.ASPECT.POT@@U.TAMA.yis@@D.INNERPREFIX@@D.OUTERPREFIX@ yis-POT-AFF-NoPrefix ;
-@U.ASPECT.POT@@U.TAMA.yis@@R.INNERPREFIX@             yis-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yis@@R.OUTERPREFIX@             yis-POT-AFF-OuterPrefix ;
+@U.ASPECT.POT@@U.TAMA.yis@@D.PREFIX@ yis-POT-AFF-NoPrefix ;
+@U.ASPECT.POT@@U.TAMA.yis@@R.PREFIX.INNER@             yis-POT-AFF-InnerPrefix ;
+@U.ASPECT.POT@@U.TAMA.yis@@R.PREFIX.MIDDLE@            yis-POT-AFF-InnerPrefix ;
+@U.ASPECT.POT@@U.TAMA.yis@@R.PREFIX.OUTER@             yis-POT-AFF-OuterPrefix ;
 
-@U.ASPECT.POT@@U.TAMA.yii@@D.INNERPREFIX@@D.OUTERPREFIX@ yii-POT-AFF-NoPrefix ;
-@U.ASPECT.POT@@U.TAMA.yii@@R.INNERPREFIX@             yii-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yii@@R.OUTERPREFIX@             yii-POT-AFF-OuterPrefix ;
+@U.ASPECT.POT@@U.TAMA.yii@@D.PREFIX@ yii-POT-AFF-NoPrefix ;
+@U.ASPECT.POT@@U.TAMA.yii@@R.PREFIX.INNER@             yii-POT-AFF-InnerPrefix ;
+@U.ASPECT.POT@@U.TAMA.yii@@R.PREFIX.MIDDLE@            yii-POT-AFF-InnerPrefix ;
+@U.ASPECT.POT@@U.TAMA.yii@@R.PREFIX.OUTER@             yii-POT-AFF-OuterPrefix ;
 
 LEXICON yi-POT-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
