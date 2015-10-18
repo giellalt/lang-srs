@@ -1,6 +1,6 @@
 # Test compilation for verbs (stems, affixes)
 
-set lexc-align ON
+#set lexc-align ON
 
 read lexc verbstems.lexc
 def Stems
@@ -46,9 +46,10 @@ def Grammar Stems        .o.
             InsOuter     .o. 
             "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
 
-#twosided flag-diacritics
+
 regex Grammar;
-#eliminate flags
+twosided flag-diacritics
+eliminate flags
 
 #echo ELIMINATE VALENCE
 #eliminate flag VALENCE
