@@ -24,7 +24,7 @@ def OuterAffixes
 # Mark prefix type (insert corresponding flags to the
 # original prefixes we know to be present from the lexical entry.
 
-def MarkPrefixes "=" -> "=" "@P.PREFIX.OUTER@" , "_" -> "_" "@P.PREFIX.MIDDLE@" , "." -> "." "@P.PREFIX.INNER@";
+def MarkPrefixes ~$["@P.PREFIX.OUTER@"|"@P.PREFIX.INNER@"|"@P.PREFIX.MIDDLE@"] .o. "=" -> "@P.PREFIX.OUTER@" "=" , "_" -> "@P.PREFIX.MIDDLE@" "_" , "." -> "@P.PREFIX.INNER@" ".";
 
 # (1) No . > insert . after last marker (= or _), or in the beginning if none exists
 # (2) No _ > insert _ (a) after =, if one exists, or (b) beginning
@@ -39,17 +39,13 @@ def InsMiddle [..] -> "_" || "=" _ ~$["_"] .#. .o.
 
 def InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 
-def Grammar Stems        .o. 
-            MarkPrefixes .o.
-            InsInner     .o. 
-            InsMiddle    .o. 
-            InsOuter     .o. 
+def Grammar Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
             "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
 
 
 regex Grammar;
-twosided flag-diacritics
-eliminate flags
+#twosided flag-diacritics
+#eliminate flags
 
 #echo ELIMINATE VALENCE
 #eliminate flag VALENCE
