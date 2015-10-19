@@ -9,7 +9,7 @@ LEXICON Verbstems
 itsiy[cry]:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
 itsiy[cry]:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
 itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
-itsiy[cry]:na=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
+itsiy[cry]:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
 
 ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
 ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
@@ -79,7 +79,7 @@ LEXICON INTR-yii-POT
 !
 LEXICON Verbsuffixes
 
--gù[manner]:-gù   #;
+!-gù[manner]:-gù   #;
                   #;
 
 ! OUTER.PFX#    --> OUTER.PFX=
