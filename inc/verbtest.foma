@@ -19,6 +19,7 @@ def OuterAffixes
 
 # Mark prefix type (insert corresponding flags to the
 # original prefixes we know to be present from the lexical entry.
+# ab=cd_ef.gh => ab@P.PREFIX.OUTER@=cd@P.PREFIX.MIDDLE@_ef@P.PREFIX.INNER@.gh
 
 def MarkPrefixes ~$["@P.PREFIX.OUTER@"|"@P.PREFIX.INNER@"|"@P.PREFIX.MIDDLE@"] .o.
                   "=" -> "@P.PREFIX.OUTER@" "=" , 
@@ -50,7 +51,7 @@ def Grammar Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o.
 
 regex Grammar;
 #twosided flag-diacritics
-#eliminate flags
+eliminate flags
 
 #echo ELIMINATE VALENCE
 #eliminate flag VALENCE
