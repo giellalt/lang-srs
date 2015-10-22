@@ -1,0 +1,231 @@
+NOTES ON DENE FST MODEL
+=======================
+
+Verbs in the lexicon are represented according to the following schema:
+
+    LEMMA[GLOSS]:DERIVATIONAL_MORPHEMES  INFLECTION_PATTERN
+
+For instance, a verb like "cry" that can be inflected in at least four
+different aspects (non-past/imperfective (IPFV), past/perfective (PFV),
+progressive (PROG), and repetitive (REP)), is laid out as follows:
+
+    itsiy[cry]:tsiy                          INTR-0-IPFV;
+    itsiy[cry]:tsày                          INTR-yi-y-PFV;
+    itsiy[cry]:tsíł                          INTR-yi-PROG;
+    itsiy[cry]:ná=chish                      INTR-0-IPFV;
+
+Taking a closer look at each of these fields individually:
+
+    1. LEMMA: In all of these forms, the imperfective 3SG.SBJ form of the
+       verb (itsiy 's/he is crying') is used as the lemma.
+
+    2. GLOSS: An English-language tag for this lemma.  Words in multi-word
+       glosses are separated by hyphens (e.g., "[wake-up]", "[run-away]").
+
+    3. DERIVATIONAL_MORPHEMES: The morphemes required to express the lexical
+       meaning of this verb, as well as markers indicating where different
+       kinds of inflection is expected to appear within this word.
+
+       In Dene languages, lexical meaning can be expressed either in single
+       stems, or through fixed, (semi-)arbitrary collocations of prefixes and
+       stems.  In (1), the stem -tsiy stands on its own to convey the lexical
+       meaning "cry", while in (2), several additional prefixes are required
+       to express the meaning "jump down":
+
+        (1)                   -tsiy   --> "cry" (non-past/imperfective)
+        (2) nà- + gu- + di- + -tłod   --> "jump down" (non-past/imperfective)
+            LEXICAL PREFIXES   STEM
+
+       (Some people have suggested that it might be appropriate to think of
+        these collocations as discontiguous, multi-part stems, or have compared
+        them to phrasal verbs in English, where otherwise free-standing lexemes
+        (e.g., "put" + "down") are combined non-compositionally to express
+        other meanings (e.g., "put down" = "insult"). In Dene languages, the
+        prefixes that appear in these constructions may bear some resemblance
+        to other prefixes that have an identifiable lexical meaning, or may
+        only ever appear in collocation with a certain stem.  What's important
+        here is the idea that prefix-stem combinations are often arbitrary,
+        and together make up the basic meaning of the verb.)
+
+       This use of multi-morpheme collocations is an extremely common strategy
+       for expressing lexical meaning in Dene languages, and consequently
+       needs to be reflected in FST modelling.
+
+       Although it's not difficult to define entries in a Dene FST lexicon as
+       "stem + zero or more lexically-associated prefixes", the morphological
+       structure of Dene verbs introduces an additional wrinkle for modelling.
+       Since morphemes from anywhere in the verb can be co-opted into these
+       arbitrary lexical combinations, it often happens that inflectional
+       markers appear between lexical prefixes at different points within the
+       verb word.  To show where these inflectional markers should go, each
+       DERIVATIONAL_MORPHEMES string also includes up to three boundary
+       symbols:
+
+            .   marks where _inner prefixes_ should appear (the portmanteau
+                subject person-number-aspect forms that appear immediately
+                before the verb stem; see below)
+
+            _   marks where _middle prefixes_ should appear (the direct
+                object markers and the third person plural/fourth person
+                subject prefixes)
+
+            =   marks where _outer prefixes_ should appear (the distributive
+                plural marker dà-)
+
+       (Importantly, each of these sets of affixes is defined in its own
+        lexicon.  Inner affixes are laid out in "verb_inner_affixes.lexc",
+        middle affixes in "verb_middle_affixes.lexc", and outer affixes in
+        "verb_outer_affixes.lexc".  This allows for a degree of modularity
+        in the overall design of the FST, keeping the main lexicon relatively
+        clean and concise.  More information about how these affix lexica fit
+        into the overall picture of the model is given below.)
+
+       In a form like "jump down" (non-past/imperfective), all three of these
+       boundary symbols are used to show where inflectional markers should be
+       interleaved between the lexical prefixes:
+
+            nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;
+                                   ^^^^^^^^^^^^^
+
+       In a form like "cry" (non-past/imperfective), where there are no lexical
+       prefixes, no boundary marker symbols are needed in the lexical entry.
+       Here, it's assumed that all of the inflectional prefixes will appear in
+       front of the stem:
+
+            itsiy[cry]:tsiy                          INTR-0-IPFV;
+                       ^^^^
+
+       More information about how these boundary symbols are treated in the
+       model and how inflection is introduced follows below.
+
+    4. INFLECTION_PATTERN: A continuation lexicon that defines how this
+       lexeme will be inflected.  Importantly, the continuation lexica used
+       to specify inflectional patterns do not insert the inflectional
+       morphemes themselves.  Instead, each INFLECTION_PATTERN lexicon
+       sets flags that indicate
+
+        (1) The argument structure of the verb ("valence" -- whether or not
+            this verb is impersonal, intransitive, transitive, ditransitive,
+            etc.)
+
+        (2) The aspect/mode of the verb (here, non-past/imperfective (IPFV),
+            past/perfective (PFV), progressive (PROG), repetitive (REP), or
+            potential (POT))
+
+        (3) The auxiliary that is used for subject person-number and aspect
+            inflection in the syllable immediately preceding the verb stem.
+
+            In Dene languages, the inflection that appears in the pre-stem
+            syllable is often analyzed as being morphologically complex,
+            typically representing a combination of 4-6 distinct morphemes.
+            In this model, this pre-stem inflection is not fully decomposed
+            into its component morphological parts, but rather treated as
+            forming several distinct sets of portmanteau inflectional markers.
+            Each portmanteau inflectional marker in these paradigms includes
+            several pieces of information:
+
+                * Subject person and number
+                * Aspect and mode;
+                * Conjugation class (i.e., si-, ni-, yi-, or none, representing
+                  one of the historical Dene aspect/conjugation class markers)
+                * Voice/valence (i.e., the historical voice/valence markers
+                  or "classifiers" that fuse phonologically with the preceding
+                  prefixes)
+
+            By treating this inflection as "chunks", rather than as sequences
+            of discrete (and often highly abstract) morphemes, we avoid much
+            of the phonological machinery that is otherwise needed to compose
+            inflection in this part of the Dene verb.  In practice, the
+            paradigms that emerge under this analysis closely resemble an
+            auxiliary system: each verb stem is lexically associated with a
+            corresponding auxiliary that provides the forms needed to express
+            the above inflectional information.
+
+            Importantly, the forms that each auxiliary takes often depends on
+            what kind of prefix appears immediately before it -- if there is
+            no preceding prefix, or an inner/middle prefix, or an outer prefix
+            can make a significant difference in the phonological shape of the
+            auxiliary.  This allomorphy means that we need to keep track of
+            what kinds of lexical prefixes show up before the auxiliary; more
+            on how this is handled below.
+
+Given a set of lexical entries containing all of this information, how does
+this model produce/recognize the corresponding inflectional forms?  As was
+mentioned above, the main verbal lexicon only contains information about
+
+    (a) the derivational parts in the verb,
+    (b) where inflection should appear amidst these parts (the boundary
+        markers =, _, and .), and
+    (c) what inflectional patterns should be followed.
+
+The inflectional affixes themselves are defined in separate lexica that are
+implemented outside of the lexicon containing the verb lexemes.  This
+separation makes for looser coupling between the inflectional and derivational
+parts of the final FST (and an easier-to-read verb lexicon), but requires some
+additional steps to connect all of the component FSTs.  There are three small
+'tricks' that make this separation between inflection and derivation possible
+in the current model:
+
+    1. When the model reads in the DERIVATIONAL_MORPHEMES part of each lexical
+       entry, it makes note of any boundary markers that are present and
+       inserts a corresponding flag in the entry:
+
+            BOUNDARY MARKER IN LEXEME             FLAG INSERTED
+            =========================             =============
+                       =                 -->     @P.PREFIX.OUTER@
+                       _                 -->     @P.PREFIX.MIDDLE@
+                       .                 -->     @P.PREFIX.INNER@
+
+       Recall that auxiliaries typically have different forms depending on the
+       kinds of lexical prefixes that appear in front of them -- they have
+       different allomorphs when preceded by an outer prefix vs. a middle/inner
+       prefix vs. no prefix at all.  These flags allow us to make sure that the
+       correct form of the auxiliary is inserted into the lexeme later on, 
+       letting us know what kinds of lexical prefixes are present in the verb.
+
+    2. Once those flags have been inserted, we insert the . (inner prefix),
+       _ (middle prefix), and = (outer prefix) boundary markers into the
+       lexical entry string, if any of them weren't already present.  This
+       step allows us to keep our lexical entries slim, including boundary
+       markers only when there are prefixes that come before them, while still
+       letting the model know where inflection should be added later on:
+
+         DERIV. MORPHEMES         EXPANSION
+         ================         =========
+            tsiy            -->   =_.tsiy       [No boundary markers present,
+                                                 =, _, and . added]
+            di.tł'áh        -->   =_di.tł'áh    [Only inner prefix di- present,
+                                                 = and _ added]
+            gu_náh          -->   =gu_.náh      [Only middle prefix gu- present,
+                                                 = and . added]
+            ts'á=zíd        -->   ts'á=_.zíd    [Only outer prefix ts'á present,
+                                                 _ and . added]
+            nà=gu_di.tłod   -->   nà=gu_di.tłod [All boundary markers present,
+                                                 none inserted]
+
+    3. Now that we know what lexical prefixes are present and where all of
+       the inflectional information should be added, we can stitch in the
+       affix lexica, allowing them to expand the lexemes at each of the
+       boundary points.  This is accomplished by replacing each boundary
+       marker with the corresponding affix lexicon:
+
+            BOUNDARY MARKER IN LEXEME             REPLACEMENT LEXICON
+            =========================             ===================
+                       =                 -->    verb_outer_affixes.lexc
+                       _                 -->    verb_middle_affixes.lexc
+                       .                 -->    verb_inner_affixes.lexc
+
+       (In other words, wherever the '=' symbol occurred in the original verb
+        stem lexicon, all of the nodes and paths from the outer affix FST get
+        inserted at that point, and likewise for the other boundary symbols /
+        affix lexica)
+
+       Importantly, the affix lexica that get inserted at the boundary symbols
+       make use of the same flags as the main lexicon.  In that way, entries
+       in the verb lexicon are able to lead into the correct paths for their
+       inflection.  For instance, an entry that contains a boundary marker
+       will get the corresponding @R.PREFIX flag (cf. #1 above), and the affix
+       lexica can use that information to select the right set of allomorphs
+       for their inflection.
+
+All three of these steps are implemented in 'verbtest.foma'.
