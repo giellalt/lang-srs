@@ -46,11 +46,11 @@ def InsMiddle [..] -> "_" || "=" _ ~$["_"] .#. .o.
 
 def InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 
-def Grammar Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
+read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
             "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
 
-regex Grammar;
 twosided flag-diacritics
+def Grammar;
 
 read lexc verbtags.lexc
 def Tags
