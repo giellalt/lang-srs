@@ -11,6 +11,8 @@ Multichar_Symbols
 @U.SUBJECTPERSON.4@
 @U.SUBJECTNUMBER.SG@
 @U.SUBJECTNUMBER.PL@
+@R.DISTRIBUTIVE.ON@
+@R.DISTRIBUTIVE.OFF@
 
 +V
 +I
@@ -33,13 +35,13 @@ Multichar_Symbols
 +Distr
 
 LEXICON Root
-@U.VALENCE.TRANSITIVE@ Transitive ;
 @U.VALENCE.INTRANSITIVE@ Intransitive ;
-
-LEXICON Transitive
-+V+I:0 Aspect ;
+@U.VALENCE.TRANSITIVE@ Transitive ;
 
 LEXICON Intransitive
++V+I:0 Aspect ;
+
+LEXICON Transitive
 +V+T:0 Aspect ;
 
 LEXICON Aspect
@@ -68,7 +70,6 @@ Lexicon PersonNumber
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ PL1 ;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ PL2 ;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@ PL3 ;
-@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.PL@ PL4 ;
 
 Lexicon SG1
 +Sg1:0 # ;
@@ -83,14 +84,15 @@ Lexicon SG4
 +Sg4:0 # ;
 
 Lexicon PL1
-+Pl1:0 # ;
++Pl1:0 Distributive ;
 
 Lexicon PL2
-+Pl2:0 # ;
++Pl2:0 Distributive ;
 
 Lexicon PL3
-+Pl3:0 # ;
++Pl3:0 Distributive ;
 
-Lexicon PL4
-+Pl4:0 # ;
+Lexicon Distributive
+@R.DISTRIBUTIVE.OFF@ # ;
+@R.DISTRIBUTIVE.ON@+Distr:@R.DISTRIBUTIVE.ON@0 # ;
 
