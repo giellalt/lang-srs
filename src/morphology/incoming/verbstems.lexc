@@ -1,4 +1,18 @@
-Multichar_Symbols @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.PROG@ @U.ASPECT.POT@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.sii@ @U.TAMA.ni@ @U.TAMA.yi-y@ @U.TAMA.yi-a@ @U.TAMA.yi@ @U.TAMA.yii@
+Multichar_Symbols
+@U.VALENCE.INTRANSITIVE@
+@U.VALENCE.TRANSITIVE@
+@U.ASPECT.IPFV@
+@U.ASPECT.PFV@
+@U.ASPECT.PROG@
+@U.ASPECT.POT@
+@U.TAMA.%0@
+@U.TAMA.%0i@
+@U.TAMA.sii@
+@U.TAMA.ni@
+@U.TAMA.yi-y@
+@U.TAMA.yi-a@
+@U.TAMA.yi@
+@U.TAMA.yii@
 
 LEXICON Root
 
@@ -85,4 +99,3 @@ LEXICON Verbsuffixes
 ! OUTER.PFX#    --> OUTER.PFX=
 ! OUTER.SBJ/DO% --> OUTER.SBJ_
 ! INNER.PFX-    --> INNER.PFX.
-
