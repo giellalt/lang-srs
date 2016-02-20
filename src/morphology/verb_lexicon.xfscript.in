@@ -1,0 +1,75 @@
+###############################################
+# Test compilation for verbs (stems, affixes) #
+###############################################
+
+# May want to use this if symbol pairs grow - needs foma
+#set lexc-align ON
+
+read lexc @srcdir@/stems/verbstems.lexc
+define Stems ;
+
+read lexc @srcdir@/affixes/verb_inner_affixes.lexc
+define InnerAffixes ;
+
+read lexc @srcdir@/affixes/verb_middle_affixes.lexc
+define MiddleAffixes ;
+
+read lexc @srcdir@/affixes/verb_outer_affixes.lexc
+define OuterAffixes ;
+
+# Mark prefix type (insert corresponding flags to the
+# original prefixes we know to be present from the lexical entry.
+# ab=cd_ef.gh => ab@P.PREFIX.OUTER@=cd@P.PREFIX.MIDDLE@_ef@P.PREFIX.INNER@.gh
+
+define MarkPrefixes ~$["@P.PREFIX.OUTER@"|"@P.PREFIX.INNER@"|"@P.PREFIX.MIDDLE@"] .o.
+                  "=" -> "@P.PREFIX.OUTER@" "=" , 
+                  "_" -> "@P.PREFIX.MIDDLE@" "_" , 
+                  "." -> "@P.PREFIX.INNER@" ".";
+
+# Insert . (inner), _ (middle), and = (outer) if missing in the intermediate rep:
+# tsiy > =_.tsiy
+# ts'á=zíd > ts'á=_.zíd
+# tsí=di.tł'á > tsí=_di.tł'á
+# gu.blah > =_gu.blah
+# gu_blah > =gu_.blah
+
+# (1) No . > insert . after last marker (= or _), or in the beginning if none exists
+# (2) No _ > insert _ (a) after =, if one exists, or (b) beginning
+# (3) No = > insert at beginning
+
+define InsInner  [..] -> "." || "_" _ ~$"." .#. .o. 
+              [..] -> "." || "=" _ ~$"." .#. .o. 
+              [..] -> "." || .#. _ ~$"." .#. ;
+
+define InsMiddle [..] -> "_" || "=" _ ~$["_"] .#. .o. 
+              [..] -> "_" || .#. _ ~$["_"] .#. ; 
+
+define InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
+
+read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
+            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+
+twosided flag-diacritics
+define Grammar ;
+
+read lexc @srcdir@/affixes/verbtags.lexc
+define Tags ;
+
+read regex Grammar Tags ;
+
+#eliminate flags
+
+#echo ELIMINATE VALENCE
+#eliminate flag VALENCE
+#echo ELIMINATE TAMA
+#eliminate flag TAMA
+#echo ELIMINATE ASPECT
+#eliminate flag ASPECT
+#echo ELIMINATE SUBJECTPERSON
+#eliminate flag SUBJECTPERSON
+#echo ELIMINATE SUBJECTPERSON
+#eliminate flag SUBJECTNUMBER
+#echo ELIMINATE OBJECTNUMBER
+#eliminate flag OBJECTNUMBER
+#echo ELIMINATE DISTRIBUTIVE 
+#eliminate flag DISTRIBUTIVE

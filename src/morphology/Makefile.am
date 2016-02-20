@@ -53,10 +53,26 @@ GT_XML_SRCS=
 GT_LOCAL_SRCS=
 
 # Define here any additional sources just included in the distro:
-GT_DISTRO_SRCS=
+GT_DISTRO_SRCS=affixes/verb_inner_affixes.lexc  \
+              affixes/verb_middle_affixes.lexc \
+              affixes/verb_outer_affixes.lexc  \
+              affixes/verbtags.lexc            \
+              stems/verbstems.lexc
 
 ### BEGIN: Local processing: ###
 
+SRS_VERBS=
+if CAN_HFST
+SRS_VERBS+=verb_lexicon.hfst
+endif # CAN_HFST
+if CAN_XFST
+SRS_VERBS+=verb_lexicon.xfst
+endif # CAN_XFST
+if CAN_FOMA
+SRS_VERBS+=verb_lexicon.foma
+endif # CAN_FOMA
+
+verbs: $(SRS_VERBS)
 
 ### END: Local processing: ###
 

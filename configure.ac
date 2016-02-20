@@ -234,6 +234,8 @@ AC_CONFIG_FILES([tools/shellscripts/usrs-gt.sh], \
 
 #### BEGIN: Add language-specific scripts below here: ####
 
+AC_CONFIG_FILES([src/morphology/verb_lexicon.xfscript])
+
 ############ END: Language-specific scripts. #############
 
 # This must be near the end of all configure.ac files:
