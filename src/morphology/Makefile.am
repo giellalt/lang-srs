@@ -74,6 +74,14 @@ endif # CAN_FOMA
 
 verbs: $(SRS_VERBS)
 
+lexicon.%: lexicon.tmp.% verb_lexicon.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+			[ @\"$<\" | @\"verb_lexicon.$*\" ] \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+
 ### END: Local processing: ###
 
 include $(top_srcdir)/am-shared/src-morphology-dir-include.am
