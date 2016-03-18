@@ -1,0 +1,23 @@
+Multichar_Symbols +N +Sg +Pl ^GUESSNOUNSTEM +GUESS
+
+LEXICON Root
+
+Nouns ;
+
+LEXICON Nouns
+
+cat                                 NInfl ;
+dog                                 NInfl ;
+mouse                               NInfl ;
+horse                               NInfl ;
+^GUESSNOUNSTEM+GUESS:^GUESSNOUNSTEM NInfl ;
+
+LEXICON NInfl
+
++N:0 Infl;
+
+LEXICON Infl
+
++Pl:s  #;
++Sg:   #;
+
