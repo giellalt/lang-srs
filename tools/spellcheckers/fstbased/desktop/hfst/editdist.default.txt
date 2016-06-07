@@ -71,16 +71,16 @@ z
 
 ## Transition pair specifications + weight:
 a	á	0.4
-a   à   0.6
-i   í   0.4
-i   ì   0.6
-o   ó   0.4
-o   ò   0.6
-u   ú   0.4
-u   ù   0.6
-l   ɫ   0.4
-# ?   ʔ   0.4
-# '   ʔ   0.8
+a	à	0.6
+i	í	0.4
+i	ì	0.6
+o	ó	0.4
+o	ò	0.6
+u	ú	0.4
+u	ù	0.6
+l	ɫ	0.4
+?	ʔ	0.4
+'	ʔ	0.8
 
 ## Swaps:
 ## Change dh into hd with the weight 0.5:
