@@ -45,7 +45,7 @@ srs8765 ;
 
 
 LEXICON srs8765 !!= * @CODE@ contains the person-number complex
-!! ** I_IMPERFECTIVE CLASS 1a, no other prefix
+!! * I_IMPERFECTIVE CLASS 1a, no other prefix
 @U.TV.OFF@1Sg+:@U.TV.OFF@ʔis   IPFV_CLASS_1a ;
 @U.TV.OFF@2Sg+:@U.TV.OFF@ni    IPFV_CLASS_1a ; ! <=====
 @U.TV.OFF@3Sg+:@U.TV.OFF@ʔi    IPFV_CLASS_1a ;
