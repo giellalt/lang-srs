@@ -16,6 +16,11 @@ GT_ANALYSERS+=analyser-dict-gt-desc.xfst \
 				   analyser-dict-gt-desc-mobile.xfst
 GT_GENERATORS+=generator-dict-gt-norm.xfst
 endif # CAN_XFST
+
+if CAN_FOMA
+GT_ANALYSERS+=analyser-dict-gt-desc.foma
+GT_GENERATORS+=generator-dict-gt-norm.foma
+endif # CAN_FOMA
 endif # WANT_DICTIONARIES
 
 ##### END Xerox target list #####
@@ -33,6 +38,7 @@ analyser-dict-gt-desc.tmp.%: analyser-raw-gt-desc.%            \
 					filters/remove-dialect-tags.%              \
 					filters/remove-norm-comp-tags.%            \
 					filters/remove-orig_lang-tags.%            \
+					filters/remove-bracketed-english-gloss.%   \
 					filters/remove-usage_except_NGminip-tags.% \
 					filters/remove-semantic-tags.%             \
 					filters/remove-hyphenation-marks.%         \
@@ -48,6 +54,7 @@ analyser-dict-gt-desc.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-dialect-tags.$*\"              \
 			.o. @\"filters/remove-norm-comp-tags.$*\"            \
 			.o. @\"filters/remove-orig_lang-tags.$*\"            \
+			.o. @\"filters/remove-bracketed-english-gloss.$*\"            \
 			.o. @\"filters/remove-usage_except_NGminip-tags.$*\" \
 			.o. @\"filters/remove-semantic-tags.$*\"             \
 			.o. @\"filters/remove-orthography-tags.$*\"          \
@@ -95,6 +102,7 @@ generator-dict-gt-norm.tmp.%: analyser-raw-gt-desc.%           \
 					filters/remove-dialect-tags.%              \
 					filters/remove-norm-comp-tags.%            \
 					filters/remove-orig_lang-tags.%            \
+					filters/remove-bracketed-english-gloss.%   \
 					filters/remove-usage_except_NGminip-tags.% \
 					filters/remove-orthography-tags.%          \
 					filters/remove-Orth_IPA-strings.%          \
@@ -112,6 +120,7 @@ generator-dict-gt-norm.tmp.%: analyser-raw-gt-desc.%           \
 			.o. @\"filters/remove-dialect-tags.$*\"              \
 			.o. @\"filters/remove-norm-comp-tags.$*\"            \
 			.o. @\"filters/remove-orig_lang-tags.$*\"            \
+			.o. @\"filters/remove-bracketed-english-gloss.$*\"            \
 			.o. @\"filters/remove-usage_except_NGminip-tags.$*\" \
 			.o. @\"filters/remove-error-strings.$*\"             \
 			.o. @\"filters/remove-orthography-tags.$*\"          \
