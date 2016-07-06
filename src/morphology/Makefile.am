@@ -23,9 +23,9 @@ GT_LEXC_ROOT=root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			 stems/words.lexc
-#			 affixes/nouns.lexc \
-#			 stems/nouns.lexc
+			 stems/words.lexc \
+			 affixes/nouns.lexc \
+			 stems/nouns.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
