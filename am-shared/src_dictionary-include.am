@@ -18,7 +18,8 @@ GT_GENERATORS+=generator-dict-gt-norm.xfst
 endif # CAN_XFST
 
 if CAN_FOMA
-GT_ANALYSERS+=analyser-dict-gt-desc.foma
+GT_ANALYSERS+=analyser-dict-gt-desc.foma \
+				   analyser-dict-gt-desc-mobile.foma
 GT_GENERATORS+=generator-dict-gt-norm.foma
 endif # CAN_FOMA
 endif # WANT_DICTIONARIES
