@@ -56,19 +56,14 @@ endif # CAN_HFST
 
 #### FOMA transducers
 if CAN_FOMA
-GT_ANALYSERS+=
+GT_ANALYSERS+=analyser-dict-gt-desc.foma
 GT_GENERATORS+=
 endif # CAN_FOMA
 
 #################################################
 #### Add language-specific build rules here: ####
 
-# The mobile analyser is just like the regular dictionary analyser,
-# except for one additional set of spellrelaxes:
-
-# This correctly works to extend analyser-dict-gt-desc a spellrelax fst out of
-# analyser-dict-gt-desc.foma
-
+# Override analyser-dict-gt-desc, and add spellrelax
 # analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 # 						orthography/spellrelax.compose.%
 # 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
@@ -78,18 +73,18 @@ endif # CAN_FOMA
 # 		 save stack $@\n\
 # 		 quit\n" | $(XFST_TOOL)
 
-# Somehow using this to mess around with downcasing destroys spellrelax in the
-# mobile fst, despite that it isn't a target, and just used as a dependency,
-# hmm
 
-# analyser-dict-gt-desc-mobile-downcasetest.%: analyser-dict-gt-desc-mobile.tmp.% \
-# 					filters/downcase_UCletters.%
-# 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-# 			    @\"filters/downcase_UCletters.$*\" \
-# 			.o. @\"$<\" \
+# Override analyser-gt- analysers with spellrelax and downcase
+# analyser-gt-%.foma: analyser-gt-%.tmp.foma \
+# 					orthography/spellrelax.compose.foma \
+# 					filters/downcase_UCletters.foma
+# 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                         \
+# 			    @\"$<\"                                       \
+#   			.o. @\"orthography/spellrelax.compose.foma\"           \
+#   			.o. @\"filters/downcase_UCletters.foma\"           \
 # 			;\n\
 # 		 save stack $@\n\
-# 		 quit\n" | $(XFST_TOOL)
+# 		 quit\n" | $(XFST_TOOL) $(VERBOSITY)
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
