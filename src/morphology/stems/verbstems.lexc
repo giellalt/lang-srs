@@ -23,55 +23,30 @@ LEXICON Verbstems
 ! N.B. removed English glosses in brackets so that
 ! analysis and generation in Gunáhà' would work
 
-! itsiy[cry]:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
-! itsiy[cry]:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
-! itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
-! itsiy[cry]:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
+itsiy[cry]:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
+itsiy[cry]:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
+itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
+itsiy[cry]:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
 
-itsiy:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
-itsiy:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
-itsiy:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
-itsiy:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
-
-! ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
-! ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-! ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) CHECK
-! ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
-
-ts'ázid:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
-ts'ázid:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-ts'ázid:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) CHECK
-ts'ázid:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
+ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
+ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
+ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) CHECK
+ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
 
 ! ! CHECK
-! nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-! nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;   ! (PFV; sii-PFV)
-! nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG)
-! nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-! nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-! ! nàná == nìná == nìí
+nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;   ! (PFV; sii-PFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG)
+nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+! nàná == nìná == nìí
 
-nàgudiitłod:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-nàgudiitłod:nà=gu_di.tłòt     INTR-sii-PFV;   ! (PFV; sii-PFV)
-nàgudiitłod:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG)
-nàgudiitłod:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-nàgudiitłod:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-! ! nàná == nìná == nìí
- 
 ! ! CHECK
-! tsídiitł'á[run-away]:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-! tsídiitł'á[run-away]:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
-! tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
-! tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-! tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
-
-tsídiitł'á:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-tsídiitł'á:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
-tsídiitł'á:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
-tsídiitł'á:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-tsídiitł'á:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
-
-
+tsídiitł'á[run-away]:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
+tsídiitł'á[run-away]:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
+tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
+tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
 
 !
 ! Non-past/imperfective (IPFV) forms
