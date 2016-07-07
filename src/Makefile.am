@@ -56,7 +56,7 @@ endif # CAN_HFST
 
 #### FOMA transducers
 if CAN_FOMA
-GT_ANALYSERS+=analyser-dict-gt-desc.foma
+GT_ANALYSERS+=analyser-dict-gt-desc.foma generator-dict-gt-norm.foma
 GT_GENERATORS+=
 endif # CAN_FOMA
 
@@ -64,14 +64,26 @@ endif # CAN_FOMA
 #### Add language-specific build rules here: ####
 
 # Override analyser-dict-gt-desc, and add spellrelax
-# analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
-# 						orthography/spellrelax.compose.%
-# 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-# 			    @\"$<\"                                          \
-# 			.o. @\"orthography/spellrelax.compose.$*\"           \
-# 			;\n\
-# 		 save stack $@\n\
-# 		 quit\n" | $(XFST_TOOL)
+analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
+					orthography/spellrelax.compose.foma \
+					filters/remove-bracketed-english-gloss.foma
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+  			    @\"filters/remove-bracketed-english-gloss.foma\"           \
+			.o. @\"$<\"                                          \
+			.o. @\"orthography/spellrelax.compose.$*\"           \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
+					filters/remove-bracketed-english-gloss.foma
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+  			    @\"filters/remove-bracketed-english-gloss.foma\"           \
+			.o. @\"$<\"                                          \
+			;\n\
+		 invert net\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
 
 # Override analyser-gt- analysers with spellrelax and downcase
@@ -85,6 +97,15 @@ endif # CAN_FOMA
 # 			;\n\
 # 		 save stack $@\n\
 # 		 quit\n" | $(XFST_TOOL) $(VERBOSITY)
+
+analyser-gt-%.foma: analyser-gt-%.tmp.foma \
+					orthography/spellrelax.compose.foma
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                         \
+			    @\"$<\"                                       \
+  			.o. @\"orthography/spellrelax.compose.foma\"           \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL) $(VERBOSITY)
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
