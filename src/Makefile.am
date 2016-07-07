@@ -63,6 +63,16 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
+# Remove brackets from mobile dict as well (spellrelax should already be included at this stage)
+analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
+					filters/remove-bracketed-english-gloss.foma
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+  			    @\"filters/remove-bracketed-english-gloss.foma\"           \
+			.o. @\"$<\"                                          \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
 # Override analyser-dict-gt-desc, and add spellrelax
 analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 					orthography/spellrelax.compose.foma \
