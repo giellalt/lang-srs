@@ -63,12 +63,15 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
-# Remove brackets from mobile dict as well (spellrelax should already be included at this stage)
+# Remove brackets from mobile dict as well (spellrelax should already be
+# included at this stage)
 analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
-					filters/remove-bracketed-english-gloss.foma
+					filters/remove-bracketed-english-gloss.foma \
+  					filters/allow_uppercase.foma
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
   			    @\"filters/remove-bracketed-english-gloss.foma\"           \
 			.o. @\"$<\"                                          \
+   			.o. @\"filters/allow_uppercase.foma\"           \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
@@ -76,11 +79,13 @@ analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 # Override analyser-dict-gt-desc, and add spellrelax
 analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 					orthography/spellrelax.compose.foma \
-					filters/remove-bracketed-english-gloss.foma
+					filters/remove-bracketed-english-gloss.foma \
+  					filters/allow_uppercase.foma
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
   			    @\"filters/remove-bracketed-english-gloss.foma\"           \
 			.o. @\"$<\"                                          \
 			.o. @\"orthography/spellrelax.compose.$*\"           \
+   			.o. @\"filters/allow_uppercase.foma\"           \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)

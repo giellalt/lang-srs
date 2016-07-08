@@ -21,6 +21,7 @@
 # List any local filter regex files here:
 GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					downcase_UCletters.regex\
+					allow_uppercase.regex\
 					remove-bracketed-english-gloss.regex
 
 # List any local filter xfscript files here:
