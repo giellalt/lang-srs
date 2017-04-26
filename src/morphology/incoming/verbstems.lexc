@@ -45,6 +45,10 @@ tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PRO
 tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
 
+! Example transitive verb. (fix lemma later to be IPFV form, make sure right
+! yi-PFV paradigm is being used)
+yiʔí[see]:ʔí                             TRANS-yi-y-PFV;
+
 !
 ! Non-past/imperfective (IPFV) forms
 !
@@ -71,6 +75,11 @@ LEXICON INTR-yi-y-PFV
 
 LEXICON INTR-yi-a-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@ Verbsuffixes;
+
+LEXICON TRANS-yi-y-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@ Verbsuffixes;
+
+
 
 !
 ! Progressive (PROG) forms
