@@ -45,9 +45,12 @@ LEXICON Transitive-Markers
 @U.OBJECTNUMBER.SG@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@idi      Middle-Flag;
 @U.OBJECTNUMBER.SG@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@idi      Middle-Flag;
 @U.OBJECTNUMBER.PL@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@igidi    Middle-Flag;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@its'idi  Middle-Flag;
 
 ! Reciprocals only occur with plural subjects (and, by extension, plural objects)
 @U.OBJECTNUMBER.PL@@U.OBJECTPERSON.RECIP@@U.SUBJECTNUMBER.PL@atłi                gi-Business;
+
+!! TODO: add indefinite objects with i-
 
 
 LEXICON gi-Business
