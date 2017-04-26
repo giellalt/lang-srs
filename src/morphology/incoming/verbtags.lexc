@@ -49,6 +49,8 @@ Multichar_Symbols
 +DObjPl2
 +DObjPl3
 +DObjPl4
++DObjRefl
++DObjRecip
 
 +Distr
 
@@ -90,25 +92,25 @@ Lexicon PersonNumber
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@ PL3 ;
 
 Lexicon SG1
-+Sg1:0 ObjectPersonNumber ;
++SbjSg1:0 ObjectPersonNumber ;
 
 Lexicon SG2
-+Sg2:0 ObjectPersonNumber ;
++SbjSg2:0 ObjectPersonNumber ;
 
 Lexicon SG3
-+Sg3:0 ObjectPersonNumber ;
++SbjSg3:0 ObjectPersonNumber ;
 
 Lexicon SG4
-+Sg4:0 ObjectPersonNumber ;
++SbjSg4:0 ObjectPersonNumber ;
 
 Lexicon PL1
-+Pl1:0 Distributive ;
++SbjPl1:0 Distributive ;
 
 Lexicon PL2
-+Pl2:0 Distributive ;
++SbjPl2:0 Distributive ;
 
 Lexicon PL3
-+Pl3:0 Distributive ;
++SbjPl3:0 Distributive ;
 
 Lexicon Distributive
 @R.DISTRIBUTIVE.OFF@ ObjectPersonNumber ;
@@ -123,6 +125,8 @@ Lexicon ObjectPersonNumber
 @U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@ DOPL1 ;
 @U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@ DOPL2 ;
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@ DOPL3 ;
+@U.OBJECTPERSON.REFL@ DORefl ;
+@U.OBJECTPERSON.RECIP@ DORecip ;
 
 Lexicon DOSG1
 +DObjSg1:0 # ;
@@ -144,3 +148,9 @@ Lexicon DOPL2
 
 Lexicon DOPL3
 +DObjPl3:0 # ;
+
+Lexicon DORefl
++DObjRefl:0 # ;
+
+Lexicon DORecip
++DObjRecip:0 # ;
