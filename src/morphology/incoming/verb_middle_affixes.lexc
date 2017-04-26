@@ -9,6 +9,8 @@ Multichar_Symbols
 @U.OBJECTPERSON.1@
 @U.OBJECTPERSON.2@
 @U.OBJECTPERSON.3@
+@U.OBJECTPERSON.REFL@
+@U.OBJECTPERSON.RECIP@
 @U.OBJECTNUMBER.SG@
 @U.OBJECTNUMBER.PL@
 @U.PREFIX.MIDDLE@
@@ -27,13 +29,23 @@ LEXICON Transitive-Markers
 @U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@yi   gi-Business;
 @U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@gimi Middle-Flag;
 @U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@nihi                                        gi-Business;
-! Some Tsuut'ina dialects have 1PL/2PL nahi-, rather than nihi- (or both)
+! Some Tsuut'ina dialects have 1PL/2PL nahi-, rather than nihi- (or both).
+! For testing purposes, we'll only include nihi- for now.
 !!@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@nahi                                      gi-Business;
 @U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@nihi                                        gi-Business;
 !!@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@nahi                                      gi-Business;
 @U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.3@gimi Middle-Flag;
 @U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@giyi Middle-Flag;
 @U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@gu   gi-Business;
+
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.SG@idi                         Middle-Flag;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@idi      Middle-Flag;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@idi      Middle-Flag;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.REFL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@igidi    Middle-Flag;
+
+! Reciprocals only occur with plural subjects (and, by extension, plural objects)
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.RECIP@@U.SUBJECTNUMBER.PL@atłi                gi-Business;
+
 
 LEXICON gi-Business
 
