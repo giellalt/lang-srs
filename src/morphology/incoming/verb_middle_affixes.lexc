@@ -6,21 +6,41 @@ Multichar_Symbols
 @U.SUBJECTPERSON.4@
 @U.SUBJECTNUMBER.SG@
 @U.SUBJECTNUMBER.PL@
+@U.OBJECTPERSON.1@
+@U.OBJECTPERSON.2@
+@U.OBJECTPERSON.3@
 @U.OBJECTNUMBER.SG@
 @U.OBJECTNUMBER.PL@
 @U.PREFIX.MIDDLE@
+@U.VALENCE.TRANSITIVE@
 
 LEXICON Root
 
-!0-IPFV ;
-!
-!LEXICON 0-IPFV
-!
-!@U.ASPECT.IPFV@@U.TAMA.%0@   0-IPFV-AFF ;
-!@U.ASPECT.IPFV@@U.TAMA.%0i@  0-IPFV-AFF ;  ! FIXME
-!
-!LEXICON 0-IPFV-AFF
+gi-Business;
+@U.VALENCE.TRANSITIVE@ Transitive-Markers;
 
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@U.PREFIX.MIDDLE@gi    #;
-@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@@U.PREFIX.MIDDLE@ts'i  #;
-                                                              #;
+LEXICON Transitive-Markers
+
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@si                                          gi-Business;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@ni                                          gi-Business;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.3@mi   gi-Business;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@yi   gi-Business;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@gimi Middle-Flag;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@nihi                                        gi-Business;
+! Some Tsuut'ina dialects have 1PL/2PL nahi-, rather than nihi- (or both)
+!!@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@nahi                                      gi-Business;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@nihi                                        gi-Business;
+!!@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@nahi                                      gi-Business;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.3@gimi Middle-Flag;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@giyi Middle-Flag;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@gu   gi-Business;
+
+LEXICON gi-Business
+
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@gi    Middle-Flag;
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@ts'i  Middle-Flag;
+                                             #;
+
+LEXICON Middle-Flag
+
+@U.PREFIX.MIDDLE@   #;
