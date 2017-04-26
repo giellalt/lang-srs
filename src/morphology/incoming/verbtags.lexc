@@ -23,14 +23,23 @@ Multichar_Symbols
 +Prog
 +Pot
 
-+Sg1
-+Sg2
-+Sg3
-+Sg4
-+Pl1
-+Pl2
-+Pl3
-+Pl4
++SbjSg1
++SbjSg2
++SbjSg3
++SbjSg4
++SbjPl1
++SbjPl2
++SbjPl3
++SbjPl4
+
++DObjSg1
++DObjSg2
++DObjSg3
++DObjSg4
++DObjPl1
++DObjPl2
++DObjPl3
++DObjPl4
 
 +Distr
 
@@ -72,16 +81,16 @@ Lexicon PersonNumber
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@ PL3 ;
 
 Lexicon SG1
-+Sg1:0 # ;
++Sg1:0 ObjectPersonNumber ;
 
 Lexicon SG2
-+Sg2:0 # ;
++Sg2:0 ObjectPersonNumber ;
 
 Lexicon SG3
-+Sg3:0 # ;
++Sg3:0 ObjectPersonNumber ;
 
 Lexicon SG4
-+Sg4:0 # ;
++Sg4:0 ObjectPersonNumber ;
 
 Lexicon PL1
 +Pl1:0 Distributive ;
@@ -93,6 +102,36 @@ Lexicon PL3
 +Pl3:0 Distributive ;
 
 Lexicon Distributive
-@R.DISTRIBUTIVE.OFF@ # ;
-@R.DISTRIBUTIVE.ON@+Distr:@R.DISTRIBUTIVE.ON@0 # ;
+@R.DISTRIBUTIVE.OFF@ ObjectPersonNumber ;
+@R.DISTRIBUTIVE.ON@+Distr:@R.DISTRIBUTIVE.ON@0 ObjectPersonNumber ;
 
+Lexicon ObjectPersonNumber
+@D.OBJECTPERSON@    # ;
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.SG@ DOSG1 ;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.SG@ DOSG2 ;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@ DOSG3 ;
+@U.OBJECTPERSON.4@@U.OBJECTNUMBER.SG@ DOSG4 ;
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@ DOPL1 ;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@ DOPL2 ;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@ DOPL3 ;
+
+Lexicon DOSG1
++DObjSg1:0 # ;
+
+Lexicon DOSG2
++DObjSg2:0 # ;
+
+Lexicon DOSG3
++DObjSg3:0 # ;
+
+Lexicon DOSG4
++DObjSg4:0 # ;
+
+Lexicon DOPL1
++DObjPl1:0 # ;
+
+Lexicon DOPL2
++DObjPl2:0 # ;
+
+Lexicon DOPL3
++DObjPl3:0 # ;
