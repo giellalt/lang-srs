@@ -53,23 +53,16 @@ twosided flag-diacritics
 def Grammar;
 
 read lexc verbtags.lexc
-def Tags
+define Tags;
 
-read regex Grammar Tags ;
+regex Grammar Tags ;
 
-#eliminate flags
-
-#echo ELIMINATE VALENCE
-#eliminate flag VALENCE
-#echo ELIMINATE TAMA
-#eliminate flag TAMA
-#echo ELIMINATE ASPECT
-#eliminate flag ASPECT
-#echo ELIMINATE SUBJECTPERSON
-#eliminate flag SUBJECTPERSON
-#echo ELIMINATE SUBJECTPERSON
-#eliminate flag SUBJECTNUMBER
-#echo ELIMINATE OBJECTNUMBER
-#eliminate flag OBJECTNUMBER
-#echo ELIMINATE DISTRIBUTIVE 
 #eliminate flag DISTRIBUTIVE
+#eliminate flag OBJECTNUMBER
+#eliminate flag OBJECTPERSON
+#eliminate flag VALENCE
+#eliminate flag TAMA
+#eliminate flag PREFIX
+#eliminate flag ASPECT
+#eliminate flag SUBJECTNUMBER
+#eliminate flag SUBJECTPERSON
