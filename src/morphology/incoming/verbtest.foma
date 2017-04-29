@@ -57,12 +57,12 @@ define Tags;
 
 regex Grammar Tags ;
 
+#eliminate flag TAMA
+#eliminate flag SUBJECTNUMBER
+#eliminate flag SUBJECTPERSON
 #eliminate flag DISTRIBUTIVE
 #eliminate flag OBJECTNUMBER
 #eliminate flag OBJECTPERSON
 #eliminate flag VALENCE
-#eliminate flag TAMA
 #eliminate flag PREFIX
 #eliminate flag ASPECT
-#eliminate flag SUBJECTNUMBER
-#eliminate flag SUBJECTPERSON
