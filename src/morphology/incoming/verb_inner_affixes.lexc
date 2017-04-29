@@ -9,6 +9,8 @@ Multichar_Symbols @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@
 @U.TAMA.yi-y@ @U.TAMA.yis-y@
 @U.TAMA.yi-a@ @U.TAMA.yii-a@
 @U.TAMA.yi@ @U.TAMA.yii@ @U.TAMA.yis@
+@U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@
+@U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@
 @U.SUBJECTPERSON.1@
 @U.SUBJECTPERSON.2@
 @U.SUBJECTPERSON.3@ @R.SUBJECTPERSON.3@ 
@@ -17,61 +19,13 @@ Multichar_Symbols @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@
 @U.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.PL@
 @D.PREFIX@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ 
 
-
 !
 ! TODO:
 !   * Once morphophonemic adaptations are in place, make sure they work as
-!     expected with all 0i, sii, nii, etc. paradigms (need to make sure that
-!     vowel lengths come out properly)
+!     expected with all 0i, sii, nii, etc. paradigms and i-IPFV/isis-PFV
+!     paradigms (need to make sure that vowel lengths and tone combinations
+!     come out properly)
 !
-
-! Problem 1: gi-hopping
-
-! gi- 3PL moves front of yi- 3SG.OBJ (3>3) and mi- 3SG.OBJ (1/2>3)
-! (It also moves out in front of yi- and mi- with oblique/indirect objects at
-!  the very far left edge of the verb -- basically, gi- will move as far left
-!  as possible to sit in front of a yi- or mi-)
-!
-! (Solution: Use a combination of flags to handle these special-order cases --
-!  treat them as precomposed strings that combine DO/IO and gi-)
-
-! 3PL > 1S 
-! sigiyísʔí "they saw me"
-! si- 1SG.OBJ, gi- 3PL, yís TAMA, ʔí "saw"
-
-! 3PL > 3S
-! giyiyísʔí
-! gi- 3PL, yi- 3SG.OBJ, yís TAMA, ʔí "saw"
-
-! 3PL > 3PL
-! gugiyísʔí
-! gu- 3PL.OBJ (3PL>3PL), gi- 3PL, yís TAMA, ʔí "saw"
-
-
-! Problem 2: Incorporated postpositions / oblique objects ("experiencer" cx's)
-! sàgúdilo "I'm sick"
-!   gúdilo ((HOW TO REPRESENT?))
-! si-    à   gú-  di   lo
-! 1SG.IO by  LEX  LEX  LEX
-
-! IPFV ("am sick"):
-! 1S sàgúdilo
-! 2S nàgúdilo
-! 3S màgúdilo
-! 1P nahàgúdilo
-! 2P nahàgúdilo
-! 3P gimàgúdilo
-! 4  gwàgúdilo   (u + a > wa)
-
-! PFV ("was sick, have been sick"):
-! 1S sàgúdiyílo
-! 2S nàgúdiyílo
-! 3S màgúdiyílo
-! 1P nahàgúdiyílo
-! 2P nahàgúdiyílo
-! 3P gimàgúdiyílo
-! 4  gwàgúdiyílo   (u + a > wa)
-
 
 
 LEXICON Root
@@ -932,4 +886,222 @@ LEXICON yii-POT-AFF-OuterPrefix
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas   #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@íí    #; 
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #; 
+
+
+!
+! ì-IPFV
+!
+LEXICON i-IPFV
+
+@U.ASPECT.IPFV@@U.TAMA.i@@D.PREFIX@          i-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.i@@R.PREFIX.INNER@    i-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.i@@R.PREFIX.MIDDLE@   i-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.i@@R.PREFIX.OUTER@    i-IPFV-AFF-OuterPrefix ;
+
+@U.ASPECT.IPFV@@U.TAMA.is@@D.PREFIX@         is-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.is@@R.PREFIX.INNER@   is-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.is@@R.PREFIX.MIDDLE@  is-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.is@@R.PREFIX.OUTER@   is-IPFV-AFF-OuterPrefix ;
+
+@U.ASPECT.IPFV@@U.TAMA.ii@@D.PREFIX@         ii-IPFV-AFF-NoPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.ii@@R.PREFIX.INNER@   ii-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.ii@@R.PREFIX.MIDDLE@  ii-IPFV-AFF-InnerPrefix ;
+@U.ASPECT.IPFV@@U.TAMA.ii@@R.PREFIX.OUTER@   ii-IPFV-AFF-OuterPrefix ;
+
+LEXICON i-IPFV-AFF-NoPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@i     #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ì     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@às    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ì     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
+
+LEXICON i-IPFV-AFF-InnerPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@i     #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ì     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@às    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ì     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
+
+LEXICON i-IPFV-AFF-OuterPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@í     #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@i     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as    #; ! CHECK: morphophonology works?
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ì     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
+
+
+LEXICON is-IPFV-AFF-NoPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@is    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@às    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
+
+LEXICON is-IPFV-AFF-InnerPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@is    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@às    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
+
+LEXICON is-IPFV-AFF-OuterPrefix
+! TODO: 2S, 3S, 3P, and 4 forms need to be reviewed
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ís    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@is    #; ! CHECK: morphophonology works?
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as    #; ! CHECK: morphophonology works? 
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ì     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
+
+
+LEXICON ii-IPFV-AFF-NoPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ii    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìì    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@às    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìì    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;
+
+LEXICON ii-IPFV-AFF-InnerPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ii    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìì    #; 
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@às    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìì    #;  
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;  
+
+LEXICON ii-IPFV-AFF-OuterPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@íí    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #; ! CHECK: morphophonology OK?
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as    #; ! CHECK: morphophonology OK? 
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìì    #; 
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #; 
+
+
+!
+! ì-si-PFV
+!
+LEXICON isi-PFV
+
+@U.ASPECT.PFV@@U.TAMA.isi@@D.PREFIX@          isi-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isi@@R.PREFIX.INNER@    isi-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isi@@R.PREFIX.MIDDLE@   isi-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isi@@R.PREFIX.OUTER@    isi-PFV-AFF-OuterPrefix ;
+
+@U.ASPECT.PFV@@U.TAMA.isis@@D.PREFIX@         isis-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isis@@R.PREFIX.INNER@   isis-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isis@@R.PREFIX.MIDDLE@  isis-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isis@@R.PREFIX.OUTER@   isis-PFV-AFF-OuterPrefix ;
+
+@U.ASPECT.PFV@@U.TAMA.isii@@D.PREFIX@         isii-PFV-AFF-NoPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.INNER@   isii-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.MIDDLE@  isii-PFV-AFF-InnerPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.OUTER@    isii-PFV-AFF-OuterPrefix ;
+
+LEXICON isi-PFV-AFF-NoPrefix
+! Two 3S, 3P, 4 forms are attested here (e.g., ìzìl, ììzil "3S got hot")
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí   #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ì     #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìì    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsas  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ì     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìì    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;
+
+LEXICON isi-PFV-AFF-InnerPrefix
+! Same forms as si-PFV-AFF-InnerPrefix; reuse those definitions here.
+! TODO: confirm that this works!
+                                             si-PFV-AFF-InnerPrefix;
+
+LEXICON isi-PFV-AFF-OuterPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology works? 
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isí   #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@i     #; ! CHECK: morphophonology works? 
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@isas  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ì     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
+
+
+LEXICON isis-PFV-AFF-NoPrefix
+! CHECK: 3S form requires confirmation in additional documentation
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isís  #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@sis   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsas  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
+
+LEXICON isis-PFV-AFF-InnerPrefix
+! Same forms as sis-PFV-AFF-InnerPrefix; reuse those definitions here.
+                                             sis-PFV-AFF-InnerPrefix;
+
+LEXICON isis-PFV-AFF-OuterPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology works? 
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isís  #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@is    #; ! CHECK: morphophonology works? 
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@isas  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
+
+
+LEXICON isii-PFV-AFF-NoPrefix
+! Two 3P, 4 forms are attested (e.g., gììdùn, gìsdùn '3P got a swelling')
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí  #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìì    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsàs  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìì    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
+
+LEXICON isii-PFV-AFF-InnerPrefix
+! Same forms as sii-PFV-AFF-InnerPrefix; reuse those definitions here.
+                                             sii-PFV-AFF-InnerPrefix;
+
+LEXICON isii-PFV-AFF-OuterPrefix
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology OK?
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isíí  #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #; ! CHECK: morphophonology OK?
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isaà  #; ! CHECK: morphophonology OK? 
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@isiì  #; ! CHECK: morphophonology OK? 
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@isas  #; ! CHECK: morphophonology OK? 
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìì    #; 
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #; 
 
