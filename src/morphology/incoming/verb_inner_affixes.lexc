@@ -2,10 +2,19 @@ Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.3@ @D.VALENCE.TRA
 
 !
 ! TODO:
+!
 !   * Once morphophonemic adaptations are in place, make sure they work as
 !     expected with all 0i, sii, nii, etc. paradigms and i-IPFV/isis-PFV
 !     paradigms (need to make sure that vowel lengths and tone combinations
 !     come out properly)
+!
+!   * Make sure that transitive verb forms are coming out properly (seems
+!     likely that this isn't entirely right at the moment, but test and see
+!     where this is at)
+!
+!   * Afterwards, make sure that the morphophonological adjustments needed
+!     for vowel sequences are in place (and tested; some preliminary code in
+!     verbtest.foma)
 !
 
 

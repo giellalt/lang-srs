@@ -52,10 +52,24 @@ read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o.
 twosided flag-diacritics
 def Grammar;
 
+#
+# TODO: move these morphophonological rules out to a separate foma script later
+# on, once they've been tested more extensively.
+#
+#source morphophonology.foma
+#define morphophonology;
+
+def tonedVowels [á|à|í|ì|ó|ò|ú|ù];
+def tonedVowelDeletion i -> 0 || _ tonedVowels;
+
 read lexc verbtags.lexc
 define Tags;
 
-regex Grammar Tags ;
+# To prevent morphophonology to be tripped up be intervening flags
+set flag-is-epsilon ON
+
+#regex Grammar Tags;
+regex [Grammar Tags] .o. tonedVowelDeletion;
 
 #eliminate flag TAMA
 #eliminate flag SUBJECTNUMBER
