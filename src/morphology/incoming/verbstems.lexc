@@ -26,11 +26,15 @@ nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG
 nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 
-tsídiitł'á[run-away]:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-tsídiitł'á[run-away]:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
-tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
-tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
+! TODO: mark tsí- as spreading H-tone rightward onto any tonally unmarked
+! syllables that aren't part of an inner conjugation 'chunk' (e.g.,
+! tsíts'idiyiitł'áł -> tsíts'ídíyiitł'áł "someone is running away", with
+! tone spreading rightward from tsí- up until the yii- inner inflection chunk)
+tsídiitł'á[run-away]:tsí_di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
+tsídiitł'á[run-away]:tsí_di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
+tsídiitł'á[run-away]:tsí_di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
+tsídiitł'á[run-away]:ná=tsí_di.tł'ásh    INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+tsídiitł'á[run-away]:tsí_di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
 
 !
 ! Transitive verbs.
