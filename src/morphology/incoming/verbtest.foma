@@ -46,21 +46,79 @@ def InsMiddle [..] -> "_" || "=" _ ~$["_"] .#. .o.
 
 def InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 
+# We temporarily keep the boundary symbol for inner affixes (".") in place
+# so that we can target morphophonology there more easily (especially when
+# aiming to drop the "weak" /i/ vowels that appear in inner lexical prefixes).
 read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
-            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+#            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+            "." -> "." InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
 
 twosided flag-diacritics
 def Grammar;
 
 #
-# TODO: move these morphophonological rules out to a separate foma script later
-# on, once they've been tested more extensively.
+# TODO: Move these morphophonological rules out to a separate script once
+# they've been more extensively tested.
 #
 #source morphophonology.foma
 #define morphophonology;
 
-def tonedVowels [á|à|í|ì|ó|ò|ú|ù];
-def tonedVowelDeletion i -> 0 || _ tonedVowels;
+def vowel [a|ā|á|à|i|ī|í|ì|o|ō|ó|ò|u|ū|ú|ù];
+def unmarkedVowel [a|i|o|u];
+def consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
+
+# Change ua -> wa (general phonological process; phonetically, /wa/ can be
+# realized as /wa/ or /ɔa/~/ɔˑ/, but this isn't represented orthographically)
+def uBeforeA u -> w || _ [a|á|à];
+
+# Change ái -> áa, áí -> áá, ài -> àà, ai -> aa. (TODO: check this against 
+# more examples, especially ài -> àà, which may vary between speakers. For
+# now, use this and see if we run into any problems with any of our test
+# cases.)
+def aBeforeI i -> a, í -> á || [a|á] _;
+def lowABeforeI ì ì -> à, i -> à, í -> á || à _;
+
+# Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh) (This rule may need to
+# change; some people prefer to spell these forms without the second /s/)
+def zhDevoicing z -> s || s _ h;
+
+# Change sz -> ss (dìszày -> dìssày) (This rule may need to change; some
+# people prefer to spell these forms without the second /s/)
+def zDevoicing z -> s || s _;
+
+# Remove any "weak" /i/ vowels from inner prefixes. (This makes it easier
+# to combine inner prefixes with our inner inflectional chunks -- we can
+# still provide the inner prefixes in our lexical entries as having vowels,
+# but can remove them before we end up with sequences of three "iii"s in
+# some inflected forms)
+def deletePrefixI i -> 0 || _ "." vowel;
+def deleteBoundarySymbol "." -> 0;
+
+# Stems that begin with /l/ combine with 2PL (a|à)s- to form (a|à)ł (e.g.,
+# /as+lí/ "you.PL are" -> [ałí]).  Rather than target flag diacritics here,
+# we instead use the symbol 'S' to represent the /s/ in any 2PL inflectional
+# chunks that are involved in this process.
+def lInitialStemsSbjPl2 S l -> ł;
+def lInitialStemsSbjPl2Cleanup S -> s;
+
+# Phonotactic restriction: in general, /sl/ sequences should be resolved as
+# /stł/ (e.g., /is+lí/ "I am" -> [istłí]), outside of 2PL forms.
+def slDissimilation s l -> s t ł;
+
+# Certain high-tone prefixes in Tsuut'ina (e.g., tsí- "flee", or í- from 
+# historical *uˑ-) spread high tone rightward onto unmarked syllables,
+# stopping at the first inflectional chunk (e.g., íts'idiyískid "they were
+# asked" comes out as íts'ídíyískid, with high tone spreading from í- onto
+# ts'i- and di-, but stopping at yi-).  We mark this spreading high tone
+# in lexical entries as an H after the vowel (e.g., tsíH, íH)
+#
+# TODO: For now, this rule applies to sequences of at most three unmarked
+# syllables that appear after a spreading H tone.  If it turns out that
+# there are words with a spreading H tone that involve more than three
+# unmarked syllables before the inflectional chunk, this rule will need to
+# change.
+def hToneSpreading a a -> á á, a -> á, i i -> í í, i -> í, o o -> ó ó, o -> ó, u u -> ú ú, u -> ú || H (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ (unmarkedVowel)+ (consonant)+ _;
+def hToneSpreadingCleanup H -> 0;
 
 read lexc verbtags.lexc
 define Tags;
@@ -69,7 +127,7 @@ define Tags;
 set flag-is-epsilon ON
 
 #regex Grammar Tags;
-regex [Grammar Tags] .o. tonedVowelDeletion;
+regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
 
 #eliminate flag TAMA
 #eliminate flag SUBJECTNUMBER
