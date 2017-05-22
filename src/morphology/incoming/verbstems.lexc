@@ -17,7 +17,7 @@ itsiy[cry]:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
 
 ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
 ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) CHECK
+ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG)
 ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
 
 nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
@@ -26,68 +26,160 @@ nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG
 nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
 
-! TODO: mark tsí- as spreading H-tone rightward onto any tonally unmarked
-! syllables that aren't part of an inner conjugation 'chunk' (e.g.,
-! tsíts'idiyiitł'áł -> tsíts'ídíyiitł'áł "someone is running away", with
-! tone spreading rightward from tsí- up until the yii- inner inflection chunk)
-tsídiitł'á[run-away]:tsí_di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-tsídiitł'á[run-away]:tsí_di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
-tsídiitł'á[run-away]:tsí_di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
-tsídiitł'á[run-away]:ná=tsí_di.tł'ásh    INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-tsídiitł'á[run-away]:tsí_di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
+tsídiitł'á[run-away]:tsíH_di.tł'á         INTR-0i-IPFV;  ! (IPFV; 0i-IPFV)
+tsídiitł'á[run-away]:tsíH_di.tł'ò         INTR-sii-PFV;  ! (PFV; sii-PFV)
+tsídiitł'á[run-away]:tsíH_di.tł'áł        INTR-yii-PROG; ! (PROG; yii-PROG)
+tsídiitł'á[run-away]:ná=tsíH_di.tł'ásh    INTR-0i-IPFV;  ! (REP; 0i-IPFV)
+tsídiitł'á[run-away]:tsíH_di.tl'ò         INTR-yii-POT;  ! (POT; yii-POT)
 
 !
 ! Transitive verbs.
 !
-yiʔí[see]:ʔí                             TRANS-yi-a-PFV; ! (FIXME: IPFV lemma)
+yiʔí[see]:ʔí                             TRANS-yi-a-PFV; ! (FIXME: IPFV lemma?)
 
 
 !
-! Non-past/imperfective (IPFV) forms
+! TODO: fill in other transitivity options in the continuation lexica below!
+!
+
+!
+! 0-IPFV forms
 !
 LEXICON INTR-0-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@ Verbsuffixes;
 
+LEXICON INTR-0s-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0s@ Verbsuffixes;
+
 LEXICON INTR-0i-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0i@ Verbsuffixes;
 
+
+!
+! ni-IPFV forms
+!
 LEXICON INTR-ni-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.ni@ Verbsuffixes;
 
+LEXICON INTR-nis-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.nis@ Verbsuffixes;
+
+LEXICON INTR-nii-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.nii@ Verbsuffixes;
+
+
 !
-! Past/perfective (PFV) forms
+! ni-PFV forms
 !
 LEXICON INTR-ni-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.ni@ Verbsuffixes;
 
+LEXICON INTR-nis-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.nis@ Verbsuffixes;
+
+LEXICON INTR-nii-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.nii@ Verbsuffixes;
+
+
+!
+! si-PFV forms
+!
+LEXICON INTR-si-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.si@ Verbsuffixes;
+
+LEXICON INTR-sis-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.sis@ Verbsuffixes;
+
 LEXICON INTR-sii-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.sii@ Verbsuffixes;
 
+
+!
+! yi-y-PFV forms
+!
 LEXICON INTR-yi-y-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@ Verbsuffixes;
 
+LEXICON INTR-yis-y-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yis-y@ Verbsuffixes;
+
+LEXICON INTR-yii-y-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yii-y@ Verbsuffixes;
+
+
+!
+! yi-a-PFV forms
+!
 LEXICON INTR-yi-a-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@ Verbsuffixes;
 
+LEXICON INTR-yis-a-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yis-a@ Verbsuffixes;
+
+LEXICON INTR-yii-a-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yii-a@ Verbsuffixes;
 
 LEXICON TRANS-yi-a-PFV
 @U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@ Verbsuffixes;
 
+LEXICON TRANS-yis-a-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yis-a@ Verbsuffixes;
+
+LEXICON TRANS-yii-a-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yii-a@ Verbsuffixes;
+
 
 !
-! Progressive (PROG) forms
+! yi-PROG forms
 !
 LEXICON INTR-yi-PROG
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@ Verbsuffixes;
 
+LEXICON INTR-yis-PROG
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yis@ Verbsuffixes;
+
 LEXICON INTR-yii-PROG
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yii@ Verbsuffixes;
 
+
 !
-! Potential (POT) forms
+! yi-POT forms
 !
+LEXICON INTR-yi-POT
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yi@ Verbsuffixes;
+
+LEXICON INTR-yis-POT
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yis@ Verbsuffixes;
+
 LEXICON INTR-yii-POT
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yii@ Verbsuffixes;
+
+
+!
+! i-IPFV forms
+!
+LEXICON INTR-i-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.i@ Verbsuffixes;
+
+LEXICON INTR-is-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.is@ Verbsuffixes;
+
+LEXICON INTR-ii-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.ii@ Verbsuffixes;
+
+
+!
+! isi-PFV forms
+!
+LEXICON INTR-isi-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.isi@ Verbsuffixes;
+
+LEXICON INTR-isis-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.isis@ Verbsuffixes;
+
+LEXICON INTR-isii-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.isii@ Verbsuffixes;
+
 
 
 !
