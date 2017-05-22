@@ -3,22 +3,6 @@ Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBU
 !
 ! TODO:
 !
-!   * Rewrite this again from scratch:
-!
-!       * Defining separate, clearer routes for intransitive and transitive forms (so that changes to one can't
-!         possible affect the other)
-!
-!       * Make sure that gi- and ts'i- always show up with 3PL and 4 subjects! (ARGH)
-!
-!       * Make sure that all of the special 3>3 cases work they way they should!
-!
-!       * Find a neater way of preventing 1SG>1SG, 2SG>2SG, etc. (the filter lexicon at the end isn't bad, but
-!         it seems to be causing us some grief now)
-!
-
-!
-! TODO:
-!
 !   * Figure out how best to model indefinite 3SG objects ('something, someone (unstated or unspecific)', e.g.,
 !     iyistsàd "I ate (it, something)" -- are these lexically determined/restricted, or are they part of every
 !     direct object paradigm?  What happens with 3SG/3PL subjects: can you still get i-, or does this have to
@@ -27,8 +11,6 @@ Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBU
 !     some verbs can also take i- objects, as well as the other usual direct object markers)
 !
 !       @U.OBJECTNUMBER.SG@@U.OBJECTPERSON.INDEF@@D.SUBJECTPERSON.3@i                           Outer-Subjects;
-
-
 
 
 LEXICON Root
