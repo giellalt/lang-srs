@@ -17,6 +17,9 @@ def MiddleAffixes
 read lexc verb_outer_affixes.lexc
 def OuterAffixes
 
+read lexc verb_oblique_affixes.lexc
+def ObliqueAffixes
+
 # Mark prefix type (insert corresponding flags to the
 # original prefixes we know to be present from the lexical entry.
 # ab=cd_ef.gh => ab@P.PREFIX.OUTER@=cd@P.PREFIX.MIDDLE@_ef@P.PREFIX.INNER@.gh
