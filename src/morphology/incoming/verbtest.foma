@@ -55,6 +55,10 @@ def InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
 #            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
             "." -> "." InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+def WordForms;
+
+# Concatenate ObliqueAffixes and the other inflectional FSTs.
+read regex WordForms .o. [..] -> ObliqueAffixes || .#. _;
 
 twosided flag-diacritics
 def Grammar;
@@ -80,6 +84,12 @@ def uBeforeA u -> w || _ [a|á|à];
 # cases.)
 def aBeforeI i -> a, í -> á || [a|á] _;
 def lowABeforeI ì ì -> à, i -> à, í -> á || à _;
+
+# Change ài -> à, ái -> á, ai -> a. (TODO: check this against more verb forms.
+# I have the feeling we'll run into problems with words like náagóshí
+# "butcher", but we can always handle those cases with another symbol like "I"
+# when we come to them)
+def iBeforeA i -> 0 || _ [á|à|a];
 
 # Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh) (This rule may need to
 # change; some people prefer to spell these forms without the second /s/)
@@ -130,7 +140,7 @@ define Tags;
 set flag-is-epsilon ON
 
 #regex Grammar Tags;
-regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
+regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
 
 #eliminate flag TAMA
 #eliminate flag SUBJECTNUMBER
