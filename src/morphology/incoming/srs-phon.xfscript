@@ -1,0 +1,22 @@
+# Morpheme-boundary dependent rules
+
+# Removal of morpheme boundary marker characters
+
+read regex [ = -> 0 ] ;
+define OuterBoundaryRemove ;
+
+read regex [ %_ -> 0 ] ;
+define MiddleBoundaryRemove ;
+
+read regex [ %. -> 0 ] ;
+define InnerBoundaryRemove ;
+
+read regex [ OuterBoundaryRemove
+.o. MiddleBoundaryRemove
+.o. InnerBoundaryRemove
+] ;
+
+# Morpheme-boundary independent rules
+
+# Final composition
+
