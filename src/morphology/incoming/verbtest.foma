@@ -67,8 +67,9 @@ def Grammar;
 # TODO: Move these morphophonological rules out to a separate script once
 # they've been more extensively tested.
 #
-#source morphophonology.foma
-#define morphophonology;
+# Implemented Giella infra standard naming for morphophonology xfscript file
+# source srs-phon.xfscript
+# define MorphoPhonology;
 
 def vowel [a|ā|á|à|i|ī|í|ì|o|ō|ó|ò|u|ū|ú|ù];
 def unmarkedVowel [a|i|o|u];
@@ -133,14 +134,24 @@ def slDissimilation s l -> s t ł;
 def hToneSpreading a a -> á á, a -> á, i i -> í í, i -> í, o o -> ó ó, o -> ó, u u -> ú ú, u -> ú || H (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ (unmarkedVowel)+ (consonant)+ _;
 def hToneSpreadingCleanup H -> 0;
 
+#### End of Morphophonology #####
+
 read lexc verbtags.lexc
 define Tags;
 
 # To prevent morphophonology to be tripped up be intervening flags
 set flag-is-epsilon ON
 
-#regex Grammar Tags;
+# regex Grammar Tags;
+
+# Tentative code for dealing with Morphophonology as read for a separate
+# file. Though we would want to figure a way to compose each rewrite rule
+# the the morphological component one-by-one for faster compilation.
+
+# regex [Grammar Tags] .o. MorphoPhonology ;
+
 regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
+
 
 #eliminate flag TAMA
 #eliminate flag SUBJECTNUMBER
