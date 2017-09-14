@@ -63,6 +63,14 @@ GT_DISTRO_SRCS=affixes/verb_inner_affixes.lexc  \
 
 ### BEGIN: Local processing: ###
 
+### List additional targets in the following variable, for build targets not
+### covered by other means. This comes ***in addition to*** what you can do by
+### just targeting lexicon.*: lexicon.tmp.*, and is useful if you want to build
+### separate fst's that need further treatment in the src/ dir. See the language
+### gle/ for an example of how this is used.
+
+GIELLA_LOCAL_TARGETS=
+
 SRS_VERBS=
 if CAN_HFST
 SRS_VERBS+=verb_lexicon.hfst
