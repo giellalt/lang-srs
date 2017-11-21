@@ -1,4 +1,10 @@
-# Morpheme-boundary dependent rules
+# Read in the existing grammar.
+
+# Rules applied before morpheme boundaries are removed.
+#
+# (Compose with existing grammar one at a time, as we go, or compose them one
+# by one in the final step below; by adding rules one by one, we avoid issues
+# with all-at-once model composition taking minutes, rather than seconds)
 
 # Removal of morpheme boundary marker characters
 
@@ -16,7 +22,7 @@ read regex [ OuterBoundaryRemove
 .o. InnerBoundaryRemove
 ] ;
 
-# Morpheme-boundary independent rules
+# Rules applied after morpheme boundaries are removed.
 
 # Final composition
 
