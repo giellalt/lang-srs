@@ -2,53 +2,90 @@ Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.3@ @D.VALENCE.TRA
 
 LEXICON Root
 
-@U.VALENCE.IMPERSONAL@                                  #;
-@U.VALENCE.INTRANSITIVE@                                SubjectOnly;
-@U.VALENCE.TRANSITIVE@                                  SubjectAndDirectObject;
-@U.VALENCE.OBLIQUEOBJECT@                               #;  ! FIXME
-@U.VALENCE.DITRANSITIVE@                                #;  ! FIXME
-@U.VALENCE.EXPERIENCER@                                 IndirectObjectOnly;
-@U.VALENCE.TRANSITIONAL@                                SubjectAndDirectObject;
+@U.VALENCE.IMPERSONAL@                   NoDistributive;
+@U.VALENCE.INTRANSITIVE@                 SubjectOnly;
+@U.VALENCE.TRANSITIVE@                   SubjectAndDirectObject;
+@U.VALENCE.OBLIQUEOBJECT@                SubjectAndObliqueObject;
+@U.VALENCE.DITRANSITIVE@                 SubjectDirectObjectOrObliqueObject;
+@U.VALENCE.EXPERIENCER@                  ObliqueObjectOnly;
+@U.VALENCE.TRANSITIONAL@                 SubjectAndDirectObject;
 
 
 LEXICON SubjectOnly
 
 ! In intransitive verbs, distributive forms are only found with plural and
 ! impersonal (4th person) subjects.
-@U.SUBJECTNUMBER.PL@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà                    #;
-@U.SUBJECTNUMBER.PL@@P.DISTRIBUTIVE.OFF@                                     #;
-@U.SUBJECTPERSON.4@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà                     #;
-@U.SUBJECTPERSON.4@@P.DISTRIBUTIVE.OFF@                                      #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@P.DISTRIBUTIVE.OFF@                  #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@P.DISTRIBUTIVE.OFF@                  #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@P.DISTRIBUTIVE.OFF@                  #;
+@U.SUBJECTNUMBER.PL@                                              Distributive;
+@U.SUBJECTPERSON.4@                                               Distributive;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@                         NoDistributive;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@                         NoDistributive;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@                         NoDistributive;
 
 
-LEXICON SubjectAndDirectObject
-
-! In transitive and 'transitional' transitive verbs, distributive forms can refer either to
-! subjects (plural or impersonal/4th-person) or to (direct) objects.
-@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.PL@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà   #;
-@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.PL@@P.DISTRIBUTIVE.OFF@                    #;
-@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.PL@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà   #;
-@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.PL@@P.DISTRIBUTIVE.OFF@                    #;
-@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.SG@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà   #;
-@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.SG@@P.DISTRIBUTIVE.OFF@                    #;
-@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà    #;
-@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@@P.DISTRIBUTIVE.OFF@                     #;
-@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.SG@                                        #;
-
-
-LEXICON IndirectObjectOnly
+LEXICON ObliqueObjectOnly
 
 ! In experiencer verbs, distributive forms are only found with plural and
 ! impersonal (4th person) indirect object marking.  (e.g., gimádàgúdìlo "they
 ! are all sick (each and every one of them", gwádàgúdìlo "people are all sick")
-@U.OBLIQUENUMBER.PL@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà                    #;
-@U.OBLIQUENUMBER.PL@@P.DISTRIBUTIVE.OFF@                                     #;
-@U.OBLIQUEPERSON.4@@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà                     #;
-@U.OBLIQUEPERSON.4@@P.DISTRIBUTIVE.OFF@                                      #;
-@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.1@@P.DISTRIBUTIVE.OFF@                  #;
-@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.2@@P.DISTRIBUTIVE.OFF@                  #;
-@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@@P.DISTRIBUTIVE.OFF@                  #;
+@U.OBLIQUENUMBER.PL@                                              Distributive;
+@U.OBLIQUEPERSON.4@                                               Distributive;
+@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.1@                         NoDistributive;
+@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.2@                         NoDistributive;
+@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@                         NoDistributive;
 
+
+LEXICON SubjectAndDirectObject
+
+! In transitive and 'transitional' transitive verbs, distributive forms can
+! refer either to subjects (plural or impersonal/4th-person) or to direct
+! objects.
+@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.PL@                           Distributive;
+@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.PL@                           Distributive;
+@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.SG@                           Distributive;
+@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@                            Distributive;
+@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.SG@                         NoDistributive;
+
+
+LEXICON SubjectAndObliqueObject
+
+! In verbs that take subject and oblique object marking (but no direct object
+! marking), the distributive marker can refer either to subjects or oblique
+! objects.
+@U.SUBJECTNUMBER.PL@@U.OBLIQUENUMBER.PL@                          Distributive;
+@U.SUBJECTNUMBER.SG@@U.OBLIQUENUMBER.PL@                          Distributive;
+@U.SUBJECTNUMBER.PL@@U.OBLIQUENUMBER.SG@                          Distributive;
+@U.SUBJECTPERSON.4@@U.OBLIQUENUMBER.SG@                           Distributive;
+@U.SUBJECTNUMBER.SG@@U.OBLIQUENUMBER.SG@                        NoDistributive;
+
+
+!
+! FIXME FROMHERE: make sure this only provides one pathway out per combination
+! of subject, direct object, and oblique object conditions!
+!
+LEXICON SubjectDirectObjectOrObliqueObject
+
+@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.SG@@U.OBLIQUENUMBER.SG@     NoDistributive;
+@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.SG@@U.OBLIQUENUMBER.PL@       Distributive;
+@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.PL@@U.OBLIQUENUMBER.SG@       Distributive;
+@U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.PL@@U.OBLIQUENUMBER.PL@       Distributive;
+
+@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.SG@@U.OBLIQUENUMBER.SG@       Distributive;
+@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.SG@@U.OBLIQUENUMBER.PL@       Distributive;
+@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.PL@@U.OBLIQUENUMBER.SG@       Distributive;
+@U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.PL@@U.OBLIQUENUMBER.PL@       Distributive;
+
+!@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@@U.OBLIQUENUMBER.SG@        Distributive;
+!@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@@U.OBLIQUENUMBER.PL@        Distributive;
+!@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.PL@@U.OBLIQUENUMBER.SG@        Distributive;
+!@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.PL@@U.OBLIQUENUMBER.PL@        Distributive;
+
+
+LEXICON Distributive
+
+! Distributive marking is optional on any forms where it could potentially
+! appear.
+@P.DISTRIBUTIVE.ON@@U.PREFIX.OUTER@dà                                        #;
+@P.DISTRIBUTIVE.OFF@                                                         #;
+
+LEXICON NoDistributive
+@P.DISTRIBUTIVE.OFF@                                                         #;

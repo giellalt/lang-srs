@@ -90,7 +90,15 @@ def lowABeforeI ì ì -> à, i -> à, í -> á || à _;
 # I have the feeling we'll run into problems with words like náagóshí
 # "butcher", but we can always handle those cases with another symbol like "I"
 # when we come to them)
-def iBeforeA i -> 0 || _ [á|à|a];
+def iBeforeA i -> 0 || _ [á|a|à];
+
+# Change iò -> ò, io -> o, ió -> ó (e.g., mi-oghà -> moghà; mostly applies to
+# oblique object markers)
+def iBeforeO i -> 0 || _ [ó|o|ò];
+
+# Change uo -> o (e.g., gu-oghà -> goghà; again, mostly applies to oblique
+# object markers)
+def uBeforeO u -> 0 || _ [ó|o|ò];
 
 # Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh) (This rule may need to
 # change; some people prefer to spell these forms without the second /s/)
@@ -150,7 +158,7 @@ set flag-is-epsilon ON
 
 # regex [Grammar Tags] .o. MorphoPhonology ;
 
-regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
+regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. iBeforeO .o. uBeforeO .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
 
 
 #eliminate flag TAMA

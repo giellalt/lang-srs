@@ -1,4 +1,5 @@
-Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @D.TAMA.si@ @R.TAMA.si@ @U.TAMA.sii@ @D.TAMA.sii@ @R.TAMA.sii@ @U.TAMA.sis@ @D.TAMA.sis@ @R.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.OUTERSUBJECT.ON@ @U.DIRECTOBJECT.NOMINAL@ @U.DIRECTOBJECT.NONE@ @U.OBJECTPERSON.INDEF@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @R.OUTERSUBJECT.ON@ @P.GI.ON@ @D.GI@ @R.GI@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.TRANSITIONAL@
+Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @D.TAMA.si@ @R.TAMA.si@ @U.TAMA.sii@ @D.TAMA.sii@ @R.TAMA.sii@ @U.TAMA.sis@ @D.TAMA.sis@ @R.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.OUTERSUBJECT.ON@ @U.DIRECTOBJECT.NOMINAL@ @U.DIRECTOBJECT.NONE@ @U.OBJECTPERSON.INDEF@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @R.OUTERSUBJECT.ON@ @P.GI.ON@ @D.GI@ @R.GI@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.TRANSITIONAL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.REFL@ @U.OBLIQUEPERSON.RECIP@
+
 
 !
 ! TODO:
@@ -16,27 +17,30 @@ Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBU
 LEXICON Root
 
 @U.VALENCE.INTRANSITIVE@                                Intransitive-Markers;
+@U.VALENCE.OBLIQUEOBJECT@                               Intransitive-Markers;
 @U.VALENCE.TRANSITIVE@                                  Transitive-Markers;
-
-! TODO: handle these other transitivity classes properly here! FIXME
+@U.VALENCE.DITRANSITIVE@                                Transitive-Markers;
 @U.VALENCE.IMPERSONAL@                                  #;
-@U.VALENCE.OBLIQUEOBJECT@                               #;
-@U.VALENCE.DITRANSITIVE@                                #;
 @U.VALENCE.EXPERIENCER@                                 #;
+
+! TODO: handle this last transitivity classes properly here! FIXME AND TEST
 @U.VALENCE.TRANSITIONAL@                                #;
 
 
 LEXICON Intransitive-Markers
 
-! With intransitive verbs, the only two affixes that can appear in this region
-! of the verb are the two 'outer' subject markers gi- 3PL and ts'i- 4SG.
+! With intransitive and oblique object verbs, the only two affixes that can
+! appear in this region of the verb are the two 'outer' subject markers gi-
+! 3PL (if it hasn't occurred earlier in the verb, which can happen with some
+! oblique object forms) and ts'i- 4SG.
 
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@                         #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@                         #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                         #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@                         #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@                         #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@P.PREFIX.MIDDLE@gi      #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@R.GI@                   #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gi #;
 @U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@@P.PREFIX.MIDDLE@ts'i    #;
 
 
@@ -98,6 +102,14 @@ LEXICON 3SG-Direct-Objects
 ! when this is the first occurrence of gi- (@D.GI@, followed by
 ! @P.GI.ON@), and another for the case when gi- has already been
 ! encountered/expressed (@R.GI@).
+!
+! (Technically, DIRECTOBJECT.NOMINAL isn't the right label: this
+! really has to do with whether or not the corresponding referent
+! is given / accessible in discourse.  You can also get forms
+! like this where the pronominal marking on the verb is absent,
+! but where no full noun is present in this clause (or even
+! utterance) -- if that referent is recoverable.  Maybe a better
+! value would be DIRECTOBJECT.GIVEN?)
 @U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Outer-Subjects;
 @U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@R.GI@@P.PREFIX.MIDDLE@yi   Filter-Transitives;
 @U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@giyi   Filter-Transitives;
@@ -123,6 +135,7 @@ LEXICON 3PL-Direct-Objects
 LEXICON Reflexive-Direct-Objects
 
 ! Note 3PL igidi-, 4SG its'idi-
+! TODO: check 4SG reflective direct object form! (variation here)
 @U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@idi                  Filter-Transitives;
 @U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@idi                  Filter-Transitives;
 @U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.SG@idi                  Filter-Transitives;
@@ -137,7 +150,6 @@ LEXICON Reciprocal-Direct-Objects
 
 ! Reciprocal forms (only with plural and 4th-person subjects, e.g., atłiyasʔí "you saw each other",
 ! astłits'áʔí "someone saw each other")
-!
 @U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@atłi                  Filter-Transitives;
 @U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@astłi                 Filter-Transitives;
 @U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@atłi                  Filter-Transitives;
@@ -166,36 +178,150 @@ LEXICON Filter-Transitives
 ! subject-object combinations are semantically plausible.
 
 ! No 1SG > 1SG ("I saw me") or 1SG > 1PL ("I saw us").
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@    #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@    #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    #;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    Filter-Ditransitives;
 
 ! No 2SG > 2SG ("you saw you") or 2SG > 2PL ("you saw you guys").
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@    #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@    #;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    #;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    Filter-Ditransitives;
 
 ! No 1PL > 1SG ("we saw me") or 1PL > 1PL ("we saw us").
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@    #;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    #;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@    #;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    #;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    Filter-Ditransitives;
 
 ! No 2PL > 2SG ("you guys saw you") or 2PL > 2PL ("you guys saw you guys").
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@    #;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    #;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@    #;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    #;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.3@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@    Filter-Ditransitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.3@    Filter-Ditransitives;
 
 ! All 3SG/3PL/4 forms are fine, since combinations of subjects and direct
 ! objects in these persons that have special morphological realizations
 ! are handled elsewhere above.
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                                         #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@                                         #;
-@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@                                         #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                                         Filter-Ditransitives;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@                                         Filter-Ditransitives;
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@                                         Filter-Ditransitives;
 
 ! All reflexive and reciprocal forms are fine.
-@U.OBJECTPERSON.REFL@                                                           #;
-@U.OBJECTPERSON.RECIP@                                                          #;
+@U.OBJECTPERSON.REFL@                                                           Filter-Ditransitives;
+@U.OBJECTPERSON.RECIP@                                                          Filter-Ditransitives;
+
+
+LEXICON Filter-Ditransitives
+
+@U.VALENCE.TRANSITIVE@                                                          #;
+@U.VALENCE.DITRANSITIVE@                                                        Filter-Subject-Oblique;
+
+
+LEXICON Filter-Subject-Oblique
+
+! Only provide paths out of this lexicon for ditransitive forms
+! whose subject-oblique object combinations are semantically
+! plausible.
+
+! No 1SG > 1SG ("I saw me") or 1SG > 1PL ("I saw us").
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.2@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.2@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+
+! No 2SG > 2SG ("you saw you") or 2SG > 2PL ("you saw you guys").
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.1@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.1@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+
+! No 1PL > 1SG ("we saw me") or 1PL > 1PL ("we saw us").
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.2@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.2@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+
+! No 2PL > 2SG ("you guys saw you") or 2PL > 2PL ("you guys saw you guys").
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.1@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.1@    Filter-Direct-Oblique;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    Filter-Direct-Oblique;
+
+! All 3SG/3PL/4 forms are fine, since combinations of subjects and direct
+! objects in these persons that have special morphological realizations
+! are handled elsewhere above.
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@                                           Filter-Direct-Oblique;
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.PL@                                           Filter-Direct-Oblique;
+@U.OBLIQUEPERSON.4@@U.OBLIQUENUMBER.SG@                                           Filter-Direct-Oblique;
+
+! All reflexive and reciprocal forms are fine at this point (we'll handle them more below).
+@U.OBLIQUEPERSON.REFL@                                                            Filter-Direct-Oblique;
+@U.OBLIQUEPERSON.RECIP@                                                           Filter-Direct-Oblique;
+
+
+LEXICON Filter-Direct-Oblique
+
+! Only provide paths out of this lexicon for ditransitive forms
+! whose direct object-oblique object combinations are semantically
+! plausible.
+
+! No DOBJ.1SG > IOBJ.1SG ("gave me to me") or DOBJ.1SG > IOBJ.1PL ("gave me to us").
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.2@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.4@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.2@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    #;
+
+! No DOBJ.2SG > IOBJ.2SG ("gave you to you") or DOBJ.2SG > IOBJ.2PL ("gave you to you guys").
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.1@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.4@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.1@    #;
+@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    #;
+
+! No DOBJ.1PL > IOBJ.1SG ("gave us to me") or DOBJ.1PL > IOBJ.1PL ("gave us to us").
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.2@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.4@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.2@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.1@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    #;
+
+! No DOBJ.2PL > IOBJ.2SG ("gave you guys to you") or DOBJ.2PL > IOBJ.2PL ("gave you guys to you guys").
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.1@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.3@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.SG@@U.OBLIQUEPERSON.4@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.1@    #;
+@U.OBJECTNUMBER.PL@@U.OBJECTPERSON.2@@U.OBLIQUENUMBER.PL@@U.OBLIQUEPERSON.3@    #;
+
+! All 3SG/3PL/4 forms are fine, since combinations of subjects and direct
+! objects in these persons that have special morphological realizations
+! are handled elsewhere above.
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@                                         #;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@                                         #;
+@U.OBJECTPERSON.4@@U.OBJECTNUMBER.SG@                                         #;
+
+! Make sure that at most one reflexive or reciprocal form appears as a
+! direct object or indirect object (i.e., no DObj.REFL/RECIP-IObj.REFL/RECIP
+! combinations)
+@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.1@                                      #;
+@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.2@                                      #;
+@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.3@                                      #;
+@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.4@                                      #;
+@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.1@                                      #;
+@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.2@                                      #;
+@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.3@                                      #;
+@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.4@                                      #;
+
+@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.1@                                     #;
+@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.2@                                     #;
+@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.3@                                     #;
+@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.4@                                     #;
+@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.1@                                     #;
+@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.2@                                     #;
+@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.3@                                     #;
+@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.4@                                     #;
+
+! TODO: 'They fed themselves to each other'? (REFL-RECIP)
+! TODO: 'They fed each other to themselves'? (RECIP-REFL)
