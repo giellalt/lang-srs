@@ -8,16 +8,20 @@
 # set -x
 
 # Language being tested, ISO 639-1 code if available:
-GTLANG2=srs
+giella_lang=@GTLANG@
+giella2c_lang=@GTLANG2@
 
-# Directory variables:
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-top_srcdir="$SCRIPT_DIR/.."
-builddir="."
+# Directory variables from configure:
+top_srcdir=@top_srcdir@
+top_builddir=@top_builddir@
+giella_core=@GIELLA_CORE@
+
+# Other directory variables:
+SCRIPT_DIR=$top_srcdir/devtools/
 spellerdir=tools/spellcheckers/fstbased/desktop/hfst
 
 # File variables:
-engine=to
+engine=vk
 typos_file="$top_srcdir/test/data/typos.txt"
 file_spesifier="$(basename ${typos_file} .txt)"
 speller_test_data=speller_test_data.txt
@@ -25,33 +29,21 @@ speller_input=speller_input.${engine}.txt
 speller_output=speller_output.${engine}.txt
 speller_timeusage=speller_timeusage.${engine}.txt
 speller_results="$SCRIPT_DIR/speller_result_${file_spesifier}.${engine}.html"
-suggtiming="no"
 
 # Other variables:
 DATE=$(date +%Y%m%d)
 TESTTIME=$(date +%H%M)
 
-giella_core=$GTHOME/giella-core
-
-# Number of suggestions requested:
-suggnumber=10
-
 function print_usage() {
     echo "Usage: $0 [OPTIONS...]"
-    echo "Test the hfst-ospell-office command line speller using typos data"
+    echo "Test the $giella_lang speller using voikkospell and typos data"
     echo
     echo "  -h, --help          Print this usage info"
-    echo "  -b, --builddir DIR  Specify top build directory relative to"
-    echo "                      the directory containing configure.ac"
-    echo "  -s, --suggestion-timing"
-    echo "                      Records the time it takes to generate the"
-    echo "                      suggestions for each input word. This causes"
-    echo "                      the testing to run ca 65 % slower."
     echo
 }
 
 # Wrong usage - short instruction:
-if test $# -ge 4 ; then
+if test $# -ge 2 ; then
     print_usage
     exit 1
 fi
@@ -61,22 +53,9 @@ while test $# -ge 1 ; do
     if test x$1 = x--help -o x$1 = x-h ; then
         print_usage
         exit 0
-    elif test x$1 = x--builddir -o x$1 = x-b ; then
-        if test -z "$2" ; then
-            print_usage
-            exit 1
-        else
-            builddir="$2"
-            shift
-        fi
-    elif test x$1 = x--suggestion-timing -o x$1 = x-s ; then
-        suggtiming="yes"
     fi
     shift
 done
-
-# Set the top build dir after parameter parsing:
-top_builddir="$top_srcdir/$builddir"
 
 # Add easter egg version info trigger:
 echo "nuvviDspeller	Divvun" > $SCRIPT_DIR/$speller_test_data
@@ -86,32 +65,21 @@ grep -v '^[!#]' "$typos_file" | grep -v '^$' \
 	>> $SCRIPT_DIR/$speller_test_data
 
 # Extract the actual test data:
-cut -f1 $SCRIPT_DIR/$speller_test_data | sed "s/^/$suggnumber /" \
-	> $SCRIPT_DIR/$speller_input
+cut -f1 $SCRIPT_DIR/$speller_test_data > $SCRIPT_DIR/$speller_input
 
 # Run the speller;
-if test "x$suggtiming" == "xyes" ; then
-    $giella_core/scripts/run_ospell-office_speller.py \
-                                      $SCRIPT_DIR/$speller_input \
+$giella_core/scripts/run_voikko_speller.sh $SCRIPT_DIR/$speller_input \
                                       $SCRIPT_DIR/$speller_output \
                                       $SCRIPT_DIR/$speller_timeusage \
-                                      $GTLANG2 \
+                                      $giella2c_lang \
                                       "$top_builddir/$spellerdir"
-else
-    $giella_core/scripts/run_ospell-office_speller.sh \
-                                      $SCRIPT_DIR/$speller_input \
-                                      $SCRIPT_DIR/$speller_output \
-                                      $SCRIPT_DIR/$speller_timeusage \
-                                      $GTLANG2 \
-                                      "$top_builddir/$spellerdir"
-fi
 
 rm -f "$speller_results"
 
 # Convert speller output to common xml:
 $giella_core/scripts/speller-testres.pl \
 		--engine=${engine} \
-		--lang=$GTLANG2 \
+		--lang=$giella2c_lang \
 		--input="$SCRIPT_DIR/$speller_test_data" \
 		--output="$SCRIPT_DIR/$speller_output" \
 		--document=$(basename "$typos_file") \
@@ -121,7 +89,6 @@ $giella_core/scripts/speller-testres.pl \
 		--corpusversion="n/a" \
 		--memoryuse="n/a" \
 		--timeuse="$SCRIPT_DIR/$speller_timeusage" \
-		--suggtiming="$suggtiming" \
 		--xml="$speller_results" \
 		--corrsugg
 
