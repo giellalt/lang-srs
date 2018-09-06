@@ -99,7 +99,7 @@ lexicon.%: lexicon.tmp.% verb_lexicon.%
 # easily get updates from the template dir through svn merge.
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
-	-rm -f url.lexc
+	-rm -f url.lexc url.tmp.lexc
 
 include $(top_srcdir)/am-shared/src-morphology-dir-include.am
 
