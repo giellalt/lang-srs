@@ -186,6 +186,46 @@ Pref/ni+
  @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
+
+
+!Undeclared? (tt)
+
+
+@D.PREFIX@
+@P.DISTRIBUTIVE.OFF@
+@P.DISTRIBUTIVE.ON@
+@P.PREFIX.INNER@
+@P.PREFIX.MIDDLE@
+@P.PREFIX.OUTER@
+@R.PREFIX.INNER@
+@R.PREFIX.MIDDLE@
+@R.PREFIX.OUTER@
+@R.SUBJECTNUMBER.PL@
+@R.SUBJECTNUMBER.SG@
+@R.SUBJECTPERSON.3@
+@R.SUBJECTPERSON.4@
+@U.OBJECTNUMBER.PL@
+@U.PREFIX.MIDDLE@
+@U.PREFIX.OUTER@
+@U.SUBJECTNUMBER.PL@
+@U.SUBJECTNUMBER.SG@
+@U.SUBJECTPERSON.1@
+@U.SUBJECTPERSON.2@
+@U.SUBJECTPERSON.3@
+@U.SUBJECTPERSON.4@
+@U.TAMA.0s@
+@U.TAMA.nii@
+@U.TAMA.nis@
+@U.TAMA.si@
+@U.TAMA.sis@
+@U.TAMA.yi-a@
+@U.TAMA.yii-a@
+@U.TAMA.yis-y@
+@U.TAMA.yis@
+@U.VALENCE.TRANSITIVE@
+
+
+
 LEXICON Root
 !! The word forms in Tsuut'ina start from noun and verb prefixes
 
