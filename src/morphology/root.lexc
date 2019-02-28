@@ -99,6 +99,7 @@ Th+		!!= * @CODE@ Th, thematic prefix  (probably not a tag)
 Unspec+	!!= * @CODE@ 0, Unspecified person
 UnspecO+	!!= * @CODE@ 0, Unspecified person
 UnspecS+	!!= * @CODE@ 0, Unspecified person
++Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
 Areal+
 ArealS+
