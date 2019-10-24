@@ -1,6 +1,6 @@
 !! Numerals
 !  --------
-!! Numerals in UNDEFINED language are numbers.
+!! Numerals in the Sarsi language are numbers.
 
 LEXICON Numerals
 numeral    Cases   ;
