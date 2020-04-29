@@ -4,11 +4,11 @@
 !!! Dynamic documentation
 
 * [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/morphology/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/morphology/affixes/] 
+* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/fst/stems/]   
+  / [affixes|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/fst/affixes/] 
   / [syntax|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/syntax] 
   / [twolc|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/phonology/srs-phon.twolc]   
-  / [yaml|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/test/src/morphology/]
+  / [yaml|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/test/src/fst/]
 
 !!! Project pages
 
@@ -16,7 +16,7 @@
 
 !!! Grammatical issues
 
-* [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/morphology/root.lexc]   
+* [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/fst/root.lexc]   
 * [A list of morphological tags|/lang/common/MorphologicalTags.html]
 
 
