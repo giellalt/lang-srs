@@ -55,12 +55,16 @@ x
 y
 z
 Ù
+ā
 à
 á
+ī
 ì
 í
+ō
 ò
 ó
+ū
 ù
 ú
 ɫ
@@ -70,12 +74,16 @@ z
 @@
 
 ## Transition pair specifications + weight:
+a	ā	0.4
 a	á	0.4
 a	à	0.6
+i	ī	0.4
 i	í	0.4
 i	ì	0.6
+o	ō	0.4
 o	ó	0.4
 o	ò	0.6
+u	ū	0.4
 u	ú	0.4
 u	ù	0.6
 l	ɫ	0.4
