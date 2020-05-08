@@ -176,7 +176,7 @@ gt_CONFIG_FILES
 ##### BEGIN: Add language-specific list of files to ######
 ########## be processed by autoconf below here: ##########
 
-AC_CONFIG_FILES([src/morphology/verb_lexicon.xfscript])
+AC_CONFIG_FILES([src/fst/verb_lexicon.xfscript])
 
 ############ END: Language-specific scripts. #############
 
