@@ -31,5 +31,6 @@ phonology-morphology.jspwiki
 # subjunctions-stems.jspwiki       \
 # adjectives-oahpa-affixes.jspwiki \
 # adjectives-affixes.jspwiki       \
-# propernouns-affixes.jspwiki      \
+# propernouns-affixes.jspwiki
+
 include $(top_srcdir)/../giella-core/am-shared/doc-dir-include.am
