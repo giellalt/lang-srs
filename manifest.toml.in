@@ -1,0 +1,9 @@
+name = "Sarsi"
+version = "@SPELLERVERSION@"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.srs"
+
+[windows]
+system_product_code = "72764F3E-D461-42D8-BAFE-BBF3CF93D7BD"
+msoffice_product_code = "3598DFFC-3AD4-4D8F-82FD-8D2CD69B5AE0"
