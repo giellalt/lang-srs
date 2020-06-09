@@ -1,4 +1,19 @@
 # Dummy, non-sense replace rule to avoid breaking errors in the compilaton.
 # Replace with something useful, but ALWAYS test the resulting error model,
 # both regarding speed and suggestion quality.
- a -> {a}::0 ;
+   a -> "á"::0,
+   e -> "é"::0,
+   i -> "í"::0,
+   o -> "ó"::0,
+   u -> "ú"::0,
+   a -> "à"::0,
+   e -> "è"::0,
+   i -> "ì"::0,
+   o -> "ò"::0,
+   u -> "ù"::0,
+   a -> "ā"::0,
+   e -> "ē"::0,
+   i -> "ī"::0,
+   o -> "ō"::0,
+   u -> "ū"::0,
+   l -> "ł"::0;
