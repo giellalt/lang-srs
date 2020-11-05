@@ -21,7 +21,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/srsdoc/index.html>
+-   <https://giellalt.uit.no/lang/srs/TsuutinaDocumentation.html>
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
