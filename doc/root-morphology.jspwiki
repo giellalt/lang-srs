@@ -64,6 +64,7 @@ in this system in terms of the following symbols.
  * Unspec+	 0, Unspecified person
  * UnspecO+	 0, Unspecified person
  * UnspecS+	 0, Unspecified person
+ * +Symbol = independent symbols in the text stream, like £, €, ©
 
 
 !!Prefixes
@@ -142,6 +143,13 @@ these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
  | @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+
+
+
+
+
+
+
 
 The word forms in Tsuut'ina start from noun and verb prefixes
 
