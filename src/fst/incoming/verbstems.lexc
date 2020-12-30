@@ -1,5 +1,5 @@
 Multichar_Symbols
-@D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.3@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @U.TAMA.sii@ @U.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.IMPERSONAL@
+@D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.3@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @P.SUPERASPECT.REP@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @U.TAMA.sii@ @U.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.IMPERSONAL@
 
 LEXICON Root
 
@@ -10,27 +10,27 @@ LEXICON Verbstems
 !
 ! Intransitive verbs.
 !
-itsiy[cry]:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
-itsiy[cry]:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
-itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
-itsiy[cry]:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
+itsiy[cry]:tsiy                          INTR-0-IPFV;       ! (IPFV; 0-IPFV)
+itsiy[cry]:tsày                          INTR-yi-y-PFV;     ! (PFV; yi-PFV-yi)
+itsiy[cry]:tsíł                          INTR-yi-PROG;      ! (PROG; yi-PROG)
+itsiy[cry]:ná=chish                      INTR-0-IPFV-REP;   ! (REP; 0-IPFV)
 
-ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
-ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG)
-ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
+ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;      ! (IPFV; ni-IPFV)
+ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;       ! (PFV; ni-PFV)
+ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;      ! (PROG; yi-PROG)
+ts'ázid[wake-up]:ts'áná=zhiizh           INTR-0-IPFV-REP;   ! (REP; 0-IPFV)
 
-nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;   ! (PFV; sii-PFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG)
-nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;      ! (IPFV; 0i-IPFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;      ! (PFV; sii-PFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;     ! (PROG; yii-PROG)
+nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV-REP;  ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV-REP;  ! (REP; 0i-IPFV)
 
-tsídiitł'á[run-away]:tsíH_di.tł'á         INTR-0i-IPFV;  ! (IPFV; 0i-IPFV)
-tsídiitł'á[run-away]:tsíH_di.tł'ò         INTR-sii-PFV;  ! (PFV; sii-PFV)
-tsídiitł'á[run-away]:tsíH_di.tł'áł        INTR-yii-PROG; ! (PROG; yii-PROG)
-tsídiitł'á[run-away]:ná=tsíH_di.tł'ásh    INTR-0i-IPFV;  ! (REP; 0i-IPFV)
-tsídiitł'á[run-away]:tsíH_di.tl'ò         INTR-yii-POT;  ! (POT; yii-POT)
+tsídiitł'á[run-away]:tsíH_di.tł'á         INTR-0i-IPFV;     ! (IPFV; 0i-IPFV)
+tsídiitł'á[run-away]:tsíH_di.tł'ò         INTR-sii-PFV;     ! (PFV; sii-PFV)
+tsídiitł'á[run-away]:tsíH_di.tł'áł        INTR-yii-PROG;    ! (PROG; yii-PROG)
+tsídiitł'á[run-away]:ná=tsíH_di.tł'ásh    INTR-0i-IPFV-REP; ! (REP; 0i-IPFV)
+tsídiitł'á[run-away]:tsíH_di.tl'ò         INTR-yii-POT;     ! (POT; yii-POT)
 
 !
 ! Transitive verbs.
@@ -39,7 +39,7 @@ yiʔí[see]:ʔí                             TRANS-yi-a-PFV; ! (FIXME: IPFV lemm
 
 !
 ! Experiencer verbs (where oblique object marking indicates the experiencer
-! of the verbal action).
+! of the verbal action, and the subject is treated as always being 3SG).
 !
 màgúdìlo[be-sick]:à=gú_di.lo                EXPER-i-IPFV; ! CHECK: ì- lexical?
 mágunichina[be-beautiful]:á=gu_ni.china     EXPER-0-IPFV; ! CHECK: tone OK?
@@ -72,6 +72,15 @@ LEXICON INTR-0s-IPFV
 
 LEXICON INTR-0i-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0i@ Verbsuffixes;
+
+LEXICON INTR-0-IPFV-REP
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@P.SUPERASPECT.REP@ Verbsuffixes;
+
+LEXICON INTR-0s-IPFV-REP
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0s@@P.SUPERASPECT.REP@ Verbsuffixes;
+
+LEXICON INTR-0i-IPFV-REP
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0i@@P.SUPERASPECT.REP@ Verbsuffixes;
 
 LEXICON EXPER-0-IPFV
 @U.VALENCE.EXPERIENCER@@U.ASPECT.IPFV@@U.TAMA.%0@ Verbsuffixes;
