@@ -56,8 +56,8 @@ endif # CAN_HFST
 
 #### FOMA transducers
 if CAN_FOMA
-GT_ANALYSERS+=analyser-dict-gt-desc.foma generator-dict-gt-norm.foma
-GT_GENERATORS+=
+GT_ANALYSERS+=analyser-dict-gt-desc.foma
+GT_GENERATORS+=generator-dict-gt-norm.foma
 endif # CAN_FOMA
 
 #################################################
