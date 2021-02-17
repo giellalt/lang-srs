@@ -23,6 +23,7 @@ LEXICON Root
 
 0-IPFV ;
 ni-IPFV ; 
+si-IPFV ;
 i-IPFV ;
 
 ni-PFV ;
@@ -381,7 +382,33 @@ LEXICON nii-PFV-AFF-OuterPrefix
 
 
 !
+! si-IPFV
+!
+! si-IPFV and si-PFV share the exact same inflectional markers, and differ
+! only in aspect (imperfective vs. perfective).  We can therefore tag all
+! si-IPFV forms passing through this lexicon as imperfective, then reuse
+! the TAMA chunks defined in si-AFF below.
+!
+LEXICON si-IPFV
+
+@U.ASPECT.IPFV@                              si-AFF ;
+
+
+!
 ! si-PFV
+!
+! si-IPFV and si-PFV share the exact same inflectional markers, and differ
+! only in aspect (imperfective vs. perfective).  We can therefore tag all
+! si-PFV forms passing through this lexicon as perfective, then reuse the
+! TAMA chunks defined in si-AFF below.
+!
+LEXICON si-PFV
+
+@U.ASPECT.PFV@                               si-AFF ;
+
+
+!
+! si-AFF
 !
 ! Note that 3PL gi- and 4 ts'i- (verb_middle_affixes) don't receive low tone
 ! like other inner prefixes in this paradigm (e.g., gisjón "they are old",
@@ -397,25 +424,26 @@ LEXICON nii-PFV-AFF-OuterPrefix
 ! verb inflection, which is also a kind of middle prefixation, is also coming
 ! out with the right tone assignments)
 !
-LEXICON si-PFV
 
-@U.ASPECT.PFV@@U.TAMA.si@@D.PREFIX@          si-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.si@@R.PREFIX.INNER@    si-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.si@@R.PREFIX.MIDDLE@   si-PFV-AFF-MiddlePrefix ;
-@U.ASPECT.PFV@@U.TAMA.si@@R.PREFIX.OUTER@    si-PFV-AFF-OuterPrefix ;
+LEXICON si-AFF
 
-@U.ASPECT.PFV@@U.TAMA.sis@@D.PREFIX@         sis-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sis@@R.PREFIX.INNER@   sis-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sis@@R.PREFIX.MIDDLE@  sis-PFV-AFF-MiddlePrefix ;
-@U.ASPECT.PFV@@U.TAMA.sis@@R.PREFIX.OUTER@   sis-PFV-AFF-OuterPrefix ;
+@U.TAMA.si@@D.PREFIX@                        si-AFF-NoPrefix ;
+@U.TAMA.si@@R.PREFIX.INNER@                  si-AFF-InnerPrefix ;
+@U.TAMA.si@@R.PREFIX.MIDDLE@                 si-AFF-MiddlePrefix ;
+@U.TAMA.si@@R.PREFIX.OUTER@                  si-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.sii@@D.PREFIX@         sii-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sii@@R.PREFIX.INNER@   sii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.sii@@R.PREFIX.MIDDLE@  sii-PFV-AFF-MiddlePrefix ;
-@U.ASPECT.PFV@@U.TAMA.sii@@R.PREFIX.OUTER@   sii-PFV-AFF-OuterPrefix ;
+@U.TAMA.sis@@D.PREFIX@                       sis-AFF-NoPrefix ;
+@U.TAMA.sis@@R.PREFIX.INNER@                 sis-AFF-InnerPrefix ;
+@U.TAMA.sis@@R.PREFIX.MIDDLE@                sis-AFF-MiddlePrefix ;
+@U.TAMA.sis@@R.PREFIX.OUTER@                 sis-AFF-OuterPrefix ;
+
+@U.TAMA.sii@@D.PREFIX@                       sii-AFF-NoPrefix ;
+@U.TAMA.sii@@R.PREFIX.INNER@                 sii-AFF-InnerPrefix ;
+@U.TAMA.sii@@R.PREFIX.MIDDLE@                sii-AFF-MiddlePrefix ;
+@U.TAMA.sii@@R.PREFIX.OUTER@                 sii-AFF-OuterPrefix ;
 
 
-LEXICON si-PFV-AFF-NoPrefix
+LEXICON si-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@sí    #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@si    #;
@@ -425,7 +453,7 @@ LEXICON si-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s     #;  
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #; 
 
-LEXICON si-PFV-AFF-InnerPrefix
+LEXICON si-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí    #; ! FLOATING L-TONE
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
@@ -435,7 +463,7 @@ LEXICON si-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs     #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs     #;
 
-LEXICON si-PFV-AFF-MiddlePrefix
+LEXICON si-AFF-MiddlePrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí    #; ! FLOATING L-TONE
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
@@ -445,7 +473,7 @@ LEXICON si-PFV-AFF-MiddlePrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s      #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s      #;
 
-LEXICON si-PFV-AFF-OuterPrefix
+LEXICON si-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@sí    #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@si    #;
@@ -456,7 +484,7 @@ LEXICON si-PFV-AFF-OuterPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
 
-LEXICON sis-PFV-AFF-NoPrefix
+LEXICON sis-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@sís   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@sis   #;
@@ -466,7 +494,7 @@ LEXICON sis-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s     #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
-LEXICON sis-PFV-AFF-InnerPrefix
+LEXICON sis-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE (M/L -> L)
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsís   #; ! FLOATING L-TONE (M/L -> L)
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
@@ -476,7 +504,7 @@ LEXICON sis-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs     #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs     #;
 
-LEXICON sis-PFV-AFF-MiddlePrefix
+LEXICON sis-AFF-MiddlePrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE (M/L -> L)
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsís   #; ! FLOATING L-TONE (M/L -> L)
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
@@ -486,7 +514,7 @@ LEXICON sis-PFV-AFF-MiddlePrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s   #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s   #;
 
-LEXICON sis-PFV-AFF-OuterPrefix
+LEXICON sis-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@sís   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@sis   #;
@@ -497,7 +525,7 @@ LEXICON sis-PFV-AFF-OuterPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
 
-LEXICON sii-PFV-AFF-NoPrefix
+LEXICON sii-AFF-NoPrefix
 ! FIXME: no documentation for this form; dummy values below
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@síí   #;
@@ -508,7 +536,7 @@ LEXICON sii-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s     #;	
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;	
 
-LEXICON sii-PFV-AFF-InnerPrefix
+LEXICON sii-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
@@ -518,7 +546,7 @@ LEXICON sii-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs     #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs     #;
 
-LEXICON sii-PFV-AFF-MiddlePrefix
+LEXICON sii-AFF-MiddlePrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
@@ -528,7 +556,7 @@ LEXICON sii-PFV-AFF-MiddlePrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s      #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s      #;
 
-LEXICON sii-PFV-AFF-OuterPrefix
+LEXICON sii-AFF-OuterPrefix
 ! Two 3S forms are possible here (e.g., tách'ásgàd, tách'ásiigàd "3S rode away")
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@síí   #;
@@ -1056,7 +1084,7 @@ LEXICON isi-PFV
 @U.ASPECT.PFV@@U.TAMA.isii@@D.PREFIX@         isii-PFV-AFF-NoPrefix ;
 @U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.INNER@   isii-PFV-AFF-InnerPrefix ;
 @U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.MIDDLE@  isii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.OUTER@    isii-PFV-AFF-OuterPrefix ;
+@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.OUTER@   isii-PFV-AFF-OuterPrefix ;
 
 LEXICON isi-PFV-AFF-NoPrefix
 ! Two 3S, 3P, 4 forms are attested here (e.g., ìzìl, ììzil "3S got hot")
@@ -1073,9 +1101,9 @@ LEXICON isi-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;
 
 LEXICON isi-PFV-AFF-InnerPrefix
-! Same forms as si-PFV-AFF-InnerPrefix; reuse those definitions here.
+! Same forms as si-AFF-InnerPrefix; reuse those definitions here.
 ! TODO: confirm that this works!
-                                             si-PFV-AFF-InnerPrefix;
+                                             si-AFF-InnerPrefix;
 
 LEXICON isi-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology works? 
@@ -1100,8 +1128,8 @@ LEXICON isis-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
 LEXICON isis-PFV-AFF-InnerPrefix
-! Same forms as sis-PFV-AFF-InnerPrefix; reuse those definitions here.
-                                             sis-PFV-AFF-InnerPrefix;
+! Same forms as sis-AFF-InnerPrefix; reuse those definitions here.
+                                             sis-AFF-InnerPrefix;
 
 LEXICON isis-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology works? 
@@ -1128,8 +1156,8 @@ LEXICON isii-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
 LEXICON isii-PFV-AFF-InnerPrefix
-! Same forms as sii-PFV-AFF-InnerPrefix; reuse those definitions here.
-                                             sii-PFV-AFF-InnerPrefix;
+! Same forms as sii-AFF-InnerPrefix; reuse those definitions here.
+                                             sii-AFF-InnerPrefix;
 
 LEXICON isii-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology OK?
