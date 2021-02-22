@@ -455,6 +455,9 @@ LEXICON si-AFF-NoPrefix
 
 LEXICON si-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE
+! When an inner prefix is present, 1SG forms also appear as Cas (e.g.,
+! dìsists'ón ~ dasts'ón "I heard (it)", zìsisyín ~ zasyín "I killed (it)".
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as     #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí    #; ! FLOATING L-TONE
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #; ! FLOATING L-TONE
@@ -496,6 +499,9 @@ LEXICON sis-AFF-NoPrefix
 
 LEXICON sis-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE (M/L -> L)
+! When an inner prefix is present, 1SG forms also appear as Cas (e.g.,
+! dìsists'ón ~ dasts'ón "I heard (it)", zìsisyín ~ zasyín "I killed (it)".
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as     #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsís   #; ! FLOATING L-TONE (M/L -> L)
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #; ! FLOATING L-TONE (M/L -> L)
@@ -538,6 +544,9 @@ LEXICON sii-AFF-NoPrefix
 
 LEXICON sii-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #;
+! When an inner prefix is present, 1SG forms also appear as Cas (e.g.,
+! dìsists'ón ~ dasts'ón "I heard (it)", zìsisyín ~ zasyín "I killed (it)".
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as     #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #;
