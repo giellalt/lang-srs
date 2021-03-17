@@ -1,15 +1,9 @@
 [What is this?|WhatIsThis.html]
 
 
-!!! Dynamic documentation
 
-* [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/fst/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/fst/affixes/] 
-  / [syntax|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/syntax] 
-  / [twolc|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/src/phonology/srs-phon.twolc]   
-  / [yaml|https://gtsvn.uit.no/langtech/trunk/startup-langs/srs/test/src/fst/]
 
+ 
 !!! Project pages
 
 * [Alberta Language Technology Lab|http://altlab.artsrn.ualberta.ca/]
