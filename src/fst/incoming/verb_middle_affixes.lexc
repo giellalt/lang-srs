@@ -148,16 +148,16 @@ LEXICON Reflexive-Direct-Objects
 
 LEXICON Reciprocal-Direct-Objects
 
-! Reciprocal forms (only with plural and 4th-person subjects, e.g., atłiyasʔí "you saw each other",
-! astłits'áʔí "someone saw each other")
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@atłi                  Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@astłi                 Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@atłi                  Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@astłi                 Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@atłi                  Outer-Subjects;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@astłi                 Outer-Subjects;
-@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@atłi                  Outer-Subjects;
-@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@astłi                 Outer-Subjects;
+! Reciprocal forms (only with plural and 4th-person subjects, e.g., átłiyasʔí "you saw each other",
+! ástłits'áʔí "someone saw each other")
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@átłi                  Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@ástłi                 Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@átłi                  Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@ástłi                 Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@átłi                  Outer-Subjects;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@ástłi                 Outer-Subjects;
+@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@átłi                  Outer-Subjects;
+@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@ástłi                 Outer-Subjects;
 
 
 LEXICON Outer-Subjects
