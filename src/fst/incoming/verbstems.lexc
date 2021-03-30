@@ -6,6 +6,20 @@ Verbstems;
 
 LEXICON Verbstems
 
+! 0-IPFV verbs
+didús[crawl]:di.dús                      INTR-0-IPFV;
+nákuy[vomit]:ná=kuy                      INTR-0-IPFV;
+
+! Skip for now (until 3SG object marking have been discussed with Bruce)
+!!iswùsh[tickle]:wùsh                       TRANS-0s-IPFV;
+!!disdàł[throw-plural-O]:di.dàł             TRANS-0s-IPFV;
+!!tásk'ááz[paint-O-red]:tá=k'ááz            TRANS-0s-IPFV;
+!!iizùd[wolf-down-O]:zùd                    TRANS-0i-IPFV;
+
+diitł'á[run]:di.tł'á                      INTR-0i-IPFV;
+xààtł'á[run-out]:xà=tł'á                  INTR-0i-IPFV;
+
+
 !
 ! Intransitive verbs.
 !
@@ -34,26 +48,27 @@ tsídiitł'á[run-away]:tsíH_di.tl'ò         INTR-yii-POT;     ! (POT; yii-POT
 !
 ! Transitive verbs.
 !
-yiʔí[see]:ʔí                             TRANS-yi-a-PFV; ! (FIXME: IPFV lemma?)
+!ìstsáh[see]:tsáh                           TRANS-is-IPFV;
+!ìstsáh[see]:ʔí                             TRANS-yi-a-PFV;
 
 !
 ! Experiencer verbs (where oblique object marking indicates the experiencer
 ! of the verbal action, and the subject is treated as always being 3SG).
 !
-màgúdìlo[be-sick]:à=gú_di.lo                EXPER-i-IPFV; ! CHECK: ì- lexical?
-mágunichina[be-beautiful]:á=gu_ni.china     EXPER-0-IPFV; ! CHECK: tone OK?
+!màgúdìlo[be-sick]:à=gú_di.lo                EXPER-i-IPFV; ! CHECK: ì- lexical?
+!mágunichina[be-beautiful]:á=gu_ni.china     EXPER-0-IPFV; ! CHECK: tone OK?
 
 !
 ! Oblique object verbs (where only subject and oblique object inflection are
 ! present)
 !
-yoghàtázáʔò[abuse]:oghàtázá=ʔò              OBL-0-IPFV;
-yoghàtázáʔò[abuse]:oghàtázá=ʔón             OBL-yi-y-PFV;
+!yoghàtázáʔò[abuse]:oghàtázá=ʔò              OBL-0-IPFV;
+!yoghàtázáʔò[abuse]:oghàtázá=ʔón             OBL-yi-y-PFV;
 
 !
 ! Ditransitive verbs.
 !
-moghànischúd[feed]:oghà=chúd                DITRANS-nis-IPFV;
+!moghànischúd[feed]:oghà=chúd                DITRANS-nis-IPFV;
 
 
 !
@@ -205,6 +220,9 @@ LEXICON INTR-is-IPFV
 
 LEXICON INTR-ii-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.ii@ Verbsuffixes;
+
+LEXICON TRANS-is-IPFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.is@ Verbsuffixes;
 
 LEXICON EXPER-i-IPFV
 @U.VALENCE.EXPERIENCER@@U.ASPECT.IPFV@@U.TAMA.i@ Verbsuffixes;
