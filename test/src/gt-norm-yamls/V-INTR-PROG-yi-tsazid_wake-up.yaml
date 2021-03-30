@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - ts'ázid[wake-up] :
+    ts'ázid[wake-up]+V+I+Prog+SbjSg1:       ts'áyissił
+    ts'ázid[wake-up]+V+I+Prog+SbjSg2:       ts'áyíził
+    ts'ázid[wake-up]+V+I+Prog+SbjSg3:       ts'áyiził
+    ts'ázid[wake-up]+V+I+Prog+SbjPl1:       [ts'áyiìził, ts'áyaàził]
+    ts'ázid[wake-up]+V+I+Prog+SbjPl1+Distr: [ts'ádàyiìził, ts'ádàyaàził]
+    ts'ázid[wake-up]+V+I+Prog+SbjPl2:       ts'áyassił
+    ts'ázid[wake-up]+V+I+Prog+SbjPl2+Distr: ts'ádàyassił
+    ts'ázid[wake-up]+V+I+Prog+SbjPl3:       ts'ágáził
+    ts'ázid[wake-up]+V+I+Prog+SbjPl3+Distr: ts'ádàgáził
+    ts'ázid[wake-up]+V+I+Prog+SbjSg4:       ts'áts'áził
+    ts'ázid[wake-up]+V+I+Prog+SbjSg4+Distr: ts'ádàts'áził

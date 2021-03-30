@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - tsídiitł'á[run-away] :
+    tsídiitł'á[run-away]+V+I+Pot+SbjSg1:       tsídíyistl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjSg2:       tsídíyíítl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjSg3:       tsídíítl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjPl1:       [tsídíyiìtl'ò, tsídíyaàtl'ò]
+    tsídiitł'á[run-away]+V+I+Pot+SbjPl1+Distr: [dàtsídíyiìtl'ò, dàtsídíyaàtl'ò]
+    tsídiitł'á[run-away]+V+I+Pot+SbjPl2:       tsídíyastl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjPl2+Distr: dàtsídíyastl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjPl3:       tsígídíítl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjPl3+Distr: dàtsígídíítl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjSg4:       tsíts'ídíítl'ò
+    tsídiitł'á[run-away]+V+I+Pot+SbjSg4+Distr: dàtsíts'ídíítl'ò

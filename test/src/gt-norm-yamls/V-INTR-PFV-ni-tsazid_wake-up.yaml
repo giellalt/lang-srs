@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - ts'ázid[wake-up] :
+    ts'ázid[wake-up]+V+I+Pfv+SbjSg1:       ts'ánissid
+    ts'ázid[wake-up]+V+I+Pfv+SbjSg2:       ts'ánízid
+    ts'ázid[wake-up]+V+I+Pfv+SbjSg3:       ts'ánízid
+    ts'ázid[wake-up]+V+I+Pfv+SbjPl1:       [ts'ániìzid, ts'ánaàzid]
+    ts'ázid[wake-up]+V+I+Pfv+SbjPl1+Distr: [ts'ádàniìzid, ts'ádànaàzid]
+    ts'ázid[wake-up]+V+I+Pfv+SbjPl2:       ts'ánassid
+    ts'ázid[wake-up]+V+I+Pfv+SbjPl2+Distr: ts'ádànassid
+    ts'ázid[wake-up]+V+I+Pfv+SbjPl3:       ts'ágìnízid
+    ts'ázid[wake-up]+V+I+Pfv+SbjPl3+Distr: ts'ádàgìnízid
+    ts'ázid[wake-up]+V+I+Pfv+SbjSg4:       ts'áts'ìnízid
+    ts'ázid[wake-up]+V+I+Pfv+SbjSg4+Distr: ts'ádàts'ìnízid

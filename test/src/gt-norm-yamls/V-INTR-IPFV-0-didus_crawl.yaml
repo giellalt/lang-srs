@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - didús[crawl] :
+    didús[crawl]+V+I+Ipfv+SbjSg1:       disdús
+    didús[crawl]+V+I+Ipfv+SbjSg2:       dídús
+    didús[crawl]+V+I+Ipfv+SbjSg3:       didús
+    didús[crawl]+V+I+Ipfv+SbjPl1:       [diìdús, daàdús]
+    didús[crawl]+V+I+Ipfv+SbjPl1+Distr: [dàdiìdús, dàdaàdús]
+    didús[crawl]+V+I+Ipfv+SbjPl2:       dasdús
+    didús[crawl]+V+I+Ipfv+SbjPl2+Distr: dàdasdús
+    didús[crawl]+V+I+Ipfv+SbjPl3:       gididús
+    didús[crawl]+V+I+Ipfv+SbjPl3+Distr: dàgididús
+    didús[crawl]+V+I+Ipfv+SbjSg4:       ts'ididús
+    didús[crawl]+V+I+Ipfv+SbjSg4+Distr: dàts'ididús

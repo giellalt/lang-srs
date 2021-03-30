@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - itsiy[cry] :
+    itsiy[cry]+V+I+Ipfv+SbjSg1:       istsiy
+    itsiy[cry]+V+I+Ipfv+SbjSg2:       nitsiy
+    itsiy[cry]+V+I+Ipfv+SbjSg3:       itsiy
+    itsiy[cry]+V+I+Ipfv+SbjPl1:       [isiìtsiy, isaàtsiy]
+    itsiy[cry]+V+I+Ipfv+SbjPl1+Distr: [dààsiìtsiy, dààsaàtsiy]
+    itsiy[cry]+V+I+Ipfv+SbjPl2:       astsiy
+    itsiy[cry]+V+I+Ipfv+SbjPl2+Distr: dàstsiy
+    itsiy[cry]+V+I+Ipfv+SbjPl3:       gitsiy
+    itsiy[cry]+V+I+Ipfv+SbjPl3+Distr: dàgitsiy
+    itsiy[cry]+V+I+Ipfv+SbjSg4:       ts'itsiy
+    itsiy[cry]+V+I+Ipfv+SbjSg4+Distr: dàts'itsiy
