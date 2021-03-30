@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - nàgudiitłod[jump-down] :
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjSg1:       nàgudistłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjSg2:       nàgudíítłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjSg3:       nàgudiitłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjPl1:       [nàgudiìtłod, nàgudaàtłod]
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjPl1+Distr: [nàdàgudiìtłod, nàdàgudaàtłod]
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjPl2:       nàgudastłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjPl2+Distr: nàdàgudastłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjPl3:       nàgugidiitłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjPl3+Distr: nàdàgugidiitłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjSg4:       nàguts'idiitłod
+    nàgudiitłod[jump-down]+V+I+Ipfv+SbjSg4+Distr: nàdàguts'idiitłod

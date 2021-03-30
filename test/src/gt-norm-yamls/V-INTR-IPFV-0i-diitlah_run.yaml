@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - diitł'á[run] :
+    diitł'á[run]+V+I+Ipfv+SbjSg1:       distł'á
+    diitł'á[run]+V+I+Ipfv+SbjSg2:       díítł'á
+    diitł'á[run]+V+I+Ipfv+SbjSg3:       diitł'á
+    diitł'á[run]+V+I+Ipfv+SbjPl1:       [diìtł'á, daàtł'á]
+    diitł'á[run]+V+I+Ipfv+SbjPl1+Distr: [dàdiìtł'á, dàdaàtł'á]
+    diitł'á[run]+V+I+Ipfv+SbjPl2:       dastł'á
+    diitł'á[run]+V+I+Ipfv+SbjPl2+Distr: dàdastł'á
+    diitł'á[run]+V+I+Ipfv+SbjPl3:       gidiitł'á
+    diitł'á[run]+V+I+Ipfv+SbjPl3+Distr: dàgidiitł'á
+    diitł'á[run]+V+I+Ipfv+SbjSg4:       ts'idiitł'á
+    diitł'á[run]+V+I+Ipfv+SbjSg4+Distr: dàts'idiitł'á
