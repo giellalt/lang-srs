@@ -1,8 +1,8 @@
-!! !!!The Tsuut'ina morphophonological/twolc rules file 
+!! # The Tsuut'ina morphophonological/twolc rules file 
 
-!! !!Alphabet and sets
+!! ## Alphabet and sets
 
-!! !Alphabet
+!! ### Alphabet
 Alphabet
  a b c d e f g h i j k l ł m n o p q r s t u v w x y z  !!= * @CODE@
  á é ó ú í ā ē ō ū ī à è ò ù ì ʔ %'                       !!= @CODE@
@@ -13,7 +13,7 @@ Alphabet
  %> %<        !!=   @CODE@
  ;
 
-!! !Sets
+!! ### Sets
 Sets
 
  Vow = a e i o u                                     !!= * @CODE@
@@ -23,11 +23,11 @@ Sets
  Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ %i !!= * @CODE@
        B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ;  !!= @CODE@
 
-!! !!Rules
+!! ## Rules
 Rules
 
 "Dock floating high tone on the preceeding vowel"
-!! * __@RULENAME@__ \\  si<^VHtsí to high-tone prefix sí
+!! * **@RULENAME@** \\  si<^VHtsí to high-tone prefix sí
  Vx:Vy <=> _ %< %^VH: ;
     where Vx in (a e i o u )
           Vy in (á é í ó ú )

@@ -1,4 +1,4 @@
-!! !!!Verb inflection in Tsuut'ina
+!! # Verb inflection in Tsuut'ina
 !  ---------------
 
 !! The lexicon names srs15, srs14, etc. refers to traditional template names.
@@ -55,14 +55,14 @@ LEXICON srs8765 !!= * @CODE@ contains the person-number complex
 @U.TV.OFF@3Pl+:@U.TV.OFF@gi    IPFV_CLASS_1a ;
 @U.TV.OFF@4Sg+:@U.TV.OFF@ts'i  IPFV_CLASS_1a ;
 
-!! ** I_IMPERFECTIVE CLASS 1b, inner prefix
+!!     - I_IMPERFECTIVE CLASS 1b, inner prefix
 ! 1st and 2nd person, Pref/di
 @U.di.ON@Pref/di+:@U.di.ON@d Person12_IPFV_CLASS_1b ;
 @U.zi.ON@Pref/zi+:@U.zi.ON@z Person12_IPFV_CLASS_1b ;
 @U.na.ON@Pref/na+:@U.na.ON@nas Person12_IPFV_CLASS_1b ;
 @U.ni.ON@Pref/ni+:@U.ni.ON@n Person12_IPFV_CLASS_1b ;
 
-!! ** 3rd person, directed to Pref/di, Pref/zi, etc.
+!!     - 3rd person, directed to Pref/di, Pref/zi, etc.
 @U.TV.OFF@@U.di.ON@Pref/di+3Pl+:@U.TV.OFF@@U.di.ON@gidi   IPFV_CLASS_1b ;
 @U.TV.OFF@@U.zi.ON@Pref/zi+3Pl+:@U.TV.OFF@@U.zi.ON@gizi   IPFV_CLASS_1b ;
 @U.TV.OFF@@U.na.ON@Pref/na+3Pl+:@U.TV.OFF@@U.na.ON@gina   IPFV_CLASS_1b ;
@@ -73,7 +73,7 @@ LEXICON srs8765 !!= * @CODE@ contains the person-number complex
 @U.TV.OFF@@U.na.ON@Pref/na+4Sg+:@U.TV.OFF@@U.na.ON@ts'ina IPFV_CLASS_1b ;
 @U.TV.OFF@@U.ni.ON@Pref/ni+4Sg+:@U.TV.OFF@@U.ni.ON@ts'ini IPFV_CLASS_1b ;
 
-!! ** I_PERFECTIVE CLASS 1
+!!     - I_PERFECTIVE CLASS 1
 @U.TV.OFF@1Sg+:@U.TV.OFF@yis   PERF_CLASS_1 ;
 @U.TV.OFF@2Sg+:@U.TV.OFF@yí    PERF_CLASS_1 ;
 @U.TV.OFF@3Sg+:@U.TV.OFF@yí    PERF_CLASS_1 ;
@@ -83,7 +83,7 @@ LEXICON srs8765 !!= * @CODE@ contains the person-number complex
 @U.TV.OFF@3Pl+:@U.TV.OFF@giyí    PERF_CLASS_1 ;
 @U.TV.OFF@4Sg+:@U.TV.OFF@ts'iyí  PERF_CLASS_1 ;
 
-!! ** T_IMPERFECTIVE CLASS 1a, no other prefix
+!!     - T_IMPERFECTIVE CLASS 1a, no other prefix
 ! FIXME: correct these forms
 @U.TV.ON@Refl+1Sg+:@U.TV.ON@ʔidis  T_IPFV_CLASS_1a ;
 @U.TV.ON@1SgO+2Sg+:@U.TV.ON@sí     T_IPFV_CLASS_1a ;
