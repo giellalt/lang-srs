@@ -1,7 +1,7 @@
 
-!! !!!Tsuut'ina verb stems
+!! # Tsuut'ina verb stems
 
-!! !!Intransitive Verbs
+!! ## Intransitive Verbs
 
 LEXICON PERF_CLASS_1  !!= * @CODE@ 
 @U.asp.perf@Prf+V+:@U.asp.perf@ PERF_STEMS_1 ;
@@ -30,14 +30,14 @@ LEXICON IPFV_STEMS_1b !!= * @CODE@ same list in ipfv, but with pref
 LEXICON IPFV_STEMS_2 ! ... and the same again type 2, but ipfv
 endlex ;
 
-!! !!Transitive Verbs 
+!! ## Transitive Verbs 
 
 LEXICON T_IPFV_CLASS_1a  !!= * @CODE@ type 1a
 @R.TV.ON@yisxòł:@R.TV.ON@xòł # ;  ! hit, whip
 
 @R.xaL.ON@V+xà_gàd:@R.xaL.ON@gàd # ;
 
-!! !!Endlex cleanup
+!! ## Endlex cleanup
 
 LEXICON endlex !! @CODE@ gives all D flags blocking unwanted forms
 @D.xaL@@D.di@@D.zi@@D.na@@D.ni@ # ;
