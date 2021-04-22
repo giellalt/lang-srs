@@ -1,0 +1,6 @@
+* [root-morphology.md](root-morphology.md)
+* [nouns-stems.md](nouns-stems.md)
+* [verbs-stems.md](verbs-stems.md)
+* [nouns-affixes.md](nouns-affixes.md)
+* [verbs-affixes.md](verbs-affixes.md)
+* [phonology-morphology.md](phonology-morphology.md)
