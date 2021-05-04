@@ -1,3 +1,111 @@
+## Tsuut'ina Noun inflection
+
+## Classification.
+1. Always unpossessed nouns: nàk'ús "cloud"
+1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
+1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
+
+(see explanation in the affixes file)
+
+## Lexicons
+
+ * LEXICON NounPrefixes    Splitting in 3
+
+ * LEXICON AlwaysPossessedNounPrefixes   Px
+
+ * LEXICON VariablyPossessedNouns   Px or not
+
+
+Proper noun inflection
+The Sarsi language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+
+# Symbol affixes
+
+
+
+
+
+Adjective inflection
+The Sarsi language adjectives compare.
+
+
+
+# Verb inflection in Tsuut'ina
+
+The lexicon names srs15, srs14, etc. refers to traditional template names.
+
+ * LEXICON VerbPrefixes  from the Root lexicon, always empty
+
+ * LEXICON srs15  
+
+ * LEXICON srs14  empty
+
+ * LEXICON srs13  empty
+
+ * LEXICON srs12  empty
+
+ * LEXICON srs11  optional Distr+
+
+ * LEXICON srs10  empty
+
+ * LEXICON srs9  empty
+
+
+
+
+ * LEXICON srs8765  contains the person-number complex
+* I_IMPERFECTIVE CLASS 1a, no other prefix
+
+    - I_IMPERFECTIVE CLASS 1b, inner prefix
+
+    - 3rd person, directed to Pref/di, Pref/zi, etc.
+
+
+    - I_PERFECTIVE CLASS 1
+
+    - T_IMPERFECTIVE CLASS 1a, no other prefix
+
+
+
+
+
+
+
+ * LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
+
+
+# The Tsuut'ina morphophonological/twolc rules file 
+
+## Alphabet and sets
+
+### Alphabet
+ *  a b c d e f g h i j k l ł m n o p q r s t u v w x y z  
+  á é ó ú í ā ē ō ū ī à è ò ù ì ʔ %'                       
+ *  A B C D E F G H I J K L Ł M N O P Q R S T U V W X Y Z  
+  Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ʔ                        
+
+ *  %^VH:0       
+    %> %<        
+
+### Sets
+
+ *  Vow = a e i o u                                     
+        á é ó ú í ā ē ō ū ī à è ò ù ì                 
+        A E I O U                                     
+        Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ;               
+ *  Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ %i 
+        B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ;  
+
+## Rules
+
+* **Dock floating high tone on the preceeding vowel** \\  si<^VHtsí to high-tone prefix sí
+
+* *si<^VHtsí*
+* *sí<0tsí*
 
 # Tsuut'ina morphological analyser                      !
 INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Tsuut'ina.
@@ -183,6 +291,19 @@ yiitł'áłí "your vehicle")
  * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
 
 
+Prefixes
+Prefixes in the Sarsi language are bound to beginning of other words.
+
+
+
+Pronouns
+Pronouns in Tsuut'ina
+
+
+Adjectives
+Adjectives in the Sarsi language describe things.
+
+
 
 # Tsuut'ina verb stems
 
@@ -214,58 +335,8 @@ LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
 
 
 
-## Tsuut'ina Noun inflection
-
-## Classification.
-1. Always unpossessed nouns: nàk'ús "cloud"
-1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
-1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
-
-(see explanation in the affixes file)
-
-## Lexicons
-
- * LEXICON NounPrefixes    Splitting in 3
-
- * LEXICON AlwaysPossessedNounPrefixes   Px
-
- * LEXICON VariablyPossessedNouns   Px or not
-
-
-# Verb inflection in Tsuut'ina
-
-The lexicon names srs15, srs14, etc. refers to traditional template names.
-
- * LEXICON VerbPrefixes  from the Root lexicon, always empty
-
- * LEXICON srs15  
-
- * LEXICON srs14  empty
-
- * LEXICON srs13  empty
-
- * LEXICON srs12  empty
-
- * LEXICON srs11  optional Distr+
-
- * LEXICON srs10  empty
-
- * LEXICON srs9  empty
-
-
-
-
- * LEXICON srs8765  contains the person-number complex
-* I_IMPERFECTIVE CLASS 1a, no other prefix
-
-    - I_IMPERFECTIVE CLASS 1b, inner prefix
-
-    - 3rd person, directed to Pref/di, Pref/zi, etc.
-
-
-    - I_PERFECTIVE CLASS 1
-
-    - T_IMPERFECTIVE CLASS 1a, no other prefix
+Numerals
+Numerals in the Sarsi language are numbers.
 
 
 
@@ -273,34 +344,68 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
 
 
 
- * LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
 
 
-# The Tsuut'ina morphophonological/twolc rules file 
 
-## Alphabet and sets
 
-### Alphabet
- *  a b c d e f g h i j k l ł m n o p q r s t u v w x y z  
-  á é ó ú í ā ē ō ū ī à è ò ù ì ʔ %'                       
- *  A B C D E F G H I J K L Ł M N O P Q R S T U V W X Y Z  
-  Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ʔ                        
 
- *  %^VH:0       
-    %> %<        
 
-### Sets
 
- *  Vow = a e i o u                                     
-        á é ó ú í ā ē ō ū ī à è ò ù ì                 
-        A E I O U                                     
-        Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ;               
- *  Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ %i 
-        B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ;  
 
-## Rules
 
-* **Dock floating high tone on the preceeding vowel** \\  si<^VHtsí to high-tone prefix sí
 
-* *si<^VHtsí*
-* *sí<0tsí*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% komma% :,      Root ;
+% tjuohkkis% :%. Root ;
+% kolon% :%:     Root ;
+% sárggis% :%-   Root ; 
+% násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Sarsi are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
