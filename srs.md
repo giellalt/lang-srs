@@ -1,3 +1,116 @@
+# Tsuut'ina Nouns
+## Classification
+1. Always unpossessed nouns: nàk'ús "cloud"
+1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
+1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
+
+ Three (phonological) cases for the possessive prefixes:
+ # Consonant-initial stem: si- "1SG" tsì "head" -> sitsì "my head"
+ # Preceding H-tone stem: si- "1SG" V́tsí "nose" -> sítsí "my nose" 
+ # Vowel-initial stem: si- "1SG" óó "mother" -> sóó "my mother" \\
+   (cf. ʔinóó "mother" , ʔi- "UNSPEC.POSS" (n)óó;
+   ```gu- "SOMEONE" óó "mother" -> gwóó gu > gw / _ [oa] ) Cu[oa] > Cw[oa]?```
+
+Periphrastic / non-morphological constructions are used for always
+unpossessed nouns: sá(à) nàk'ús "my cloud", ná(à) ʔidínít'ùgù
+yiitł'áłí "your vehicle")
+
+## Lexicons
+
+ * LEXICON AlwaysUnpossessedNouns  never Px
+
+
+ * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
+
+
+ * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
+
+ * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
+
+
+Numerals
+Numerals in the Sarsi language are numbers.
+
+
+
+# Tsuut'ina verb stems
+
+## Intransitive Verbs
+
+ * LEXICON PERF_CLASS_1   
+
+ * LEXICON IPFV_CLASS_1a   
+
+ * LEXICON IPFV_CLASS_1b  
+
+ * LEXICON IPFV_CLASS_2   
+
+ * LEXICON PERF_STEMS_1   the list of most verbs in perf
+
+ * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
+
+ * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
+
+
+## Transitive Verbs 
+
+ * LEXICON T_IPFV_CLASS_1a   type 1a
+
+
+## Endlex cleanup
+
+LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
+
+
+
+Prefixes
+Prefixes in the Sarsi language are bound to beginning of other words.
+
+
+
+Adjectives
+Adjectives in the Sarsi language describe things.
+
+
+Pronouns
+Pronouns in Tsuut'ina
+
+
+# The Tsuut'ina morphophonological/twolc rules file 
+
+## Alphabet and sets
+
+### Alphabet
+ *  a b c d e f g h i j k l ł m n o p q r s t u v w x y z  
+  á é ó ú í ā ē ō ū ī à è ò ù ì ʔ %'                       
+ *  A B C D E F G H I J K L Ł M N O P Q R S T U V W X Y Z  
+  Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ʔ                        
+
+ *  %^VH:0       
+    %> %<        
+
+### Sets
+
+ *  Vow = a e i o u                                     
+        á é ó ú í ā ē ō ū ī à è ò ù ì                 
+        A E I O U                                     
+        Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ;               
+ *  Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ %i 
+        B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ;  
+
+## Rules
+
+* **Dock floating high tone on the preceeding vowel** \\  si<^VHtsí to high-tone prefix sí
+
+* *si<^VHtsí*
+* *sí<0tsí*
+
+# Symbol affixes
+
+
+
+
+
 ## Tsuut'ina Noun inflection
 
 ## Classification.
@@ -19,18 +132,6 @@
 Proper noun inflection
 The Sarsi language proper nouns inflect in the same cases as regular
 nouns, but with a colon (':') as separator.
-
-
-
-
-# Symbol affixes
-
-
-
-
-
-Adjective inflection
-The Sarsi language adjectives compare.
 
 
 
@@ -78,34 +179,11 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
  * LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
 
 
-# The Tsuut'ina morphophonological/twolc rules file 
+Adjective inflection
+The Sarsi language adjectives compare.
 
-## Alphabet and sets
 
-### Alphabet
- *  a b c d e f g h i j k l ł m n o p q r s t u v w x y z  
-  á é ó ú í ā ē ō ū ī à è ò ù ì ʔ %'                       
- *  A B C D E F G H I J K L Ł M N O P Q R S T U V W X Y Z  
-  Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ʔ                        
 
- *  %^VH:0       
-    %> %<        
-
-### Sets
-
- *  Vow = a e i o u                                     
-        á é ó ú í ā ē ō ū ī à è ò ù ì                 
-        A E I O U                                     
-        Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ;               
- *  Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ %i 
-        B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ;  
-
-## Rules
-
-* **Dock floating high tone on the preceeding vowel** \\  si<^VHtsí to high-tone prefix sí
-
-* *si<^VHtsí*
-* *sí<0tsí*
 
 # Tsuut'ina morphological analyser                      !
 INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Tsuut'ina.
@@ -261,82 +339,20 @@ given the proper use of these flags.
 
 The word forms in Tsuut'ina start from noun and verb prefixes
 
-# Tsuut'ina Nouns
-## Classification
-1. Always unpossessed nouns: nàk'ús "cloud"
-1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
-1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
-
- Three (phonological) cases for the possessive prefixes:
- # Consonant-initial stem: si- "1SG" tsì "head" -> sitsì "my head"
- # Preceding H-tone stem: si- "1SG" V́tsí "nose" -> sítsí "my nose" 
- # Vowel-initial stem: si- "1SG" óó "mother" -> sóó "my mother" \\
-   (cf. ʔinóó "mother" , ʔi- "UNSPEC.POSS" (n)óó;
-   ```gu- "SOMEONE" óó "mother" -> gwóó gu > gw / _ [oa] ) Cu[oa] > Cw[oa]?```
-
-Periphrastic / non-morphological constructions are used for always
-unpossessed nouns: sá(à) nàk'ús "my cloud", ná(à) ʔidínít'ùgù
-yiitł'áłí "your vehicle")
-
-## Lexicons
-
- * LEXICON AlwaysUnpossessedNouns  never Px
-
-
- * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
-
-
- * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
-
- * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
-
-
-Prefixes
-Prefixes in the Sarsi language are bound to beginning of other words.
 
 
 
-Pronouns
-Pronouns in Tsuut'ina
+We describe here how abbreviations are in Sarsi are read out, e.g.
+for text-to-speech systems.
 
+For example:
 
-Adjectives
-Adjectives in the Sarsi language describe things.
-
-
-
-# Tsuut'ina verb stems
-
-## Intransitive Verbs
-
- * LEXICON PERF_CLASS_1   
-
- * LEXICON IPFV_CLASS_1a   
-
- * LEXICON IPFV_CLASS_1b  
-
- * LEXICON IPFV_CLASS_2   
-
- * LEXICON PERF_STEMS_1   the list of most verbs in perf
-
- * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
-
- * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
-
-
-## Transitive Verbs 
-
- * LEXICON T_IPFV_CLASS_1a   type 1a
-
-
-## Endlex cleanup
-
-LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
-
-
-
-Numerals
-Numerals in the Sarsi language are numbers.
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
 
@@ -392,20 +408,4 @@ Numerals in the Sarsi language are numbers.
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Sarsi are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
