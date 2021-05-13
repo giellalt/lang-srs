@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/issues)
 [![Build status](https://github.com/giellalt/lang-srs/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-srs/actions)
 
-This page documents the work on the **Sarsi language model**. 
+This page documents the work on the [Sarsi language model](http://github.com/giellalt/lang-srs). 
 
 # Project documentation
 
