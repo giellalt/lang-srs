@@ -1,0 +1,136 @@
+Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.3@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.GI.ON@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEOBJECT.NOMINAL@ @U.OBLIQUEOBJECT.NONE@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.RECIP@ @U.OBLIQUEPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @U.TAMA.sii@ @U.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@
+
+
+LEXICON Root
+
+! Make sure that each form passing through this lexicon is flagged for a 
+! particular subject person-number combination.  For verbs that involve
+! inflectional marking for both subjects and direct/oblique objects, we
+! need this information to restrict certain combinations of subject person-
+! number and oblique object marking later on.
+
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@                               Valence;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@                               Valence;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                               Valence;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@                               Valence;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@                               Valence;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@                               Valence;
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@                               Valence;
+
+
+LEXICON Valence
+
+@U.VALENCE.IMPERSONAL@                                         Only3SGSubject;
+@U.VALENCE.INTRANSITIVE@                                                    #;
+@U.VALENCE.TRANSITIVE@                                                      #;
+@U.VALENCE.OBLIQUEOBJECT@                                ObliqueObjectAffixes;
+@U.VALENCE.DITRANSITIVE@                                 ObliqueObjectAffixes;
+@U.VALENCE.EXPERIENCER@                                 ObliqueSubjectAffixes;
+@U.VALENCE.TRANSITIONAL@                                                    #;
+
+
+LEXICON ObliqueObjectAffixes
+
+! 1SG oblique object (e.g., soghaánit'à "you (sg.) pity me")
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.SG@si                                   #;
+
+! 2SG oblique object (e.g., noghaást'à "I pity you (sg.)")
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.SG@ni                                   #;
+
+! 3SG oblique objects are handled in their own lexicon.
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@                   3SG-Oblique-Objects;
+
+! 1PL oblique object (e.g., nahoghaánit'à "you (sg.) pity us")
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nahi                                 #;
+
+! 2PL oblique object (e.g., nahoghaást'à "I pity you (pl.)")
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.PL@nahi                                 #;
+
+! 3PL oblique objects are handled in their own lexicon.
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.PL@                   3PL-Oblique-Objects;
+
+! 4 oblique object (e.g., gwàgúdìlo "someone is sick")
+@U.OBLIQUEPERSON.4@@U.OBLIQUENUMBER.SG@gu                                   #;
+
+! Reciprocal and reflexive forms are handled in their own lexica.
+@U.OBLIQUEPERSON.REFL@                              Reflexive-Oblique-Objects;
+@U.OBLIQUEPERSON.RECIP@                            Reciprocal-Oblique-Objects;
+
+
+LEXICON 3SG-Oblique-Objects
+
+! 3SG oblique object with non-3 subject (e.g., ístłí oghànischúd "I'm
+! feeding the horse", moghànischúd "I'm feeding it")
+@D.SUBJECTPERSON.3@@U.OBLIQUEOBJECT.NOMINAL@                                #;
+@D.SUBJECTPERSON.3@@U.OBLIQUEOBJECT.NONE@mi                                 #;
+
+! 3SG oblique object with 3SG subject (e.g., ístłí oghàschúd "s/he is
+! feeding the horse", yoghàschúd "s/he is feeding it")
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@U.OBLIQUEOBJECT.NOMINAL@            #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@U.OBLIQUEOBJECT.NONE@yi             #;
+
+! 3SG oblique object with 3PL subject (e.g., ístłí oghàgischúd "they
+! are feeding the horse", giyoghàschúd "they are feeding it")
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@U.OBLIQUEOBJECT.NOMINAL@            #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@U.OBLIQUEOBJECT.NONE@@P.GI.ON@giyi  #;
+
+
+LEXICON 3PL-Oblique-Objects
+
+! 3PL oblique object with non-3 subject (e.g., gimilích'àká oghànischúd
+! "I am feeding their horses", gimoghànischúd "I am feeding them")
+@D.SUBJECTPERSON.3@@U.OBLIQUEOBJECT.NOMINAL@                                #;
+@D.SUBJECTPERSON.3@@U.OBLIQUEOBJECT.NONE@@P.GI.ON@gimi                      #;
+
+! 3PL oblique object with 3 subject (e.g., giyilích'àká oghàschúd "s/he
+! is feeding their horses", goghàschúd "s/he is feeding them"; also
+! gulích'àká oghàgischúd "they are feeding their horses", goghàgischúd
+! "they are feeding them")
+@U.SUBJECTPERSON.3@@U.OBLIQUEOBJECT.NOMINAL@                                #;
+@U.SUBJECTPERSON.3@@U.OBLIQUEOBJECT.NONE@gu                                 #;
+
+
+LEXICON Reflexive-Oblique-Objects
+
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@idi               #;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@idi               #;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.SG@idi               #;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@idi               #;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@idi               #;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.PL@@P.GI.ON@igidi    #;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@idi               #;
+
+
+LEXICON Reciprocal-Oblique-Objects
+
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@atłi                                 #;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@astłi                                #;
+@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@atłi              #;
+@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@astłi             #;
+
+
+! Experiencer verbs have oblique object inflection only (interpreted as
+! 'subject' in English translations; more restricted set of inflectional
+! markers than with most oblique objects, since no 3>3, reflexive, or
+! reciprocal marking here).
+LEXICON ObliqueSubjectAffixes
+
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.SG@si                      Only3SGSubject;
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.SG@ni                      Only3SGSubject;       
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@mi                      Only3SGSubject;
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nihi                    Only3SGSubject;
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nahi                    Only3SGSubject;
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.PL@nihi                    Only3SGSubject;
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.PL@nahi                    Only3SGSubject;
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.PL@@P.GI.ON@gimi           Only3SGSubject;
+@U.OBLIQUEPERSON.4@@U.OBLIQUENUMBER.SG@gu                      Only3SGSubject;
+
+
+! Impersonal and experiencer verbs only have inner inflection for third-person
+! singular forms.  This lexicon prevents forms with any other subject person-
+! number combinations from being produced/recognized.  (This should really be
+! in the inner affix definitions, but having this filter here should hopefully
+! reduce the total number of possible paths through the final, composed FST)
+LEXICON Only3SGSubject
+
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                                     #;
