@@ -25,6 +25,11 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 !! in this system in terms of the following symbols.
 !! (It is highly suggested to follow existing standards when adding new tags).
 
+! Selected punctuation tags
++CLB
++PUNCT
++LEFT
++RIGHT
 
 +Asp	!!= * @CODE@ asp, aspect
 +Dem	!!= * @CODE@ D, demonstrative
