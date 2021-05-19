@@ -1,0 +1,91 @@
+## Tsuut'ina morphophonology
+
+define vowel [a|ā|á|à|i|ī|í|ì|o|ō|ó|ò|u|ū|ú|ù];
+define unmarkedVowel [a|i|o|u];
+define consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
+
+# Change ua -> wa (general phonological process; phonetically, /wa/ can be
+# realized as /wa/ or /ɔa/~/ɔˑ/, but this isn't represented orthographically)
+define uBeforeA u -> w || _ [a|á|à];
+
+# Change ái -> áa, áí -> áá, ài -> àà, ai -> aa. (TODO: check this against 
+# more examples, especially ài -> àà, which may vary between speakers. For
+# now, use this and see if we run into any problems with any of our test
+# cases.)
+define aBeforeI i -> a, í -> á || [a|á] _;
+define lowABeforeI ì ì -> à, i -> à, í -> á || à _;
+
+# Change ài -> à, ái -> á, ai -> a. (TODO: check this against more verb forms.
+# I have the feeling we'll run into problems with words like náagóshí
+# "butcher", but we can always handle those cases with another symbol like "I"
+# when we come to them)
+define iBeforeA i -> 0 || _ [á|a|à];
+
+# Change iò -> ò, io -> o, ió -> ó (e.g., mi-oghà -> moghà; mostly applies to
+# oblique object markers)
+define iBeforeO i -> 0 || _ [ó|o|ò];
+
+# Change uo -> o (e.g., gu-oghà -> goghà; again, mostly applies to oblique
+# object markers)
+define uBeforeO u -> 0 || _ [ó|o|ò];
+
+# Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh) (This rule may need to
+# change; some people prefer to spell these forms without the second /s/)
+define zhDevoicing z -> s || s _ h;
+
+# Change sz -> ss (dìszày -> dìssày) (This rule may need to change; some
+# people prefer to spell these forms without the second /s/)
+define zDevoicing z -> s || s _;
+
+# Remove any "weak" /i/ vowels from inner prefixes. (This makes it easier
+# to combine inner prefixes with our inner inflectional chunks -- we can
+# still provide the inner prefixes in our lexical entries as having vowels,
+# but can remove them before we end up with sequences of three "iii"s in
+# some inflected forms)
+define deletePrefixI i -> 0 || _ "." vowel;
+define deleteBoundarySymbol "." -> 0;
+
+# Stems that begin with /l/ combine with 2PL (a|à)s- to form (a|à)ł (e.g.,
+# /as+lí/ "you.PL are" -> [ałí]).  Rather than target flag diacritics here,
+# we instead use the symbol 'S' to represent the /s/ in any 2PL inflectional
+# chunks that are involved in this process.
+define lInitialStemsSbjPl2 S l -> ł;
+define lInitialStemsSbjPl2Cleanup S -> s;
+
+# Phonotactic restriction: in general, /sl/ sequences should be resolved as
+# /stł/ (e.g., /is+lí/ "I am" -> [istłí]), outside of 2PL forms.
+define slDissimilation s l -> s t ł;
+
+# Certain high-tone prefixes in Tsuut'ina (e.g., tsí- "flee", or í- from 
+# historical *uˑ-) spread high tone rightward onto unmarked syllables,
+# stopping at the first inflectional chunk (e.g., íts'idiyískid "they were
+# asked" comes out as íts'ídíyískid, with high tone spreading from í- onto
+# ts'i- and di-, but stopping at yi-).  We mark this spreading high tone
+# in lexical entries as an H after the vowel (e.g., tsíH, íH)
+#
+# TODO: For now, this rule applies to sequences of at most three unmarked
+# syllables that appear after a spreading H tone.  If it turns out that
+# there are words with a spreading H tone that involve more than three
+# unmarked syllables before the inflectional chunk, this rule will need to
+# change.
+define hToneSpreading a a -> á á, a -> á, i i -> í í, i -> í, o o -> ó ó, o -> ó, u u -> ú ú, u -> ú || H (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ (unmarkedVowel)+ (consonant)+ _;
+define hToneSpreadingCleanup H -> 0;
+
+# Composing all rules together
+
+regex [ deletePrefixI
+.o. hToneSpreading
+.o. hToneSpreadingCleanup
+.o. deleteBoundarySymbol
+.o. uBeforeA
+.o. aBeforeI
+.o. lowABeforeI
+.o. iBeforeA
+.o. iBeforeO
+.o. uBeforeO
+.o. lInitialStemsSbjPl2
+.o. lInitialStemsSbjPl2Cleanup
+.o. slDissimilation
+.o. zhDevoicing
+.o. zDevoicing
+] ;
