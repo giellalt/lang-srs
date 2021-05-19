@@ -670,47 +670,10 @@ LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
 
 
 
-Prefixes
-Prefixes in the Sarsi language are bound to beginning of other words.
-
-
-
-Adjectives
-Adjectives in the Sarsi language describe things.
-
-
 Pronouns
 Pronouns in Tsuut'ina
 
 
-# The Tsuut'ina morphophonological/twolc rules file 
-
-## Alphabet and sets
-
-### Alphabet
- *  a b c d e f g h i j k l ł m n o p q r s t u v w x y z  
-  á é ó ú í ā ē ō ū ī à è ò ù ì ʔ %'                       
- *  A B C D E F G H I J K L Ł M N O P Q R S T U V W X Y Z  
-  Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ʔ                        
-
- *  %^VH:0       
-    %> %<        
-
-### Sets
-
- *  Vow = a e i o u                                     
-        á é ó ú í ā ē ō ū ī à è ò ù ì                 
-        A E I O U                                     
-        Á É Ó Ú Í Ā Ē Ō Ū Ī À È Ò Ù Ì ;               
- *  Cns = b c d f g h j k l ł m n p q r s t v w x z ʔ %i 
-        B C D F G H J K L Ł M N P Q R S T V W X Z ʔ ;  
-
-## Rules
-
-* **Dock floating high tone on the preceeding vowel** \\  si<^VHtsí to high-tone prefix sí
-
-* *si<^VHtsí*
-* *sí<0tsí*
 
 # Symbol affixes
 
@@ -784,11 +747,6 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
 
 
  * LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
-
-
-Adjective inflection
-The Sarsi language adjectives compare.
-
 
 
 
