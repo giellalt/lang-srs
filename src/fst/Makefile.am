@@ -24,11 +24,11 @@ HFST_LEXC_LOCAL_FLAGS=
 GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
-GT_LEXC_SRCS_L1_L2=\
-			 stems/words.lexc \
-			 affixes/nouns.lexc \
-			 affixes/symbols.lexc     \
-			 stems/nouns.lexc
+GT_LEXC_SRCS_L1_L2=
+#			 stems/words.lexc \
+#			 affixes/nouns.lexc \
+#			 affixes/symbols.lexc     \
+#			 stems/nouns.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -62,6 +62,7 @@ GT_LOCAL_XFSCRIPT_SRCS=
 GT_DISTRO_SRCS=affixes/verb_inner_affixes.lexc  \
               affixes/verb_middle_affixes.lexc \
               affixes/verb_outer_affixes.lexc  \
+              affixes/verb_oblique_affixes.lexc  \
               affixes/verbtags.lexc            \
               stems/verbstems.lexc
 
