@@ -63,8 +63,8 @@ GT_DISTRO_SRCS=affixes/verb_inner_affixes.lexc  \
               affixes/verb_middle_affixes.lexc \
               affixes/verb_outer_affixes.lexc  \
               affixes/verb_oblique_affixes.lexc  \
-              affixes/verbtags.lexc            \
-              stems/verbstems.lexc
+              affixes/verb_tags.lexc            \
+              stems/verb_stems.lexc
 
 ### BEGIN: Local processing: ###
 

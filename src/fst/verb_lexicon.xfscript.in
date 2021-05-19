@@ -7,7 +7,7 @@
 
 # read lexc verbstems.lexc
 # read lexc verb_lexicon.lexc
-read lexc @srcdir@/stems/verbstems.lexc
+read lexc @srcdir@/stems/verb_stems.lexc
 define Stems
 
 read lexc @srcdir@/affixes/verb_inner_affixes.lexc
@@ -70,7 +70,7 @@ define Grammar;
 source @srcdir@/phonology.xfscript
 define MorphoPhonology;
 
-read lexc @srcdir@/affixes/verbtags.lexc
+read lexc @srcdir@/affixes/verb_tags.lexc
 define Tags;
 
 # To prevent morphophonology to be tripped up be intervening flags
