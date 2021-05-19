@@ -1,18 +1,4 @@
-Multichar_Symbols
-@U.VALENCE.INTRANSITIVE@
-@U.VALENCE.TRANSITIVE@
-@U.ASPECT.IPFV@
-@U.ASPECT.PFV@
-@U.ASPECT.PROG@
-@U.ASPECT.POT@
-@U.TAMA.%0@
-@U.TAMA.%0i@
-@U.TAMA.sii@
-@U.TAMA.ni@
-@U.TAMA.yi-y@
-@U.TAMA.yi-a@
-@U.TAMA.yi@
-@U.TAMA.yii@
+Multichar_Symbols @U.TAMA.yis-y@ @R.DISTRIBUTIVE.OFF@ @U.TAMA.%0i@ @U.TAMA.i@ @U.TAMA.nis@ @U.TAMA.isii@ @U.SUBJECTNUMBER.SG@ @U.PREFIX.OUTER@ @U.TAMA.sii@ @U.TAMA.yi-a@ @U.TAMA.yis-a@ @U.TAMA.yi@ @R.PREFIX.OUTER@ @U.VALENCE.INTRANSITIVE@ @U.ASPECT.PROG@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.REFL@ @U.ASPECT.POT@ @U.TAMA.yii-y@ @U.TAMA.si@ @U.TAMA.is@ @R.OBJECTPERSON.3@ @U.OBJECTNUMBER.PL@ @U.TAMA.nii@ @R.PREFIX.INNER@ @P.SUPERASPECT.REP@ @D.OBJECTPERSON@ @D.PREFIX@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @U.ASPECT.IPFV@ @U.VALENCE.DITRANSITIVE@ @U.TAMA.yis@ @U.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @P.DISTRIBUTIVE.OFF@ @U.TAMA.%0s@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @P.DISTRIBUTIVE.ON@ @U.TAMA.isis@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.TRANSITIONAL@ @D.VALENCE.TRANSITIVE@ @R.PREFIX.MIDDLE@ @U.VALENCE.TRANSITIVE@ @U.TAMA.%0@ @U.SUBJECTNUMBER.PL@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.4@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @U.VALENCE.OBLIQUEOBJECT@ @U.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @U.TAMA.sis@ @R.OBJECTPERSON.2@ @P.PREFIX.MIDDLE@ @U.TAMA.isi@ @U.TAMA.ii@ @U.OBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.4@ @R.OBJECTPERSON.4@ @U.TAMA.yii-a@ @R.SUBJECTNUMBER.PL@ @U.VALENCE.IMPERSONAL@ @U.TAMA.yii@ @U.TAMA.ni@ @U.ASPECT.PFV@ @R.SUBJECTPERSON.4@ @U.TAMA.yi-y@ @R.OBJECTPERSON.RECIP@
 
 LEXICON Root
 
@@ -20,75 +6,240 @@ Verbstems;
 
 LEXICON Verbstems
 
-! N.B. removed English glosses in brackets so that
-! analysis and generation in Gunáhà' would work
+! 0-IPFV verbs
+didús[crawl]:di.dús                      INTR-0-IPFV;
+nákuy[vomit]:ná=kuy                      INTR-0-IPFV;
 
-itsiy[cry]:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
-itsiy[cry]:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
-itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
-itsiy[cry]:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
+! Skip for now (until 3SG object marking have been discussed with Bruce)
+!!iswùsh[tickle]:wùsh                       TRANS-0s-IPFV;
+!!disdàł[throw-plural-O]:di.dàł             TRANS-0s-IPFV;
+!!tásk'ááz[paint-O-red]:tá=k'ááz            TRANS-0s-IPFV;
+!!iizùd[wolf-down-O]:zùd                    TRANS-0i-IPFV;
 
-ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
-ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) CHECK
-ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
+diitł'á[run]:di.tł'á                      INTR-0i-IPFV;
+xààtł'á[run-out]:xà=tł'á                  INTR-0i-IPFV;
 
-! ! CHECK
-nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;   ! (PFV; sii-PFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG)
-nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-! nàná == nìná == nìí
-
-! ! CHECK
-tsídiitł'á[run-away]:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-tsídiitł'á[run-away]:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
-tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
-tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
 
 !
-! Non-past/imperfective (IPFV) forms
+! Intransitive verbs.
+!
+itsiy[cry]:tsiy                          INTR-0-IPFV;       ! (IPFV; 0-IPFV)
+itsiy[cry]:tsày                          INTR-yi-y-PFV;     ! (PFV; yi-PFV-yi)
+itsiy[cry]:tsíł                          INTR-yi-PROG;      ! (PROG; yi-PROG)
+itsiy[cry]:ná=chish                      INTR-0-IPFV-REP;   ! (REP; 0-IPFV)
+
+ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;      ! (IPFV; ni-IPFV)
+ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;       ! (PFV; ni-PFV)
+ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;      ! (PROG; yi-PROG)
+ts'ázid[wake-up]:ts'áná=zhiizh           INTR-0-IPFV-REP;   ! (REP; 0-IPFV)
+
+nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;      ! (IPFV; 0i-IPFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;      ! (PFV; sii-PFV)
+nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;     ! (PROG; yii-PROG)
+nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV-REP;  ! (REP; 0i-IPFV)
+nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV-REP;  ! (REP; 0i-IPFV)
+
+tsídiitł'á[run-away]:tsíH_di.tł'á         INTR-0i-IPFV;     ! (IPFV; 0i-IPFV)
+tsídiitł'á[run-away]:tsíH_di.tł'ò         INTR-sii-PFV;     ! (PFV; sii-PFV)
+tsídiitł'á[run-away]:tsíH_di.tł'áł        INTR-yii-PROG;    ! (PROG; yii-PROG)
+tsídiitł'á[run-away]:ná=tsíH_di.tł'ásh    INTR-0i-IPFV-REP; ! (REP; 0i-IPFV)
+tsídiitł'á[run-away]:tsíH_di.tl'ò         INTR-yii-POT;     ! (POT; yii-POT)
+
+!
+! Transitive verbs.
+!
+ìstsáh[see]:tsáh                           TRANS-is-IPFV;
+ìstsáh[see]:ʔí                             TRANS-yi-a-PFV;
+
+!
+! Experiencer verbs (where oblique object marking indicates the experiencer
+! of the verbal action, and the subject is treated as always being 3SG).
+!
+!màgúdìlo[be-sick]:à=gú_di.lo                EXPER-i-IPFV; ! CHECK: ì- lexical?
+!mágunichina[be-beautiful]:á=gu_ni.china     EXPER-0-IPFV; ! CHECK: tone OK?
+
+!
+! Oblique object verbs (where only subject and oblique object inflection are
+! present)
+!
+!yoghàtázáʔò[abuse]:oghàtázá=ʔò              OBL-0-IPFV;
+!yoghàtázáʔò[abuse]:oghàtázá=ʔón             OBL-yi-y-PFV;
+
+!
+! Ditransitive verbs.
+!
+!moghànischúd[feed]:oghà=chúd                DITRANS-nis-IPFV;
+
+
+!
+! TODO: fill in other transitivity options in the continuation lexica below!
+!
+
+!
+! 0-IPFV forms
 !
 LEXICON INTR-0-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@ Verbsuffixes;
 
+LEXICON INTR-0s-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0s@ Verbsuffixes;
+
 LEXICON INTR-0i-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0i@ Verbsuffixes;
 
+LEXICON INTR-0-IPFV-REP
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@P.SUPERASPECT.REP@ Verbsuffixes;
+
+LEXICON INTR-0s-IPFV-REP
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0s@@P.SUPERASPECT.REP@ Verbsuffixes;
+
+LEXICON INTR-0i-IPFV-REP
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0i@@P.SUPERASPECT.REP@ Verbsuffixes;
+
+LEXICON EXPER-0-IPFV
+@U.VALENCE.EXPERIENCER@@U.ASPECT.IPFV@@U.TAMA.%0@ Verbsuffixes;
+
+LEXICON OBL-0-IPFV
+@U.VALENCE.OBLIQUEOBJECT@@U.ASPECT.IPFV@@U.TAMA.%0@ Verbsuffixes;
+
+
+!
+! ni-IPFV forms
+!
 LEXICON INTR-ni-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.ni@ Verbsuffixes;
 
+LEXICON INTR-nis-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.nis@ Verbsuffixes;
+
+LEXICON INTR-nii-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.nii@ Verbsuffixes;
+
+LEXICON DITRANS-nis-IPFV
+@U.VALENCE.DITRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.nis@ Verbsuffixes;
+
+
 !
-! Past/perfective (PFV) forms
+! ni-PFV forms
 !
 LEXICON INTR-ni-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.ni@ Verbsuffixes;
 
+LEXICON INTR-nis-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.nis@ Verbsuffixes;
+
+LEXICON INTR-nii-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.nii@ Verbsuffixes;
+
+
+!
+! si-PFV forms
+!
+LEXICON INTR-si-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.si@ Verbsuffixes;
+
+LEXICON INTR-sis-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.sis@ Verbsuffixes;
+
 LEXICON INTR-sii-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.sii@ Verbsuffixes;
 
+
+!
+! yi-y-PFV forms
+!
 LEXICON INTR-yi-y-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@ Verbsuffixes;
 
+LEXICON INTR-yis-y-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yis-y@ Verbsuffixes;
+
+LEXICON INTR-yii-y-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yii-y@ Verbsuffixes;
+
+LEXICON OBL-yi-y-PFV
+@U.VALENCE.OBLIQUEOBJECT@@U.ASPECT.PFV@@U.TAMA.yi-y@ Verbsuffixes;
+
+
+!
+! yi-a-PFV forms
+!
 LEXICON INTR-yi-a-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@ Verbsuffixes;
 
+LEXICON INTR-yis-a-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yis-a@ Verbsuffixes;
+
+LEXICON INTR-yii-a-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yii-a@ Verbsuffixes;
+
+LEXICON TRANS-yi-a-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@ Verbsuffixes;
+
+LEXICON TRANS-yis-a-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yis-a@ Verbsuffixes;
+
+LEXICON TRANS-yii-a-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yii-a@ Verbsuffixes;
+
+
 !
-! Progressive (PROG) forms
+! yi-PROG forms
 !
 LEXICON INTR-yi-PROG
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@ Verbsuffixes;
 
+LEXICON INTR-yis-PROG
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yis@ Verbsuffixes;
+
 LEXICON INTR-yii-PROG
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yii@ Verbsuffixes;
 
+
 !
-! Potential (POT) forms
+! yi-POT forms
 !
+LEXICON INTR-yi-POT
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yi@ Verbsuffixes;
+
+LEXICON INTR-yis-POT
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yis@ Verbsuffixes;
+
 LEXICON INTR-yii-POT
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yii@ Verbsuffixes;
+
+
+!
+! i-IPFV forms
+!
+LEXICON INTR-i-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.i@ Verbsuffixes;
+
+LEXICON INTR-is-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.is@ Verbsuffixes;
+
+LEXICON INTR-ii-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.ii@ Verbsuffixes;
+
+LEXICON TRANS-is-IPFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.is@ Verbsuffixes;
+
+LEXICON EXPER-i-IPFV
+@U.VALENCE.EXPERIENCER@@U.ASPECT.IPFV@@U.TAMA.i@ Verbsuffixes;
+
+
+!
+! isi-PFV forms
+!
+LEXICON INTR-isi-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.isi@ Verbsuffixes;
+
+LEXICON INTR-isis-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.isis@ Verbsuffixes;
+
+LEXICON INTR-isii-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.isii@ Verbsuffixes;
+
 
 
 !
@@ -97,7 +248,7 @@ LEXICON INTR-yii-POT
 LEXICON Verbsuffixes
 
 !-gù[manner]:-gù   #;
-                  #;
+                   #;
 
 ! OUTER.PFX#    --> OUTER.PFX=
 ! OUTER.SBJ/DO% --> OUTER.SBJ_
