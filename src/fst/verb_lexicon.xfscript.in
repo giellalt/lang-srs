@@ -3,19 +3,24 @@
 ###############################################
 
 # May want to use this if symbol pairs grow - needs foma
-#set lexc-align ON
+# set lexc-align ON
 
+# read lexc verbstems.lexc
+# read lexc verb_lexicon.lexc
 read lexc @srcdir@/stems/verbstems.lexc
-define Stems ;
+define Stems
 
 read lexc @srcdir@/affixes/verb_inner_affixes.lexc
-define InnerAffixes ;
+define InnerAffixes
 
 read lexc @srcdir@/affixes/verb_middle_affixes.lexc
-define MiddleAffixes ;
+define MiddleAffixes
 
 read lexc @srcdir@/affixes/verb_outer_affixes.lexc
-define OuterAffixes ;
+define OuterAffixes
+
+read lexc @srcdir@/affixes/verb_oblique_affixes.lexc
+define ObliqueAffixes
 
 # Mark prefix type (insert corresponding flags to the
 # original prefixes we know to be present from the lexical entry.
@@ -46,30 +51,48 @@ define InsMiddle [..] -> "_" || "=" _ ~$["_"] .#. .o.
 
 define InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 
+# We temporarily keep the boundary symbol for inner affixes (".") in place
+# so that we can target morphophonology there more easily (especially when
+# aiming to drop the "weak" /i/ vowels that appear in inner lexical prefixes).
 read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
-            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+#            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+            "." -> "." InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+define WordForms;
+
+# Concatenate ObliqueAffixes and the other inflectional FSTs.
+read regex WordForms .o. [..] -> ObliqueAffixes || .#. _;
 
 twosided flag-diacritics
-define Grammar ;
+define Grammar;
+
+# Morphophonology
+
+source @srcdir@/phonology.xfscript
+define MorphoPhonology;
 
 read lexc @srcdir@/affixes/verbtags.lexc
-define Tags ;
+define Tags;
 
-read regex Grammar Tags ;
+# To prevent morphophonology to be tripped up be intervening flags
+set flag-is-epsilon ON
 
-#eliminate flags
+# regex Grammar Tags;
 
-#echo ELIMINATE VALENCE
-#eliminate flag VALENCE
-#echo ELIMINATE TAMA
+# Tentative code for dealing with Morphophonology as read for a separate
+# file. Though we would want to figure a way to compose each rewrite rule
+# the the morphological component one-by-one for faster compilation.
+
+regex [Grammar Tags] .o. MorphoPhonology ;
+
+# regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. iBeforeO .o. uBeforeO .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
+
+
 #eliminate flag TAMA
-#echo ELIMINATE ASPECT
-#eliminate flag ASPECT
-#echo ELIMINATE SUBJECTPERSON
-#eliminate flag SUBJECTPERSON
-#echo ELIMINATE SUBJECTPERSON
 #eliminate flag SUBJECTNUMBER
-#echo ELIMINATE OBJECTNUMBER
-#eliminate flag OBJECTNUMBER
-#echo ELIMINATE DISTRIBUTIVE 
+#eliminate flag SUBJECTPERSON
 #eliminate flag DISTRIBUTIVE
+#eliminate flag OBJECTNUMBER
+#eliminate flag OBJECTPERSON
+#eliminate flag VALENCE
+#eliminate flag PREFIX
+#eliminate flag ASPECT
