@@ -82,34 +82,34 @@ endif # CAN_FOMA
 # Remove brackets from mobile dict as well (spellrelax should already be
 # included at this stage)
 analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
-					filters/remove-bracketed-english-gloss.foma \
-  					filters/allow_uppercase.foma
+					filters/remove-bracketed-english-gloss.% \
+  					filters/allow_uppercase.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-  			    @\"filters/remove-bracketed-english-gloss.foma\"           \
+  			    @\"filters/remove-bracketed-english-gloss.$*\"           \
 			.o. @\"$<\"                                          \
-   			.o. @\"filters/allow_uppercase.foma\"           \
+   			.o. @\"filters/allow_uppercase.$*\"           \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 # Override analyser-dict-gt-desc, and add spellrelax
 analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
-					orthography/spellrelax.compose.foma \
-					filters/remove-bracketed-english-gloss.foma \
-  					filters/allow_uppercase.foma
+					orthography/spellrelax.compose.% \
+					filters/remove-bracketed-english-gloss.% \
+  					filters/allow_uppercase.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-  			    @\"filters/remove-bracketed-english-gloss.foma\"           \
+  			    @\"filters/remove-bracketed-english-gloss.$*\"           \
 			.o. @\"$<\"                                          \
 			.o. @\"orthography/spellrelax.compose.$*\"           \
-   			.o. @\"filters/allow_uppercase.foma\"           \
+   			.o. @\"filters/allow_uppercase.$*\"           \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
-					filters/remove-bracketed-english-gloss.foma
+					filters/remove-bracketed-english-gloss.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-  			    @\"filters/remove-bracketed-english-gloss.foma\"           \
+  			    @\"filters/remove-bracketed-english-gloss.$*\"           \
 			.o. @\"$<\"                                          \
 			;\n\
 		 invert net\n\
