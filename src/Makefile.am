@@ -82,35 +82,35 @@ endif # CAN_FOMA
 # Remove brackets from mobile dict as well (spellrelax should already be
 # included at this stage)
 analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
-					filters/remove-bracketed-english-gloss.% \
+					filters/remove-bracketed-english-gloss.%       \
   					filters/allow_uppercase.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-  			    @\"filters/remove-bracketed-english-gloss.$*\"           \
-			.o. @\"$<\"                                          \
-   			.o. @\"filters/allow_uppercase.$*\"           \
+  			    @\"filters/remove-bracketed-english-gloss.$*\" \
+			.o. @\"$<\"                                        \
+   			.o. @\"filters/allow_uppercase.$*\"                \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 # Override analyser-dict-gt-desc, and add spellrelax
-analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
-					orthography/spellrelax.compose.% \
+analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.%         \
+					orthography/spellrelax.compose.%         \
 					filters/remove-bracketed-english-gloss.% \
   					filters/allow_uppercase.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-  			    @\"filters/remove-bracketed-english-gloss.$*\"           \
-			.o. @\"$<\"                                          \
-			.o. @\"orthography/spellrelax.compose.$*\"           \
-   			.o. @\"filters/allow_uppercase.$*\"           \
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                     \
+  			    @\"filters/remove-bracketed-english-gloss.$*\" \
+			.o. @\"$<\"                                        \
+			.o. @\"orthography/spellrelax.compose.$*\"         \
+   			.o. @\"filters/allow_uppercase.$*\"                \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
 					filters/remove-bracketed-english-gloss.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-  			    @\"filters/remove-bracketed-english-gloss.$*\"           \
-			.o. @\"$<\"                                          \
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                     \
+  			    @\"filters/remove-bracketed-english-gloss.$*\" \
+			.o. @\"$<\"                                        \
 			;\n\
 		 invert net\n\
 		 save stack $@\n\
@@ -121,19 +121,19 @@ generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
 # analyser-gt-%.foma: analyser-gt-%.tmp.foma \
 # 					orthography/spellrelax.compose.foma \
 # 					filters/downcase_UCletters.foma
-# 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                         \
+# 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                    \
 # 			    @\"$<\"                                       \
-#   			.o. @\"orthography/spellrelax.compose.foma\"           \
-#   			.o. @\"filters/downcase_UCletters.foma\"           \
+#   			.o. @\"orthography/spellrelax.compose.foma\"  \
+#   			.o. @\"filters/downcase_UCletters.foma\"      \
 # 			;\n\
 # 		 save stack $@\n\
 # 		 quit\n" | $(XFST_TOOL) $(VERBOSITY)
 
 analyser-gt-%.foma: analyser-gt-%.tmp.foma \
 					orthography/spellrelax.compose.foma
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                         \
-			    @\"$<\"                                       \
-  			.o. @\"orthography/spellrelax.compose.foma\"           \
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex               \
+			    @\"$<\"                                  \
+  			.o. @\"orthography/spellrelax.compose.foma\" \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL) $(VERBOSITY)
