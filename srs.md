@@ -605,106 +605,6 @@ These were the set types.
 
 
 
-# Tsuut'ina Nouns
-## Classification
-1. Always unpossessed nouns: nàk'ús "cloud"
-1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
-1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
-
- Three (phonological) cases for the possessive prefixes:
- # Consonant-initial stem: si- "1SG" tsì "head" -> sitsì "my head"
- # Preceding H-tone stem: si- "1SG" V́tsí "nose" -> sítsí "my nose" 
- # Vowel-initial stem: si- "1SG" óó "mother" -> sóó "my mother" \\
-   (cf. ʔinóó "mother" , ʔi- "UNSPEC.POSS" (n)óó;
-   ```gu- "SOMEONE" óó "mother" -> gwóó gu > gw / _ [oa] ) Cu[oa] > Cw[oa]?```
-
-Periphrastic / non-morphological constructions are used for always
-unpossessed nouns: sá(à) nàk'ús "my cloud", ná(à) ʔidínít'ùgù
-yiitł'áłí "your vehicle")
-
-## Lexicons
-
- * LEXICON AlwaysUnpossessedNouns  never Px
-
-
- * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
-
-
- * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
-
- * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
-
-
-Numerals
-Numerals in the Sarsi language are numbers.
-
-
-
-# Tsuut'ina verb stems
-
-## Intransitive Verbs
-
- * LEXICON PERF_CLASS_1   
-
- * LEXICON IPFV_CLASS_1a   
-
- * LEXICON IPFV_CLASS_1b  
-
- * LEXICON IPFV_CLASS_2   
-
- * LEXICON PERF_STEMS_1   the list of most verbs in perf
-
- * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
-
- * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
-
-
-## Transitive Verbs 
-
- * LEXICON T_IPFV_CLASS_1a   type 1a
-
-
-## Endlex cleanup
-
-LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
-
-
-
-Pronouns
-Pronouns in Tsuut'ina
-
-
-
-# Symbol affixes
-
-
-
-
-
-## Tsuut'ina Noun inflection
-
-## Classification.
-1. Always unpossessed nouns: nàk'ús "cloud"
-1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
-1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
-
-(see explanation in the affixes file)
-
-## Lexicons
-
- * LEXICON NounPrefixes    Splitting in 3
-
- * LEXICON AlwaysPossessedNounPrefixes   Px
-
- * LEXICON VariablyPossessedNouns   Px or not
-
-
-Proper noun inflection
-The Sarsi language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-
-
 # Verb inflection in Tsuut'ina
 
 The lexicon names srs15, srs14, etc. refers to traditional template names.
@@ -747,6 +647,106 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
 
 
  * LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
+
+
+Proper noun inflection
+The Sarsi language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+## Tsuut'ina Noun inflection
+
+## Classification.
+1. Always unpossessed nouns: nàk'ús "cloud"
+1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
+1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
+
+(see explanation in the affixes file)
+
+## Lexicons
+
+ * LEXICON NounPrefixes    Splitting in 3
+
+ * LEXICON AlwaysPossessedNounPrefixes   Px
+
+ * LEXICON VariablyPossessedNouns   Px or not
+
+
+
+# Symbol affixes
+
+
+
+
+
+
+# Tsuut'ina verb stems
+
+## Intransitive Verbs
+
+ * LEXICON PERF_CLASS_1   
+
+ * LEXICON IPFV_CLASS_1a   
+
+ * LEXICON IPFV_CLASS_1b  
+
+ * LEXICON IPFV_CLASS_2   
+
+ * LEXICON PERF_STEMS_1   the list of most verbs in perf
+
+ * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
+
+ * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
+
+
+## Transitive Verbs 
+
+ * LEXICON T_IPFV_CLASS_1a   type 1a
+
+
+## Endlex cleanup
+
+LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
+
+
+
+Pronouns
+Pronouns in Tsuut'ina
+
+
+Numerals
+Numerals in the Sarsi language are numbers.
+
+
+# Tsuut'ina Nouns
+## Classification
+1. Always unpossessed nouns: nàk'ús "cloud"
+1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
+1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
+
+ Three (phonological) cases for the possessive prefixes:
+ # Consonant-initial stem: si- "1SG" tsì "head" -> sitsì "my head"
+ # Preceding H-tone stem: si- "1SG" V́tsí "nose" -> sítsí "my nose" 
+ # Vowel-initial stem: si- "1SG" óó "mother" -> sóó "my mother" \\
+   (cf. ʔinóó "mother" , ʔi- "UNSPEC.POSS" (n)óó;
+   ```gu- "SOMEONE" óó "mother" -> gwóó gu > gw / _ [oa] ) Cu[oa] > Cw[oa]?```
+
+Periphrastic / non-morphological constructions are used for always
+unpossessed nouns: sá(à) nàk'ús "my cloud", ná(à) ʔidínít'ùgù
+yiitł'áłí "your vehicle")
+
+## Lexicons
+
+ * LEXICON AlwaysUnpossessedNouns  never Px
+
+
+ * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
+
+
+ * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
+
+ * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
 
 
 
@@ -907,22 +907,6 @@ The word forms in Tsuut'ina start from noun and verb prefixes
 
 
 
-We describe here how abbreviations are in Sarsi are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-
-
-
 
 
 
@@ -973,6 +957,22 @@ For example:
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Sarsi are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
 
 
       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
