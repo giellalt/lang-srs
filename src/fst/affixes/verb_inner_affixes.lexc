@@ -26,6 +26,7 @@ LEXICON Root
 ni-IPFV ; 
 si-IPFV ;
 i-IPFV ;
+isi-IPFV ;
 
 ni-PFV ;
 si-PFV ;
@@ -182,7 +183,13 @@ LEXICON ni-IPFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@      #;
 
 LEXICON ni-IPFV-AFF-InnerPrefix
+! Three forms of 2SG ni-IPFV after an inner prefix are attested and freely
+! interchangeable: ní-, níni-, and íni- (e.g., ch'àdinít'a ~ ch'àdinínit'a ~
+! ch'àdiínit'a "you (sg.) are holy")
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níni  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@íni   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní    #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@      #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@naà   #;
@@ -213,8 +220,13 @@ LEXICON nis-IPFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
 LEXICON nis-IPFV-AFF-InnerPrefix
+! Three forms of 2SG nis-IPFV after an inner prefix are attested and freely
+! interchangeable: nís-, nínis-, and ínis- (e.g., diníssúl ~ dinínisúl ~
+! diínisúl "you (sg.) are hairy")
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@nís   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@nínis #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ínis  #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@is    #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@naà   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@niì   #;
@@ -245,8 +257,13 @@ LEXICON nii-IPFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ii    #;
 
 LEXICON nii-IPFV-AFF-InnerPrefix
+! Three forms of 2SG nii-IPFV after an inner prefix are attested and freely
+! interchangeable: níí-, niínii-, and iínii- (e.g., tłítsiníínì ~
+! tłítsiniíniinì ~ tłítsiíniinì "you (sg.) are tasty, taste good")
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níí   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@niínii #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@iínii #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@naà   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@niì   #;
@@ -880,7 +897,10 @@ LEXICON yi-POT-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@í     #;
 
 LEXICON yi-POT-AFF-InnerPrefix
+! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís (e.g.,
+! diyishò ~ díshò "I might go")
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ís    #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yí    #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@í     #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@yaà   #;
@@ -911,7 +931,9 @@ LEXICON yis-POT-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ís    #;
 
 LEXICON yis-POT-AFF-InnerPrefix
+! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís.
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ís    #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yís   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ís    #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@yaà   #;
@@ -942,7 +964,9 @@ LEXICON yii-POT-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #;
 
 LEXICON yii-POT-AFF-InnerPrefix
+! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís.
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ís    #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yíí   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@íí    #; 
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@yaà   #;
@@ -1077,26 +1101,38 @@ LEXICON ii-IPFV-AFF-OuterPrefix
 
 
 !
-! ì-si-PFV
+! ì-si-IPFV and ì-si-PFV
 !
+! As with si-IPFV and si-PFV, ì-si-IPFV and ì-si-PFV differ only in terms of
+! their aspect, with the former being used with stative verbs and the latter
+! with active/dynamic ones.  The forms of their inflectional markers are
+! exactly the same.
+!
+
+LEXICON isi-IPFV
+@U.ASPECT.IPFV@                               isi-AFF ;
+
 LEXICON isi-PFV
+@U.ASPECT.PFV@                                isi-AFF ;
 
-@U.ASPECT.PFV@@U.TAMA.isi@@D.PREFIX@          isi-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isi@@R.PREFIX.INNER@    isi-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isi@@R.PREFIX.MIDDLE@   isi-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isi@@R.PREFIX.OUTER@    isi-PFV-AFF-OuterPrefix ;
+LEXICON isi-AFF
 
-@U.ASPECT.PFV@@U.TAMA.isis@@D.PREFIX@         isis-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isis@@R.PREFIX.INNER@   isis-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isis@@R.PREFIX.MIDDLE@  isis-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isis@@R.PREFIX.OUTER@   isis-PFV-AFF-OuterPrefix ;
+@U.TAMA.isi@@D.PREFIX@                        isi-AFF-NoPrefix ;
+@U.TAMA.isi@@R.PREFIX.INNER@                  isi-AFF-InnerPrefix ;
+@U.TAMA.isi@@R.PREFIX.MIDDLE@                 isi-AFF-InnerPrefix ;
+@U.TAMA.isi@@R.PREFIX.OUTER@                  isi-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.isii@@D.PREFIX@         isii-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.INNER@   isii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.MIDDLE@  isii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.isii@@R.PREFIX.OUTER@   isii-PFV-AFF-OuterPrefix ;
+@U.TAMA.isis@@D.PREFIX@                       isis-AFF-NoPrefix ;
+@U.TAMA.isis@@R.PREFIX.INNER@                 isis-AFF-InnerPrefix ;
+@U.TAMA.isis@@R.PREFIX.MIDDLE@                isis-AFF-InnerPrefix ;
+@U.TAMA.isis@@R.PREFIX.OUTER@                 isis-AFF-OuterPrefix ;
 
-LEXICON isi-PFV-AFF-NoPrefix
+@U.TAMA.isii@@D.PREFIX@                       isii-AFF-NoPrefix ;
+@U.TAMA.isii@@R.PREFIX.INNER@                 isii-AFF-InnerPrefix ;
+@U.TAMA.isii@@R.PREFIX.MIDDLE@                isii-AFF-InnerPrefix ;
+@U.TAMA.isii@@R.PREFIX.OUTER@                 isii-AFF-OuterPrefix ;
+
+LEXICON isi-AFF-NoPrefix
 ! Two 3S, 3P, 4 forms are attested here (e.g., ìzìl, ììzil "3S got hot")
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí   #;
@@ -1110,12 +1146,12 @@ LEXICON isi-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;
 
-LEXICON isi-PFV-AFF-InnerPrefix
+LEXICON isi-AFF-InnerPrefix
 ! Same forms as si-AFF-InnerPrefix; reuse those definitions here.
 ! TODO: confirm that this works!
                                              si-AFF-InnerPrefix;
 
-LEXICON isi-PFV-AFF-OuterPrefix
+LEXICON isi-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology works? 
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isí   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@i     #; ! CHECK: morphophonology works? 
@@ -1126,7 +1162,7 @@ LEXICON isi-PFV-AFF-OuterPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ì     #;
 
 
-LEXICON isis-PFV-AFF-NoPrefix
+LEXICON isis-AFF-NoPrefix
 ! CHECK: 3S form requires confirmation in additional documentation
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isís  #;
@@ -1137,11 +1173,11 @@ LEXICON isis-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
-LEXICON isis-PFV-AFF-InnerPrefix
+LEXICON isis-AFF-InnerPrefix
 ! Same forms as sis-AFF-InnerPrefix; reuse those definitions here.
                                              sis-AFF-InnerPrefix;
 
-LEXICON isis-PFV-AFF-OuterPrefix
+LEXICON isis-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology works? 
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isís  #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@is    #; ! CHECK: morphophonology works? 
@@ -1152,7 +1188,7 @@ LEXICON isis-PFV-AFF-OuterPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
 
-LEXICON isii-PFV-AFF-NoPrefix
+LEXICON isii-AFF-NoPrefix
 ! Two 3P, 4 forms are attested (e.g., gììdùn, gìsdùn '3P got a swelling')
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí  #;
@@ -1165,11 +1201,11 @@ LEXICON isii-PFV-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
-LEXICON isii-PFV-AFF-InnerPrefix
+LEXICON isii-AFF-InnerPrefix
 ! Same forms as sii-AFF-InnerPrefix; reuse those definitions here.
                                              sii-AFF-InnerPrefix;
 
-LEXICON isii-PFV-AFF-OuterPrefix
+LEXICON isii-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@isis  #; ! CHECK: morphophonology OK?
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@isíí  #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #; ! CHECK: morphophonology OK?
