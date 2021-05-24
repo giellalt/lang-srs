@@ -43,6 +43,7 @@ LEXICON SubjectAndDirectObject
 @U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.PL@                           Distributive;
 @U.SUBJECTNUMBER.PL@@U.OBJECTNUMBER.SG@                           Distributive;
 @U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@                            Distributive;
+@U.SUBJECTNUMBER.SG@@U.OBJECTPERSON.4@                            Distributive;
 @U.SUBJECTNUMBER.SG@@U.OBJECTNUMBER.SG@                         NoDistributive;
 
 
@@ -51,6 +52,9 @@ LEXICON SubjectAndObliqueObject
 ! In verbs that take subject and oblique object marking (but no direct object
 ! marking), the distributive marker can refer either to subjects or oblique
 ! objects.
+!
+! TODO: confirm that 4SG.IO gu- is also possible throughout (and if so, allow
+! with distributives below, as in SubjectAndDirectObject above)
 @U.SUBJECTNUMBER.PL@@U.OBLIQUENUMBER.PL@                          Distributive;
 @U.SUBJECTNUMBER.SG@@U.OBLIQUENUMBER.PL@                          Distributive;
 @U.SUBJECTNUMBER.PL@@U.OBLIQUENUMBER.SG@                          Distributive;
@@ -61,6 +65,8 @@ LEXICON SubjectAndObliqueObject
 !
 ! FIXME FROMHERE: make sure this only provides one pathway out per combination
 ! of subject, direct object, and oblique object conditions!
+!
+! FIXME: also confirm that 4SG.DO gu- is produced as appropriate!
 !
 LEXICON SubjectDirectObjectOrObliqueObject
 

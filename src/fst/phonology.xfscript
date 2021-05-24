@@ -43,6 +43,17 @@ define zDevoicing z -> s || s _;
 # but can remove them before we end up with sequences of three "iii"s in
 # some inflected forms)
 define deletePrefixI i -> 0 || _ "." vowel;
+
+# Turn sequences of "á.a", "à.a", etc. into "á", "à", etc. (e.g., dàłí
+# "you.PL.DISTR are" < dà.aSlí -> dà.Slí; náskuy "you.PL are vomiting"
+# < ná.aSkuy -> ná.Skuy)
+define delete2PLAAfterA a -> 0 || [a|á|ā|à] "." _;
+
+# Deal with tonally-specified vowels before 2PL aS- (e.g., mássi "you.PL
+# are calling him/her/it" < mí.aSzi -> máSzi).
+define lowIBeforeA ì "." a -> à;
+define highIBeforeA  í "." a -> á;
+
 define deleteBoundarySymbol "." -> 0;
 
 # Stems that begin with /l/ combine with 2PL (a|à)s- to form (a|à)ł (e.g.,
@@ -68,14 +79,19 @@ define slDissimilation s l -> s t ł;
 # there are words with a spreading H tone that involve more than three
 # unmarked syllables before the inflectional chunk, this rule will need to
 # change.
+define hToneAfterUnmarked a -> á, i -> í, o -> ó, u -> ú || _ H;
 define hToneSpreading a a -> á á, a -> á, i i -> í í, i -> í, o o -> ó ó, o -> ó, u u -> ú ú, u -> ú || H (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ (unmarkedVowel)+ (consonant)+ _;
 define hToneSpreadingCleanup H -> 0;
 
 # Composing all rules together
 
 regex [ deletePrefixI
+.o. hToneAfterUnmarked
 .o. hToneSpreading
 .o. hToneSpreadingCleanup
+.o. delete2PLAAfterA
+.o. lowIBeforeA
+.o. highIBeforeA
 .o. deleteBoundarySymbol
 .o. uBeforeA
 .o. aBeforeI
