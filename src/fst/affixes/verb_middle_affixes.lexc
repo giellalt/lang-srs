@@ -1,4 +1,4 @@
-Multichar_Symbols @D.GI@ @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @D.TAMA.si@ @D.TAMA.sii@ @D.TAMA.sis@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.GI.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.GI@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OUTERSUBJECT.ON@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @R.TAMA.si@ @R.TAMA.sii@ @R.TAMA.sis@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.DIRECTOBJECT.NOMINAL@ @U.DIRECTOBJECT.NONE@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.INDEF@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.RECIP@ @U.OBLIQUEPERSON.REFL@ @U.OUTERSUBJECT.ON@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @U.TAMA.sii@ @U.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@
+Multichar_Symbols @D.GI@ @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @D.TAMA.si@ @D.TAMA.sii@ @D.TAMA.sis@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.GI.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.GI@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OUTERSUBJECT.ON@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @R.TAMA.si@ @R.TAMA.sii@ @R.TAMA.sis@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.DIRECTOBJECT.NOMINAL@ @U.DIRECTOBJECT.NONE@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.INDEF@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.RECIP@ @U.OBLIQUEPERSON.REFL@ @U.OUTERSUBJECT.ON@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @U.TAMA.sii@ @U.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @P.CONATIVE.ON@ @D.CONATIVE@ @R.CONATIVE.ON@ @D.PREFIX.MIDDLE@ @R.PREFIX.MIDDLE@ @P.PREFIX.OUTER@ @P.CONATIVE.OFF@ @R.CONATIVE.OFF@
 
 
 !
@@ -56,24 +56,29 @@ LEXICON Transitive-Markers
 ! cases with the flag U.DIRECTOBJECT.NOMINAL.
 
 ! 1SG direct object (e.g., siyíʔí "you (sg.) saw me")
-@U.OBJECTPERSON.1@@U.OBJECTNUMBER.SG@@P.PREFIX.MIDDLE@si    Outer-Subjects;
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.SG@@P.PREFIX.MIDDLE@si    Conative-Before-Outer-Subjects;
 
 ! 2SG direct object (e.g., niyisʔí "I saw you")
-@U.OBJECTPERSON.2@@U.OBJECTNUMBER.SG@@P.PREFIX.MIDDLE@ni    Outer-Subjects;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.SG@@P.PREFIX.MIDDLE@ni    Conative-Before-Outer-Subjects;
 
 ! Handle 3SG direct objects in their own lexicon.
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@                   3SG-Direct-Objects;
 
 ! 1PL direct object (e.g., nihiyíʔí / nahiyíʔí "you (sg.) saw us")
-@U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nihi  Outer-Subjects;
-@U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nahi  Outer-Subjects;
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nihi  Conative-Before-Outer-Subjects;
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nahi  Conative-Before-Outer-Subjects;
 
 ! 2PL direct object (e.g., nihiyisʔí / nahiyisʔí "I saw you (pl.)")
-@U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nihi  Outer-Subjects;
-@U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nahi  Outer-Subjects;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nihi  Conative-Before-Outer-Subjects;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@@P.PREFIX.MIDDLE@nahi  Conative-Before-Outer-Subjects;
 
 ! Handle 3PL direct objects in their own lexicon.
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@                   3PL-Direct-Objects;
+
+! 4SG (unspecified) direct object (e.g., guyisʔí "I saw someone").
+! (This object marker is homophonous with 3.SBJ>3PL.DO gu- and 
+!  areal gu-, both of which need to be handled separately)
+@U.OBJECTPERSON.4@@U.OBJECTNUMBER.SG@@P.PREFIX.MIDDLE@gu    Conative-Before-Outer-Subjects;
 
 ! Handle reflexives in their own lexicon.
 @U.OBJECTPERSON.REFL@@P.PREFIX.MIDDLE@            Reflexive-Direct-Objects;
@@ -86,13 +91,13 @@ LEXICON 3SG-Direct-Objects
 
 ! 3SG direct object with non-3 subject (e.g., ístłí yisʔí "I saw a
 ! horse", miyisʔí "I saw it")
-@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                                         Outer-Subjects;
-@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@P.PREFIX.MIDDLE@mi                         Outer-Subjects;
+@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                                         Conative-Before-Outer-Subjects;
+@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@P.PREFIX.MIDDLE@mi                         Conative-Before-Outer-Subjects;
 
 ! 3SG direct object with 3SG subject (e.g., ístłí yíʔí "s/he saw a
 ! horse", yáʔí "s/he saw it (< yi- + yíʔí))
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Filter-Transitives;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@P.PREFIX.MIDDLE@yi     Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@P.PREFIX.MIDDLE@yi     Conative-Before-Filter-Transitives;
 
 ! 3SG direct object with 3PL subject (e.g., ístłí gáʔí "they saw a
 ! horse" (< gi- + yíʔí), giyáʔí "they saw it (< giyi- + yíʔí))
@@ -110,66 +115,112 @@ LEXICON 3SG-Direct-Objects
 ! but where no full noun is present in this clause (or even
 ! utterance) -- if that referent is recoverable.  Maybe a better
 ! value would be DIRECTOBJECT.GIVEN?)
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Outer-Subjects;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@R.GI@@P.PREFIX.MIDDLE@yi   Filter-Transitives;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@giyi   Filter-Transitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Conative-Before-Outer-Subjects;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@R.GI@@P.PREFIX.MIDDLE@yi   Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@giyi   Conative-Before-Filter-Transitives;
 
 
 LEXICON 3PL-Direct-Objects
 
 ! 3PL direct object with non-3 subject (e.g., gimilích'àká yisʔí "I saw their horses", gimiyisʔí "I saw them")
-@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                                         Outer-Subjects;
-@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gimi        Outer-Subjects;
-@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@R.GI@@P.PREFIX.MIDDLE@mi                   Outer-Subjects;
+@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                                         Conative-Before-Outer-Subjects;
+@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gimi        Conative-Before-Outer-Subjects;
+@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@R.GI@@P.PREFIX.MIDDLE@mi                   Conative-Before-Outer-Subjects;
 
 ! 3PL direct object with 3SG subject (e.g., giyilích'àká yíʔí "s/he saw their horses", gáʔí "s/he saw them" (< gi- + ))
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Filter-Transitives;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@R.GI@                  Filter-Transitives;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gi     Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@R.GI@                  Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gi     Conative-Before-Filter-Transitives;
 
 ! 3PL direct object with 3PL subject (e.g., gulích'àká gáʔí "they saw their horses", gugáʔí "they saw them")
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Outer-Subjects;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@P.PREFIX.MIDDLE@gu     Outer-Subjects;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NOMINAL@                     Conative-Before-Outer-Subjects;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.NONE@@P.PREFIX.MIDDLE@gu     Conative-Before-Outer-Subjects;
 
 
 LEXICON Reflexive-Direct-Objects
 
 ! Note 3PL igidi-, 4SG its'idi-
 ! TODO: check 4SG reflective direct object form! (variation here)
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@idi                  Filter-Transitives;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@idi                  Filter-Transitives;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.SG@idi                  Filter-Transitives;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@idi                  Filter-Transitives;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@idi                  Filter-Transitives;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.PL@@R.GI@idi            Filter-Transitives;
-@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.PL@@D.GI@@P.GI.ON@igidi Filter-Transitives;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@its'idi              Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@idi                  Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.SG@idi                  Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.SG@idi                  Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.PL@idi                  Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@@U.OBJECTNUMBER.PL@idi                  Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.PL@@R.GI@idi            Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@@U.OBJECTNUMBER.PL@@D.GI@@P.GI.ON@igidi Conative-Before-Filter-Transitives;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@@U.OBJECTNUMBER.SG@its'idi              Conative-Before-Filter-Transitives;
 
 
 LEXICON Reciprocal-Direct-Objects
 
 ! Reciprocal forms (only with plural and 4th-person subjects, e.g., átłiyasʔí "you saw each other",
 ! ástłits'áʔí "someone saw each other")
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@átłi                  Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@ástłi                 Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@átłi                  Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@ástłi                 Filter-Transitives;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@átłi                  Outer-Subjects;
-@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@ástłi                 Outer-Subjects;
-@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@átłi                  Outer-Subjects;
-@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@ástłi                 Outer-Subjects;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@átłi                  Conative-Before-Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.1@ástłi                 Conative-Before-Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@átłi                  Conative-Before-Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.2@ástłi                 Conative-Before-Filter-Transitives;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@átłi                  Conative-Before-Outer-Subjects;
+@U.OBJECTNUMBER.PL@@U.SUBJECTNUMBER.PL@@U.SUBJECTPERSON.3@ástłi                 Conative-Before-Outer-Subjects;
+@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@átłi                  Conative-Before-Outer-Subjects;
+@U.OBJECTNUMBER.SG@@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@ástłi                 Conative-Before-Outer-Subjects;
+
+
+LEXICON Conative-Before-Outer-Subjects
+
+! Some verbs have a lexically-specified prefix í- ("half-transitive" according to Leer, "conative"
+! in K. Rice 2000 and others) that appears between the direct object markers and the outer
+! subject markers. This prefix contributes a high tone to the final syllable of direct object
+! markers in these verbs (e.g., giyízi "they will call him/her/it", from giyi- í- zi), and also
+! spreads rightward onto any tonally unspecified syllables up to (but not including) the TAMA
+! chunk (e.g., míts'ízi "someone will call him/her/it", from mi- í- ts'i- zi).
+!
+! The presence of this conative/half-transitive prefix is indicated by the flag CONATIVE, which
+! is set as part of the lexical entry for each such verb.  Here, we define two paths: one which
+! sets this flag (and eventually matches with @R.CONATIVE@ in the lexicon) and adds the prefix,
+! and one that doesn't (and eventually rules out conative-transitive forms from being produced/
+! accepted for verbs that don't have this prefix specified lexically).
+!
+! The conative prefix is phonologically unusual in that it appears in middle-prefix territory,
+! but appears with outer-prefix TAMA chunk variants: cf. conative mínizi "you (sg.) are calling
+! him/her/it" (with full 2SG ni-, 0-IPFV) versus non-conative tásítsíh "you (sg.) paint me"
+! (with reduced 2SG í-, also 0-IPFV).  We handle this by overriding any preceding PREFIX.MIDDLE
+! tags here, replacing them with PREFIX.OUTER in 'Conative-Before-Filter-Transitives'.
+!
+!   TODO: For some reason, 3PL.SBJ and 4SG.SBJ forms are not included in the output of 'pairs',
+!   even though these forms are accepted by the FST. Figure this out before moving on.
+!
+@P.CONATIVE.ON@@R.PREFIX.MIDDLE@H                                               Outer-Subjects;
+@P.CONATIVE.ON@@D.PREFIX.MIDDLE@íH                                              Outer-Subjects;
+@P.CONATIVE.OFF@                                                                Outer-Subjects;
 
 
 LEXICON Outer-Subjects
 
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@                                         Filter-Transitives;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@                                         Filter-Transitives;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                                         Filter-Transitives;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@                                         Filter-Transitives;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@                                         Filter-Transitives;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@R.GI@                                   Filter-Transitives;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gi       Filter-Transitives;
-@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@@P.PREFIX.MIDDLE@ts'i                    Filter-Transitives;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@                                         Conative-Before-Filter-Transitives;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@                                         Conative-Before-Filter-Transitives;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                                         Conative-Before-Filter-Transitives;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@                                         Conative-Before-Filter-Transitives;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@                                         Conative-Before-Filter-Transitives;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@R.GI@                                   Conative-Before-Filter-Transitives;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gi       Conative-Before-Filter-Transitives;
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@@P.PREFIX.MIDDLE@ts'i                    Conative-Before-Filter-Transitives;
+
+
+LEXICON Conative-Before-Filter-Transitives
+
+! There are three possibilities here:
+!
+!   1. We might have passed through Conative-Before-Outer-Subjects and picked up a conative prefix
+!      there, in which case we don't want to add another one now;
+!   2. We haven't picked up a conative prefix yet, so we try to add one before moving on (the
+!      middle two cases, which handle cases where there is a preceding middle prefix to which the
+!      conative only contributes a high, spreading tone, and cases where there isn't and a full-
+!      fledged vowel is added); and
+!   3. We haven't picked up a conative prefix yet, and we don't add one before moving on.
+@R.CONATIVE.ON@@P.PREFIX.OUTER@                                                 Filter-Transitives;
+@D.CONATIVE@@P.CONATIVE.ON@@D.PREFIX.MIDDLE@@P.PREFIX.OUTER@íH                  Filter-Transitives;
+@D.CONATIVE@@P.CONATIVE.ON@@R.PREFIX.MIDDLE@@P.PREFIX.OUTER@H                   Filter-Transitives;
+@R.CONATIVE.OFF@                                                                Filter-Transitives;
 
 
 LEXICON Filter-Transitives
