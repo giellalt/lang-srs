@@ -21,21 +21,21 @@ Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRA
 
 LEXICON Root
 
-0-IPFV ;
-ni-IPFV ; 
-si-IPFV ;
-i-IPFV ;
-isi-IPFV ;
+   0-IPFV  ;
+  ni-IPFV  ;
+  si-IPFV  ;
+   i-IPFV  ;
+ isi-IPFV  ;
 
-ni-PFV ;
-si-PFV ;
-yi-y-PFV ;
-yi-a-PFV ;
-isi-PFV ;
+  ni-PFV   ;
+  si-PFV   ;
+  yi-y-PFV ;
+  yi-a-PFV ;
+  isi-PFV  ;
 
-yi-PROG ;
+  yi-PROG  ;
 
-yi-POT ;
+  yi-POT   ;
 
 
 !
