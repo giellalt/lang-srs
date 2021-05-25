@@ -1,5 +1,4 @@
-Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @R.TAMA.sii@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0i@ @U.TAMA.%0s@ @U.TAMA.i@ @U.TAMA.ii@ @U.TAMA.is@ @U.TAMA.isi@ @U.TAMA.isii@ @U.TAMA.isis@ @U.TAMA.ni@ @U.TAMA.nii@ @U.TAMA.nis@ @U.TAMA.si@ @U.TAMA.sii@ @U.TAMA.sis@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.TAMA.yii-a@ @U.TAMA.yii@ @U.TAMA.yis-y@ @U.TAMA.yis@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@
-
+Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @U.VV.%0@ @U.VV.S@ @U.VV.I@
 
 !
 ! TODO:
@@ -43,21 +42,23 @@ yi-POT ;
 ! 0-IPFV
 !
 LEXICON 0-IPFV
+@U.ASPECT.IPFV@@U.TAMA.%0@                   0-IPFV-AFF ;
 
-@U.ASPECT.IPFV@@U.TAMA.%0@@D.PREFIX@         0-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0@@R.PREFIX.INNER@   0-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0@@R.PREFIX.MIDDLE@  0-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0@@R.PREFIX.OUTER@   0-IPFV-AFF-OuterPrefix ;
+LEXICON 0-IPFV-AFF
+@U.VV.%0@@D.PREFIX@                          0-IPFV-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    0-IPFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   0-IPFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    0-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.%0s@@D.PREFIX@        0s-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0s@@R.PREFIX.INNER@  0s-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0s@@R.PREFIX.MIDDLE@ 0s-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0s@@R.PREFIX.OUTER@  0s-IPFV-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           0s-IPFV-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     0s-IPFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    0s-IPFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     0s-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.%0i@@D.PREFIX@        0i-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0i@@R.PREFIX.INNER@  0i-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0i@@R.PREFIX.MIDDLE@ 0i-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.%0i@@R.PREFIX.OUTER@  0i-IPFV-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           0i-IPFV-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     0i-IPFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    0i-IPFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     0i-IPFV-AFF-OuterPrefix ;
 
 LEXICON 0-IPFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
@@ -156,21 +157,23 @@ LEXICON 0i-IPFV-AFF-OuterPrefix
 ! ni-IPFV
 !
 LEXICON ni-IPFV
+@U.ASPECT.IPFV@@U.TAMA.ni@                   ni-IPFV-AFF ;
 
-@U.ASPECT.IPFV@@U.TAMA.ni@@D.PREFIX@         ni-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ni@@R.PREFIX.INNER@   ni-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ni@@R.PREFIX.MIDDLE@  ni-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ni@@R.PREFIX.OUTER@   ni-IPFV-AFF-OuterPrefix ;
+LEXICON ni-IPFV-AFF
+@U.VV.%0@@D.PREFIX@                          ni-IPFV-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    ni-IPFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   ni-IPFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    ni-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.nis@@D.PREFIX@        nis-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nis@@R.PREFIX.INNER@  nis-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nis@@R.PREFIX.MIDDLE@ nis-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nis@@R.PREFIX.OUTER@  nis-IPFV-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           nis-IPFV-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     nis-IPFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    nis-IPFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     nis-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.nii@@D.PREFIX@        nii-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nii@@R.PREFIX.INNER@  nii-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nii@@R.PREFIX.MIDDLE@ nii-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.nii@@R.PREFIX.OUTER@  nii-IPFV-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           nii-IPFV-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     nii-IPFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    nii-IPFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     nii-IPFV-AFF-OuterPrefix ;
 
 LEXICON ni-IPFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
@@ -286,21 +289,23 @@ LEXICON nii-IPFV-AFF-OuterPrefix
 ! ni-PFV
 !
 LEXICON ni-PFV
+@U.ASPECT.PFV@@U.TAMA.ni@                    ni-PFV-AFF ;
 
-@U.ASPECT.PFV@@U.TAMA.ni@@D.PREFIX@          ni-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.ni@@R.PREFIX.INNER@    ni-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.ni@@R.PREFIX.MIDDLE@   ni-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.ni@@R.PREFIX.OUTER@    ni-PFV-AFF-OuterPrefix ;
+LEXICON ni-PFV-AFF
+@U.VV.%0@@D.PREFIX@                          ni-PFV-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    ni-PFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   ni-PFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    ni-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.nis@@D.PREFIX@         nis-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nis@@R.PREFIX.INNER@   nis-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nis@@R.PREFIX.MIDDLE@  nis-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nis@@R.PREFIX.OUTER@   nis-PFV-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           nis-PFV-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     nis-PFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    nis-PFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     nis-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.nii@@D.PREFIX@         nii-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nii@@R.PREFIX.INNER@   nii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nii@@R.PREFIX.MIDDLE@  nii-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.nii@@R.PREFIX.OUTER@   nii-PFV-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           nii-PFV-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     nii-PFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    nii-PFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     nii-PFV-AFF-OuterPrefix ;
 
 LEXICON ni-PFV-AFF-NoPrefix
 ! FIXME: no documentation for this form; dummy values below
@@ -379,14 +384,14 @@ LEXICON nii-PFV-AFF-NoPrefix
 
 LEXICON nii-PFV-AFF-InnerPrefix
 ! FIXME: no documentation for this form; dummy values below
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìnis   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìníí   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìníí   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìnaà   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìniì   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìnaS   #; ! FLOATING L-TONE
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìníí   #; ! FLOATING L-TONE
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìníí   #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìnis  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìníí  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìníí  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìnaà  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìniì  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìnaS  #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìníí  #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìníí  #; ! FLOATING L-TONE
 
 LEXICON nii-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
@@ -408,8 +413,7 @@ LEXICON nii-PFV-AFF-OuterPrefix
 ! the TAMA chunks defined in si-AFF below.
 !
 LEXICON si-IPFV
-
-@U.ASPECT.IPFV@                              si-AFF ;
+@U.ASPECT.IPFV@@U.TAMA.si@                   si-AFF ;
 
 
 !
@@ -421,9 +425,7 @@ LEXICON si-IPFV
 ! TAMA chunks defined in si-AFF below.
 !
 LEXICON si-PFV
-
-@U.ASPECT.PFV@                               si-AFF ;
-
+@U.ASPECT.PFV@@U.TAMA.si@                    si-AFF ;
 
 !
 ! si-AFF
@@ -445,20 +447,20 @@ LEXICON si-PFV
 
 LEXICON si-AFF
 
-@U.TAMA.si@@D.PREFIX@                        si-AFF-NoPrefix ;
-@U.TAMA.si@@R.PREFIX.INNER@                  si-AFF-InnerPrefix ;
-@U.TAMA.si@@R.PREFIX.MIDDLE@                 si-AFF-MiddlePrefix ;
-@U.TAMA.si@@R.PREFIX.OUTER@                  si-AFF-OuterPrefix ;
+@U.VV.%0@@D.PREFIX@                          si-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    si-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   si-AFF-MiddlePrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    si-AFF-OuterPrefix ;
 
-@U.TAMA.sis@@D.PREFIX@                       sis-AFF-NoPrefix ;
-@U.TAMA.sis@@R.PREFIX.INNER@                 sis-AFF-InnerPrefix ;
-@U.TAMA.sis@@R.PREFIX.MIDDLE@                sis-AFF-MiddlePrefix ;
-@U.TAMA.sis@@R.PREFIX.OUTER@                 sis-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           sis-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     sis-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    sis-AFF-MiddlePrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     sis-AFF-OuterPrefix ;
 
-@U.TAMA.sii@@D.PREFIX@                       sii-AFF-NoPrefix ;
-@U.TAMA.sii@@R.PREFIX.INNER@                 sii-AFF-InnerPrefix ;
-@U.TAMA.sii@@R.PREFIX.MIDDLE@                sii-AFF-MiddlePrefix ;
-@U.TAMA.sii@@R.PREFIX.OUTER@                 sii-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           sii-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     sii-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    sii-AFF-MiddlePrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     sii-AFF-OuterPrefix ;
 
 
 LEXICON si-AFF-NoPrefix
@@ -472,27 +474,27 @@ LEXICON si-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #; 
 
 LEXICON si-AFF-InnerPrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #; ! FLOATING L-TONE
 ! When an inner prefix is present, 1SG forms also appear as Cas (e.g.,
 ! dìsists'ón ~ dasts'ón "I heard (it)", zìsisyín ~ zasyín "I killed (it)".
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as     #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí    #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS   #; ! FLOATING L-TONE
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs     #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí   #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS  #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
 LEXICON si-AFF-MiddlePrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí    #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì   #; ! FLOATING L-TONE
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS   #; ! FLOATING L-TONE
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s      #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s      #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsí   #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS  #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
 LEXICON si-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
@@ -516,27 +518,27 @@ LEXICON sis-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
 LEXICON sis-AFF-InnerPrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #; ! FLOATING L-TONE (M/L -> L)
 ! When an inner prefix is present, 1SG forms also appear as Cas (e.g.,
 ! dìsists'ón ~ dasts'ón "I heard (it)", zìsisyín ~ zasyín "I killed (it)".
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as     #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsís   #; ! FLOATING L-TONE (M/L -> L)
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #; ! FLOATING L-TONE (M/L -> L)
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì   #; ! FLOATING L-TONE (M/L -> L)
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS   #; ! FLOATING L-TONE (M/L -> L)
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs     #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsís  #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS  #; ! FLOATING L-TONE (M/L -> L)
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
 LEXICON sis-AFF-MiddlePrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #; ! FLOATING L-TONE (M/L -> L)
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsís   #; ! FLOATING L-TONE (M/L -> L)
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #; ! FLOATING L-TONE (M/L -> L)
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì   #; ! FLOATING L-TONE (M/L -> L)
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS   #; ! FLOATING L-TONE (M/L -> L)
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s   #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsís  #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #; ! FLOATING L-TONE (M/L -> L)
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS  #; ! FLOATING L-TONE (M/L -> L)
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
 LEXICON sis-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@sis   #;
@@ -561,27 +563,27 @@ LEXICON sii-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;	
 
 LEXICON sii-AFF-InnerPrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
 ! When an inner prefix is present, 1SG forms also appear as Cas (e.g.,
 ! dìsists'ón ~ dasts'ón "I heard (it)", zìsisyín ~ zasyín "I killed (it)".
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as     #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí   #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS   #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs     #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí  #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìs    #;
 
 LEXICON sii-AFF-MiddlePrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí   #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs     #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS   #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s      #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s      #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ìsíí  #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìs    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s     #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
 
 LEXICON sii-AFF-OuterPrefix
 ! Two 3S forms are possible here (e.g., tách'ásgàd, tách'ásiigàd "3S rode away")
@@ -600,16 +602,18 @@ LEXICON sii-AFF-OuterPrefix
 ! yi-y-PFV
 !
 LEXICON yi-y-PFV
+@U.ASPECT.PFV@@U.TAMA.yi-y@                  yi-y-PFV-AFF ;
 
-@U.ASPECT.PFV@@U.TAMA.yi-y@@D.PREFIX@          yi-y-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-y@@R.PREFIX.INNER@    yi-y-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-y@@R.PREFIX.MIDDLE@   yi-y-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-y@@R.PREFIX.OUTER@    yi-y-PFV-AFF-OuterPrefix ;
+LEXICON yi-y-PFV-AFF
+@U.VV.%0@@D.PREFIX@                          yi-y-PFV-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    yi-y-PFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   yi-y-PFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    yi-y-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.yis-y@@D.PREFIX@         yis-y-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yis-y@@R.PREFIX.INNER@   yis-y-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yis-y@@R.PREFIX.MIDDLE@  yis-y-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yis-y@@R.PREFIX.OUTER@   yis-y-PFV-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           yis-y-PFV-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     yis-y-PFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    yis-y-PFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     yis-y-PFV-AFF-OuterPrefix ;
 
 
 LEXICON yi-y-PFV-AFF-NoPrefix
@@ -679,16 +683,22 @@ LEXICON yis-y-PFV-AFF-OuterPrefix
 !
 
 LEXICON yi-a-PFV
+@U.ASPECT.PFV@@U.TAMA.yi-a@                  yi-a-PFV-AFF ;
 
-@U.ASPECT.PFV@@U.TAMA.yi-a@@D.PREFIX@          yi-a-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-a@@R.PREFIX.INNER@    yi-a-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-a@@R.PREFIX.MIDDLE@   yi-a-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yi-a@@R.PREFIX.OUTER@    yi-a-PFV-AFF-OuterPrefix ;
+LEXICON yi-a-PFV-AFF
+! TODO: See if this needs to be *d-VV instead (e.g., if the reflexive form
+! of yi-y-PFV is yi-a-PFV, then yes.  If that's the case, then we can
+! potentially merge yi-y-PFV and yi-a-PFV and rely on VV to select the
+! appropriate allomorphs)
+@U.VV.%0@@D.PREFIX@                          yi-a-PFV-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    yi-a-PFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   yi-a-PFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    yi-a-PFV-AFF-OuterPrefix ;
 
-@U.ASPECT.PFV@@U.TAMA.yii-a@@D.PREFIX@         yii-a-PFV-AFF-NoPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yii-a@@R.PREFIX.INNER@   yii-a-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yii-a@@R.PREFIX.MIDDLE@  yii-a-PFV-AFF-InnerPrefix ;
-@U.ASPECT.PFV@@U.TAMA.yii-a@@R.PREFIX.OUTER@   yii-a-PFV-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           yii-a-PFV-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     yii-a-PFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    yii-a-PFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     yii-a-PFV-AFF-OuterPrefix ;
 
 LEXICON yi-a-PFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -756,21 +766,23 @@ LEXICON yii-a-PFV-AFF-OuterPrefix
 ! yi-PROG
 !
 LEXICON yi-PROG
+@U.ASPECT.PROG@@U.TAMA.yi@                   yi-PROG-AFF ;
 
-@U.ASPECT.PROG@@U.TAMA.yi@@D.PREFIX@         yi-PROG-AFF-NoPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yi@@R.PREFIX.INNER@   yi-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yi@@R.PREFIX.MIDDLE@  yi-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yi@@R.PREFIX.OUTER@   yi-PROG-AFF-OuterPrefix ;
+LEXICON yi-PROG-AFF
+@U.VV.%0@@D.PREFIX@                          yi-PROG-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    yi-PROG-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   yi-PROG-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    yi-PROG-AFF-OuterPrefix ;
 
-@U.ASPECT.PROG@@U.TAMA.yis@@D.PREFIX@        yis-PROG-AFF-NoPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yis@@R.PREFIX.INNER@  yis-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yis@@R.PREFIX.MIDDLE@ yis-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yis@@R.PREFIX.OUTER@  yis-PROG-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           yis-PROG-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     yis-PROG-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    yis-PROG-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     yis-PROG-AFF-OuterPrefix ;
 
-@U.ASPECT.PROG@@U.TAMA.yii@@D.PREFIX@        yii-PROG-AFF-NoPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yii@@R.PREFIX.INNER@  yii-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yii@@R.PREFIX.MIDDLE@ yii-PROG-AFF-InnerPrefix ;
-@U.ASPECT.PROG@@U.TAMA.yii@@R.PREFIX.OUTER@  yii-PROG-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           yii-PROG-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     yii-PROG-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    yii-PROG-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     yii-PROG-AFF-OuterPrefix ;
 
 LEXICON yi-PROG-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -870,21 +882,23 @@ LEXICON yii-PROG-AFF-OuterPrefix
 ! yi-POT
 !
 LEXICON yi-POT
+@U.ASPECT.POT@@U.TAMA.yi@                    yi-POT-AFF ;
 
-@U.ASPECT.POT@@U.TAMA.yi@@D.PREFIX@          yi-POT-AFF-NoPrefix ;
-@U.ASPECT.POT@@U.TAMA.yi@@R.PREFIX.INNER@    yi-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yi@@R.PREFIX.MIDDLE@   yi-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yi@@R.PREFIX.OUTER@    yi-POT-AFF-OuterPrefix ;
+LEXICON yi-POT-AFF
+@U.VV.%0@@D.PREFIX@                          yi-POT-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    yi-POT-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   yi-POT-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    yi-POT-AFF-OuterPrefix ;
 
-@U.ASPECT.POT@@U.TAMA.yis@@D.PREFIX@         yis-POT-AFF-NoPrefix ;
-@U.ASPECT.POT@@U.TAMA.yis@@R.PREFIX.INNER@   yis-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yis@@R.PREFIX.MIDDLE@  yis-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yis@@R.PREFIX.OUTER@   yis-POT-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           yis-POT-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     yis-POT-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    yis-POT-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     yis-POT-AFF-OuterPrefix ;
 
-@U.ASPECT.POT@@U.TAMA.yii@@D.PREFIX@         yii-POT-AFF-NoPrefix ;
-@U.ASPECT.POT@@U.TAMA.yii@@R.PREFIX.INNER@   yii-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yii@@R.PREFIX.MIDDLE@  yii-POT-AFF-InnerPrefix ;
-@U.ASPECT.POT@@U.TAMA.yii@@R.PREFIX.OUTER@   yii-POT-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           yii-POT-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     yii-POT-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    yii-POT-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     yii-POT-AFF-OuterPrefix ;
 
 LEXICON yi-POT-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -990,21 +1004,23 @@ LEXICON yii-POT-AFF-OuterPrefix
 ! ì-IPFV
 !
 LEXICON i-IPFV
+@U.ASPECT.IPFV@@U.TAMA.i@                    i-IPFV-AFF ;
 
-@U.ASPECT.IPFV@@U.TAMA.i@@D.PREFIX@          i-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.i@@R.PREFIX.INNER@    i-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.i@@R.PREFIX.MIDDLE@   i-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.i@@R.PREFIX.OUTER@    i-IPFV-AFF-OuterPrefix ;
+LEXICON i-IPFV-AFF
+@U.VV.%0@@D.PREFIX@                          i-IPFV-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    i-IPFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   i-IPFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    i-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.is@@D.PREFIX@         is-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.is@@R.PREFIX.INNER@   is-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.is@@R.PREFIX.MIDDLE@  is-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.is@@R.PREFIX.OUTER@   is-IPFV-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           is-IPFV-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     is-IPFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    is-IPFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     is-IPFV-AFF-OuterPrefix ;
 
-@U.ASPECT.IPFV@@U.TAMA.ii@@D.PREFIX@         ii-IPFV-AFF-NoPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ii@@R.PREFIX.INNER@   ii-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ii@@R.PREFIX.MIDDLE@  ii-IPFV-AFF-InnerPrefix ;
-@U.ASPECT.IPFV@@U.TAMA.ii@@R.PREFIX.OUTER@   ii-IPFV-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           ii-IPFV-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     ii-IPFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    ii-IPFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     ii-IPFV-AFF-OuterPrefix ;
 
 LEXICON i-IPFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìs    #;
@@ -1110,27 +1126,26 @@ LEXICON ii-IPFV-AFF-OuterPrefix
 !
 
 LEXICON isi-IPFV
-@U.ASPECT.IPFV@                               isi-AFF ;
+@U.ASPECT.IPFV@@U.TAMA.isi@                  isi-AFF ;
 
 LEXICON isi-PFV
-@U.ASPECT.PFV@                                isi-AFF ;
+@U.ASPECT.PFV@@U.TAMA.isi@                   isi-AFF ;
 
 LEXICON isi-AFF
+@U.VV.%0@@D.PREFIX@                          isi-AFF-NoPrefix ;
+@U.VV.%0@@R.PREFIX.INNER@                    isi-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   isi-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.OUTER@                    isi-AFF-OuterPrefix ;
 
-@U.TAMA.isi@@D.PREFIX@                        isi-AFF-NoPrefix ;
-@U.TAMA.isi@@R.PREFIX.INNER@                  isi-AFF-InnerPrefix ;
-@U.TAMA.isi@@R.PREFIX.MIDDLE@                 isi-AFF-InnerPrefix ;
-@U.TAMA.isi@@R.PREFIX.OUTER@                  isi-AFF-OuterPrefix ;
+@U.VV.S@@D.PREFIX@                           isis-AFF-NoPrefix ;
+@U.VV.S@@R.PREFIX.INNER@                     isis-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    isis-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.OUTER@                     isis-AFF-OuterPrefix ;
 
-@U.TAMA.isis@@D.PREFIX@                       isis-AFF-NoPrefix ;
-@U.TAMA.isis@@R.PREFIX.INNER@                 isis-AFF-InnerPrefix ;
-@U.TAMA.isis@@R.PREFIX.MIDDLE@                isis-AFF-InnerPrefix ;
-@U.TAMA.isis@@R.PREFIX.OUTER@                 isis-AFF-OuterPrefix ;
-
-@U.TAMA.isii@@D.PREFIX@                       isii-AFF-NoPrefix ;
-@U.TAMA.isii@@R.PREFIX.INNER@                 isii-AFF-InnerPrefix ;
-@U.TAMA.isii@@R.PREFIX.MIDDLE@                isii-AFF-InnerPrefix ;
-@U.TAMA.isii@@R.PREFIX.OUTER@                 isii-AFF-OuterPrefix ;
+@U.VV.I@@D.PREFIX@                           isii-AFF-NoPrefix ;
+@U.VV.I@@R.PREFIX.INNER@                     isii-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    isii-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.OUTER@                     isii-AFF-OuterPrefix ;
 
 LEXICON isi-AFF-NoPrefix
 ! Two 3S, 3P, 4 forms are attested here (e.g., ìzìl, ììzil "3S got hot")
