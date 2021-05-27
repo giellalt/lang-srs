@@ -91,7 +91,7 @@ verbs: $(SRS_VERBS)
 
 # Make sure verb_lexicon.xfscript is dependent on all the lexc source files
 # called by it, so that it will be rebuild whenever the source files change:
-verb_lexicon.xfscript: $(GT_DISTRO_SRCS)
+verb_lexicon.xfscript: $(GT_DISTRO_SRCS) phonology.xfscript
 
 lexicon.%: lexicon.tmp.% verb_lexicon.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
