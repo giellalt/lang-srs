@@ -7,6 +7,8 @@ define consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
 # Change ua -> wa (general phonological process; phonetically, /wa/ can be
 # realized as /wa/ or /ɔa/~/ɔˑ/, but this isn't represented orthographically)
 define uBeforeA u -> w || _ [a|á|à];
+# Change úa -> wá (e.g., gwássi "you (pl.) are calling someone")
+define highUBeforeA ú [a|á] -> w á;
 
 # Change ái -> áa, áí -> áá, ài -> àà, ai -> aa. (TODO: check this against 
 # more examples, especially ài -> àà, which may vary between speakers. For
@@ -94,6 +96,7 @@ regex [ deletePrefixI
 .o. highIBeforeA
 .o. deleteBoundarySymbol
 .o. uBeforeA
+.o. highUBeforeA
 .o. aBeforeI
 .o. lowABeforeI
 .o. iBeforeA
