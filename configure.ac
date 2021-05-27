@@ -125,7 +125,7 @@ AM_CONDITIONAL([HAVE_DIALECTS], [test "x$DIALECTS" != "x"])
 # The variable can also be set if a language is such that everything is
 # encoded in lexc, and thus does not need any phonology processing.
 # Default: empty, meaning that phonologies will be compiled.
-AC_SUBST([NO_PHONOLOGY], [""])
+AC_SUBST([NO_PHONOLOGY], ["yes"])
 AM_CONDITIONAL([SKIP_PHONOLOGY], [test "x$NO_PHONOLOGY" != "x"])
 
 # LEXICON_IN_PHONOLOGY
