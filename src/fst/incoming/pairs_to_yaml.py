@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-# Convert foma 'pairs' output to well-formatted and consistently named
-# YAML files.
+#
+# Convert foma 'pairs' output to well-formatted and consistently named YAML
+# test files.
+#
+# Usage:
+#
+#
 
 import argparse
 import sys
@@ -16,10 +21,105 @@ header = \
     Morph: ../../../src/analyser-gt-norm.xfst
     App: lookup"""
 
-# Order of subjects.
+# Order in which tags should be presented in YAML files.
 intransitive = [ 'SbjSg1', 'SbjSg2', 'SbjSg3', \
                  'SbjPl1', 'SbjPl1+Distr', 'SbjPl2', 'SbjPl2+Distr', \
                  'SbjPl3', 'SbjPl3+Distr', 'SbjSg4', 'SbjSg4+Distr' ]
+
+transitive = [ \
+    # 1SG
+    'SbjSg1+DObjSg2', \
+    'SbjSg1+DObjSg3', \
+        'SbjSg1+DObjSg3+DObjGiven', \
+        'SbjSg1+DObjSg3+DObjEmphatic', \
+    'SbjSg1+DObjSg4', 'SbjSg1+DObjSg4+Distr', \
+    'SbjSg1+DObjPl2', 'SbjSg1+DObjPl2+Distr', \
+    'SbjSg1+DObjPl3', 'SbjSg1+DObjPl3+Distr', \
+        'SbjSg1+DObjPl3+DObjGiven', 'SbjSg1+DObjPl3+DObjGiven+Distr', \
+    'SbjSg1+DObjRefl', \
+    'SbjSg1+DObjAreal', 'SbjSg1+DObjAreal+Distr', \
+
+    # 2SG
+    'SbjSg2+DObjSg1', \
+    'SbjSg2+DObjSg3', \
+        'SbjSg2+DObjSg3+DObjGiven', \
+        'SbjSg2+DObjSg3+DObjEmphatic', \
+    'SbjSg2+DObjSg4', 'SbjSg2+DObjSg4+Distr', \
+    'SbjSg2+DObjPl1', 'SbjSg2+DObjPl1+Distr', \
+    'SbjSg2+DObjPl3', 'SbjSg2+DObjPl3+Distr', \
+        'SbjSg2+DObjPl3+DObjGiven', 'SbjSg2+DObjPl3+DObjGiven+Distr', \
+    'SbjSg2+DObjRefl', \
+    'SbjSg2+DObjAreal', 'SbjSg2+DObjAreal+Distr', \
+
+    # 3SG
+    'SbjSg3+DObjSg1', \
+    'SbjSg3+DObjSg2', \
+    'SbjSg3+DObjSg3', \
+        'SbjSg3+DObjSg3+DObjGiven', \
+    'SbjSg3+DObjSg4', 'SbjSg3+DObjSg4+Distr', \
+    'SbjSg3+DObjPl1', 'SbjSg3+DObjPl1+Distr', \
+    'SbjSg3+DObjPl2', 'SbjSg3+DObjPl2+Distr', \
+    'SbjSg3+DObjPl3', 'SbjSg3+DObjPl3+Distr', \
+        'SbjSg3+DObjPl3+DObjGiven', 'SbjSg3+DObjPl3+DObjGiven+Distr', \
+    'SbjSg3+DObjRefl', \
+    'SbjSg3+DObjAreal', 'SbjSg3+DObjAreal+Distr', \
+
+    # 4SG
+    'SbjSg4+DObjSg1', 'SbjSg4+DObjSg1+Distr', \
+    'SbjSg4+DObjSg2', 'SbjSg4+DObjSg2+Distr', \
+    'SbjSg4+DObjSg3', 'SbjSg4+DObjSg3+Distr', \
+        'SbjSg4+DObjSg3+DObjGiven', 'SbjSg4+DObjSg3+DObjGiven+Distr', \
+        'SbjSg4+DObjSg3+DObjEmphatic', 'SbjSg4+DObjSg3+DObjEmphatic+Distr', \
+    'SbjSg4+DObjSg4', 'SbjSg4+DObjSg4+Distr', \
+    'SbjSg4+DObjPl1', 'SbjSg4+DObjPl1+Distr', \
+    'SbjSg4+DObjPl2', 'SbjSg4+DObjPl2+Distr', \
+    'SbjSg4+DObjPl3', 'SbjSg4+DObjPl3+Distr', \
+        'SbjSg4+DObjPl3+DObjGiven', 'SbjSg4+DObjPl3+DObjGiven+Distr', \
+    'SbjSg4+DObjRecip', 'SbjSg4+DObjRecip+Distr', \
+    'SbjSg4+DObjRefl', 'SbjSg4+DObjRefl+Distr', \
+    'SbjSg4+DObjAreal', 'SbjSg4+DObjAreal+Distr', \
+
+    # 1PL
+    'SbjPl1+DObjSg2', 'SbjPl1+DObjSg2+Distr', \
+    'SbjPl1+DObjSg3', 'SbjPl1+DObjSg3+Distr', \
+        'SbjPl1+DObjSg3+DObjGiven', 'SbjPl1+DObjSg3+DObjGiven+Distr', \
+        'SbjPl1+DObjSg3+DObjEmphatic', 'SbjPl1+DObjSg3+DObjEmphatic+Distr', \
+    'SbjPl1+DObjSg4', 'SbjPl1+DObjSg4+Distr', \
+    'SbjPl1+DObjPl2', 'SbjPl1+DObjPl2+Distr', \
+    'SbjPl1+DObjPl3', 'SbjPl1+DObjPl3+Distr', \
+        'SbjPl1+DObjPl3+DObjGiven', 'SbjPl1+DObjPl3+DObjGiven+Distr', \
+    'SbjPl1+DObjRecip', 'SbjPl1+DObjRecip+Distr', \
+    'SbjPl1+DObjRefl', 'SbjPl1+DObjRefl+Distr', \
+    'SbjPl1+DObjAreal', 'SbjPl1+DObjAreal+Distr', \
+
+    # 2PL
+    'SbjPl2+DObjSg1', 'SbjPl2+DObjSg1+Distr', \
+    'SbjPl2+DObjSg3', 'SbjPl2+DObjSg3+Distr', \
+        'SbjPl2+DObjSg3+DObjGiven', 'SbjPl2+DObjSg3+DObjGiven+Distr', \
+        'SbjPl2+DObjSg3+DObjEmphatic', 'SbjPl2+DObjSg3+DObjEmphatic+Distr', \
+    'SbjPl2+DObjSg4', 'SbjPl2+DObjSg4+Distr', \
+    'SbjPl2+DObjPl1', 'SbjPl2+DObjPl1+Distr', \
+    'SbjPl2+DObjPl3', 'SbjPl2+DObjPl3+Distr', \
+        'SbjPl2+DObjPl3+DObjGiven', 'SbjPl2+DObjPl3+DObjGiven+Distr', \
+    'SbjPl2+DObjRecip', 'SbjPl2+DObjRecip+Distr', \
+    'SbjPl2+DObjRefl', 'SbjPl2+DObjRefl+Distr', \
+    'SbjPl2+DObjAreal', 'SbjPl2+DObjAreal+Distr', \
+
+    # 3PL
+    'SbjPl3+DObjSg1', 'SbjPl3+DObjSg1+Distr', \
+    'SbjPl3+DObjSg2', 'SbjPl3+DObjSg2+Distr', \
+    'SbjPl3+DObjSg3', 'SbjPl3+DObjSg3+Distr', \
+        'SbjPl3+DObjSg3+DObjGiven', 'SbjPl3+DObjSg3+DObjGiven+Distr', \
+    'SbjPl3+DObjSg4', 'SbjPl3+DObjSg4+Distr', \
+    'SbjPl3+DObjPl1', 'SbjPl3+DObjPl1+Distr', \
+    'SbjPl3+DObjPl2', 'SbjPl3+DObjPl2+Distr', \
+    'SbjPl3+DObjPl3', 'SbjPl3+DObjPl3+Distr', \
+        'SbjPl3+DObjPl3+DObjGiven', 'SbjPl3+DObjPl3+DObjGiven+Distr', \
+    'SbjPl3+DObjRecip', 'SbjPl3+DObjRecip+Distr', \
+    'SbjPl3+DObjRefl', 'SbjPl3+DObjRefl+Distr', \
+    'SbjPl3+DObjAreal', 'SbjPl3+DObjAreal+Distr' \
+]
+
 
 def format_lemma(lemma):
     return unidecode.unidecode(lemma).replace('[', '_').replace(']', '').replace(' ', '_').replace("'", '')
@@ -38,11 +138,14 @@ def to_yaml(analysis_to_forms, tama = '0', to_stdout = False):
         if argstruct == 'I':
             fname += "INTR-"
             labels = intransitive
+        elif argstruct == 'T':
+            fname += "TR-"
+            labels = transitive
         else:
-            raise('Argument structure types other than intransitive not '\
-                  'implemented yet')
+            raise Exception('Argument structure types other than '\
+                'intransitive and intransitive not implemented yet')
 
-        fname += "%s-%s-%s.yaml" % \
+        fname += "%s-%s-%s_gt-norm.yaml" % \
             (aspect.replace("+", "_").upper(), tama, format_lemma(lemma))
     else:
         raise('Parts of speech other than verbs not implemented yet')
