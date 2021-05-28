@@ -77,7 +77,7 @@ svn checkout https://github.com/giellalt/lang-srs.git/trunk lang-srs
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-srs/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-srs/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
