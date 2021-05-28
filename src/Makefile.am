@@ -79,6 +79,27 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
+# Convert accented y to plain y:
+generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst \
+					 filters/remove-bracketed-english-gloss.hfst
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex            \
+				@\"filters/remove-bracketed-english-gloss.hfst\" \
+			.o. @\"$<\"                               \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+### Foma % Xerox: as Hfst, but the file is an analyser, not generator:
+analyser-raw-gt-desc.%: analyser-raw-gt-desc.tmp.% \
+					 filters/remove-bracketed-english-gloss.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex            \
+				@\"filters/remove-bracketed-english-gloss.$*\" \
+			.o. @\"$<\"                               \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+
 # Remove brackets from mobile dict as well (spellrelax should already be
 # included at this stage)
 analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
