@@ -87,6 +87,7 @@ if CAN_FOMA
 SRS_VERBS+=verb_lexicon.foma
 endif # CAN_FOMA
 
+# Define an extra dependency, to ensure proper build:
 verbs: $(SRS_VERBS)
 
 # Make sure verb_lexicon.xfscript is dependent on all the lexc source files
