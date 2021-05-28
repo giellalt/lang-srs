@@ -103,11 +103,9 @@ analyser-raw-gt-desc.%: analyser-raw-gt-desc.tmp.% \
 # Remove brackets from mobile dict as well (spellrelax should already be
 # included at this stage)
 analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
-					filters/remove-bracketed-english-gloss.%       \
   					filters/allow_uppercase.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-  			    @\"filters/remove-bracketed-english-gloss.$*\" \
-			.o. @\"$<\"                                        \
+				@\"$<\"                                        \
    			.o. @\"filters/allow_uppercase.$*\"                \
 			;\n\
 		 save stack $@\n\
@@ -116,27 +114,25 @@ analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 # Override analyser-dict-gt-desc, and add spellrelax
 analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.%         \
 					orthography/spellrelax.compose.%         \
-					filters/remove-bracketed-english-gloss.% \
   					filters/allow_uppercase.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                     \
-  			    @\"filters/remove-bracketed-english-gloss.$*\" \
-			.o. @\"$<\"                                        \
+				@\"$<\"                                        \
 			.o. @\"orthography/spellrelax.compose.$*\"         \
    			.o. @\"filters/allow_uppercase.$*\"                \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
-generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
-					filters/remove-bracketed-english-gloss.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                     \
-  			    @\"filters/remove-bracketed-english-gloss.$*\" \
-			.o. @\"$<\"                                        \
-			;\n\
-		 invert net\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST_TOOL)
-
+#generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
+#					filters/remove-bracketed-english-gloss.%
+#	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                     \
+#  			    @\"filters/remove-bracketed-english-gloss.$*\" \
+#			.o. @\"$<\"                                        \
+#			;\n\
+#		 invert net\n\
+#		 save stack $@\n\
+#		 quit\n" | $(XFST_TOOL)
+#
 
 # Override analyser-gt- analysers with spellrelax and downcase
 # analyser-gt-%.foma: analyser-gt-%.tmp.foma \
