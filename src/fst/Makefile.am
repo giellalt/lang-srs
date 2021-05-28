@@ -93,6 +93,9 @@ verbs: $(SRS_VERBS)
 # called by it, so that it will be rebuild whenever the source files change:
 verb_lexicon.xfscript: $(GT_DISTRO_SRCS) phonology.xfscript
 
+lexicon.hfst \
+lexicon.xfst \
+lexicon.foma: \
 lexicon.%: lexicon.tmp.% verb_lexicon.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 			[ @\"$<\" | @\"verb_lexicon.$*\" ] \
