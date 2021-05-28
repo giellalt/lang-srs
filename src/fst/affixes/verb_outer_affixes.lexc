@@ -63,8 +63,8 @@ LEXICON SubjectAndObliqueObject
 ! marking), the distributive marker can refer either to subjects or oblique
 ! objects.
 !
-@U.SUBJECTNUMBER.PL@                                            Distributive;
-@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@                         Distributive;
+@U.SUBJECTNUMBER.PL@                                             Distributive;
+@U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@                          Distributive;
 @U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.4@@U.OBLIQUEPERSON.4@       Distributive;
 @U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.4@@U.OBLIQUENUMBER.PL@      Distributive;
 @U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.4@@U.OBLIQUEPERSON.AREAL@   Distributive;
