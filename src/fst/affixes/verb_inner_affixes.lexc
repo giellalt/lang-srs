@@ -1,23 +1,43 @@
-Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @U.VV.%0@ @U.VV.S@ @U.VV.I@
-
-! TODO:
-!
-!   * Once morphophonemic adaptations are in place, make sure they work as
-!     expected with all 0i, sii, nii, etc. paradigms and i-IPFV/isis-PFV
-!     paradigms (need to make sure that vowel lengths and tone combinations
-!     come out properly)
-!
-!   * Make sure that transitive verb forms are coming out properly (seems
-!     likely that this isn't entirely right at the moment, but test and see
-!     where this is at)
-!
-!   * Afterwards, make sure that the morphophonological adjustments needed
-!     for vowel sequences are in place (and tested; some preliminary code in
-!     verbtest.foma, but further tests for sequences starting with /u/ and
-!     /a/ would be particularly helpful)
-
+Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @U.VV.%0@ @U.VV.S@ @U.VV.I@ @D.VALENCE.TRANSITIONAL@ @D.OBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @U.DIRECTOBJECT.GIVEN@ @D.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @D.DIRECTOBJECT.EMPHATIC@
 
 LEXICON Root
+
+@U.VALENCE.TRANSITIONAL@                                    TransitionalPrefix;
+@D.VALENCE.TRANSITIONAL@                                    TAMA;
+
+
+LEXICON TransitionalPrefix
+
+! In 'transitional' transitive verbs, a ì- prefix (represented here by L)
+! appears after any preceding prefixes and before the TAMA chunks iff a
+! direct object is morphologically marked on the verb.  If a direct object
+! is understood, but isn't morphologically marked, then the ì- doesn't appear,
+! e.g.,
+!
+!   nàgimìnistàhí át'a "I will pick them up (non-plural animate objects)"
+!                       (nà= gimi_ L . nis tàhí ...)
+!   tłích'áká nànistàhí át'a "I will pick up the (two) dogs"
+!                       (nà= . nis tàhí ...)
+!
+! We rely on our direct object-related flag diacritics to catch the former
+! cases and exclude the latter.  Direct object markers are present on verbs
+! (and, hence, the L also appears here) when:
+!
+!   1. The direct object is non-3;
+!   2. The direct object is 3PL and not given; or
+!   3. The direct object is 3SG, and either
+!       a. ...the subject is 3 (and isn't a given object), or
+!       b. ...the subject is non-3, and the direct object is emphatic.
+
+@D.OBJECTPERSON.3@L                                             TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@@D.DIRECTOBJECT.GIVEN@L    TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.GIVEN@     TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@D.DIRECTOBJECT.GIVEN@L    TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.EMPHATIC@L TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@D.SUBJECTPERSON.3@@D.DIRECTOBJECT.EMPHATIC@  TAMA;
+
+
+LEXICON TAMA
 
    0-IPFV  ;
   ni-IPFV  ;
@@ -1208,7 +1228,7 @@ LEXICON isii-AFF-NoPrefix
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ìì    #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsaà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ìsiì  #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsàS  #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ìsaS  #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìì    #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ìs    #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ìì    #;
