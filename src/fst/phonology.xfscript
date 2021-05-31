@@ -136,10 +136,13 @@ define noThreeVowelSequences i -> 0 || vowel vowel _;
 # represented orthographically).
 define uGliding u -> w || _ [á|a|à] .o. ú [a|á] -> w á;
 
+
 # Change iò -> ò, io -> o, ió -> ó (e.g., mi-oghà -> moghà) and uò -> ò,
 # uo -> o, uó -> ó (e.g., gu-oghà -> goghà; both cases mostly apply to oblique
 # object markers, where this phonological context typically arises).
-define iuDeletionBeforeO [i|u] -> 0 || _ [ó|o|ò];
+## DEBUG
+##define iuDeletionBeforeO [i|u] -> 0 || _ [ó|o|ò];
+define uDeletionBeforeO u -> 0 || _ [ó|o|ò];
 
 # 2PL /aS/ doesn't contribute a mora to any preceding prefix, (e.g., dàłí
 # "you (pl.) are" < dà- ałí, rather than *dàałí), but it does still cause
@@ -149,9 +152,12 @@ define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à]+ S;
 define reduce2PLAfterVowel a -> 0 || vowel _ S;
 
 # Outside of TAMA-initial contexts, /i/ assimilates to the height and backness
-# of any immediately preceding or following /a/ or /u/, but retains its mora.
-define iAssimilation í -> á, i -> a, ì -> à || _ [á|a|à], [á|a|à] _ .o.
-                     í -> ú, i -> u, ì -> ù || _ [ú|u|ù], [ú|u|ù] _;
+# of any immediately preceding /a/ or /u/, but retains its mora.
+define iAssimilation í -> á, i -> a, ì -> à || [á|a|à] _ .o.
+                     í -> ú, i -> u, ì -> ù || [ú|u|ù] _;
+
+# Short /i/ deletes before non-/i/ vowels.
+define iDeletionBeforeOtherVowels i -> 0 || _ [á|a|à|ó|o|ò|ú|u|ù];
 
 
 #
@@ -182,12 +188,13 @@ regex [ shortenDefaultPrefixes
 .o. longVowelTAMAAssimilation
 .o. removeBoundaryMarkers
 .o. uGliding
-.o. iuDeletionBeforeO
+.o. uDeletionBeforeO
 .o. assimilationBefore2PL
 .o. reduce2PLAfterVowel
 .o. lInitialStemsSbjPl2
 .o. cleanup2PL
 .o. iAssimilation
+.o. iDeletionBeforeOtherVowels
 .o. noThreeVowelSequences
 .o. slDissimilation
 .o. zhDevoicing 
