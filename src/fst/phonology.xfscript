@@ -109,18 +109,31 @@ define ghDevoicing gh -> x || s _;
 
 # Deal with vowel changes before long-vowel-initial TAMA chunks (e.g.,
 # idinááʔí "he/she/it saw him/her/itself" < idiná.iiʔí -> idinááʔí)
-define longVowelTAMAAssimilation á "." i i -> á á .o.
-                                 a "." i i -> a a .o.
-                                 à "." i i -> à à .o.
-                                 í "." i i -> í í .o.
-                                 i "." i i -> i i .o.
-                                 ì "." i i -> ì ì .o.
-                                 ó "." i i -> ó ó .o.
-                                 o "." i i -> o o .o.
-                                 ò "." i i -> ò ò .o.
-                                 ú "." i i -> ú ú .o.
-                                 u "." i i -> u u .o.
+define longVowelTAMAAssimilation á "." i i -> á á  .o.  á "." í í -> á á  .o.
+                                 a "." i i -> a a  .o.  a "." í í -> á á  .o.
+                                 à "." i i -> à à  .o.
+                                 í "." i i -> í í  .o.  í "." í í -> í í  .o.
+                                 i "." i i -> i i  .o.  i "." í í -> í í  .o.
+                                 ì "." i i -> ì ì  .o.
+                                 ó "." i i -> ó ó  .o.  ó "." í í -> ó ó  .o.
+                                 o "." i i -> o o  .o.  o "." í í -> ó ó  .o.
+                                 ò "." i i -> ò ò  .o.
+                                 ú "." i i -> ú ú  .o.  ú "." í í -> ú ú  .o.
+                                 u "." i i -> u u  .o.  u "." í í -> ú ú  .o.
                                  ù "." i i -> ù ù;
+
+define shortVowelTAMAAssimilation á "." i -> á  .o.  á "." í -> á  .o.
+                                  a "." i -> a  .o.  a "." í -> á  .o.
+                                  à "." i -> à  .o.
+                                  í "." i -> í  .o.
+                                                     i "." í -> í  .o.
+                                  ì "." i -> ì  .o.
+                                  ó "." i -> ó  .o.  ó "." í -> ó  .o.
+                                  o "." i -> o  .o.  o "." í -> ó  .o.
+                                  ò "." i -> ò  .o.
+                                  ú "." i -> ú  .o.  ú "." í -> ú  .o.
+                                  u "." i -> u  .o.  u "." í -> ú  .o.
+                                  ù "." i -> ù;
 
 # In complex prefix combinations, we can sometimes end up with a sequence
 # of three adjacent vowels (e.g., dà- í- isaà-, as in daásaàzi "we are all
@@ -140,8 +153,6 @@ define uGliding u -> w || _ [á|a|à] .o. ú [a|á] -> w á;
 # Change iò -> ò, io -> o, ió -> ó (e.g., mi-oghà -> moghà) and uò -> ò,
 # uo -> o, uó -> ó (e.g., gu-oghà -> goghà; both cases mostly apply to oblique
 # object markers, where this phonological context typically arises).
-## DEBUG
-##define iuDeletionBeforeO [i|u] -> 0 || _ [ó|o|ò];
 define uDeletionBeforeO u -> 0 || _ [ó|o|ò];
 
 # 2PL /aS/ doesn't contribute a mora to any preceding prefix, (e.g., dàłí
@@ -186,6 +197,7 @@ regex [ shortenDefaultPrefixes
 .o. hToneSpreading
 .o. lToneLowering
 .o. longVowelTAMAAssimilation
+.o. shortVowelTAMAAssimilation
 .o. removeBoundaryMarkers
 .o. uGliding
 .o. uDeletionBeforeO
