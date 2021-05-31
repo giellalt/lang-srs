@@ -51,11 +51,21 @@ define InsMiddle [..] -> "_" || "=" _ ~$["_"] .#. .o.
 
 define InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 
+# Some middle and inner prefixes (e.g., middle íH- conative/half-transitive,
+# inner ná-) appear with outer prefix TAMA chunk allomorphs. In order to
+# get this right, we append the symbol "O" after the vowel in the lexical
+# entry (e.g., íHO-, náO-), then turn that into a flag that requires outer
+# prefix allomorphs.
+define RequireOuterAllomorphs O "@P.PREFIX.INNER@" -> "@P.PREFIX.OUTER@" .o.
+                              O "@P.PREFIX.MIDDLE@" -> "@P.PREFIX.OUTER@" .o.
+                              O -> "@P.PREFIX.OUTER@";
+
 # We temporarily keep the boundary symbol for inner affixes (".") in place
 # so that we can target morphophonology there more easily (especially when
 # aiming to drop the "weak" /i/ vowels that appear in inner lexical prefixes).
 read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
 #            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+            RequireOuterAllomorphs .o.
             "." -> "." InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
 define WordForms;
 

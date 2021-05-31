@@ -119,7 +119,7 @@ LEXICON Reciprocal-Oblique-Objects
 LEXICON ObliqueSubjectAffixes
 
 @U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.SG@si                      Only3SGSubject;
-@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.SG@ni                      Only3SGSubject;       
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.SG@ni                      Only3SGSubject;
 @U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@mi                      Only3SGSubject;
 @U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nihi                    Only3SGSubject;
 @U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nahi                    Only3SGSubject;

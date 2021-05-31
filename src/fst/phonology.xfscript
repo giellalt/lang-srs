@@ -1,73 +1,26 @@
-## Tsuut'ina morphophonology
+#
+# Tsuut'ina morphophonology
+#
 
 define vowel [a|ā|á|à|i|ī|í|ì|o|ō|ó|ò|u|ū|ú|ù];
 define unmarkedVowel [a|i|o|u];
+define highToneVowel [á|í|ó|ú];
+define lowToneVowel [à|ì|ò|ù];
 define consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
 
-# Change ua -> wa (general phonological process; phonetically, /wa/ can be
-# realized as /wa/ or /ɔa/~/ɔˑ/, but this isn't represented orthographically)
-define uBeforeA u -> w || _ [a|á|à];
-# Change úa -> wá (e.g., gwássi "you (pl.) are calling someone")
-define highUBeforeA ú [a|á] -> w á;
 
-# Change ái -> áa, áí -> áá, ài -> àà, ai -> aa. (TODO: check this against 
-# more examples, especially ài -> àà, which may vary between speakers. For
-# now, use this and see if we run into any problems with any of our test
-# cases.)
-define aBeforeI i -> a, í -> á || [a|á] _;
-define lowABeforeI ì ì -> à, i -> à, í -> á || à _;
+#
+# Morphophonological adjustments to tone.
+#
 
-# Change ài -> à, ái -> á, ai -> a. (TODO: check this against more verb forms.
-# I have the feeling we'll run into problems with words like náagóshí
-# "butcher", but we can always handle those cases with another symbol like "I"
-# when we come to them)
-define iBeforeA i -> 0 || _ [á|a|à];
-
-# Change iò -> ò, io -> o, ió -> ó (e.g., mi-oghà -> moghà; mostly applies to
-# oblique object markers)
-define iBeforeO i -> 0 || _ [ó|o|ò];
-
-# Change uo -> o (e.g., gu-oghà -> goghà; again, mostly applies to oblique
-# object markers)
-define uBeforeO u -> 0 || _ [ó|o|ò];
-
-# Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh) (This rule may need to
-# change; some people prefer to spell these forms without the second /s/)
-define zhDevoicing z -> s || s _ h;
-
-# Change sz -> ss (dìszày -> dìssày) (This rule may need to change; some
-# people prefer to spell these forms without the second /s/)
-define zDevoicing z -> s || s _;
-
-# Remove any "weak" /i/ vowels from inner prefixes. (This makes it easier
-# to combine inner prefixes with our inner inflectional chunks -- we can
-# still provide the inner prefixes in our lexical entries as having vowels,
-# but can remove them before we end up with sequences of three "iii"s in
-# some inflected forms)
-define deletePrefixI i -> 0 || _ "." vowel;
-
-# Turn sequences of "á.a", "à.a", etc. into "á", "à", etc. (e.g., dàłí
-# "you.PL.DISTR are" < dà.aSlí -> dà.Slí; náskuy "you.PL are vomiting"
-# < ná.aSkuy -> ná.Skuy)
-define delete2PLAAfterA a -> 0 || [a|á|ā|à] "." _;
-
-# Deal with tonally-specified vowels before 2PL aS- (e.g., mássi "you.PL
-# are calling him/her/it" < mí.aSzi -> máSzi).
-define lowIBeforeA ì "." a -> à;
-define highIBeforeA  í "." a -> á;
-
-define deleteBoundarySymbol "." -> 0;
-
-# Stems that begin with /l/ combine with 2PL (a|à)s- to form (a|à)ł (e.g.,
-# /as+lí/ "you.PL are" -> [ałí]).  Rather than target flag diacritics here,
-# we instead use the symbol 'S' to represent the /s/ in any 2PL inflectional
-# chunks that are involved in this process.
-define lInitialStemsSbjPl2 S l -> ł;
-define lInitialStemsSbjPl2Cleanup S -> s;
-
-# Phonotactic restriction: in general, /sl/ sequences should be resolved as
-# /stł/ (e.g., /is+lí/ "I am" -> [istłí]), outside of 2PL forms.
-define slDissimilation s l -> s t ł;
+# Define LH -> MH (e.g., shì-á -> shaá, as in shaásʔín "I prepared food",
+# dà-á -> daá, as in daátłiyaàʔí "each and every one of us saw each other")
+# HL -> HM (e.g., ná-ì -> náa, as in náaya "he/she got up"), and 
+# LM -> LL (e.g., dà-i -> dàà, as in dààsaàtsiy "each and every one of us
+# is crying").
+define toneSandhi à -> a, ì -> i, ò -> o, ù -> u || _ highToneVowel .o. 
+                  á -> a, í -> i, ó -> o, ú -> u || _ lowToneVowel .o.
+                  a -> à, i -> ì, o -> ò, u -> ù || lowToneVowel _;
 
 # Certain high-tone prefixes in Tsuut'ina (e.g., tsí- "flee", or í- from 
 # historical *uˑ-) spread high tone rightward onto unmarked syllables,
@@ -76,35 +29,169 @@ define slDissimilation s l -> s t ł;
 # ts'i- and di-, but stopping at yi-).  We mark this spreading high tone
 # in lexical entries as an H after the vowel (e.g., tsíH, íH)
 #
-# TODO: For now, this rule applies to sequences of at most three unmarked
-# syllables that appear after a spreading H tone.  If it turns out that
-# there are words with a spreading H tone that involve more than three
-# unmarked syllables before the inflectional chunk, this rule will need to
-# change.
-define hToneAfterUnmarked a -> á, i -> í, o -> ó, u -> ú || _ H;
-define hToneSpreading a a -> á á, a -> á, i i -> í í, i -> í, o o -> ó ó, o -> ó, u u -> ú ú, u -> ú || H (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ _, H (consonant)+ (unmarkedVowel)+ (consonant)+ (unmarkedVowel)+ (consonant)+ _;
-define hToneSpreadingCleanup H -> 0;
+# For now, this rule applies to sequences of at most three unmarked syllables
+# that appear after a spreading H tone.  If it turns out that there are words
+# words with a spreading H tone that involve more than three unmarked
+# syllables before the inflectional chunk, this rule will need to change.
+define hToneSpreadAfterMid a -> á, i -> í, o -> ó, u -> ú || _ H;
+define hToneSpread a a -> á á, a -> á, 
+                   i i -> í í, i -> í,
+                   o o -> ó ó, o -> ó,
+                   u u -> ú ú, u -> ú || 
+                        H (consonant)+ _, 
+                        H (consonant)+ (unmarkedVowel)+ (consonant)+ _,
+                        H (consonant)+ (unmarkedVowel)+ 
+                          (consonant)+ (unmarkedVowel)+ (consonant)+ _;
+define hToneSpreadCleanup H -> 0;
 
-# Composing all rules together
+regex [ hToneSpreadAfterMid .o. hToneSpread .o. hToneSpreadCleanup ];
+define hToneSpreading;
 
-regex [ deletePrefixI
-.o. hToneAfterUnmarked
+# The ì- transitional (Leer 1996/2005) or inchoative/semelfactive (K. Rice
+# 2000) prefix behaves differently from all other tone-bearing prefixes in
+# Tsuut'ina, pulling down the tone of neighbouring vowels without adding a
+# mora (e.g., gùja ánìstłàg "I did you (sg.) good", from á= ni_ L . is làg,
+# with L . is -> ìs; gùja ásilàg "you (sg.) did me good", from á= si_ L .
+# í làg, with L . í -> i).
+# 
+# In the case of TAMA chunks, this prefix causes both short and long vowels
+# to drop by one level (e.g., í -> i, íí -> ii, etc.).  In all other cases,
+# only one mora is lowered (e.g., nánaàyistsòni "I will see you (pl.) again",
+# from ná= naa_ L . yis tsòni, where naa L -> naà, rather than *nàà).  To
+# model this, we represent this prefix's tone as L, adjusting TAMA chunk tones
+# first (i.e., apply the lowering to any vowel sequences immediately after
+# the "." boundary marker), then to any adjacent vowel immediately to the
+# left of this prefix.
+define lToneLowerRight "." L á á -> "." a a, "." L á -> "." a, 
+                       "." L a a -> "." à à, "." L a -> "." à, 
+                       "." L í í -> "." i i, "." L í -> "." i, 
+                       "." L i i -> "." ì ì, "." L i -> "." ì;
+define lToneLowerLeft  á -> a, a -> à, í -> i, i -> ì,
+                       ó -> o, o -> ò, ú -> u, u -> ù || _ "." L;
+define lToneCleanup L -> 0;
+
+regex [ lToneLowerRight .o. lToneLowerLeft .o. lToneCleanup ];
+define lToneLowering;
+
+
+#
+# Morphophonological adjustments to consonants.
+#
+
+# Stems that begin with /l/ combine with 2PL as- either as (a|à)ł or, for
+# some speakers, as (a|à)stł (e.g., /as+lí/ "you.PL are" -> [ałí] or [astłí]).
+# We use the symbol 'S' to represent the /s/ in any 2PL inflectional chunks
+# that are involved in this process.
+define lInitialStemsSbjPl2 S l -> ł ,, S l -> s l ;
+
+# Phonotactic restriction: in general, /sl/ sequences should be resolved as
+# /stł/ (e.g., /is+lí/ "I am" -> [istłí]).
+define slDissimilation s l -> s t ł;
+
+# Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh "I don't know") (This
+# rule may need to change; some people prefer to spell these forms without the
+# second /s/)
+define zhDevoicing z -> s || s _ h;
+
+# Change sz -> ss (dìszày -> dìssày "he/she/it went hunting") (This rule may
+# need to change; some people prefer to spell these forms without the second
+# /s/)
+define zDevoicing z -> s || s _;
+
+# Change sgh -> sx (isghàł -> isxàł "I am whipping (something), cracking a
+# whip"; cf. isaàghàł "we are whipping (something), cracking a whip")
+define ghDevoicing gh -> x || s _;
+
+
+#
+# Morphophonological adjustments to vowel length and quality.
+#
+
+# Deal with vowel changes before long-vowel-initial TAMA chunks (e.g.,
+# idinááʔí "he/she/it saw him/her/itself" < idiná.iiʔí -> idinááʔí)
+define longVowelTAMAAssimilation á "." i i -> á á .o.
+                                 a "." i i -> a a .o.
+                                 à "." i i -> à à .o.
+                                 í "." i i -> í í .o.
+                                 i "." i i -> i i .o.
+                                 ì "." i i -> ì ì .o.
+                                 ó "." i i -> ó ó .o.
+                                 o "." i i -> o o .o.
+                                 ò "." i i -> ò ò .o.
+                                 ú "." i i -> ú ú .o.
+                                 u "." i i -> u u .o.
+                                 ù "." i i -> ù ù;
+
+# In complex prefix combinations, we can sometimes end up with a sequence
+# of three adjacent vowels (e.g., dà- í- isaà-, as in daásaàzi "we are all
+# calling him/her/it"). If the last vowel is an /i/, we can safely drop it.
+define noThreeVowelSequences i -> 0 || vowel vowel _;
+
+# /u/ before /a/ is realized as a glide, but may still contribute a high tone
+# to the following vowel.  Change uá -> wá, ua -> wa, uà -> wà (mid-tone u,
+# e.g., gwàgúdìlo "someone is sick" < gu- àgúdìlo), as well as úá -> wá, 
+# úa -> wá (high-tone u, e.g., kwásdàł "you (pl.) go in" < kú- asdàł).
+# 
+# (Phoneticlaly, /wa/ can be realized as [wa] or [ɔa]~[ɔˑ], but this isn't
+# represented orthographically).
+define uGliding u -> w || _ [á|a|à] .o. ú [a|á] -> w á;
+
+# Change iò -> ò, io -> o, ió -> ó (e.g., mi-oghà -> moghà) and uò -> ò,
+# uo -> o, uó -> ó (e.g., gu-oghà -> goghà; both cases mostly apply to oblique
+# object markers, where this phonological context typically arises).
+define iuDeletionBeforeO [i|u] -> 0 || _ [ó|o|ò];
+
+# 2PL /aS/ doesn't contribute a mora to any preceding prefix, (e.g., dàłí
+# "you (pl.) are" < dà- ałí, rather than *dàałí), but it does still cause
+# manner assimilation (e.g., dastł'áh "you (pl.) run" < di- astłáh).
+define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à]+ S;
+# TODO: what to do with àS-? (depends on treatment of transitional ì-)
+define reduce2PLAfterVowel a -> 0 || vowel _ S;
+
+# Outside of TAMA-initial contexts, /i/ assimilates to the height and backness
+# of any immediately preceding or following /a/ or /u/, but retains its mora.
+define iAssimilation í -> á, i -> a, ì -> à || _ [á|a|à], [á|a|à] _ .o.
+                     í -> ú, i -> u, ì -> ù || _ [ú|u|ù], [ú|u|ù] _;
+
+
+#
+# FST-internal symbol mangling.
+#
+
+# Remove any unmarked, non-tone-bearing vowels (i.e., /i/) from the ends of
+# prefixes that immediately precede vowel-initial TAMA chunks (e.g., di .
+# is tł'áh -> d . is tł'áh).  This step makes it much easier to deal with
+# the morphophonology that happens at the point where the inner prefixes meet
+# the TAMA chunks.
+define shortenDefaultPrefixes i -> 0 || _ "." (L) [á|a|à|í|i|ì];
+
+# Turn any remaining instances of <S> into plain /s/.
+define cleanup2PL S -> s;
+
+# Remove morphological boundary markers from the FST output.
+define removeBoundaryMarkers "." -> 0;
+
+
+#
+# Compose all of the morphophonology together.
+#
+
+regex [ shortenDefaultPrefixes
 .o. hToneSpreading
-.o. hToneSpreadingCleanup
-.o. delete2PLAAfterA
-.o. lowIBeforeA
-.o. highIBeforeA
-.o. deleteBoundarySymbol
-.o. uBeforeA
-.o. highUBeforeA
-.o. aBeforeI
-.o. lowABeforeI
-.o. iBeforeA
-.o. iBeforeO
-.o. uBeforeO
+.o. lToneLowering
+.o. longVowelTAMAAssimilation
+.o. removeBoundaryMarkers
+.o. uGliding
+.o. iuDeletionBeforeO
+.o. assimilationBefore2PL
+.o. reduce2PLAfterVowel
 .o. lInitialStemsSbjPl2
-.o. lInitialStemsSbjPl2Cleanup
+.o. cleanup2PL
+.o. iAssimilation
+.o. noThreeVowelSequences
 .o. slDissimilation
-.o. zhDevoicing
+.o. zhDevoicing 
 .o. zDevoicing
+.o. ghDevoicing
+.o. toneSandhi
 ] ;
