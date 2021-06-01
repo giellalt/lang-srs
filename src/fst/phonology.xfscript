@@ -163,7 +163,7 @@ define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à]+ S;
 define reduce2PLAfterVowel a -> 0 || vowel _ S;
 
 # Outside of TAMA-initial contexts, /i/ assimilates to the height and backness
-# of any immediately preceding /a/ or /u/, but retains its mora.
+# of any immediately preceding /a/ or /u/, but retains its tone and mora.
 define iAssimilation í -> á, i -> a, ì -> à || [á|a|à] _ .o.
                      í -> ú, i -> u, ì -> ù || [ú|u|ù] _;
 
@@ -197,7 +197,7 @@ regex [ shortenDefaultPrefixes
 .o. hToneSpreading
 .o. lToneLowering
 .o. longVowelTAMAAssimilation
-.o. shortVowelTAMAAssimilation
+#.o. shortVowelTAMAAssimilation
 .o. removeBoundaryMarkers
 .o. uGliding
 .o. uDeletionBeforeO
