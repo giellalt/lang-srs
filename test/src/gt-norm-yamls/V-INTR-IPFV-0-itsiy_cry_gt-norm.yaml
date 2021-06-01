@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - itsiy[cry] :
-    itsiy[cry]+V+I+Ipfv+SbjSg1:       istsiy
-    itsiy[cry]+V+I+Ipfv+SbjSg2:       nitsiy
-    itsiy[cry]+V+I+Ipfv+SbjSg3:       itsiy
-    itsiy[cry]+V+I+Ipfv+SbjPl1:       [isiìtsiy, isaàtsiy]
-    itsiy[cry]+V+I+Ipfv+SbjPl1+Distr: [dààsiìtsiy, dààsaàtsiy]
-    itsiy[cry]+V+I+Ipfv+SbjPl2:       astsiy
-    itsiy[cry]+V+I+Ipfv+SbjPl2+Distr: dàstsiy
-    itsiy[cry]+V+I+Ipfv+SbjPl3:       gitsiy
-    itsiy[cry]+V+I+Ipfv+SbjPl3+Distr: dàgitsiy
-    itsiy[cry]+V+I+Ipfv+SbjSg4:       ts'itsiy
-    itsiy[cry]+V+I+Ipfv+SbjSg4+Distr: dàts'itsiy
+    itsiy+V+I+Ipfv+SbjSg1:       istsiy
+    itsiy+V+I+Ipfv+SbjSg2:       nitsiy
+    itsiy+V+I+Ipfv+SbjSg3:       itsiy
+    itsiy+V+I+Ipfv+SbjPl1:       [isiìtsiy, isaàtsiy]
+    itsiy+V+I+Ipfv+SbjPl1+Distr: [dààsiìtsiy, dààsaàtsiy]
+    itsiy+V+I+Ipfv+SbjPl2:       astsiy
+    itsiy+V+I+Ipfv+SbjPl2+Distr: dàstsiy
+    itsiy+V+I+Ipfv+SbjPl3:       gitsiy
+    itsiy+V+I+Ipfv+SbjPl3+Distr: dàgitsiy
+    itsiy+V+I+Ipfv+SbjSg4:       ts'itsiy
+    itsiy+V+I+Ipfv+SbjSg4+Distr: dàts'itsiy
