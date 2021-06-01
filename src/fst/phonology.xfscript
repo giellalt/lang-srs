@@ -107,33 +107,25 @@ define ghDevoicing gh -> x || s _;
 # Morphophonological adjustments to vowel length and quality.
 #
 
-# Deal with vowel changes before long-vowel-initial TAMA chunks (e.g.,
-# idinááʔí "he/she/it saw him/her/itself" < idiná.iiʔí -> idinááʔí)
-define longVowelTAMAAssimilation á "." i i -> á á  .o.  á "." í í -> á á  .o.
-                                 a "." i i -> a a  .o.  a "." í í -> á á  .o.
-                                 à "." i i -> à à  .o.
-                                 í "." i i -> í í  .o.  í "." í í -> í í  .o.
-                                 i "." i i -> i i  .o.  i "." í í -> í í  .o.
-                                 ì "." i i -> ì ì  .o.
-                                 ó "." i i -> ó ó  .o.  ó "." í í -> ó ó  .o.
-                                 o "." i i -> o o  .o.  o "." í í -> ó ó  .o.
-                                 ò "." i i -> ò ò  .o.
-                                 ú "." i i -> ú ú  .o.  ú "." í í -> ú ú  .o.
-                                 u "." i i -> u u  .o.  u "." í í -> ú ú  .o.
-                                 ù "." i i -> ù ù;
+# When /u/ appears before an /i/ in a TAMA chunk (e.g., with areal gu-), then
+# we need to make sure that the /u/ picks up the tone from the /i/.
+define uTAMAAssimilation [ u "." i | ú "." ì | ù "." í ] -> u  .o.
+                         [ u "." í | ú "." í | ú "." i ] -> ú  .o.
+                         [ u "." ì | ù "." i | ù "." ì ] -> ù;
 
-define shortVowelTAMAAssimilation á "." i -> á  .o.  á "." í -> á  .o.
-                                  a "." i -> a  .o.  a "." í -> á  .o.
-                                  à "." i -> à  .o.
-                                  í "." i -> í  .o.
-                                                     i "." í -> í  .o.
-                                  ì "." i -> ì  .o.
-                                  ó "." i -> ó  .o.  ó "." í -> ó  .o.
-                                  o "." i -> o  .o.  o "." í -> ó  .o.
-                                  ò "." i -> ò  .o.
-                                  ú "." i -> ú  .o.  ú "." í -> ú  .o.
-                                  u "." i -> u  .o.  u "." í -> ú  .o.
-                                  ù "." i -> ù;
+# When /á/ appears before /ii/ or /i/ in a TAMA chunk (e.g., with the inner
+# prefix ná- in násʔí "look at"), we need to make sure that the /á/ becomes
+# long before /ii/ and picks up the appropriate tone.
+#
+# TODO: It would be good to check the cases before /ìì/ and /ì/, which are
+# best guesses, based on ì- prefix phonology elsewhere.  It's not clear if
+# these sequences ever appear: inner-prefix /á/ is rare as hen's teeth, and
+# finding a verb with both inner-prefix /á/ and ì- transitional (= L in the
+# FST) might be a tall order...
+define aTAMAAssimilation [ á "." í í | á "." i i | á "." á á ] -> á á  .o.
+                         [ á "." í   | á "." i   | á "." á   ] -> á    .o.
+                           á "." ì ì -> a a                            .o.
+                           á "." ì   -> a;
 
 # In complex prefix combinations, we can sometimes end up with a sequence
 # of three adjacent vowels (e.g., dà- í- isaà-, as in daásaàzi "we are all
@@ -148,7 +140,6 @@ define noThreeVowelSequences i -> 0 || vowel vowel _;
 # (Phoneticlaly, /wa/ can be realized as [wa] or [ɔa]~[ɔˑ], but this isn't
 # represented orthographically).
 define uGliding u -> w || _ [á|a|à] .o. ú [a|á] -> w á;
-
 
 # Change iò -> ò, io -> o, ió -> ó (e.g., mi-oghà -> moghà) and uò -> ò,
 # uo -> o, uó -> ó (e.g., gu-oghà -> goghà; both cases mostly apply to oblique
@@ -182,11 +173,18 @@ define iDeletionBeforeOtherVowels i -> 0 || _ [á|a|à|ó|o|ò|ú|u|ù];
 # the TAMA chunks.
 define shortenDefaultPrefixes i -> 0 || _ "." (L) [á|a|à|í|i|ì];
 
+# Turn any instances of <I> into plain /i/. (We use <I> in some TAMA chunks
+# to indicate an /i/ that maintains its mora when a prefix is joined to it,
+# e.g., the first /i/ in isaà-/isiì- 1PL)
+define cleanupMoraicI I -> i;
+
 # Turn any remaining instances of <S> into plain /s/.
 define cleanup2PL S -> s;
 
 # Remove morphological boundary markers from the FST output.
 define removeBoundaryMarkers "." -> 0;
+
+
 
 
 #
@@ -196,8 +194,9 @@ define removeBoundaryMarkers "." -> 0;
 regex [ shortenDefaultPrefixes
 .o. hToneSpreading
 .o. lToneLowering
-.o. longVowelTAMAAssimilation
-#.o. shortVowelTAMAAssimilation
+.o. uTAMAAssimilation
+.o. aTAMAAssimilation
+.o. cleanupMoraicI
 .o. removeBoundaryMarkers
 .o. uGliding
 .o. uDeletionBeforeO
