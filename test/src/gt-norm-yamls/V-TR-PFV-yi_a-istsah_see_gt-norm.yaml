@@ -9,144 +9,144 @@ Config:
 
 Tests:
   Verb - ìstsáh[see] :
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjSg2:                    niyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjSg3:                    yisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjSg3+DObjGiven:          yisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjSg3+DObjEmphatic:       miyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjSg4:                    guyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjSg4+Distr:              dàguyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjPl2:                    [nihiyisʔí, nahiyisʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjPl2+Distr:              [dànihiyisʔí, dànahiyisʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjPl3:                    gimiyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjPl3+Distr:              dàgimiyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjPl3+DObjGiven:          yisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjPl3+DObjGiven+Distr:    dàyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjRefl:                   idiyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjAreal:                  guyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg1+DObjAreal+Distr:            dàguyisʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjSg1:                    siyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjSg3:                    yíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjSg3+DObjGiven:          yíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjSg3+DObjEmphatic:       miyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjSg4:                    guyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjSg4+Distr:              dàguyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjPl1:                    [nihiyíʔí, nahiyíʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjPl1+Distr:              [dànihiyíʔí, dànahiyíʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjPl3:                    gimiyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjPl3+Distr:              dàgimiyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjPl3+DObjGiven:          yíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjPl3+DObjGiven+Distr:    dàyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjRefl:                   idiyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjAreal:                  guyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg2+DObjAreal+Distr:            dàguyíʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjSg1:                    sáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjSg2:                    náʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjSg3:                    yáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjSg3+DObjGiven:          yiʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjSg4:                    gwáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjSg4+Distr:              dàgwáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl1:                    [niháʔí, naháʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl1+Distr:              [dàniháʔí, dànaháʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl2:                    [niháʔí, naháʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl2+Distr:              [dàniháʔí, dànaháʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl3:                    gwáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl3+Distr:              dàgwáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl3+DObjGiven:          yiʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjPl3+DObjGiven+Distr:    dàyiʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjRefl:                   idáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjAreal:                  gwáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg3+DObjAreal+Distr:            dàgwáʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg1:                    sits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg1+Distr:              dàsits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg2:                    nits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg2+Distr:              dànits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg3:                    ts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg3+Distr:              dàts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg3+DObjGiven:          ts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg3+DObjGiven+Distr:    dàts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg3+DObjEmphatic:       mits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg3+DObjEmphatic+Distr: dàmits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg4:                    guts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjSg4+Distr:              dàguts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl1:                    [nihits'áʔí, nahits'áʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl1+Distr:              [dànihits'áʔí, dànahits'áʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl2:                    [nihits'áʔí, nahits'áʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl2+Distr:              [dànihits'áʔí, dànahits'áʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl3:                    gimits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl3+Distr:              dàgimits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl3+DObjGiven:          ts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjPl3+DObjGiven+Distr:    dàts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjRecip:                  [ástłits'áʔí, átłits'áʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjRecip+Distr:            [dàástłits'áʔí, dàátłits'áʔí]
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjRefl:                   idits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjRefl+Distr:             dààdits'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjAreal:                  guts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjSg4+DObjAreal+Distr:            dàguts'áʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg2:                    [niyiìʔí, niyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg2+Distr:              [dàniyiìʔí, dàniyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg3:                    [yiìʔí, yaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg3+Distr:              [dàyiìʔí, dàyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg3+DObjGiven:          [yiìʔí, yaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg3+DObjGiven+Distr:    [dàyiìʔí, dàyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg3+DObjEmphatic:       [miyiìʔí, miyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg3+DObjEmphatic+Distr: [dàmiyiìʔí, dàmiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg4:                    [guyiìʔí, guyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjSg4+Distr:              [dàguyiìʔí, dàguyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjPl2:                    [nihiyiìʔí, nihiyaàʔí, nahiyiìʔí, nahiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjPl2+Distr:              [dànihiyiìʔí, dànihiyaàʔí, dànahiyiìʔí, dànahiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjPl3:                    [gimiyiìʔí, gimiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjPl3+Distr:              [dàgimiyiìʔí, dàgimiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjPl3+DObjGiven:          [yiìʔí, yaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjPl3+DObjGiven+Distr:    [dàyiìʔí, dàyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjRecip:                  [ástłiyiìʔí, ástłiyaàʔí, átłiyiìʔí, átłiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjRecip+Distr:            [dàástłiyiìʔí, dàástłiyaàʔí, dàátłiyiìʔí, dàátłiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjRefl:                   [idiyiìʔí, idiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjRefl+Distr:             [dààdiyiìʔí, dààdiyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjAreal:                  [guyiìʔí, guyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl1+DObjAreal+Distr:            [dàguyiìʔí, dàguyaàʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg1:                    siyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg1+Distr:              dàsiyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg3:                    yasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg3+Distr:              dàyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg3+DObjGiven:          yasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg3+DObjGiven+Distr:    dàyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg3+DObjEmphatic:       miyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg3+DObjEmphatic+Distr: dàmiyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg4:                    guyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjSg4+Distr:              dàguyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjPl1:                    [nihiyasʔí, nahiyasʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjPl1+Distr:              [dànihiyasʔí, dànahiyasʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjPl3:                    gimiyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjPl3+Distr:              dàgimiyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjPl3+DObjGiven:          yasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjPl3+DObjGiven+Distr:    dàyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjRecip:                  [ástłiyasʔí, átłiyasʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjRecip+Distr:            [dàástłiyasʔí, dàátłiyasʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjRefl:                   idiyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjRefl+Distr:             dààdiyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjAreal:                  guyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl2+DObjAreal+Distr:            dàguyasʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg1:                    sigáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg1+Distr:              dàsigáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg2:                    nigáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg2+Distr:              dànigáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg3:                    giyáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg3+Distr:              dàgiyáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg3+DObjGiven:          gáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg3+DObjGiven+Distr:    dàgáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg4:                    gugáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjSg4+Distr:              dàgugáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl1:                    [nihigáʔí, nahigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl1+Distr:              [dànihigáʔí, dànahigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl2:                    [nihigáʔí, nahigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl2+Distr:              [dànihigáʔí, dànahigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl3:                    gugáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl3+Distr:              dàgugáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl3+DObjGiven:          gáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjPl3+DObjGiven+Distr:    dàgáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjRecip:                  [ástłigáʔí, átłigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjRecip+Distr:            [dàástłigáʔí, dàátłigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjRefl:                   [igidáʔí, idigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjRefl+Distr:             [dààgidáʔí, dààdigáʔí]
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjAreal:                  gugáʔí
-    ìstsáh[see]+V+T+Pfv+SbjPl3+DObjAreal+Distr:            dàgugáʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjSg2:                    niyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjSg3:                    yisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjSg3+DObjGiven:          yisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjSg3+DObjEmphatic:       miyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjSg4:                    guyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjSg4+Distr:              dàguyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjPl2:                    [nihiyisʔí, nahiyisʔí]
+    ìstsáh+V+T+Pfv+SbjSg1+DObjPl2+Distr:              [dànihiyisʔí, dànahiyisʔí]
+    ìstsáh+V+T+Pfv+SbjSg1+DObjPl3:                    gimiyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjPl3+Distr:              dàgimiyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjPl3+DObjGiven:          yisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjPl3+DObjGiven+Distr:    dàyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjRefl:                   idiyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjAreal:                  guyisʔí
+    ìstsáh+V+T+Pfv+SbjSg1+DObjAreal+Distr:            dàguyisʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjSg1:                    siyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjSg3:                    yíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjSg3+DObjGiven:          yíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjSg3+DObjEmphatic:       miyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjSg4:                    guyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjSg4+Distr:              dàguyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjPl1:                    [nihiyíʔí, nahiyíʔí]
+    ìstsáh+V+T+Pfv+SbjSg2+DObjPl1+Distr:              [dànihiyíʔí, dànahiyíʔí]
+    ìstsáh+V+T+Pfv+SbjSg2+DObjPl3:                    gimiyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjPl3+Distr:              dàgimiyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjPl3+DObjGiven:          yíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjPl3+DObjGiven+Distr:    dàyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjRefl:                   idiyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjAreal:                  guyíʔí
+    ìstsáh+V+T+Pfv+SbjSg2+DObjAreal+Distr:            dàguyíʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjSg1:                    sáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjSg2:                    náʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjSg3:                    yáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjSg3+DObjGiven:          yiʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjSg4:                    gwáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjSg4+Distr:              dàgwáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl1:                    [niháʔí, naháʔí]
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl1+Distr:              [dàniháʔí, dànaháʔí]
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl2:                    [niháʔí, naháʔí]
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl2+Distr:              [dàniháʔí, dànaháʔí]
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl3:                    gwáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl3+Distr:              dàgwáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl3+DObjGiven:          yiʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjPl3+DObjGiven+Distr:    dàyiʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjRefl:                   idáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjAreal:                  gwáʔí
+    ìstsáh+V+T+Pfv+SbjSg3+DObjAreal+Distr:            dàgwáʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg1:                    sits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg1+Distr:              dàsits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg2:                    nits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg2+Distr:              dànits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg3:                    ts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg3+Distr:              dàts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg3+DObjGiven:          ts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg3+DObjGiven+Distr:    dàts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg3+DObjEmphatic:       mits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg3+DObjEmphatic+Distr: dàmits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg4:                    guts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjSg4+Distr:              dàguts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl1:                    [nihits'áʔí, nahits'áʔí]
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl1+Distr:              [dànihits'áʔí, dànahits'áʔí]
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl2:                    [nihits'áʔí, nahits'áʔí]
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl2+Distr:              [dànihits'áʔí, dànahits'áʔí]
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl3:                    gimits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl3+Distr:              dàgimits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl3+DObjGiven:          ts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjPl3+DObjGiven+Distr:    dàts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjRecip:                  [ástłits'áʔí, átłits'áʔí]
+    ìstsáh+V+T+Pfv+SbjSg4+DObjRecip+Distr:            [daástłits'áʔí, daátłits'áʔí]
+    ìstsáh+V+T+Pfv+SbjSg4+DObjRefl:                   idits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjRefl+Distr:             dààdits'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjAreal:                  guts'áʔí
+    ìstsáh+V+T+Pfv+SbjSg4+DObjAreal+Distr:            dàguts'áʔí
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg2:                    [niyiìʔí, niyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg2+Distr:              [dàniyiìʔí, dàniyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg3:                    [yiìʔí, yaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg3+Distr:              [dàyiìʔí, dàyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg3+DObjGiven:          [yiìʔí, yaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg3+DObjGiven+Distr:    [dàyiìʔí, dàyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg3+DObjEmphatic:       [miyiìʔí, miyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg3+DObjEmphatic+Distr: [dàmiyiìʔí, dàmiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg4:                    [guyiìʔí, guyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjSg4+Distr:              [dàguyiìʔí, dàguyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjPl2:                    [nihiyiìʔí, nihiyaàʔí, nahiyiìʔí, nahiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjPl2+Distr:              [dànihiyiìʔí, dànihiyaàʔí, dànahiyiìʔí, dànahiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjPl3:                    [gimiyiìʔí, gimiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjPl3+Distr:              [dàgimiyiìʔí, dàgimiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjPl3+DObjGiven:          [yiìʔí, yaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjPl3+DObjGiven+Distr:    [dàyiìʔí, dàyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjRecip:                  [ástłiyiìʔí, ástłiyaàʔí, átłiyiìʔí, átłiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjRecip+Distr:            [daástłiyiìʔí, daástłiyaàʔí, daátłiyiìʔí, daátłiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjRefl:                   [idiyiìʔí, idiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjRefl+Distr:             [dààdiyiìʔí, dààdiyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjAreal:                  [guyiìʔí, guyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl1+DObjAreal+Distr:            [dàguyiìʔí, dàguyaàʔí]
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg1:                    siyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg1+Distr:              dàsiyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg3:                    yasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg3+Distr:              dàyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg3+DObjGiven:          yasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg3+DObjGiven+Distr:    dàyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg3+DObjEmphatic:       miyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg3+DObjEmphatic+Distr: dàmiyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg4:                    guyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjSg4+Distr:              dàguyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjPl1:                    [nihiyasʔí, nahiyasʔí]
+    ìstsáh+V+T+Pfv+SbjPl2+DObjPl1+Distr:              [dànihiyasʔí, dànahiyasʔí]
+    ìstsáh+V+T+Pfv+SbjPl2+DObjPl3:                    gimiyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjPl3+Distr:              dàgimiyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjPl3+DObjGiven:          yasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjPl3+DObjGiven+Distr:    dàyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjRecip:                  [ástłiyasʔí, átłiyasʔí]
+    ìstsáh+V+T+Pfv+SbjPl2+DObjRecip+Distr:            [daástłiyasʔí, daátłiyasʔí]
+    ìstsáh+V+T+Pfv+SbjPl2+DObjRefl:                   idiyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjRefl+Distr:             dààdiyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjAreal:                  guyasʔí
+    ìstsáh+V+T+Pfv+SbjPl2+DObjAreal+Distr:            dàguyasʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg1:                    sigáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg1+Distr:              dàsigáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg2:                    nigáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg2+Distr:              dànigáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg3:                    giyáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg3+Distr:              dàgiyáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg3+DObjGiven:          gáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg3+DObjGiven+Distr:    dàgáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg4:                    gugáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjSg4+Distr:              dàgugáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl1:                    [nihigáʔí, nahigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl1+Distr:              [dànihigáʔí, dànahigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl2:                    [nihigáʔí, nahigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl2+Distr:              [dànihigáʔí, dànahigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl3:                    gugáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl3+Distr:              dàgugáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl3+DObjGiven:          gáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjPl3+DObjGiven+Distr:    dàgáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjRecip:                  [ástłigáʔí, átłigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjRecip+Distr:            [daástłigáʔí, daátłigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjRefl:                   [igidáʔí, idigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjRefl+Distr:             [dààgidáʔí, dààdigáʔí]
+    ìstsáh+V+T+Pfv+SbjPl3+DObjAreal:                  gugáʔí
+    ìstsáh+V+T+Pfv+SbjPl3+DObjAreal+Distr:            dàgugáʔí

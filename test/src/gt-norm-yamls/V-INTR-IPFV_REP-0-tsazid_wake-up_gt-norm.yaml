@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - ts'ázid[wake-up] :
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjSg1:       ts'ánásshiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjSg2:       ts'ánánizhiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjSg3:       ts'ánázhiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjPl1:       [ts'ánáasiìzhiizh, ts'ánáasaàzhiizh]
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjPl1+Distr: [ts'ánádààsiìzhiizh, ts'ánádààsaàzhiizh]
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjPl2:       ts'ánásshiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjPl2+Distr: ts'ánádàsshiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjPl3:       ts'ánágizhiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjPl3+Distr: ts'ánádàgizhiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjSg4:       ts'ánáts'izhiizh
-    ts'ázid[wake-up]+V+I+Ipfv+Rep+SbjSg4+Distr: ts'ánádàts'izhiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjSg1:       ts'ánásshiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjSg2:       ts'ánánizhiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjSg3:       ts'ánázhiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjPl1:       [ts'ánáasiìzhiizh, ts'ánáasaàzhiizh]
+    ts'ázid+V+I+Ipfv+Rep+SbjPl1+Distr: [ts'ánádààsiìzhiizh, ts'ánádààsaàzhiizh]
+    ts'ázid+V+I+Ipfv+Rep+SbjPl2:       ts'ánásshiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjPl2+Distr: ts'ánádàsshiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjPl3:       ts'ánágizhiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjPl3+Distr: ts'ánádàgizhiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjSg4:       ts'ánáts'izhiizh
+    ts'ázid+V+I+Ipfv+Rep+SbjSg4+Distr: ts'ánádàts'izhiizh

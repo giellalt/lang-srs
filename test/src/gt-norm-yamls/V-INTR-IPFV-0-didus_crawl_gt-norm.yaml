@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - didús[crawl] :
-    didús[crawl]+V+I+Ipfv+SbjSg1:       disdús
-    didús[crawl]+V+I+Ipfv+SbjSg2:       dídús
-    didús[crawl]+V+I+Ipfv+SbjSg3:       didús
-    didús[crawl]+V+I+Ipfv+SbjPl1:       [diìdús, daàdús]
-    didús[crawl]+V+I+Ipfv+SbjPl1+Distr: [dàdiìdús, dàdaàdús]
-    didús[crawl]+V+I+Ipfv+SbjPl2:       dasdús
-    didús[crawl]+V+I+Ipfv+SbjPl2+Distr: dàdasdús
-    didús[crawl]+V+I+Ipfv+SbjPl3:       gididús
-    didús[crawl]+V+I+Ipfv+SbjPl3+Distr: dàgididús
-    didús[crawl]+V+I+Ipfv+SbjSg4:       ts'ididús
-    didús[crawl]+V+I+Ipfv+SbjSg4+Distr: dàts'ididús
+    didús+V+I+Ipfv+SbjSg1:       disdús
+    didús+V+I+Ipfv+SbjSg2:       dídús
+    didús+V+I+Ipfv+SbjSg3:       didús
+    didús+V+I+Ipfv+SbjPl1:       [diìdús, daàdús]
+    didús+V+I+Ipfv+SbjPl1+Distr: [dàdiìdús, dàdaàdús]
+    didús+V+I+Ipfv+SbjPl2:       dasdús
+    didús+V+I+Ipfv+SbjPl2+Distr: dàdasdús
+    didús+V+I+Ipfv+SbjPl3:       gididús
+    didús+V+I+Ipfv+SbjPl3+Distr: dàgididús
+    didús+V+I+Ipfv+SbjSg4:       ts'ididús
+    didús+V+I+Ipfv+SbjSg4+Distr: dàts'ididús

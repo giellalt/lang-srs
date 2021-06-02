@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - nàgudiitłod[jump-down] :
-    nàgudiitłod[jump-down]+V+I+Prog+SbjSg1:       nàgudiyistłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjSg2:       nàgudiyíítłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjSg3:       nàgudáátłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjPl1:       [nàgudiyiìtłíł, nàgudiyaàtłíł]
-    nàgudiitłod[jump-down]+V+I+Prog+SbjPl1+Distr: [nàdàgudiyiìtłíł, nàdàgudiyaàtłíł]
-    nàgudiitłod[jump-down]+V+I+Prog+SbjPl2:       nàgudiyastłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjPl2+Distr: nàdàgudiyastłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjPl3:       nàgugidáátłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjPl3+Distr: nàdàgugidáátłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjSg4:       nàguts'idáátłíł
-    nàgudiitłod[jump-down]+V+I+Prog+SbjSg4+Distr: nàdàguts'idáátłíł
+    nàgudiitłod+V+I+Prog+SbjSg1:       nàgudiyistłíł
+    nàgudiitłod+V+I+Prog+SbjSg2:       nàgudiyíítłíł
+    nàgudiitłod+V+I+Prog+SbjSg3:       nàgudáátłíł
+    nàgudiitłod+V+I+Prog+SbjPl1:       [nàgudiyiìtłíł, nàgudiyaàtłíł]
+    nàgudiitłod+V+I+Prog+SbjPl1+Distr: [nàdàgudiyiìtłíł, nàdàgudiyaàtłíł]
+    nàgudiitłod+V+I+Prog+SbjPl2:       nàgudiyastłíł
+    nàgudiitłod+V+I+Prog+SbjPl2+Distr: nàdàgudiyastłíł
+    nàgudiitłod+V+I+Prog+SbjPl3:       nàgugidáátłíł
+    nàgudiitłod+V+I+Prog+SbjPl3+Distr: nàdàgugidáátłíł
+    nàgudiitłod+V+I+Prog+SbjSg4:       nàguts'idáátłíł
+    nàgudiitłod+V+I+Prog+SbjSg4+Distr: nàdàguts'idáátłíł

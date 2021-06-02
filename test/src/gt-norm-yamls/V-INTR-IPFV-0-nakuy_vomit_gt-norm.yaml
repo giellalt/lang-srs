@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - nákuy[vomit] :
-    nákuy[vomit]+V+I+Ipfv+SbjSg1:       náskuy
-    nákuy[vomit]+V+I+Ipfv+SbjSg2:       nánikuy
-    nákuy[vomit]+V+I+Ipfv+SbjSg3:       nákuy
-    nákuy[vomit]+V+I+Ipfv+SbjPl1:       [náasiìkuy, náasaàkuy]
-    nákuy[vomit]+V+I+Ipfv+SbjPl1+Distr: [nádààsiìkuy, nádààsaàkuy]
-    nákuy[vomit]+V+I+Ipfv+SbjPl2:       náskuy
-    nákuy[vomit]+V+I+Ipfv+SbjPl2+Distr: nádàskuy
-    nákuy[vomit]+V+I+Ipfv+SbjPl3:       nágikuy
-    nákuy[vomit]+V+I+Ipfv+SbjPl3+Distr: nádàgikuy
-    nákuy[vomit]+V+I+Ipfv+SbjSg4:       náts'ikuy
-    nákuy[vomit]+V+I+Ipfv+SbjSg4+Distr: nádàts'ikuy
+    nákuy+V+I+Ipfv+SbjSg1:       náskuy
+    nákuy+V+I+Ipfv+SbjSg2:       nánikuy
+    nákuy+V+I+Ipfv+SbjSg3:       nákuy
+    nákuy+V+I+Ipfv+SbjPl1:       [náasiìkuy, náasaàkuy]
+    nákuy+V+I+Ipfv+SbjPl1+Distr: [nádààsiìkuy, nádààsaàkuy]
+    nákuy+V+I+Ipfv+SbjPl2:       náskuy
+    nákuy+V+I+Ipfv+SbjPl2+Distr: nádàskuy
+    nákuy+V+I+Ipfv+SbjPl3:       nágikuy
+    nákuy+V+I+Ipfv+SbjPl3+Distr: nádàgikuy
+    nákuy+V+I+Ipfv+SbjSg4:       náts'ikuy
+    nákuy+V+I+Ipfv+SbjSg4+Distr: nádàts'ikuy
