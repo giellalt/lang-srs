@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - tsídiitł'á[run-away] :
-    tsídiitł'á[run-away]+V+I+Prog+SbjSg1:       tsídíyistł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjSg2:       tsídíyíítł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjSg3:       tsídáátł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjPl1:       [tsídíyiìtł'áł, tsídíyaàtł'áł]
-    tsídiitł'á[run-away]+V+I+Prog+SbjPl1+Distr: [dàtsídíyiìtł'áł, dàtsídíyaàtł'áł]
-    tsídiitł'á[run-away]+V+I+Prog+SbjPl2:       tsídíyastł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjPl2+Distr: dàtsídíyastł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjPl3:       tsígídáátł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjPl3+Distr: dàtsígídáátł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjSg4:       tsíts'ídáátł'áł
-    tsídiitł'á[run-away]+V+I+Prog+SbjSg4+Distr: dàtsíts'ídáátł'áł
+    tsídiitł'á+V+I+Prog+SbjSg1:       tsídíyistł'áł
+    tsídiitł'á+V+I+Prog+SbjSg2:       tsídíyíítł'áł
+    tsídiitł'á+V+I+Prog+SbjSg3:       tsídáátł'áł
+    tsídiitł'á+V+I+Prog+SbjPl1:       [tsídíyiìtł'áł, tsídíyaàtł'áł]
+    tsídiitł'á+V+I+Prog+SbjPl1+Distr: [dàtsídíyiìtł'áł, dàtsídíyaàtł'áł]
+    tsídiitł'á+V+I+Prog+SbjPl2:       tsídíyastł'áł
+    tsídiitł'á+V+I+Prog+SbjPl2+Distr: dàtsídíyastł'áł
+    tsídiitł'á+V+I+Prog+SbjPl3:       tsígídáátł'áł
+    tsídiitł'á+V+I+Prog+SbjPl3+Distr: dàtsígídáátł'áł
+    tsídiitł'á+V+I+Prog+SbjSg4:       tsíts'ídáátł'áł
+    tsídiitł'á+V+I+Prog+SbjSg4+Distr: dàtsíts'ídáátł'áł

@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - ts'ázid[wake-up] :
-    ts'ázid[wake-up]+V+I+Prog+SbjSg1:       ts'áyissił
-    ts'ázid[wake-up]+V+I+Prog+SbjSg2:       ts'áyíził
-    ts'ázid[wake-up]+V+I+Prog+SbjSg3:       ts'áyiził
-    ts'ázid[wake-up]+V+I+Prog+SbjPl1:       [ts'áyiìził, ts'áyaàził]
-    ts'ázid[wake-up]+V+I+Prog+SbjPl1+Distr: [ts'ádàyiìził, ts'ádàyaàził]
-    ts'ázid[wake-up]+V+I+Prog+SbjPl2:       ts'áyassił
-    ts'ázid[wake-up]+V+I+Prog+SbjPl2+Distr: ts'ádàyassił
-    ts'ázid[wake-up]+V+I+Prog+SbjPl3:       ts'ágáził
-    ts'ázid[wake-up]+V+I+Prog+SbjPl3+Distr: ts'ádàgáził
-    ts'ázid[wake-up]+V+I+Prog+SbjSg4:       ts'áts'áził
-    ts'ázid[wake-up]+V+I+Prog+SbjSg4+Distr: ts'ádàts'áził
+    ts'ázid+V+I+Prog+SbjSg1:       ts'áyissił
+    ts'ázid+V+I+Prog+SbjSg2:       ts'áyíził
+    ts'ázid+V+I+Prog+SbjSg3:       ts'áyiził
+    ts'ázid+V+I+Prog+SbjPl1:       [ts'áyiìził, ts'áyaàził]
+    ts'ázid+V+I+Prog+SbjPl1+Distr: [ts'ádàyiìził, ts'ádàyaàził]
+    ts'ázid+V+I+Prog+SbjPl2:       ts'áyassił
+    ts'ázid+V+I+Prog+SbjPl2+Distr: ts'ádàyassił
+    ts'ázid+V+I+Prog+SbjPl3:       ts'ágáził
+    ts'ázid+V+I+Prog+SbjPl3+Distr: ts'ádàgáził
+    ts'ázid+V+I+Prog+SbjSg4:       ts'áts'áził
+    ts'ázid+V+I+Prog+SbjSg4+Distr: ts'ádàts'áził

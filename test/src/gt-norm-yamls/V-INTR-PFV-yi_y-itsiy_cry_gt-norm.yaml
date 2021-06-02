@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - itsiy[cry] :
-    itsiy[cry]+V+I+Pfv+SbjSg1:       yistsày
-    itsiy[cry]+V+I+Pfv+SbjSg2:       yítsày
-    itsiy[cry]+V+I+Pfv+SbjSg3:       yítsày
-    itsiy[cry]+V+I+Pfv+SbjPl1:       [yiìtsày, yaàtsày]
-    itsiy[cry]+V+I+Pfv+SbjPl1+Distr: [dàyiìtsày, dàyaàtsày]
-    itsiy[cry]+V+I+Pfv+SbjPl2:       yastsày
-    itsiy[cry]+V+I+Pfv+SbjPl2+Distr: dàyastsày
-    itsiy[cry]+V+I+Pfv+SbjPl3:       giyítsày
-    itsiy[cry]+V+I+Pfv+SbjPl3+Distr: dàgiyítsày
-    itsiy[cry]+V+I+Pfv+SbjSg4:       ts'iyítsày
-    itsiy[cry]+V+I+Pfv+SbjSg4+Distr: dàts'iyítsày
+    itsiy+V+I+Pfv+SbjSg1:       yistsày
+    itsiy+V+I+Pfv+SbjSg2:       yítsày
+    itsiy+V+I+Pfv+SbjSg3:       yítsày
+    itsiy+V+I+Pfv+SbjPl1:       [yiìtsày, yaàtsày]
+    itsiy+V+I+Pfv+SbjPl1+Distr: [dàyiìtsày, dàyaàtsày]
+    itsiy+V+I+Pfv+SbjPl2:       yastsày
+    itsiy+V+I+Pfv+SbjPl2+Distr: dàyastsày
+    itsiy+V+I+Pfv+SbjPl3:       giyítsày
+    itsiy+V+I+Pfv+SbjPl3+Distr: dàgiyítsày
+    itsiy+V+I+Pfv+SbjSg4:       ts'iyítsày
+    itsiy+V+I+Pfv+SbjSg4+Distr: dàts'iyítsày

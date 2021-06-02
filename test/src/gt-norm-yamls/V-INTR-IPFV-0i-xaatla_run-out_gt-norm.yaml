@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - xààtł'á[run-out] :
-    xààtł'á[run-out]+V+I+Ipfv+SbjSg1:       xàstł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjSg2:       xàniitł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjSg3:       xààtł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjPl1:       [xààsiìtł'á, xààsaàtł'á]
-    xààtł'á[run-out]+V+I+Ipfv+SbjPl1+Distr: [xàdààsiìtł'á, xàdààsaàtł'á]
-    xààtł'á[run-out]+V+I+Ipfv+SbjPl2:       xàstł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjPl2+Distr: xàdàstł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjPl3:       xàgiitł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjPl3+Distr: xàdàgiitł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjSg4:       xàts'iitł'á
-    xààtł'á[run-out]+V+I+Ipfv+SbjSg4+Distr: xàdàts'iitł'á
+    xààtł'á+V+I+Ipfv+SbjSg1:       xàstł'á
+    xààtł'á+V+I+Ipfv+SbjSg2:       xàniitł'á
+    xààtł'á+V+I+Ipfv+SbjSg3:       xààtł'á
+    xààtł'á+V+I+Ipfv+SbjPl1:       [xààsiìtł'á, xààsaàtł'á]
+    xààtł'á+V+I+Ipfv+SbjPl1+Distr: [xàdààsiìtł'á, xàdààsaàtł'á]
+    xààtł'á+V+I+Ipfv+SbjPl2:       xàstł'á
+    xààtł'á+V+I+Ipfv+SbjPl2+Distr: xàdàstł'á
+    xààtł'á+V+I+Ipfv+SbjPl3:       xàgiitł'á
+    xààtł'á+V+I+Ipfv+SbjPl3+Distr: xàdàgiitł'á
+    xààtł'á+V+I+Ipfv+SbjSg4:       xàts'iitł'á
+    xààtł'á+V+I+Ipfv+SbjSg4+Distr: xàdàts'iitł'á

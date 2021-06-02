@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - itsiy[cry] :
-    itsiy[cry]+V+I+Ipfv+Rep+SbjSg1:       náschish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjSg2:       nánichish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjSg3:       náchish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjPl1:       [náasiìchish, náasaàchish]
-    itsiy[cry]+V+I+Ipfv+Rep+SbjPl1+Distr: [nádààsiìchish, nádààsaàchish]
-    itsiy[cry]+V+I+Ipfv+Rep+SbjPl2:       náschish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjPl2+Distr: nádàschish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjPl3:       nágichish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjPl3+Distr: nádàgichish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjSg4:       náts'ichish
-    itsiy[cry]+V+I+Ipfv+Rep+SbjSg4+Distr: nádàts'ichish
+    itsiy+V+I+Ipfv+Rep+SbjSg1:       náschish
+    itsiy+V+I+Ipfv+Rep+SbjSg2:       nánichish
+    itsiy+V+I+Ipfv+Rep+SbjSg3:       náchish
+    itsiy+V+I+Ipfv+Rep+SbjPl1:       [náasiìchish, náasaàchish]
+    itsiy+V+I+Ipfv+Rep+SbjPl1+Distr: [nádààsiìchish, nádààsaàchish]
+    itsiy+V+I+Ipfv+Rep+SbjPl2:       náschish
+    itsiy+V+I+Ipfv+Rep+SbjPl2+Distr: nádàschish
+    itsiy+V+I+Ipfv+Rep+SbjPl3:       nágichish
+    itsiy+V+I+Ipfv+Rep+SbjPl3+Distr: nádàgichish
+    itsiy+V+I+Ipfv+Rep+SbjSg4:       náts'ichish
+    itsiy+V+I+Ipfv+Rep+SbjSg4+Distr: nádàts'ichish
