@@ -633,6 +633,18 @@ LEXICON yi-y-PFV-AFF
 @U.VV.S@@R.PREFIX.MIDDLE@                    yis-y-PFV-AFF-InnerPrefix ;
 @U.VV.S@@R.PREFIX.OUTER@                     yis-y-PFV-AFF-OuterPrefix ;
 
+! The only conditions under which we should expect yii-y-PFV to arise are
+! after outer, middle, and inner prefixes (where they appear in reflexives
+! based on yis-y-PFV verbs, which will contain middle prefixes, but possibly
+! also inner prefixes that may require inner or outer-prefix TAMA chunks).
+! For yi-y perfectives, however, TAMA chunk forms are the same under all
+! prefixation conditions, so we tentatively include no-prefix forms here,
+! as well.
+@U.VV.I@@D.PREFIX@                           yii-y-PFV-AFF ;    ! CHECK
+@U.VV.I@@R.PREFIX.INNER@                     yii-y-PFV-AFF ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    yii-y-PFV-AFF ;
+@U.VV.I@@R.PREFIX.OUTER@                     yii-y-PFV-AFF ;
+
 
 LEXICON yi-y-PFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -694,6 +706,22 @@ LEXICON yis-y-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yaS   #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@yís   #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@yís   #;
+
+
+! All yi-y TAMA chunks have the same form, regardless of what prefixes precede
+! them, so defining one set of TAMA chunks here for yii-y-PFV is enough.  Note
+! that the tone on 3SG, 3PL, and 4SG forms is different from yi-y-PFV and
+! yis-y-PFV, with a mid, rather than a high tone (cf. TLQ-20210218).  This
+! makes yii-y-PFV look more like 0-IPFV with a lexical yi- inner prefix.
+LEXICON yii-y-PFV-AFF
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yíí   #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@yii   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@yaà   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@yiì   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yaS   #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@yii   #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@yii   #;
 
 
 !
