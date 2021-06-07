@@ -101,8 +101,8 @@ lexicon.%: lexicon.tmp.% verb_lexicon.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 			[ @\"$<\" | @\"verb_lexicon.$*\" ] \
 			;\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST_TOOL)
+		save stack $@\n\
+		quit\n" | $(XFST_TOOL)
 
 
 ### END: Local processing: ###
