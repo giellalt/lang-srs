@@ -1,18 +1,19 @@
-Multichar_Symbols @D.GI@ @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @D.TAMA.si@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.GI.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.GI@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OUTERSUBJECT.ON@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @R.TAMA.si@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @U.DIRECTOBJECT.NONE@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.INDEF@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.RECIP@ @U.OBLIQUEPERSON.REFL@ @U.OUTERSUBJECT.ON@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @P.CONATIVE.ON@ @D.CONATIVE@ @R.CONATIVE.ON@ @D.PREFIX.MIDDLE@ @R.PREFIX.MIDDLE@ @P.PREFIX.OUTER@ @P.CONATIVE.OFF@ @R.CONATIVE.OFF@ @U.VV.I@ @U.VV.%0@ @U.OBJECTPERSON.AREAL@ @U.OBLIQUEPERSON.AREAL@
+Multichar_Symbols @D.GI@ @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @D.TAMA.si@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.GI.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.GI@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OUTERSUBJECT.ON@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @R.TAMA.si@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @U.DIRECTOBJECT.NONE@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.INDEF@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.RECIP@ @U.OBLIQUEPERSON.REFL@ @U.OUTERSUBJECT.ON@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @P.CONATIVE.ON@ @D.CONATIVE@ @R.CONATIVE.ON@ @D.PREFIX.MIDDLE@ @R.PREFIX.MIDDLE@ @P.PREFIX.OUTER@ @P.CONATIVE.OFF@ @R.CONATIVE.OFF@ @U.VV.I@ @U.VV.%0@ @U.OBJECTPERSON.AREAL@ @U.OBLIQUEPERSON.AREAL@ @U.VALENCE.DO-EXPERIENCER@
 
 
 LEXICON Root
 
-@U.VALENCE.INTRANSITIVE@                                Intransitive-Markers;
-@U.VALENCE.OBLIQUEOBJECT@                               Intransitive-Markers;
-@U.VALENCE.TRANSITIVE@                                  Transitive-Markers;
-@U.VALENCE.DITRANSITIVE@                                Transitive-Markers;
-@U.VALENCE.IMPERSONAL@                                  #;
-@U.VALENCE.OO-EXPERIENCER@                              #;
-@U.VALENCE.TRANSITIONAL@                                Transitive-Markers;
+@U.VALENCE.INTRANSITIVE@                              IntransitiveMarkers;
+@U.VALENCE.OBLIQUEOBJECT@                             IntransitiveMarkers;
+@U.VALENCE.TRANSITIVE@                                TransitiveMarkers;
+@U.VALENCE.DITRANSITIVE@                              TransitiveMarkers;
+@U.VALENCE.IMPERSONAL@                                Only3SGSubject;
+@U.VALENCE.DO-EXPERIENCER@                            DirectSubjectAffixes;
+@U.VALENCE.OO-EXPERIENCER@                            #;
+@U.VALENCE.TRANSITIONAL@                              TransitiveMarkers;
 
 
-LEXICON Intransitive-Markers
+LEXICON IntransitiveMarkers
 
 ! With intransitive and oblique object verbs, the only two affixes that can
 ! appear in this region of the verb are the two 'outer' subject markers gi-
@@ -31,7 +32,7 @@ LEXICON Intransitive-Markers
     Filter-SBJ-IO;
 
 
-LEXICON Transitive-Markers
+LEXICON TransitiveMarkers
 
 ! With transitive verbs, three different kinds of prefixes can appear in this
 ! part of the verb, in the following order:
@@ -507,3 +508,36 @@ LEXICON Filter-DO-IO-Checks
 ! to themselves') might be plausible. For now, we exclude those forms from
 ! being produced/accepted, since they tend to be semantically odd for most
 ! ditransitive verbs.
+
+
+! Direct object experiencer verbs have direct object inflection only
+! (interpreted as 'subject' in English translations; more restricted set of
+! inflectional markers than with most direct objects, since no 3>3, reflexive,
+! or reciprocal marking).
+LEXICON DirectSubjectAffixes
+
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.SG@si                 DirectSubjectConative;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.SG@ni                 DirectSubjectConative;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@mi                 DirectSubjectConative;
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@nihi               DirectSubjectConative;
+@U.OBJECTPERSON.1@@U.OBJECTNUMBER.PL@nahi               DirectSubjectConative;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@nihi               DirectSubjectConative;
+@U.OBJECTPERSON.2@@U.OBJECTNUMBER.PL@nahi               DirectSubjectConative;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@@P.GI.ON@gimi      DirectSubjectConative;
+@U.OBJECTPERSON.4@@U.OBJECTNUMBER.SG@gu                 DirectSubjectConative;
+@U.OBJECTPERSON.AREAL@@U.OBJECTNUMBER.SG@gu             DirectSubjectConative;
+
+! Direct object experiencer verbs may also contain a conative prefix, which
+! has distinctive morphophonological characteristics (see notes above).
+! The presence of a conative prefix is specified in a verb's lexical entry.
+LEXICON DirectSubjectConative
+
+@P.CONATIVE.ON@@P.PREFIX.OUTER@H                               Only3SGSubject;
+@P.CONATIVE.OFF@@P.PREFIX.MIDDLE@                              Only3SGSubject;
+
+! Impersonal and direct object experiencer verbs only have inner inflection
+! for third-person singular forms.  This lexicon prevents forms with any other
+! subject person-number combinations from being produced/recognized.
+LEXICON Only3SGSubject
+
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                                     #;
