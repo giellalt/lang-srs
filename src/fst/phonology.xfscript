@@ -13,9 +13,9 @@ define consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
 # Morphophonological adjustments to tone.
 #
 
-# Define LH -> MH (e.g., shì-á -> shaá, as in shaásʔín "I prepared food",
-# dà-á -> daá, as in daátłiyaàʔí "each and every one of us saw each other")
-# HL -> HM (e.g., ná-ì -> náa, as in náaya "he/she got up"), and 
+# Define LH -> MH (e.g., shì-á -> shaá, as in shaásʔín "I prepared food, made
+# a feast", dà-á -> daá, as in daátłiyaàʔí "each and every one of us saw each
+# other") HL -> HM (e.g., ná-ì -> náa, as in náaya "he/she got up"), and 
 # LM -> LL (e.g., dà-i -> dàà, as in dààsaàtsiy "each and every one of us
 # is crying").
 define toneSandhi à -> a, ì -> i, ò -> o, ù -> u || _ highToneVowel .o. 
@@ -27,22 +27,22 @@ define toneSandhi à -> a, ì -> i, ò -> o, ù -> u || _ highToneVowel .o.
 # stopping at the first inflectional chunk (e.g., íts'idiyískid "they were
 # asked" comes out as íts'ídíyískid, with high tone spreading from í- onto
 # ts'i- and di-, but stopping at yi-).  We mark this spreading high tone
-# in lexical entries as an H after the vowel (e.g., tsíH, íH)
+# in lexical entries as an ^H after the vowel (e.g., tsí^H, í^H)
 #
 # For now, this rule applies to sequences of at most three unmarked syllables
-# that appear after a spreading H tone.  If it turns out that there are words
-# words with a spreading H tone that involve more than three unmarked
+# that appear after a spreading high tone.  If it turns out that there are
+# words with a spreading high tone that involve more than three unmarked
 # syllables before the inflectional chunk, this rule will need to change.
-define hToneSpreadAfterMid a -> á, i -> í, o -> ó, u -> ú || _ H;
+define hToneSpreadAfterMid a -> á, i -> í, o -> ó, u -> ú || _ "^H";
 define hToneSpread a a -> á á, a -> á, 
                    i i -> í í, i -> í,
                    o o -> ó ó, o -> ó,
                    u u -> ú ú, u -> ú || 
-                        H (consonant)+ _, 
-                        H (consonant)+ (unmarkedVowel)+ (consonant)+ _,
-                        H (consonant)+ (unmarkedVowel)+ 
+                        "^H" (consonant)+ _, 
+                        "^H" (consonant)+ (unmarkedVowel)+ (consonant)+ _,
+                        "^H" (consonant)+ (unmarkedVowel)+ 
                           (consonant)+ (unmarkedVowel)+ (consonant)+ _;
-define hToneSpreadCleanup H -> 0;
+define hToneSpreadCleanup "^H" -> 0;
 
 regex [ hToneSpreadAfterMid .o. hToneSpread .o. hToneSpreadCleanup ];
 define hToneSpreading;
@@ -50,25 +50,25 @@ define hToneSpreading;
 # The ì- transitional (Leer 1996/2005) or inchoative/semelfactive (K. Rice
 # 2000) prefix behaves differently from all other tone-bearing prefixes in
 # Tsuut'ina, pulling down the tone of neighbouring vowels without adding a
-# mora (e.g., gùja ánìstłàg "I did you (sg.) good", from á= ni_ L . is làg,
-# with L . is -> ìs; gùja ásilàg "you (sg.) did me good", from á= si_ L .
-# í làg, with L . í -> i).
+# mora (e.g., gùja ánìstłàg "I did you (sg.) good", from á= ni_ ^L . is làg,
+# with L . is -> ìs; gùja ásilàg "you (sg.) did me good", from á= si_ ^L .
+# í làg, with ^L . í -> i).
 # 
 # In the case of TAMA chunks, this prefix causes both short and long vowels
 # to drop by one level (e.g., í -> i, íí -> ii, etc.).  In all other cases,
 # only one mora is lowered (e.g., nánaàyistsòni "I will see you (pl.) again",
-# from ná= naa_ L . yis tsòni, where naa L -> naà, rather than *nàà).  To
-# model this, we represent this prefix's tone as L, adjusting TAMA chunk tones
+# from ná= naa_ ^L . yis tsòni, where naa ^L -> naà, rather than *nàà).  To
+# model this, we represent this prefix's tone as ^L, adjusting TAMA chunk tones
 # first (i.e., apply the lowering to any vowel sequences immediately after
 # the "." boundary marker), then to any adjacent vowel immediately to the
 # left of this prefix.
-define lToneLowerRight "." L á á -> "." a a, "." L á -> "." a, 
-                       "." L a a -> "." à à, "." L a -> "." à, 
-                       "." L í í -> "." i i, "." L í -> "." i, 
-                       "." L i i -> "." ì ì, "." L i -> "." ì;
+define lToneLowerRight "." "^L" á á -> "." a a, "." "^L" á -> "." a, 
+                       "." "^L" a a -> "." à à, "." "^L" a -> "." à, 
+                       "." "^L" í í -> "." i i, "." "^L" í -> "." i, 
+                       "." "^L" i i -> "." ì ì, "." "^L" i -> "." ì;
 define lToneLowerLeft  á -> a, a -> à, í -> i, i -> ì,
-                       ó -> o, o -> ò, ú -> u, u -> ù || _ "." L;
-define lToneCleanup L -> 0;
+                       ó -> o, o -> ò, ú -> u, u -> ù || _ "." "^L";
+define lToneCleanup "^L" -> 0;
 
 regex [ lToneLowerRight .o. lToneLowerLeft .o. lToneCleanup ];
 define lToneLowering;
@@ -80,9 +80,9 @@ define lToneLowering;
 
 # Stems that begin with /l/ combine with 2PL as- either as (a|à)ł or, for
 # some speakers, as (a|à)stł (e.g., /as+lí/ "you.PL are" -> [ałí] or [astłí]).
-# We use the symbol 'S' to represent the /s/ in any 2PL inflectional chunks
+# We use the symbol 's2' to represent the /s/ in any 2PL inflectional chunks
 # that are involved in this process.
-define lInitialStemsSbjPl2 S l -> ł ,, S l -> s l ;
+define lInitialStemsSbjPl2 s2 l -> ł ,, s2 l -> s l ;
 
 # Phonotactic restriction: in general, /sl/ sequences should be resolved as
 # /stł/ (e.g., /is+lí/ "I am" -> [istłí]).
@@ -120,7 +120,7 @@ define uTAMAAssimilation [ u "." i | ú "." ì | ù "." í ] -> u  .o.
 # TODO: It would be good to check the cases before /ìì/ and /ì/, which are
 # best guesses, based on ì- prefix phonology elsewhere.  It's not clear if
 # these sequences ever appear: inner-prefix /á/ is rare as hen's teeth, and
-# finding a verb with both inner-prefix /á/ and ì- transitional (= L in the
+# finding a verb with both inner-prefix /á/ and ì- transitional (= ^L in the
 # FST) might be a tall order...
 define aTAMAAssimilation [ á "." í í | á "." i i | á "." á á ] -> á á  .o.
                          [ á "." í   | á "." i   | á "." á   ] -> á    .o.
@@ -146,12 +146,12 @@ define uGliding u -> w || _ [á|a|à] .o. ú [a|á] -> w á;
 # object markers, where this phonological context typically arises).
 define uDeletionBeforeO u -> 0 || _ [ó|o|ò];
 
-# 2PL /aS/ doesn't contribute a mora to any preceding prefix, (e.g., dàłí
+# 2PL <as2> doesn't contribute a mora to any preceding prefix, (e.g., dàłí
 # "you (pl.) are" < dà- ałí, rather than *dàałí), but it does still cause
 # manner assimilation (e.g., dastł'áh "you (pl.) run" < di- astłáh).
-define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à]+ S;
-# TODO: what to do with àS-? (depends on treatment of transitional ì-)
-define reduce2PLAfterVowel a -> 0 || vowel _ S;
+define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à]+ s2;
+# TODO: what to do with às2-? (depends on treatment of transitional ì-)
+define reduce2PLAfterVowel a -> 0 || vowel _ s2;
 
 # Outside of TAMA-initial contexts, /i/ assimilates to the height and backness
 # of any immediately preceding /a/ or /u/, but retains its tone and mora.
@@ -171,15 +171,15 @@ define iDeletionBeforeOtherVowels i -> 0 || _ [á|a|à|ó|o|ò|ú|u|ù];
 # is tł'áh -> d . is tł'áh).  This step makes it much easier to deal with
 # the morphophonology that happens at the point where the inner prefixes meet
 # the TAMA chunks.
-define shortenDefaultPrefixes i -> 0 || _ "." (L) [á|a|à|í|i|ì];
+define shortenDefaultPrefixes i -> 0 || _ "." ("^L") [á|a|à|í|i|ì];
 
-# Turn any instances of <I> into plain /i/. (We use <I> in some TAMA chunks
+# Turn any instances of <i2> into plain /i/. (We use <i2> in some TAMA chunks
 # to indicate an /i/ that maintains its mora when a prefix is joined to it,
 # e.g., the first /i/ in isaà-/isiì- 1PL)
-define cleanupMoraicI I -> i;
+define cleanupMoraicI i2 -> i;
 
-# Turn any remaining instances of <S> into plain /s/.
-define cleanup2PL S -> s;
+# Turn any remaining instances of <s2> into plain /s/.
+define cleanup2PL s2 -> s;
 
 # Remove morphological boundary markers from the FST output.
 define removeBoundaryMarkers "." -> 0;
