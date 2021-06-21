@@ -53,12 +53,12 @@ define InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 
 # Some middle and inner prefixes (e.g., middle íH- conative/half-transitive,
 # inner ná-) appear with outer prefix TAMA chunk allomorphs. In order to
-# get this right, we append the symbol "O" after the vowel in the lexical
-# entry (e.g., íHO-, náO-), then turn that into a flag that requires outer
+# get this right, we append the symbol "^O" after the vowel in the lexical
+# entry (e.g., í^H^O-, ná^O-), then turn that into a flag that requires outer
 # prefix allomorphs.
-define RequireOuterAllomorphs O "@P.PREFIX.INNER@" -> "@P.PREFIX.OUTER@" .o.
-                              O "@P.PREFIX.MIDDLE@" -> "@P.PREFIX.OUTER@" .o.
-                              O -> "@P.PREFIX.OUTER@";
+define RequireOuterAllomorphs "^O" "@P.PREFIX.INNER@" -> "@P.PREFIX.OUTER@" .o.
+                              "^O" "@P.PREFIX.MIDDLE@" -> "@P.PREFIX.OUTER@" .o.
+                              "^O" -> "@P.PREFIX.OUTER@";
 
 # We temporarily keep the boundary symbol for inner affixes (".") in place
 # so that we can target morphophonology there more easily (especially when
