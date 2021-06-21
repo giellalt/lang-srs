@@ -605,6 +605,13 @@ These were the set types.
 
 
 
+
+# Symbol affixes
+
+
+
+
+
 # Verb inflection in Tsuut'ina
 
 The lexicon names srs15, srs14, etc. refers to traditional template names.
@@ -649,12 +656,6 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
  * LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
 
 
-Proper noun inflection
-The Sarsi language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-
-
 ## Tsuut'ina Noun inflection
 
 ## Classification.
@@ -673,11 +674,18 @@ nouns, but with a colon (':') as separator.
  * LEXICON VariablyPossessedNouns   Px or not
 
 
+Proper noun inflection
+The Sarsi language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
 
-# Symbol affixes
 
 
+Pronouns
+Pronouns in Tsuut'ina
 
+
+Numerals
+Numerals in the Sarsi language are numbers.
 
 
 
@@ -709,14 +717,6 @@ nouns, but with a colon (':') as separator.
 
 LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
 
-
-
-Pronouns
-Pronouns in Tsuut'ina
-
-
-Numerals
-Numerals in the Sarsi language are numbers.
 
 
 # Tsuut'ina Nouns
@@ -907,6 +907,22 @@ The word forms in Tsuut'ina start from noun and verb prefixes
 
 
 
+We describe here how abbreviations are in Sarsi are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
+
+
+
 
 
 
@@ -957,22 +973,6 @@ The word forms in Tsuut'ina start from noun and verb prefixes
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Sarsi are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
 
       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
