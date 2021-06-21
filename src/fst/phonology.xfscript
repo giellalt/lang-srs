@@ -88,6 +88,12 @@ define lInitialStemsSbjPl2 s2 l -> ł ,, s2 l -> s l ;
 # /stł/ (e.g., /is+lí/ "I am" -> [istłí]).
 define slDissimilation s l -> s t ł;
 
+# Some <y>-initial stems alternate with <sh> when preceded by /s/ (e.g., -yón
+# "grow (perfective)", as in nìsishón "I grew up" vs. sìsíyón "you (sg.) grew
+# up").  We represent the <y> in these stems in lexical entries as <y2>, then
+# define the corresponding phonological alternation here.
+define y2InitialStemAfterS [ s y2 -> s h  .o.  y2 -> y ];
+
 # Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh "I don't know") (This
 # rule may need to change; some people prefer to spell these forms without the
 # second /s/)
@@ -185,8 +191,6 @@ define cleanup2PL s2 -> s;
 define removeBoundaryMarkers "." -> 0;
 
 
-
-
 #
 # Compose all of the morphophonology together.
 #
@@ -208,6 +212,7 @@ regex [ shortenDefaultPrefixes
 .o. iDeletionBeforeOtherVowels
 .o. noThreeVowelSequences
 .o. slDissimilation
+.o. y2InitialStemAfterS 
 .o. zhDevoicing 
 .o. zDevoicing
 .o. ghDevoicing
