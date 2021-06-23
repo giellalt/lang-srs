@@ -10,8 +10,11 @@
 # m: output results from Multichar_Symbols
 # l: output results from LEXICONs
 
-gawk -v OPTIONS=$1 'BEGIN { mchars=1; opts=OPTIONS; }
-{ while(match($0,"@[^@]*@",f)!=0 && mchars)
+gawk -v OPTIONS=$1 'BEGIN { mchars=0; opts=OPTIONS; }
+{ 
+  if(index($0,"Multichar_Symbols")!=0)
+    mchars=1;
+  while(match($0,"@[^@]*@",f)!=0 && mchars)
        {
          # gsub("\\.","\\.",f[0]);
          sub(f[0],"");
@@ -20,7 +23,7 @@ gawk -v OPTIONS=$1 'BEGIN { mchars=1; opts=OPTIONS; }
   if(index($0,"LEXICON")!=0)
     mchars=0;
 }
-{ while(match($0,"@[^@]*@",f)!=0 && mchars==0)
+{ while(match($0,"@[^@]*@",f)!=0 && !mchars)
        {
          # gsub("\\.","\\.",f[0]);
          sub(f[0],"");
@@ -43,10 +46,16 @@ END { PROCINFO["sorted_in"]="@val_num_desc";
       printf "\n";
     }
   print "CHECK OF FLAGS IN LEXICONS DECLARED AS MULTICHAR_SYMBOLS";
+  undecl=0;
   for(flag in flags2)
      if(!(flag in flags))
-       printf "UNDECLARED: %s\n", flag;
+       {
+         ++undecl;
+         printf "UNDECLARED: %s\n", flag;
+       }
      else
        if(index(opts,"d")!=0)
          printf "DECLARED: %s\n", flag;
+  if(undecl==0)
+    printf "NO UNDECLARED FLAGS.\n";
 }'
