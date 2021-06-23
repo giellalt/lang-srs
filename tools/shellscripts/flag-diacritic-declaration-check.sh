@@ -29,6 +29,9 @@ gawk -v OPTIONS=$1 'BEGIN { mchars=0; opts=OPTIONS; }
          sub(f[0],"");
          flags2[f[0]]++;
        }
+  sub("!.*$","");
+  if(index($0,"@")!=0)
+    printf "POTENTIALLY MISSPECIFIED FLAG(S) ON LINE %i: %s\n", NR, $0; 
 }
 END { PROCINFO["sorted_in"]="@val_num_desc";
   if(index(opts,"m")!=0)
