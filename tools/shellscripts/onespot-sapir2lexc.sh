@@ -95,7 +95,7 @@ NR==1 {
   aspect_label["POT"]="POT"; aspect_comment["POT"]="Potential";
   aspect_label["OPT"]="OPT"; aspect_comment["OPT"]="Optative";
   aspect_label["OTHER"]="OTHER"; aspect_comment["OTHER"]="CHECK ASPECT";
-  aspect_label["CHECK"]="CHECK ASPECT"; aspect_comment["CHECK"]="CHECK ASPECT";
+  aspect_label["CHECK-ASPECT"]="CHECK-ASPECT"; aspect_comment["CHECK-ASPECT"]="CHECK ASPECT";
   # print fst_lemma*1, fst_stem*1, tama*1;
 
 }
@@ -154,6 +154,7 @@ for(arg in contlex)
    }
 
 for(flag in flags)
+   if(index(flag,"CHECK")==0)
      printf "%s\n", flag;
 printf "@U.VV.%0@\n@U.VV.I@\n@U.VV.S@\n@R.CONATIVE.OFF@\n";
 printf "@R.SUBJECTPERSON.3@\n@R.SUBJECTNUMBER.SG@\n@R.SUBJECTNUMBER.PL@\n@R.OBJECTNUMBER.PL@\n@R.OBJECTPERSON.3@\n";
@@ -204,44 +205,44 @@ for(arg in lemma_tama_stem)
       }
    }
 
-   print ""; print "!! Continuation lexica specifying Valence + Aspect + TAMA with flags"; print "";
+   print ""; print "!! Continuation lexica specifying Valence + Aspect + TAMA + Voice-Valence with flags"; print "";
    for(arg in contlex)
       for(asp in contlex[arg])
          for(tama in contlex[arg][asp])
+            if(index(asp,"CHECK")==0)
             {
               print "LEXICON "arg_label[arg]"-"tama"-"asp;
               printf "@U.VALENCE.%s@", valence[arg];
               asp_flag="@U.ASPECT."aspect_label[asp]"@" superaspect_flag[asp];
               printf "%s", asp_flag;
 
-              # TAMA and VV flags
+              ## TAMA and VV flags
               # 0, ni, si, etc. —  @U.VV.%0@
               # 0s, nis, sis, etc. — @U.VV.S@
               # 0i, nii, sii-, etc. — @U.VV.I@
 
-
-# TAMA+ -> TAMA + VV conversions
-# @U.TAMA.%0@ -> 0 + 0
-# @U.TAMA.%0i@ -> 0 + i
-# @U.TAMA.%0s@ -> 0 + s
-# @U.TAMA.i@ -> i + 0
-# @U.TAMA.ii@ -> i + i
-# @U.TAMA.is@ -> i + s
-# @U.TAMA.isi@ -> isi + 0
-# @U.TAMA.isis@ -> isi + s
-# @U.TAMA.ni@ -> ni + 0
-# @U.TAMA.nii@ -> ni + i
-# @U.TAMA.nis@ -> ni + s
-# @U.TAMA.si@ -> si + 0
-# @U.TAMA.sii@ -> si + i 
-# @U.TAMA.sis@ -> si + s
-# @U.TAMA.yi-a@ -> yi-a + 0
-# @U.TAMA.yi-yi@ -> yi-yi + 0
-# @U.TAMA.yi@ -> yi + 0
-# @U.TAMA.yii-yi@ -> yi-yi + i
-# @U.TAMA.yis-a@ -> yi-a + s
-# @U.TAMA.yis-yi@ -> yi-yi + s
-# @U.TAMA.yis@ -> yi + s
+              ## TAMA+ -> TAMA + VV conversions
+              # @U.TAMA.%0@ -> 0 + 0
+              # @U.TAMA.%0i@ -> 0 + i
+              # @U.TAMA.%0s@ -> 0 + s
+              # @U.TAMA.i@ -> i + 0
+              # @U.TAMA.ii@ -> i + i
+              # @U.TAMA.is@ -> i + s
+              # @U.TAMA.isi@ -> isi + 0
+              # @U.TAMA.isis@ -> isi + s
+              # @U.TAMA.ni@ -> ni + 0
+              # @U.TAMA.nii@ -> ni + i              
+              # @U.TAMA.nis@ -> ni + s
+              # @U.TAMA.si@ -> si + 0
+              # @U.TAMA.sii@ -> si + i 
+              # @U.TAMA.sis@ -> si + s
+              # @U.TAMA.yi-a@ -> yi-a + 0
+              # @U.TAMA.yi-yi@ -> yi-yi + 0
+              # @U.TAMA.yi@ -> yi + 0
+              # @U.TAMA.yii-yi@ -> yi-yi + i
+              # @U.TAMA.yis-a@ -> yi-a + s
+              # @U.TAMA.yis-yi@ -> yi-yi + s
+              # @U.TAMA.yis@ -> yi + s
 
 
               gsub("0","%0",tama);
