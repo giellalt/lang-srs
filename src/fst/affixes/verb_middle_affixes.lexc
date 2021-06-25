@@ -227,7 +227,7 @@ LEXICON Conative
 ! We mark the presence of this conative/half-transitive prefix using the flag
 ! CONATIVE, which is set as part of the lexical entry for each verb that
 ! contains this prefix.  Here, we define two paths: one which sets this flag
-! (and eventually matches with @R.CONATIVE@ in the lexicon) and adds the
+! (and eventually matches with @R.CONATIVE.ON@ in the lexicon) and adds the
 ! prefix, and one that doesn't (and eventually rules out conative-transitive
 ! forms from being produced/accepted for verbs that don't have this prefix
 ! specified in the lexicon).
@@ -460,8 +460,8 @@ LEXICON Filter-SBJ-IO-Checks
 
 LEXICON Filter-DO-IO
 
-@U.VALENCE.OBLIQUEOBJECT@                              #;
-@U.VALENCE.DITRANSITIVE@                               Filter-DO-IO-Checks;
+@U.VALENCE.OBLIQUEOBJECT@                               #;
+@U.VALENCE.DITRANSITIVE@                                Filter-DO-IO-Checks;
 
 LEXICON Filter-DO-IO-Checks
 

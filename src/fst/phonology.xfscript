@@ -2,7 +2,7 @@
 # Tsuut'ina morphophonology
 #
 
-define vowel [a|ā|á|à|i|ī|í|ì|o|ō|ó|ò|u|ū|ú|ù];
+define vowel [a|á|à|i|í|ì|o|ó|ò|u|ú|ù];
 define unmarkedVowel [a|i|o|u];
 define highToneVowel [á|í|ó|ú];
 define lowToneVowel [à|ì|ò|ù];
@@ -106,7 +106,7 @@ define zDevoicing z -> s || s _;
 
 # Change sgh -> sx (isghàł -> isxàł "I am whipping (something), cracking a
 # whip"; cf. isaàghàł "we are whipping (something), cracking a whip")
-define ghDevoicing gh -> x || s _;
+##define ghDevoicing {gh} -> x || s _;
 
 
 #
@@ -215,6 +215,6 @@ regex [ shortenDefaultPrefixes
 .o. y2InitialStemAfterS 
 .o. zhDevoicing 
 .o. zDevoicing
-.o. ghDevoicing
+#.o. ghDevoicing
 .o. toneSandhi
 ] ;
