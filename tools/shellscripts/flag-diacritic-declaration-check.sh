@@ -9,9 +9,11 @@
 # Options:
 # m: output results from Multichar_Symbols
 # l: output results from LEXICONs
+# d: output also correctly declared flags
 
 gawk -v OPTIONS=$1 'BEGIN { mchars=0; opts=OPTIONS; }
 { 
+  sub("!.*$","");
   if(index($0,"Multichar_Symbols")!=0)
     mchars=1;
   while(match($0,"@[^@]*@",f)!=0 && mchars)
@@ -23,13 +25,13 @@ gawk -v OPTIONS=$1 'BEGIN { mchars=0; opts=OPTIONS; }
   if(index($0,"LEXICON")!=0)
     mchars=0;
 }
-{ while(match($0,"@[^@]*@",f)!=0 && !mchars)
+{ 
+  while(match($0,"@[^@]*@",f)!=0 && !mchars)
        {
          # gsub("\\.","\\.",f[0]);
          sub(f[0],"");
          flags2[f[0]]++;
        }
-  sub("!.*$","");
   if(index($0,"@")!=0)
     printf "POTENTIALLY MISSPECIFIED FLAG(S) ON LINE %i: %s\n", NR, $0; 
 }
