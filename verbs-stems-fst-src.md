@@ -29,3 +29,5 @@ LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verbs.lexc)</small>
