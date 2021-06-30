@@ -255,7 +255,7 @@ for(arg in lemma_tama_stem)
               printf "@U.VV.%s@", vv;
 
               # @R.CONATIVE.OFF@ for: Transitive, Ditransitive, DirectObjectExperiencer, Transitional
-              if(arg=="Transitive" || arg=="Ditransitive" || arg=="DirectObjectExperiencer" || arg=="Transitional")
+              if(match(arg, "Transitive") != 0 || arg=="Ditransitive" || arg=="DirectObjectExperiencer" || arg=="TransitionalTransitive")
                 printf "@R.CONATIVE.OFF@";
 
               # Additional flags governing paradigm restrictions
