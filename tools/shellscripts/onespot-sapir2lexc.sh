@@ -62,7 +62,6 @@ NR==1 {
 # Transitive-DObjPlOnly -> TR + @R.OBJECTNUMBER.PL@ 
 # Transitive-DObj3SgOnly -> TR + @R.OBJECTNUMBER.PL@ @R.OBJECTPERSON.3@ 
 # Transitive-SubjSuppr -> TR
-# Transitive-WithAreal -> TR
 # ObliqueObject -> OO
 # Ditransitive -> DITR
 # DirectObjectExperiencer -> DOEXP
@@ -80,7 +79,7 @@ NR==1 {
   arg_label["Transitive-SubjSuppr"]="TR-SS"; valence["Transitive-SubjSuppr"]="TRANSITIVE";
   arg_label["Transitive-DObjPlOnly"]="TR-DOPL"; valence["Transitive-DObjPlOnly"]="TRANSITIVE"; extraflags["Transitive-DObjPlOnly"]="@R.OBJECTNUMBER.PL@";
   arg_label["Transitive-DObj3SgOnly"]="TR-DO3SG"; valence["Transitive-DObj3SgOnly"]="TRANSITIVE"; extraflags["Transitive-DObj3SgOnly"]="@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@";
-  arg_label["Transitive-WithAreal"]="TR-ARL"; valence["Transitive-WithAreal"]="TRANSITIVE";
+  arg_label["Transitive-Conative"]="TR-CON"; valence["Transitive-Conative"]="TRANSITIVE"; extraflags["Transitive-Conative"]="@R.CONATIVE.ON@";
   arg_label["Ditransitive"]="DITR"; valence["Ditransitive"]="DITRANSITIVE";
   arg_label["DirectObjectExperiencer"]="DOEXP"; valence["DirectObjectExperiencer"]="DO-EXPERIENCER";
   arg_label["ObliqueObject"]="OBL"; valence["ObliqueObject"]="OBLIQUEOBJECT";
@@ -156,7 +155,7 @@ for(arg in contlex)
 for(flag in flags)
    if(index(flag,"CHECK")==0)
      printf "%s\n", flag;
-printf "@U.VV.%0@\n@U.VV.I@\n@U.VV.S@\n@R.CONATIVE.OFF@\n";
+printf "@U.VV.%0@\n@U.VV.I@\n@U.VV.S@\n@R.CONATIVE.OFF@\n@R.CONATIVE.ON@\n";
 printf "@R.SUBJECTPERSON.3@\n@R.SUBJECTNUMBER.SG@\n@R.SUBJECTNUMBER.PL@\n@R.OBJECTNUMBER.PL@\n@R.OBJECTPERSON.3@\n";
 
 printf "\n\n";
@@ -255,7 +254,7 @@ for(arg in lemma_tama_stem)
               printf "@U.VV.%s@", vv;
 
               # @R.CONATIVE.OFF@ for: Transitive, Ditransitive, DirectObjectExperiencer, Transitional
-              if(match(arg, "Transitive") != 0 || arg=="Ditransitive" || arg=="DirectObjectExperiencer" || arg=="TransitionalTransitive")
+              if((match(arg, "Transitive") != 0 || arg=="Ditransitive" || arg=="DirectObjectExperiencer" || arg=="TransitionalTransitive") && match(arg, "Conative") == 0)
                 printf "@R.CONATIVE.OFF@";
 
               # Additional flags governing paradigm restrictions
