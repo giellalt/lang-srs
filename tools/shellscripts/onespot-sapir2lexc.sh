@@ -139,6 +139,9 @@ END { PROCINFO["sorted_in"]="@ind_str_asc";
 print "!! Tsuut'\''ina (srs) verb stems";
 print "";
 
+split(",PlainStem,ModifiedStem", contlex_suffixes, ",");
+split(",@U.STEM.PLAIN@,@U.STEM.MODIFIED@", contlex_suffix_flags, ",");
+
 print "Multichar_Symbols";
 print "! Flag specifications";
 for(arg in contlex)
@@ -163,6 +166,7 @@ for(flag in flags)
    if(index(flag,"CHECK")==0)
      printf "%s\n", flag;
 printf "@U.VV.%0@\n@U.VV.I@\n@U.VV.S@\n@R.CONATIVE.OFF@\n@R.CONATIVE.ON@\n";
+printf "@U.STEM.PLAIN@\n@U.STEM.MODIFIED@\n"
 printf "@R.SUBJECTPERSON.3@\n@R.SUBJECTNUMBER.SG@\n@R.SUBJECTNUMBER.PL@\n@R.OBJECTNUMBER.PL@\n@R.OBJECTPERSON.3@\n";
 
 printf "\n\n";
@@ -196,16 +200,66 @@ for(arg in lemma_tama_stem)
                    { 
                      os_lines=lemma_tama_stem[arg][lemma][asp][clex][stem];
                      sub(", $","",os_lines);
+
+                     # If the stem contains a slash (e.g., "di.dál/dátł'"),
+                     # then it separates the plain stem ("dál") from the
+                     # modified one ("dátł'").
+                     stem_modified="";
+                     if(index(stem,"/")!=0)
+                       {
+                         # Split the modified stem (after the slash) off from
+                         # the plain stem and prefixes.
+                         split(stem, stem_parts, "/");
+                         prefixes="";
+                         if(index(stem_parts[1], ".")!=0)
+                           {
+                             split(stem_parts[1], stem_out, ".");
+                             prefixes = sprintf("%s.", stem_out[1]);
+                             stem=stem_out[2];
+                           }
+                         else if(index(stem_parts[1], "_")!=0)
+                           {
+                             split(stem_parts[1], stem_out, "_");
+                             prefixes = sprintf("%s_", stem_out[1]);
+                             stem=stem_out[2];
+                           }
+                         else if(index(stem_parts[1], "=")!=0)
+                           {
+                             split(stem_parts[1], stem_out, "=");
+                             prefixes = sprintf("%s=", stem_out[1]);
+                             stem=stem_out[2];
+                           }
+                         else
+                           {
+                             stem=stem_parts[1];
+                           }
+                         stem=sprintf("%s%s", prefixes, stem);
+                         stem_modified=sprintf("%s%s", prefixes, stem_parts[2]);
+                       }
                      if(index(lemma," ")!=0 || index(stem," ")!=0 || index(lemma,"?")!=0 || index(stem,"?")!=0)
                        comment="CHECK LEMMA/STEM! ";
                      else
                        comment="";
                      if(asp=="" || aspect_label[asp]=="")
                        asp="CHECK";
-                     lexc=sprintf("%s%s:%s\t%s-%s ; ! %s ! OS: %s", comment, lemma, stem, arg_label[arg], clex, aspect_comment[asp], os_lines);
-                     if(index(lexc,"CHECK")!=0)
-                       lexc="! "lexc;
-                     printf "%s\n", lexc;
+                     if(stem_modified=="")
+                       {
+                         lexc=sprintf("%s%s:%s\t%s-%s ; ! %s ! OS: %s", comment, lemma, stem, arg_label[arg], clex, aspect_comment[asp], os_lines);
+                         if(index(lexc,"CHECK")!=0)
+                           lexc="! "lexc;
+                         printf "%s\n", lexc;
+                       }
+                     else
+                       {
+                         lexc1=sprintf("%s%s:%s\t%s-%s-PlainStem ; ! %s ! OS: %s", comment, lemma, stem, arg_label[arg], clex, aspect_comment[asp], os_lines);
+                         if(index(lexc1,"CHECK")!=0)
+                           lexc1="! "lexc1;
+
+                         lexc2=sprintf("%s%s:%s\t%s-%s-ModifiedStem ; ! %s ! OS: %s", comment, lemma, stem_modified, arg_label[arg], clex, aspect_comment[asp], os_lines);
+                         if(index(lexc2,"CHECK")!=0)
+                           lexc2="! "lexc2;
+                         printf "%s\n%s\n", lexc1, lexc2;
+                       }
                    }
         printf "\n";
       }
@@ -215,61 +269,69 @@ for(arg in lemma_tama_stem)
    for(arg in contlex)
       for(asp in contlex[arg])
          for(tama in contlex[arg][asp])
-            if(index(asp,"CHECK")==0)
-            {
-              print "LEXICON "arg_label[arg]"-"tama"-"asp;
-              printf "@U.VALENCE.%s@", valence[arg];
-              asp_flag="@U.ASPECT."aspect_label[asp]"@" superaspect_flag[asp];
-              printf "%s", asp_flag;
+           if(index(asp,"CHECK")==0)
+               for(i = 1; i <= 3; i++)
+               {
+                 if(contlex_suffixes[i] == "")
+                   print "LEXICON "arg_label[arg]"-"tama"-"asp;
+                 else
+                   printf "LEXICON %s-%s-%s-%s\n", arg_label[arg], tama, asp, contlex_suffixes[i];
 
-              ## TAMA and VV flags
-              # 0, ni, si, etc. —  @U.VV.%0@
-              # 0s, nis, sis, etc. — @U.VV.S@
-              # 0i, nii, sii-, etc. — @U.VV.I@
+                 printf "@U.VALENCE.%s@", valence[arg];
+                 asp_flag="@U.ASPECT."aspect_label[asp]"@" superaspect_flag[asp];
+                 printf "%s", asp_flag;
 
-              ## TAMA+ -> TAMA + VV conversions
-              # @U.TAMA.%0@ -> 0 + 0
-              # @U.TAMA.%0i@ -> 0 + i
-              # @U.TAMA.%0s@ -> 0 + s
-              # @U.TAMA.i@ -> i + 0
-              # @U.TAMA.ii@ -> i + i
-              # @U.TAMA.is@ -> i + s
-              # @U.TAMA.isi@ -> isi + 0
-              # @U.TAMA.isis@ -> isi + s
-              # @U.TAMA.ni@ -> ni + 0
-              # @U.TAMA.nii@ -> ni + i              
-              # @U.TAMA.nis@ -> ni + s
-              # @U.TAMA.si@ -> si + 0
-              # @U.TAMA.sii@ -> si + i 
-              # @U.TAMA.sis@ -> si + s
-              # @U.TAMA.yi-a@ -> yi-a + 0
-              # @U.TAMA.yi-y@ -> yi-y + 0
-              # @U.TAMA.yi@ -> yi + 0
-              # @U.TAMA.yii-y@ -> yi-y + i
-              # @U.TAMA.yis-a@ -> yi-a + s
-              # @U.TAMA.yis-y@ -> yi-y + s
-              # @U.TAMA.yis@ -> yi + s
+                 ## TAMA and VV flags
+                 # 0, ni, si, etc. —  @U.VV.%0@
+                 # 0s, nis, sis, etc. — @U.VV.S@
+                 # 0i, nii, sii-, etc. — @U.VV.I@
+
+                 ## TAMA+ -> TAMA + VV conversions
+                 # @U.TAMA.%0@ -> 0 + 0
+                 # @U.TAMA.%0i@ -> 0 + i
+                 # @U.TAMA.%0s@ -> 0 + s
+                 # @U.TAMA.i@ -> i + 0
+                 # @U.TAMA.ii@ -> i + i
+                 # @U.TAMA.is@ -> i + s
+                 # @U.TAMA.isi@ -> isi + 0
+                 # @U.TAMA.isis@ -> isi + s
+                 # @U.TAMA.ni@ -> ni + 0
+                 # @U.TAMA.nii@ -> ni + i              
+                 # @U.TAMA.nis@ -> ni + s
+                 # @U.TAMA.si@ -> si + 0
+                 # @U.TAMA.sii@ -> si + i 
+                 # @U.TAMA.sis@ -> si + s
+                 # @U.TAMA.yi-a@ -> yi-a + 0
+                 # @U.TAMA.yi-y@ -> yi-y + 0
+                 # @U.TAMA.yi@ -> yi + 0
+                 # @U.TAMA.yii-y@ -> yi-y + i
+                 # @U.TAMA.yis-a@ -> yi-a + s
+                 # @U.TAMA.yis-y@ -> yi-y + s
+                 # @U.TAMA.yis@ -> yi + s
 
 
-              gsub("0","%0",tama);
-              vv="%0";
-              if(match(tama,"(s\\-)|(s$)")!=0)
-                { vv="S"; sub("s-","-",tama); sub("s$","",tama); }
-              if(match(tama,"ii")!=0 || match(tama,"0i")!=0)
-                { vv="I"; sub("ii","i",tama); sub("0i","0",tama); }
-              printf "@U.TAMA.%s@", tama;
-              printf "@U.VV.%s@", vv;
+                 tama_flag = tama;
+                 gsub("0","%0",tama_flag);
+                 vv="%0";
+                 if(match(tama_flag,"(s\\-)|(s$)")!=0)
+                   { vv="S"; sub("s-","-",tama_flag); sub("s$","",tama_flag); }
+                 if(match(tama_flag,"ii")!=0 || match(tama_flag,"0i")!=0)
+                   { vv="I"; sub("ii","i",tama_flag); sub("0i","0",tama_flag); }
+                 printf "@U.TAMA.%s@", tama_flag;
+                 printf "@U.VV.%s@", vv;
 
-              # @R.CONATIVE.OFF@ for: Transitive, Ditransitive, DirectObjectExperiencer, Transitional
-              if((match(arg, "Transitive") != 0 || arg=="Ditransitive" || arg=="DirectObjectExperiencer" || arg=="TransitionalTransitive") && match(arg, "Conative") == 0)
-                printf "@R.CONATIVE.OFF@";
+                 # @R.CONATIVE.OFF@ for: Transitive, Ditransitive, DirectObjectExperiencer, Transitional
+                 if((match(arg, "Transitive") != 0 || arg=="Ditransitive" || arg=="DirectObjectExperiencer" || arg=="TransitionalTransitive") && match(arg, "Conative") == 0)
+                   printf "@R.CONATIVE.OFF@";
 
-              # Additional flags governing paradigm restrictions
-              if(extraflags[arg]!="")
-                printf "%s", extraflags[arg];
+                 # Additional flags governing paradigm restrictions
+                 if(extraflags[arg]!="")
+                   printf "%s", extraflags[arg];
 
-              printf " VerbSuffixes;\n\n";
-            }
+                 printf "%s", contlex_suffix_flags[i];
+
+                 printf " VerbSuffixes;\n\n";
+               }
   print "";
   print "LEXICON VerbSuffixes";
   print "# ;";
