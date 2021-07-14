@@ -22,10 +22,10 @@ gawk -F"\t" 'NR>=2 { cmd="hfst-optimized-lookup -q src/fst/srs-analyser-gt-norm.
   na=split(res,anl,"\n"); delete rank; delete matches;
   for(i=1; i<=na; i++)
      {
-       lm="-"; vm="-"; am="-"; pm="-"; om="-";
+       hm="-"; lm="-"; vm="-"; am="-"; pm="-"; om="-";
        split(anl[i],f,"\t");
 
-       # Congruence with lemma
+       # Congruence of FST lemma with DB lemma
        if(match(f[2],"^"lemma"\\+")!=0)
          {
            # sub(lemma,">"lemma"<",f[2]);
@@ -37,6 +37,14 @@ gawk -F"\t" 'NR>=2 { cmd="hfst-optimized-lookup -q src/fst/srs-analyser-gt-norm.
            rank[f[2]]=rank[f[2]]+0;
            lm="-";
          }
+
+       # Equality of FST lemma with entry head(word)
+       fstlemma=f[2];
+       sub("\\+.*$","",fstlemma);
+       if(fstlemma==entry && index(f[2],"+SbjSg3")!=0)
+         hm="+";
+       else
+         hm="-";
 
        # Congruence with argument structure type
        if(index(valence,"Intransitive")!=0 && index(f[2],"+I+")!=0)
@@ -93,10 +101,14 @@ gawk -F"\t" 'NR>=2 { cmd="hfst-optimized-lookup -q src/fst/srs-analyser-gt-norm.
          { rank[f[2]]++; om="+"; }
 
        # Aggregating and relabeling congruence results
-       if(lm=="+")
-         matches[f[2]]="L";
+       if(hm=="+")
+         matches[f[2]]="H";
        else
          matches[f[2]]="-";
+       if(lm=="+")
+         matches[f[2]]=matches[f[2]]"L";
+       else
+         matches[f[2]]=matches[f[2]]"-";
        if(vm=="+")
          matches[f[2]]=matches[f[2]]"V";
        else
