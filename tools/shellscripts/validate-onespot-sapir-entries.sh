@@ -6,20 +6,23 @@
 
 
 gawk -F"\t" 'NR>=2 { cmd="hfst-optimized-lookup -q src/fst/srs-analyser-gt-norm.hfstol";
+  OS=$1; entry=$2; definition=$3; 
   FS="\n"; RS="";
-  print $2 |& cmd; fflush(); close(cmd, "to");
+  print entry |& cmd; fflush(); close(cmd, "to");
   cmd |& getline res; fflush(); close(cmd, "from");
   FS="\t"; RS="\n";
-  lemma=$9; args=$7; asp=$6;
+
+  # Setting lexical variables
+  lemma=$9; stem=$10; valence=$7; aspect=$6;
   sub("\\[.*$","",lemma);
   gsub("a","ā",lemma); gsub("e","ē",lemma); gsub("i","ī",lemma); gsub("o","ō",lemma); gsub("u","ū",lemma);
-  print $1, "-", "W:", $2, "L:", lemma, "S:", $10;
+  print OS, "-", "W:", entry, "L:", lemma, "S:", stem, "V:", valence;
   print $3;
 
   na=split(res,anl,"\n"); delete rank; delete matches;
   for(i=1; i<=na; i++)
      {
-       lm="-"; am="-"; mm="-"; pm="-"; om="-";
+       lm="-"; vm="-"; am="-"; pm="-"; om="-";
        split(anl[i],f,"\t");
 
        # Congruence with lemma
@@ -36,67 +39,81 @@ gawk -F"\t" 'NR>=2 { cmd="hfst-optimized-lookup -q src/fst/srs-analyser-gt-norm.
          }
 
        # Congruence with argument structure type
-       if(index(args,"Intransitive")!=0 && index(f[2],"+I+")!=0)
-         { rank[f[2]]++; am="+"; }
-       if(index(args,"Transitive")!=0 && index(f[2],"+T+")!=0)
-         { rank[f[2]]++; am="+"; }
-       if(index(args,"Ditransitive")!=0 && index(f[2],"+D+")!=0)
-         { rank[f[2]]++; am="+"; }
+       if(index(valence,"Intransitive")!=0 && index(f[2],"+I+")!=0)
+         { rank[f[2]]++; vm="+"; }
+       if(index(valence,"Transitive")!=0 && index(f[2],"+T+")!=0)
+         { rank[f[2]]++; vm="+"; }
+       if(index(valence,"Ditransitive")!=0 && index(f[2],"+D+")!=0)
+         { rank[f[2]]++; vm="+"; }
+       if(valence=="ObliqueObject" && index(f[2],"+O+")!=0)
+         { rank[f[2]]++; vm="+"; }
+       if(index(valence,"Experiencer")!=0 && index(f[2],"+E+")!=0)
+         { rank[f[2]]++; vm="+"; }
 
        # Congruence with aspect/mood
-       if(asp=="Non-past" && index(f[2],"+Ipfv")!=0 && index(f[2],"+Rep")==0)
-         { rank[f[2]]++; mm="+"; }
-       if(asp=="Past" && index(f[2],"+Pfv")!=0 && index(f[2],"+Rep")==0)
-         { rank[f[2]]++; mm="+"; }
-       if(asp=="Progressive" && index(f[2],"+Prog")!=0 && index(f[2],"+Rep")==0)
-         { rank[f[2]]++; mm="+"; }
-       if(asp=="Repetitive-Non-past" && index(f[2],"+Ipfv")!=0 && index(f[2],"+Rep")!=0)
-         { rank[f[2]]++; mm="+"; }
-       if(asp=="Repetitive-Past" && index(f[2],"+Pfv")!=0 && index(f[2],"+Rep")!=0)
-         { rank[f[2]]++; mm="+"; }
+       if(aspect=="Non-past" && index(f[2],"+Ipfv")!=0 && index(f[2],"+Rep")==0)
+         { rank[f[2]]++; am="+"; }
+       if(aspect=="Past" && index(f[2],"+Pfv")!=0 && index(f[2],"+Rep")==0)
+         { rank[f[2]]++; am="+"; }
+       if(aspect=="Progressive" && index(f[2],"+Prog")!=0 && index(f[2],"+Rep")==0)
+         { rank[f[2]]++; am="+"; }
+       if(aspect=="Repetitive-Non-past" && index(f[2],"+Ipfv")!=0 && index(f[2],"+Rep")!=0)
+         { rank[f[2]]++; am="+"; }
+       if(aspect=="Repetitive-Past" && index(f[2],"+Pfv")!=0 && index(f[2],"+Rep")!=0)
+         { rank[f[2]]++; am="+"; }
 
        # Congruence with subject
-       if(match($3,"\\<I\\>")!=0 && index(f[2],"SbjSg1")!=0)
+       if(match(definition,"\\<I\\>")!=0 && index(f[2],"SbjSg1")!=0)
          { rank[f[2]]++; pm="+"; }
-       if(match($3,"\\<[Yy]ouˢᵍ∙")!=0 && index(f[2],"SbjSg2")!=0)
+       if(match(definition,"\\<[Yy]ouˢᵍ∙")!=0 && index(f[2],"SbjSg2")!=0)
          { rank[f[2]]++; pm="+"; }
-       if((match($3,"\\<[Hh]e/she/it\\>")!=0 || match($3,"^[Ii]t\\>")!=0) && index(f[2],"SbjSg3")!=0)
+       if((match(definition,"\\<[Hh]e/she/it\\>")!=0 || match(definition,"^[Ii]t\\>")!=0) && index(f[2],"SbjSg3")!=0)
          { rank[f[2]]++; pm="+"; }
-       if(match($3,"\\<[Ss]ome")!=0 && index(f[2],"SbjSg4")!=0)
+       if(match(definition,"\\<[Ss]ome")!=0 && index(f[2],"SbjSg4")!=0)
          { rank[f[2]]++; pm="+"; }
-       if(match($3,"\\<[Ww]e\\>")!=0 && index(f[2],"SbjPl1")!=0)
+       if(match(definition,"\\<[Ww]e\\>")!=0 && index(f[2],"SbjPl1")!=0)
          { rank[f[2]]++; pm="+"; }
-       if(match($3,"\\<[Yy]ou")!=0 && index($3,"[Yy]ouˢᵍ∙")==0 && index(f[2],"SbjPl2")!=0)
+       if(match(definition,"\\<[Yy]ou")!=0 && index(definition,"[Yy]ouˢᵍ∙")==0 && index(f[2],"SbjPl2")!=0)
          { rank[f[2]]++; pm="+"; }
-       if(match($3,"\\<[Tt]hey\\>")!=0 && index(f[2],"SbjPl3")!=0)
+       if(match(definition,"\\<[Tt]hey\\>")!=0 && index(f[2],"SbjPl3")!=0)
          { rank[f[2]]++; pm="+"; }
 
-       # Congruence with object
-       if(match($3," \\<it\\>")!=0 && index(f[2],"DObjSg3")!=0)
+       # Congruence with object (direct or indirect)
+       if(match(definition,"\\<me\\>")!=0 && index(f[2],"ObjSg1")!=0)
          { rank[f[2]]++; om="+"; }
-       if(match($3,"\\<them\\>")!=0 && index(f[2],"DObjPl3")!=0)
+       if(match(definition," youˢᵍ∙")!=0 && index(f[2],"ObjSg2")!=0)
+         { rank[f[2]]++; om="+"; }
+       if((match(definition," \\<it\\>")!=0 || match(definition,"\\<him/her/it\\>")!=0 || match(definition," something\\>")!=0) && index(f[2],"ObjSg3")!=0)
+         { rank[f[2]]++; om="+"; }
+       if(match(definition,"\\<us\\>")!=0 && index(f[2],"ObjPl1")!=0)
+         { rank[f[2]]++; om="+"; }
+       if(match(definition," you")!=0 && match(definition," youˢᵍ∙")==0 &&  index(f[2],"ObjPl2")!=0)
+         { rank[f[2]]++; om="+"; }
+       if(match(definition,"\\<them\\>")!=0 && index(f[2],"ObjPl3")!=0)
          { rank[f[2]]++; om="+"; }
 
+       # Aggregating and relabeling congruence results
        if(lm=="+")
          matches[f[2]]="L";
        else
          matches[f[2]]="-";
-       if(am=="+")
-         matches[f[2]]=matches[f[2]]"A";
+       if(vm=="+")
+         matches[f[2]]=matches[f[2]]"V";
        else
          matches[f[2]]=matches[f[2]]"-";
-       if(mm=="+")
-         matches[f[2]]=matches[f[2]]"M";
+       if(am=="+")
+         matches[f[2]]=matches[f[2]]"A";
        else
          matches[f[2]]=matches[f[2]]"-";
        if(pm=="+")
          matches[f[2]]=matches[f[2]]"S";
        else
          matches[f[2]]=matches[f[2]]"-";
-       if(om=="+")
-         matches[f[2]]=matches[f[2]]"O";
-       else
-         matches[f[2]]=matches[f[2]]"-";
+       if(match(valence,"(Intransitive)|(Impersonal)")==0)
+         if(om=="+")
+           matches[f[2]]=matches[f[2]]"O";
+         else
+           matches[f[2]]=matches[f[2]]"-";
      }
 
   # Outputting analyses ranked based on feature matches
