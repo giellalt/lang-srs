@@ -22,6 +22,9 @@ define OuterAffixes
 read lexc @srcdir@/affixes/verb_oblique_affixes.lexc
 define ObliqueAffixes
 
+read lexc @srcdir@/affixes/postverbal_affixes.lexc
+define PostverbalAffixes
+
 # Mark prefix type (insert corresponding flags to the
 # original prefixes we know to be present from the lexical entry.
 # ab=cd_ef.gh => ab@P.PREFIX.OUTER@=cd@P.PREFIX.MIDDLE@_ef@P.PREFIX.INNER@.gh
@@ -63,7 +66,10 @@ define RequireOuterAllomorphs "^O" "@P.PREFIX.INNER@" -> "@P.PREFIX.OUTER@" .o.
 # We temporarily keep the boundary symbol for inner affixes (".") in place
 # so that we can target morphophonology there more easily (especially when
 # aiming to drop the "weak" /i/ vowels that appear in inner lexical prefixes).
-read regex Stems .o. MarkPrefixes .o. InsInner .o. InsMiddle .o. InsOuter .o. 
+##read regex Stems .o. 
+read regex [Stems PostverbalAffixes] .o. 
+            MarkPrefixes .o. 
+            InsInner .o. InsMiddle .o. InsOuter .o. 
 #            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
             RequireOuterAllomorphs .o.
             "." -> "." InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
