@@ -5,8 +5,10 @@
 # Usage:
 # cat *.tsv (Lexical database in TSV format)
 # | changing CRLF's into LF's
-# | onespot-sapir2lexc.sh REPORT="yes"/"no"
-# "yes" outputs dubious lines as a report at the end of the LEXC file.
+# | onespot-sapir2lexc.sh REPORT="yes"/"no" ALL="yes"/"no"
+# REPORT="yes" outputs dubious lines as a report at the end of the LEXC file.
+# ALL="yes" outputs all entries, even those that have been marked as needing
+#  to be excluded from the FST for now (i.e., where "FST status" != "")
 
 # Example:
 # cat ~/Downloads/Tsuut'ina\ -\ Preliminary\ lexical\ database\ -\ Verbs.tsv |
@@ -14,18 +16,22 @@
 # tools/shellscripts/onespot-sapir2lexc.sh yes > verb_stems.lexc
 
 # Fields in the provisional Tsuut'ina lexical database based on the Onespot-Sapir glossary
-# 1 OS
-# 2 Citation form (3SG.SBJ)
+# 1 ID
+# 2 Form
 # 3 Senses
-# 4 FST Gloss template
-# 5 morphemic parsing
+# 4 FST gloss template
+# 5 Morphemic parsing
 # 6 Aspect
 # 7 Argument structure
 # 8 Inflectional paradigm
 # 9 FST lemma
 # 10 FST morphology
 # 11 Source
-# 12 Notes
+# 12 FST status
+# 13 Notes
+# 14 WordNet
+# 15 RapidWords items
+# 16 RapidWords labels
 
 # Argument structure classes and contlex prefixes
 # These need to be matched with the contlexes in the end of the current skeleton file
@@ -39,7 +45,7 @@
 # TRANS -> TR
 
 
-gawk -v REPORT=$1 'BEGIN { FS="\t"; report=REPORT; report_text="!! REPORT OF IRREGULARITIES:"; }
+gawk -v REPORT=$1 'BEGIN { FS="\t"; all_entries=ALL; report=REPORT; report_text="!! REPORT OF IRREGULARITIES:"; }
 NR==1 {
   for(i=1; i<=NF; i++)
     {
@@ -48,6 +54,7 @@ NR==1 {
       if(index($i,"FST morphology")!=0) fst_stem=i;
       if(index($i,"Inflectional paradigm")!=0) tama=i;
       if(index($i,"Argument structure")!=0) args=i;
+      if(index($i,"FST status")!= 0) status=i;
     }
   # Argument structure abbreviations for contlexes
   # Index corresponds to flag-diacritic value; value to contlex prefix
@@ -99,7 +106,7 @@ NR==1 {
 
 }
 NR>=2 {
-  if($fst_lemma!="" && $fst_stem!="" && $tama!="" && $args!="")
+  if($fst_lemma!="" && $fst_stem!="" && $tama!="" && $args!="" && ($all_entries=="yes" || $status==""))
     { 
       # Removing diacritics from mid-tones in lemmas and stems
       gsub("ā", "a", $fst_lemma);
@@ -236,11 +243,11 @@ for(arg in lemma_tama_stem)
               # @U.TAMA.sii@ -> si + i 
               # @U.TAMA.sis@ -> si + s
               # @U.TAMA.yi-a@ -> yi-a + 0
-              # @U.TAMA.yi-yi@ -> yi-yi + 0
+              # @U.TAMA.yi-y@ -> yi-y + 0
               # @U.TAMA.yi@ -> yi + 0
-              # @U.TAMA.yii-yi@ -> yi-yi + i
+              # @U.TAMA.yii-y@ -> yi-y + i
               # @U.TAMA.yis-a@ -> yi-a + s
-              # @U.TAMA.yis-yi@ -> yi-yi + s
+              # @U.TAMA.yis-y@ -> yi-y + s
               # @U.TAMA.yis@ -> yi + s
 
 
