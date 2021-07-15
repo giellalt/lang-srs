@@ -73,6 +73,12 @@ define lToneCleanup "^L" -> 0;
 regex [ lToneLowerRight .o. lToneLowerLeft .o. lToneCleanup ];
 define lToneLowering;
 
+# Enclitics cause open-syllable, mid-tone verb stems to become high tone.
+# Whenever an enclitic is present after a stem, the symbol "^Encl" is
+# produced, which allows us to adjust the tone accordingly.
+define encliticMidToHighTone a -> á, i -> í, o -> ó, u -> ú || _ "^Encl" .o.
+                             "^Encl" -> 0;
+
 
 #
 # Morphophonological adjustments to consonants.
@@ -160,8 +166,9 @@ define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à]+ s2;
 define reduce2PLAfterVowel a -> 0 || vowel _ s2;
 
 # Outside of TAMA-initial contexts, /i/ assimilates to the height and backness
-# of any immediately preceding /a/ or /u/, but retains its tone and mora.
+# of any immediately preceding /a/, /o/, or /u/, but retains its tone and mora.
 define iAssimilation í -> á, i -> a, ì -> à || [á|a|à] _ .o.
+                     í -> ó, i -> o, ì -> ò || [ó|o|ò] _ .o.
                      í -> ú, i -> u, ì -> ù || [ú|u|ù] _;
 
 # Short /i/ deletes before non-/i/ vowels.
@@ -198,6 +205,7 @@ define removeBoundaryMarkers "." -> 0;
 regex [ shortenDefaultPrefixes
 .o. hToneSpreading
 .o. lToneLowering
+.o. encliticMidToHighTone
 .o. uTAMAAssimilation
 .o. aTAMAAssimilation
 .o. cleanupMoraicI

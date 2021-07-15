@@ -1,0 +1,93 @@
+Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl
+
+! TODO: Implement other enclitics (e.g., -dà, -di, -ìdaa, etc.) and their
+! corresponding selectional restrictions in separate continuation lexica below.
+
+! TODO: Handle sequences of suffixes and enclitics (e.g., nominalization with
+! -í followed by -tii, delayed future -i followed by =ìgùł, etc.)
+
+
+LEXICON Root
+
+! Suffixation requires the use of a modified verb stem form whenever one has
+! been specified in the lexical database (e.g., átłík'adìsaàdál "we came
+! together, we met" [plain, non-nominalized stem -dál] -> átłík'adìsaàdátł'í
+! "our meeting" [nominalized stem -dátł', together with nominalizer/
+! relativizer -í]).
+@R.STEM.MODIFIED@                           Suffixation;
+@D.STEM@                                    Suffixation;
+
+! By contrast, encliticization requires the use of the plain stem form
+! whenever one is given in the lexical database.
+!
+! Encliticization is phonologically straightforward in Tsuut'ina: almost all
+! verb forms do not change when an enclitic is added to them (e.g., nàmò
+! "he/she/it goes to war" -> nàmò-ná "the ones that go to war"). The only
+! exception is with forms ending in a mid-tone vowel: in these cases, the
+! enclitic causes the final vowel to gain high tone (e.g., ìsni "he/she/it
+! says" -> ìsní-la "he/she/it says (it was)", nistsìtł'a "I am small" ->
+! nistsìtł'á-gù "when I was small").
+!
+! We handle the latter pattern by adding the symbol "^Encl" after the stem
+! (before we land in this lexicon), which can be rewritten in the phonology
+! to change a preceding mid-tone, stem-final vowel to high.
+@R.STEM.PLAIN@0:@R.STEM.PLAIN@^Encl         Encliticization;
+@D.STEM@0:@D.STEM@^Encl                     Encliticization;
+
+! There can always be a non-suffixed and non-encliticized form, too.
+@D.STEM.MODIFIED@                           #;
+
+
+LEXICON Suffixation
+                                            iNominalization;
+
+LEXICON Encliticization
+                                            naNominalization;
+                                            Enclitics;
+
+
+LEXICON iNominalization
+! Nominalization/relativization with -í "the one that" can apply to any
+! verb form in any aspect/superaspect and any person-number combination
+! (and is required in certain contexts, e.g., as the complement of a
+! postposition like ___ dósa "because (of) ___").
+@U.NOMINALIZATION.I@0:@U.NOMINALIZATION.I@í  #;
+
+
+LEXICON naNominalization
+! Nominalization/relativization with -ná "the ones that" applies only to
+! verb forms that contain at least one third-person referent.  (We have
+! to consider valence here, since our dummy 3SG subjects in experiencer
+! verbs shouldn't trigger this affix.  All the more reason to move away
+! from 3SG subjects in these forms to actual impersonals...)
+
+!@U.VALENCE.IMPERSONAL@
+@U.VALENCE.DO-EXPERIENCER@      naNominalizationExperiencer;
+@U.VALENCE.OO-EXPERIENCER@      naNominalizationExperiencer;
+
+@U.VALENCE.INTRANSITIVE@        naNominalizationNonExperiencer;
+@U.VALENCE.TRANSITIVE@          naNominalizationNonExperiencer;
+@U.VALENCE.TRANSITIONAL@        naNominalizationNonExperiencer;
+@U.VALENCE.OBLIQUEOBJECT@       naNominalizationNonExperiencer;
+@U.VALENCE.DITRANSITIVE@        naNominalizationNonExperiencer;
+
+LEXICON naNominalizationNonExperiencer
+@R.SUBJECTPERSON.3@             naNominalizationAffix;
+@D.SUBJECTPERSON.3@             naNominalizationExperiencer;
+
+LEXICON naNominalizationExperiencer
+@R.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   naNominalizationAffix;
+@R.OBJECTPERSON.3@@D.OBLIQUEPERSON.3@   naNominalizationAffix;
+@D.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   naNominalizationAffix;
+
+LEXICON naNominalizationAffix
+@U.NOMINALIZATION.NA@0:@U.NOMINALIZATION.NA@-ná          #;
+
+
+LEXICON Enclitics
+
+! Verbal enclitics that attach without major selectional restrictions.
++EN/gu:-gù                                  # "while; so that, in order that" ;
++EN/la:-la                                  # "it is, it was (narrative)" ;
++EN/gula:-gulà                              # "might, may" ;
+
