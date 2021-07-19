@@ -119,16 +119,19 @@ LEXICON Reciprocal-Oblique-Objects
 ! reciprocal marking here).
 LEXICON ObliqueSubjectAffixes
 
-@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.SG@si                      Only3SGSubject;
-@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.SG@ni                      Only3SGSubject;
-@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@mi                      Only3SGSubject;
-@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nihi                    Only3SGSubject;
-@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nahi                    Only3SGSubject;
-@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.PL@nihi                    Only3SGSubject;
-@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.PL@nahi                    Only3SGSubject;
-@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.PL@@P.GI.ON@gimi           Only3SGSubject;
-@U.OBLIQUEPERSON.4@@U.OBLIQUENUMBER.SG@gu                      Only3SGSubject;
-@U.OBLIQUEPERSON.AREAL@@U.OBLIQUENUMBER.SG@gu                  Only3SGSubject;
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.SG@si                       Only3SGSubject;
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.SG@ni                       Only3SGSubject;
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@@U.OBLIQUEOBJECT.GIVEN@  Only3SGSubject;
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@@U.OBLIQUEOBJECT.NONE@mi Only3SGSubject;
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nihi                     Only3SGSubject;
+@U.OBLIQUEPERSON.1@@U.OBLIQUENUMBER.PL@nahi                     Only3SGSubject;
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.PL@nihi                     Only3SGSubject;
+@U.OBLIQUEPERSON.2@@U.OBLIQUENUMBER.PL@nahi                     Only3SGSubject;
+! TODO: Discuss given objects with 3PL forms with Bruce before implementing
+! U.OBLIQUEOBJECT.NONE/GIVEN here.
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.PL@@P.GI.ON@gimi            Only3SGSubject;
+@U.OBLIQUEPERSON.4@@U.OBLIQUENUMBER.SG@gu                       Only3SGSubject;
+@U.OBLIQUEPERSON.AREAL@@U.OBLIQUENUMBER.SG@gu                   Only3SGSubject;
 
 
 ! Impersonal and experiencer verbs only have inner inflection for third-person
