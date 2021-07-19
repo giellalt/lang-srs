@@ -176,6 +176,7 @@ printf "^O ! outer prefix TAMA chunk\n";
 printf "^H ! spreading high tone\n";
 printf "^L ! spreading low tone\n";
 printf "i2 ! moraic, non-collapsing /i/\n";
+printf "n2 ! optional word-final /n/\n";
 printf "s2 ! special 2Pl /s/\n\n";
 
 print "LEXICON Root";
