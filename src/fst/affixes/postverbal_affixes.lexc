@@ -1,4 +1,4 @@
-Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl
+Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl @U.ENCLITIC.gu@ @U.ENCLITIC.la@ @U.ENCLITIC.gula@
 
 ! TODO: Implement other enclitics (e.g., -dà, -di, -ìdaa, etc.) and their
 ! corresponding selectional restrictions in separate continuation lexica below.
@@ -55,7 +55,7 @@ LEXICON iNominalization
 
 
 LEXICON naNominalization
-! Nominalization/relativization with -ná "the ones that" applies only to
+! Nominalization/relativization with =ná "the ones that" applies only to
 ! verb forms that contain at least one third-person referent.  (We have
 ! to consider valence here, since our dummy 3SG subjects in experiencer
 ! verbs shouldn't trigger this affix.  All the more reason to move away
@@ -87,7 +87,7 @@ LEXICON naNominalizationAffix
 LEXICON Enclitics
 
 ! Verbal enclitics that attach without major selectional restrictions.
-+EN/gu:-gù                                  # "while; so that, in order that" ;
-+EN/la:-la                                  # "it is, it was (narrative)" ;
-+EN/gula:-gulà                              # "might, may" ;
+@U.ENCLITIC.gu@:-gù                         # "while; so that, in order that" ;
+@U.ENCLITIC.la@:-la                         # "it is, it was (narrative)" ;
+@U.ENCLITIC.gula@:-gulà                     # "might, may" ;
 
