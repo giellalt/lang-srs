@@ -541,6 +541,8 @@ LEXICON Filter-DO-IO-Checks
 ! or reciprocal marking).
 LEXICON DirectSubjectAffixes
 
+! TODO: Discuss given objects in third-person forms with Bruce, then implement 
+! U.DIRECTOBJECT.GIVEN/NONE as necessary.
 @U.OBJECTPERSON.1@@U.OBJECTNUMBER.SG@si                 DirectSubjectConative;
 @U.OBJECTPERSON.2@@U.OBJECTNUMBER.SG@ni                 DirectSubjectConative;
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@mi                 DirectSubjectConative;

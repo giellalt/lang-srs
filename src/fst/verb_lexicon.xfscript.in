@@ -5,8 +5,6 @@
 # May want to use this if symbol pairs grow - needs foma
 # set lexc-align ON
 
-# read lexc verbstems.lexc
-# read lexc verb_lexicon.lexc
 read lexc @srcdir@/stems/verb_stems.lexc
 define Stems
 
@@ -66,7 +64,6 @@ define RequireOuterAllomorphs "^O" "@P.PREFIX.INNER@" -> "@P.PREFIX.OUTER@" .o.
 # We temporarily keep the boundary symbol for inner affixes (".") in place
 # so that we can target morphophonology there more easily (especially when
 # aiming to drop the "weak" /i/ vowels that appear in inner lexical prefixes).
-##read regex Stems .o. 
 read regex [Stems PostverbalAffixes] .o. 
             MarkPrefixes .o. 
             InsInner .o. InsMiddle .o. InsOuter .o. 

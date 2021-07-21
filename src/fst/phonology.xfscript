@@ -100,6 +100,17 @@ define slDissimilation s l -> s t ł;
 # define the corresponding phonological alternation here.
 define y2InitialStemAfterS [ s y2 -> s h  .o.  y2 -> y ];
 
+# Some stems ending in /n/ may appear with or without that consonant when it
+# occurs word-finally (e.g., sistí ~ sistín "I am sleeping") or before an
+# enclitic (e.g., sití-la ~ sitín-la "it was lying there (living being)").
+# That same /n/ # is always present when it is not in word-final position
+# (e.g., when a suffix is present, e.g,. sistíní dósa "because I am sleeping",
+# not *sistíí dósa).
+#
+# We represent the alternating word-final /n/ found in these stems as <n2> in
+# lexical entries, then handle the corresponding phonological alternation here.
+define n2FinalStems [ "n2" -> 0 || _ .#. ,, _ "-" ,, "n2" -> n ];
+
 # Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh "I don't know") (This
 # rule may need to change; some people prefer to spell these forms without the
 # second /s/)
@@ -221,6 +232,7 @@ regex [ shortenDefaultPrefixes
 .o. noThreeVowelSequences
 .o. slDissimilation
 .o. y2InitialStemAfterS 
+.o. n2FinalStems
 .o. zhDevoicing 
 .o. zDevoicing
 #.o. ghDevoicing
