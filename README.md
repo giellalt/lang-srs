@@ -3,13 +3,13 @@ The Tsuut'ina morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/issues)
 [![Build Status](https://github.com/giellalt/lang-srs/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-srs/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-srs)](https://raw.githubusercontent.com/giellalt/lang-srs/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/blob/main/LICENSE)
 
 This repository contains finite state source files for the Tsuut'ina language,
 for building morphological analysers, proofing tools
-and dictionaries. The data and implementation are licenced under __LICENCE__
+and dictionaries. The data and implementation are licenced under __LICENSE__
 licence, also detailed in the
-[LICENCE](https://github.com/giellalt/lang-srs/blob/develop/LICENCE). The
+[LICENSE](https://github.com/giellalt/lang-srs/blob/main/LICENSE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
