@@ -1,0 +1,28 @@
+# Script for creating normative analyzing and generating verb FSTs for srs
+# where all vowels have tone-marking and the English glosses are removed.
+
+read lexc incoming/pairs.lexc
+# load srs-generator-gt-norm.fomabin
+define Morphology
+
+regex [ "[" ?+ "]" -> 0 ] ;
+define RemoveGloss1
+
+regex [ 0 <- "[" ?+ "]" ];
+define RemoveGloss2
+
+source convert-plain-to-macron-vowels.xfscript
+define Ortho1
+
+push Ortho1
+invert net
+define Ortho2
+
+regex [ Ortho2 .o. RemoveGloss2 .o. Morphology .o. RemoveGloss1 .o. Ortho1 ] ;
+define Morphology2
+
+push Morphology2
+
+save stack srs-generator-gt-norm.hfst 
+invert net
+save stack srs-analyser-gt-norm.hfst
