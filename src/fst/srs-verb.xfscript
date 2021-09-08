@@ -26,3 +26,14 @@ push Morphology2
 save stack srs-generator-gt-norm.hfst 
 invert net
 save stack srs-analyser-gt-norm.hfst
+
+# hfst-regexp2fst -S ../orthography/spellrelax.regex -o spellrelax.hfst
+load spellrelax.hfst 
+invert net
+define SpellRelax
+
+# load srs-analyser-gt-norm.hfst
+# define Morphology2
+
+regex SpellRelax .o. Morphology2.i ;
+save stack srs-analyser-gt-desc.hfst 
