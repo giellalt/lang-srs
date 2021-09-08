@@ -1,13 +1,13 @@
 TAG	LINGUISTIC	PLAIN ENGLISH	TSUUT'INA
-+V	Verb		Action word	?
-+I	Intransitive	Someone does something      ?
-+Im	Impersonal	Something happens	    ?
-+T	Transitive	Someone acts on someone	    ?
-+D	Ditransitive	Someone gives someone something
++V	Verb	Action word	?
++I	Intransitive	Someone does something	?
++Im	Impersonal	Something happens	?
++T	Transitive	Someone acts on someone	?
++D	Ditransitive	Someone gives someone something	?
 +E	Experiential	?	?
-+O	?		?	?
++O	?	?	?
 +Ipfv	Imperfective	Unfinished / Non-past	?
-+Pfv	Perfective	Past		?
++Pfv	Perfective	Finished / Past	?
 +Prog	Progressive	On-going	?
 +Pot	Potential	?		?
 +Rep	Repetitive	Again and again	?
