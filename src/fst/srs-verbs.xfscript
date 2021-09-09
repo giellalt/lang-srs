@@ -2,7 +2,6 @@
 # where all vowels have tone-marking and the English glosses are removed.
 
 read lexc incoming/pairs.lexc
-# load srs-generator-gt-norm.fomabin
 define Morphology
 
 regex [ "[" ?+ "]" -> 0 ] ;
@@ -11,6 +10,7 @@ define RemoveGloss1
 regex [ 0 <- "[" ?+ "]" ];
 define RemoveGloss2
 
+# cp ../orthography/convert-plain-to-macron-vowels.xfscript .
 source convert-plain-to-macron-vowels.xfscript
 define Ortho1
 
@@ -27,8 +27,8 @@ save stack srs-generator-gt-norm.hfst
 invert net
 save stack srs-analyser-gt-norm.hfst
 
-# hfst-regexp2fst -S ../orthography/spellrelax.regex -o spellrelax.hfst
-load spellrelax.hfst 
+# hfst-regexp2fst -S ../orthography/spellrelax.regex -o srs-spellrelax.hfst
+load srs-spellrelax.hfst 
 invert net
 define SpellRelax
 
@@ -37,3 +37,7 @@ define SpellRelax
 
 regex SpellRelax .o. Morphology2.i ;
 save stack srs-analyser-gt-desc.hfst 
+
+# hfst-fst2fst -O -i srs-analyser-gt-norm.hfst -o srs-analyser-gt-norm.hfstol
+# hfst-fst2fst -O -i srs-analyser-gt-desc.hfst -o srs-analyser-gt-desc.hfstol
+# hfst-fst2fst -O -i srs-generator-gt-norm.hfst -o srs-generator-gt-norm.hfstol
