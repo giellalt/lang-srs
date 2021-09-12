@@ -13,7 +13,7 @@
     "head": "násʔín",
     "linguistInfo": { "stem": "=_ná^O.ʔín2 (0s-IPFV)" },
     "paradigm": "VT",
-    "senses": [{ "definition": "he/she is looking at him/her/it", "sources": ["OS"] }],
+    "senses": [{ "definition": "he/she/it is looking at him/her/it", "sources": ["OS"] }],
     "slug": "násʔín"
   },
 
@@ -22,7 +22,7 @@
     "head": "ōghàschút",
     "linguistInfo": { "stem": "oghà=_.chút (0s-IPFV)" },
     "paradigm": "VD",
-    "senses": [{ "definition": "he/she is feeding him/her/it", "sources": ["OS"] }],
+    "senses": [{ "definition": "he/she/it is feeding it to him/her/it", "sources": ["OS"] }],
     "slug": "ōghàschút"
   },
 
