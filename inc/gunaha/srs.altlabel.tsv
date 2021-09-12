@@ -1,49 +1,67 @@
-TAG	LINGUISTIC	PLAIN ENGLISH	TSUUT'INA
-+V	Verb	Action word	?
-+I	Intransitive	Someone does something	?
-+Im	Impersonal	Something happens	?
-+T	Transitive	Someone acts on someone	?
-+D	Ditransitive	Someone gives someone something	?
-+E	Experiential	?	?
-+O	?	?	?
-+Ipfv	Imperfective	Unfinished / Non-past	?
-+Pfv	Perfective	Finished / Past	?
-+Prog	Progressive	On-going	?
-+Pot	Potential	?	?
-+Rep	Repetitive	Again and again	?
-+SbjSg1	Subject: 1st person singular	I	síní
-+SbjSg2		you	níní
-+SbjSg3		he/she/it	idíní
-+SbjSg4		someone (unspecified or holy)	gúní
-+SbjPl1		we	niihíní
-+SbjPl2		you guys	nahíní
-+SbjPl3		they	igidíní
-+DObjSg1			
-+DObjSg2			
-+DObjSg3			
-+DObjSg4			
-+DObjPl1			
-+DObjPl2			
-+DObjPl3			
-+DObjAreal			
-+DObjRefl			
-+DObjRecip			
-+DObjGiven			
-+DObjEmphatic			
-+IObjSg1			
-+IObjSg2			
-+IObjSg3			
-+IObjSg4			
-+IObjPl1			
-+IObjPl2			
-+IObjPl3			
-+IObjAreal			
-+IObjRefl			
-+IObjRecip			
-+IObjGiven			
-+Distr			
-+Nomz			
-+NomzPl			
-+EN/gu			
-+EN/la			
-+EN/gula			
+TAG	LINGUISTIC	PLAIN ENGLISH	TSUUT'INA	
+V	Verb	Action word	?	
+I	Intransitive	Someone does something	?	
+Im	Impersonal	Something happens	?	
+T	Transitive	Someone acts on someone	?	
+D	Ditransitive	Someone gives someone something	?	
+E	Experiential Object	?	?	
+O	Oblique Object	?	?	
+Ipfv	Imperfective	Unfinished / Non-past	?	
+Pfv	Perfective	Finished / Past	?	
+Prog	Progressive	On-going	?	
+Pot	Potential	Possibly	?	
+Rep	Repetitive	Again and again	?	
+Ipfv+Rep	Imperfective Repetitive	Non-past + Again and again	?	
+Pfv+Rep	Perfective Repetitive	Past + Again and again	?	
+Sg1	Subject: 1st person singular	I	síní	
+Sg2	Subject: 2nd person singular	you (one)	níní	
+Sg3	Subject: 3rd person singular	he/she/it	idíní	
+Sg4	Subject: 4th person singular	someone (unspec./holy)	gúní	
+Pl1	Subject: 1st person plural	we	niihíní	
+Pl2	Subject: 2nd person plural	you (all)	nahíní	
+Pl3	Subject: 3rd person plural	they	igidíní	
+Pl4	Subject: 4th person plural	some people	?	
+Pl1+Distr	Subject: distributive 1st person plural	each and every one of us	niihíní	
+Pl2+Distr	Subject: distributive 2nd person plural	each and every one of you (all)	nahíní	
+Pl3+Distr	Subject: distributive 3rd person plural	each and every one of them	igidíní	
+Pl4+Distr	Subject: distributive 4th person plural	each and every one of some people	?	
+SbjSg1	Subject: 1st person singular	I	síní	
+SbjSg2	Subject: 2nd person singular	you (one)	níní	
+SbjSg3	Subject: 3rd person singular	he/she/it	idíní	
+SbjSg4	Subject: 4th person singular	someone (unspec./holy)	gúní	
+SbjPl1	Subject: 1st person plural	we	niihíní	
+SbjPl2	Subject: 2nd person plural	you (all)	nahíní	
+SbjPl3	Subject: 3rd person plural	they	igidíní	
+SbjPl4	Subject: 4th person plural	some people	?	
+DObjSg1	Direct Object: 1st person singular	→ me	→ síní	
+DObjSg2	Direct Object: 2nd person singular	→ you (one)	→ níní	
+DObjSg3	Direct Object: 3rd person singular	→ him/her/it	→ idíní	
+DObjSg4	Direct Object: 4th person singular	→ someone	→ gúní	
+DObjPl1	Direct Object: 1st person plural	→ us	→ niihíní	
+DObjPl2	Direct Object: 2nd person plural	→ you (all)	→ nahíní	
+DObjPl3	Direct Object: 3rd person plural	→ them	→ igidíní	
+DObjPl4	Direct Object: 4th person plural	→ some people	→ ?	
+DObjAreal	Direct Object: areal	→ ?	→ ?	
+DObjRefl	Direct Object: reflexive	→ oneself/ves	→ ?	
+DObjRecip	Direct Object: recipient	→ ?	→ ?	
+DObjGiven	Direct Object: explicitly given	→ ?	→ ?	
+DObjEmphatic	Direct Object: emphatic	→ ?	→ ?	
+IObjSg1	Direct Object: 1st person singular	⇉ to me	⇉ síní	
+IObjSg2	Direct Object: 2nd person singular	⇉ to you (one)	⇉ níní	
+IObjSg3	Direct Object: 3rd person singular	⇉ to him/her/it	⇉ idíní	
+IObjSg4	Direct Object: 4th person singular	⇉ to someone	⇉ gúní	
+IObjPl1	Direct Object: 1st person plural	⇉ to us	⇉ niihíní	
+IObjPl2	Direct Object: 2nd person plural	⇉ to you (all)	⇉ nahíní	
+IObjPl3	Direct Object: 3rd person plural	⇉ to them	⇉ igidíní	
+IObjPl4	Direct Object: 4th person plural	⇉ to some people	⇉ ?	
+IObjAreal	Direct Object: areal	⇉ to ?	⇉ ?	
+IObjRefl	Direct Object: reflexive	⇉ to oneself/ves	⇉ ?	
+IObjRecip	Direct Object: recipient	⇉ to ?	⇉ ?	
+IObjGiven	Direct Object: explicitly given	⇉ to ?	⇉ ?	
+IObjEmphatic	Direct Object: emphatic	⇉ to ?	⇉ ?	
+Distr	Distributive	each and every one	?	
+Nomz	Nominalized	?	?	
+NomzPl	Nominalized plural	?	?	
+EN/gu	Enclitic: gu	?	?	
+EN/la	Enclitic: la	?	?	
+EN/gula	Enclitic: gula	?	?	
