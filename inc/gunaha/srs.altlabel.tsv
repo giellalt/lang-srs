@@ -9,44 +9,41 @@ TAG	LINGUISTIC	PLAIN ENGLISH	TSUUT'INA
 +Ipfv	Imperfective	Unfinished / Non-past	?
 +Pfv	Perfective	Finished / Past	?
 +Prog	Progressive	On-going	?
-+Pot	Potential	?		?
++Pot	Potential	?	?
 +Rep	Repetitive	Again and again	?
-+SbjSg1	Subject: 1st person singular	I	?
-+SbjSg2
-+SbjSg3
-+SbjSg4
-+SbjPl1
-+SbjPl2
-+SbjPl3
-+SbjPl4
-+DObjSg1
-+DObjSg2
-+DObjSg3
-+DObjSg4
-+DObjPl1
-+DObjPl2
-+DObjPl3
-+DObjPl4
-+DObjAreal
-+DObjRefl
-+DObjRecip
-+DObjGiven
-+DObjEmphatic
-+IObjSg1
-+IObjSg2
-+IObjSg3
-+IObjSg4
-+IObjPl1
-+IObjPl2
-+IObjPl3
-+IObjPl4
-+IObjAreal
-+IObjRefl
-+IObjRecip
-+IObjGiven
-+Distr
-+Nomz
-+NomzPl
-+EN/gu
-+EN/la
-+EN/gula
++SbjSg1	Subject: 1st person singular	I	síní
++SbjSg2		you	níní
++SbjSg3		he/she/it	idíní
++SbjSg4		someone (unspecified or holy)	gúní
++SbjPl1		we	niihíní
++SbjPl2		you guys	nahíní
++SbjPl3		they	igidíní
++DObjSg1			
++DObjSg2			
++DObjSg3			
++DObjSg4			
++DObjPl1			
++DObjPl2			
++DObjPl3			
++DObjAreal			
++DObjRefl			
++DObjRecip			
++DObjGiven			
++DObjEmphatic			
++IObjSg1			
++IObjSg2			
++IObjSg3			
++IObjSg4			
++IObjPl1			
++IObjPl2			
++IObjPl3			
++IObjAreal			
++IObjRefl			
++IObjRecip			
++IObjGiven			
++Distr			
++Nomz			
++NomzPl			
++EN/gu			
++EN/la			
++EN/gula			
