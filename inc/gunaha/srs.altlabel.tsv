@@ -4,15 +4,15 @@ I	Intransitive	Intransitive	Someone does something	?
 Im	Impersonal	Impersonal	Something happens	?
 T	Transitive	Transitive	Someone acts on someone	?
 D	Ditransitive	Ditransitive	Someone gives someone something	?
-E	Experiential Object	Experiential object	?	?
+E	Experiencer	Experiencer	Someone experiences something	?
 O	Oblique Object	Oblique object	?	?
-Ipfv	Imperfective	Aspect: imperfective	Unfinished / Non-past	?
-Pfv	Perfective	Aspect: perfective 	Finished / Past	?
-Prog	Progressive	Progressive	On-going	?
-Pot	Potential	Aspect: potential	Possibly	?
-Rep	Repetitive	Superaspect: repetitive	Again and again	?
-Ipfv+Rep	Imperfective Repetitive	Aspect: imperfective repetitive	Non-past + Again and again	?
-Pfv+Rep	Perfective Repetitive	Aspect: perfective repetitive	Past + Again and again	?
+Ipfv	Imperfective	Aspect: imperfective	Unfinished / Non-past	Dú k'àgunììt'a (ák'óo ágùná)
+Pfv	Perfective	Aspect: perfective 	Finished / Past	K'àgunììt'a (dzánádà ágùjàg)
+Prog	Progressive	Progressive	On-going	Ágùdánáł
+Pot	Potential	Aspect: potential	Possibly	Ágùyiná-hí-gulà)
+Rep	Repetitive	Superaspect: repetitive	Again and again	Ánágùt'ìsh)
+Ipfv+Rep	Imperfective Repetitive	Aspect: imperfective repetitive	Non-past + Again and again	Dú k'àgunììt'a (ánágùt'ìsh)
+Pfv+Rep	Perfective Repetitive	Aspect: perfective repetitive	Past + Again and again	K'àgunììt'a (ánágùyít'ìsh)
 1Sg	1st person singular	Subject: 1st person singular	I	síní
 2Sg	2nd person singular	Subject: 2nd person singular	you (one)	níní
 3Sg	3rd person singular	Subject: 3rd person singular	he/she/it	idíní
@@ -20,11 +20,10 @@ Pfv+Rep	Perfective Repetitive	Aspect: perfective repetitive	Past + Again and aga
 1Pl	1st person plural	Subject: 1st person plural	we	niihíní
 2Pl	2nd person plural	Subject: 2nd person plural	you (all)	nahíní
 3Pl	3rd person plural	Subject: 3rd person plural	they	igidíní
-4Pl	4th person plural	Subject: 4th person plural	some people	?
-1Pl+Distr	Distributive 1st person plural	Subject: distributive 1st person plural	each and every one of us	niihíní
-2Pl+Distr	Distributive 2nd person plural	Subject: distributive 2nd person plural	each and every one of you (all)	nahíní
-3Pl+Distr	Distributive 3rd person plural	Subject: distributive 3rd person plural	each and every one of them	igidíní
-4Sg+Distr	Distributive 4th person singular	Subject: distributive 4th person plural	each and every one of some people	?
+1Pl+Distr	Distributive 1st person plural	Subject: distributive 1st person plural	each and every one of us	niihíní (tłaát'áa)
+2Pl+Distr	Distributive 2nd person plural	Subject: distributive 2nd person plural	each and every one of you (all)	nahíní (tłaát'áa)
+3Pl+Distr	Distributive 3rd person plural	Subject: distributive 3rd person plural	each and every one of them	igidíní (tłaát'áa)
+4Sg+Distr	Distributive 4th person singular	Subject: distributive 4th person plural	each and every one of some people	gúní (tłaát'áa)
 SbjSg1	S: 1st person singular	Subject: 1st person singular	I	síní
 SbjSg2	S: 2nd person singular	Subject: 2nd person singular	you (one)	níní
 SbjSg3	S: 3rd person singular	Subject: 3rd person singular	he/she/it	idíní
@@ -32,7 +31,6 @@ SbjSg4	S: 4th person singular	Subject: 4th person singular	someone (unspec./holy
 SbjPl1	S: 1st person plural	Subject: 1st person plural	we	niihíní
 SbjPl2	S: 2nd person plural	Subject: 2nd person plural	you (all)	nahíní
 SbjPl3	S: 3rd person plural	Subject: 3rd person plural	they	igidíní
-SbjPl4	S: 4th person plural	Subject: 4th person plural	some people	?
 DObjSg1	DO: 1st person singular	Direct Object: 1st person singular	→ me	→ síní
 DObjSg2	DO: 2nd person singular	Direct Object: 2nd person singular	→ you (one)	→ níní
 DObjSg3	DO: 3rd person singular	Direct Object: 3rd person singular	→ him/her/it	→ idíní
@@ -40,10 +38,9 @@ DObjSg4	DO: 4th person singular	Direct Object: 4th person singular	→ someone	�
 DObjPl1	DO: 1st person plural	Direct Object: 1st person plural	→ us	→ niihíní
 DObjPl2	DO: 2nd person plural	Direct Object: 2nd person plural	→ you (all)	→ nahíní
 DObjPl3	DO: 3rd person plural	Direct Object: 3rd person plural	→ them	→ igidíní
-DObjPl4	DO: 4th person plural	Direct Object: 4th person plural	→ some people	→ ?
 DObjAreal	DO: areal	Direct Object: areal	→ ?	→ ?
 DObjRefl	DO: reflexive	Direct Object: reflexive	→ oneself/ves	→ ?
-DObjRecip	DO: recipient	Direct Object: recipient	→ ?	→ ?
+DObjRecip	DO: reciprocal	Direct Object: reciprocal	→ each other	→ ?
 DObjGiven	DO: explicitly given	Direct Object: explicitly given	→ ?	→ ?
 DObjEmphatic	DO: emphatic	Direct Object: emphatic	→ ?	→ ?
 IObjSg1	IO: 1st person singular	Indirect Object: 1st person singular	⇉ to me	⇉ síní
@@ -53,10 +50,9 @@ IObjSg4	IO: 4th person singular	Indirect Object: 4th person singular	⇉ to some
 IObjPl1	IO: 1st person plural	Indirect Object: 1st person plural	⇉ to us	⇉ niihíní
 IObjPl2	IO: 2nd person plural	Indirect Object: 2nd person plural	⇉ to you (all)	⇉ nahíní
 IObjPl3	IO: 3rd person plural	Indirect Object: 3rd person plural	⇉ to them	⇉ igidíní
-IObjPl4	IO: 4th person plural	Indirect Object: 4th person plural	⇉ to some people	⇉ ?
 IObjAreal	IO: areal	Indirect Object: areal	⇉ to ?	⇉ ?
 IObjRefl	IO: reflexive	Indirect Object: reflexive	⇉ to oneself/ves	⇉ ?
-IObjRecip	IO: recipient	Indirect Object: recipient	⇉ to ?	⇉ ?
+IObjRecip	IO: reciprocal	Indirect Object: reciprocal	⇉ to each other	⇉ ?
 IObjGiven	IO: explicitly given	Indirect Object: explicitly given	⇉ to ?	⇉ ?
 IObjEmphatic	IO: emphatic	Indirect Object: emphatic	⇉ to ?	⇉ ?
 Distr	Distributive	Distributive	each and every one	?
