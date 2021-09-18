@@ -30,13 +30,12 @@ clear stack
 
 # hfst-regexp2fst -S ../orthography/spellrelax.regex -o srs-spellrelax.hfst
 load srs-spellrelax.hfst 
-invert net
 define SpellRelax
 
 # load srs-analyser-gt-norm.hfst
 # define Morphology2
 
-regex SpellRelax .o. Morphology2.i ;
+regex SpellRelax.i .o. Morphology2.i ;
 save stack srs-analyser-gt-desc.hfst 
 
 # hfst-fst2fst -O -i srs-analyser-gt-norm.hfst -o srs-analyser-gt-norm.hfstol
