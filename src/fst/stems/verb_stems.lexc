@@ -54,6 +54,7 @@ ObliqueObject ;
 ObliqueObjectExperiencer ;
 Transitive ;
 Transitive-Conative ;
+Transitive-DObj3SgOnly ;
 Transitive-SubjSuppr ;
 
 
@@ -190,9 +191,6 @@ didlish[be_striped]:di.dlish	INTR-0-IPFV ; ! Imperfective ! OS: os04777
 ! didlísh - be spotted
 didlísh[be_spotted]:di.dlísh	INTR-0-IPFV ; ! Imperfective ! OS: os05351, os05352
 
-! didló - bodies lie
-didló[bodies_lie]:di.dló	INTR-0s-IPFV ; ! Imperfective ! OS: os00537
-
 ! diduł - be cylindrical
 diduł[be_cylindrical]:di.duł	INTR-0-IPFV ; ! Imperfective ! OS: os00996
 
@@ -274,9 +272,17 @@ digóy[be_white]:di.góy	INTR-ni-IPFV ; ! Imperfective ! OS: os01029, os01030, o
 diik'ol[be_white]:di.k'ol	INTR-nii-IPFV ; ! Imperfective ! OS: os02594
 
 ! diitł'á - run
-diitł'á[run]:ná=di.tł'ásh	INTR-0i-IPFV-REP ; ! Imperfective + Repetitive ! OS: os04948, os04949
-diitł'á[run]:di.tł'o	INTR-sii-PFV ; ! Perfective ! OS: os05408, os05409
-diitł'á[run]:di.tł'á	INTR-yii-POT ; ! Potential ! OS: os08068
+diitł'á[run]:di.tł'á	INTR-0i-IPFV-PlainStem ; ! Imperfective ! OS: os01939, os01940, os01941, os01942, os01943, os01944, os01945, os01946, os01947, os01948, os06505
+diitł'á[run]:di.tł'áh	INTR-0i-IPFV-ModifiedStem ; ! Imperfective ! OS: os01939, os01940, os01941, os01942, os01943, os01944, os01945, os01946, os01947, os01948, os06505
+diitł'á[run]:ná=di.tł'ásh	INTR-0i-IPFV-REP ; ! Imperfective + Repetitive ! OS: os01959, os04948, os04949
+diitł'á[run]:di.tł'o	INTR-sii-PFV-PlainStem ; ! Perfective ! OS: os01949, os05408, os05409
+diitł'á[run]:di.tł'oʔ	INTR-sii-PFV-ModifiedStem ; ! Perfective ! OS: os01949, os05408, os05409
+diitł'á[run]:ná=di.tł'ásh	INTR-yii-y-PFV-REP ; ! Perfective + Repetitive ! OS: os01960
+diitł'á[run]:di.tł'ò	INTR-yii-POT-PlainStem ; ! Potential ! OS: os01957, os01958
+diitł'á[run]:di.tł'òʔ	INTR-yii-POT-ModifiedStem ; ! Potential ! OS: os01957, os01958
+diitł'á[run]:di.tł'o	INTR-yii-PROG-PlainStem ; ! Progressive ! OS: os01952
+diitł'á[run]:di.tł'oʔ	INTR-yii-PROG-ModifiedStem ; ! Progressive ! OS: os01952
+diitł'á[run]:tł'áł	INTR-yii-PROG ; ! Progressive ! OS: os01927, os01928, os01929, os01930, os01932, os01933, os01934, os01935, os01936, os01937, os01950, os01951, os07111
 
 ! dijì - breathe
 dijì[breathe]:di.jì	INTR-0-IPFV ; ! Imperfective ! OS: os03466, os03467
@@ -481,14 +487,6 @@ ditàl[be_spread_out]:di.tàl	INTR-0-IPFV ; ! Imperfective ! OS: os00965b
 ! ditł'id - be weak
 ditł'id[be_weak]:di.tł'id	INTR-ni-IPFV ; ! Imperfective ! OS: os01021, os01022, os01023
 
-! ditł'á - run
-ditł'á[run]:di.tł'á	INTR-0-IPFV ; ! Imperfective ! OS: os01939, os01940, os01941, os01942, os01943, os01944, os01945, os01946, os01947, os01948, os06505
-ditł'á[run]:ná=di.tł'ásh	INTR-0-IPFV-REP ; ! Imperfective + Repetitive ! OS: os01959, os01960
-ditł'á[run]:di.tł'ò	INTR-si-PFV ; ! Perfective ! OS: os01949
-ditł'á[run]:di.tł'ò	INTR-yi-POT ; ! Potential ! OS: os01957, os01958
-ditł'á[run]:di.tł'ò	INTR-yi-PROG ; ! Progressive ! OS: os01952
-ditł'á[run]:tł'áł	INTR-yi-PROG ; ! Progressive ! OS: os01927, os01928, os01929, os01930, os01932, os01933, os01934, os01935, os01936, os01937, os01950, os01951
-
 ! ditłiis - be soft
 ditłiis[be_soft]:di.tłiis	INTR-0-IPFV ; ! Imperfective ! OS: os04232
 
@@ -512,9 +510,6 @@ ditłót[run_quickly]:di.tłót	INTR-si-PFV ; ! Perfective ! OS: os09503
 
 ! diwush - bellow
 diwush[bellow]:di.wush	INTR-0-IPFV ; ! Imperfective ! OS: os06696
-
-! diyiló - many lie sequence
-diyiló[many_lie_sequence]:di.lò	INTR-yi-y-PFV ; ! Perfective ! OS: os00615
 
 ! diyá - one go
 diyá[one_go]:d.iyá	INTR-0-IPFV ; ! Imperfective ! OS: os04739, os04740, os04741
@@ -594,12 +589,10 @@ dzádiził[get_breathless]:dzá=di.ził	INTR-yi-POT ; ! Potential ! OS: os03643,
 ! dàjú - seem wrong
 dàjú[seem_wrong]:dà.jú	INTR-0-IPFV ; ! Imperfective ! OS: os07104
 
-!  - 
-dádlu:dá=dlu	INTR-yi-PROG ; ! Progressive ! OS: os11727, os11728
-
 ! dádlù - laugh
 dádlù[laugh]:dá=dlù	INTR-0-IPFV ; ! Imperfective ! OS: os04366
 dádlù[laugh]:di.dlù	INTR-yis-a-PFV ; ! Perfective ! OS: os06802, os06803, os06804, os06805, os06806, os06807, os06808
+dádlù[laugh]:dá=dlu	INTR-yi-PROG ; ! Progressive ! OS: os11727, os11728
 
 ! dámàdiyá - walk from camp
 dámàdiyá[walk_from_camp]:dámà=dì.yá	INTR-si-PFV ; ! Perfective ! OS: os08494
@@ -799,9 +792,6 @@ dúdzadìnì[be_insane]:dúdza=dì.nì	INTR-ni-IPFV ; ! Imperfective ! OS: os049
 ! dúʔidìts'i - be deaf
 dúʔidìts'i[be_deaf]:dúʔi=dì.ts'i	INTR-0-IPFV ; ! Imperfective ! OS: os04340
 
-! gisdló - bodies lie
-! CHECK LEMMA/STEM! gisdló[bodies_lie]:slo ? ?	INTR-yis-y-PFV ; ! Perfective ! OS: os00617
-
 ! gudich'úl - area is bumpy
 gudich'úl[area_is_bumpy]:gu_di.ch'úl	INTR-0-IPFV ; ! Imperfective ! OS: os09838
 
@@ -813,6 +803,9 @@ gudik'aaz[be_red]:gu_di.k'aaz	INTR-0-IPFV ; ! Imperfective ! OS: os06270, os0627
 
 ! gudinát - start speak
 gudinát[start_speak]:gu_di.nát	INTR-0-IPFV ; ! Imperfective ! OS: os04219
+
+! gudinát - start talking
+gudinát[start_talking]:gu_dì.nát	INTR-0-IPFV ; ! Imperfective ! OS: os01894
 
 ! gudisyál - start getting dark
 gudisyál[start_getting_dark]:gu_di.yál	INTR-0s-IPFV ; ! Imperfective ! OS: os06044
@@ -835,8 +828,10 @@ guná[speak]:gu_ná	INTR-0-IPFV ; ! Imperfective ! OS: os04218, os04246, os10898
 guná[speak]:gu_níízh	INTR-yi-y-PFV ; ! Perfective ! OS: os04220
 
 ! guná - talk
-guná[talk]:gu_ná	INTR-0-IPFV ; ! Imperfective ! OS: os01887, os01888, os01889, os01890, os01891, os01892, os01893
-guná[talk]:gu_niizh	INTR-yi-y-PFV ; ! Perfective ! OS: os01895
+guná[talk]:gu_ná	INTR-0-IPFV-PlainStem ; ! Imperfective ! OS: os01887, os01888, os01889, os01890, os01891, os01892, os01893
+guná[talk]:gu_náh	INTR-0-IPFV-ModifiedStem ; ! Imperfective ! OS: os01887, os01888, os01889, os01890, os01891, os01892, os01893
+guná[talk]:gu_niizh	INTR-yi-a-PFV-PlainStem ; ! Perfective ! OS: os01895
+guná[talk]:gu_nij	INTR-yi-a-PFV-ModifiedStem ; ! Perfective ! OS: os01895
 
 ! guníízh - tell stories
 guníízh[tell_stories]:gu_níízh	INTR-ii-IPFV ; ! Imperfective ! OS: os05104, os05105, os05106, os05107, os05108, os05109, os05110, os05111
@@ -1094,9 +1089,6 @@ iliiz[urinate]:lidz	INTR-si-PFV ; ! Perfective ! OS: os01338, os01339, os01340
 ! ilúsh - hang loose
 ilúsh[hang_loose]:lúsh	INTR-0-IPFV ; ! Imperfective ! OS: os03787
 
-! inasʔín - look at something
-inasʔín[look_at_something]:i=na.ʔín	INTR-0s-IPFV ; ! Imperfective ! OS: os07463
-
 ! inilósh - have dirty face
 inilósh[have_dirty_face]:ini.lósh	INTR-ni-IPFV ; ! Imperfective ! OS: os05796, os05797, os05798
 
@@ -1112,6 +1104,9 @@ iná[move_camp]:náł	INTR-yi-PROG ; ! Progressive ! OS: os07912, os07913, os079
 
 ! inásʔín - look activity
 inásʔín[look_activity]:i_ná^O.ʔín2	INTR-0s-IPFV ; ! Imperfective ! OS: os00495, os00496, os00497, os00498, os00499, os00500, os00501
+
+! inásʔín - look at something
+inásʔín[look_at_something]:i_ná^O.ʔín2	INTR-0s-IPFV ; ! Imperfective ! OS: os07463
 
 ! isdójàg - be tired
 isdójàg[be_tired]:isdó=jàg	INTR-0-IPFV ; ! Imperfective ! OS: os06489, os06490, os06494, os06495, os06496
@@ -1129,9 +1124,6 @@ isk'ò[open_legs]:i.k'òy	INTR-sis-PFV ; ! Perfective ! OS: os10710, os10711, os
 
 ! isnò - eat O
 isnò[eat_O]:nò	INTR-0s-IPFV ; ! Imperfective ! OS: os08109
-
-! istsád - eat O
-istsád[eat_O]:tsád	INTR-yis-a-PFV ; ! Perfective ! OS: os08110, os08111, os08112
 
 ! istsùùz - fart sloppy
 istsùùz[fart_sloppy]:tsùùz	INTR-sis-PFV ; ! Perfective ! OS: os06850
@@ -1173,10 +1165,6 @@ itsiy[cry]:tsày	INTR-yi-y-PFV ; ! Perfective ! OS: os00407, os00408, os00409, o
 ! itsàd - eat
 itsàd[eat]:tsàd	INTR-yis-y-PFV ; ! Perfective ! OS: os07906
 
-! itsàd - eat something
-itsàd[eat_something]:tsàd	INTR-0-IPFV ; ! Imperfective ! OS: os07457
-itsàd[eat_something]:tsàd	INTR-yi-a-PFV ; ! Perfective ! OS: os07453, os07455
-
 ! itł'ùw - get moldy
 itł'ùw[get_moldy]:tł'ùw	INTR-i-IPFV ; ! Imperfective ! OS: os03054
 itł'ùw[get_moldy]:tł'ùw	INTR-yi-y-PFV ; ! Perfective ! OS: os03052, os03053, os03055, os03056
@@ -1200,9 +1188,6 @@ iyidiʔás[open_eyes]:i=yidi.ʔás	INTR-yi-POT ; ! Potential ! OS: os06529
 ! iyisní - be pushing with hands
 ! CHECK LEMMA/STEM! iyisní[be_pushing_with_hands]:i=ní CHECK	INTR-0s-IPFV ; ! Imperfective ! OS: os03359
 iyisní[be_pushing_with_hands]:tázá=tín	INTR-0s-IPFV ; ! Imperfective ! OS: os03358
-
-!  - 
-iyistsàd:i=tsàd	INTR-yi-a-PFV ; ! Perfective ! OS: os07452
 
 ! iyálin - be shy
 iyálin[be_shy]:iyá=lin	INTR-0-IPFV ; ! Imperfective ! OS: os02258
@@ -1238,10 +1223,6 @@ k'adìnít[stop_making_noise]:k'a=dì.nít	INTR-nis-IPFV ; ! Imperfective ! OS: 
 ! k'adó - stop sitting
 k'adó[stop_sitting]:k'a=dó	INTR-0-IPFV ; ! Imperfective ! OS: os06953
 
-! k'agudidinà - finish speaking
-k'agudidinà[finish_speaking]:k'a=gu_didi.níízh	INTR-ni-IPFV ; ! Imperfective ! OS: os01896
-k'agudidinà[finish_speaking]:k'a=gu_didi.nàł	INTR-yi-PROG ; ! Progressive ! OS: os01904
-
 ! k'agùdidánał - be ending
 k'agùdidánał[be_ending]:k'a=gù_didá.nał	INTR-0-IPFV ; ! Imperfective ! OS: os04687
 
@@ -1265,7 +1246,7 @@ k'anágút'ìn[finish_work]:k'aná=gú_t'ìn	INTR-yi-y-PFV ; ! Perfective ! OS: 
 k'anìshò[stop_growing]:k'a=nì.shón	INTR-isi-PFV ; ! Perfective ! OS: os01410
 
 ! k'atsiy - stop crying
-k'atsiy[stop_crying]:k'a=tsày	INTR-ni-IPFV ; ! Imperfective ! OS: os00432, os00433, os00434, os00435, os00436, os00437, os00439, os00440
+k'atsiy[stop_crying]:k'a=tsày	INTR-ni-IPFV ; ! Imperfective ! OS: os00433, os00434, os00435, os00436, os00437, os00439, os00440
 k'atsiy[stop_crying]:k'à=tsày	INTR-ni-PFV ; ! Perfective ! OS: os07495, os07496
 
 ! k'atsád - finish eating
@@ -1334,11 +1315,13 @@ kàdìyá[one_walk_into_view]:kà=dì.yá	INTR-si-PFV ; ! Perfective ! OS: os066
 kàdít'à[be_in_pain]:kà=diH.t'à	INTR-ni-IPFV ; ! Imperfective ! OS: os09267, os09268, os09269, os09270, os09272
 kàdít'à[be_in_pain]:kà=diH.t'à	INTR-yi-y-PFV ; ! Perfective ! OS: os09271, os09273
 
-! káditł'i - walk into view
-káditł'i[walk_into_view]:ká=di.tł'o	INTR-si-PFV ; ! Perfective ! OS: os09190
+! kádiitł'á - walk into view
+kádiitł'á[walk_into_view]:ká=dì.tł'o	INTR-sii-PFV-PlainStem ; ! Perfective ! OS: os09190
+kádiitł'á[walk_into_view]:ká=dì.tł'oʔ	INTR-sii-PFV-ModifiedStem ; ! Perfective ! OS: os09190
 
 ! kádiyá - walk into view
-kádiyá[walk_into_view]:ká=di.yá	INTR-0-IPFV ; ! Imperfective ! OS: os09188, os09189
+kádiyá[walk_into_view]:kà=dì.yá	INTR-0-IPFV-PlainStem ; ! Imperfective ! OS: os09188
+kádiyá[walk_into_view]:kà=dì.yáh	INTR-0-IPFV-ModifiedStem ; ! Imperfective ! OS: os09188
 
 ! kádiyìsdúúz - crawl up
 kádiyìsdúúz[crawl_up]:ká=diyì.dúúz	INTR-0s-IPFV ; ! Imperfective ! OS: os05452
@@ -1358,6 +1341,10 @@ káyá[go_up]:ká=yá	INTR-yi-POT ; ! Potential ! OS: os07299
 
 ! káyìyists'i - wind blow up
 káyìyists'i[wind_blow_up]:ká=yì.ts'i	INTR-0s-IPFV ; ! Imperfective ! OS: os05454
+
+! káyìyá - walk up
+káyìyá[walk_up]:ká=yì.yá	INTR-0-IPFV-PlainStem ; ! Imperfective ! OS: os09189
+káyìyá[walk_up]:ká=yì.yáh	INTR-0-IPFV-ModifiedStem ; ! Imperfective ! OS: os09189
 
 ! kázìts'íy - noise stops
 kázìts'íy[noise_stops]:ká=zì.ts'ón	INTR-nii-PFV ; ! Perfective ! OS: os09157
@@ -1452,9 +1439,9 @@ mìtádùsh[trot]:mìtá=dùsh	INTR-0-IPFV ; ! Imperfective ! OS: os04760
 ! mígúdìnìsh - love gambling
 mígúdìnìsh[love_gambling]:mí=gú_dì.nìsh	INTR-0-IPFV ; ! Imperfective ! OS: os04785
 
-! nadanitsa - lie down rest
-nadanitsa[lie_down_rest]:nada=ni.tsa	INTR-0-IPFV ; ! Imperfective ! OS: os00594
-nadanitsa[lie_down_rest]:nada=ni.tsiy	INTR-0-IPFV ; ! Imperfective ! OS: os00593
+! nadanitsá - lie down rest
+nadanitsá[lie_down_rest]:nadá=ni.tsá	INTR-ni-IPFV ; ! Imperfective ! OS: os00594
+nadanitsá[lie_down_rest]:nadá=ni.tsiy	INTR-ni-PFV ; ! Perfective ! OS: os00597, os00598, os00599, os00600, os00601
 
 ! nadisosh - walk aimlessly
 nadisosh[walk_aimlessly]:na=di.sosh	INTR-0-IPFV ; ! Imperfective ! OS: os06286
@@ -1575,7 +1562,7 @@ nità[lie_down]:ni.tà	INTR-0-IPFV ; ! Imperfective ! OS: os08857, os08858, os08
 ! nità - one go sleep
 nità[one_go_sleep]:ni.tà	INTR-0-IPFV ; ! Imperfective ! OS: os00571, os00572, os00573, os00574, os00575, os00576, os00577
 nità[one_go_sleep]:ná=ni.tash	INTR-0-IPFV ; ! Imperfective ! OS: os00587, os00588, os00589, os00590, os00591, os00592
-nità[one_go_sleep]:ni.tín	INTR-si-PFV ; ! Perfective ! OS: os00580, os00581
+nità[one_go_sleep]:ni.tín	INTR-si-PFV ; ! Perfective ! OS: os00578, os00579, os00580, os00581
 nità[one_go_sleep]:ná=ni.tash	INTR-si-PFV ; ! Perfective ! OS: os00586
 nità[one_go_sleep]:ná=nì.tín	INTR-si-PFV ; ! Perfective ! OS: os04237, os04238, os04239, os04240
 
@@ -1675,8 +1662,8 @@ nàdìʔó[tree_stand]:nà=dì.ʔó	INTR-yi-y-PFV ; ! Perfective ! OS: os08542
 ! nàdík'òs - stretch
 nàdík'òs[stretch]:nà=dí.k'òs	INTR-0-IPFV ; ! Imperfective ! OS: os04792, os04793, os04794, os04795
 
-!  - 
-nàdús:nà.dúúz	INTR-ni-PFV ; ! Perfective ! OS: os02610
+! nàdús - arrive crawling
+nàdús[arrive_crawling]:nà.dúúz	INTR-ni-PFV ; ! Perfective ! OS: os02610
 
 ! nàghál - RO roll off
 nàghál[RO_roll_off]:nà=ghál	INTR-yis-y-PFV ; ! Perfective ! OS: os06402, os06403
@@ -1770,6 +1757,8 @@ nàts'íd[RO_fall]:nà=ts'íd	INTR-yis-y-PFV ; ! Perfective ! OS: os06401
 
 ! nàts'íd - fall
 nàts'íd[fall]:nà=ts'íd	INTR-0-IPFV ; ! Imperfective ! OS: os06408, os06409
+nàts'íd[fall]:nà=ts'id	INTR-yii-y-PFV ; ! Perfective ! OS: os01917, os01918, os01922, os01923
+nàts'íd[fall]:nà=ts'íd	INTR-yii-POT ; ! Potential ! OS: os01924, os01925
 
 ! nàtsaghádìt'ás - howl
 nàtsaghádìt'ás[howl]:nàtsaghá=dì.t'ás	INTR-0-IPFV ; ! Imperfective ! OS: os10321, os10322
@@ -1833,20 +1822,15 @@ nàzíts'íy[be_heard]:nà=zí.ts'íy	INTR-0-IPFV ; ! Imperfective ! OS: os04358
 ! nààtsá - make Sundance
 nààtsá[make_Sundance]:nà=tsá	INTR-yis-y-PFV ; ! Perfective ! OS: os09729
 
+! nààtł'á - run to point
+nààtł'á[run_to_point]:nà=tł'o	INTR-sii-PFV-PlainStem ; ! Perfective ! OS: os01954, os01955
+nààtł'á[run_to_point]:nà=tł'oʔ	INTR-sii-PFV-ModifiedStem ; ! Perfective ! OS: os01954, os01955
+
 ! nàìtsíd - become strong
 nàìtsíd[become_strong]:nà.tsid	INTR-si-PFV ; ! Perfective ! OS: os01014
 
-! nádanitsiy - lie down again
-nádanitsiy[lie_down_again]:náda=ni.tsiy	INTR-0-IPFV ; ! Imperfective ! OS: os00597, os00598, os00599, os00600, os00601
-
-! nádich'iizh - fall off
-nádich'iizh[fall_off]:náná=di.ch'iizh	INTR-0-IPFV ; ! Imperfective ! OS: os01920, os01921
-
 ! nádidikush - start vomiting
 nádidikush[start_vomiting]:ná=didi.kush	INTR-0-IPFV ; ! Imperfective ! OS: os10231
-
-! nádidits'it - fall off
-nádidits'it[fall_off]:ná=didi.ts'it	INTR-si-PFV ; ! Perfective ! OS: os01916
 
 ! nádidàł - many go home
 nádidàł[many_go_home]:ná=di.dàł	INTR-0-IPFV ; ! Imperfective ! OS: os09409
@@ -1862,6 +1846,10 @@ nádidús[crawl_down]:ná=di.dús	INTR-yi-y-PFV ; ! Perfective ! OS: os02615
 ! nádidús - crawl home
 nádidús[crawl_home]:ná=di.dús	INTR-0-IPFV ; ! Imperfective ! OS: os02613
 
+! nádiitł'o - start home
+nádiitł'o[start_home]:ná=di.tł'o	INTR-sii-PFV-PlainStem ; ! Perfective ! OS: os01962
+nádiitł'o[start_home]:ná=di.tł'oʔ	INTR-sii-PFV-ModifiedStem ; ! Perfective ! OS: os01962
+
 ! nádikús - cough again
 nádikús[cough_again]:ná=di.kúst	INTR-si-PFV ; ! Perfective ! OS: os01320
 
@@ -1871,9 +1859,6 @@ nádiló[go_hunting]:ná=di.lół	INTR-si-PFV ; ! Perfective ! OS: os08028
 ! nádimosh - go to war repetitively
 nádimosh[go_to_war_repetitively]:ná=di.mosh	INTR-0-IPFV ; ! Imperfective ! OS: os01193
 nádimosh[go_to_war_repetitively]:ná=di.mosh	INTR-yi-y-PFV ; ! Perfective ! OS: os01194
-
-!  - 
-nádisnijá:ná=di.niizh	INTR-sis-PFV ; ! Perfective ! OS: os03404
 
 ! nádistish - bark
 nádistish[bark]:ná=di.tish	INTR-0s-IPFV ; ! Imperfective ! OS: os11592, os11593, os11594, os11595, os11596
@@ -1885,9 +1870,6 @@ nádit'ó[one_fly_home]:ná=t'òł	INTR-yi-PROG ; ! Progressive ! OS: os12084, o
 ! nádit'ó - one walk home
 nádit'ó[one_walk_home]:ná=di.t'ó	INTR-0-IPFV ; ! Imperfective ! OS: os12073
 nádit'ó[one_walk_home]:ná=di.t'òy	INTR-si-PFV ; ! Perfective ! OS: os12074
-
-! náditł'o - start home
-náditł'o[start_home]:ná=di.tł'o	INTR-si-PFV ; ! Perfective ! OS: os01962
 
 ! nádiwùsh - start whistling again
 nádiwùsh[start_whistling_again]:nááH=di.wùsht	INTR-si-PFV ; ! Perfective ! OS: os00913
@@ -1942,12 +1924,6 @@ nádìł[drink_things]]:ná=dìł	INTR-i-IPFV ; ! Imperfective ! OS: os09125
 
 ! nágidàł - many get up
 nágidàł[many_get_up]:ná.dàł	INTR-yi-y-PFV ; ! Perfective ! OS: os05381, os05382, os05383
-
-! nágudininà - speak to no purpose
-nágudininà[speak_to_no_purpose]:ná=gu_dini.nàł	INTR-yi-PROG ; ! Progressive ! OS: os01907
-
-! nágudinà - speak to no purpose
-nágudinà[speak_to_no_purpose]:ná=gu_dini.nàł	INTR-yi-PROG ; ! Progressive ! OS: os01908
 
 ! nágudisgoy - be dawning
 nágudisgoy[be_dawning]:ná=gu_di.goy	INTR-0s-IPFV ; ! Imperfective ! OS: os01126
@@ -2009,8 +1985,11 @@ nánità[sleep_again]:ná=ni.tà	INTR-0-IPFV ; ! Imperfective ! OS: os10615, os1
 ! nánìgha - bend over
 nánìgha[bend_over]:ná=nì.ghá	INTR-si-PFV ; ! Perfective ! OS: os01072, os01073
 
+! násistsùùz - FO lies again
+násistsùùz[FO_lies_again]:ná=tsùùz	INTR-yi-y-PFV ; ! Perfective ! OS: os00607
+
 ! násití - one sleep again
-násití[one_sleep_again]:ná=tí	INTR-sis-IPFV ; ! Imperfective ! OS: os00603, os00604, os00605
+násití[one_sleep_again]:ná=tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00603, os00604, os00605
 
 ! nást'oyá - walk straight up
 nást'oyá[walk_straight_up]:nást'o=yá	INTR-0-IPFV ; ! Imperfective ! OS: os07301
@@ -2023,16 +2002,8 @@ nástsil[get_drenched]:ná=tsil	INTR-yis-POT ; ! Potential ! OS: os02220, os0222
 ! CHECK LEMMA/STEM! nástł'ìyìsh[there_is_lightning]:nástł'ì=yìsh CHECK	INTR-0-IPFV ; ! Imperfective ! OS: os05145
 ! CHECK LEMMA/STEM! nástł'ìyìsh[there_is_lightning]:nástł'ì=yìsh CHECK	INTR-yi-y-PFV ; ! Perfective ! OS: os05146
 
-! náts'id - fall
-náts'id[fall]:ná=ts'id	INTR-ni-IPFV ; ! Imperfective ! OS: os01914
-náts'id[fall]:ná=ts'id	INTR-yi-y-PFV ; ! Perfective ! OS: os01917, os01918, os01922, os01923
-náts'id[fall]:ná=ts'id	INTR-yi-POT ; ! Potential ! OS: os01924, os01925
-
 ! nátsídik'òs - yawn
 nátsídik'òs[yawn]:nátsí=di.k'òs	INTR-si-PFV ; ! Perfective ! OS: os01322
-
-! nátsùùz - FO lies again
-nátsùùz[FO_lies_again]:ná=tsùùz	INTR-yi-y-PFV ; ! Perfective ! OS: os00607
 
 ! nátáł - one go to sleep
 nátáł[one_go_to_sleep]:ná.táł	INTR-0-IPFV ; ! Imperfective ! OS: os09390, os09391
@@ -2194,28 +2165,25 @@ sidó[one_sit]:do	INTR-si-PFV ; ! Perfective ! OS: os06922, os06923, os06924
 sidó[one_sit]:dò	INTR-yis-y-PFV ; ! Perfective ! OS: os06938, os06939, os06940, os06944
 
 ! sijààzh - GO lies
-sijààzh[GO_lies]:jààzh	INTR-yi-y-PFV ; ! Perfective ! OS: os00612
-
-! sijààzh - GO sit
-sijààzh[GO_sit]:jààzh	INTR-si-IPFV ; ! Imperfective ! OS: os00528
+sijààzh[GO_lies]:jààzh	INTR-si-IPFV ; ! Imperfective ! OS: os00528
+sijààzh[GO_lies]:jààzh	INTR-yi-y-PFV-PlainStem ; ! Perfective ! OS: os00612
+sijààzh[GO_lies]:jàj	INTR-yi-y-PFV-ModifiedStem ; ! Perfective ! OS: os00612
 
 ! sik'òòdz - be cold
 sik'òòdz[be_cold]:k'òòdz	INTR-si-IPFV ; ! Imperfective ! OS: os01117
 
 ! sikón - SC lies
-sikón[SC_lies]:kón	INTR-yi-y-PFV ; ! Perfective ! OS: os00608
-
-! sikón - SC sit
-sikón[SC_sit]:kón2	INTR-si-IPFV ; ! Imperfective ! OS: os00521
+sikón[SC_lies]:kón2	INTR-si-IPFV ; ! Imperfective ! OS: os00521
+sikón[SC_lies]:kòn	INTR-yi-y-PFV ; ! Perfective ! OS: os00608
 
 ! silo - PLO be there
 silo[PLO_be_there]:lo	INTR-si-IPFV ; ! Imperfective ! OS: os05974, os05975, os05976
 
+! silo - PLO lie
+silo[PLO_lie]:lo	INTR-si-IPFV ; ! Imperfective ! OS: os00529
+
 ! silo - PLO lies
 silo[PLO_lies]:lò	INTR-yi-y-PFV ; ! Perfective ! OS: os00613, os00614
-
-! silo - PLO sit
-silo[PLO_sit]:lo	INTR-si-IPFV ; ! Imperfective ! OS: os00529
 
 !  - 
 sists'íy:ts'íy	INTR-sis-IPFV ; ! Imperfective ! OS: os03582
@@ -2225,23 +2193,16 @@ sists'íy[hurt]:ts'íy	INTR-sis-IPFV ; ! Imperfective ! OS: os01086, os01087
 sists'íy[hurt]:ts'íy	INTR-sis-PFV ; ! Perfective ! OS: os06488
 
 ! sistsùùz - FO lies
-sistsùùz[FO_lies]:tsùùz	INTR-yi-y-PFV ; ! Perfective ! OS: os00606
-
-! sistsùùz - FO sit
-sistsùùz[FO_sit]:tsùùz	INTR-sis-IPFV ; ! Imperfective ! OS: os00520
+sistsùùz[FO_lies]:tsùùz	INTR-sis-IPFV ; ! Imperfective ! OS: os00520
 
 ! sistín - DAO lies
+sistín[DAO_lies]:tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00526
+sistín[DAO_lies]:tín2	INTR-sis-IPFV ; ! Imperfective ! OS: os00522, os00525
 sistín[DAO_lies]:tà	INTR-yi-y-PFV ; ! Perfective ! OS: os00610
 
-! sistín - DAO sit
-sistín[DAO_sit]:tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00526
-sistín[DAO_sit]:tín2	INTR-sis-IPFV ; ! Imperfective ! OS: os00522, os00525
-
 ! sistón - LC lies
+sistón[LC_lies]:tón2	INTR-si-IPFV ; ! Imperfective ! OS: os00527
 sistón[LC_lies]:tòn	INTR-yi-y-PFV ; ! Perfective ! OS: os00611
-
-! sistón - LC sit
-sistón[LC_sit]:tón2	INTR-si-IPFV ; ! Imperfective ! OS: os00527
 
 ! sisuw - be sour
 sisuw[be_sour]:suw	INTR-si-IPFV ; ! Imperfective ! OS: os01105
@@ -2254,14 +2215,15 @@ sitááz[many_sleep]:tááz	INTR-si-PFV ; ! Perfective ! OS: os09434
 sitááz[many_sleep]:tááz	INTR-yi-y-PFV ; ! Perfective ! OS: os09435
 
 ! sití - one sleep
-sití[one_sleep]:tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00546, os00547, os00548
-sití[one_sleep]:tà	INTR-yi-y-PFV ; ! Perfective ! OS: os00564, os00565, os00566, os00567, os00568, os00570
+sití[one_sleep]:tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00546, os00547, os00548, os00552, os00553, os00554, os00555
+sití[one_sleep]:tà	INTR-yi-y-PFV-PlainStem ; ! Perfective ! OS: os00564, os00565, os00566, os00567, os00568, os00570
+sití[one_sleep]:tàʔ	INTR-yi-y-PFV-ModifiedStem ; ! Perfective ! OS: os00564, os00565, os00566, os00567, os00568, os00570
 
 ! sití - sleep
 sití[sleep]:tí	INTR-si-IPFV ; ! Imperfective ! OS: os01963, os01964
 
-! sitín - AO sit
-sitín[AO_sit]:tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00524, os00532
+! sitín - AO lies
+sitín[AO_lies]:tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00524, os00532
 
 ! sitín - one sleep
 sitín[one_sleep]:tín	INTR-si-IPFV ; ! Imperfective ! OS: os09427
@@ -2275,21 +2237,19 @@ sitín[sit]:tín	INTR-sis-IPFV ; ! Imperfective ! OS: os05434
 sitín[sleep]:tín	INTR-si-IPFV ; ! Imperfective ! OS: os08153, os08154, os08155, os08156
 
 ! sitín - two sleep
-sitín[two_sleep]:tín2	INTR-si-IPFV ; ! Imperfective ! OS: os00552, os00553, os00554
-sitín[two_sleep]:tà	INTR-yi-y-PFV ; ! Perfective ! OS: os00569
+sitín[two_sleep]:tà	INTR-yi-y-PFV-PlainStem ; ! Perfective ! OS: os00569
+sitín[two_sleep]:tàʔ	INTR-yi-y-PFV-ModifiedStem ; ! Perfective ! OS: os00569
 
 ! sitón - SO lies
+sitón[SO_lies]:tón2	INTR-si-IPFV ; ! Imperfective ! OS: os00523, os00533
 sitón[SO_lies]:tòn	INTR-yi-y-PFV ; ! Perfective ! OS: os00609
-
-! sitón - SO sit
-sitón[SO_sit]:tón2	INTR-si-IPFV ; ! Imperfective ! OS: os00523, os00533
 
 ! siʔon - RO sits
 siʔon[RO_sits]:ʔon	INTR-si-IPFV ; ! Imperfective ! OS: os04900
 
-! siʔón - RO sit
-siʔón[RO_sit]:ʔón	INTR-si-IPFV ; ! Imperfective ! OS: os00519
-siʔón[RO_sit]:ʔón	INTR-yi-y-PFV ; ! Perfective ! OS: os00557, os00558, os00559, os00560, os00561, os00562, os00563
+! siʔón - RO lies
+siʔón[RO_lies]:ʔón2	INTR-si-IPFV ; ! Imperfective ! OS: os00519
+siʔón[RO_lies]:ʔòn	INTR-yi-y-PFV ; ! Perfective ! OS: os00557, os00558, os00559, os00560, os00561, os00562, os00563
 
 ! t'àt'ós - two go to edge
 t'àt'ós[two_go_to_edge]:t'à=t'ós	INTR-si-PFV ; ! Perfective ! OS: os08959
@@ -2629,9 +2589,6 @@ tłídiʔùlsh[swim_around]:tłí=di.ʔùlsh	INTR-0-IPFV ; ! Imperfective ! OS: 
 ! xaguta - be like
 xaguta[be_like]:xa=gu_ta	INTR-0-IPFV ; ! Imperfective ! OS: os06065
 
-! xagúna - talk constantly
-xagúna[talk_constantly]:xa=gú_na	INTR-0-IPFV ; ! Imperfective ! OS: os01912, os01913
-
 ! xanì - taste so
 xanì[taste_so]:xa=nì	INTR-0-IPFV ; ! Imperfective ! OS: os06863
 
@@ -2677,6 +2634,10 @@ xànáyá[go_out_again]:xàná=yá	INTR-yis-y-PFV ; ! Perfective ! OS: os11189
 ! xàní - flow out
 xàní[flow_out]:xà=nón	INTR-yi-y-PFV ; ! Perfective ! OS: os02389
 xàní[flow_out]:xá=nón	INTR-yi-y-PFV ; ! Perfective ! OS: os02390
+
+! xàsdàguná - talk out loud
+xàsdàguná[talk_out_loud]:xàsdà=gu_ná	INTR-0-IPFV-PlainStem ; ! Imperfective ! OS: os01905
+xàsdàguná[talk_out_loud]:xàsdà=gu_náh	INTR-0-IPFV-ModifiedStem ; ! Imperfective ! OS: os01905
 
 ! xàshinó - ride out
 xàshinó[ride_out]:xàshì=nón	INTR-yis-y-PFV ; ! Perfective ! OS: os08473
@@ -2793,9 +2754,6 @@ yinó[live]:yi.nó	INTR-0-IPFV ; ! Imperfective ! OS: os08142, os08143, os08144,
 ! yit'ín - be visible
 yit'ín[be_visible]:yi.t'ín	INTR-0-IPFV ; ! Imperfective ! OS: os12291, os12292, os12293, os12294, os12295
 
-! yiʔín - see O
-yiʔín[see_O]:ʔín	INTR-yi-y-PFV ; ! Perfective ! OS: os03999
-
 ! yìni - flow
 yìni[flow]:yì.ni	INTR-0-IPFV ; ! Imperfective ! OS: os11841, os11842, os11843
 yìni[flow]:yì.nón	INTR-yis-y-PFV ; ! Perfective ! OS: os11844, os11845
@@ -2852,9 +2810,9 @@ zòdits'id[embrace]:zò=di.ts'id	INTR-yi-y-PFV ; ! Perfective ! OS: os06462
 ànàgídísʔòs[many_animals_be_lost]:ànà=gidi.sʔòs	INTR-si-PFV ; ! Perfective ! OS: os05180
 ànàgídísʔòs[many_animals_be_lost]:ànà=gídí.sʔóóz	INTR-si-PFV ; ! Perfective ! OS: os05179
 
-! àxáguninà - speak too much
-àxáguninà[speak_too_much]:àxá=gu_ni.náázh	INTR-0-IPFV ; ! Imperfective ! OS: os01905
-àxáguninà[speak_too_much]:àxá=gu_ni.náázh	INTR-si-PFV ; ! Perfective ! OS: os01897, os01898, os01899, os01900, os01901, os01902, os01903
+! àxágunìná - speak too much
+àxágunìná[speak_too_much]:àxá=gu_nì.náázh	INTR-si-PFV-PlainStem ; ! Perfective ! OS: os01897, os01898, os01899, os01900, os01901, os01902, os01903
+àxágunìná[speak_too_much]:àxá=gu_nì.náj	INTR-si-PFV-ModifiedStem ; ! Perfective ! OS: os01897, os01898, os01899, os01900, os01901, os01902, os01903
 
 ! áchigudìsyis - break limbs off O
 áchigudìsyis[break_limbs_off_O]:áchi=gu_dì.yis	INTR-0-IPFV ; ! Imperfective ! OS: os07759
@@ -2884,6 +2842,11 @@ zòdits'id[embrace]:zò=di.ts'id	INTR-yi-y-PFV ; ! Perfective ! OS: os06462
 ! ána - become
 ána[become]:á=na	INTR-yi-POT ; ! Potential ! OS: os09444, os09445, os09446
 
+! áná - become
+áná[become]:á=jàg	INTR-0-IPFV ; ! Imperfective ! OS: os11962
+áná[become]:á=ná	INTR-yi-POT-PlainStem ; ! Potential ! OS: os11963, os11964
+áná[become]:á=náh	INTR-yi-POT-ModifiedStem ; ! Potential ! OS: os11963, os11964
+
 ! ánìsido - sit ready
 ánìsido[sit_ready]:á=nì.do	INTR-si-IPFV ; ! Imperfective ! OS: os10334, os10335
 
@@ -2905,14 +2868,14 @@ zòdits'id[embrace]:zò=di.ts'id	INTR-yi-y-PFV ; ! Perfective ! OS: os06462
 ! ásk'ánasosh - walk back and forth
 ásk'ánasosh[walk_back_and_forth]:ásk'ána=sosh	INTR-0-IPFV ; ! Imperfective ! OS: os12059
 
+! ást'àgudinánáł - stop talking along
+ást'àgudinánáł[stop_talking_along]:ást'ò=gu_dini.náł	INTR-yi-PROG ; ! Progressive ! OS: os01910
+
 ! ást'òtł'i - stop running
 ást'òtł'i[stop_running]:ást'ò=tł'o	INTR-si-PFV ; ! Perfective ! OS: os08308
 
 ! ást'òyá - stop walking
 ást'òyá[stop_walking]:ást'ò=ya	INTR-si-PFV ; ! Perfective ! OS: os08307
-
-! ástágusnà - speak occasionally
-ástágusnà[speak_occasionally]:ástá=gu_nash	INTR-0s-IPFV ; ! Imperfective ! OS: os01911
 
 ! ástónámídidlùsh - move around tethered
 ástónámídidlùsh[move_around_tethered]:ástónámí=di.dlùsh	INTR-0-IPFV ; ! Imperfective ! OS: os09506
@@ -2991,6 +2954,9 @@ zòdits'id[embrace]:zò=di.ts'id	INTR-yi-y-PFV ; ! Perfective ! OS: os06462
 ! ìstsa - see
 ìstsa[see]:ì.tsa	INTR-0s-IPFV ; ! Imperfective ! OS: os11266, os11267, os11268
 
+! ìstsá - see O
+ìstsá[see_O]:ʔín	INTR-yi-y-PFV ; ! Perfective ! OS: os03999
+
 ! ìwún - be ready
 ìwún[be_ready]:wún	INTR-isi-IPFV ; ! Imperfective ! OS: os03309, os03310, os03311, os03312, os03313, os03314, os03315
 
@@ -3013,7 +2979,7 @@ zòdits'id[embrace]:zò=di.ts'id	INTR-yi-y-PFV ; ! Perfective ! OS: os06462
 íchàch'igudlììzh[be_disgusted]:íchàch'i=gu_dlììzh	INTR-ni-IPFV ; ! Imperfective ! OS: os10232, os10233, os10234
 
 ! ídidisnò - eat happily
-ídidisnò[eat_happily]:ídidi.nò	INTR-0s-IPFV ; ! Imperfective ! OS: os08107
+ídidisnò[eat_happily]:í_didi.nò	INTR-0s-IPFV ; ! Imperfective ! OS: os08107
 
 ! ídidits'ímìłsh - swing self
 ídidits'ímìłsh[swing_self]:í=didits'í.mìłsh[swing_self]	INTR-0-IPFV ; ! Imperfective ! OS: os03518, os03519
@@ -3029,6 +2995,9 @@ zòdits'id[embrace]:zò=di.ts'id	INTR-yi-y-PFV ; ! Perfective ! OS: os06462
 
 ! ídisno - swallow something
 ídisno[swallow_something]:í=di.nìyk'	INTR-yis-y-PFV ; ! Perfective ! OS: os04588
+
+! ídisnò - swallow UO
+ídisnò[swallow_UO]:í=di.nò	INTR-0s-IPFV ; ! Imperfective ! OS: os01735, os01736, os01737, os01738, os01739, os01740, os01741
 
 ! ídiswúsh - whistle
 ídiswúsh[whistle]:í=di.wúsh	INTR-0s-IPFV ; ! Imperfective ! OS: os06722, os06723, os06724, os06725, os06726, os06727, os06728, os06739, os06740
@@ -3165,6 +3134,11 @@ oghayíst'ùw[miss_O_shooting]:ogha=t'ùw	OBL-yi-y-PFV ; ! Perfective ! OS: os03
 oghàtúni[milk_AO]:oghàtú=ni	OBL-0-IPFV ; ! Imperfective ! OS: os03032, os03033, os03034
 oghàtúni[milk_AO]:oghàtú=nììzh	OBL-si-PFV ; ! Perfective ! OS: os03035
 
+! oghát'a - pity O
+oghát'a[pity_O]:oghá=t'a	OBL-0-IPFV ; ! Imperfective ! OS: os03247, os03248, os09704, os09705, os09706
+oghát'a[pity_O]:oghá=t'à	OBL-yi-y-PFV-PlainStem ; ! Perfective ! OS: os03249, os09707
+oghát'a[pity_O]:oghá=t'àʔ	OBL-yi-y-PFV-ModifiedStem ; ! Perfective ! OS: os03249, os09707
+
 ! àni - imitate O
 ! àni[imitate_O]:à=ni	OBL-Irregular ; ! CHECK ASPECT ! OS: os03039
 
@@ -3216,6 +3190,9 @@ oghàdìsnùd[be_bunched]:oghà=dì.nùd	OBLEXP-0s-IPFV ; ! Imperfective ! OS: o
 ! oghádzós - get frightened
 oghádzós[get_frightened]:oghá=dzós	OBLEXP-0-IPFV ; ! Imperfective ! OS: os11510
 oghádzós[get_frightened]:oghá=dzòòz	OBLEXP-si-PFV ; ! Perfective ! OS: os11509
+
+! oghágùt'a - be pitiable
+oghágùt'a[be_pitiable]:oghá=gù_t'a	OBLEXP-0-IPFV ; ! Imperfective ! OS: os10818
 
 ! àchínísdí - sun is bright
 àchínísdí[sun_is_bright]:àchí=dí	OBLEXP-nis-IPFV ; ! Imperfective ! OS: os06066
@@ -3346,7 +3323,7 @@ digadiniyíłù[turn_O_around]:diga=diniyí.łù	TR-yi-POT ; ! Potential ! OS: o
 digha[throw_SO]:di.gha	TR-0-IPFV ; ! Imperfective ! OS: os12191, os12192
 
 ! digà - carry O on back
-digà[carry_O_on_back]:di=gin	TR-si-PFV ; ! Perfective ! OS: os01841
+digà[carry_O_on_back]:di=gín	TR-si-PFV ; ! Perfective ! OS: os01841
 
 ! digà - carry on back
 digà[carry_on_back]:gáł	TR-yi-PROG ; ! Progressive ! OS: os01826
@@ -3359,13 +3336,6 @@ dikùn[be_fair]:di.kùn	TR-0-IPFV ; ! Imperfective ! OS: os03267
 
 ! dinisdlú - get startled
 dinisdlú[get_startled]:dini.dlút	TR-sis-PFV ; ! Perfective ! OS: os12214
-
-! dinì - say
-! dinì[say]:irregular	TR-Irregular ; ! CHECK ASPECT ! OS: os01861, os01862, os01863, os01864, os01865, os01867, os01868, os01869, os01870, os01871, os01872, os01873, os01874, os01875, os01876, os01877, os01878
-
-! dinò - swallow O
-dinò[swallow_O]:di.nìyk'	TR-sis-PFV ; ! Perfective ! OS: os01750, os01751, os01752, os01753, os01754, os01755, os01756
-dinò[swallow_O]:di.nìł	TR-yi-PROG ; ! Progressive ! OS: os01742, os01743, os01744, os01745, os01746, os01747, os01748
 
 ! disdish - shake O
 disdish[shake_O]:di.dish	TR-0s-IPFV ; ! Imperfective ! OS: os11624, os11625, os11626, os11628, os11629, os11630, os11631, os11632, os11633
@@ -3405,6 +3375,8 @@ disní[tell]:di.ní	TR-0s-IPFV ; ! Imperfective ! OS: os07874
 ! disnò - swallow O
 disnò[swallow_O]:di.nò	TR-0s-IPFV ; ! Imperfective ! OS: os04593, os04596, os04597, os04598, os04599, os04600
 disnò[swallow_O]:ná=di.nìsh	TR-0s-IPFV-REP ; ! Imperfective + Repetitive ! OS: os04594
+disnò[swallow_O]:di.nìyk'	TR-sis-PFV ; ! Perfective ! OS: os01750, os01751, os01752, os01753, os01754, os01755, os01756
+disnò[swallow_O]:di.nìł	TR-yis-PROG ; ! Progressive ! OS: os01742, os01743, os01744, os01745, os01746, os01747, os01748
 
 ! distsid - push O
 distsid[push_O]:di.tsid	TR-0s-IPFV ; ! Imperfective ! OS: os02549, os02550, os02553
@@ -3521,15 +3493,12 @@ dàsʔòs[play_out]:dà=ʔóóz	TR-sis-PFV ; ! Perfective ! OS: os08523, os08524
 dàtł'ù[tie_O]:dà=tł'ù	TR-0-IPFV ; ! Imperfective ! OS: os09775, os09776, os09777, os09780
 dàtł'ù[tie_O]:dà=tł'ù	TR-yi-POT ; ! Potential ! OS: os09774
 
-! dádistsós - undo O
-dádistsós[undo_O]:dá=dì.tsós	TR-0s-IPFV ; ! Imperfective ! OS: os04306
-
 ! dádisʔo - untie O
 dádisʔo[untie_O]:dá=di.ʔo	TR-0s-IPFV ; ! Imperfective ! OS: os12272, os12273, os12274, os12275
 dádisʔo[untie_O]:dá=di.ʔon	TR-sis-PFV ; ! Perfective ! OS: os12276
 
-! dádìch'ul - cut O open
-dádìch'ul[cut_O_open]:dá=dì.ch'ul	TR-si-PFV ; ! Perfective ! OS: os04315
+! dádìch'ul - rip O open
+dádìch'ul[rip_O_open]:dá=di.ch'ul	TR-si-PFV ; ! Perfective ! OS: os04315
 
 ! dádìsts'òs - cut O open
 dádìsts'òs[cut_O_open]:dá=dì.tsòs	TR-si-PFV ; ! Perfective ! OS: os04314
@@ -3696,14 +3665,6 @@ ich'ót[shoot_O]:i.ch'ót	TR-0-IPFV ; ! Imperfective ! OS: os08659, os08660, os0
 ich'ót[shoot_O]:nai.ch'osh	TR-0-IPFV-REP ; ! Imperfective + Repetitive ! OS: os08677
 ich'ót[shoot_O]:i.ch'ót	TR-yi-y-PFV ; ! Perfective ! OS: os08678, os08679
 
-! ichíízh - eat
-ichíízh[eat]:chíízh	TR-0-IPFV ; ! Imperfective ! OS: os07449, os07450
-ichíízh[eat]:chíj	TR-yi-PROG ; ! Progressive ! OS: os07451
-
-! ichíízh - eat something
-ichíízh[eat_something]:i=chíízh	TR-0-IPFV ; ! Imperfective ! OS: os07446
-ichíízh[eat_something]:i=chíízh	TR-0s-IPFV ; ! Imperfective ! OS: os07447
-
 ! idididó - drink happily
 idididó[drink_happily]:ididi.dó	TR-0-IPFV ; ! Imperfective ! OS: os08115, os08116, os08117, os08118, os08119
 
@@ -3840,9 +3801,6 @@ ischút[get_hold_of_O]:i.chút	TR-0s-IPFV ; ! Imperfective ! OS: os07012, os0701
 ischút[get_hold_of_O]:i.chút	TR-sis-PFV ; ! Perfective ! OS: os07011, os07017, os07018, os07019
 ischút[get_hold_of_O]:i.chút	TR-yis-POT ; ! Potential ! OS: os07015
 
-! isdinì - tell O
-isdinì[tell_O]:irregular	TR-yi-y-PFV ; ! Perfective ! OS: os01879, os01880, os01881, os01882, os01883, os01884, os01885
-
 ! isdàł - throw PLO
 isdàł[throw_PLO]:i.dàł	TR-0s-IPFV ; ! Imperfective ! OS: os09766, os09767, os09768
 
@@ -3881,9 +3839,6 @@ ismííz[net_O]:mits	TR-yis-y-PFV ; ! Perfective ! OS: os02427, os02428
 
 ! ismós - boil O
 ismós[boil_O]:í_mós	TR-is-IPFV ; ! Imperfective ! OS: os02402
-
-! isno - eat something
-isno[eat_something]:i=no	TR-0s-IPFV ; ! Imperfective ! OS: os07448
 
 ! ist'às - cook O
 ist'às[cook_O]:t'às	TR-0s-IPFV ; ! Imperfective ! OS: os02283, os02284, os02285, os02286
@@ -3966,9 +3921,6 @@ itsał[throw_against_O]:ì.tsał	TR-0-IPFV ; ! Imperfective ! OS: os04141, os041
 itsał[throw_against_O]:ì.tsał	TR-ni-IPFV ; ! Imperfective ! OS: os04135, os04136, os04137, os04138, os04139
 itsał[throw_against_O]:ì.tsał	TR-nis-IPFV ; ! Imperfective ! OS: os04134
 
-! itsàd - eat something
-itsàd[eat_something]:tsàd	TR-0-IPFV ; ! Imperfective ! OS: os07458, os07459
-
 ! itsàł - hammer O
 itsàł[hammer_O]:tsàł	TR-0-IPFV ; ! Imperfective ! OS: os03270, os03272
 itsàł[hammer_O]:tsíl	TR-yi-y-PFV ; ! Perfective ! OS: os03271, os03273
@@ -3978,10 +3930,6 @@ itł'ùn[braid]:tł'ush	TR-0-IPFV ; ! Imperfective ! OS: os07622
 itł'ùn[braid]:tł'ùn	TR-0-IPFV ; ! Imperfective ! OS: os07600, os07601, os07602, os07603, os07604
 itł'ùn[braid]:tł'ún	TR-si-PFV ; ! Perfective ! OS: os07613, os07614, os07615, os07616, os07617, os07618, os07619, os07620
 itł'ùn[braid]:tł'ùł	TR-yi-PROG ; ! Progressive ! OS: os07605, os07606, os07607, os07608, os07609, os07610, os07611
-
-!  - 
-iyistsàd:i=tsàd	TR-0-IPFV ; ! Imperfective ! OS: os07456
-iyistsàd:i=tsàd	TR-yi-a-PFV ; ! Perfective ! OS: os07454
 
 ! iyiyá - walk ahead of O
 iyiyá[walk_ahead_of_O]:yi.yáł	TR-yi-PROG ; ! Progressive ! OS: os08587, os08588, os08589, os08590
@@ -4043,9 +3991,8 @@ k'astso[undo_with_teeth]:k'a=tsòy	TR-yis-y-PFV ; ! Perfective ! OS: os09643
 k'astso[undo_with_teeth]:k'a=tso	TR-yis-POT ; ! Potential ! OS: os09644, os09645
 
 ! k'astsàd - finish eating
-k'astsàd[finish_eating]:k'a=tsád	TR-nis-IPFV ; ! Imperfective ! OS: os01732
-k'astsàd[finish_eating]:k'a=tsàd	TR-nis-PFV ; ! Perfective ! OS: os01731, os01733
-k'astsàd[finish_eating]:k'a=tsád	TR-nis-PFV ; ! Perfective ! OS: os01734
+k'astsàd[finish_eating]:k'a=tsàd	TR-ni-PFV ; ! Perfective ! OS: os01731, os01733
+k'astsàd[finish_eating]:k'a=tsád	TR-ni-PFV ; ! Perfective ! OS: os01732, os01734
 
 ! k'àgudidistłód - grab quickly
 k'àgudidistłód[grab_quickly]:k'à=gu_didi.tłód	TR-0s-IPFV ; ! Imperfective ! OS: os09972, os09973, os09974
@@ -4285,9 +4232,6 @@ niʔì[steal_O]:ni.ʔił	TR-yi-POT ; ! Potential ! OS: os03234
 ! niʔì - steal something
 niʔì[steal_something]:i_ni.ʔì	TR-0-IPFV ; ! Imperfective ! OS: os03227
 
-! nà=gà - arrive carrying O on back
-nà=gà[arrive_carrying_O_on_back]:nà=gín	TR-ni-PFV ; ! Perfective ! OS: os01831, os01832, os01834, os01835, os01836, os01838, os01839, os01840
-
 ! nàdich'úł - rip O open
 ! CHECK LEMMA/STEM! nàdich'úł[rip_O_open]:nà=di.ch'úł CHECK CL	TR-0-IPFV ; ! Imperfective ! OS: os04312
 
@@ -4373,6 +4317,9 @@ nàgudistłód[stop_storm]:nà=gu_di.tłód	TR-sis-PFV ; ! Perfective ! OS: os12
 ! nàgut'in - work
 nàgut'in[work]:nà=gu_t'in	TR-yis-y-PFV ; ! Perfective ! OS: os05731
 
+! nàgà - arrive carrying O on back
+nàgà[arrive_carrying_O_on_back]:nà=gín	TR-ni-PFV ; ! Perfective ! OS: os01831, os01832, os01833, os01834, os01835, os01836, os01837, os01838, os01839, os01840
+
 ! nàgùstá - give birth to
 nàgùstá[give_birth_to]:nà=gù_tá	TR-0s-IPFV ; ! Imperfective ! OS: os09382, os09386
 nàgùstá[give_birth_to]:nà=gù_tín	TR-nis-PFV ; ! Perfective ! OS: os09383, os09384, os09385
@@ -4438,9 +4385,6 @@ nàtsał[throw_down]:nà=tsał	TR-0-IPFV ; ! Imperfective ! OS: os06348
 nàtsał[throw_down]:nà=tsil	TR-yis-y-PFV ; ! Perfective ! OS: os06349
 nàtsał[throw_down]:nà=tsał	TR-yi-PROG ; ! Progressive ! OS: os06351
 
-! nàtsùùz - put FO down
-nàtsùùz[put_FO_down]:nà=tsùùz	TR-ni-PFV ; ! Perfective ! OS: os01847
-
 ! nàtł'is - roll SO down
 nàtł'is[roll_SO_down]:nà=tł'is	TR-0s-IPFV ; ! Imperfective ! OS: os06360
 nàtł'is[roll_SO_down]:nà=tł'os	TR-yis-y-PFV ; ! Perfective ! OS: os06359
@@ -4478,6 +4422,10 @@ nàzíts'íy[be_heard]:nà=zí.ts'íy	TR-si-PFV ; ! Perfective ! OS: os04365
 ! nààst'às - cook PLO
 nààst'às[cook_PLO]:nàà=t'às	TR-0s-IPFV ; ! Imperfective ! OS: os02290, os02291
 nààst'às[cook_PLO]:nàà=t'às	TR-sis-PFV ; ! Perfective ! OS: os02293
+
+! náastsá - see O again
+náastsá[see_O_again]:ná=tsá	TR-is-IPFV-PlainStem ; ! Imperfective ! OS: os08968, os08970, os08971, os08975, os08976, os08985
+náastsá[see_O_again]:ná=tsáh	TR-is-IPFV-ModifiedStem ; ! Imperfective ! OS: os08968, os08970, os08971, os08975, os08976, os08985
 
 ! nádikò - carry SC home
 nádikò[carry_SC_home]:ná=di.kò	TR-0-IPFV ; ! Imperfective ! OS: os08158, os08160, os08167
@@ -4532,7 +4480,7 @@ nádáł[many_arrive_carrying]:ná=dál	TR-ni-PFV ; ! Perfective ! OS: os11261, 
 nádìdìtà[pick_AO_up]:ná=dìdì.tín	TR-si-PFV ; ! Perfective ! OS: os10353, os10354, os10355, os10356, os10357, os10358, os10359
 
 ! nádìgà - carry O home on back
-nádìgà[carry_O_home_on_back]:ná=dì.gà	TR-si-PFV ; ! Perfective ! OS: os01842, os01843
+nádìgà[carry_O_home_on_back]:ná=di.gà	TR-si-PFV ; ! Perfective ! OS: os01842, os01843
 
 ! nádìts'í - hear O again
 nádìts'í[hear_O_again]:ná=dì.ts'ón	TR-si-PFV ; ! Perfective ! OS: os12009, os12011
@@ -4603,9 +4551,6 @@ násnò[eat_O_again]:ná=nò	TR-yis-y-PFV ; ! Perfective ! OS: os11347, os11350,
 ! násts'á - lick again
 násts'á[lick_again]:ná=ts'á	TR-0s-IPFV ; ! Imperfective ! OS: os04521
 
-! nástsá - see O again
-nástsá[see_O_again]:ná=tsá	TR-0s-IPFV ; ! Imperfective ! OS: os08968, os08969, os08970, os08971, os08972, os08975, os08976, os08985
-
 ! nástsìl - wet O
 nástsìl[wet_O]:ná=tsìl	TR-0s-IPFV ; ! Imperfective ! OS: os03658, os03659, os03660, os03661, os03662, os03663, os03664, os03665, os03666, os03667
 
@@ -4613,21 +4558,13 @@ nástsìl[wet_O]:ná=tsìl	TR-0s-IPFV ; ! Imperfective ! OS: os03658, os03659, o
 násxàł[throw_O_off]:ná=xàł	TR-0s-IPFV ; ! Imperfective ! OS: os11705, os11706
 násxàł[throw_O_off]:ná=xàtł'	TR-nis-PFV ; ! Perfective ! OS: os11710
 
-! násʔí - look
-násʔí[look]:ná=ʔí	TR-yi-POT ; ! Potential ! OS: os07460, os07461
-
 ! násʔín - look at O
-násʔín[look_at_O]:ná^O.ʔín	TR-0-IPFV ; ! Imperfective ! OS: os04248
 ! CHECK LEMMA/STEM! násʔín[look_at_O]: ná^O.ʔín	TR-0s-IPFV ; ! Imperfective ! OS: os00518
-násʔín[look_at_O]:ná^O.ʔín2	TR-0s-IPFV ; ! Imperfective ! OS: os00470, os00471, os00472, os00473, os00474, os00475, os00476, os00477, os00478, os00479
-násʔín[look_at_O]:ná=ná.ʔìsh	TR-0-IPFV-REP ; ! Imperfective + Repetitive ! OS: os00517
-násʔín[look_at_O]:ná=ná.ʔìsh	TR-0i-IPFV-REP ; ! Imperfective + Repetitive ! OS: os00504, os00505, os00506, os00507, os00508, os00509
-násʔín[look_at_O]:ná.ʔìn	TR-yis-y-PFV ; ! Perfective ! OS: os00480, os00481, os00482, os00483, os00484, os00485, os00486
-násʔín[look_at_O]:ná=ná.ʔìsh	TR-yi-y-PFV-REP ; ! Perfective + Repetitive ! OS: os00510, os00511, os00512, os00513, os00514, os00515, os00516
-
-! násʔín - watch O
-násʔín[watch_O]:ná.ʔín	TR-0s-IPFV ; ! Imperfective ! OS: os11985
-násʔín[watch_O]:ná.ʔín	TR-yis-a-PFV ; ! Perfective ! OS: os11986, os11987
+násʔín[look_at_O]:ná^O.ʔín2	TR-0s-IPFV ; ! Imperfective ! OS: os00470, os00471, os00472, os00473, os00474, os00475, os00476, os00477, os00478, os00479, os04248, os11985
+násʔín[look_at_O]:ná=ná.ʔìsh	TR-0i-IPFV-REP ; ! Imperfective + Repetitive ! OS: os00502, os00503, os00504, os00505, os00506, os00507, os00508, os00509, os00517
+násʔín[look_at_O]:ná.ʔìn	TR-yis-y-PFV ; ! Perfective ! OS: os00480, os00481, os00482, os00483, os00484, os00485, os00486, os11986, os11987
+násʔín[look_at_O]:ná=ná.ʔìsh	TR-yii-y-PFV-REP ; ! Perfective + Repetitive ! OS: os00510, os00511, os00512, os00513, os00514, os00515, os00516
+násʔín[look_at_O]:ná^O.ʔín2	TR-yis-POT ; ! Potential ! OS: os07460, os07461
 
 ! nátà - lift AO
 nátà[lift_AO]:ná.tà	TR-0-IPFV ; ! Imperfective ! OS: os08356
@@ -4718,10 +4655,6 @@ níʔó[fool_O]:ní.ʔó	TR-0-IPFV ; ! Imperfective ! OS: os02488, os02489, os02
 níʔó[fool_O]:níná.ʔòsh	TR-0-IPFV-REP ; ! Imperfective + Repetitive ! OS: os02491a, os02491b
 níʔó[fool_O]:ní.ʔòy	TR-yi-y-PFV ; ! Perfective ! OS: os02486, os02487
 
-! oghat'à - pity AO
-oghat'à[pity_AO]:ogha=t'à	TR-0-IPFV ; ! Imperfective ! OS: os03247, os03248
-oghat'à[pity_AO]:ogha=t'à	TR-yi-y-PFV ; ! Perfective ! OS: os03249
-
 ! oghazós - frighten O
 oghazós[frighten_O]:ogha=zós	TR-0-IPFV ; ! Imperfective ! OS: os04750, os04751, os04752
 oghazós[frighten_O]:ogha=zòòz	TR-ni-PFV ; ! Perfective ! OS: os04746, os04747, os04748, os04749, os04754
@@ -4761,10 +4694,6 @@ oghánàya[walk_to_O]:oghá=nà.ya	TR-yi-y-PFV ; ! Perfective ! OS: os07285, os0
 
 ! oghásdzós - scare O
 oghásdzós[scare_O]:oghá=dzós	TR-nis-PFV ; ! Perfective ! OS: os08883, os08884, os08885
-
-! oghát'à - pity O
-oghát'à[pity_O]:oghá=t'à	TR-0-IPFV ; ! Imperfective ! OS: os09704, os09705, os09706
-oghát'à[pity_O]:oghá=t'à	TR-yis-y-PFV ; ! Perfective ! OS: os09707
 
 ! sisgón - dry O
 sisgón[dry_O]:gón	TR-sis-PFV ; ! Perfective ! OS: os11286
@@ -4897,7 +4826,7 @@ tayidinists'ìst[fill_up_O]:ta=dìni.ts'ìst	TR-sis-PFV ; ! Perfective ! OS: os0
 tayístsó[hold_O_in_teeth]:ta=yí.tsó	TR-0s-IPFV ; ! Imperfective ! OS: os02514, os02515, os02516
 
 ! taʔò - hold RO up
-taʔò[hold_RO_up]:ta=ʔół	TR-yi-PROG ; ! Progressive ! OS: os00689, os00690, os00691, os00692, os00693, os00694, os00695, os01845
+taʔò[hold_RO_up]:ta=ʔół	TR-yi-PROG ; ! Progressive ! OS: os00689, os00690, os00691, os00692, os00693, os00694, os00695
 
 ! taʔò - put RO up
 taʔò[put_RO_up]:ta=ʔò	TR-0-IPFV ; ! Imperfective ! OS: os00754, os00755, os00756, os00757, os00758, os00759, os00760
@@ -5151,10 +5080,6 @@ yiʔo[fetch]:yi.ʔo	TR-0-IPFV ; ! Imperfective ! OS: os02055, os02056, os02057, 
 yiʔo[fetch]:yiná.ʔòsh	TR-0-IPFV ; ! Imperfective ! OS: os02054
 yiʔo[fetch]:yi.ʔon	TR-si-PFV ; ! Perfective ! OS: os02062, os02063, os02064, os02065, os02066, os02067, os02068
 
-! yiʔín - see O
-yiʔín[see_O]:ʔín2	TR-yi-a-PFV ; ! Perfective ! OS: os00487, os00488, os00489, os00490, os00491, os00492, os00493, os00494
-yiʔín[see_O]:ʔín	TR-yi-y-PFV ; ! Perfective ! OS: os03992, os03993, os03994, os07792
-
 ! yìchádinini - brace O with hand
 yìchádinini[brace_O_with_hand]:yìchá=dinì.nììzh	TR-si-PFV ; ! Perfective ! OS: os02415
 
@@ -5369,9 +5294,6 @@ zóditł'ù[tie_around_O_wrist]:zó=di.tł'ù	TR-0-IPFV ; ! Imperfective ! OS: o
 ágùshòt[find_out_about_O]:á=gù_shòt	TR-0-IPFV ; ! Imperfective ! OS: os05818, os05819
 ágùshòt[find_out_about_O]:á=gù_shòt	TR-sis-PFV ; ! Perfective ! OS: os05815, os05816, os05817
 
-! ájá - become
-ájá[become]:á=já	TR-0-IPFV ; ! Imperfective ! OS: os11962
-
 ! ájì - show affection for O
 ájì[show_affection_for_O]:á=jì	TR-0-IPFV ; ! Imperfective ! OS: os09081, os09082, os09083, os09084, os09085
 ájì[show_affection_for_O]:á=jì	TR-yis-y-PFV ; ! Perfective ! OS: os09086, os09087, os09088, os09091
@@ -5387,14 +5309,8 @@ zóditł'ù[tie_around_O_wrist]:zó=di.tł'ù	TR-0-IPFV ; ! Imperfective ! OS: o
 ! álá - make O
 ! álá[make_O]:á=làg	TR-Irregular ; ! CHECK ASPECT ! OS: os01457, os01458, os01459, os01460, os01461, os01462, os01463, os01464, os01465, os01466
 
-! ána - become
-ána[become]:á=na	TR-yi-POT ; ! Potential ! OS: os11963, os11964
-
 ! ánagùghàsh - recall O
 ánagùghàsh[recall_O]:ána=gù_ghàsh	TR-0-IPFV ; ! Imperfective ! OS: os05829, os05831, os05832
-
-! áni - say something
-! áni[say_something]:á=ni	TR-Irregular ; ! CHECK ASPECT ! OS: os01849, os01850, os01851, os01852, os01853, os01854, os01855, os01856, os01857, os01858, os01859, os01860
 
 ! ánilin - like O
 ánilin[like_O]:á=ni.lin	TR-0-IPFV ; ! Imperfective ! OS: os05510, os05511, os05512
@@ -5534,9 +5450,6 @@ zóditł'ù[tie_around_O_wrist]:zó=di.tł'ù	TR-0-IPFV ; ! Imperfective ! OS: o
 ìdigàs[make_bite]:ìdi.gàs	TR-0-IPFV ; ! Imperfective ! OS: os11671, os11672, os11673
 ìdigàs[make_bite]:ìdi.gááz	TR-si-PFV ; ! Perfective ! OS: os11668, os11669, os11670
 
-! ìdisnò - swallow UO
-ìdisnò[swallow_UO]:ì=di.nò	TR-0s-IPFV ; ! Imperfective ! OS: os01735, os01736, os01737, os01738, os01739, os01740, os01741
-
 ! ìdit'ú - shoot O
 ìdit'ú[shoot_O]:idi.t'óósh	TR-0s-IPFV ; ! Imperfective ! OS: os11784, os11785, os11786
 ìdit'ú[shoot_O]:ìdi.t'ú	TR-0s-IPFV ; ! Imperfective ! OS: os11781, os11782, os11783
@@ -5598,6 +5511,10 @@ zóditł'ù[tie_around_O_wrist]:zó=di.tł'ù	TR-0-IPFV ; ! Imperfective ! OS: o
 ! ìsts'íst - wrap O
 ìsts'íst[wrap_O]:ì.ts'íst	TR-0-IPFV ; ! Imperfective ! OS: os02371, os02372, os02373, os02374, os02375
 ìsts'íst[wrap_O]:ì.ts'íst	TR-yi-y-PFV ; ! Perfective ! OS: os02376, os02377, os02378, os02379
+
+! ìstsá - see O
+ìstsá[see_O]:ʔín2	TR-yi-a-PFV ; ! Perfective ! OS: os00487, os00488, os00489, os00490, os00491, os00492, os00493, os00494
+ìstsá[see_O]:ʔín	TR-yi-y-PFV ; ! Perfective ! OS: os03992, os03993, os03994, os07792
 
 ! ìsíł - warm O
 ìsíł[warm_O]:ì.síł	TR-yi-POT ; ! Potential ! OS: os01566
@@ -5786,11 +5703,27 @@ zóditł'ù[tie_around_O_wrist]:zó=di.tł'ù	TR-0-IPFV ; ! Imperfective ! OS: o
 
 LEXICON Transitive-Conative
 
+! dádistsós - undo O
+dádistsós[undo_O]:dá=dì.tsós	TR-CON-0s-IPFV ; ! Imperfective ! OS: os04306
+dádistsós[undo_O]:dà=dì.tsos	TR-CON-sis-PFV ; ! Perfective ! OS: os04305
+
 ! xànásgas - pry O out again
 xànásgas[pry_O_out_again]:xàná=giiz	TR-CON-yis-y-PFV ; ! Perfective ! OS: os11096, os11097
 
 ! ízi - call O
 ízi[call_O]:zi	TR-CON-0-IPFV ; ! Imperfective ! OS: os03093, os03094, os03095, os03096, os03098, os03099, os10495, os10498, os10499, os10500
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! Transitive-DObj3SgOnly !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Transitive-DObj3SgOnly
+
+! nàtsùùz - put FO down
+nàtsùùz[put_FO_down]:nà=tsùùz	TR-DO3SG-ni-PFV ; ! Perfective ! OS: os01847
+
+! taʔò - hold RO up
+taʔò[hold_RO_up]:ta=ʔół	TR-DO3SG-yi-PROG ; ! Progressive ! OS: os01845
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!! Transitive-SubjSuppr !!!!!
@@ -5986,6 +5919,15 @@ LEXICON INTR-0-IPFV-PlainStem
 
 LEXICON INTR-0-IPFV-ModifiedStem
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.%0@@U.STEM.MODIFIED@ VerbSuffixes;
+
+LEXICON INTR-0i-IPFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.I@ VerbSuffixes;
+
+LEXICON INTR-0i-IPFV-PlainStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.I@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON INTR-0i-IPFV-ModifiedStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.I@@U.STEM.MODIFIED@ VerbSuffixes;
 
 LEXICON INTR-0s-IPFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.S@ VerbSuffixes;
@@ -6185,6 +6127,15 @@ LEXICON INTR-yii-a-PFV-PlainStem
 LEXICON INTR-yii-a-PFV-ModifiedStem
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@@U.VV.I@@U.STEM.MODIFIED@ VerbSuffixes;
 
+LEXICON INTR-yii-y-PFV
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@@U.VV.I@ VerbSuffixes;
+
+LEXICON INTR-yii-y-PFV-PlainStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@@U.VV.I@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON INTR-yii-y-PFV-ModifiedStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@@U.VV.I@@U.STEM.MODIFIED@ VerbSuffixes;
+
 LEXICON INTR-yis-a-PFV
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@@U.VV.S@ VerbSuffixes;
 
@@ -6211,6 +6162,15 @@ LEXICON INTR-yi-y-PFV-REP-PlainStem
 
 LEXICON INTR-yi-y-PFV-REP-ModifiedStem
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.%0@@U.STEM.MODIFIED@ VerbSuffixes;
+
+LEXICON INTR-yii-y-PFV-REP
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.I@ VerbSuffixes;
+
+LEXICON INTR-yii-y-PFV-REP-PlainStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.I@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON INTR-yii-y-PFV-REP-ModifiedStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.I@@U.STEM.MODIFIED@ VerbSuffixes;
 
 LEXICON INTR-yis-y-PFV-REP
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.S@ VerbSuffixes;
@@ -6256,6 +6216,15 @@ LEXICON INTR-yi-PROG-PlainStem
 
 LEXICON INTR-yi-PROG-ModifiedStem
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.%0@@U.STEM.MODIFIED@ VerbSuffixes;
+
+LEXICON INTR-yii-PROG
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.I@ VerbSuffixes;
+
+LEXICON INTR-yii-PROG-PlainStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.I@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON INTR-yii-PROG-ModifiedStem
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.I@@U.STEM.MODIFIED@ VerbSuffixes;
 
 LEXICON INTR-yis-PROG
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.S@ VerbSuffixes;
@@ -6671,6 +6640,15 @@ LEXICON TR-yi-y-PFV-REP-PlainStem
 LEXICON TR-yi-y-PFV-REP-ModifiedStem
 @U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.%0@@R.CONATIVE.OFF@@U.STEM.MODIFIED@ VerbSuffixes;
 
+LEXICON TR-yii-y-PFV-REP
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.I@@R.CONATIVE.OFF@ VerbSuffixes;
+
+LEXICON TR-yii-y-PFV-REP-PlainStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.I@@R.CONATIVE.OFF@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON TR-yii-y-PFV-REP-ModifiedStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.I@@R.CONATIVE.OFF@@U.STEM.MODIFIED@ VerbSuffixes;
+
 LEXICON TR-yis-y-PFV-REP
 @U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.SUPERASPECT.REP@@U.TAMA.yi-y@@U.VV.S@@R.CONATIVE.OFF@ VerbSuffixes;
 
@@ -6725,6 +6703,24 @@ LEXICON TR-CON-0-IPFV-PlainStem
 LEXICON TR-CON-0-IPFV-ModifiedStem
 @U.VALENCE.TRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.%0@@R.CONATIVE.ON@@U.STEM.MODIFIED@ VerbSuffixes;
 
+LEXICON TR-CON-0s-IPFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.S@@R.CONATIVE.ON@ VerbSuffixes;
+
+LEXICON TR-CON-0s-IPFV-PlainStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.S@@R.CONATIVE.ON@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON TR-CON-0s-IPFV-ModifiedStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.S@@R.CONATIVE.ON@@U.STEM.MODIFIED@ VerbSuffixes;
+
+LEXICON TR-CON-sis-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.si@@U.VV.S@@R.CONATIVE.ON@ VerbSuffixes;
+
+LEXICON TR-CON-sis-PFV-PlainStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.si@@U.VV.S@@R.CONATIVE.ON@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON TR-CON-sis-PFV-ModifiedStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.si@@U.VV.S@@R.CONATIVE.ON@@U.STEM.MODIFIED@ VerbSuffixes;
+
 LEXICON TR-CON-yis-y-PFV
 @U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@@U.VV.S@@R.CONATIVE.ON@ VerbSuffixes;
 
@@ -6733,6 +6729,24 @@ LEXICON TR-CON-yis-y-PFV-PlainStem
 
 LEXICON TR-CON-yis-y-PFV-ModifiedStem
 @U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@@U.VV.S@@R.CONATIVE.ON@@U.STEM.MODIFIED@ VerbSuffixes;
+
+LEXICON TR-DO3SG-ni-PFV
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.ni@@U.VV.%0@@R.CONATIVE.OFF@@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@ VerbSuffixes;
+
+LEXICON TR-DO3SG-ni-PFV-PlainStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.ni@@U.VV.%0@@R.CONATIVE.OFF@@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON TR-DO3SG-ni-PFV-ModifiedStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PFV@@U.TAMA.ni@@U.VV.%0@@R.CONATIVE.OFF@@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@@U.STEM.MODIFIED@ VerbSuffixes;
+
+LEXICON TR-DO3SG-yi-PROG
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.%0@@R.CONATIVE.OFF@@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@ VerbSuffixes;
+
+LEXICON TR-DO3SG-yi-PROG-PlainStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.%0@@R.CONATIVE.OFF@@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@@U.STEM.PLAIN@ VerbSuffixes;
+
+LEXICON TR-DO3SG-yi-PROG-ModifiedStem
+@U.VALENCE.TRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@@U.VV.%0@@R.CONATIVE.OFF@@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@@U.STEM.MODIFIED@ VerbSuffixes;
 
 LEXICON TR-SS-0-IPFV
 @U.VALENCE.TRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.%0@@R.CONATIVE.OFF@ VerbSuffixes;
