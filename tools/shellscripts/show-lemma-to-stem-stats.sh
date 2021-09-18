@@ -28,7 +28,7 @@ $0 ~ /;/ && $0 ~ /:/ {
   if(n!=0)
     pot="POT("n")";
   else
-    pot="----";
+    pot="------";
   n=gsub("Imperfective \\+ Repetitive","&");
   if(n!=0)
     ipfvrept="IPFV+REPT("n")";
