@@ -1,0 +1,9 @@
+# Convert plain vowels without diacritics to have macrons
+regex [
+a -> ā ,
+e -> ē ,
+i -> ī ,
+o -> ō ,
+u -> ū
+] ;
+
