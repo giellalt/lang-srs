@@ -8,7 +8,11 @@
 
 gawk -v OUTPUT=$1 -F"\t" 'BEGIN { output=OUTPUT; }
 NF==5 {
+  # Standardizing certain characters
   gsub("’","'\''",$0);
+  gsub("ɂ","ʔ",$0);
+
+  # Assigning fields to variables
   eng[++nr]=$2;
   srs[nr]=$3;
   englem[nr]=$4; englems[$4]++;
