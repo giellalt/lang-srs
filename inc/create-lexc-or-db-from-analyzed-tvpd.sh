@@ -8,6 +8,7 @@
 
 gawk -v OUTPUT=$1 -F"\t" 'BEGIN { output=OUTPUT; }
 NF==5 {
+  gsub("’","'\''",$0);
   eng[++nr]=$2;
   srs[nr]=$3;
   englem[nr]=$4; englems[$4]++;
@@ -120,7 +121,7 @@ NF==5 {
   defanl[eng[nr]]=anl[nr];
 
   # Figuring our possible lemmas
-  if((match(anl[nr],"\\+SbjSg3(\\+|$)")!=0 && index("DObj",anl[nr])==0) || (match(anl[nr],"\\+SbjSg3(\\+|$)")!=0 && index(anl[nr],"+DObjSg3")!=0))
+  if(match(anl[nr],"\\+SbjSg3(\\+|$)")!=0 && (index(anl[nr],"DObj")==0 || (match(anl[nr],"\\+SbjSg3(\\+|$)")!=0 && index(anl[nr],"+DObjSg3")!=0)))
     {
       if(index(anl[nr],"+Ipfv")!=0 && index(anl[nr],"+Rep")==0)
         { ipfv[englem[nr]]=$3; ipfvdef[englem[nr]]=$2; }
