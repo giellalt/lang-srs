@@ -11,7 +11,7 @@ NF==5 {
   # Standardizing certain characters
   gsub("’","'\''",$0);
   gsub("ɂ","ʔ",$0);
-  print;
+
   # Assigning fields to variables
   eng[++nr]=$2;
   srs[nr]=$3;
@@ -143,6 +143,7 @@ NF==5 {
 END {
   # Creating srs dictionary DB in JSON format
   db=sprintf("[\n");
+
   for(i in englems)
      { if(i in ipfv)
          { lemdef=ipfvdef[i]; srslem=ipfv[i]; }
@@ -160,6 +161,12 @@ END {
                   { lemdef=progdef[i]; srslem=prog[i]; }
                 else
                   { lemdef=""; srslem=""; }
+
+       if(i in ipfv) stems="Ipfv: " ipfv[i]; else stems="Ipfv: –";
+       if(i in pfv) stems=stems " | Pfv: "pfv[i]; else stems=stems " | Pfv: –";
+       if(i in prog) stems=stems " | Prog: "prog[i]; else stems=stems " | Prog: –";
+       if(i in ipfvrept) stems=stems " | Ipfv+Rep: "ipfvrept[i]; else stems=stems " | Ipfv+Rep: –";
+       if(i in pfvrept) stems=stems " | Pfv+Rep: "pfvrept[i]; else stems=stems " | Pfv+Rep: –";
 
 ##### Template for srs dictionary DB in json #####
 # [
@@ -195,6 +202,7 @@ END {
              { slugs[srsslug]=1; slugix=""; }
            else
              slugix="_" ++slugs[srsslug];
+
            db=db sprintf("  {\n");
            db=db sprintf("    \"analysis\": [\n");
            db=db sprintf("      [],\n");
@@ -205,6 +213,9 @@ END {
            db=db sprintf("\"+%s\"]\n", tags[t]);
            db=db sprintf("    ],\n");
            db=db sprintf("    \"head\": \"%s\",\n", srslem);
+           db=db sprintf("    \"linguistInfo\": {\n");
+           db=db sprintf("      \"stem\": \"%s\"\n", stems);
+           db=db sprintf("    },\n");
            db=db sprintf("    \"paradigm\": \"%s%s\",\n", tags[1], tags[2]);
            db=db sprintf("    \"senses\": [\n");
            db=db sprintf("      {\n");
