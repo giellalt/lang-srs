@@ -11,7 +11,7 @@ NF==5 {
   # Standardizing certain characters
   gsub("’","'\''",$0);
   gsub("ɂ","ʔ",$0);
-
+  print;
   # Assigning fields to variables
   eng[++nr]=$2;
   srs[nr]=$3;
@@ -124,8 +124,8 @@ NF==5 {
 
   defanl[eng[nr]]=anl[nr];
 
-  # Figuring our possible lemmas
-  if(match(anl[nr],"\\+SbjSg3(\\+|$)")!=0 && (index(anl[nr],"DObj")==0 || (match(anl[nr],"\\+SbjSg3(\\+|$)")!=0 && index(anl[nr],"+DObjSg3")!=0)))
+  # Figuring out Sg3 forms for each of the aspect types as possible lemma candidates
+  if((match(anl[nr],"\\+SbjSg3(\\>|$)")!=0 && index(anl[nr],"DObj")==0) || (match(anl[nr],"\\+SbjSg3(\\>|$)")!=0 && index(anl[nr],"+DObjSg3")!=0))
     {
       if(index(anl[nr],"+Ipfv")!=0 && index(anl[nr],"+Rep")==0)
         { ipfv[englem[nr]]=$3; ipfvdef[englem[nr]]=$2; }
@@ -231,11 +231,11 @@ END {
        if(englem[i] in ipfv)
          lemma=ipfv[englem[i]];
        else
-         if(englem[i] in ipfvrept)
-           lemma=ipfvrept[englem[i]];
+         if(englem[i] in pfv)
+           lemma=pfv[englem[i]];
          else
-           if(englem[i] in pfv)
-             lemma=pfv[englem[i]];
+           if(englem[i] in ipfvrept)
+             lemma=ipfvrept[englem[i]];
            else
              if(englem[i] in pfvrept)
                lemma=pfvrept[englem[i]];
