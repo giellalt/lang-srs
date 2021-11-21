@@ -4,9 +4,9 @@
 # USAGE:
 # cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh lexc | less
 #   OR
-# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh db | less
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh json | less
 
-gawk -v OUTPUT=$1 -F"\t" 'BEGIN { output=OUTPUT; }
+gawk -v OUTPUT=$1 -v FORMS=$2 -F"\t" 'BEGIN { output=OUTPUT; forms=FORMS; }
 NF==5 {
   # Standardizing certain characters
   gsub("’","'\''",$0);
@@ -162,6 +162,9 @@ END {
                 else
                   { lemdef=""; srslem=""; }
 
+       if(lemdef!="")
+           srslems[i]=srslem;
+  
        if(i in ipfv) stems="Ipfv: " ipfv[i]; else stems="Ipfv: –";
        if(i in pfv) stems=stems " | Pfv: "pfv[i]; else stems=stems " | Pfv: –";
        if(i in prog) stems=stems " | Prog: "prog[i]; else stems=stems " | Prog: –";
@@ -228,9 +231,46 @@ END {
            db=db sprintf("\n");
          }
      }
+
+  if(forms=="all")
+    for(i=1; i<=nr; i++)
+       if(index(anl[i],"SbjSg3")==0 && (englem[i] in srslems) && index(srs[i]," ")==0)
+         { 
+           # printf "FORMOF: 1:%s 2:%s 3:%s 4:%s\n", srs[i], eng[i], srslems[englem[i]], anl[i];
+           srslem=srslems[englem[i]];
+           lemdef=eng[i];
+           ntags=split(anl[i],tags,"\\+");
+           srsslug=srs[i]; gsub(" ","_",srsslug);
+           if(!(srsslug in slugs))
+             { slugs[srsslug]=1; slugix=""; }
+           else
+             slugix="@" ++slugs[srsslug];
+
+           db=db sprintf("  {\n");
+           db=db sprintf("    \"analysis\": [\n");
+           db=db sprintf("      [],\n");
+           db=db sprintf("     \"%s\",\n", srslem);
+           db=db sprintf("      [");
+           for(t=1; t<=ntags-1; t++)
+              db=db sprintf("\"+%s\", ", tags[t]);
+           db=db sprintf("\"+%s\"]\n", tags[t]);
+           db=db sprintf("    ],\n");
+           db=db sprintf("    \"formOf\": \"%s\",\n",  srslem);
+           db=db sprintf("    \"head\": \"%s\",\n", srs[i]);
+           db=db sprintf("    \"senses\": [\n");
+           db=db sprintf("      {\n");
+           db=db sprintf("        \"definition\": \"%s\",\n", lemdef);
+           db=db sprintf("        \"sources\": [\"TVPD\"]\n");
+           db=db sprintf("      }\n");
+           db=db sprintf("    ],\n");
+           db=db sprintf("    \"slug\": \"%s%s\"\n", srsslug, slugix);
+           db=db sprintf("  },\n");
+           db=db sprintf("\n");
+         }
+
   db=db sprintf("]\n");
   sub(",\n\n\\]\n$", "\n]", db);
-  if(output=="db")
+  if(output=="json")
     print db;
 
   # Creating LEXC source for FST
@@ -269,4 +309,25 @@ END {
 
    if(output=="lexc")
      printf "%s\n%s", multichar_symbols, lexc;
+
+   # Creating FST transcriptor between English translation phrases and Tsuutina word-forms
+   fst="LEXICON Root\n";
+   for(i=1; i<=nr; i++)
+      {
+        engtr=eng[i]; gsub(" ","% ",engtr);
+        srslem=srslems[englem[i]]; gsub(" ","% ",srslem);
+        ntags=split(anl[i],tags,"\\+");
+           for(j=1; j<=ntags; j++)
+              multichars["+"tags[j]]++;
+
+        fst=fst sprintf("%s:%s+%s # ;\n", engtr, srslem, anl[i]);
+      }
+
+   PROCINFO["sorted_in"]="@ind_str_asc";
+   for(j in multichars)
+      multichar_symbols=multichar_symbols sprintf("%s\n", j);
+
+   if(output=="fst")
+     printf "%s\n%s", multichar_symbols, fst;
+
 }'
