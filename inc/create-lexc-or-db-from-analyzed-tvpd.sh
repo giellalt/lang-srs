@@ -33,10 +33,10 @@ NF==5 {
   gsub("ɂ","ʔ",$0);
 
   # Assigning fields to variables
-  eng[++nr]=$2;
-  srs[nr]=$3;
-  englem[nr]=$4; englems[$4]++;
-  anl[nr]=$5;
+  eng[++nr]=$2; # English translation phrase corresponding to inflected word-form
+  srs[nr]=$3;   # Tsuutina wordform
+  englem[nr]=$4; englems[$4]++; # English translated phrase corresponding to lemma word-form
+  anl[nr]=$5;   # Analysis of the English translated phrase with the eng2crk transcriptor 
 
   # Interpreting cases with given NP objects in translations as Transitive, with DObj3Sg tag:
   # this book, ones rope, a headache,  his/her/its voice, a hoop, a house, water, candy 
@@ -118,6 +118,11 @@ NF==5 {
   # sub("\\+Rept","+Rep",anl[nr]);
   # if(index(anl[nr],"+Rep")!=0 && index(anl[nr],"+Ipfv")==0 && index(anl[nr],"+Pfv")==0)
   #   sub("\\+Rep","+Ipfv&",anl[nr]);
+
+  # Removing DO tags when resulting with duplicates in phrases
+  # Needs more thinking
+  # if(gsub("\\<you_sg\\>","&",eng[nr])>=2 || gsub("\\<you_pl\\>","&",eng[nr])>=2 || gsub("\\<someone)\\>","&",eng[nr])>=2)
+  #   sub("\\+(2SgO|2PlO|XO)","",anl[nr]);
 
   # Interpreting engcrk subject/object tags as engsrs ones
   sub("\\+[^\\+]+O","+DObj&",anl[nr]); sub("DObj\\+","DObj",anl[nr]); sub("O\\+","+",anl[nr]); sub("O$","",anl[nr]);
