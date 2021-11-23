@@ -264,6 +264,7 @@ END {
            else
              slugix="_" ++slugs[srsslug];
            sub("[\\(]?something[\\)]? \\(something\\)","(something)",lemdef);
+           gsub("="," ",lemdef);
 
            db=db sprintf("  {\n");
            db=db sprintf("    \"analysis\": [\n");
@@ -371,8 +372,10 @@ END {
                          else
                            lemma="";
        if(lemma!="")
-         { gsub("[ ]+","% ",lemma); gsub("[ ]+","% ",srs[i]);
-           lexc=lexc sprintf("%s+%s:%s # ; ! \"%s\"\n", lemma, anl[i], srs[i], eng[i]);
+         {
+           comment=eng[i]; gsub("="," ",comment);
+           gsub("[ ]+","% ",lemma); gsub("[ ]+","% ",srs[i]);
+           lexc=lexc sprintf("%s+%s:%s # ; ! \"%s\"\n", lemma, anl[i], srs[i], comment);
            ntags=split(anl[i],tags,"\\+");
            for(j=1; j<=ntags; j++)
               multichars["+"tags[j]]++;
