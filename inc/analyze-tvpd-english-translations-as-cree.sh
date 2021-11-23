@@ -74,7 +74,7 @@ gawk -v FST=$1 'BEGIN { engfst=FST; }
       n=split(lemma,w," ");
       class="";
       while(match(w[n],"^\\(.+\\)$")!=0)
-         { if(match(w[n],"[[:upper:]]")==0) class=" " w[n] class; n--; }
+         { if(match(w[n],"[[:upper:]]")==0 && index(paradigm[1],w[n])==0) class=" " w[n] class; n--; }
       
       if(index(line,"+?")!=0)
         printf "%i\t%s\t%s\t+?\n", NR, paradigm[1], tolower(src);
