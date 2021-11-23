@@ -4,7 +4,7 @@
 # USAGE:
 #
 # 1. Word-list-based LEXC code for a srs FST analyzer
-# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh srslexc > words.lexc
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh srslexc > srswords.lexc
 #
 #   OR
 #
@@ -19,12 +19,12 @@
 #   OR
 #
 # 4. Transcriptor from Tsuut'ina lemmas + features to full English translations
-# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc > srseng.lexc
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc > srs2eng.lexc
 #
 #   OR
 #
 # 5. Transcriptor from English phrases (with all alternatives) to matching Tsuut'ina lemmas + features
-# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc all > engsrs.lexc
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc all > eng2srs.lexc
 
 gawk -v OUTPUT=$1 -v FORMS=$2 -F"\t" 'BEGIN { output=OUTPUT; forms=FORMS; }
 NF==5 {
