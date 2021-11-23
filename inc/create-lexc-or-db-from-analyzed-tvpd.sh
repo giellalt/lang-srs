@@ -1,10 +1,30 @@
 #!/bin/sh
 
-# OUTPUT: lexc OR db
+# OUTPUT: srslexc OR json (AND all) OR englexc (AND all)
 # USAGE:
-# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh lexc | less
+#
+# 1. Word-list-based LEXC code for a srs FST analyzer
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh srslexc > words.lexc
+#
 #   OR
-# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh json | less
+#
+# 2. Lexical database with lemma word-forms as entries
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh json > srseng.importjson
+#
+#   OR
+#
+# 3. Lexical database with lemma and all other word-forms as entries (not yet producing valid content)
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh json all | less
+#
+#   OR
+#
+# 4. Transcriptor from Tsuut'ina lemmas + features to full English translations
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc > srseng.lexc
+#
+#   OR
+#
+# 5. Transcriptor from English phrases (with all alternatives) to matching Tsuut'ina lemmas + features
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc all > engsrs.lexc
 
 gawk -v OUTPUT=$1 -v FORMS=$2 -F"\t" 'BEGIN { output=OUTPUT; forms=FORMS; }
 NF==5 {
@@ -127,6 +147,8 @@ NF==5 {
   # Figuring out Sg3 forms for each of the aspect types as possible lemma candidates
   if((match(anl[nr],"\\+SbjSg3(\\>|$)")!=0 && index(anl[nr],"DObj")==0) || (match(anl[nr],"\\+SbjSg3(\\>|$)")!=0 && index(anl[nr],"+DObjSg3")!=0))
     {
+    if(index(anl[nr],"+Neg")==0)
+    {
       if(index(anl[nr],"+Ipfv")!=0 && index(anl[nr],"+Rep")==0)
         { ipfv[englem[nr]]=$3; ipfvdef[englem[nr]]=$2; }
       if(index(anl[nr],"+Pfv")!=0 && index(anl[nr],"+Rep")==0)
@@ -138,14 +160,30 @@ NF==5 {
       if(index(anl[nr],"+Prog")!=0 && index(anl[nr],"+Rep")==0 && index(anl[nr],"+Ipfv")==0 && index(anl[nr],"+Pfv")==0)
         { prog[englem[nr]]=$3; progdef[englem[nr]]=$2; }
     }
+    else
+    {
+      if(index(anl[nr],"+Ipfv")!=0 && index(anl[nr],"+Rep")==0)
+        { ipfvneg[englem[nr]]=$3; ipfnegvdef[englem[nr]]=$2; }
+      if(index(anl[nr],"+Pfv")!=0 && index(anl[nr],"+Rep")==0)
+        { pfvneg[englem[nr]]=$3; pfvnegdef[englem[nr]]=$2; }
+      if(index(anl[nr],"+Rep")!=0 && index(anl[nr],"+Pfv")==0)
+        { ipfvreptneg[englem[nr]]=$3; ipfvreptnegdef[englem[nr]]=$2; }
+      if(index(anl[nr],"+Rep")!=0 && index(anl[nr],"+Pfv")!=0)
+        { pfvreptneg[englem[nr]]=$3; pfvreptnegdef[englem[nr]]=$2; }
+      if(index(anl[nr],"+Prog")!=0 && index(anl[nr],"+Rep")==0 && index(anl[nr],"+Ipfv")==0 && index(anl[nr],"+Pfv")==0)
+        { progneg[englem[nr]]=$3; prognegdef[englem[nr]]=$2; }
+    }
+    }
 }
 
 END {
   # Creating srs dictionary DB in JSON format
   db=sprintf("[\n");
 
+  # Determining lemma form according to following hierarchy
   for(i in englems)
-     { if(i in ipfv)
+     {
+       if(i in ipfv)
          { lemdef=ipfvdef[i]; srslem=ipfv[i]; }
        else
          if(i in pfv)
@@ -160,7 +198,22 @@ END {
                 if(i in prog)
                   { lemdef=progdef[i]; srslem=prog[i]; }
                 else
-                  { lemdef=""; srslem=""; }
+                  if(i in ipfvneg)
+                    { lemdef=ipfvnegdef[i]; srslem=ipfvneg[i]; }
+                  else
+                    if(i in pfvneg)
+                      { lemdef=pfvnegdef[i]; srslem=pfvneg[i]; }
+                    else
+                      if(i in ipfvreptneg)
+                        { lemdef=ipfvreptnegdef[i]; srslem=ipfvreptneg[i]; }
+                      else
+                        if(i in pfvreptneg)
+                          { lemdef=pfvreptnegdef[i]; srslem=pfvreptneg[i]; }
+                        else
+                          if(i in progneg)
+                            { lemdef=prognegdef[i]; srslem=progneg[i]; }
+                          else
+                            { lemdef=""; srslem=""; }
 
        if(lemdef!="")
            srslems[i]=srslem;
@@ -171,30 +224,30 @@ END {
        if(i in ipfvrept) stems=stems " | Ipfv+Rep: "ipfvrept[i]; else stems=stems " | Ipfv+Rep: –";
        if(i in pfvrept) stems=stems " | Pfv+Rep: "pfvrept[i]; else stems=stems " | Pfv+Rep: –";
 
-##### Template for srs dictionary DB in json #####
-# [
-#   {
-#     "analysis": [
-#       [],
-#       "ànīyìgás",
-#       ["+V", "+O", "+Ipfv", "+Sbj3Sg", "+IObjSb3", "+IObjGiven"]
-#     ],
-#     "head": "ànīyìgás",
-#     "linguistInfo": {
-#       "stem": "à=_niyi.gás (i-IPFV)"
-#     },
-#     "paradigm": "VO",
-#     "senses": [
-#       {
-#         "definition": "he/she/it will bite him/her/it",
-#         "sources": ["OS"]
-#       }
-#     ],
-#     "slug": "ànīyìgás"
-#   },
-# ...
-# ]
-##### END TEMPLATE #####
+       ##### TEMPLATE for srs dictionary DB in json #####
+       # [
+       #   {
+       #     "analysis": [
+       #       [],
+       #       "ànīyìgás",
+       #       ["+V", "+O", "+Ipfv", "+Sbj3Sg", "+IObjSb3", "+IObjGiven"]
+       #     ],
+       #     "head": "ànīyìgás",
+       #     "linguistInfo": {
+       #       "stem": "à=_niyi.gás (i-IPFV)"
+       #     },
+       #     "paradigm": "VO",
+       #     "senses": [
+       #       {
+       #         "definition": "he/she/it will bite him/her/it",
+       #         "sources": ["OS"]
+       #       }
+       #     ],
+       #     "slug": "ànīyìgás"
+       #   },
+       # ...
+       # ]
+       ##### END TEMPLATE #####
 
        if(lemdef!="")
          # printf "%i: %s\t%s\t%s\n", ++k, srslem, lemdef, defanl[lemdef];
@@ -232,6 +285,7 @@ END {
          }
      }
 
+  # Addition of non-lemma inflected word forms as entries, if argument forms set to all
   if(forms=="all")
     for(i=1; i<=nr; i++)
        if(index(anl[i],"SbjSg3")==0 && (englem[i] in srslems) && index(srs[i]," ")==0)
@@ -275,9 +329,9 @@ END {
 
   # Creating LEXC source for FST
   lexc="LEXICON Root\n";
-  multichar_symbols="Multichar_Symbols\n";
   for(i=1; i<=nr; i++)
      if(aspect[nr]!="")
+     # Determining lemma according to above presented hierarchy
      { 
        if(englem[i] in ipfv)
          lemma=ipfv[englem[i]];
@@ -294,7 +348,22 @@ END {
                if(englem[i] in prog)
                  lemma=prog[englem[i]];
                else
-                 lemma="";
+                 if(englem[i] in ipfvneg)
+                   lemma=ipfvneg[englem[i]];
+                 else
+                   if(englem[i] in pfvneg)
+                     lemma=pfvneg[englem[i]];
+                   else
+                     if(englem[i] in ipfvreptneg)
+                       lemma=ipfvreptneg[englem[i]];
+                     else
+                       if(englem[i] in pfvreptneg)
+                         lemma=pfvreptneg[englem[i]];
+                       else
+                         if(englem[i] in progneg)
+                           lemma=progneg[englem[i]];
+                         else
+                           lemma="";
        if(lemma!="")
          { gsub("[ ]+","% ",lemma); gsub("[ ]+","% ",srs[i]);
            lexc=lexc sprintf("%s+%s:%s # ; ! \"%s\"\n", lemma, anl[i], srs[i], eng[i]);
@@ -303,31 +372,88 @@ END {
               multichars["+"tags[j]]++;
          }
      }
+   # Creating LEXC-initial list of multicharacter symbols
+   multichar_symbols="Multichar_Symbols\n";
    PROCINFO["sorted_in"]="@ind_str_asc";
    for(j in multichars)
       multichar_symbols=multichar_symbols sprintf("%s\n", j);
 
-   if(output=="lexc")
+   if(output=="srslexc")
      printf "%s\n%s", multichar_symbols, lexc;
 
    # Creating FST transcriptor between English translation phrases and Tsuutina word-forms
    fst="LEXICON Root\n";
    for(i=1; i<=nr; i++)
+      if(match(anl[i],"^V\\+")!=0)
       {
-        engtr=eng[i]; gsub(" ","% ",engtr);
-        srslem=srslems[englem[i]]; gsub(" ","% ",srslem);
+        srslem=srslems[englem[i]]; gsub(" ","_",srslem);
         ntags=split(anl[i],tags,"\\+");
            for(j=1; j<=ntags; j++)
               multichars["+"tags[j]]++;
 
-        fst=fst sprintf("%s:%s+%s # ;\n", engtr, srslem, anl[i]);
+        engtr=eng[i];
+        gsub("you_sg","you",engtr);
+        gsub("you_pl","you all",engtr);
+        gsub("someone_pl","people",engtr);
+        # print engtr;
+        sub("[\\(]?something[\\)]? \\(something\\)","(something)",engtr);
+        # print engtr;
+        if(forms=="all")
+          { gsub(" \\([^\\)]*\\)","[0|&]",engtr); # Turn parenthesized elements optional
+            # print engtr;
+            gsub(" ","_",engtr);
+            # print engtr;
+            gsub("\\([^/]+/[^\\)]+\\)","(&)",engtr); # Treat slash-separated elements as alternatives
+            gsub("\\(\\(","(_",engtr); # Reinterpret double parentheses
+            gsub("\\)\\)","_)",engtr);
+            gsub("/","|",engtr); # Swapping slash to regex OR pipe
+            # print engtr;
+            gsub("[^_]+\\|[^_\\[]+","[&]",engtr); # print engtr;
+            gsub("\\(_","(",engtr);
+            gsub("_\\)",")",engtr);
+            # print engtr;
+          }
+        fst=fst "< [";
+        if(forms=="all")
+          {
+            n=split(srslem,c,"");
+              for(j=1; j<=n; j++)
+                 fst=fst sprintf(" %s", c[j]);
+            for(j=1; j<=ntags; j++)
+               fst=fst sprintf(" \"+%s\"", tags[j]);
+            fst=fst " ] : [";
+            n=split(engtr,c,"");
+            for(j=1; j<=n; j++)
+               fst=fst sprintf(" %s", c[j]);
+            fst=fst sprintf(" ] > # ;\n");
+            # fst=fst sprintf("%s:%s+%s # ;\n", engtr, srslem, anl[i]);
+          }
+        else
+          {
+            n=split(engtr,c,"");
+            for(j=1; j<=n; j++)
+               fst=fst sprintf(" %s", c[j]);
+            fst=fst " ] : [";
+            n=split(srslem,c,"");
+              for(j=1; j<=n; j++)
+                 fst=fst sprintf(" %s", c[j]);
+            for(j=1; j<=ntags; j++)
+               fst=fst sprintf(" \"+%s\"", tags[j]);
+            fst=fst sprintf(" ] > # ;\n");
+            # fst=fst sprintf("%s:%s+%s # ;\n", engtr, srslem, anl[i]);
+          }
       }
+     gsub("[\\(\\)\\-]","%&",fst);
+     gsub("_","% ",fst);
+     if(forms!="all")
+       { gsub("   "," %  ",fst); gsub("/","%/",fst); }
+     else
+       gsub(" %[\\(\\)]","",fst);
+     gsub("\\| \\]","]",fst);
+     gsub("\\[ \\|","[",fst);
 
-   PROCINFO["sorted_in"]="@ind_str_asc";
-   for(j in multichars)
-      multichar_symbols=multichar_symbols sprintf("%s\n", j);
-
-   if(output=="fst")
+   # Outputting eng2srs transcriptor FST
+   if(output=="englexc")
      printf "%s\n%s", multichar_symbols, fst;
 
 }'
