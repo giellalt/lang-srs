@@ -263,6 +263,7 @@ END {
              { slugs[srsslug]=1; slugix=""; }
            else
              slugix="_" ++slugs[srsslug];
+           sub("[\\(]?something[\\)]? \\(something\\)","(something)",lemdef);
 
            db=db sprintf("  {\n");
            db=db sprintf("    \"analysis\": [\n");
