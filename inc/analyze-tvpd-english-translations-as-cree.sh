@@ -13,6 +13,7 @@ gawk -v FST=$1 'BEGIN { engfst=FST; }
 
   m=match($0,"<eng>([^<]+)</eng><srs>([^<]+)</srs>",paradigm);
   flookup="flookup -i -b -x "engfst;
+
   if(m!=0 && paradigm[1]!="")
     {
       gsub("\\<i\\>","I",paradigm[1]);
@@ -31,6 +32,7 @@ gawk -v FST=$1 'BEGIN { engfst=FST; }
       gsub("\\<(him/her/it|him/her)\\>","him",tr);
       gsub("\\<it/them\\>","it",tr);
       gsub("\\<something(/s)?\\>","it",tr);
+      gsub("="," ",tr);
 
       gsub("[ ]+"," ",tr);
 

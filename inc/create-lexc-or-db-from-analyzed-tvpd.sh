@@ -405,7 +405,8 @@ END {
         sub("[\\(]?something[\\)]? \\(something\\)","(something)",engtr);
         # print engtr;
         if(forms=="all")
-          { gsub(" \\([^\\)]*\\)","[0|&]",engtr); # Turn parenthesized elements optional
+          {
+            gsub(" \\([^\\)]*\\)","[0|&]",engtr); # Turn parenthesized elements optional
             # print engtr;
             gsub(" ","_",engtr);
             # print engtr;
@@ -417,6 +418,7 @@ END {
             gsub("[^_]+\\|[^_\\[]+","[&]",engtr); # print engtr;
             gsub("\\(_","(",engtr);
             gsub("_\\)",")",engtr);
+            gsub("=","_",engtr);
             # print engtr;
           }
         fst=fst "< [";
@@ -436,6 +438,7 @@ END {
           }
         else
           {
+            gsub("="," ",engtr);
             n=split(engtr,c,"");
             for(j=1; j<=n; j++)
                fst=fst sprintf(" %s", c[j]);
