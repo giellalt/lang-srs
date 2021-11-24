@@ -25,6 +25,11 @@
 #
 # 5. Transcriptor from English phrases (with all alternatives) to matching Tsuut'ina lemmas + features
 # cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc all > eng2srs.lexc
+#
+#   OR
+#
+# 6. Transcriptor from English phrases (with all alternatives) to matching English lexemes + features
+# cat starlight_eng_srs_anl4.tsv| inc/create-lexc-or-db-from-analyzed-tvpd.sh englexc keys > eng2srs.lexc
 
 gawk -v OUTPUT=$1 -v FORMS=$2 -F"\t" 'BEGIN { output=OUTPUT; forms=FORMS; }
 NF==5 {
@@ -401,13 +406,14 @@ END {
               multichars["+"tags[j]]++;
 
         engtr=eng[i];
+        engkeys=englem[i];
         gsub("you_sg","you",engtr);
         gsub("you_pl","you all",engtr);
         gsub("someone_pl","people",engtr);
         # print engtr;
         sub("[\\(]?something[\\)]? \\(something\\)","(something)",engtr);
         # print engtr;
-        if(forms=="all")
+        if(forms=="all" || forms=="keys")
           {
             gsub(" \\([^\\)]*\\)","[0|&]",engtr); # Turn parenthesized elements optional
             # print engtr;
@@ -421,18 +427,37 @@ END {
             gsub("[^_]+\\|[^_\\[]+","[&]",engtr); # print engtr;
             gsub("\\(_","(",engtr);
             gsub("_\\)",")",engtr);
-            gsub("=","_",engtr);
+            gsub("="," ",engtr);
+            gsub("[\\(\\)]","",engtr);
+            # gsub("[ ]+"," ",engtr);
             # print engtr;
           }
-        fst=fst "< [";
-        if(forms=="all")
+        if(forms=="keys")
           {
+            gsub("\\<(I|i|you_sg|you_pl|he|she|it|he/she|he/she/it|we|they|someone|someone_sg|someone_pl|me|him|her|him/her|him/her/it|us|them)\\>","",engkeys);
+            gsub("\\<each and every one( of\\>)?","",engkeys);
+            gsub("\\<all\\>","",engkeys);
+            gsub("\\<will ","",engkeys);
+            gsub("\\<(am|is|are|was|were|been)\\>","be",engkeys);
+            gsub("\\<again and again\\>","",engkeys);
+            gsub("/"," ",engkeys); gsub("[\\(\\)]","",engkeys); gsub("="," ",engkeys);
+            gsub("[ _]+"," ",engkeys); sub("^[ ]+","",engkeys); sub("[ ]+$","",engkeys);
+            # print engkeys;
+          }
+
+        # Constructing together a single LEXC line
+        fst=fst "< [";
+        if(forms=="all" || forms=="keys")
+          {
+            if(forms=="keys")
+              srslem=engkeys;
             n=split(srslem,c,"");
               for(j=1; j<=n; j++)
                  fst=fst sprintf(" %s", c[j]);
             for(j=1; j<=ntags; j++)
                fst=fst sprintf(" \"+%s\"", tags[j]);
             fst=fst " ] : [";
+            gsub("[\\(\\)]","",engtr);
             n=split(engtr,c,"");
             for(j=1; j<=n; j++)
                fst=fst sprintf(" %s", c[j]);
@@ -455,10 +480,11 @@ END {
             # fst=fst sprintf("%s:%s+%s # ;\n", engtr, srslem, anl[i]);
           }
       }
+     gsub("[_]+","% ",fst);
      gsub("[\\(\\)\\-]","%&",fst);
-     gsub("_","% ",fst);
+     gsub("   "," %  ",fst);
      if(forms!="all")
-       { gsub("   "," %  ",fst); gsub("/","%/",fst); }
+       gsub("/","%/",fst);
      else
        gsub(" %[\\(\\)]","",fst);
      gsub("\\| \\]","]",fst);
