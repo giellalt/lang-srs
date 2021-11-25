@@ -415,6 +415,12 @@ END {
         # print engtr;
         if(forms=="all" || forms=="keys")
           {
+            gsub("\\<will\\>","(&)",engtr); # Turn auxiliary <will> optional (allowing recognition of both present/future tense)
+            # gsub("\\(will\\) [^\\/]+","&Xs",engtr); gsub("\\(will\\) [^ ]+","&Xs",engtr);
+            # gsub("yXs","i(es)",engtr); gsub("sXs","s(es)",engtr);  gsub("zXs","z(es)",engtr);  gsub("xXs","x(es)",engtr);  gsub("shXs","sh(es)",engtr);  gsub("chXs","ch(es)",engtr);
+            # gsub("Xs","(s)",engtr);
+            # gsub("\\(will\\) [^ ]+(s|z|x|sh|ch)","&Xes",engtr); gsub("\\(will\\) [^ X]+\\>","&Xs",engtr);
+            # gsub("X[^ ]+","(&)",engtr); gsub("X","",engtr);
             gsub(" \\([^\\)]*\\)","[0|&]",engtr); # Turn parenthesized elements optional
             # print engtr;
             gsub(" ","_",engtr);
