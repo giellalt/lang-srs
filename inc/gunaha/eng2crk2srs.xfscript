@@ -1,0 +1,81 @@
+load inc/english-phrase-analysis.fomabin
+define eng2crk
+
+! regex [ {to } {him/her}|him|her ] ;
+
+define crkSubjectTags [ "+0Sg" | "+1Sg" | "+2Sg" | "+3Sg" | "+4Sg" | "+1Pl" | "+21Pl" | "+2Pl" | "+3Pl" | "+4Pl" | "+4Sg/Pl" | "+5Sg/Pl" | "+X" ] ;
+
+define crkObjectTags [ "+0SgO" | "+1SgO" | "+2SgO" | "+3SgO" | "+4SgO" | "+1PlO" | "+21PlO" | "+2PlO" | "+3PlO" | "+4PlO" | "+4Sg/PlO" | "+5Sg/PlO" | "+XO" ] ;
+
+define srsSubjectTags [ "+SbjSg1" | "+SbjSg2" | "+SbjSg3" | "+SbjSg4" | "+SbjPl1" | "+SbjPl2" | "+SbjPl3" ] ;
+
+define srsObjectTags [ "+DObjSg1" | "+DObjSg2" | "+DObjSg3" | "+DObjSg4" | "+DObjPl1" | "+DObjPl2" | "+DObjPl3" ] ;
+
+define srsIObjectTags [ "+IObjSg3" | "+IObjPl3" ] ;
+
+define crkVerbClasses [ "+II" | "+AI" | "+TI" | "+TA" ] ;
+
+regex [ [ "+TI" | "+TA" ] -> "+D" || _ ?* crkSubjectTags crkObjectTags srsIObjectTags ] ;
+define DitransitiveTag
+
+regex [ [ "+TI" | "+TA" ] -> "+T" || _ ?* crkSubjectTags crkObjectTags .#. ] ;
+define TransitiveTag
+
+regex [ [ "+AI" | "+II" ] -> "+I" || _ ?* crkSubjectTags .#. ] ;
+define IntransitiveTag
+
+define ValencyTag [ DitransitiveTag .o. TransitiveTag .o. IntransitiveTag ] ;
+
+regex [ [ "+Def" | "+Fut" | "+Int" ] -> "+Ipfv" || _ \[ "+Prt" | "+Prog" ]* .#. ] ;
+define ImperfectiveTag
+
+regex [ [ "+Prt" ] -> "+Pfv" || _ \[ "+Prog" ]* .#. ] ;
+define PerfectiveTag
+
+regex [ [ "+Prs" | "+Prt" | "+Fut" | "+Int" ] -> 0 || _ ?* "+Prog" ] ;
+define ProgressiveTag
+
+regex [ [..] -> "+Ipfv" || [ "+D" | "+T" | "+I" ] _ \[ "+Ipfv" | "+Pfv" | "+Prog" ] ] ;
+define DefaultAspectTag
+
+define AspectTag [ ImperfectiveTag .o. PerfectiveTag .o. ProgressiveTag .o. DefaultAspectTag ] ;
+
+regex [ "+1Sg" -> "+SbjSg1"
+,, "+2Sg" -> "+SbjSg2"
+,, "+3Sg" -> "+SbjSg3"
+,, "+X" -> "+SbjSg4"
+,, [ "+1Pl" | "+21Pl" ] -> "+SbjPl1"
+,, "+2Pl" -> "+SbjPl2"
+,, [ "+3Pl" | "+4Sg/Pl" | "+5Sg/Pl" ] -> "+SbjPl3"
+] ;
+define SubjectConversion
+
+regex [ "+1SgO" -> "+DObjSg1"
+,, "+2SgO" -> "+DObjSg2"
+,, [ "+0SgO" | "+3SgO" ] -> "+DObjSg3"
+,, "+XO" -> "+DObjSg4"
+,, [ "+1PlO" | "+21PlO" ] -> "+DObjPl1"
+,, "+2PlO" -> "+SbjPl2"
+,, [ "+3PlO" | "+4Sg/PlO" | "+5Sg/Pl" ] -> "+DObjPl3"
+] ;
+define ObjectConversion
+
+regex [ [ {to him} | {to her} ] -> {IObjSg} ,, {to them} -> {IObjPl} ] ;
+define crkIObj
+
+regex [ [ [..] -> "+IObjSg3" || {IObjSg} ?* _ .#. ]
+.o. [  [..] -> "+IObjPl3" || {IObjPl} ?* _ .#. ] ]
+.o. [ [ {IObjSg} | {IObjPl} ] -> 0 ]
+;
+define srsIObj
+
+set flag-is-epsilon ON
+
+regex [ crkIObj
+.o. eng2crk
+.o. ValencyTag
+.o. AspectTag
+.o. SubjectConversion
+.o. ObjectConversion
+.o. srsIObj
+] ;
