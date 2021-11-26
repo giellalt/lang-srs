@@ -1,8 +1,6 @@
 load inc/english-phrase-analysis.fomabin
 define eng2crk
 
-! regex [ {to } {him/her}|him|her ] ;
-
 define crkSubjectTags [ "+0Sg" | "+1Sg" | "+2Sg" | "+3Sg" | "+4Sg" | "+1Pl" | "+21Pl" | "+2Pl" | "+3Pl" | "+4Pl" | "+4Sg/Pl" | "+5Sg/Pl" | "+X" ] ;
 
 define crkObjectTags [ "+0SgO" | "+1SgO" | "+2SgO" | "+3SgO" | "+4SgO" | "+1PlO" | "+21PlO" | "+2PlO" | "+3PlO" | "+4PlO" | "+4Sg/PlO" | "+5Sg/PlO" | "+XO" ] ;
@@ -15,13 +13,13 @@ define srsIObjectTags [ "+IObjSg3" | "+IObjPl3" ] ;
 
 define crkVerbClasses [ "+II" | "+AI" | "+TI" | "+TA" ] ;
 
-regex [ [ "+TI" | "+TA" ] -> "+D" || _ ?* crkSubjectTags crkObjectTags srsIObjectTags ] ;
+regex [ [ "+TI" | "+TA" ] -> "+D" || _ ?* crkSubjectTags crkObjectTags srsIObjectTags ( "+Neg" ) ] ;
 define DitransitiveTag
 
-regex [ [ "+TI" | "+TA" ] -> "+T" || _ ?* crkSubjectTags crkObjectTags .#. ] ;
+regex [ [ "+TI" | "+TA" ] -> "+T" || _ ?* crkSubjectTags crkObjectTags ( "+Neg" ) .#. ] ;
 define TransitiveTag
 
-regex [ [ "+AI" | "+II" ] -> "+I" || _ ?* crkSubjectTags .#. ] ;
+regex [ [ "+AI" | "+II" ] -> "+I" || _ ?* crkSubjectTags ( "+Neg" ) .#. ] ;
 define IntransitiveTag
 
 define ValencyTag [ DitransitiveTag .o. TransitiveTag .o. IntransitiveTag ] ;
@@ -63,17 +61,43 @@ define ObjectConversion
 regex [ [ {to him} | {to her} ] -> {IObjSg} ,, {to them} -> {IObjPl} ] ;
 define crkIObj
 
-regex [ [ [..] -> "+IObjSg3" || {IObjSg} ?* _ .#. ]
-.o. [  [..] -> "+IObjPl3" || {IObjPl} ?* _ .#. ] ]
+regex [ [..] -> "+IObjSg3" || {IObjSg} ?* _ ( "+Neg" ) .#. ]
+.o.  [ [..] -> "+IObjPl3" || {IObjPl} ?* _ ( "+Neg" ) .#. ]
 .o. [ [ {IObjSg} | {IObjPl} ] -> 0 ]
 ;
 define srsIObj
+
+regex [ [..] -> "+Neg" || "+Neg" ?* _ .#. ] .o. [ "+Neg" -> 0 || _ \.#. ] ;
+define finalizeNeg
+
+! regex [ {IObjSg} -> "@P.IObj.Sg@" ] .o. [ {IObjPl} -> "@P.IObj.Pl@" ]
+! .o. [ [..] -> "+IObjSg3" "@R.IObj.Sg@" | "@D.IObj.Sg@" || _ .#. ]
+! .o. [ [..] -> "+IObjPl3" "@R.IObj.Pl@" | "@D.IObj.Pl@" || _ .#. ]
+! ;
+! define srsIObj
+
+! regex [ [ {to him} | {to her} ] -> "@P.IObj.Sg@" ,, {to them} -> "@P.IObj.Pl@" ] ;
+! define crkIObj
+! 
+! regex [ [..] -> "+IObjSg3" "@R.IObj.Sg@" | "@D.IObj.Sg@" || _ .#. ]
+! .o. [ [..] -> "+IObjPl3" "@R.IObj.Pl@" | "@D.IObj.Pl@" || _ .#. ]
+! ;
+! define srsIObj
 
 set flag-is-epsilon ON
 
 regex [ crkIObj
 .o. eng2crk
 .o. srsIObj
+.o. finalizeNeg
+] ;
+
+twosided flag-diacritics
+define crk2srsIObj
+
+set flag-is-epsilon ON
+
+regex [ crk2srsIObj
 .o. ValencyTag
 .o. AspectTag
 .o. SubjectConversion
