@@ -73,9 +73,9 @@ set flag-is-epsilon ON
 
 regex [ crkIObj
 .o. eng2crk
+.o. srsIObj
 .o. ValencyTag
 .o. AspectTag
 .o. SubjectConversion
 .o. ObjectConversion
-.o. srsIObj
 ] ;
