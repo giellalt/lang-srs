@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Usage:
-# cat ~/GDrive/Tsuut\'ina/Starlight2.xml |
+## cat ~/GDrive/Tsuut\'ina/Starlight2.xml |
+# cat ~/altlab2/srs/inc/TVPD1.xml |
 # inc/analyze-tvpd-english-translations-as-cree.sh ../lang-crk/english-phrase-analysis.fomabin
 # | less
 
