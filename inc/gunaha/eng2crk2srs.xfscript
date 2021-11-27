@@ -16,7 +16,7 @@ define crkVerbClasses [ "+II" | "+AI" | "+TI" | "+TA" ] ;
 regex [ [ "+TI" | "+TA" ] -> "+D" || _ ?* crkSubjectTags crkObjectTags srsIObjectTags ( "+Neg" ) ] ;
 define DitransitiveTag
 
-regex [ [ "+TI" | "+TA" ] -> "+T" || _ ?* crkSubjectTags crkObjectTags ( "+Neg" ) .#. ] ;
+regex [ [ "+TI" | "+TA" ] -> "+T" || _ ?* crkSubjectTags [ crkObjectTags | srsIObjectTags ] ( "+Neg" ) .#. ] ;
 define TransitiveTag
 
 regex [ [ "+AI" | "+II" ] -> "+I" || _ ?* crkSubjectTags ( "+Neg" ) .#. ] ;
@@ -24,19 +24,22 @@ define IntransitiveTag
 
 define ValencyTag [ DitransitiveTag .o. TransitiveTag .o. IntransitiveTag ] ;
 
-regex [ [ "+Def" | "+Fut" | "+Int" ] -> "+Ipfv" || _ \[ "+Prt" | "+Prog" ]* .#. ] ;
+regex [ "+Prog" -> 0 || _ ?* "+Rept" ?* .#. ] ;
+define RepetitiveTag
+
+regex [ [ "+Def" | "+Fut" | "+Int" | "+Cond" | "+Inf" ] -> "+Ipfv" || _ \[ "+Prog" ]* .#. ] ;
 define ImperfectiveTag
 
 regex [ [ "+Prt" ] -> "+Pfv" || _ \[ "+Prog" ]* .#. ] ;
 define PerfectiveTag
 
-regex [ [ "+Prs" | "+Prt" | "+Fut" | "+Int" ] -> 0 || _ ?* "+Prog" ] ;
+regex [ [ "+Prs" | "+Prt" | "+Fut" | "+Int" | "+Cond" | "+Inf" ] -> 0 || _ ?* "+Prog" ] ;
 define ProgressiveTag
 
 regex [ [..] -> "+Ipfv" || [ "+D" | "+T" | "+I" ] _ \[ "+Ipfv" | "+Pfv" | "+Prog" ] ] ;
 define DefaultAspectTag
 
-define AspectTag [ ImperfectiveTag .o. PerfectiveTag .o. ProgressiveTag .o. DefaultAspectTag ] ;
+define AspectTag [ RepetitiveTag .o. ImperfectiveTag .o. PerfectiveTag .o. ProgressiveTag .o. DefaultAspectTag ] ;
 
 regex [ "+1Sg" -> "+SbjSg1"
 ,, "+2Sg" -> "+SbjSg2"
@@ -69,6 +72,9 @@ define srsIObj
 
 regex [ [..] -> "+Neg" || "+Neg" ?* _ .#. ] .o. [ "+Neg" -> 0 || _ \.#. ] ;
 define finalizeNeg
+
+regex [ "+Rept" -> "+Rep" ] ;
+define crkRept2srsRep
 
 ! regex [ {IObjSg} -> "@P.IObj.Sg@" ] .o. [ {IObjPl} -> "@P.IObj.Pl@" ]
 ! .o. [ [..] -> "+IObjSg3" "@R.IObj.Sg@" | "@D.IObj.Sg@" || _ .#. ]
