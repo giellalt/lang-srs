@@ -109,7 +109,7 @@ define y2InitialStemAfterS [ s y2 -> s h  .o.  y2 -> y ];
 #
 # We represent the alternating word-final /n/ found in these stems as <n2> in
 # lexical entries, then handle the corresponding phonological alternation here.
-define n2FinalStems [ "n2" -> 0 || _ .#. ,, _ "-" ,, "n2" -> n ];
+define n2FinalStems [ "n2" -> [ 0 | n ] || _ [ .#. | "-" ]  .o.  "n2" -> n ];
 
 # Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh "I don't know") (This
 # rule may need to change; some people prefer to spell these forms without the
