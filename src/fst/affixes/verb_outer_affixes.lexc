@@ -59,8 +59,20 @@ LEXICON SubjectAndDirectObject
 ! objects.
 @U.SUBJECTNUMBER.PL@                                            Distributive;
 @U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.4@                         Distributive;
+
+! 1SG, 2SG, or 3SG subject (*not* 4SG) *and* direct object = 4(SG)
+! e.g., "I saw someone" --> "I saw each and every one of them (somebody)"
+! guyisʔí -> dàguyisʔí
 @U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.4@@U.OBJECTPERSON.4@       Distributive;
+
+! 1SG, 2SG, or 3SG subject (*not* 4SG) *and* direct object is plural
+! e.g., "I saw them" -> "I saw each and every one of them"
+! gimiyisʔí -> dàgimiyisʔí
 @U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.4@@U.OBJECTNUMBER.PL@      Distributive;
+
+! 1SG, 2SG, or 3SG subject (*not* 4SG) *and* direct object is plural
+! e.g., "I saw it (place or space)" -> "I saw them (places or spaces)"
+! guyisʔí -> dàguyisʔí
 @U.SUBJECTNUMBER.SG@@D.SUBJECTPERSON.4@@U.OBJECTPERSON.AREAL@   Distributive;
 
 ! The only condition under which distributives are disallowed in transitive
