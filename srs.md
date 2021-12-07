@@ -769,34 +769,7 @@ nouns, but with a colon (':') as separator.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/propernouns.lexc)</small>## Tsuut'ina Noun inflection
-
-## Classification.
-1. Always unpossessed nouns: nàk'ús "cloud"
-1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
-1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
-
-(see explanation in the affixes file)
-
-## Lexicons
-
- * LEXICON NounPrefixes    Splitting in 3
-
- * LEXICON AlwaysPossessedNounPrefixes   Px
-
- * LEXICON VariablyPossessedNouns   Px or not
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/nouns.lexc)</small>
-# Symbol affixes
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/symbols.lexc)</small># Verb inflection in Tsuut'ina
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/propernouns.lexc)</small># Verb inflection in Tsuut'ina
 
 The lexicon names srs15, srs14, etc. refers to traditional template names.
 
@@ -841,85 +814,75 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/verbs.lexc)</small>Pronouns
-Pronouns in Tsuut'ina
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/verbs.lexc)</small>## Tsuut'ina Noun inflection
 
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/pronouns.lexc)</small># Tsuut'ina Nouns
-## Classification
+## Classification.
 1. Always unpossessed nouns: nàk'ús "cloud"
 1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
 1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
 
-Three (phonological) cases for the possessive prefixes:
-# Consonant-initial stem: si- "1SG" tsì "head" -> sitsì "my head"
-# Preceding H-tone stem: si- "1SG" V́tsí "nose" -> sítsí "my nose" 
-# Vowel-initial stem: si- "1SG" óó "mother" -> sóó "my mother" \\
-(cf. ʔinóó "mother" , ʔi- "UNSPEC.POSS" (n)óó;
-```gu- "SOMEONE" óó "mother" -> gwóó gu > gw / _ [oa] ) Cu[oa] > Cw[oa]?```
-
-Periphrastic / non-morphological constructions are used for always
-unpossessed nouns: sá(à) nàk'ús "my cloud", ná(à) ʔidínít'ùgù
-yiitł'áłí "your vehicle")
+(see explanation in the affixes file)
 
 ## Lexicons
 
- * LEXICON AlwaysUnpossessedNouns  never Px
+ * LEXICON NounPrefixes    Splitting in 3
 
+ * LEXICON AlwaysPossessedNounPrefixes   Px
 
- * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
-
-
- * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
-
- * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
+ * LEXICON VariablyPossessedNouns   Px or not
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/nouns.lexc)</small>Tsuut'ina (srs) verb stems
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/symbols.lexc)</small>
+# Tsuut'ina verb stems
+
+## Intransitive Verbs
+
+ * LEXICON PERF_CLASS_1   
+
+ * LEXICON IPFV_CLASS_1a   
+
+ * LEXICON IPFV_CLASS_1b  
+
+ * LEXICON IPFV_CLASS_2   
+
+ * LEXICON PERF_STEMS_1   the list of most verbs in perf
+
+ * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
+
+ * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
+
+
+## Transitive Verbs 
+
+ * LEXICON T_IPFV_CLASS_1a   type 1a
+
+
+## Endlex cleanup
+
+LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verbs.lexc)</small>Pronouns
+Pronouns in Tsuut'ina
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/pronouns.lexc)</small>Tsuut'ina (srs) verb stems
 
 
 
 Morphophonological special characters
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2827,45 +2790,82 @@ Continuation lexica specifying Valence + Aspect + TAMA + Voice-Valence with flag
 
 
 
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verb_stems.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verb_stems.lexc)</small>
-# Tsuut'ina verb stems
-
-## Intransitive Verbs
-
- * LEXICON PERF_CLASS_1   
-
- * LEXICON IPFV_CLASS_1a   
-
- * LEXICON IPFV_CLASS_1b  
-
- * LEXICON IPFV_CLASS_2   
-
- * LEXICON PERF_STEMS_1   the list of most verbs in perf
-
- * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
-
- * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
 
 
-## Transitive Verbs 
-
- * LEXICON T_IPFV_CLASS_1a   type 1a
 
 
-## Endlex cleanup
 
-LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
+<small>This (part of) documentation was generated from [../src/fst/stems/verb_stems.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verb_stems.lexc)</small># Tsuut'ina Nouns
+## Classification
+1. Always unpossessed nouns: nàk'ús "cloud"
+1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
+1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
+
+Three (phonological) cases for the possessive prefixes:
+# Consonant-initial stem: si- "1SG" tsì "head" -> sitsì "my head"
+# Preceding H-tone stem: si- "1SG" V́tsí "nose" -> sítsí "my nose" 
+# Vowel-initial stem: si- "1SG" óó "mother" -> sóó "my mother" \\
+(cf. ʔinóó "mother" , ʔi- "UNSPEC.POSS" (n)óó;
+```gu- "SOMEONE" óó "mother" -> gwóó gu > gw / _ [oa] ) Cu[oa] > Cw[oa]?```
+
+Periphrastic / non-morphological constructions are used for always
+unpossessed nouns: sá(à) nàk'ús "my cloud", ná(à) ʔidínít'ùgù
+yiitł'áłí "your vehicle")
+
+## Lexicons
+
+ * LEXICON AlwaysUnpossessedNouns  never Px
+
+
+ * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
+
+
+ * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
+
+ * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/nouns.lexc)</small>Numerals
 Numerals in the Sarsi language are numbers.
 
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/numerals.lexc)</small>
+
+
+We describe here how abbreviations are in Sarsi are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 
 
@@ -2921,23 +2921,6 @@ Numerals in the Sarsi language are numbers.
 
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
-
-
-We describe here how abbreviations are in Sarsi are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
 
