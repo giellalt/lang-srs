@@ -14,9 +14,9 @@ LEXICON TransitionalPrefix
 ! is understood, but isn't morphologically marked, then the ì- doesn't appear,
 ! e.g.,
 !
-!   nàgimìnistàhí át'a "I will pick them up (non-plural animate objects)"
+!   nàgimìnistàhí át'a "I will put them down (non-plural animate objects)"
 !                       (nà= gimi_ ^L . nis tàhí ...)
-!   tłích'áká nànistàhí át'a "I will pick up the (two) dogs"
+!   tłích'áká nànistàhí át'a "I will put down, set down the (two) dogs"
 !                       (nà= . nis tàhí ...)
 !
 ! We rely on our direct object-related flag diacritics to catch the former
