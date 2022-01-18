@@ -9,6 +9,7 @@ This page documents the work on the [Sarsi language model](http://github.com/gie
 
 # Project documentation
 
+* [Alberta Language Technology Lab](http://altlab.artsrn.ualberta.ca/)
 * Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.
 
 # In-source documentation
