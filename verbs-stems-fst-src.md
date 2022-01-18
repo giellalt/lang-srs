@@ -3,24 +3,24 @@
 
 ## Intransitive Verbs
 
- * LEXICON PERF_CLASS_1   
+* LEXICON PERF_CLASS_1   
 
- * LEXICON IPFV_CLASS_1a   
+* LEXICON IPFV_CLASS_1a   
 
- * LEXICON IPFV_CLASS_1b  
+* LEXICON IPFV_CLASS_1b  
 
- * LEXICON IPFV_CLASS_2   
+* LEXICON IPFV_CLASS_2   
 
- * LEXICON PERF_STEMS_1   the list of most verbs in perf
+* LEXICON PERF_STEMS_1   the list of most verbs in perf
 
- * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
+* LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
 
- * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
+* LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
 
 
 ## Transitive Verbs 
 
- * LEXICON T_IPFV_CLASS_1a   type 1a
+* LEXICON T_IPFV_CLASS_1a   type 1a
 
 
 ## Endlex cleanup

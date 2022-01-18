@@ -17,15 +17,15 @@ yiitł'áłí "your vehicle")
 
 ## Lexicons
 
- * LEXICON AlwaysUnpossessedNouns  never Px
+* LEXICON AlwaysUnpossessedNouns  never Px
 
 
- * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
+* LEXICON AlwaysPossessedNouns   always Px, body part, kinship
 
 
- * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
+* LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
 
- * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
+* LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
 
 
 * * *

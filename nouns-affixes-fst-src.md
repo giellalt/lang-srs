@@ -9,11 +9,11 @@
 
 ## Lexicons
 
- * LEXICON NounPrefixes    Splitting in 3
+* LEXICON NounPrefixes    Splitting in 3
 
- * LEXICON AlwaysPossessedNounPrefixes   Px
+* LEXICON AlwaysPossessedNounPrefixes   Px
 
- * LEXICON VariablyPossessedNouns   Px or not
+* LEXICON VariablyPossessedNouns   Px or not
 
 
 * * *

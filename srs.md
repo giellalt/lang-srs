@@ -610,7 +610,7 @@ These were the set types.
 # Tsuut'ina morphological analyser                      !
 INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Tsuut'ina.
 
-# Definitions for Multichar_Symbols@CODE@
+# Definitions for Multichar_Symbols
 
 ## Analysis symbols
 The morphological analyses of wordforms of Tsuut'ina are presented
@@ -618,61 +618,61 @@ in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
 
- * +Asp	 asp, aspect
- * +Dem	 D, demonstrative
- * +Dim	 dim, diminutive
- * +Du		 du, dual
- * +Err/Orth  Substandard, not implemented
- * +Foc	 foc, focus
- * +Hab	 hab, habitual
- * +Imprs	 impers, impersonal (+Impers?)
- * +Inc	 inc, inceptive (Incpt?)
- * +Inch	 incho, inchoative
- * +Mod	 M mode (this seems more like category than property)
- * +Mom	 momentaneous
- * N+		 N, noun
- * +Neg	 neg, negative
- * +Num	 num, Numeral
- * +PI+	 postposition incorporation (this is not a Morphosyn tag :-(
- * +PNS     possessed noun suffix (this is not a Morphosyn tag :-(
- * +Part    Part, particle
- * +Pl		 pl, Plural
- * +Po		 P, Postposition
- * +Prt	 T, tense (past)
- * +Qst	 Q, question marker
- * +Qt		 Qt, quantifier
- * +Sem/Hum		 Human
- * +Sem/Obj	 O, Object (have a look at this)
- * V+		 V, verb
- * 12Du+	 12, first person dual inclusive
- * 13Du+	 13, first person dual exclusive
- * 1Pl+      12, first person plural inclusive
- * 1PlO+    12, first person plural inclusive O
- * 1Sg+	 1, first person singular
- * 2Du+	 22, second person dual
- * 2Sg+	 2
- * 3Du+	 33, third person dual
- * 3Sg+	 3
- * 4Sg+	 4, the other
+* +Asp	 asp, aspect
+* +Dem	 D, demonstrative
+* +Dim	 dim, diminutive
+* +Du		 du, dual
+* +Err/Orth  Substandard, not implemented
+* +Foc	 foc, focus
+* +Hab	 hab, habitual
+* +Imprs	 impers, impersonal (+Impers?)
+* +Inc	 inc, inceptive (Incpt?)
+* +Inch	 incho, inchoative
+* +Mod	 M mode (this seems more like category than property)
+* +Mom	 momentaneous
+* N+		 N, noun
+* +Neg	 neg, negative
+* +Num	 num, Numeral
+* +PI+	 postposition incorporation (this is not a Morphosyn tag :-(
+* +PNS     possessed noun suffix (this is not a Morphosyn tag :-(
+* +Part    Part, particle
+* +Pl		 pl, Plural
+* +Po		 P, Postposition
+* +Prt	 T, tense (past)
+* +Qst	 Q, question marker
+* +Qt		 Qt, quantifier
+* +Sem/Hum		 Human
+* +Sem/Obj	 O, Object (have a look at this)
+* V+		 V, verb
+* 12Du+	 12, first person dual inclusive
+* 13Du+	 13, first person dual exclusive
+* 1Pl+      12, first person plural inclusive
+* 1PlO+    12, first person plural inclusive O
+* 1Sg+	 1, first person singular
+* 2Du+	 22, second person dual
+* 2Sg+	 2
+* 3Du+	 33, third person dual
+* 3Sg+	 3
+* 4Sg+	 4, the other
 
- * PxSg1+   Px
- * PxSg2+   Px
- * PxSg3+   Px
- * PxSg4+   Px
+* PxSg1+   Px
+* PxSg2+   Px
+* PxSg3+   Px
+* PxSg4+   Px
 
- * Ar+		 5, areal subject, it (place, condition, weather)
- * Impf+	 imp, imperfective (or prefix?)
- * Iter+	 iter, iterative
- * NI+		 NI, noun incorporation (probably not a tag)
- * Opt+	 opt, optative
- * Prf+	 perf, perfective
- * Recipr+	 rec, reciprocal
- * Refl+	 refl, reflexive
- * Th+		 Th, thematic prefix  (probably not a tag)
- * Unspec+	 0, Unspecified person
- * UnspecO+	 0, Unspecified person
- * UnspecS+	 0, Unspecified person
-* +Symbol© = independent symbols in the text stream, like £, €, ©
+* Ar+		 5, areal subject, it (place, condition, weather)
+* Impf+	 imp, imperfective (or prefix?)
+* Iter+	 iter, iterative
+* NI+		 NI, noun incorporation (probably not a tag)
+* Opt+	 opt, optative
+* Prf+	 perf, perfective
+* Recipr+	 rec, reciprocal
+* Refl+	 refl, reflexive
+* Th+		 Th, thematic prefix  (probably not a tag)
+* Unspec+	 0, Unspecified person
+* UnspecO+	 0, Unspecified person
+* UnspecS+	 0, Unspecified person
+* +Symbol = independent symbols in the text stream, like £, €, ©
 
 
 ## Prefixes
@@ -680,77 +680,77 @@ in this system in terms of the following symbols.
 
 ## our flags
 
- * @U.asp.perf@  
- * @U.asp.ipfv@  
+* @U.asp.perf@  
+* @U.asp.ipfv@  
 
- * @U.xaH.ON@   
- * @R.xaH.ON@   
- * @D.xaH@      
+* @U.xaH.ON@   
+* @R.xaH.ON@   
+* @D.xaH@      
 
- * @U.xaM.ON@    
- * @R.xaM.ON@   
- * @D.xaM@    
+* @U.xaM.ON@    
+* @R.xaM.ON@   
+* @D.xaM@    
 
- * @U.xaL.ON@   
- * @R.xaL.ON@      
- * @D.xaL@    
+* @U.xaL.ON@   
+* @R.xaL.ON@      
+* @D.xaL@    
 
- * @U.di.ON@   
- * @R.di.ON@      
- * @D.di@    
+* @U.di.ON@   
+* @R.di.ON@      
+* @D.di@    
 
- * @U.zi.ON@   
- * @R.zi.ON@      
- * @D.zi@    
+* @U.zi.ON@   
+* @R.zi.ON@      
+* @D.zi@    
 
- * @U.na.ON@   
- * @R.na.ON@      
- * @D.na@    
+* @U.na.ON@   
+* @R.na.ON@      
+* @D.na@    
 
- * @U.ni.ON@   
- * @R.ni.ON@      
- * @D.ni@    
+* @U.ni.ON@   
+* @R.ni.ON@      
+* @D.ni@    
 
- * @R.TV.ON@   
- * @U.TV.ON@    
- * @U.TV.OFF@    
+* @R.TV.ON@   
+* @U.TV.ON@    
+* @U.TV.OFF@    
 
 ## Archphonemes (multi-character definitions)
 
- * %^VH       denoting floating high tone
+* %^VH       denoting floating high tone
 
 ## Border 
 
- * %<   prefix border
- * %>   suffix border
+* %<   prefix border
+* %>   suffix border
 
 ## Flag diacritics
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
-|  @P.NeedNoun.ON@nominalised | (Dis)allow compounds with verbs unless nominalised
-|  @D.NeedNoun.ON@nominalised | (Dis)allow compounds with verbs unless nominalised
-|  @C.NeedNoun@nominalised | (Dis)allow compounds with verbs unless nominalised
+|  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+|  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+|  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
 
 For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
 handled automatically if combined with +CmpN/xxx tags. If not used, they will
 do no harm.
-|  @P.CmpFrst.FALSE@first | Require that words tagged as such only appear first
-|  @D.CmpPref.TRUE@ENDLEX | Block such words from entering ENDLEX
-|  @P.CmpPref.FALSE@compounds | Block these words from making further compounds
-|  @D.CmpLast.TRUE@R | Block such words from entering R
-|  @D.CmpNone.TRUE@compounding | Combines with the next tag to prohibit compounding
-|  @U.CmpNone.FALSE@compounding | Combines with the prev tag to prohibit compounding
-|  @P.CmpOnly.TRUE@R | Sets a flag to indicate that the word has passed R
-|  @D.CmpOnly.FALSE@root. | Disallow words coming directly from root.
+|  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
+|  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
+|  @P.CmpPref.FALSE@ | Block these words from making further compounds
+|  @D.CmpLast.TRUE@ | Block such words from entering R
+|  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
+|  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
+|  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
+|  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
 
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
-|  @U.Cap.Obl@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
-|  @U.Cap.Opt@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
 
 
@@ -781,11 +781,11 @@ The word forms in Tsuut'ina start from noun and verb prefixes
 
 ## Lexicons
 
- * LEXICON NounPrefixes    Splitting in 3
+* LEXICON NounPrefixes    Splitting in 3
 
- * LEXICON AlwaysPossessedNounPrefixes   Px
+* LEXICON AlwaysPossessedNounPrefixes   Px
 
- * LEXICON VariablyPossessedNouns   Px or not
+* LEXICON VariablyPossessedNouns   Px or not
 
 
 * * *
@@ -793,26 +793,26 @@ The word forms in Tsuut'ina start from noun and verb prefixes
 
 The lexicon names srs15, srs14, etc. refers to traditional template names.
 
- * LEXICON VerbPrefixes  from the Root lexicon, always empty
+* LEXICON VerbPrefixes  from the Root lexicon, always empty
 
- * LEXICON srs15  
+* LEXICON srs15  
 
- * LEXICON srs14  empty
+* LEXICON srs14  empty
 
- * LEXICON srs13  empty
+* LEXICON srs13  empty
 
- * LEXICON srs12  empty
+* LEXICON srs12  empty
 
- * LEXICON srs11  optional Distr+
+* LEXICON srs11  optional Distr+
 
- * LEXICON srs10  empty
+* LEXICON srs10  empty
 
- * LEXICON srs9  empty
-
-
+* LEXICON srs9  empty
 
 
- * LEXICON srs8765  contains the person-number complex
+
+
+* LEXICON srs8765  contains the person-number complex
 * I_IMPERFECTIVE CLASS 1a, no other prefix
 
 - I_IMPERFECTIVE CLASS 1b, inner prefix
@@ -830,7 +830,7 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
 
 
 
- * LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
+* LEXICON Person12_IPFV_CLASS_1b   contains the block of 1st and 2nd person
 
 
 * * *
@@ -860,15 +860,15 @@ yiitł'áłí "your vehicle")
 
 ## Lexicons
 
- * LEXICON AlwaysUnpossessedNouns  never Px
+* LEXICON AlwaysUnpossessedNouns  never Px
 
 
- * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
+* LEXICON AlwaysPossessedNouns   always Px, body part, kinship
 
 
- * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
+* LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
 
- * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
+* LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
 
 
 * * *
@@ -2816,24 +2816,24 @@ Pronouns in Tsuut'ina
 
 ## Intransitive Verbs
 
- * LEXICON PERF_CLASS_1   
+* LEXICON PERF_CLASS_1   
 
- * LEXICON IPFV_CLASS_1a   
+* LEXICON IPFV_CLASS_1a   
 
- * LEXICON IPFV_CLASS_1b  
+* LEXICON IPFV_CLASS_1b  
 
- * LEXICON IPFV_CLASS_2   
+* LEXICON IPFV_CLASS_2   
 
- * LEXICON PERF_STEMS_1   the list of most verbs in perf
+* LEXICON PERF_STEMS_1   the list of most verbs in perf
 
- * LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
+* LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
 
- * LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
+* LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
 
 
 ## Transitive Verbs 
 
- * LEXICON T_IPFV_CLASS_1a   type 1a
+* LEXICON T_IPFV_CLASS_1a   type 1a
 
 
 ## Endlex cleanup
@@ -2856,12 +2856,12 @@ for text-to-speech systems.
 
 For example:
 
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
+* s.:syntynyt # ;  
+* os.:omaa% sukua # ;  
+* v.:vuosi # ;  
+* v.:vuonna # ;  
+* esim.:esimerkki # ; 
+* esim.:esimerkiksi # ; 
 
 
 * * *
