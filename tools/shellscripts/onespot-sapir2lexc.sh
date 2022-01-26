@@ -67,7 +67,7 @@ NR==1 {
 # Intransitive-SubjSuppr -> INTR
 # Transitive -> TR
 # Transitive-DObjPlOnly -> TR + @R.OBJECTNUMBER.PL@ 
-# Transitive-DObj3SgOnly -> TR + @R.OBJECTNUMBER.PL@ @R.OBJECTPERSON.3@ 
+# Transitive-DObj3SgOnly -> TR + @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.3@ 
 # Transitive-SubjSuppr -> TR
 # ObliqueObject -> OO
 # Ditransitive -> DITR
@@ -85,7 +85,7 @@ NR==1 {
   arg_label["TransitionalTransitive"]="TR-TR"; valence["TransitionalTransitive"]="TRANSITIONAL";
   arg_label["Transitive-SubjSuppr"]="TR-SS"; valence["Transitive-SubjSuppr"]="TRANSITIVE";
   arg_label["Transitive-DObjPlOnly"]="TR-DOPL"; valence["Transitive-DObjPlOnly"]="TRANSITIVE"; extraflags["Transitive-DObjPlOnly"]="@R.OBJECTNUMBER.PL@";
-  arg_label["Transitive-DObj3SgOnly"]="TR-DO3SG"; valence["Transitive-DObj3SgOnly"]="TRANSITIVE"; extraflags["Transitive-DObj3SgOnly"]="@R.OBJECTNUMBER.PL@@R.OBJECTPERSON.3@";
+  arg_label["Transitive-DObj3SgOnly"]="TR-DO3SG"; valence["Transitive-DObj3SgOnly"]="TRANSITIVE"; extraflags["Transitive-DObj3SgOnly"]="@R.OBJECTNUMBER.SG@@R.OBJECTPERSON.3@";
   arg_label["Transitive-Conative"]="TR-CON"; valence["Transitive-Conative"]="TRANSITIVE"; extraflags["Transitive-Conative"]="@R.CONATIVE.ON@";
   arg_label["Ditransitive"]="DITR"; valence["Ditransitive"]="DITRANSITIVE";
   arg_label["DirectObjectExperiencer"]="DOEXP"; valence["DirectObjectExperiencer"]="DO-EXPERIENCER";
@@ -167,7 +167,7 @@ for(flag in flags)
      printf "%s\n", flag;
 printf "@U.VV.%0@\n@U.VV.I@\n@U.VV.S@\n@R.CONATIVE.OFF@\n@R.CONATIVE.ON@\n";
 printf "@U.STEM.PLAIN@\n@U.STEM.MODIFIED@\n"
-printf "@R.SUBJECTPERSON.3@\n@R.SUBJECTNUMBER.SG@\n@R.SUBJECTNUMBER.PL@\n@R.OBJECTNUMBER.PL@\n@R.OBJECTPERSON.3@\n";
+printf "@R.SUBJECTPERSON.3@\n@R.SUBJECTNUMBER.SG@\n@R.SUBJECTNUMBER.PL@\n@R.OBJECTNUMBER.PL@\n@R.OBJECTNUMBER.SG@\n@R.OBJECTPERSON.3@\n";
 
 printf "\n\n";
 
