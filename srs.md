@@ -770,26 +770,14 @@ The word forms in Tsuut'ina start from noun and verb prefixes
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/symbols.lexc)</small>## Tsuut'ina Noun inflection
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/symbols.lexc)</small>Proper noun inflection
+The Sarsi language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
 
-## Classification.
-1. Always unpossessed nouns: nàk'ús "cloud"
-1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
-1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
-
-(see explanation in the affixes file)
-
-## Lexicons
-
-* LEXICON NounPrefixes    Splitting in 3
-
-* LEXICON AlwaysPossessedNounPrefixes   Px
-
-* LEXICON VariablyPossessedNouns   Px or not
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/nouns.lexc)</small># Verb inflection in Tsuut'ina
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/propernouns.lexc)</small># Verb inflection in Tsuut'ina
 
 The lexicon names srs15, srs14, etc. refers to traditional template names.
 
@@ -834,14 +822,63 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/verbs.lexc)</small>Proper noun inflection
-The Sarsi language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/verbs.lexc)</small>## Tsuut'ina Noun inflection
+
+## Classification.
+1. Always unpossessed nouns: nàk'ús "cloud"
+1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
+1. Possessed or unpossessed: tłích'á "dog" vs. silích'à "my dog"
+
+(see explanation in the affixes file)
+
+## Lexicons
+
+* LEXICON NounPrefixes    Splitting in 3
+
+* LEXICON AlwaysPossessedNounPrefixes   Px
+
+* LEXICON VariablyPossessedNouns   Px or not
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Tsuut'ina verb stems
+
+## Intransitive Verbs
+
+* LEXICON PERF_CLASS_1   
+
+* LEXICON IPFV_CLASS_1a   
+
+* LEXICON IPFV_CLASS_1b  
+
+* LEXICON IPFV_CLASS_2   
+
+* LEXICON PERF_STEMS_1   the list of most verbs in perf
+
+* LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
+
+* LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
+
+
+## Transitive Verbs 
+
+* LEXICON T_IPFV_CLASS_1a   type 1a
+
+
+## Endlex cleanup
+
+LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/affixes/propernouns.lexc)</small># Tsuut'ina Nouns
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
+Numerals in the Sarsi language are numbers.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/numerals.lexc)</small># Tsuut'ina Nouns
 ## Classification
 1. Always unpossessed nouns: nàk'ús "cloud"
 1. Always possessed nouns: sitsì "my head" (body parts, kinship terms)
@@ -872,7 +909,12 @@ yiitł'áłí "your vehicle")
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/nouns.lexc)</small>Tsuut'ina (srs) verb stems
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/nouns.lexc)</small>Pronouns
+Pronouns in Tsuut'ina
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/pronouns.lexc)</small>Tsuut'ina (srs) verb stems
 
 
 
@@ -2806,49 +2848,7 @@ Continuation lexica specifying Valence + Aspect + TAMA + Voice-Valence with flag
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verb_stems.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verb_stems.lexc)</small>Pronouns
-Pronouns in Tsuut'ina
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/pronouns.lexc)</small>
-# Tsuut'ina verb stems
-
-## Intransitive Verbs
-
-* LEXICON PERF_CLASS_1   
-
-* LEXICON IPFV_CLASS_1a   
-
-* LEXICON IPFV_CLASS_1b  
-
-* LEXICON IPFV_CLASS_2   
-
-* LEXICON PERF_STEMS_1   the list of most verbs in perf
-
-* LEXICON IPFV_STEMS_1a   same list in ipfv, but no prefix
-
-* LEXICON IPFV_STEMS_1b  same list in ipfv, but with pref
-
-
-## Transitive Verbs 
-
-* LEXICON T_IPFV_CLASS_1a   type 1a
-
-
-## Endlex cleanup
-
-LEXICON T_IPFV_CLASS_1a   gives all D flags blocking unwanted forms
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
-Numerals in the Sarsi language are numbers.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/verb_stems.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/verb_stems.lexc)</small>
 
 
 We describe here how abbreviations are in Sarsi are read out, e.g.
