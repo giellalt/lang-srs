@@ -1,0 +1,114 @@
+load transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin
+define crk2eng
+
+define crkSubjectTags [ "0Sg+" | "1Sg+" | "2Sg+" | "3Sg+" | "4Sg+" | "1Pl+" | "21Pl+" | "2Pl+" | "3Pl+" | "4Pl+" | "4Sg/Pl+" | "5Sg/Pl+" | "X+" ] ;
+
+define crkObjectTags [ "0SgO+" | "1SgO+" | "2SgO+" | "3SgO+" | "4SgO+" | "1PlO+" | "21PlO+" | "2PlO+" | "3PlO+" | "4PlO+" | "4Sg/PlO+" | "5Sg/PlO+" | "XO+" ] ;
+
+define srsSubjectTags [ "SbjSg1+" | "SbjSg2+" | "SbjSg3+" | "SbjSg4+" | "SbjPl1+" | "SbjPl2+" | "SbjPl3+" ] ;
+
+define srsObjectTags [ "DObjSg1+" | "DObjSg2+" | "DObjSg3+" | "DObjSg4+" | "DObjPl1+" | "DObjPl2+" | "DObjPl3+" ] ;
+
+define srsIObjectTags [ "IObjSg3+" | "IObjPl3+" ] ;
+
+define crkVerbClasses [ "II+" | "AI+" | "TI+" | "TA+" ] ;
+
+regex [ [ "TI+" | "TA+" ] -> "D+" || _ ?* crkSubjectTags crkObjectTags srsIObjectTags ( "Neg+" ) ] ;
+define DitransitiveTag
+
+regex [ [ "TI+" | "TA+" ] -> "T+" || _ ?* crkSubjectTags [ crkObjectTags | srsIObjectTags ] ( "Neg+" ) .#. ] ;
+define TransitiveTag
+
+regex [ [ "AI+" | "II+" ] -> "I+" || _ ?* crkSubjectTags ( "Neg+" ) .#. ] ;
+define IntransitiveTag
+
+define ValencyTag [ DitransitiveTag .o. TransitiveTag .o. IntransitiveTag ] ;
+
+regex [ [..] -> "Rept+" || .#. ? "Rep+" \[ " " ]* _ " " ]
+.o. [ "Rep+" -> 0 ] ;
+define RepetitiveTag
+
+regex [ "Ipfv+" -> "Def+" ] ;
+define ImperfectiveTag
+
+regex [ [ "Pfv+" ] -> "Prt+" ] ;
+define PerfectiveTag
+
+regex [ [..] -> "Prog+" || .#. "Prog+" \[ " " ]* _ " " ]
+.o. [ "Prog+" -> "Prs+" || .#. _ ]  ;
+define ProgressiveTag
+
+! regex [ [..] -> "Ipfv+" || .#. _ \[ "Ipfv+" | "Pfv+" | "Prog+" ] ] ;
+! define DefaultAspectTag
+
+define AspectTag [ RepetitiveTag .o. ImperfectiveTag .o. PerfectiveTag .o. ProgressiveTag ] ;
+
+regex [ "SbjSg1+" -> "1Sg+"
+,, "SbjSg2+" -> "2Sg+"
+,, "SbjSg3+" -> "3Sg+"
+,, "SbjSg4+" -> "X+"
+,, "SbjPl1+" -> "1Pl+"
+,, "SbjPl2+" -> "2Pl+"
+,, "SbjPl3+" -> "3Pl+"
+] ;
+define SubjectConversion
+
+regex [ "DObjSg1+" -> "1SgO+"
+,, "DObjSg2+" -> "2SgO+"
+,, "DObjSg3+" -> "3SgO+"
+,, "DObjSg4+" -> "XO+"
+,, "DObjPl1+" -> "1PlO+"
+,, "DObjPl2+" -> "2PlO+"
+,, "DObjPl3+" -> "3PlO+"
+] ;
+define ObjectConversion
+
+regex [ [ {to him} | {to her} ] -> {IObjSg} ,, {to them} -> {IObjPl} ] ;
+define crkIObj
+
+regex [ [..] -> "IObjSg3+" || {IObjSg} ?* _ ( "Neg+" ) .#. ]
+.o.  [ [..] -> "IObjPl3+" || {IObjPl} ?* _ ( "Neg+" ) .#. ]
+.o. [ [ {IObjSg} | {IObjPl} ] -> 0 ]
+;
+define srsIObj
+
+regex [ [..] -> "Neg+" || "Neg+" ?* _ .#. ] .o. [ "Neg+" -> 0 || _ \.#. ] ;
+define finalizeNeg
+
+! regex [ "Rept+" -> "Rep+" ] ;
+! define crkRept2srsRep
+
+! regex [ {IObjSg} -> "@P.IObj.Sg@" ] .o. [ {IObjPl} -> "@P.IObj.Pl@" ]
+! .o. [ [..] -> "IObjSg3" "@R.IObj.Sg@" | "@D.IObj.Sg@" || _ .#. ]
+! .o. [ [..] -> "IObjPl3" "@R.IObj.Pl@" | "@D.IObj.Pl@" || _ .#. ]
+! ;
+! define srsIObj
+
+! regex [ [ {to him} | {to her} ] -> "@P.IObj.Sg@" ,, {to them} -> "@P.IObj.Pl@" ] ;
+! define crkIObj
+! 
+! regex [ [..] -> "IObjSg3" "@R.IObj.Sg@" | "@D.IObj.Sg@" || _ .#. ]
+! .o. [ [..] -> "IObjPl3" "@R.IObj.Pl@" | "@D.IObj.Pl@" || _ .#. ]
+! ;
+! define srsIObj
+
+set flag-is-epsilon ON
+
+regex [ AspectTag .o. SubjectConversion .o. ObjectConversion .o. crk2eng ] ;
+
+! regex [ crkIObj
+! .o. crk2eng
+! .o. srsIObj
+! .o. finalizeNeg
+! ] ;
+! twosided flag-diacritics
+! define crk2srsIObj
+
+! set flag-is-epsilon ON
+
+! regex [ crk2srsIObj
+! .o. ValencyTag
+! .o. AspectTag
+! .o. SubjectConversion
+! .o. ObjectConversion
+! ] ;
