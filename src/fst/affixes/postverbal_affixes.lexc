@@ -1,4 +1,4 @@
-Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl @U.ENCLITIC.gu@ @U.ENCLITIC.la@ @U.ENCLITIC.gula@
+Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl @P.DF.ON@ @U.ENCLITIC.gu@ @U.ENCLITIC.la@ @U.ENCLITIC.gula@
 
 ! TODO: Implement other enclitics (e.g., -dà, -di, -ìdaa, etc.) and their
 ! corresponding selectional restrictions in separate continuation lexica below.
@@ -43,6 +43,7 @@ LEXICON Suffixation
 
 LEXICON Encliticization
                                             naNominalization;
+                                            iDelayedFuture;
                                             Enclitics;
 
 
@@ -52,7 +53,6 @@ LEXICON iNominalization
 ! (and is required in certain contexts, e.g., as the complement of a
 ! postposition like ___ dósa "because (of) ___").
 @U.NOMINALIZATION.I@0:@U.NOMINALIZATION.I@í  #;
-
 
 LEXICON naNominalization
 ! Nominalization/relativization with =ná "the ones that" applies only to
@@ -82,6 +82,42 @@ LEXICON naNominalizationExperiencer
 
 LEXICON naNominalizationAffix
 @U.NOMINALIZATION.NA@0:@U.NOMINALIZATION.NA@-ná          #;
+
+
+LEXICON iDelayedFuture
+! All Tsuut'ina verbs, both stative and dynamic, can appear with the delayed
+! future enclitic =i.  In imperfective, imperfective repetitive, and
+! progressive verb forms, this suffix is generally interpreted as "later on"
+! (cf. TLL-20220203):
+!
+!   itsiy   "3S will cry" (IPFV)
+!       -> itsiyi "3S will cry later on" (IPFV-DF)
+!   yitsáł  "3S is going along crying" (PROG)
+!       -> yitsáłi "3S will be going along crying later on" (PROG-DF)
+!   náchish "3S cries again and again" (IPFV-REP)
+!       -> náchishi "3S cries again and again later on" (IPFV-REP-DF)
+!
+! In perfective and perfective repetitive verb forms, this suffix indicates
+! that the action would have taken place later on but didn't (cf. TLL-20220203,
+! TLL-20220208):
+!
+!   átsàd   "3S ate (something)" (PFV)
+!       -> átsàdi   "3S would have eaten (something) later on" (PFV-DF)
+!   nááyínòsh "3S would ate (something) again and again" (PFV-REP)
+!       -> nááyínòshi   "3S would have eaten (something) again and again
+!                        later on"
+!
+! Other enclitics can follow the delayed future (e.g., =ìsà "probably", =gulà
+! "might, may"), which trigger the mid-to-high tone changes mentioned above
+! (cf. TLL-20220208):
+!
+!   átsàdi  "3S would have eaten (something) later on" (PFV-DF)
+!       -> átsàdí-ìsà  "3S probably would have eaten (something) later on"
+!
+! (For now, we don't produce/recognize these encliticized delayed future
+! forms, since we will need to make sure that all of these enclitics form
+! acceptable combinations with the delayed future)
+@P.DF.ON@0:@P.DF.ON@i                       # "(delayed future)" ;
 
 
 LEXICON Enclitics
