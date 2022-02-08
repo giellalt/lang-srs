@@ -1,13 +1,13 @@
 load transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin
 define crk2eng
 
-define crkSubjectTags [ "0Sg+" | "1Sg+" | "2Sg+" | "3Sg+" | "4Sg+" | "1Pl+" | "21Pl+" | "2Pl+" | "3Pl+" | "4Pl+" | "4Sg/Pl+" | "5Sg/Pl+" | "X+" ] ;
+define crkSubjectTags [ "0Sg+" | "1Sg+" | "2Sg+" | "3Sg+" | "4Sg+" | "1Du+" | "2Du+" | "3Du+" | "1Distr+" | "2Distr+" | "3Distr+" | "1Pl+" | "21Pl+" | "2Pl+" | "3Pl+" | "4Pl+" | "4Sg/Pl+" | "5Sg/Pl+" | "X+" ] ;
 
-define crkObjectTags [ "0SgO+" | "1SgO+" | "2SgO+" | "3SgO+" | "4SgO+" | "1PlO+" | "21PlO+" | "2PlO+" | "3PlO+" | "4PlO+" | "4Sg/PlO+" | "5Sg/PlO+" | "XO+" ] ;
+define crkObjectTags [ "0SgO+" | "1SgO+" | "2SgO+" | "3SgO+" | "4SgO+" | "1DuO+" | "2DuO+" | "3DuO+" | "1DistrO+" | "2DistrO+" | "3DistrO+" | "1PlO+" | "21PlO+" | "2PlO+" | "3PlO+" | "4PlO+" | "4Sg/PlO+" | "5Sg/PlO+" | "XO+" ] ;
 
-define srsSubjectTags [ "SbjSg1+" | "SbjSg2+" | "SbjSg3+" | "SbjSg4+" | "SbjPl1+" | "SbjPl2+" | "SbjPl3+" ] ;
+define srsSubjectTags [ "SbjSg1+" | "SbjSg2+" | "SbjSg3+" | "SbjSg4+" | "SbjDu1+" | "SbjDu2+" | "SbjDu3+" | "SbjPl1+" | "SbjPl2+" | "SbjPl3+" ] ;
 
-define srsObjectTags [ "DObjSg1+" | "DObjSg2+" | "DObjSg3+" | "DObjSg4+" | "DObjPl1+" | "DObjPl2+" | "DObjPl3+" ] ;
+define srsObjectTags [ "DObjSg1+" | "DObjSg2+" | "DObjSg3+" | "DObjSg4+" | "DObjDu1+" | "DObjDu2+" | "DObjDu3+" | "DObjPl1+" | "DObjPl2+" | "DObjPl3+" ] ;
 
 define srsIObjectTags [ "IObjSg3+" | "IObjPl3+" ] ;
 
@@ -43,20 +43,32 @@ define ProgressiveTag
 
 define AspectTag [ RepetitiveTag .o. ImperfectiveTag .o. PerfectiveTag .o. ProgressiveTag ] ;
 
-regex [ "SbjSg1+" -> "1Sg+"
+regex [ "SbjPl1+" "Distr+" -> "1Distr+"
+,, "SbjPl2+" "Distr+" -> "2Distr+"
+,, "SbjPl3+" "Distr+" -> "3Distr+"
+,, "SbjSg1+" -> "1Sg+"
 ,, "SbjSg2+" -> "2Sg+"
 ,, "SbjSg3+" -> "3Sg+"
 ,, "SbjSg4+" -> "X+"
+,, "SbjDu1+" -> "1Du+"
+,, "SbjDu2+" -> "2Du+"
+,, "SbjDu3+" -> "3Du+"
 ,, "SbjPl1+" -> "1Pl+"
 ,, "SbjPl2+" -> "2Pl+"
 ,, "SbjPl3+" -> "3Pl+"
 ] ;
 define SubjectConversion
 
-regex [ "DObjSg1+" -> "1SgO+"
+regex [ "DObjPl1+" "Distr+" -> "1DistrO+"
+,, "DObjPl2+" "Distr+" -> "2DistrO+"
+,, "DObjPl3+" "Distr+" -> "3DistrO+"
+,, "DObjSg1+" -> "1SgO+"
 ,, "DObjSg2+" -> "2SgO+"
 ,, "DObjSg3+" -> "3SgO+"
 ,, "DObjSg4+" -> "XO+"
+,, "DObjDu1+" -> "1DuO+"
+,, "DObjDu2+" -> "2DuO+"
+,, "DObjDu3+" -> "3DuO+"
 ,, "DObjPl1+" -> "1PlO+"
 ,, "DObjPl2+" -> "2PlO+"
 ,, "DObjPl3+" -> "3PlO+"
