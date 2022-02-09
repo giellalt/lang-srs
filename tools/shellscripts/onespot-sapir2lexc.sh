@@ -5,10 +5,13 @@
 # Usage:
 # cat *.tsv (Lexical database in TSV format)
 # | changing CRLF's into LF's
-# | onespot-sapir2lexc.sh REPORT="yes"/"no" ALL="yes"/"no"
+# | onespot-sapir2lexc.sh REPORT="yes"/"no" ALL="yes"/"no" ONLYYAML="yes"/"no"
 # REPORT="yes" outputs dubious lines as a report at the end of the LEXC file.
 # ALL="yes" outputs all entries, even those that have been marked as needing
 #  to be excluded from the FST for now (i.e., where "FST status" != "")
+# ONLYYAML="yes" outputs only items for which YAML test cases are available
+#  in 'test/src/gt-norm-yamls' (to allow for quicker compilation when doing
+#  basic sanity checking of FST behaviour)
 
 # Example:
 # cat ~/Downloads/Tsuut'ina\ -\ Preliminary\ lexical\ database\ -\ Verbs.tsv |
@@ -45,7 +48,7 @@
 # TRANS -> TR
 
 
-gawk -v REPORT=$1 'BEGIN { FS="\t"; all_entries=ALL; report=REPORT; report_text="!! REPORT OF IRREGULARITIES:"; }
+gawk -v REPORT=$1 -v ALL=$2 'BEGIN { FS="\t"; all_entries=ALL; report=REPORT; only_yaml=ENVIRON["ONLYYAML"]; report_text="!! REPORT OF IRREGULARITIES:"; }
 NR==1 {
   for(i=1; i<=NF; i++)
     {
@@ -54,7 +57,8 @@ NR==1 {
       if(index($i,"FST morphology")!=0) fst_stem=i;
       if(index($i,"Inflectional paradigm")!=0) tama=i;
       if(index($i,"Argument structure")!=0) args=i;
-      if(index($i,"FST status")!= 0) status=i;
+      if(index($i,"FST status")!=0) status=i;
+      if(index($i,"YAML")!=0) yaml=i;
     }
   # Argument structure abbreviations for contlexes
   # Index corresponds to flag-diacritic value; value to contlex prefix
@@ -103,10 +107,9 @@ NR==1 {
   aspect_label["OTHER"]="OTHER"; aspect_comment["OTHER"]="CHECK ASPECT";
   aspect_label["CHECK-ASPECT"]="CHECK-ASPECT"; aspect_comment["CHECK-ASPECT"]="CHECK ASPECT";
   # print fst_lemma*1, fst_stem*1, tama*1;
-
 }
 NR>=2 {
-  if($fst_lemma!="" && $fst_stem!="" && $tama!="" && $args!="" && ($all_entries=="yes" || $status==""))
+  if($fst_lemma!="" && $fst_stem!="" && $tama!="" && $args!="" && ($all_entries=="yes" || $status=="") && (only_yaml!="yes" || $yaml=="Available"))
     { 
       # Removing diacritics from mid-tones in lemmas and stems
       gsub("ā", "a", $fst_lemma);
