@@ -8,15 +8,15 @@ Config:
     App: lookup
 
 Tests:
-  Verb - ts'ázid[wake-up] :
-    ts'ázid+V+I+Ipfv+Rep+SbjSg1:       ts'ánásshiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjSg2:       ts'ánánizhiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjSg3:       ts'ánázhiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjPl1:       [ts'ánáasiìzhiizh, ts'ánáasaàzhiizh]
-    ts'ázid+V+I+Ipfv+Rep+SbjPl1+Distr: [ts'ánádààsiìzhiizh, ts'ánádààsaàzhiizh]
-    ts'ázid+V+I+Ipfv+Rep+SbjPl2:       ts'ánásshiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjPl2+Distr: ts'ánádàsshiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjPl3:       ts'ánágizhiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjPl3+Distr: ts'ánádàgizhiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjSg4:       ts'ánáts'izhiizh
-    ts'ázid+V+I+Ipfv+Rep+SbjSg4+Distr: ts'ánádàts'izhiizh
+  Verb - ts'ázíd[wake-up] :
+    ts'ázíd+V+I+Ipfv+Rep+SbjSg1:       ts'ánásshiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjSg2:       ts'ánánizhiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjSg3:       ts'ánázhiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjPl1:       [ts'ánáasiìzhiizh, ts'ánáasaàzhiizh]
+    ts'ázíd+V+I+Ipfv+Rep+SbjPl1+Distr: [ts'ánádààsiìzhiizh, ts'ánádààsaàzhiizh]
+    ts'ázíd+V+I+Ipfv+Rep+SbjPl2:       ts'ánásshiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjPl2+Distr: ts'ánádàsshiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjPl3:       ts'ánágizhiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjPl3+Distr: ts'ánádàgizhiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjSg4:       ts'ánáts'izhiizh
+    ts'ázíd+V+I+Ipfv+Rep+SbjSg4+Distr: ts'ánádàts'izhiizh

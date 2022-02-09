@@ -8,15 +8,15 @@ Config:
     App: lookup
 
 Tests:
-  Verb - nàgudiitłod[jump-down] :
-    nàgudiitłod+V+I+Pfv+SbjSg1:       [nàgudastłòt, nàgudìsistłòt]
-    nàgudiitłod+V+I+Pfv+SbjSg2:       nàgudìsíítłòt
-    nàgudiitłod+V+I+Pfv+SbjSg3:       nàgudìstłòt
-    nàgudiitłod+V+I+Pfv+SbjPl1:       [nàgudìsiìtłòt, nàgudìsaàtłòt]
-    nàgudiitłod+V+I+Pfv+SbjPl1+Distr: [nàdàgudìsiìtłòt, nàdàgudìsaàtłòt]
-    nàgudiitłod+V+I+Pfv+SbjPl2:       nàgudìsastłòt
-    nàgudiitłod+V+I+Pfv+SbjPl2+Distr: nàdàgudìsastłòt
-    nàgudiitłod+V+I+Pfv+SbjPl3:       nàgugidìstłòt
-    nàgudiitłod+V+I+Pfv+SbjPl3+Distr: nàdàgugidìstłòt
-    nàgudiitłod+V+I+Pfv+SbjSg4:       nàguts'idìstłòt
-    nàgudiitłod+V+I+Pfv+SbjSg4+Distr: nàdàguts'idìstłòt
+  Verb - nàgudiitłód[jump-down] :
+    nàgudiitłód+V+I+Pfv+SbjSg1:       [nàgudastłod, nàgudìsistłod]
+    nàgudiitłód+V+I+Pfv+SbjSg2:       nàgudìsíítłod
+    nàgudiitłód+V+I+Pfv+SbjSg3:       nàgudìstłod
+    nàgudiitłód+V+I+Pfv+SbjPl1:       [nàgudìsiìtłod, nàgudìsaàtłod]
+    nàgudiitłód+V+I+Pfv+SbjPl1+Distr: [nàdàgudìsiìtłod, nàdàgudìsaàtłod]
+    nàgudiitłód+V+I+Pfv+SbjPl2:       nàgudìsastłod
+    nàgudiitłód+V+I+Pfv+SbjPl2+Distr: nàdàgudìsastłod
+    nàgudiitłód+V+I+Pfv+SbjPl3:       nàgugidìstłod
+    nàgudiitłód+V+I+Pfv+SbjPl3+Distr: nàdàgugidìstłod
+    nàgudiitłód+V+I+Pfv+SbjSg4:       nàguts'idìstłod
+    nàgudiitłód+V+I+Pfv+SbjSg4+Distr: nàdàguts'idìstłod

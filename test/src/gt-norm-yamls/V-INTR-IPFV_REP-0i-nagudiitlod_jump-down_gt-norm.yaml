@@ -8,15 +8,15 @@ Config:
     App: lookup
 
 Tests:
-  Verb - nàgudiitłod[jump-down] :
-    nàgudiitłod+V+I+Ipfv+Rep+SbjSg1:       [nìnágudistłiizh, nànágudistłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjSg2:       [nìnágudíítłiizh, nànágudíítłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjSg3:       [nìnágudiitłiizh, nànágudiitłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjPl1:       [nìnágudiìtłiizh, nìnágudaàtłiizh, nànágudiìtłiizh, nànágudaàtłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjPl1+Distr: [nìnádàgudiìtłiizh, nìnádàgudaàtłiizh, nànádàgudiìtłiizh, nànádàgudaàtłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjPl2:       [nìnágudastłiizh, nànágudastłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjPl2+Distr: [nìnádàgudastłiizh, nànádàgudastłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjPl3:       [nìnágugidiitłiizh, nànágugidiitłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjPl3+Distr: [nìnádàgugidiitłiizh, nànádàgugidiitłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjSg4:       [nìnáguts'idiitłiizh, nànáguts'idiitłiizh]
-    nàgudiitłod+V+I+Ipfv+Rep+SbjSg4+Distr: [nìnádàguts'idiitłiizh, nànádàguts'idiitłiizh]
+  Verb - nàgudiitłód[jump-down] :
+    nàgudiitłód+V+I+Ipfv+Rep+SbjSg1:       [ninágudistłiizh, nànágudistłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjSg2:       [ninágudíítłiizh, nànágudíítłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjSg3:       [ninágudiitłiizh, nànágudiitłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjPl1:       [ninágudiìtłiizh, ninágudaàtłiizh, nànágudiìtłiizh, nànágudaàtłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjPl1+Distr: [ninádàgudiìtłiizh, ninádàgudaàtłiizh, nànádàgudiìtłiizh, nànádàgudaàtłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjPl2:       [ninágudastłiizh, nànágudastłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjPl2+Distr: [ninádàgudastłiizh, nànádàgudastłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjPl3:       [ninágugidiitłiizh, nànágugidiitłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjPl3+Distr: [ninádàgugidiitłiizh, nànádàgugidiitłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjSg4:       [nináguts'idiitłiizh, nànáguts'idiitłiizh]
+    nàgudiitłód+V+I+Ipfv+Rep+SbjSg4+Distr: [ninádàguts'idiitłiizh, nànádàguts'idiitłiizh]

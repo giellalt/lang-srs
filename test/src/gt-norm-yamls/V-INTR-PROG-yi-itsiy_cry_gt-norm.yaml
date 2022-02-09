@@ -9,14 +9,14 @@ Config:
 
 Tests:
   Verb - itsiy[cry] :
-    itsiy+V+I+Prog+SbjSg1:       yistsíł
-    itsiy+V+I+Prog+SbjSg2:       yítsíł
-    itsiy+V+I+Prog+SbjSg3:       yitsíł
-    itsiy+V+I+Prog+SbjPl1:       [yiìtsíł, yaàtsíł]
-    itsiy+V+I+Prog+SbjPl1+Distr: [dàyiìtsíł, dàyaàtsíł]
-    itsiy+V+I+Prog+SbjPl2:       yastsíł
-    itsiy+V+I+Prog+SbjPl2+Distr: dàyastsíł
-    itsiy+V+I+Prog+SbjPl3:       gátsíł
-    itsiy+V+I+Prog+SbjPl3+Distr: dàgátsíł
-    itsiy+V+I+Prog+SbjSg4:       ts'átsíł
-    itsiy+V+I+Prog+SbjSg4+Distr: dàts'átsíł
+    itsiy+V+I+Prog+SbjSg1:       yistsáł
+    itsiy+V+I+Prog+SbjSg2:       yítsáł
+    itsiy+V+I+Prog+SbjSg3:       yitsáł
+    itsiy+V+I+Prog+SbjPl1:       [yiìtsáł, yaàtsáł]
+    itsiy+V+I+Prog+SbjPl1+Distr: [dàyiìtsáł, dàyaàtsáł]
+    itsiy+V+I+Prog+SbjPl2:       yastsáł
+    itsiy+V+I+Prog+SbjPl2+Distr: dàyastsáł
+    itsiy+V+I+Prog+SbjPl3:       gátsáł
+    itsiy+V+I+Prog+SbjPl3+Distr: dàgátsáł
+    itsiy+V+I+Prog+SbjSg4:       ts'átsáł
+    itsiy+V+I+Prog+SbjSg4+Distr: dàts'átsáł

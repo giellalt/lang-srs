@@ -8,15 +8,15 @@ Config:
     App: lookup
 
 Tests:
-  Verb - ts'ázid[wake-up] :
-    ts'ázid+V+I+Ipfv+SbjSg1:       ts'ánissíd
-    ts'ázid+V+I+Ipfv+SbjSg2:       ts'ánízíd
-    ts'ázid+V+I+Ipfv+SbjSg3:       ts'ázíd
-    ts'ázid+V+I+Ipfv+SbjPl1:       [ts'ániìzíd, ts'ánaàzíd]
-    ts'ázid+V+I+Ipfv+SbjPl1+Distr: [ts'ádàniìzíd, ts'ádànaàzíd]
-    ts'ázid+V+I+Ipfv+SbjPl2:       ts'ánassíd
-    ts'ázid+V+I+Ipfv+SbjPl2+Distr: ts'ádànassíd
-    ts'ázid+V+I+Ipfv+SbjPl3:       ts'ágizíd
-    ts'ázid+V+I+Ipfv+SbjPl3+Distr: ts'ádàgizíd
-    ts'ázid+V+I+Ipfv+SbjSg4:       ts'áts'izíd
-    ts'ázid+V+I+Ipfv+SbjSg4+Distr: ts'ádàts'izíd
+  Verb - ts'ázíd[wake-up] :
+    ts'ázíd+V+I+Ipfv+SbjSg1:       ts'ánissíd
+    ts'ázíd+V+I+Ipfv+SbjSg2:       ts'ánízíd
+    ts'ázíd+V+I+Ipfv+SbjSg3:       ts'ázíd
+    ts'ázíd+V+I+Ipfv+SbjPl1:       [ts'ániìzíd, ts'ánaàzíd]
+    ts'ázíd+V+I+Ipfv+SbjPl1+Distr: [ts'ádàniìzíd, ts'ádànaàzíd]
+    ts'ázíd+V+I+Ipfv+SbjPl2:       ts'ánassíd
+    ts'ázíd+V+I+Ipfv+SbjPl2+Distr: ts'ádànassíd
+    ts'ázíd+V+I+Ipfv+SbjPl3:       ts'ágizíd
+    ts'ázíd+V+I+Ipfv+SbjPl3+Distr: ts'ádàgizíd
+    ts'ázíd+V+I+Ipfv+SbjSg4:       ts'áts'izíd
+    ts'ázíd+V+I+Ipfv+SbjSg4+Distr: ts'ádàts'izíd
