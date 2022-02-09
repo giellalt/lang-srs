@@ -19,14 +19,15 @@ yiitł'áłí "your vehicle")
 
 * LEXICON AlwaysUnpossessedNouns  never Px
 
-
 * LEXICON AlwaysPossessedNouns   always Px, body part, kinship
-
 
 * LEXICON UnpossessedNouns   Px or not, here not. Cf. PossessedNouns
 
 * LEXICON PossessedNouns   Px or not, here Px. Cf. UnpossessedNouns
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/stems/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-srs/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+

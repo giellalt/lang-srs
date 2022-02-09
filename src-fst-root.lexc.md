@@ -9,7 +9,6 @@ The morphological analyses of wordforms of Tsuut'ina are presented
 in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
-
 * +Asp	 asp, aspect
 * +Dem	 D, demonstrative
 * +Dim	 dim, diminutive
@@ -66,9 +65,7 @@ in this system in terms of the following symbols.
 * UnspecS+	 0, Unspecified person
 * +Symbol = independent symbols in the text stream, like £, €, ©
 
-
 ## Prefixes
-
 
 ## our flags
 
@@ -144,14 +141,11 @@ given the proper use of these flags.
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
 |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
-
-
-
-
-
-
-
 The word forms in Tsuut'ina start from noun and verb prefixes
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-srs/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-srs/blob/main/src/fst/root.lexc)</small>
+
+---
+
