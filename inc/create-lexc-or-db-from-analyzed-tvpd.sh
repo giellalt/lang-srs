@@ -228,11 +228,19 @@ END {
        if(lemdef!="")
            srslems[i]=srslem;
   
-       if(i in ipfv) stems="Ipfv: " ipfv[i]; else stems="Ipfv: –";
-       if(i in pfv) stems=stems " | Pfv: "pfv[i]; else stems=stems " | Pfv: –";
-       if(i in prog) stems=stems " | Prog: "prog[i]; else stems=stems " | Prog: –";
-       if(i in ipfvrept) stems=stems " | Ipfv+Rep: "ipfvrept[i]; else stems=stems " | Ipfv+Rep: –";
-       if(i in pfvrept) stems=stems " | Pfv+Rep: "pfvrept[i]; else stems=stems " | Pfv+Rep: –";
+       # if(i in ipfv) stems="Ipfv: " ipfv[i]; else stems="Ipfv: –";
+       # if(i in pfv) stems=stems " | Pfv: "pfv[i]; else stems=stems " | Pfv: –";
+       # if(i in prog) stems=stems " | Prog: "prog[i]; else stems=stems " | Prog: –";
+       # if(i in ipfvrept) stems=stems " | Ipfv+Rep: "ipfvrept[i]; else stems=stems " | Ipfv+Rep: –";
+       # if(i in pfvrept) stems=stems " | Pfv+Rep: "pfvrept[i]; else stems=stems " | Pfv+Rep: –";
+
+       stems="<table colspan=2><tr><td>Aspect</td><td>Theme</td></tr>";
+       if(i in ipfv) stems=stems "<tr><td>Ipfv</td><td>"ipfv[i]"</td></tr>"; else stems=stems "<tr><td>Ipfv</td><td>–</td></tr>";
+       if(i in pfv) stems=stems "<tr><td>Pfv</td><td>"pfv[i]"</td></tr>"; else stems=stems "<tr><td>Pfv</td><td>–</td></tr>";
+       if(i in prog) stems=stems "<tr><td>Prog</td><td>"prog[i]"</td></tr>"; else stems=stems "<tr><td>Prog</td><td>–</td></tr>";
+       if(i in ipfvrept) stems=stems "<tr><td>Ipfv+Rep</td><td>"ipfvrept[i]"</td></tr>"; else stems=stems "<tr><td>Ipfv+Rep</td><td>–</td></tr>";
+       if(i in pfvrept) stems=stems "<tr><td>Pfv+Rep</td><td>"pfvrept[i]"</td></tr>"; else stems=stems "<tr><td>Pfv+Rep</td><td>–</td></tr>";
+       stems=stems"</table>";
 
        ##### TEMPLATE for srs dictionary DB in json #####
        # [
@@ -282,7 +290,8 @@ END {
            db=db sprintf("    ],\n");
            db=db sprintf("    \"head\": \"%s\",\n", srslem);
            db=db sprintf("    \"linguistInfo\": {\n");
-           db=db sprintf("      \"stem\": \"%s\"\n", stems);
+           # db=db sprintf("      \"stem\": \"%s\"\n", stems);
+           db=db sprintf("      \"analysis\": \"%s\"\n", stems);
            db=db sprintf("    },\n");
            db=db sprintf("    \"paradigm\": \"%s%s\",\n", tags[1], tags[2]);
            db=db sprintf("    \"senses\": [\n");
