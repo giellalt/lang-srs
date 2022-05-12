@@ -54,18 +54,25 @@ define hToneSpreading;
 # with L . is -> ìs; gùja ásilàg "you (sg.) did me good", from á= si_ ^L .
 # í làg, with ^L . í -> i).
 # 
-# In the case of TAMA chunks, this prefix causes both short and long vowels
-# to drop by one level (e.g., í -> i, íí -> ii, etc.).  In all other cases,
-# only one mora is lowered (e.g., nánaàyistsòni "I will see you (pl.) again",
-# from ná= naa_ ^L . yis tsòni, where naa ^L -> naà, rather than *nàà).  To
-# model this, we represent this prefix's tone as ^L, adjusting TAMA chunk tones
-# first (i.e., apply the lowering to any vowel sequences immediately after
-# the "." boundary marker), then to any adjacent vowel immediately to the
-# left of this prefix.
-define lToneLowerRight "." "^L" á á -> "." a a, "." "^L" á -> "." a, 
-                       "." "^L" a a -> "." à à, "." "^L" a -> "." à, 
-                       "." "^L" í í -> "." i i, "." "^L" í -> "." i, 
-                       "." "^L" i i -> "." ì ì, "." "^L" i -> "." ì;
+# In the case of TAMA chunks, this prefix causes both short and level long
+# vowels to drop by one level (e.g., í -> i, íí -> ii, etc.), while leaving
+# contour tones (specifically, 0-IPFV 1PL aà/iì) unaffected.  In all other
+# cases, only one mora is lowered (e.g., nánaàyistsòni "I will see you (pl.)
+# again", from ná= naa_ ^L . yis tsòni, where naa ^L -> naà, rather than *nàà).
+# To model this, we represent this prefix's tone as ^L, adjusting TAMA chunk
+# tones first (i.e., apply the lowering to any vowel sequences immediately
+# after the "." boundary marker), then to any adjacent vowel immediately to
+# the left of this prefix.
+define lToneLowerRight [ "." "^L" á á -> "." a a      .o.
+                         "." "^L" á -> "." a          .o.
+                         "." "^L" a à -> "." a à      .o.
+                         "." "^L" a a -> "." à à      .o.
+                         "." "^L" a -> "." à          .o.
+                         "." "^L" í í -> "." i i      .o.
+                         "." "^L" í -> "." i          .o.
+                         "." "^L" i ì -> "." i ì      .o.
+                         "." "^L" i i -> "." ì ì      .o.
+                         "." "^L" i -> "." ì ];
 define lToneLowerLeft  á -> a, a -> à, í -> i, i -> ì,
                        ó -> o, o -> ò, ú -> u, u -> ù || _ "." "^L";
 define lToneCleanup "^L" -> 0;
@@ -190,12 +197,19 @@ define iDeletionBeforeOtherVowels i -> 0 || _ [á|a|à|ó|o|ò|ú|u|ù];
 # FST-internal symbol mangling.
 #
 
+# Some lexical entries include "^L" immediately before the inner-prefix
+# boundary marker "." (e.g., "ta=di^L.ʔò"), rather than as part of one of the
+# inflectional classes that produce "^L" after that marker (e.g., isi-PFV).
+# Shifting the "^L" to always appear after that boundary marker makes several
+# of the other tone-related rules defined here more straightforward to apply.
+define putLToneAfterInnerPrefixBoundaryMarker "^L" "." -> "." "^L";
+
 # Remove any unmarked, non-tone-bearing vowels (i.e., /i/) from the ends of
 # prefixes that immediately precede vowel-initial TAMA chunks (e.g., di .
 # is tł'áh -> d . is tł'áh).  This step makes it much easier to deal with
 # the morphophonology that happens at the point where the inner prefixes meet
 # the TAMA chunks.
-define shortenDefaultPrefixes i -> 0 || _ "." ("^L") [á|a|à|í|i|ì];
+define shortenDefaultPrefixes i -> 0 || _ "." ("^L") [á|a|à|í|i|ì|i2];
 
 # Turn any instances of <i2> into plain /i/. (We use <i2> in some TAMA chunks
 # to indicate an /i/ that maintains its mora when a prefix is joined to it,
@@ -213,7 +227,8 @@ define removeBoundaryMarkers "." -> 0;
 # Compose all of the morphophonology together.
 #
 
-regex [ shortenDefaultPrefixes
+regex [ putLToneAfterInnerPrefixBoundaryMarker
+.o. shortenDefaultPrefixes
 .o. hToneSpreading
 .o. lToneLowering
 .o. encliticMidToHighTone
