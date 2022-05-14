@@ -2,7 +2,7 @@
 # Tsuut'ina morphophonology
 #
 
-define vowel [a|á|à|i|í|ì|o|ó|ò|u|ú|ù];
+define vowel [a|á|à|à2|i|í|ì|o|ó|ò|u|ú|ù];
 define unmarkedVowel [a|i|o|u];
 define highToneVowel [á|í|ó|ú];
 define lowToneVowel [à|ì|ò|ù];
@@ -13,14 +13,26 @@ define consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
 # Morphophonological adjustments to tone.
 #
 
+# The distributive plural dà- has slightly different tonal behaviour compared
+# to other low-tone prefixes in Tsuut'ina: before 0-IPFV 1PL isaà-/isiì-, dà-
+# combines to form dààsaà-/dààsiì- (i.e., LM -> LL, e.g., dààsaàtsiy "each and
+# every one of us is crying", from dà- + isaàtsiy), rather than the expected
+# *daasaà-/*daasiì- (i.e., LM -> MM, as is found in all other LM contexts).
+# In all other contexts, dà- behaves tonally like any other low-marked prefix.
+#
+# We model this by representing the low-tone à in distributive plural dà- with
+# the multi-character symbol <à2>, then targetting the <i2> moraic /i/ that 
+# represents the initial vowel in 0-IPFV 1PL isaà-/isiì-.
+define distributivePlural1PLToneSandhi [ à2 i2 -> à ì .o. à2 -> à ];
+
 # Define LH -> MH (e.g., shì-á -> shaá, as in shaásʔín "I prepared food, made
 # a feast", dà-á -> daá, as in daátłiyaàʔí "each and every one of us saw each
 # other") HL -> HM (e.g., ná-ì -> náa, as in náaya "he/she got up"), and 
-# LM -> LL (e.g., dà-i -> dàà, as in dààsaàtsiy "each and every one of us
-# is crying").
+# LM -> MM (e.g., xà-i -> xaa, as in xaaʔò "s/he took something out", from
+# xà- i- DOBJ.INDEF ʔò "handle solid object")
 define toneSandhi à -> a, ì -> i, ò -> o, ù -> u || _ highToneVowel .o. 
                   á -> a, í -> i, ó -> o, ú -> u || _ lowToneVowel .o.
-                  a -> à, i -> ì, o -> ò, u -> ù || lowToneVowel _;
+                  à -> a, ì -> i, ò -> o, ù -> u || _ unmarkedVowel;
 
 # Certain high-tone prefixes in Tsuut'ina (e.g., tsí- "flee", or í- from 
 # historical *uˑ-) spread high tone rightward onto unmarked syllables,
@@ -234,8 +246,9 @@ regex [ putLToneAfterInnerPrefixBoundaryMarker
 .o. encliticMidToHighTone
 .o. uTAMAAssimilation
 .o. aTAMAAssimilation
-.o. cleanupMoraicI
 .o. removeBoundaryMarkers
+.o. distributivePlural1PLToneSandhi
+.o. cleanupMoraicI
 .o. uGliding
 .o. uDeletionBeforeO
 .o. assimilationBefore2PL
