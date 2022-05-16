@@ -109,9 +109,10 @@ define encliticMidToHighTone a -> á, i -> í, o -> ó, u -> ú || _ "^Encl" .o.
 # that are involved in this process.
 define lInitialStemsSbjPl2 s2 l -> [ ł | s l ] ;
 
-# Phonotactic restriction: in general, /sl/ sequences should be resolved as
-# /stł/ (e.g., /is+lí/ "I am" -> [istłí]).
-define slDissimilation s l -> s t ł;
+# Phonotactic restriction: in general, /sl/ and /sł/ sequences should be
+# resolved as /stł/ (e.g., /is+lí/ "I am" -> [istłí], /ídis+łù/ "I am driving"
+# -> [ídistłù]).
+define slDissimilation s [ l | ł ] -> s t ł;
 
 # Some <y>-initial stems alternate with <sh> when preceded by /s/ (e.g., -yón
 # "grow (perfective)", as in nìsishón "I grew up" vs. sìsíyón "you (sg.) grew
