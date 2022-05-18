@@ -40,10 +40,10 @@ LEXICON Root
 
 LEXICON Suffixation
                                             iNominalization;
+                                            iDelayedFuture;
 
 LEXICON Encliticization
                                             naNominalization;
-                                            iDelayedFuture;
                                             Enclitics;
 
 
@@ -86,7 +86,7 @@ LEXICON naNominalizationAffix
 
 LEXICON iDelayedFuture
 ! All Tsuut'ina verbs, both stative and dynamic, can appear with the delayed
-! future enclitic =i.  In imperfective, imperfective repetitive, and
+! future suffix -i.  In imperfective, imperfective repetitive, and
 ! progressive verb forms, this suffix is generally interpreted as "later on"
 ! (cf. TLL-20220203):
 !
