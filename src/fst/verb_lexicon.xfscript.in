@@ -52,6 +52,33 @@ define InsMiddle [..] -> "_" || "=" _ ~$["_"] .#. .o.
 
 define InsOuter  [..] -> "=" || .#. _ ~$["="] .#. ;
 
+# Some lexical entries include a "^L" immediately before the inner-prefix
+# boundary marker "." (e.g., xá=_^L.ʔò "take it [solid object] out", or
+# ta=_di^L.ʔò "lift/pick/hold it [solid object] up"), with or without
+# any other inner prefixes present.  In these (rare) cases, Tsuut'ina uses
+# middle prefix TAMA allomorphs, rather than outer or inner prefix forms, e.g.
+#
+#   2SG  xáaʔò      "you (sg.) will carry it (solid object) past"
+#                   (not *xaniʔò or something similar if 0-IPFV outer or no
+#                    preceding prefix allomorphs were used)
+#   1PL  xáasaàʔò   "we will carry it (solid object) past"
+#                   (not *xaàʔò or something similar if 0-IPFV inner prefix
+#                    allomorphs were used)
+#
+#   2SG  tadiʔò     "you (sg.) will lift it (solid object) up"
+#                   (not *tadiniʔò if 0-IPFV outer or no preceding prefix
+#                    allomorphs were used)
+#   1PL  tadìsaàʔò  "we will lift it (solid object) up"
+#                   (not *tadaàʔò or something similar if 0-IPFV inner
+#                    prefix allomorphs were used)
+#
+# This rule therefore turns @P.PREFIX.INNER@ into @P.PREFIX.MIDDLE@ to ensure
+# that middle-prefix allomorphs are used, then sets an additional flag (@P.
+# LOWTONE.ON@) to help differentiate between this situation and all other
+# middle-prefix contexts (for use in 'affixes/verb_inner_affixes.lexc').
+define LInnerPrefixAllomorphs "@P.PREFIX.INNER@" -> 
+    "@P.PREFIX.MIDDLE@" "@P.LOWTONE.ON@" || "^L" _ ;
+
 # Some middle and inner prefixes (e.g., middle íH- conative/half-transitive,
 # inner ná-) appear with outer prefix TAMA chunk allomorphs. In order to
 # get this right, we append the symbol "^O" after the vowel in the lexical
@@ -61,15 +88,17 @@ define RequireOuterAllomorphs "^O" "@P.PREFIX.INNER@" -> "@P.PREFIX.OUTER@" .o.
                               "^O" "@P.PREFIX.MIDDLE@" -> "@P.PREFIX.OUTER@" .o.
                               "^O" -> "@P.PREFIX.OUTER@";
 
-# We temporarily keep the boundary symbol for inner affixes (".") in place
-# so that we can target morphophonology there more easily (especially when
-# aiming to drop the "weak" /i/ vowels that appear in inner lexical prefixes).
+# We temporarily keep the boundary symbol for inner affixes ("."), middle
+# affixes ("_"), and outer affixes ("=") in place so that we can target
+# morphophonology in each position more easily (especially when aiming to drop
+# the "weak" /i/ vowels that appear in inner lexical prefixes).
 read regex [Stems PostverbalAffixes] .o. 
             MarkPrefixes .o. 
             InsInner .o. InsMiddle .o. InsOuter .o. 
-#            "." -> InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
-            RequireOuterAllomorphs .o.
-            "." -> "." InnerAffixes , "_" -> MiddleAffixes , "=" -> OuterAffixes;
+            LInnerPrefixAllomorphs .o. RequireOuterAllomorphs .o.
+            "." -> "." InnerAffixes ,
+            "_" -> "_" MiddleAffixes ,
+            "=" -> "=" OuterAffixes;
 define WordForms;
 
 # Concatenate ObliqueAffixes and the other inflectional FSTs.
