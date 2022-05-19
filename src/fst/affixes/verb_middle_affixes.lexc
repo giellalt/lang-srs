@@ -536,6 +536,10 @@ LEXICON Filter-DO-IO-Checks
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@                       #;
 @U.OBJECTPERSON.4@@U.OBJECTNUMBER.SG@                       #;
 
+! Indefinite direct object forms (e.g., "give *something* to IO") are fine
+! throughout.
+@U.OBJECTPERSON.INDEF@                                      #;
+
 ! Make sure that at most one reflexive or reciprocal form appears as a direct
 ! object or indirect object (i.e., no DObj.REFL/RECIP-IObj.REFL/RECIP
 ! combinations)
