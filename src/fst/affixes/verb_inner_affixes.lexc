@@ -1019,18 +1019,20 @@ LEXICON yi-PROG-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yí    #;
 ! After the transitional/semelfactive/inchoative prefix ì- (represented in
-! the model as "^L", here captured by the flag LOWTONE), 3SG yi-PROG has
-! the form yi-, not a-, after an inner prefix (e.g., màgúdìyilòł "he/she/it
-! is getting sick", not *màgúdalòł)
+! the model as "^L", here captured by the flag LOWTONE), 3SG, 3PL, and 4SG
+! yi-PROG have the form yi-, not a-, after an inner prefix (e.g., màgúdìyilòł
+! "he/she/it is getting sick", not *màgúdalòł; cf. also tayidìyiʔół "he/she/it
+! is lifting it up, holding it up")
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yi         #; 
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.LOWTONE@á             #; 
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@yaà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@yiì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@yiì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2  #;
-! TODO: does inner-prefix ì- also require yi- in 3PL and 4SG, or only in 3SG?
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@á     #; 
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@á     #;  
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.LOWTONE.ON@yi         #; 
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.LOWTONE@á             #; 
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yi         #;  
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.LOWTONE@á             #;  
 
 LEXICON yi-PROG-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -1059,17 +1061,19 @@ LEXICON yis-PROG-AFF-NoPrefix
 LEXICON yis-PROG-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yís   #;
-! After inner-prefix ì- ("^L", LOWTONE), 3SG yis-PROG is expected to have 
-! the form yis-, not ás-.
+! After inner-prefix ì- ("^L", LOWTONE), 3SG/3PL/4SG yis-PROG has the form
+! form yis-, not ás- (e.g., tayidìyistáł "he/she/it is lifting it up, holding
+! it up (human/animal object).
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #; 
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ás            #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@yaà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@yiì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@yiì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2  #;
-! TODO: does inner-prefix ì- also require yi- in 3PL and 4SG, or only in 3SG?
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ás    #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ás    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.LOWTONE.ON@yis        #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.LOWTONE@ás            #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.LOWTONE@ás            #;
 
 LEXICON yis-PROG-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -1097,17 +1101,18 @@ LEXICON yii-PROG-AFF-NoPrefix
 LEXICON yii-PROG-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yíí   #;
-! After inner-prefix ì- ("^L", LOWTONE), 3SG yii-PROG is expected to have 
-! the form yii-, not áá-.
+! After inner-prefix ì- ("^L", LOWTONE), 3SG/3PL/4SG yii-PROG is expected to
+! have the form yii-, not áá-.
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yii        #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.LOWTONE@áá            #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@yaà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@yiì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@yiì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2  #;
-! TODO: does inner-prefix ì- also require yi- in 3PL and 4SG, or only in 3SG?
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@áá    #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@áá    #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.LOWTONE.ON@yii        #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.LOWTONE@áá            #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yii        #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.LOWTONE@áá            #;
 
 LEXICON yii-PROG-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
