@@ -120,7 +120,15 @@ define slDissimilation s [ l | ł ] -> s t ł;
 # "grow (perfective)", as in nìsishón "I grew up" vs. sìsíyón "you (sg.) grew
 # up").  We represent the <y> in these stems in lexical entries as <y2>, then
 # define the corresponding phonological alternation here.
-define y2InitialStemAfterS [ s y2 -> s h  .o.  y2 -> y ];
+define y2InitialStemAfterS [ s "y2" -> s h  .o.  "y2" -> y ];
+
+# Some stems containing the vowel <a> alternate with <o> when preceded by
+# <sh> (e.g., -yá(h) "walk, go (human non-pl.)", as in dishó "I will walk, go"
+# and dashó "you (2) will walk, go" vs. díyá "you (sg.) will walk, go").  We
+# treat this here as a productive alternation with the special character "^A",
+# though in actuality, this 'process' is limited to a very small set of 
+# lexemes.
+define aVowelAlternation a -> o, á -> ó, à -> ò || s h _ "^A" .o. "^A" -> 0 ;
 
 # Some stems ending in /n/ may appear with or without that consonant when it
 # occurs word-finally (e.g., sistí ~ sistín "I am sleeping") or before an
@@ -273,6 +281,7 @@ regex [ putLToneAfterInnerPrefixBoundaryMarker
 .o. iDeletionBeforeOtherVowels
 .o. slDissimilation
 .o. y2InitialStemAfterS 
+.o. aVowelAlternation
 .o. n2FinalStems
 .o. zhDevoicing 
 .o. zDevoicing
