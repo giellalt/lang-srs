@@ -3,17 +3,14 @@
         * [functions.cg3](src-cg3-functions.cg3.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/cg3/functions.cg3))
     * `fst/`
         * `affixes/`
-            * [nouns.lexc](src-fst-affixes-nouns.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/affixes/nouns.lexc))
             * [propernouns.lexc](src-fst-affixes-propernouns.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/affixes/propernouns.lexc))
             * [symbols.lexc](src-fst-affixes-symbols.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/affixes/symbols.lexc))
             * [verbs.lexc](src-fst-affixes-verbs.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/affixes/verbs.lexc))
         * [root.lexc](src-fst-root.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/root.lexc))
         * `stems/`
-            * [nouns.lexc](src-fst-stems-nouns.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/stems/nouns.lexc))
             * [numerals.lexc](src-fst-stems-numerals.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/stems/numerals.lexc))
             * [pronouns.lexc](src-fst-stems-pronouns.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/stems/pronouns.lexc))
             * [verb_stems.lexc](src-fst-stems-verb_stems.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/stems/verb_stems.lexc))
-            * [verbs.lexc](src-fst-stems-verbs.lexc.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/fst/stems/verbs.lexc))
     * `phonetics/`
         * [txt2ipa.xfscript](src-phonetics-txt2ipa.xfscript.html) ([src](https://github.com/giellalt/lang-srs/blob/main/src/phonetics/txt2ipa.xfscript))
     * `transcriptions/`
