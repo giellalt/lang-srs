@@ -1,0 +1,58 @@
+!
+! Tsuut'ina noun stems.
+!
+
+! Unpossessed stem forms.
+LEXICON UnpossessedStems
+                                                   UnpossessedSgStems;
+                                                   UnpossessedPlStems;
+                                                   UnpossessedNoNumStems;
+
+LEXICON UnpossessedSgStems
+ístłí                                              SingularNoun;
+tłích'á                                            SingularNoun;
+
+LEXICON UnpossessedPlStems
+ístłí:ístłíká                                      PluralNoun;
+ístłí:ástłáká                                      PluralNoun;
+tłích'á:tłích'áká                                  PluralNoun;
+
+LEXICON UnpossessedNoNumStems
+guuniizh                                           Noun;
+más                                                Noun;
+
+
+! Possessed stem forms with mi- possessive prefixes.
+LEXICON miPossessedStems
+                                                   miPossessedSgStems;
+                                                   miPossessedPlStems;
+                                                   miPossessedNoNumStems;
+
+LEXICON miPossessedSgStems
+ístłí:lích'à                                       SingularNoun;
+tłích'á:lích'à                                     SingularNoun;
+tłích'á:tłích'à                                    SingularNoun;
+
+LEXICON miPossessedPlStems
+ístłí:lích'àká                                     PluralNoun;
+tłích'á:lích'àká                                   PluralNoun;
+tłích'á:tłích'àká                                  PluralNoun;
+
+LEXICON miPossessedNoNumStems
+guuniizh:guunijà                                   Noun;
+más:mázà                                           Noun;
+
+
+! Possessed stem forms with mí- possessive prefixes.
+LEXICON miHPossessedStems
+mídá:dá                                            Noun;
+mítsí:tsí                                          Noun;
+
+! Possessed stem forms with mii- possessive prefixes.
+LEXICON miiHPossessedStems
+miíts'a:ts'a                                       Noun;
+miízá:zá                                           Noun;
+
+! Possessed stem forms with máa possessive prefixes.
+LEXICON maaPossessedStems
+guuniizh:guunijà                                   Noun;

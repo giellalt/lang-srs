@@ -1,0 +1,305 @@
+! Tsuut'ina nouns can appear in inflected forms that reflect two features:
+! possession (person and number of possessor, with some entanglement with
+! the person and number of the subject of the utterance in cases where the
+! possessed noun isn't itself the subject) and number (singular vs. plural,
+! only in the case of a closed set of nouns):
+!
+! 1. Possession: Tsuut'ina nouns can be divided into three classes on the
+! basis of possession:
+!
+!   1. Nouns that always appear in unpossessed form (e.g., nàk'us "cloud").
+!      This class includes both common and proper nouns.
+!
+!   2. Nouns that always appear in possessed form (e.g., sitsì "my head", nitò
+!      "your father").  This class is generally limited to body parts and
+!      kinship terms.
+!
+!   3. Nouns that may appear in either possessed or unpossessed form (e.g.,
+!      más "knife" ~ simázà "my knife", guuniizh "story" ~ máa guunijà
+!      "his/her/its story").
+!
+! Nouns in the third class typically have different possessed and unpossessed
+! stem forms (e.g., más [unpossessed] vs. -mázà [possessed] "knife", násʔághá
+! [unpossessed] vs. -násʔághà [possessed] "house").
+!
+! Nouns that have possessed forms may indicate possession morphosyntactically
+! in two different ways:
+!
+!   A. With the addition of a possessive prefix (e.g., si- "1SG.POSS"). There
+!      are three phonologically distinct sets of these prefixes:
+!
+!       i.   Mid-tone possessive prefixes: Possessive prefixes appear with a
+!            short, mid-tone vowel of the form si-, ni-, mi- (e.g., sinásʔághà
+!            "my house").  These are the most common possessive prefix forms
+!            in Tsuut'ina.
+!
+!       ii.  High-tone possessive prefixes: Possessive prefixes appear with a
+!            short, high-tone vowel of the form sí-, ní-, mí- (e.g., sítsí
+!            "my nose", sídá "my older sister).  This high tone derives
+!            historically from a nasalized vowel in this prefix, and only
+!            appear in a small, closed set of lexemes in present-day Tsuut'ina.
+!
+!       iii. Mid-rising-tone possessive prefixes: Possessive prefixes appear
+!            with a long, mid-to-high rising tone vowel of the form sií-,
+!            nií-, mií- (e.g., siízá "my son [woman speaking]", siíts'a "my
+!            daughter [woman speaking]").  These appear only a very limited,
+!            closed set of lexemes.
+!
+!   B. With an inflected postposition of the form sáa, náa, máa, that appears
+!      immediately before the possessed noun (e.g., sáa guunijà "my story"
+!      [alongside siguunijà], sáa 'uncle' "my uncle").  This strategy for
+!      indicating possession is often used with loanwords from languages like
+!      English, and the inflected postposition is sometimes written as a prefix
+!      on the possessed noun (i.e., without any whitespace separating the
+!      postposition from the possessed noun)
+!
+! While most possessed nouns occur only appear in one of these possessive
+! constructions, a small number are attested in both (e.g., máa guunijà ~
+! miguunijà "his/her/its story").
+!
+!
+! 2. Number: Most nouns in Tsuut'ina are not inflected for number (singular
+! vs. plural), and do not provide any morphological indications of a number
+! distinction.  That is, the same noun form can have both singular and plural
+! interpretations, based on the context in which it appears (e.g., diná
+! "person, people"; tłìk'í más"one knife" vs. akíyí más "two knives").
+!
+! A small, closed set of Tsuut'ina nouns have distinct singular and plural
+! forms.  These can be divided into two classes:
+!
+!   1. Nouns that may appear with the suffix -ká to indicate plural number
+!      (e.g., tłích'á "dog" ~ tłích'áká "dogs", xaní "cow" ~ xaníká/xanáká
+!      "cows").
+!
+!      This set is limited to a small number of nouns referring to living
+!      beings, generally domesticated and semi-domesticated animals (e.g.,
+!      most livestock, dogs, cats) and, for some speakers, some kinship
+!      terms (e.g., grandchildren, younger sisters and brothers, etc.).
+!      This plural suffix appears with both possessed and unpossessed forms
+!      of these nouns (e.g., ístłíká "horses" ~ silích'àká "my horses").
+!
+!      It should be noted that
+!
+!       i.  A number of these nouns whose singular forms contain /i/ come to
+!           have assimilated pronunciations with /a/ when -ká is added.  This
+!           results in irregular-seeming plural forms (e.g., ístłí "horse" ~
+!           ástłáká "horses", alongside ístłíká).
+!
+!       ii. Some Tsuut'ina speakers report that -ká may only be used with
+!           animals and not with kinship terms (cf. TLL-20230619), while
+!           others accept -ká with both.
+!
+!   2. Nouns that have suppletive plural forms (e.g., ts'ìdoótsa "girl" ~
+!      it'óókúwá "girls", k'àt'íní/k'òt'íní "man" ~ k'àt'únághá/k'òt'únághá
+!      "men").
+!
+!      Many of these nouns can be analyzed as incorporating historical plural
+!      suffixes with several forms, including:
+!
+!       i.   -íghá/ághá (e.g., xàkíjí "chief" ~ xàkújághá "chiefs");
+!
+!       ii.  -kúwá (e.g., ts'ootsa "old woman" ~ ts'ookúwá "old women",
+!             alongside ts'ooká).
+!
+!       iii. -ká (in cases where the stem is shorter in the plural form than
+!             in the singular, suggesting that this is not an instance of
+!             regular suffixation of -ká as discussed above; e.g., isgiyá
+!             "young man" ~ isgááká "young men", xàlítsa "old man" ~ xàlíká
+!             "old men", ts'ootsa "old woman" ~ ts'ooká "old women").
+!
+!       For the purposes of FST modelling, all of these historical sub-classes
+!       can be treated synchronically as involving the same kind of suppletive
+!       relationship between singular and plural forms.
+!
+! There is also a separate post-nominal marker, yiná, that marks associative
+! plurals referring to groups of human beings (e.g., Harold yiná "Harold and
+! them", sídá yiná "my older sisters [as a group]").  It would be possible to
+! analyze this as part of the nominal morphology surrounding nouns in
+! Tsuut'ina, but, since yiná is often written as a separate word (or separated
+! by a hyphen), we treat it here as an independent word form.
+!
+! The following lexc definitions use "+Sg" and "+Pl" tags to indicate the
+! value of the number feature of nouns that distinguish singular and plural
+! forms (both with the suffix -ká and by suppletion).  Nouns that do not
+! distinguish singular and plural forms are not marked for this feature.
+!
+!
+! The Big Crow and Big Plume dialect forms of the possessive prefixes defined
+! below are widely attested in documentation of Tsuut'ina, and are drawn from
+! several sources (e.g., inflected forms found in TLL-20220825).  Crowchief
+! dialect possessive prefix forms are less well documented; the forms defined
+! here are taken from Onespot & Young (1939: MSS 672 BC, Box 1, Folder 22a,
+! p. 67; Edward Onespot, speaker), which provides a full list of prefix forms.
+! Other attestations of Crowchief dialect possessive prefix forms may exist
+! (e.g., in the grammatical elicitation sections of Goddard's unpublished
+! Tsuut'ina fieldnotes, particularly in consultation with Annie Onespot, a
+! Crowchief dialect speaker), and it may be valuable for those sources to be
+! consulted further in future work.
+LEXICON NounPrefixes
+                                                   UnpossessedStems;
+                                                   miPossessivePrefixes;
+                                                   miHPossessivePrefixes;
+                                                   miiHPossessivePrefixes;
+                                                   maaPossessivePrefixes;
+
+LEXICON miPossessivePrefixes
+
+@U.PX.SG1@:@U.PX.SG1@si                            miPossessedStems;
+@U.PX.SG2@:@U.PX.SG2@ni                            miPossessedStems;
+@U.PX.SG3@:@U.PX.SG3@mi                            miPossessedStems;
+@U.PX.SG3SBJSG3@:@U.PX.SG3SBJSG3@yi                miPossessedStems;
+@U.PX.SG3SBJSG3COREF@:@U.PX.SG3SBJSG3COREF@di      miPossessedStems;
+@U.PX.SG3SBJPL3@:@U.PX.SG3SBJPL3@giyi              miPossessedStems;
+@U.PX.SG4@:@U.PX.SG4@gu                            miPossessedStems;
+
+@U.PX.PL1@                                         miPossessivePrefixes12PL;
+@U.PX.PL2@                                         miPossessivePrefixes12PL;
+@U.PX.PL3@:@U.PX.PL3@gimi                          miPossessedStems;
+@U.PX.PL3SBJ3@:@U.PX.PL3SBJ3@gu                    miPossessedStems;
+@U.PX.PL3SBJ3COREF@:@U.PX.PL3SBJ3COREF@gidi        miPossessedStems;
+
+@U.PX.AREAL@:@U.PX.AREAL@gu                        miPossessedStems;
+@U.PX.GIVEN@:@U.PX.GIVEN@                          miPossessedStems;
+@U.PX.INDEF@:@U.PX.INDEF@i                         miPossessedStems;
+@U.PX.RECIP@                                       miPossessivePrefixesRecip;
+
+LEXICON miPossessivePrefixes12PL
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@nihi        miPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@nahi      miPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@nahi    miPossessedStems;
+
+LEXICON miPossessivePrefixesRecip
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@ítłi        miPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@átłi      miPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@ástłi     miPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@átłi    miPossessedStems;
+
+
+LEXICON miHPossessivePrefixes
+
+@U.PX.SG1@:@U.PX.SG1@sí                            miHPossessedStems;
+@U.PX.SG2@:@U.PX.SG2@ní                            miHPossessedStems;
+@U.PX.SG3@:@U.PX.SG3@mí                            miHPossessedStems;
+@U.PX.SG3SBJSG3@:@U.PX.SG3SBJSG3@yí                miHPossessedStems;
+@U.PX.SG3SBJSG3COREF@:@U.PX.SG3SBJSG3COREF@dí      miHPossessedStems;
+@U.PX.SG3SBJPL3@:@U.PX.SG3SBJPL3@giyí              miHPossessedStems;
+@U.PX.SG4@:@U.PX.SG4@gú                            miHPossessedStems;
+
+@U.PX.PL1@                                         miHPossessivePrefixes12PL;
+@U.PX.PL2@                                         miHPossessivePrefixes12PL;
+@U.PX.PL3@:@U.PX.PL3@gimí                          miHPossessedStems;
+@U.PX.PL3SBJ3@:@U.PX.PL3SBJ3@gú                    miHPossessedStems;
+@U.PX.PL3SBJ3COREF@:@U.PX.PL3SBJ3COREF@gidí        miHPossessedStems;
+
+@U.PX.AREAL@:@U.PX.AREAL@gú                        miHPossessedStems;
+@U.PX.GIVEN@:@U.PX.GIVEN@                          miHPossessedStems;
+@U.PX.INDEF@:@U.PX.INDEF@í                         miHPossessedStems;
+@U.PX.RECIP@                                       miHPossessivePrefixesRecip;
+
+LEXICON miHPossessivePrefixes12PL
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@nihí        miHPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@nahí      miHPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@nahí    miHPossessedStems;
+
+LEXICON miHPossessivePrefixesRecip
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@ítłí        miHPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@átłí      miHPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@ástłí     miHPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@átłí    miHPossessedStems;
+
+
+LEXICON miiHPossessivePrefixes
+
+@U.PX.SG1@:@U.PX.SG1@sií                           miiHPossessedStems;
+@U.PX.SG2@:@U.PX.SG2@nií                           miiHPossessedStems;
+@U.PX.SG3@:@U.PX.SG3@mií                           miiHPossessedStems;
+@U.PX.SG3SBJSG3@:@U.PX.SG3SBJSG3@yií               miiHPossessedStems;
+@U.PX.SG3SBJSG3COREF@:@U.PX.SG3SBJSG3COREF@dií     miiHPossessedStems;
+@U.PX.SG3SBJPL3@:@U.PX.SG3SBJPL3@giyií             miiHPossessedStems;
+@U.PX.SG4@:@U.PX.SG4@guú                           miiHPossessedStems;
+
+@U.PX.PL1@                                         miiHPossessivePrefixes12PL;
+@U.PX.PL2@                                         miiHPossessivePrefixes12PL;
+@U.PX.PL3@:@U.PX.PL3@gimií                         miiHPossessedStems;
+@U.PX.PL3SBJ3@:@U.PX.PL3SBJ3@guú                   miiHPossessedStems;
+@U.PX.PL3SBJ3COREF@:@U.PX.PL3SBJ3COREF@gidií       miiHPossessedStems;
+
+@U.PX.AREAL@:@U.PX.AREAL@guú                       miiHPossessedStems;
+@U.PX.GIVEN@:@U.PX.GIVEN@mií                       miiHPossessedStems; ! CHECK
+@U.PX.INDEF@:@U.PX.INDEF@ií                        miiHPossessedStems; ! CHECK
+@U.PX.RECIP@                                       miiHPossessivePrefixesRecip;
+
+LEXICON miiHPossessivePrefixes12PL
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@nihií       miiHPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@nahií     miiHPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@nahií   miiHPossessedStems;
+
+LEXICON miiHPossessivePrefixesRecip
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@ítłií       miiHPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@átłií     miiHPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@ástłií    miiHPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@átłií   miiHPossessedStems;
+
+
+LEXICON maaPossessivePrefixes
+
+@U.PX.SG1@:@U.PX.SG1@sáa%                          maaPossessedStems;
+@U.PX.SG2@:@U.PX.SG2@náa%                          maaPossessedStems;
+@U.PX.SG3@:@U.PX.SG3@máa%                          maaPossessedStems;
+@U.PX.SG3SBJSG3@:@U.PX.SG3SBJSG3@yáa%              maaPossessedStems;
+@U.PX.SG3SBJSG3COREF@:@U.PX.SG3SBJSG3COREF@dáa%    maaPossessedStems;
+@U.PX.SG3SBJPL3@:@U.PX.SG3SBJPL3@giyáa%            maaPossessedStems;
+@U.PX.SG4@:@U.PX.SG4@gwáa%                         maaPossessedStems;
+
+@U.PX.PL1@                                         maaPossessivePrefixes12PL;
+@U.PX.PL2@                                         maaPossessivePrefixes12PL;
+@U.PX.PL3@:@U.PX.PL3@gimáa%                        maaPossessedStems;
+@U.PX.PL3SBJ3@:@U.PX.PL3SBJ3@gwáa%                 maaPossessedStems;
+@U.PX.PL3SBJ3COREF@:@U.PX.PL3SBJ3COREF@gidáa%      maaPossessedStems;
+
+@U.PX.AREAL@:@U.PX.AREAL@gwáa%                     maaPossessedStems;
+@U.PX.GIVEN@:@U.PX.GIVEN@áa%                       maaPossessedStems;
+@U.PX.INDEF@:@U.PX.INDEF@áa%                       maaPossessedStems; ! CHECK
+@U.PX.RECIP@                                       maaPossessivePrefixesRecip;
+
+LEXICON maaPossessivePrefixes12PL
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@niháa%      maaPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@naháa%    maaPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@naháa%  maaPossessedStems;
+
+LEXICON maaPossessivePrefixesRecip
+@U.DIALECT.BIGCROW@:@U.DIALECT.BIGCROW@ítłáa%      maaPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@átłáa%    maaPossessedStems;
+@U.DIALECT.BIGPLUME@:@U.DIALECT.BIGPLUME@ástłáa%   maaPossessedStems;
+@U.DIALECT.CROWCHIEF@:@U.DIALECT.CROWCHIEF@átłáa%  maaPossessedStems;
+
+
+LEXICON Noun
++N:0                                               Tags;
+
+LEXICON SingularNoun
++N+Sg:0                                            Tags;
+
+LEXICON PluralNoun
++N+Pl:0                                            Tags;
+
+LEXICON Tags
+@D.PX@                                             #;
+@R.PX.SG1@+PxSg1:@R.PX.SG1@                        #;
+@R.PX.SG2@+PxSg2:@R.PX.SG2@                        #;
+@R.PX.SG3@+PxSg3:@R.PX.SG3@                        #;
+@R.PX.SG3SBJSG3@+PxSg3+SbjSg3:@R.PX.SG3SBJSG3@     #;
+@R.PX.SG3SBJSG3COREF@+PxSg3+SbjSg3+CR:@R.PX.SG3SBJSG3COREF@ #;
+@R.PX.SG3SBJPL3@+PxSg3+SbjPl3:@R.PX.SG3SBJPL3@     #;
+@R.PX.SG4@+PxSg4:@R.PX.SG4@                        #;
+
+@R.PX.PL1@+PxPl1:@R.PX.PL1@                        #;
+@R.PX.PL2@+PxPl2:@R.PX.PL2@                        #;
+@R.PX.PL3@+PxPl3:@R.PX.PL3@                        #;
+@R.PX.PL3SBJ3@+PxPl3+Sbj3:@R.PX.PL3SBJ3@           #;
+@R.PX.PL3SBJ3COREF@+PxPl3+Sbj3+CR:@R.PX.PL3SBJ3COREF@ #;
+
+@R.PX.AREAL@+PxAreal:@R.PX.AREAL@                  #;
+@R.PX.GIVEN@+PxGiven:@R.PX.GIVEN@                  #;
+@R.PX.INDEF@+PxIndef:@R.PX.INDEF@                  #;
+@R.PX.RECIP@+PxRecip:@R.PX.RECIP@                  #;

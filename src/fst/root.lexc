@@ -1,4 +1,4 @@
-! Divvun & Giellatekno - open source grammars for Sarsi language
+! Divvun & Giellatekno - open source grammars for Tsuut'ina language
 ! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
 ! http://giellatekno.uit.no & http://divvun.no
 !
@@ -13,229 +13,72 @@
 ! giellatekno@uit.no or feedback@divvun.no
 
 ! ========================================================================== !
-!! # Tsuut'ina morphological analyser                      !
+!! # Tsuut'ina morphological analyser                                        !
 ! ========================================================================== !
-!! INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Tsuut'ina.
 
-Multichar_Symbols  !!≈ # Definitions for @CODE@
+Multichar_Symbols
 
-!! ## Analysis symbols
-!    ----------------
-!! The morphological analyses of wordforms of Tsuut'ina are presented
-!! in this system in terms of the following symbols.
-!! (It is highly suggested to follow existing standards when adding new tags).
+@U.DIALECT.BIGCROW@
+@U.DIALECT.BIGPLUME@
+@U.DIALECT.CROWCHIEF@
 
-! Selected punctuation tags
-+CLB
-+PUNCT
-+LEFT
-+RIGHT
+@D.PX@
+@U.PX.SG1@
+@U.PX.SG2@
+@U.PX.SG3@
+@U.PX.SG3SBJSG3@
+@U.PX.SG3SBJSG3COREF@
+@U.PX.SG3SBJPL3@
+@U.PX.SG4@
+@U.PX.PL1@
+@U.PX.PL2@
+@U.PX.PL3@
+@U.PX.PL3SBJ3@
+@U.PX.PL3SBJ3COREF@
+@U.PX.AREAL@
+@U.PX.GIVEN@
+@U.PX.INDEF@
+@U.PX.RECIP@
+@R.PX.SG1@
+@R.PX.SG2@
+@R.PX.SG3@
+@R.PX.SG3SBJSG3@
+@R.PX.SG3SBJSG3COREF@
+@R.PX.SG3SBJPL3@
+@R.PX.SG4@
+@R.PX.PL1@
+@R.PX.PL2@
+@R.PX.PL3@
+@R.PX.PL3SBJ3@
+@R.PX.PL3SBJ3COREF@
+@R.PX.AREAL@
+@R.PX.GIVEN@
+@R.PX.INDEF@
+@R.PX.RECIP@
 
-+Asp	!!= * @CODE@ asp, aspect
-+Dem	!!= * @CODE@ D, demonstrative
-+Dim	!!= * @CODE@ dim, diminutive
-+Du		!!= * @CODE@ du, dual
-+Err/Orth !!= * @CODE@ Substandard, not implemented
-+Foc	!!= * @CODE@ foc, focus
-+Hab	!!= * @CODE@ hab, habitual
-+Imprs	!!= * @CODE@ impers, impersonal (+Impers?)
-+Inc	!!= * @CODE@ inc, inceptive (Incpt?)
-+Inch	!!= * @CODE@ incho, inchoative
-+Mod	!!= * @CODE@ M mode (this seems more like category than property)
-+Mom	!!= * @CODE@ momentaneous
-N+		!!= * @CODE@ N, noun
-+Neg	!!= * @CODE@ neg, negative
-+Num	!!= * @CODE@ num, Numeral
-+PI+	!!= * @CODE@ postposition incorporation (this is not a Morphosyn tag :-(
-+PNS    !!= * @CODE@ possessed noun suffix (this is not a Morphosyn tag :-(
-+Part   !!= * @CODE@ Part, particle
-+Pl		!!= * @CODE@ pl, Plural
-+Po		!!= * @CODE@ P, Postposition
-+Prt	!!= * @CODE@ T, tense (past)
-+Qst	!!= * @CODE@ Q, question marker
-+Qt		!!= * @CODE@ Qt, quantifier
-+Sem/Hum		!!= * @CODE@ Human
-+Sem/Obj	!!= * @CODE@ O, Object (have a look at this)
-V+		!!= * @CODE@ V, verb
-12Du+	!!= * @CODE@ 12, first person dual inclusive
-13Du+	!!= * @CODE@ 13, first person dual exclusive
-1Pl+     !!= * @CODE@ 12, first person plural inclusive
-1PlO+   !!= * @CODE@ 12, first person plural inclusive O
-1Sg+	!!= * @CODE@ 1, first person singular
-1SgO+
-2Du+	!!= * @CODE@ 22, second person dual
-2Pl+
-2PlO+
-2Sg+	!!= * @CODE@ 2
-2SgO+
-3Du+	!!= * @CODE@ 33, third person dual
-3Pl+
-3Sg+	!!= * @CODE@ 3
-3SgO+
-4Sg+	!!= * @CODE@ 4, the other
-4SgO+
-
-PxSg1+  !!= * @CODE@ Px
-PxSg2+  !!= * @CODE@ Px
-PxSg3+  !!= * @CODE@ Px
-PxSg4+  !!= * @CODE@ Px
-
-Adv+
-Ar+		!!= * @CODE@ 5, areal subject, it (place, condition, weather)
-Cl/0+
-Cl/?+
-Cl/d+
-Cl/l+
-Distr+
-Gen1+
-Gen2+
-Gen3+
-Impf+	!!= * @CODE@ imp, imperfective (or prefix?)
-Incept+
-Iter+	!!= * @CODE@ iter, iterative
-NI+		!!= * @CODE@ NI, noun incorporation (probably not a tag)
-Opt+	!!= * @CODE@ opt, optative
-Prf+	!!= * @CODE@ perf, perfective
-Recipr+	!!= * @CODE@ rec, reciprocal
-Refl+	!!= * @CODE@ refl, reflexive
-Semel+
-Ser+
-Th+		!!= * @CODE@ Th, thematic prefix  (probably not a tag)
-Unspec+	!!= * @CODE@ 0, Unspecified person
-UnspecO+	!!= * @CODE@ 0, Unspecified person
-UnspecS+	!!= * @CODE@ 0, Unspecified person
-+Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
-
-Areal+
-ArealS+
-ArealO+
-
-!! ## Prefixes
-
-Pref/xà+
-Pref/di+
-Pref/zi+
-Pref/na+
-Pref/ni+
-
-!! ## our flags
-
-@U.asp.perf@ !!= * @CODE@ 
-@U.asp.ipfv@ !!= * @CODE@ 
-
-@U.xaH.ON@  !!= * @CODE@ 
-@R.xaH.ON@  !!= * @CODE@ 
-@D.xaH@     !!= * @CODE@ 
-
-@U.xaM.ON@   !!= * @CODE@ 
-@R.xaM.ON@  !!= * @CODE@ 
-@D.xaM@   !!= * @CODE@ 
-
-@U.xaL.ON@  !!= * @CODE@ 
-@R.xaL.ON@     !!= * @CODE@ 
-@D.xaL@   !!= * @CODE@ 
-
-@U.di.ON@  !!= * @CODE@ 
-@R.di.ON@     !!= * @CODE@ 
-@D.di@   !!= * @CODE@ 
-
-@U.zi.ON@  !!= * @CODE@ 
-@R.zi.ON@     !!= * @CODE@ 
-@D.zi@   !!= * @CODE@ 
-
-@U.na.ON@  !!= * @CODE@ 
-@R.na.ON@     !!= * @CODE@ 
-@D.na@   !!= * @CODE@ 
-
-@U.ni.ON@  !!= * @CODE@ 
-@R.ni.ON@     !!= * @CODE@ 
-@D.ni@   !!= * @CODE@ 
-
-@R.TV.ON@  !!= * @CODE@ 
-@U.TV.ON@   !!= * @CODE@ 
-@U.TV.OFF@   !!= * @CODE@ 
-
-!! ## Archphonemes (multi-character definitions)
-
-%^VH      !!= * @CODE@ denoting floating high tone
-
-!! ## Border 
-
-%<  !!= * @CODE@ prefix border
-%>  !!= * @CODE@ suffix border
-
-!! ## Flag diacritics
-!! We have manually optimised the structure of our lexicon using following
-!! flag diacritics to restrict morhpological combinatorics - only allow compounds
-!! with verbs if the verb is further derived into a noun again:
- @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
-!! 
-!! For languages that allow compounding, the following flag diacritics are needed
-!! to control position-based compounding restrictions for nominals. Their use is
-!! handled automatically if combined with +CmpN/xxx tags. If not used, they will
-!! do no harm.
- @P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
- @D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
- @P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
- @D.CmpLast.TRUE@  !!≈ |  @CODE@ | Block such words from entering R
- @D.CmpNone.TRUE@  !!≈ |  @CODE@ | Combines with the next tag to prohibit compounding
- @U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
- @P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
- @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
-!! 
-!! Use the following flag diacritics to control downcasing of derived proper
-!! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
-!! these flags. There exists a ready-made regex that will do the actual down-casing
-!! given the proper use of these flags.
- @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
- @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
-
-
-
-!Undeclared? (tt)
-
-
-@D.PREFIX@
-@P.DISTRIBUTIVE.OFF@
-@P.DISTRIBUTIVE.ON@
-@P.PREFIX.INNER@
-@P.PREFIX.MIDDLE@
-@P.PREFIX.OUTER@
-@R.PREFIX.INNER@
-@R.PREFIX.MIDDLE@
-@R.PREFIX.OUTER@
-@R.SUBJECTNUMBER.PL@
-@R.SUBJECTNUMBER.SG@
-@R.SUBJECTPERSON.3@
-@R.SUBJECTPERSON.4@
-@U.OBJECTNUMBER.PL@
-@U.PREFIX.MIDDLE@
-@U.PREFIX.OUTER@
-@U.SUBJECTNUMBER.PL@
-@U.SUBJECTNUMBER.SG@
-@U.SUBJECTPERSON.1@
-@U.SUBJECTPERSON.2@
-@U.SUBJECTPERSON.3@
-@U.SUBJECTPERSON.4@
-@U.TAMA.0s@
-@U.TAMA.nii@
-@U.TAMA.nis@
-@U.TAMA.si@
-@U.TAMA.sis@
-@U.TAMA.yi-a@
-@U.TAMA.yii-a@
-@U.TAMA.yis-y@
-@U.TAMA.yis@
-@U.VALENCE.TRANSITIVE@
-
++PxSg1
++PxSg2
++PxSg3
++PxSg4
++PxPl1
++PxPl2
++PxPl3
++PxAreal
++PxGiven
++PxIndef
++PxRecip
++Sbj3
++SbjSg3
++SbjPl3
++CR
++N
++Sg
++Pl
 
 
 LEXICON Root
-!! The word forms in Tsuut'ina start from noun and verb prefixes
 
-NounPrefixes   ;
-!Words ;
-Punctuation ;
-Symbols     ;
+NounPrefixes    ;
+Punctuation     ;
+Symbols         ;
+!Words           ;
