@@ -2,7 +2,7 @@ The Tsuut'ina morphology and tools
 ==================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-srs/main/badge.svg)](https://github.com/giellalt/lang-srs/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-srs/main/badge.svg)](https://github.com/giellalt/lang-srs/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/blob/main/LICENSE)
 [![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-srs?platform=desktop&channel=nightly)
 [![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-srs?platform=mbile&channel=nightly)
