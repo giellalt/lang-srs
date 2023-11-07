@@ -120,7 +120,7 @@ LEXICON 0-IPFV-AFF-MiddlePrefix
 ! We use the OBJECTPERSON.INDEF and LOWTONE.ON flag diacritics to catch both
 ! of these cases.
 @R.OBJECTPERSON.INDEF@                       0-IPFV-AFF-MiddlePrefix-DOIndef;
-@R.LOWTONE.ON@                               0-IPFV-AFF-MiddlePrefix-DOIndef;
+@D.OBJECTPERSON.INDEF@@R.LOWTONE.ON@         0-IPFV-AFF-MiddlePrefix-DOIndef;
 @D.OBJECTPERSON.INDEF@@D.LOWTONE@            0-IPFV-AFF-InnerPrefix;
 
 LEXICON 0-IPFV-AFF-MiddlePrefix-DOIndef
