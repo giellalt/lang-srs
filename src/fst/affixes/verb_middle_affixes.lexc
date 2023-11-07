@@ -598,33 +598,6 @@ LEXICON Filter-DO-IO-Other
 ! throughout.
 @U.OBJECTPERSON.INDEF@                                      #;
 
-! Make sure that at most one reflexive or reciprocal form appears as a direct
-! object or indirect object (i.e., no DObj.REFL/RECIP-IObj.REFL/RECIP
-! combinations)
-@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.1@                    #;
-@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.2@                    #;
-@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.3@                    #;
-@U.OBJECTPERSON.REFL@@U.OBLIQUEPERSON.4@                    #;
-@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.1@                    #;
-@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.2@                    #;
-@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.3@                    #;
-@U.OBLIQUEPERSON.REFL@@U.OBJECTPERSON.4@                    #;
-
-@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.1@                   #;
-@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.2@                   #;
-@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.3@                   #;
-@U.OBJECTPERSON.RECIP@@U.OBLIQUEPERSON.4@                   #;
-@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.1@                   #;
-@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.2@                   #;
-@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.3@                   #;
-@U.OBLIQUEPERSON.RECIP@@U.OBJECTPERSON.4@                   #;
-
-! TODO: In theory, there might be contexts in which REFL-RECIP (e.g., 'they
-! fed themselves to each other') and RECIP-REFL (e.g., 'they fed each other
-! to themselves') might be plausible. For now, we exclude those forms from
-! being produced/accepted, since they tend to be semantically odd for most
-! ditransitive verbs.
-
 
 ! Direct object experiencer verbs have direct object inflection only
 ! (interpreted as 'subject' in English translations; more restricted set of
