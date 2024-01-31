@@ -1,6 +1,18 @@
 name = "Sarsi"
 version = "0.1.1"
 
+# Name of the speller package in various languages.
+# The default is English + autonym:
+[speller.name]
+en = "Sarsi spellchecker"
+srs = "Autonym spellchecker"
+
+# Description of the speller package in various languages.
+# The default is English + autonym:
+[speller.description]
+en = "A spellchecker for Sarsi, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+srs = "TRANSLATE: A spellchecker for Sarsi, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.srs"
 
