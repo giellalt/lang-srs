@@ -3,25 +3,26 @@
 
 read lexc incoming/pairs.lexc
 define Morphology
-
-regex [ "[" ?+ "]" -> 0 ] ;
-define RemoveGloss1
-
-regex [ 0 <- "[" ?+ "]" ];
-define RemoveGloss2
-
-# cp ../orthography/convert-plain-to-macron-vowels.xfscript .
-source convert-plain-to-macron-vowels.xfscript
-define Ortho1
-
-push Ortho1
-invert net
-define Ortho2
-
-regex [ Ortho2 .o. RemoveGloss2 .o. Morphology .o. RemoveGloss1 .o. Ortho1 ] ;
-define Morphology2
-
-push Morphology2
+#
+#regex [ "[" ?+ "]" -> 0 ] ;
+#define RemoveGloss1
+#
+#regex [ 0 <- "[" ?+ "]" ];
+#define RemoveGloss2
+#
+## cp ../orthography/convert-plain-to-macron-vowels.xfscript .
+#source ../orthography/convert-plain-to-macron-vowels.xfscript
+#define Ortho1
+#
+#push Ortho1
+#invert net
+#define Ortho2
+#
+#regex [ Ortho2 .o. RemoveGloss2 .o. Morphology .o. RemoveGloss1 .o. Ortho1 ] ;
+#define Morphology2
+#
+#push Morphology2
+push Morphology
 
 save stack srs-generator-gt-norm.hfst 
 invert net
@@ -35,7 +36,8 @@ define SpellRelax
 # load srs-analyser-gt-norm.hfst
 # define Morphology2
 
-regex SpellRelax.i .o. Morphology2.i ;
+#regex SpellRelax.i .o. Morphology2.i ;
+regex SpellRelax.i .o. Morphology.i ;
 save stack srs-analyser-gt-desc.hfst 
 
 # hfst-fst2fst -O -i srs-analyser-gt-norm.hfst -o srs-analyser-gt-norm.hfstol
