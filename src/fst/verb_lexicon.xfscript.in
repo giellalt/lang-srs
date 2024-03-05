@@ -101,6 +101,13 @@ read regex [Stems PostverbalAffixes] .o.
             "=" -> "=" OuterAffixes;
 define WordForms;
 
+# Rewrite rule for resurrecting the prefix boundary markers
+
+define ShowBoundaries [ "@P.PREFIX.INNER@" -> "." , 
+    "@P.PREFIX.MIDDLE@" -> "_" ,
+    "@P.PREFIX.OUTER@" -> "="
+];
+
 # Concatenate ObliqueAffixes and the other inflectional FSTs.
 read regex WordForms .o. [..] -> ObliqueAffixes || .#. _;
 
@@ -125,6 +132,14 @@ set flag-is-epsilon ON
 # the the morphological component one-by-one for faster compilation.
 
 regex [Grammar Tags] .o. MorphoPhonology ;
+define VerbModel
+
+# Make flags visible, so that they can be converted to explicit boundary markers
+set flag-is-epsilon ON
+
+# Output boundary markers based on flags
+
+regex VerbModel .o. ShowBoundaries ;
 
 # regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. iBeforeO .o. uBeforeO .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
 
