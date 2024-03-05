@@ -108,6 +108,12 @@ define ShowBoundaries [ "@P.PREFIX.INNER@" -> "." ,
     "@P.PREFIX.OUTER@" -> "="
 ];
 
+define SimplifyBoundaries regex [ "=" "_" "." -> "="
+.o. "_" "." -> "_"
+.o. "=" "_" -> "="
+.o. [ "=" | "_" | "." ] -> 0 || .#. _
+];
+
 # Concatenate ObliqueAffixes and the other inflectional FSTs.
 read regex WordForms .o. [..] -> ObliqueAffixes || .#. _;
 
@@ -134,15 +140,20 @@ set flag-is-epsilon ON
 regex [Grammar Tags] .o. MorphoPhonology ;
 define VerbModel
 
+# regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. iBeforeO .o. uBeforeO .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
+
 # Make flags visible, so that they can be converted to explicit boundary markers
-set flag-is-epsilon ON
+set flag-is-epsilon OFF
 
 # Output boundary markers based on flags
 
 regex VerbModel .o. ShowBoundaries ;
+define VerbModelWithBound
 
-# regex [Grammar Tags] .o. deletePrefixI .o. hToneSpreading .o. hToneSpreadingCleanup .o. deleteBoundarySymbol .o. uBeforeA .o. aBeforeI .o. lowABeforeI .o. iBeforeA .o. iBeforeO .o. uBeforeO .o. lInitialStemsSbjPl2 .o. lInitialStemsSbjPl2Cleanup .o. slDissimilation .o. zhDevoicing .o. zDevoicing;
+# Make flags invisible again, so that they will not intervene in removing excessive boundary markers
+set flag-is-epsilon ON
 
+regex VerbModelWithBound .o. SimplifyBoundaries ;
 
 #eliminate flag TAMA
 #eliminate flag SUBJECTNUMBER
