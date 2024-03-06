@@ -96,9 +96,9 @@ read regex [Stems PostverbalAffixes] .o.
             MarkPrefixes .o. 
             InsInner .o. InsMiddle .o. InsOuter .o. 
             LInnerPrefixAllomorphs .o. RequireOuterAllomorphs .o.
-            "." -> "." InnerAffixes ,
-            "_" -> "_" MiddleAffixes ,
-            "=" -> "=" OuterAffixes;
+            "." -> "." InnerAffixes "@P.PREFIX.INNER@" ,
+            "_" -> "_" MiddleAffixes "@P.PREFIX.MIDDLE@" ,
+            "=" -> "=" OuterAffixes "@P.PREFIX.OUTER@" ;
 define WordForms;
 
 # Rewrite rule for resurrecting the prefix boundary markers
@@ -108,7 +108,8 @@ define ShowBoundaries [ "@P.PREFIX.INNER@" -> "." ,
     "@P.PREFIX.OUTER@" -> "="
 ];
 
-define SimplifyBoundaries regex [ "=" "_" "." -> "="
+define SimplifyBoundaries [ [ "=" "=" -> "=" , "_" "_" -> "_" , "." "." -> "." ]
+.o. "=" "_" "." -> "="
 .o. "_" "." -> "_"
 .o. "=" "_" -> "="
 .o. [ "=" | "_" | "." ] -> 0 || .#. _
