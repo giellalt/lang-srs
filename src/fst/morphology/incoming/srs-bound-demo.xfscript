@@ -1,21 +1,21 @@
 # Demo script on morpheme boundary marking
 
-read lexc morphology/stems/verb_stems.lexc
+read lexc ../../morphology/stems/verb_stems.lexc
 define Stems
 
-read lexc morphology/affixes/verb_inner_affixes.lexc
+read lexc ../../morphology/affixes/verb_inner_affixes.lexc
 define InnerAffixes
 
-read lexc morphology/affixes/verb_middle_affixes.lexc
+read lexc ../../morphology/affixes/verb_middle_affixes.lexc
 define MiddleAffixes
 
-read lexc morphology/affixes/verb_outer_affixes.lexc
+read lexc ../../morphology/affixes/verb_outer_affixes.lexc
 define OuterAffixes
 
-read lexc morphology/affixes/verb_oblique_affixes.lexc
+read lexc ../../morphology/affixes/verb_oblique_affixes.lexc
 define ObliqueAffixes
 
-read lexc morphology/affixes/postverbal_affixes.lexc
+read lexc ../../morphology/affixes/postverbal_affixes.lexc
 define PostverbalAffixes
 
 # Mark prefix type (insert corresponding flags to the
@@ -118,10 +118,10 @@ define Grammar;
 
 # Morphophonology
 
-source morphology/phonology.xfscript
+source ../../morphology/phonology.xfscript
 define MorphoPhonology;
 
-read lexc morphology/affixes/verb_tags.lexc
+read lexc ../../morphology/affixes/verb_tags.lexc
 define Tags;
 
 # To prevent morphophonology to be tripped up be intervening flags
