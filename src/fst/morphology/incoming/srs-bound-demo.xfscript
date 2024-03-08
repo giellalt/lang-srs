@@ -91,24 +91,30 @@ read regex [Stems PostverbalAffixes] .o.
             MarkPrefixes .o. 
             InsInner .o. InsMiddle .o. InsOuter .o. 
             LInnerPrefixAllomorphs .o. RequireOuterAllomorphs .o.
-            "." -> "." InnerAffixes "@P.PREFIX.INNER@" ,
-            "_" -> "_" MiddleAffixes "@P.PREFIX.MIDDLE@" ,
-            "=" -> "=" OuterAffixes "@P.PREFIX.OUTER@" ;
+            "." -> "." "@P.BOUND.INN-L@" InnerAffixes "@P.BOUND.INN-R@" ,
+            "_" -> "_" "@P.BOUND.MID-L@" MiddleAffixes "@P.BOUND.MID-R@" ,
+            "=" -> "=" "@P.BOUND.OUT-L@" OuterAffixes "@P.BOUND.OUT-R@" ;
 define WordForms;
 
 # Rewrite rule for resurrecting the prefix boundary markers
 
-define ShowBoundaries [ "@P.PREFIX.INNER@" -> "." , 
-    "@P.PREFIX.MIDDLE@" -> "_" ,
-    "@P.PREFIX.OUTER@" -> "="
+define ShowBoundaries [ "@P.BOUND.INN-L@" -> "(" , 
+    "@P.BOUND.MID-L@" -> "[" ,
+    "@P.BOUND.OUT-L@" -> "<" ,
+    "@P.BOUND.INN-R@" -> ")" , 
+    "@P.BOUND.MID-R@" -> "]" ,
+    "@P.BOUND.OUT-R@" -> ">"
 ];
 
-define SimplifyBoundaries [ [ "=" "=" -> "=" , "_" "_" -> "_" , "." "." -> "." ]
-.o. "=" "_" "." -> "="
-.o. "_" "." -> "_"
-.o. "=" "_" -> "="
-.o. [ "=" | "_" | "." ] -> 0 || .#. _
-];
+# define SimplifyBoundaries [ [ "<" "<" -> "<" , ">" ">" -> ">" , "[" "[" -> "[" , "]" "]" -> "]" , "(" "(" -> "(" , ")" ")" -> ")" ]
+# ];
+
+# define SimplifyBoundaries [ [ "=" "=" -> "=" , "_" "_" -> "_" , "." "." -> "." ]
+# .o. "=" "_" "." -> "="
+# .o. "_" "." -> "_"
+# .o. "=" "_" -> "="
+# .o. [ "=" | "_" | "." ] -> 0 || .#. _
+# ];
 
 # Concatenate ObliqueAffixes and the other inflectional FSTs.
 read regex WordForms .o. [..] -> ObliqueAffixes || .#. _;
@@ -144,11 +150,11 @@ set flag-is-epsilon OFF
 # Output boundary markers based on flags
 
 regex VerbModel .o. ShowBoundaries ;
-define VerbModelWithBound
+# define VerbModelWithBound
 
 # Make flags invisible again, so that they will not intervene in removing excessive boundary markers
 set flag-is-epsilon ON
 
-regex VerbModelWithBound .o. SimplifyBoundaries ;
+# regex VerbModelWithBound .o. SimplifyBoundaries ;
 
 twosided flag-diacritics
