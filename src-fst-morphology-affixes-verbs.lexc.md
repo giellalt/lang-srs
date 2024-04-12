@@ -34,6 +34,3 @@ The lexicon names srs15, srs14, etc. refers to traditional template names.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-srs/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
-
----
-
