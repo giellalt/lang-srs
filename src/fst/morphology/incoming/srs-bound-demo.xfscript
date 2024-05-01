@@ -1,26 +1,21 @@
-###############################################
-# Test compilation for verbs (stems, affixes) #
-###############################################
+# Demo script on morpheme boundary marking
 
-# May want to use this if symbol pairs grow - needs foma
-# set lexc-align ON
-
-read lexc @srcdir@/stems/verb_stems.lexc
+read lexc ../../morphology/stems/verb_stems.lexc
 define Stems
 
-read lexc @srcdir@/affixes/verb_inner_affixes.lexc
+read lexc ../../morphology/affixes/verb_inner_affixes.lexc
 define InnerAffixes
 
-read lexc @srcdir@/affixes/verb_middle_affixes.lexc
+read lexc ../../morphology/affixes/verb_middle_affixes.lexc
 define MiddleAffixes
 
-read lexc @srcdir@/affixes/verb_outer_affixes.lexc
+read lexc ../../morphology/affixes/verb_outer_affixes.lexc
 define OuterAffixes
 
-read lexc @srcdir@/affixes/verb_oblique_affixes.lexc
+read lexc ../../morphology/affixes/verb_oblique_affixes.lexc
 define ObliqueAffixes
 
-read lexc @srcdir@/affixes/postverbal_affixes.lexc
+read lexc ../../morphology/affixes/postverbal_affixes.lexc
 define PostverbalAffixes
 
 # Mark prefix type (insert corresponding flags to the
@@ -96,24 +91,30 @@ read regex [Stems PostverbalAffixes] .o.
             MarkPrefixes .o. 
             InsInner .o. InsMiddle .o. InsOuter .o. 
             LInnerPrefixAllomorphs .o. RequireOuterAllomorphs .o.
-            "." -> "." InnerAffixes "@P.PREFIX.INNER@" ,
-            "_" -> "_" MiddleAffixes "@P.PREFIX.MIDDLE@" ,
-            "=" -> "=" OuterAffixes "@P.PREFIX.OUTER@" ;
+            "." -> "." "@P.BOUND.INN-L@" InnerAffixes "@P.BOUND.INN-R@" ,
+            "_" -> "_" "@P.BOUND.MID-L@" MiddleAffixes "@P.BOUND.MID-R@" ,
+            "=" -> "=" "@P.BOUND.OUT-L@" OuterAffixes "@P.BOUND.OUT-R@" ;
 define WordForms;
 
 # Rewrite rule for resurrecting the prefix boundary markers
 
-define ShowBoundaries [ "@P.PREFIX.INNER@" -> "." , 
-    "@P.PREFIX.MIDDLE@" -> "_" ,
-    "@P.PREFIX.OUTER@" -> "="
+define ShowBoundaries [ "@P.BOUND.INN-L@" -> "(" , 
+    "@P.BOUND.MID-L@" -> "[" ,
+    "@P.BOUND.OUT-L@" -> "<" ,
+    "@P.BOUND.INN-R@" -> ")" , 
+    "@P.BOUND.MID-R@" -> "]" ,
+    "@P.BOUND.OUT-R@" -> ">"
 ];
 
-define SimplifyBoundaries [ [ "=" "=" -> "=" , "_" "_" -> "_" , "." "." -> "." ]
-.o. "=" "_" "." -> "="
-.o. "_" "." -> "_"
-.o. "=" "_" -> "="
-.o. [ "=" | "_" | "." ] -> 0 || .#. _
-];
+# define SimplifyBoundaries [ [ "<" "<" -> "<" , ">" ">" -> ">" , "[" "[" -> "[" , "]" "]" -> "]" , "(" "(" -> "(" , ")" ")" -> ")" ]
+# ];
+
+# define SimplifyBoundaries [ [ "=" "=" -> "=" , "_" "_" -> "_" , "." "." -> "." ]
+# .o. "=" "_" "." -> "="
+# .o. "_" "." -> "_"
+# .o. "=" "_" -> "="
+# .o. [ "=" | "_" | "." ] -> 0 || .#. _
+# ];
 
 # Concatenate ObliqueAffixes and the other inflectional FSTs.
 read regex WordForms .o. [..] -> ObliqueAffixes || .#. _;
@@ -123,10 +124,10 @@ define Grammar;
 
 # Morphophonology
 
-source @srcdir@/phonology.xfscript
+source ../../morphology/phonology.xfscript
 define MorphoPhonology;
 
-read lexc @srcdir@/affixes/verb_tags.lexc
+read lexc ../../morphology/affixes/verb_tags.lexc
 define Tags;
 
 # To prevent morphophonology to be tripped up be intervening flags
@@ -149,19 +150,11 @@ set flag-is-epsilon OFF
 # Output boundary markers based on flags
 
 regex VerbModel .o. ShowBoundaries ;
-define VerbModelWithBound
+# define VerbModelWithBound
 
 # Make flags invisible again, so that they will not intervene in removing excessive boundary markers
 set flag-is-epsilon ON
 
-regex VerbModelWithBound .o. SimplifyBoundaries ;
+# regex VerbModelWithBound .o. SimplifyBoundaries ;
 
-#eliminate flag TAMA
-#eliminate flag SUBJECTNUMBER
-#eliminate flag SUBJECTPERSON
-#eliminate flag DISTRIBUTIVE
-#eliminate flag OBJECTNUMBER
-#eliminate flag OBJECTPERSON
-#eliminate flag VALENCE
-#eliminate flag PREFIX
-#eliminate flag ASPECT
+twosided flag-diacritics
