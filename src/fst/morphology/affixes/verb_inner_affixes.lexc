@@ -1161,17 +1161,25 @@ LEXICON yi-POT-AFF-NoPrefix
 
 LEXICON yi-POT-AFF-InnerPrefix
 ! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís (e.g.,
-! diyishò ~ díshò "I might go")
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ís    #;
+! diyishò ~ díshò "I might go").  If a transitional/semelfactive/inchoative
+! prefix ì- is present (represented in the model as "^L", captured here by
+! the flag LOWTONE), then only the non-contracted form appears (e.g., 
+! gudìyisnát "I might speak", not *gudisnát).
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yí    #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@í     #;
+! The same restriction applies in 3SG, 3PL, and 4SG forms, where only yi-
+! appears, not í- (e.g., gudìyinát "he/she/it might speak", not *gudinát).
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yi         #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.LOWTONE@í             #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@yaà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@yiì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@yiì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@í     #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@í     #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2                     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.LOWTONE.ON@yi         #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.LOWTONE@í             #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yi         #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.LOWTONE@í             #;
 
 LEXICON yi-POT-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -1197,17 +1205,26 @@ LEXICON yis-POT-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ís    #;
 
 LEXICON yis-POT-AFF-InnerPrefix
-! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís.
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ís    #;
+! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís (e.g.,
+! diyishò ~ díshò "I might go").  If a transitional/semelfactive/inchoative
+! prefix ì- is present (represented in the model as "^L", captured here by
+! the flag LOWTONE), then only the non-contracted form appears (e.g., 
+! gudìyisnát "I might speak", not *gudisnát).
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yís   #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ís    #;
+! The same restriction applies in 3SG, 3PL, and 4SG forms, where only yis-
+! appears, not ís-.
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@yaà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@yiì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@yiì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ís    #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ís    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2                     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.LOWTONE.ON@yis        #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.LOWTONE@ís            #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
 
 LEXICON yis-POT-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
@@ -1233,17 +1250,26 @@ LEXICON yii-POT-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #;
 
 LEXICON yii-POT-AFF-InnerPrefix
-! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís.
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ís    #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yíí   #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@íí    #; 
+! Two 1SG forms are attested after inner prefixes: (di)yis- and (d)ís (e.g.,
+! diyishò ~ díshò "I might go").  If a transitional/semelfactive/inchoative
+! prefix ì- is present (represented in the model as "^L", captured here by
+! the flag LOWTONE), then only the non-contracted form appears (e.g., 
+! gudìyisnát "I might speak", not *gudisnát).
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yíí                      #;
+! The same restriction applies in 3SG, 3PL, and 4SG forms, where only yis-
+! appears, not ís-.
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yii        #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.LOWTONE@íí            #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@yaà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@yiì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@yiì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@íí    #;  
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #;  
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2                     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.LOWTONE.ON@yii        #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.LOWTONE@íí            #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yii        #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.LOWTONE@íí            #;
 
 LEXICON yii-POT-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@yis   #;
