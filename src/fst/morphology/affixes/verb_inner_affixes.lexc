@@ -170,7 +170,7 @@ LEXICON 0s-IPFV-AFF-InnerPrefix
 
 LEXICON 0s-IPFV-AFF-MiddlePrefix
 @R.OBJECTPERSON.INDEF@                       0s-IPFV-AFF-MiddlePrefix-DOIndef;
-@R.LOWTONE.ON@                               0s-IPFV-AFF-MiddlePrefix-DOIndef;
+@D.OBJECTPERSON.INDEF@@R.LOWTONE.ON@         0s-IPFV-AFF-MiddlePrefix-DOIndef;
 @D.OBJECTPERSON.INDEF@@D.LOWTONE@            0s-IPFV-AFF-InnerPrefix;
 
 LEXICON 0s-IPFV-AFF-MiddlePrefix-DOIndef
@@ -220,7 +220,7 @@ LEXICON 0i-IPFV-AFF-InnerPrefix
 
 LEXICON 0i-IPFV-AFF-MiddlePrefix
 @R.OBJECTPERSON.INDEF@                       0i-IPFV-AFF-MiddlePrefix-DOIndef;
-@R.LOWTONE.ON@                               0i-IPFV-AFF-MiddlePrefix-DOIndef;
+@D.OBJECTPERSON.INDEF@@R.LOWTONE.ON@         0i-IPFV-AFF-MiddlePrefix-DOIndef;
 @D.OBJECTPERSON.INDEF@@D.LOWTONE@            0i-IPFV-AFF-InnerPrefix;
 
 LEXICON 0i-IPFV-AFF-MiddlePrefix-DOIndef
