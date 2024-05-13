@@ -1,4 +1,4 @@
-Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OBJECTPERSON.INDEF@ @D.OBJECTPERSON.INDEF@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @U.VV.%0@ @U.VV.S@ @U.VV.I@ @D.VALENCE.TRANSITIONAL@ @D.OBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @U.DIRECTOBJECT.GIVEN@ @D.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @D.DIRECTOBJECT.EMPHATIC@ @U.DIALECT.BIGCROW@ @U.DIALECT.BIGPLUME@ @U.DIALECT.CROWCHIEF@ @R.LOWTONE.ON@ @D.LOWTONE@ i2 s2 ^L
+Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OBJECTPERSON.INDEF@ @D.OBJECTPERSON.INDEF@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0-STAT@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ @U.VV.%0@ @U.VV.S@ @U.VV.I@ @D.VALENCE.TRANSITIONAL@ @D.OBJECTPERSON.3@ @D.OBJECTNUMBER.SG@ @D.SUBJECTPERSON.3@ @U.DIRECTOBJECT.GIVEN@ @D.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @D.DIRECTOBJECT.EMPHATIC@ @U.DIRECTOBJECT.NONE@ @U.DIALECT.BIGCROW@ @U.DIALECT.BIGPLUME@ @U.DIALECT.CROWCHIEF@ @R.LOWTONE.ON@ @P.LOWTONE.ON@ @D.LOWTONE@ i2 s2 ^L
 
 LEXICON Root
 
@@ -29,31 +29,33 @@ LEXICON TransitionalPrefix
 !       a. ...the subject is 3 (and isn't a given object), or
 !       b. ...the subject is non-3, and the direct object is emphatic.
 
-@D.OBJECTPERSON.3@^L                                            TAMA;
-@U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@@D.DIRECTOBJECT.GIVEN@^L   TAMA;
+@D.OBJECTPERSON.3@@P.LOWTONE.ON@^L                                      TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@@D.DIRECTOBJECT.GIVEN@@P.LOWTONE.ON@^L   TAMA;
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@U.DIRECTOBJECT.GIVEN@     TAMA;
-@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@D.DIRECTOBJECT.GIVEN@^L   TAMA;
-@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.EMPHATIC@^L TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@U.SUBJECTPERSON.3@@D.DIRECTOBJECT.GIVEN@@P.LOWTONE.ON@^L   TAMA;
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@D.SUBJECTPERSON.3@@U.DIRECTOBJECT.EMPHATIC@@P.LOWTONE.ON@^L TAMA;
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@@D.SUBJECTPERSON.3@@D.DIRECTOBJECT.EMPHATIC@  TAMA;
 
 
 LEXICON TAMA
 
-   0-IPFV  ;
-  ni-IPFV  ;
-  si-IPFV  ;
-   i-IPFV  ;
- isi-IPFV  ;
+   0-IPFV       ;
+   0-IPFV-STAT  ;
+  ni-IPFV       ;
+  si-IPFV       ;
+   i-IPFV       ;
+ isi-IPFV       ;
 
-  ni-PFV   ;
-  si-PFV   ;
-  yi-y-PFV ;
-  yi-a-PFV ;
-  isi-PFV  ;
+    0-PFV-STAT  ;
+   ni-PFV       ;
+   si-PFV       ;
+ yi-y-PFV       ;
+ yi-a-PFV       ;
+  isi-PFV       ;
 
-  yi-PROG  ;
+   yi-PROG      ;
 
-  yi-POT   ;
+   yi-POT       ;
 
 
 !
@@ -101,8 +103,8 @@ LEXICON 0-IPFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@i     #;
 
 LEXICON 0-IPFV-AFF-MiddlePrefix
-! 0-IPFV middle prefixes share the same TAMA forms as inner prefixes in all
-! but two cases:
+! 0-IPFV middle prefixes share almost the same TAMA forms as inner prefixes in
+! all but two cases:
 !
 !   1. The indefinite direct object i- "something" is accompanied by inner-
 !      affix-like TAMA forms in 2SG (e.g., ít'ùd "you (sg.) are smoking
@@ -118,21 +120,75 @@ LEXICON 0-IPFV-AFF-MiddlePrefix
 !      past", rather than *xaàʔò).
 !
 ! We use the OBJECTPERSON.INDEF and LOWTONE.ON flag diacritics to catch both
-! of these cases.
+! of these exceptions.  The remaining forms that have a middle prefix are
+! identical to forms with inner prefixes *except* in 0-IPFV-STAT and 0-PFV-
+! STAT, where 3PL and 4SG TAMA chunks have high tone not found on inner
+! prefixes (e.g., ágíjàg "they became", not *ágijàg), requiring us to model
+! middle prefixes separately here.
 @R.OBJECTPERSON.INDEF@                       0-IPFV-AFF-MiddlePrefix-DOIndef;
 @D.OBJECTPERSON.INDEF@@R.LOWTONE.ON@         0-IPFV-AFF-MiddlePrefix-DOIndef;
-@D.OBJECTPERSON.INDEF@@D.LOWTONE@            0-IPFV-AFF-InnerPrefix;
+@D.OBJECTPERSON.INDEF@@D.LOWTONE@            0-IPFV-AFF-MiddlePrefix-Regular;
+
+LEXICON 0-IPFV-AFF-MiddlePrefix-Regular
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@í                            #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@i                            #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@aà       #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@iì        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@iì      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2                          #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0@i                 #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0-STAT@
+    0-IPFV-AFF-MiddlePrefix-3PL;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0@i                 #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0-STAT@
+    0-IPFV-AFF-MiddlePrefix-4SG;
 
 LEXICON 0-IPFV-AFF-MiddlePrefix-DOIndef
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@í     #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@i     #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@i2saà  #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@i2siì   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@i2siì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2   #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@i     #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@i     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@í                            #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@i                            #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@i2saà    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@i2siì     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@i2siì   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2                          #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0@i                 #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0-STAT@
+    0-IPFV-AFF-MiddlePrefix-3PL;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0@i                 #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0-STAT@
+    0-IPFV-AFF-MiddlePrefix-4SG;
+
+LEXICON 0-IPFV-AFF-MiddlePrefix-3PL
+! O ágílàg "they made O; they did (it to) O" (= cases where there is no
+! object prefix on the verb)
+@U.DIRECTOBJECT.GIVEN@í         #;
+
+! ágiyìlàg "they made it; they did (it to) it" (emphatic or non-emphatic);
+! ásigìlàg "they made me; they did (it to) me"; áagìlàg "they mdae something;
+! they did (it to) something" (= all cases where there is an object prefix on
+! the verb)
+@U.DIRECTOBJECT.EMPHATIC@i      #;
+@U.DIRECTOBJECT.NONE@i          #;
+
+LEXICON 0-IPFV-AFF-MiddlePrefix-4SG
+! O áts'ílá "someone will make O; someone will do (it to) O" (= no object
+! prefix on the verb)
+@U.DIRECTOBJECT.GIVEN@í                                         #;
+
+! áts'ílá "someone will make it; someone will do (it to) it" (= no object
+! prefix on the verb)
+@U.DIRECTOBJECT.NONE@@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@í     #;
+
+! ásits'ìlá "someone will make me; someone will do (it to) me"; áats'ìlá
+! "someone will make something; someone will do (it to) something" (= an
+! object prefix appears on the verb)
+@U.DIRECTOBJECT.NONE@@D.OBJECTPERSON.3@i                        #;
+@U.DIRECTOBJECT.NONE@@D.OBJECTNUMBER.SG@i                       #;
+
+! ámits'ìlá "someone will make *it*; someone will do (it to) *it*" (= an
+! object prefix appears on the verb)
+@U.DIRECTOBJECT.EMPHATIC@i                                      #;
 
 LEXICON 0-IPFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@s     #;
@@ -171,18 +227,49 @@ LEXICON 0s-IPFV-AFF-InnerPrefix
 LEXICON 0s-IPFV-AFF-MiddlePrefix
 @R.OBJECTPERSON.INDEF@                       0s-IPFV-AFF-MiddlePrefix-DOIndef;
 @D.OBJECTPERSON.INDEF@@R.LOWTONE.ON@         0s-IPFV-AFF-MiddlePrefix-DOIndef;
-@D.OBJECTPERSON.INDEF@@D.LOWTONE@            0s-IPFV-AFF-InnerPrefix;
+@D.OBJECTPERSON.INDEF@@D.LOWTONE@            0s-IPFV-AFF-MiddlePrefix-Regular;
+
+LEXICON 0s-IPFV-AFF-MiddlePrefix-Regular
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ís                           #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@aà       #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@iì        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@iì      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2                          #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0@is                #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0-STAT@
+    0s-IPFV-AFF-MiddlePrefix-3PL;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0@is                #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0-STAT@
+    0s-IPFV-AFF-MiddlePrefix-4SG;
 
 LEXICON 0s-IPFV-AFF-MiddlePrefix-DOIndef
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ís    #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@is    #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@i2saà  #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@i2siì   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@i2siì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2   #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@is    #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@is    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ís                           #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@i2saà    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@i2siì     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@i2siì   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2                          #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0@is                #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0-STAT@
+    0s-IPFV-AFF-MiddlePrefix-3PL;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0@is                #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0-STAT@
+    0s-IPFV-AFF-MiddlePrefix-4SG;
+
+LEXICON 0s-IPFV-AFF-MiddlePrefix-3PL
+@U.DIRECTOBJECT.GIVEN@ís                                        #;
+@U.DIRECTOBJECT.EMPHATIC@is                                     #;
+@U.DIRECTOBJECT.NONE@is                                         #;
+
+LEXICON 0s-IPFV-AFF-MiddlePrefix-4SG
+@U.DIRECTOBJECT.GIVEN@ís                                        #;
+@U.DIRECTOBJECT.NONE@@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@ís    #;
+@U.DIRECTOBJECT.NONE@@D.OBJECTPERSON.3@is                       #;
+@U.DIRECTOBJECT.NONE@@D.OBJECTNUMBER.SG@is                      #;
+@U.DIRECTOBJECT.EMPHATIC@is                                     #;
 
 LEXICON 0s-IPFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@s     #;
@@ -221,18 +308,49 @@ LEXICON 0i-IPFV-AFF-InnerPrefix
 LEXICON 0i-IPFV-AFF-MiddlePrefix
 @R.OBJECTPERSON.INDEF@                       0i-IPFV-AFF-MiddlePrefix-DOIndef;
 @D.OBJECTPERSON.INDEF@@R.LOWTONE.ON@         0i-IPFV-AFF-MiddlePrefix-DOIndef;
-@D.OBJECTPERSON.INDEF@@D.LOWTONE@            0i-IPFV-AFF-InnerPrefix;
+@D.OBJECTPERSON.INDEF@@D.LOWTONE@            0i-IPFV-AFF-MiddlePrefix-Regular;
+
+LEXICON 0i-IPFV-AFF-MiddlePrefix-Regular
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@íí                           #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii                           #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@aà       #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@iì        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@iì      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2                          #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0@ii                #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0-STAT@
+    0i-IPFV-AFF-MiddlePrefix-3PL;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0@ii                #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0-STAT@
+    0i-IPFV-AFF-MiddlePrefix-4SG;
 
 LEXICON 0i-IPFV-AFF-MiddlePrefix-DOIndef
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is    #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@íí    #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@i2saà  #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@i2siì   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@i2siì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2   #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ii    #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ii    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@is                           #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@íí                           #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii                           #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@i2saà    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@i2siì     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@i2siì   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2                          #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0@ii                #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@U.TAMA.%0-STAT@
+    0i-IPFV-AFF-MiddlePrefix-3PL;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0@ii                #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@U.TAMA.%0-STAT@
+    0i-IPFV-AFF-MiddlePrefix-4SG;
+
+LEXICON 0i-IPFV-AFF-MiddlePrefix-3PL
+@U.DIRECTOBJECT.GIVEN@íí                                        #;
+@U.DIRECTOBJECT.EMPHATIC@ii                                     #;
+@U.DIRECTOBJECT.NONE@ii                                         #;
+
+LEXICON 0i-IPFV-AFF-MiddlePrefix-4SG
+@U.DIRECTOBJECT.GIVEN@íí                                        #;
+@U.DIRECTOBJECT.NONE@@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@íí    #;
+@U.DIRECTOBJECT.NONE@@D.OBJECTPERSON.3@ii                       #;
+@U.DIRECTOBJECT.NONE@@D.OBJECTNUMBER.SG@ii                      #;
+@U.DIRECTOBJECT.EMPHATIC@ii                                     #;
 
 LEXICON 0i-IPFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@s     #;
@@ -244,6 +362,58 @@ LEXICON 0i-IPFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@as2   #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ii    #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ii    #;
+
+
+!
+! 0-IPFV-STAT
+!
+! 0-IPFV-STAT and 0-PFV-STAT share the exact same inflectional markers, and
+! differ only in aspect (imperfective vs. perfective).  They are also both
+! identical to 0-IPFV except in 3PL and 4SG forms when no other prefixes
+! appear before the stem, where an irregular high tone (a reflex of the
+! historical *ñ- perfective prefix that appears in stative verbs) is present:
+!
+! 0-IPFV-STAT:
+!   O ágílá     "they are doing/making O" (3PL gí-, not *gi-)
+!   O áts'ílá   "someone is making/doing O" (4SG ts'í-, not *ts'i-)
+!   O ágiyìlá   "they are doing/making it" (3PL gi-, not *gí-, since yì-
+!                [3SG.DOBJ, transitional transitive] appears between gi-
+!                and the stem)
+!
+! 0-PFV-STAT:
+!   O ágílàg    "they did/made O" (3PL gí-, not *gi-)
+!   O áts'ílàg  "someone did/made O" (4SG ts'í-, not *ts'i-)
+!   O ágiyìlàg  "they did/made it" (3PL gi-, not *gí-, since yì- [3SG.DOBJ,
+!                transitional transitive] appears between gi- and the stem)
+!
+! (Both also appear with gù-, rather than gu-, with areal subjects, as in
+!  ágùná "it will happen" (0-IPFV-STAT) and ágùjàg "it happened" (0-PFV-STAT).
+!  Since areal subjects aren't a predictable part of all 0-IPFV/PFV
+!  paradigms, we treat them as a separate derivation in the cases where they
+!  occur, and therefore not needing to be modelled as part of the inflection
+!  here)
+!
+! As the above examples illustrate, while the names "0-IPFV-STAT" and
+! "0-PFV-STAT" suggest that verbs belonging to these paradigm classes are
+! stative, this often isn't the case synchronically in Tsuut'ina:
+!
+!   (a) A number of high-frequency active verbs (e.g., "make/do") take
+!       0-IPFV-STAT inflection; and
+!
+!   (a) In many other Dene languages, cognates of Tsuut'ina ilí(n) "be"
+!       take the equivalent of 0-IPFV-STAT inflection (cf. Southern Tutchone
+!       nlį "he/she/it is", with n- being the reflex of Proto-Dene *ñ-).  In
+!       Tsuut'ina, ilí(n) "be" takes 0-IPFV/yi-y-PFV inflection, with only 
+!       the areal subject form gúlí(n) "there is/are" appearing with an
+!       irregular high tone on gu- that is a final, suprasegmental remnant
+!       of the stative verb paradigm that this used to belong to.
+!
+! Given the amount of overlap between 0-IPFV and 0-IPFV-STAT, we reuse the
+! TAMA chunk definitions in 0-IPFV-AFF, using flag diacritics to override 3PL
+! and 4SG forms as needed.
+!
+LEXICON 0-IPFV-STAT
+@U.ASPECT.IPFV@@U.TAMA.%0-STAT@              0-IPFV-AFF ;
 
 
 !
@@ -441,6 +611,20 @@ LEXICON nii-IPFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ii    #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ii    #;
+
+
+!
+! 0-PFV-STAT
+!
+! 0-PFV-STAT and 0-IPFV-STAT share the exact same inflectional markers, and
+! differ only in aspect (imperfective vs. perfective).  They are also both
+! almost identical in form to 0-IPFV, differing only in some 3PL and 4SG forms
+! (see comments on 0-IPFV-STAT above).  We therefore reuse those 0-IPFV TAMA
+! chunk forms, relying on flag diacritics matching this TAMA class to produce
+! distinctive 3PL and 4SG forms where needed.
+!
+LEXICON 0-PFV-STAT
+@U.ASPECT.PFV@@U.TAMA.%0-STAT@               0-IPFV-AFF ;
 
 
 !
