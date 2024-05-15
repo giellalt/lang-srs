@@ -116,6 +116,23 @@ define lInitialStemsSbjPl2 s2 l -> [ ł | s l ] ;
 # -> [ídistłù]).
 define slDissimilation s [ l | ł ] -> s t ł;
 
+# In the si-PFV, verb stems that begin with /l/ dissimilate to /dl/ when
+# immediately preceded by an /s/ belonging to a 3SG, 3PL, or 4SG form. As
+# the following partial paradigm for "manage to get well" (PFV stem <lít>)
+# shows, this process does not appear with 1SG or 2PL forms, which 
+#
+#   1SG.SBJ  dinásistłít        "I managed to get well" (Onespot-Sapir os07036)
+#   2SG.SBJ  dinásílít          "you managed to get well"
+#   3SG.SBJ  dinásilít          "he/she/it managed to get well"
+#   1PL.SBJ  dinásaàlít         "we managed to get well"
+#   2PL.SBJ  dinásałít          "you (pl.) managed to get well"
+#   3PL.SBJ  dinágisdlít        "they managed to get well"
+#   4SG.SBJ  dináts'isdlít      "someone managed to get well"
+#
+# We use the symbol 's3' to represent the final /s/ in any si-PFV inflectional
+# chunks that are associated with this process.
+define lInitialStemsSiPFV s3 l -> s d l;
+
 # Some <y>-initial stems alternate with <sh> when preceded by /s/ (e.g., -yón
 # "grow (perfective)", as in nìsishón "I grew up" vs. sìsíyón "you (sg.) grew
 # up").  We represent the <y> in these stems in lexical entries as <y2>, then
@@ -242,8 +259,8 @@ define shortenDefaultPrefixes i -> 0 || _ "." ("^L") [á|a|à|í|i|ì|i2];
 # e.g., the first /i/ in isaà-/isiì- 1PL)
 define cleanupMoraicI i2 -> i;
 
-# Turn any remaining instances of <s2> into plain /s/.
-define cleanup2PL s2 -> s;
+# Turn any remaining instances of <s2> and <s3> into plain /s/.
+define cleanupS2S3 [ s2 | s3 ] -> s;
 
 # Remove middle and outer-prefix morphological boundary markers from the FST
 # output.
@@ -277,7 +294,8 @@ regex [ putLToneAfterInnerPrefixBoundaryMarker
 .o. assimilationBefore2PL
 .o. reduce2PLAfterVowel
 .o. lInitialStemsSbjPl2
-.o. cleanup2PL
+.o. lInitialStemsSiPFV
+.o. cleanupS2S3
 .o. iDeletionBeforeOtherVowels
 .o. slDissimilation
 .o. y2InitialStemAfterS 
