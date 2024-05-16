@@ -1,4 +1,4 @@
-Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl @P.DF.ON@ @U.ENCLITIC.gu@ @U.ENCLITIC.la@ @U.ENCLITIC.gula@
+Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.A@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl @P.DF.ON@ @U.ENCLITIC.gu@ @U.ENCLITIC.la@ @U.ENCLITIC.gula@
 
 ! TODO: Implement other enclitics (e.g., -dà, -di, -ìdaa, etc.) and their
 ! corresponding selectional restrictions in separate continuation lexica below.
@@ -39,12 +39,37 @@ LEXICON Root
 
 
 LEXICON Suffixation
+                                            aNominalization;
                                             iNominalization;
                                             iDelayedFuture;
 
 LEXICON Encliticization
                                             naNominalization;
                                             Enclitics;
+
+LEXICON aNominalization
+! Nominalization with -à "the one who" (generally used in names) applies to
+! verb forms that contain at least one third-person referent.
+@U.VALENCE.DO-EXPERIENCER@      aNominalization3Object;
+@U.VALENCE.OO-EXPERIENCER@      aNominalization3Object;
+
+@U.VALENCE.INTRANSITIVE@        aNominalization3Subject;
+@U.VALENCE.TRANSITIVE@          aNominalization3Subject;
+@U.VALENCE.TRANSITIONAL@        aNominalization3Subject;
+@U.VALENCE.OBLIQUEOBJECT@       aNominalization3Subject;
+@U.VALENCE.DITRANSITIVE@        aNominalization3Subject;
+
+LEXICON aNominalization3Subject
+@R.SUBJECTPERSON.3@             aNominalizationAffix;
+@D.SUBJECTPERSON.3@             aNominalization3Object;
+
+LEXICON aNominalization3Object
+@R.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   aNominalizationAffix;
+@R.OBJECTPERSON.3@@D.OBLIQUEPERSON.3@   aNominalizationAffix;
+@D.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   aNominalizationAffix;
+
+LEXICON aNominalizationAffix
+@U.NOMINALIZATION.A@0:@U.NOMINALIZATION.A@à  #;
 
 
 LEXICON iNominalization
