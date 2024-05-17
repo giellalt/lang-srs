@@ -15,21 +15,24 @@ LEXICON Root
 
 LEXICON IntransitiveMarkers
 
-! With intransitive and oblique object verbs, the only two affixes that can
-! appear in this region of the verb are the two 'outer' subject markers gi-
-! 3PL (if it hasn't occurred earlier in the verb, which can happen with some
-! oblique object forms) and ts'i- 4SG.
+! With intransitive and oblique object verbs, the only two sets of affixes
+! that can appear in this region of the verb: (1) the conative prefix, and
+! (2) the two 'outer' subject markers gi- 3PL (if it hasn't occurred earlier
+! in the verb, which can happen with some oblique object forms) and ts'i- 4SG.
+! Since the conative comes first among these, we proceed there first.
 
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@                       Filter-SBJ-IO;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@                       Filter-SBJ-IO;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                       Filter-SBJ-IO;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@                       Filter-SBJ-IO;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@                       Filter-SBJ-IO;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@R.GI@                 Filter-SBJ-IO;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gi
-    Filter-SBJ-IO;
-@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@@P.PREFIX.MIDDLE@ts'i
-    Filter-SBJ-IO;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@                       Conative;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@                       Conative;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@                       Conative;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@                       Conative;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@                       Conative;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@                       Conative;
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@                       Conative;
+!@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@R.GI@                 Filter-SBJ-IO;
+!@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@D.GI@@P.GI.ON@@P.PREFIX.MIDDLE@gi
+!    Filter-SBJ-IO;
+!@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@@P.PREFIX.MIDDLE@ts'i
+!    Filter-SBJ-IO;
 
 
 LEXICON TransitiveMarkers
@@ -343,6 +346,10 @@ LEXICON Filter-SBJ-DO
 
 ! Only provide paths out of this lexicon for transitive forms whose subject-
 ! object combinations are semantically plausible.
+
+! Skip classes that involve no direct object marking.
+@U.VALENCE.INTRANSITIVE@                                    Filter-SBJ-IO;
+@U.VALENCE.OBLIQUEOBJECT@                                   Filter-SBJ-IO;
 
 ! No 1SG > 1SG ("I saw me") or 1SG > 1PL ("I saw us").
 @U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@
