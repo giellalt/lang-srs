@@ -105,11 +105,12 @@ define encliticMidToHighTone a -> á, i -> í, o -> ó, u -> ú || _ "^Encl" .o.
 # Morphophonological adjustments to consonants.
 #
 
-# Stems that begin with /l/ combine with 2PL as- either as (a|à)ł or, for
-# some speakers, as (a|à)stł (e.g., /as+lí/ "you.PL are" -> [ałí] or [astłí]).
-# We use the symbol 's2' to represent the /s/ in any 2PL inflectional chunks
-# that are involved in this process.
-define lInitialStemsSbjPl2 s2 l -> [ ł | s l ] ;
+# Stems that begin with /l/ and /ł/ combine with 2PL as- either as (a|à)ł or,
+# for some speakers, as (a|à)stł (e.g., /as+lí/ "you.PL are" -> [ałí] or
+# [astłí], /ídas+łù/ "you.PL are driving" -> [ídałù] or [ídastłù]).  We use
+# the symbol 's2' to represent the /s/ in any 2PL inflectional chunks that
+# are involved in this process.
+define lInitialStemsSbjPl2 s2 [ l | ł ] -> [ ł | s l ] ;
 
 # Phonotactic restriction: in general, /sl/ and /sł/ sequences should be
 # resolved as /stł/ (e.g., /is+lí/ "I am" -> [istłí], /ídis+łù/ "I am driving"
