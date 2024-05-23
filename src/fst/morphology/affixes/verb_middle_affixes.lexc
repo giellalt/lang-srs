@@ -350,6 +350,12 @@ LEXICON Filter-SBJ-DO
 ! Skip classes that involve no direct object marking.
 @U.VALENCE.INTRANSITIVE@                                    Filter-SBJ-IO;
 @U.VALENCE.OBLIQUEOBJECT@                                   Filter-SBJ-IO;
+@U.VALENCE.TRANSITIVE@                           Filter-SBJ-DO-Conditions;
+@U.VALENCE.DITRANSITIVE@                         Filter-SBJ-DO-Conditions;
+@U.VALENCE.DO-EXPERIENCER@                       Filter-SBJ-DO-Conditions;
+@U.VALENCE.TRANSITIONAL@                         Filter-SBJ-DO-Conditions;
+
+LEXICON Filter-SBJ-DO-Conditions
 
 ! No 1SG > 1SG ("I saw me") or 1SG > 1PL ("I saw us").
 @U.SUBJECTNUMBER.SG@@U.SUBJECTPERSON.1@@U.OBJECTNUMBER.SG@@U.OBJECTPERSON.2@
