@@ -1,4 +1,4 @@
-Multichar_Symbols @D.STEM.MODIFIED@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @D.STEM@ @U.NOMINALIZATION.A@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @R.SUBJECTPERSON.3@ @D.SUBJECTPERSON.3@ @R.OBJECTPERSON.3@ @R.OBLIQUEPERSON.3@ @D.OBJECTPERSON.3@ @D.OBLIQUEPERSON.3@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.TRANSITIVE@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.DITRANSITIVE@ ^Encl @P.DF.ON@ @U.ENCLITIC.gu@ @U.ENCLITIC.la@ @U.ENCLITIC.gula@
+Multichar_Symbols @D.OBJECTNUMBER.SG@ @D.OBJECTPERSON.3@ @D.OBLIQUENUMBER.SG@ @D.OBLIQUEPERSON.3@ @D.STEM.MODIFIED@ @D.STEM@ @D.SUBJECTNUMBER.SG@ @D.SUBJECTPERSON.3@ @P.DF.ON@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.3@ @R.OBLIQUENUMBER.SG@ @R.OBLIQUEPERSON.3@ @R.STEM.MODIFIED@ @R.STEM.PLAIN@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @U.ENCLITIC.gu@ @U.ENCLITIC.gula@ @U.ENCLITIC.la@ @U.NOMINALIZATION.A@ @U.NOMINALIZATION.I@ @U.NOMINALIZATION.NA@ @U.NOMINALIZATION.RELZ@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.3@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEPERSON.3@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.3@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.TRANSITIONAL@ @U.VALENCE.TRANSITIVE@ ^Encl
 
 ! TODO: Implement other enclitics (e.g., -dà, -di, -ìdaa, etc.) and their
 ! corresponding selectional restrictions in separate continuation lexica below.
@@ -12,7 +12,7 @@ LEXICON Root
 ! Suffixation requires the use of a modified verb stem form whenever one has
 ! been specified in the lexical database (e.g., átłík'adìsaàdál "we came
 ! together, we met" [plain, non-nominalized stem -dál] -> átłík'adìsaàdátł'í
-! "our meeting" [nominalized stem -dátł', together with nominalizer/
+! "our meeting, the fact that we met" [nominalized stem -dátł', together with
 ! relativizer -í]).
 @R.STEM.MODIFIED@                           Suffixation;
 @D.STEM@                                    Suffixation;
@@ -39,77 +39,21 @@ LEXICON Root
 
 
 LEXICON Suffixation
-                                            aNominalization;
-                                            iNominalization;
-                                            iDelayedFuture;
+                                            Suffixes;
+                                            SuffixesOnly3Sg;
 
 LEXICON Encliticization
-                                            naNominalization;
                                             Enclitics;
-
-LEXICON aNominalization
-! Nominalization with -à "the one who" (generally used in names) applies to
-! verb forms that contain at least one third-person referent.
-@U.VALENCE.DO-EXPERIENCER@      aNominalization3Object;
-@U.VALENCE.OO-EXPERIENCER@      aNominalization3Object;
-
-@U.VALENCE.INTRANSITIVE@        aNominalization3Subject;
-@U.VALENCE.TRANSITIVE@          aNominalization3Subject;
-@U.VALENCE.TRANSITIONAL@        aNominalization3Subject;
-@U.VALENCE.OBLIQUEOBJECT@       aNominalization3Subject;
-@U.VALENCE.DITRANSITIVE@        aNominalization3Subject;
-
-LEXICON aNominalization3Subject
-@R.SUBJECTPERSON.3@             aNominalizationAffix;
-@D.SUBJECTPERSON.3@             aNominalization3Object;
-
-LEXICON aNominalization3Object
-@R.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   aNominalizationAffix;
-@R.OBJECTPERSON.3@@D.OBLIQUEPERSON.3@   aNominalizationAffix;
-@D.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   aNominalizationAffix;
-
-LEXICON aNominalizationAffix
-@U.NOMINALIZATION.A@0:@U.NOMINALIZATION.A@à  #;
+                                            naNominalization;
 
 
-LEXICON iNominalization
-! Nominalization/relativization with -í "the one that" can apply to any
-! verb form in any aspect/superaspect and any person-number combination
-! (and is required in certain contexts, e.g., as the complement of a
-! postposition like ___ dósa "because (of) ___").
-@U.NOMINALIZATION.I@0:@U.NOMINALIZATION.I@í  #;
+LEXICON Suffixes
+! Relativization with -í "(the fact) that" applies to verb forms in any
+! aspect/superaspect inflected for any referent.  We follow Bruce Starlight
+! in distinguishing this affix from the homophonous nominalizer -í "the
+! one who", which appears only with 3SG referents.
+@U.NOMINALIZATION.RELZ@0:@U.NOMINALIZATION.RELZ@í  #;
 
-LEXICON naNominalization
-! Nominalization/relativization with =ná "the ones that" applies only to
-! verb forms that contain at least one third-person referent.  (We have
-! to consider valence here, since our dummy 3SG subjects in experiencer
-! verbs shouldn't trigger this affix.  All the more reason to move away
-! from 3SG subjects in these forms to actual impersonals...)
-
-!@U.VALENCE.IMPERSONAL@
-@U.VALENCE.DO-EXPERIENCER@      naNominalizationExperiencer;
-@U.VALENCE.OO-EXPERIENCER@      naNominalizationExperiencer;
-
-@U.VALENCE.INTRANSITIVE@        naNominalizationNonExperiencer;
-@U.VALENCE.TRANSITIVE@          naNominalizationNonExperiencer;
-@U.VALENCE.TRANSITIONAL@        naNominalizationNonExperiencer;
-@U.VALENCE.OBLIQUEOBJECT@       naNominalizationNonExperiencer;
-@U.VALENCE.DITRANSITIVE@        naNominalizationNonExperiencer;
-
-LEXICON naNominalizationNonExperiencer
-@R.SUBJECTPERSON.3@             naNominalizationAffix;
-@D.SUBJECTPERSON.3@             naNominalizationExperiencer;
-
-LEXICON naNominalizationExperiencer
-@R.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   naNominalizationAffix;
-@R.OBJECTPERSON.3@@D.OBLIQUEPERSON.3@   naNominalizationAffix;
-@D.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   naNominalizationAffix;
-
-LEXICON naNominalizationAffix
-@U.NOMINALIZATION.NA@0:@U.NOMINALIZATION.NA@-ná          #;
-
-
-LEXICON iDelayedFuture
 ! All Tsuut'ina verbs, both stative and dynamic, can appear with the delayed
 ! future suffix -i.  In imperfective, imperfective repetitive, and
 ! progressive verb forms, this suffix is generally interpreted as "later on"
@@ -145,10 +89,137 @@ LEXICON iDelayedFuture
 @P.DF.ON@0:@P.DF.ON@i                       # "(delayed future)" ;
 
 
+LEXICON SuffixesOnly3Sg
+! Certain affixes appear only with verb forms that contain at least one third-
+! person singular referent, whether that is the subject, direct object, or
+! indirect object.
+@U.VALENCE.IMPERSONAL@                      SuffixOnly3SgSbj;
+@U.VALENCE.DO-EXPERIENCER@                  SuffixOnly3SgDObj;
+@U.VALENCE.OO-EXPERIENCER@                  SuffixOnly3SgIObj;
+@U.VALENCE.INTRANSITIVE@                    SuffixOnly3SgSbj;
+@U.VALENCE.TRANSITIVE@                      SuffixOnly3SgSbjOrDObj;
+@U.VALENCE.TRANSITIONAL@                    SuffixOnly3SgSbjOrDObj;
+@U.VALENCE.OBLIQUEOBJECT@                   SuffixOnly3SgSbjOrIObj;
+@U.VALENCE.DITRANSITIVE@                    SuffixOnly3SgSbjOrDObjOrIObj;
+
+LEXICON SuffixOnly3SgSbj
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@      SuffixOnly3SgForms;
+
+LEXICON SuffixOnly3SgDObj
+@U.OBJECTPERSON.3@@U.OBJECTNUMBER.SG@        SuffixOnly3SgForms;
+
+LEXICON SuffixOnly3SgIObj
+@U.OBLIQUEPERSON.3@@U.OBLIQUENUMBER.SG@      SuffixOnly3SgForms;
+
+LEXICON SuffixOnly3SgSbjOrDObj
+! 3SG subject, 3SG direct object
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.SG@      SuffixOnly3SgDObj;
+
+! 3SG subject, non-3SG direct object
+@D.OBJECTPERSON.3@@D.OBJECTNUMBER.SG@        SuffixOnly3SgSbj;
+@D.OBJECTPERSON.3@@R.OBJECTNUMBER.SG@        SuffixOnly3SgSbj;
+@R.OBJECTPERSON.3@@D.OBJECTNUMBER.SG@        SuffixOnly3SgSbj;
+
+! Non-3SG subject, 3SG direct object
+@D.SUBJECTPERSON.3@@D.SUBJECTNUMBER.SG@      SuffixOnly3SgDObj;
+@D.SUBJECTPERSON.3@@R.SUBJECTNUMBER.SG@      SuffixOnly3SgDObj;
+@R.SUBJECTPERSON.3@@D.SUBJECTNUMBER.SG@      SuffixOnly3SgDObj;
+
+LEXICON SuffixOnly3SgSbjOrIObj
+! 3SG subject, 3SG indirect object
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.SG@      SuffixOnly3SgIObj;
+
+! 3SG subject, non-3SG indirect object
+@D.OBLIQUEPERSON.3@@D.OBLIQUENUMBER.SG@      SuffixOnly3SgSbj;
+@D.OBLIQUEPERSON.3@@R.OBLIQUENUMBER.SG@      SuffixOnly3SgSbj;
+@R.OBLIQUEPERSON.3@@D.OBLIQUENUMBER.SG@      SuffixOnly3SgSbj;
+
+! Non-3SG subject, 3SG indirect object
+@D.SUBJECTPERSON.3@@D.SUBJECTNUMBER.SG@      SuffixOnly3SgIObj;
+@D.SUBJECTPERSON.3@@R.SUBJECTNUMBER.SG@      SuffixOnly3SgIObj;
+@R.SUBJECTPERSON.3@@D.SUBJECTNUMBER.SG@      SuffixOnly3SgIObj;
+
+LEXICON SuffixOnly3SgDObjOrIObj
+! 3SG direct object, 3SG indirect object
+@R.OBJECTPERSON.3@@R.OBJECTNUMBER.SG@        SuffixOnly3SgIObj;
+
+! 3SG direct object, non-3SG indirect object
+@D.OBLIQUEPERSON.3@@D.OBLIQUENUMBER.SG@      SuffixOnly3SgDObj;
+@D.OBLIQUEPERSON.3@@R.OBLIQUENUMBER.SG@      SuffixOnly3SgDObj;
+@R.OBLIQUEPERSON.3@@D.OBLIQUENUMBER.SG@      SuffixOnly3SgDObj;
+
+! Non-3SG direct object, 3SG indirect object
+@D.OBJECTPERSON.3@@D.OBJECTNUMBER.SG@        SuffixOnly3SgIObj;
+@D.OBJECTPERSON.3@@R.OBJECTNUMBER.SG@        SuffixOnly3SgIObj;
+@R.OBJECTPERSON.3@@D.OBJECTNUMBER.SG@        SuffixOnly3SgIObj;
+
+LEXICON SuffixOnly3SgSbjOrDObjOrIObj
+! 3SG subject, 3SG direct object, and 3SG indirect object.
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.SG@@R.OBJECTPERSON.3@@R.OBJECTNUMBER.SG@@R.OBLIQUEPERSON.3@@R.OBLIQUENUMBER.SG@    SuffixOnly3SgForms;
+
+! Non-3SG direct object - see if the subject and/or the indirect object is 3SG.
+@D.OBJECTPERSON.3@@D.OBJECTNUMBER.SG@        SuffixOnly3SgSbjOrIObj;
+@D.OBJECTPERSON.3@@R.OBJECTNUMBER.SG@        SuffixOnly3SgSbjOrIObj;
+@R.OBJECTPERSON.3@@D.OBJECTNUMBER.SG@        SuffixOnly3SgSbjOrIObj;
+
+! Non-3SG indirect object - see if the subject and/or the direct object is 3SG.
+@D.OBLIQUEPERSON.3@@D.OBLIQUENUMBER.SG@      SuffixOnly3SgSbjOrDObj;
+@D.OBLIQUEPERSON.3@@R.OBLIQUENUMBER.SG@      SuffixOnly3SgSbjOrDObj;
+@R.OBLIQUEPERSON.3@@D.OBLIQUENUMBER.SG@      SuffixOnly3SgSbjOrDObj;
+
+! Non-3SG subject - see if the direct and/or indirect object is 3SG.
+@D.SUBJECTPERSON.3@@D.SUBJECTNUMBER.SG@      SuffixOnly3SgDObjOrIObj;
+@D.SUBJECTPERSON.3@@R.SUBJECTNUMBER.SG@      SuffixOnly3SgDObjOrIObj;
+@R.SUBJECTPERSON.3@@D.SUBJECTNUMBER.SG@      SuffixOnly3SgDObjOrIObj;
+
+LEXICON SuffixOnly3SgForms
+! Nominalization with -í "the one who" applies to verb forms that contain
+! at least one third-person singular referent.  (Note that we distinguish
+! this affix from the homophonous relativizer -í "(the fact) that", which
+! Bruce insists is a different affix and appears with any person-number
+! combination)
+@U.NOMINALIZATION.I@0:@U.NOMINALIZATION.I@í  #;
+
+! Nominalization with -à "the one that" (generally used in personal names)
+! applies to verb forms that contain at least one third-person singular
+! referent.
+@U.NOMINALIZATION.A@0:@U.NOMINALIZATION.A@à  #;
+
+
 LEXICON Enclitics
 
 ! Verbal enclitics that attach without major selectional restrictions.
 @U.ENCLITIC.gu@:-gù                         # "while; so that, in order that" ;
 @U.ENCLITIC.la@:-la                         # "it is, it was (narrative)" ;
 @U.ENCLITIC.gula@:-gulà                     # "might, may" ;
+
+
+LEXICON naNominalization
+! Nominalization with =ná "the ones that" applies only to verb forms that
+! contain at least one third-person referent.  (We have to consider valence
+! here, since our dummy 3SG subjects in experiencer verbs shouldn't trigger
+! this affix.  All the more reason to move away from 3SG subjects in these
+! forms to actual impersonals...)
+
+!@U.VALENCE.IMPERSONAL@
+@U.VALENCE.DO-EXPERIENCER@      naNominalizationExperiencer;
+@U.VALENCE.OO-EXPERIENCER@      naNominalizationExperiencer;
+
+@U.VALENCE.INTRANSITIVE@        naNominalizationNonExperiencer;
+@U.VALENCE.TRANSITIVE@          naNominalizationNonExperiencer;
+@U.VALENCE.TRANSITIONAL@        naNominalizationNonExperiencer;
+@U.VALENCE.OBLIQUEOBJECT@       naNominalizationNonExperiencer;
+@U.VALENCE.DITRANSITIVE@        naNominalizationNonExperiencer;
+
+LEXICON naNominalizationNonExperiencer
+@R.SUBJECTPERSON.3@             naNominalizationAffix;
+@D.SUBJECTPERSON.3@             naNominalizationExperiencer;
+
+LEXICON naNominalizationExperiencer
+@R.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   naNominalizationAffix;
+@R.OBJECTPERSON.3@@D.OBLIQUEPERSON.3@   naNominalizationAffix;
+@D.OBJECTPERSON.3@@R.OBLIQUEPERSON.3@   naNominalizationAffix;
+
+LEXICON naNominalizationAffix
+@U.NOMINALIZATION.NA@0:@U.NOMINALIZATION.NA@-ná          #;
 
