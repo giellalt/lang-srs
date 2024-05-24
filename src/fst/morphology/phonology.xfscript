@@ -202,11 +202,15 @@ define iTAMAAssimilation                  í "." i i -> í í   .o.
                                           i "." i   -> i     .o.
                                           i "." i2  -> i2;
 
-# When /u/ appears before an /i/ in a TAMA chunk (e.g., with areal gu-), then
-# we need to make sure that the /u/ picks up the tone from the /i/.
-define uTAMAAssimilation [ u "." i | ú "." ì | ù "." í ] -> u  .o.
-                         [ u "." í | ú "." í | ú "." i ] -> ú  .o.
-                         [ u "." ì | ù "." i | ù "." ì ] -> ù;
+# When /u/ appears before an /i/ or /ii/ in a TAMA chunk (e.g., with areal
+# gu-), then we need to make sure that the /u/ picks up the tone and length
+# from the /i/.
+define uTAMAAssimilation [ u "." i i | ú "." ì ì | ù "." í í ]  -> u u  .o.
+                         [ u "." í í | ú "." í í | ú "." i i ]  -> ú ú  .o.
+                         [ u "." ì ì | ù "." i i | ù "." ì ì ]  -> ù ù  .o.
+                         [ u "." i | ú "." ì | ù "." í ]        -> u    .o.
+                         [ u "." í | ú "." í | ú "." i ]        -> ú    .o.
+                         [ u "." ì | ù "." i | ù "." ì ]        -> ù;
 
 # When /á/ appears before /ii/ or /i/ in a TAMA chunk (e.g., with the inner
 # prefix ná- in násʔí "look at"), we need to make sure that the /á/ becomes
@@ -292,11 +296,11 @@ regex [ putLToneAfterInnerPrefixBoundaryMarker
 .o. hToneSpreading
 .o. encliticMidToHighTone
 .o. distributivePlural1PLToneSandhi
+.o. lToneLowering
 .o. iAssimilation
 .o. iTAMAAssimilation
 .o. uTAMAAssimilation
 .o. aTAMAAssimilation
-.o. lToneLowering
 .o. removeInnerBoundaryMarker
 .o. cleanupMoraicI
 .o. noThreeVowelSequences
