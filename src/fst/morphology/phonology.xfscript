@@ -61,10 +61,13 @@ define hToneSpreading;
 
 # The ì- transitional (Leer 1996/2005) or inchoative/semelfactive (K. Rice
 # 2000) prefix behaves differently from all other tone-bearing prefixes in
-# Tsuut'ina, pulling down the tone of neighbouring vowels without adding a
-# mora (e.g., gùja ánìstłàg "I did you (sg.) good", from á= ni_ ^L . is làg,
-# with L . is -> ìs; gùja ásilàg "you (sg.) did me good", from á= si_ ^L .
-# í làg, with ^L . í -> i).
+# Tsuut'ina, pulling down the tone of neighbouring vowels in inner and middle
+# prefixes without adding a mora (e.g., gùja ánìstłàg "I did you (sg.) good",
+# from á= ni_ ^L . is làg, with L . is -> ìs; gùja ásilàg "you (sg.) did me
+# good", from á= si_ ^L . í làg, with ^L . í -> i).  This prefix does not
+# affect the tone of vowels in outer prefixes, but instead behaves phonologī-
+# cally like a moraic low-tone /ì/ (e.g., náayisʔoł "I am butchering it
+# (progressive)", from ná= ^L . yis ʔoł, not *náyisʔoł or *nayisʔoł).
 # 
 # In the case of TAMA chunks, this prefix causes both short and level long
 # vowels to drop by one level (e.g., í -> i, íí -> ii, etc.), while leaving
@@ -93,6 +96,13 @@ define lToneCleanup "^L" -> 0;
 
 regex [ lToneLowerRight .o. lToneLowerLeft .o. lToneCleanup ];
 define lToneLowering;
+
+# As noted above, the transitional prefix does not pull down the tone of
+# neighbouring vowels when those belong to a disjunct prefix.  Instead,
+# immediately after a tone-bearing disjunct prefix when there are no following
+# vowels whose tones could be lowered, the transitional prefix behaves like
+# a moraic /ì/.
+define lToneAfterDisjunctBoundary "^L" -> ì || "=" "_" "." _ consonant;
 
 # Enclitics cause open-syllable, mid-tone verb stems to become high tone.
 # Whenever an enclitic is present after a stem, the symbol "^Encl" is
@@ -277,6 +287,7 @@ define removeInnerBoundaryMarker "." -> 0;
 
 regex [ putLToneAfterInnerPrefixBoundaryMarker
 .o. shortenDefaultPrefixes
+.o. lToneAfterDisjunctBoundary
 .o. removeMiddleOuterBoundaryMarkers
 .o. hToneSpreading
 .o. encliticMidToHighTone
