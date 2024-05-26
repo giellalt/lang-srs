@@ -50,10 +50,12 @@ define hToneSpread a a -> á á, a -> á,
                    i i -> í í, i -> í,
                    o o -> ó ó, o -> ó,
                    u u -> ú ú, u -> ú || 
-                        "^H" (consonant)+ _ \".", 
-                        "^H" (consonant)+ (unmarkedVowel)+ (consonant)+ _ \".",
+                        "^H" (consonant)+ _ (consonant) ".",
                         "^H" (consonant)+ (unmarkedVowel)+ 
-                          (consonant)+ (unmarkedVowel)+ (consonant)+ _ \".";
+                             (consonant)+ _ (consonant) ".",
+                        "^H" (consonant)+ (unmarkedVowel)+ 
+                             (consonant)+ (unmarkedVowel)+ 
+                             (consonant)+ _ (consonant) ".";
 define hToneSpreadCleanup "^H" -> 0;
 
 regex [ hToneSpreadAfterMid .o. hToneSpread .o. hToneSpreadCleanup ];
