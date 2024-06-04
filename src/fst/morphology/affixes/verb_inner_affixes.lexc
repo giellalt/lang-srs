@@ -1411,6 +1411,7 @@ LEXICON yi-POT-AFF-InnerPrefix
 ! the flag LOWTONE), then only the non-contracted form appears (e.g., 
 ! gudìyisnát "I might speak", not *gudisnát).
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@yis           #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yí    #;
 ! The same restriction applies in 3SG, 3PL, and 4SG forms, where only yi-
@@ -1456,6 +1457,7 @@ LEXICON yis-POT-AFF-InnerPrefix
 ! the flag LOWTONE), then only the non-contracted form appears (e.g., 
 ! gudìyisnát "I might speak", not *gudisnát).
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@yis           #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yís   #;
 ! The same restriction applies in 3SG, 3PL, and 4SG forms, where only yis-
@@ -1501,6 +1503,7 @@ LEXICON yii-POT-AFF-InnerPrefix
 ! the flag LOWTONE), then only the non-contracted form appears (e.g., 
 ! gudìyisnát "I might speak", not *gudisnát).
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@R.LOWTONE.ON@yis        #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@yis           #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@@D.LOWTONE@ís            #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@yíí                     #;
 ! The same restriction applies in 3SG, 3PL, and 4SG forms, where only yii-
