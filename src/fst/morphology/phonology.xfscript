@@ -23,7 +23,7 @@ define consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
 # We model this by representing the low-tone à in distributive plural dà- with
 # the multi-character symbol <à2>, then targetting the <i2> moraic /i/ that 
 # represents the initial vowel in 0-IPFV 1PL isaà-/isiì-.
-define distributivePlural1PLToneSandhi [ à2 "." i2 -> à ì .o. à2 -> à ];
+define distributivePlural1PLToneSandhi [ à2 "." i2 -> à ì ];
 
 # Define LH -> MH (e.g., shì-á -> shaá, as in shaásʔín "I prepared food, made
 # a feast", dà-á -> daá, as in daátłiyaàʔí "each and every one of us saw each
@@ -35,7 +35,7 @@ define toneSandhi à -> a, ì -> i, ò -> o, ù -> u || _ highToneVowel,
                                                     _ unmarkedVowel;
 
 # Certain high-tone prefixes in Tsuut'ina (e.g., tsí- "flee", or í- from 
-# historical *uˑ-) spread high tone rightward onto unmarked syllables,
+# historical *uˑ-) spread high tone rightward onto unmarked vowels,
 # stopping at the first inflectional chunk (e.g., íts'idiyískid "they were
 # asked" comes out as íts'ídíyískid, with high tone spreading from í- onto
 # ts'i- and di-, but stopping at yi-).  We mark this spreading high tone
@@ -45,20 +45,21 @@ define toneSandhi à -> a, ì -> i, ò -> o, ù -> u || _ highToneVowel,
 # that appear after a spreading high tone.  If it turns out that there are
 # words with a spreading high tone that involve more than three unmarked
 # syllables before the inflectional chunk, this rule will need to change.
-define hToneSpreadAfterMid a -> á, i -> í, o -> ó, u -> ú || _ "^H";
-define hToneSpread a a -> á á, a -> á, 
-                   i i -> í í, i -> í,
-                   o o -> ó ó, o -> ó,
-                   u u -> ú ú, u -> ú || 
-                        "^H" (consonant)+ _ (consonant) ".",
-                        "^H" (consonant)+ (unmarkedVowel)+ 
-                             (consonant)+ _ (consonant) ".",
-                        "^H" (consonant)+ (unmarkedVowel)+ 
-                             (consonant)+ (unmarkedVowel)+ 
-                             (consonant)+ _ (consonant) ".";
+define hToneSpread [..] -> "^H" || 
+    "^H" consonant+ unmarkedVowel+ _ [ \"^H" | "." ];
+
+define hToneSpreadApply a a -> á á, a -> á,
+                           i i -> í í, i -> í,
+                           o o -> ó ó, o -> ó,
+                           u u -> ú ú, u -> ú || _ "^H";
+
 define hToneSpreadCleanup "^H" -> 0;
 
-regex [ hToneSpreadAfterMid .o. hToneSpread .o. hToneSpreadCleanup ];
+regex [ hToneSpread .o. 
+        hToneSpread .o. 
+        hToneSpread .o.
+        hToneSpreadApply .o.
+        hToneSpreadCleanup ];
 define hToneSpreading;
 
 # The ì- transitional (Leer 1996/2005) or inchoative/semelfactive (K. Rice
@@ -86,7 +87,7 @@ define lToneLowerRight [ "." "^L" á á -> "." a a      .o.
                          "." "^L" a a -> "." à à      .o.
                          "." "^L" a -> "." à          .o.
                          "." "^L" í í -> "." i i      .o.
-                         "." "^L" í -> "." i          .o.
+                         "." "^L" í -> "." i2         .o.
                          "." "^L" i ì -> "." i ì      .o.
                          "." "^L" i i -> "." ì ì      .o.
                          "." "^L" i -> "." ì          .o.
@@ -104,6 +105,11 @@ define lToneLowering;
 # immediately after a tone-bearing disjunct prefix when there are no following
 # vowels whose tones could be lowered, the transitional prefix behaves like
 # a moraic /ì/.
+#
+# (The only exception is the distributive plural dà-, which is a disjunct
+# prefix, but after which ^L is not realized [e.g., náasʔoł "you both are
+# butchering it", from ná=_^L.asʔoł; vs. nádàsʔoł "each and every one of you
+# is butchering it", not *nádààsʔoł, from ná=dà_^L.asʔoł])
 define lToneAfterDisjunctBoundary "^L" -> ì || "=" "_" "." _ consonant;
 
 # Enclitics cause open-syllable, mid-tone verb stems to become high tone.
@@ -190,6 +196,11 @@ define zDevoicing z -> s || s _;
 # Morphophonological adjustments to vowel length and quality.
 #
 
+# When combined with distributive dà-, 2PL.SBJ as-/às- is realized as dàs-
+# (i.e., with a short vowel).
+define distributivePluralBefore2PL [ a | à ] -> 0 || à2 "." _ s2  .o.
+                                          à2 -> à;
+
 # Outside of TAMA-initial contexts, /i/ assimilates to the height and backness
 # of any immediately preceding /a/, /o/, or /u/, but retains its tone and mora.
 define iAssimilation í -> á, i -> a, ì -> à || [á|a|à] _ .o.
@@ -245,7 +256,7 @@ define uDeletionBeforeO u -> 0 || _ [ó|o|ò];
 # 2PL <as2> doesn't contribute a mora to any preceding prefix, (e.g., dàłí
 # "you (pl.) are" < dà- ałí, rather than *dàałí), but it does still cause
 # manner assimilation (e.g., dastł'áh "you (pl.) run" < di- astłáh).
-define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à]+ s2;
+define assimilationBefore2PL í -> á, i -> a, ì -> à || _ [á|a|à] s2;
 # TODO: what to do with às2-? (depends on treatment of transitional ì-)
 define reduce2PLAfterVowel a -> 0 || vowel _ s2;
 
@@ -299,6 +310,7 @@ regex [ putLToneAfterInnerPrefixBoundaryMarker
 .o. encliticMidToHighTone
 .o. distributivePlural1PLToneSandhi
 .o. lToneLowering
+.o. distributivePluralBefore2PL
 .o. iAssimilation
 .o. iTAMAAssimilation
 .o. uTAMAAssimilation
