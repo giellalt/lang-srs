@@ -110,13 +110,27 @@ define lToneLowering;
 # prefix, but after which ^L is not realized [e.g., náasʔoł "you both are
 # butchering it", from ná=_^L.asʔoł; vs. nádàsʔoł "each and every one of you
 # is butchering it", not *nádààsʔoł, from ná=dà_^L.asʔoł])
-define lToneAfterDisjunctBoundary "^L" -> ì || "=" "_" "." _ consonant;
+define lToneAfterDisjunctBoundary "^L" -> ì || 
+                                        "=" "_" "." _ [ consonant | "^P" ];
 
 # Enclitics cause open-syllable, mid-tone verb stems to become high tone.
 # Whenever an enclitic is present after a stem, the symbol "^Encl" is
 # produced, which allows us to adjust the tone accordingly.
 define encliticMidToHighTone a -> á, i -> í, o -> ó, u -> ú || _ "^Encl" .o.
                              "^Encl" -> 0;
+
+# Certain TAMA chunks in ni-PFV and si-PFV paradigms (as well as in morpho-
+# logically identical stative forms) are preceded by a floating low tone that
+# causes any immediately preceding inner prefix ending in a mid-tone vowel to
+# become low (e.g., di . ^P sistł'o -> dìsistł'o "I ran", where the 1SG.SBJ
+# si-PFV inner prefix TAMA chunk <sis> is preceded by a floating low tone
+# represented in the FST by the symbol <^P>, which causes <di> to become <dì>).
+#
+# The only vowel that is attested in the morphological environment in which
+# this floating low tone appears is /i/, making this process straightforward
+# to model phonologically.  In all other environments, the floating low tone
+# is not realized.
+define perfectiveToneLowering i -> ì || _ "." "^P"  .o.  "^P" -> 0;
 
 
 #
@@ -307,9 +321,10 @@ regex [ encliticMidToHighTone
 .o. shortenDefaultPrefixes
 .o. lToneAfterDisjunctBoundary
 .o. removeMiddleOuterBoundaryMarkers
-.o. distributivePlural1PLToneSandhi
+.o. perfectiveToneLowering
 .o. lToneLowering
 .o. hToneSpreading
+.o. distributivePlural1PLToneSandhi
 .o. distributivePluralBefore2PL
 .o. iAssimilation
 .o. iTAMAAssimilation
