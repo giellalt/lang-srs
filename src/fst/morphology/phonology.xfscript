@@ -302,14 +302,14 @@ define removeInnerBoundaryMarker "." -> 0;
 # Compose all of the morphophonology together.
 #
 
-regex [ putLToneAfterInnerPrefixBoundaryMarker
+regex [ encliticMidToHighTone
+.o. putLToneAfterInnerPrefixBoundaryMarker
 .o. shortenDefaultPrefixes
 .o. lToneAfterDisjunctBoundary
 .o. removeMiddleOuterBoundaryMarkers
-.o. hToneSpreading
-.o. encliticMidToHighTone
 .o. distributivePlural1PLToneSandhi
 .o. lToneLowering
+.o. hToneSpreading
 .o. distributivePluralBefore2PL
 .o. iAssimilation
 .o. iTAMAAssimilation
