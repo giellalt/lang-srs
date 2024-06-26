@@ -296,6 +296,11 @@ define putLToneAfterInnerPrefixBoundaryMarker "^L" "." -> "." "^L";
 # the TAMA chunks.
 define shortenDefaultPrefixes i -> 0 || _ "." ("^L") [á|a|à|í|i|ì|i2];
 
+# Remove any unmarked, non-tone-bearing vowels (i.e., /i/) from the ends of
+# oblique prefixes that immediately precede vowel-initial words (e.g., mi#
+# à=_.st'a -> m#à=_.st'a -> màst'a "I am like him/her/it")
+define shortenObliquePrefixes i -> 0 || _ "#" vowel;
+
 # Turn any instances of <i2> into plain /i/. (We use <i2> in some TAMA chunks
 # to indicate an /i/ that maintains its mora when a prefix is joined to it,
 # e.g., the first /i/ in isaà-/isiì- 1PL)
@@ -304,9 +309,9 @@ define cleanupMoraicI i2 -> i;
 # Turn any remaining instances of <s2> and <s3> into plain /s/.
 define cleanupS2S3 [ s2 | s3 ] -> s;
 
-# Remove middle and outer-prefix morphological boundary markers from the FST
-# output.
-define removeMiddleOuterBoundaryMarkers [ "_" -> 0 .o. "=" -> 0 ];
+# Remove middle, outer, and oblique-prefix morphological boundary markers from
+# the FST output.
+define removeNonInnerBoundaryMarkers [ "_" | "=" | "#" ] -> 0;
 
 # Remove inner-prefix morphological boundary markers from the FST output.
 define removeInnerBoundaryMarker "." -> 0;
@@ -319,8 +324,9 @@ define removeInnerBoundaryMarker "." -> 0;
 regex [ encliticMidToHighTone
 .o. putLToneAfterInnerPrefixBoundaryMarker
 .o. shortenDefaultPrefixes
+.o. shortenObliquePrefixes
 .o. lToneAfterDisjunctBoundary
-.o. removeMiddleOuterBoundaryMarkers
+.o. removeNonInnerBoundaryMarkers
 .o. perfectiveToneLowering
 .o. lToneLowering
 .o. hToneSpreading
