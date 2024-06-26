@@ -237,8 +237,9 @@ LEXICON Reflexive-DO-AFF
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@D.GI@@P.GI.ON@igidi Conative;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@@D.GI@@P.GI.ON@idigi Conative;
 ! TODO: Check 4SG reflexive objects with Bruce (variation between its'idi-
-! and idits'i-, paralleling 3SG variation?)
-@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@idi                  Conative;
+! and idits'i-, paralleling 3SG variation?).
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@its'idi              Conative;
+@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@idits'i              Conative;
 
 
 LEXICON Reciprocal-DO
@@ -337,9 +338,17 @@ LEXICON Outer-Subjects-4SG
 ! If that approach worked, then the presence of high-tone í- would result in 
 ! full TAMA chunks being selected, without needing to monkey around with
 ! prefix flags like this...)
-@R.CONATIVE.ON@ts'i                                         Filter-SBJ-DO;
-@R.CONATIVE.OFF@@D.PREFIX.MIDDLE@@P.PREFIX.MIDDLE@ts'i      Filter-SBJ-DO;
-@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@P.PREFIX.INNER@ts'i       Filter-SBJ-DO;
+@R.CONATIVE.ON@                                     Outer-Subjects-4SG-Form;
+@R.CONATIVE.OFF@@D.PREFIX.MIDDLE@@P.PREFIX.MIDDLE@  Outer-Subjects-4SG-Form;
+@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@P.PREFIX.INNER@   Outer-Subjects-4SG-Form;
+
+LEXICON Outer-Subjects-4SG-Form
+! 4SG subject forms with reflexive direct objects are treated here as already
+! including the ts'i- subject prefix as part of their direct object markerx
+! (i.e., as the portmanteau forms idits'i- / its'idi-), so we don't need to
+! generate or accept a separate ts'i- subject prefix in those cases.
+@R.OBJECTPERSON.REFL@                                       Filter-SBJ-DO;
+@D.OBJECTPERSON.REFL@ts'i                                   Filter-SBJ-DO;
 
 
 LEXICON Filter-SBJ-DO
