@@ -116,7 +116,7 @@ define SimplifyBoundaries [ [ "=" "=" -> "=" , "_" "_" -> "_" , "." "." -> "." ]
 ];
 
 # Concatenate ObliqueAffixes and the other inflectional FSTs.
-read regex WordForms .o. [..] -> ObliqueAffixes || .#. _;
+read regex WordForms .o. [..] -> ObliqueAffixes "#" || .#. _;
 
 twosided flag-diacritics
 define Grammar;
