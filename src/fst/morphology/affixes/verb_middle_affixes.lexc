@@ -651,9 +651,10 @@ LEXICON Filter-DO-IO-Other
 @U.OBJECTPERSON.3@@U.OBJECTNUMBER.PL@                       #;
 @U.OBJECTPERSON.4@@U.OBJECTNUMBER.SG@                       #;
 
-! Indefinite direct object forms (e.g., "give *something* to IO") are fine
-! throughout.
+! Indefinite direct object forms (e.g., "give *something* to IO") and areal
+! object forms (e.g., "give it (place/space) to IO") are fine throughout.
 @U.OBJECTPERSON.INDEF@                                      #;
+@U.OBJECTPERSON.AREAL@                                      #;
 
 
 ! Direct object experiencer verbs have direct object inflection only
