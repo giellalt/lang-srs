@@ -673,17 +673,17 @@ LEXICON ni-PFV
 LEXICON ni-PFV-AFF
 @U.VV.%0@@D.PREFIX@                          ni-PFV-AFF-NoPrefix ;
 @U.VV.%0@@R.PREFIX.INNER@                    ni-PFV-AFF-InnerPrefix ;
-@U.VV.%0@@R.PREFIX.MIDDLE@                   ni-PFV-AFF-InnerPrefix ;
+@U.VV.%0@@R.PREFIX.MIDDLE@                   ni-PFV-AFF-MiddlePrefix ;
 @U.VV.%0@@R.PREFIX.OUTER@                    ni-PFV-AFF-OuterPrefix ;
 
 @U.VV.S@@D.PREFIX@                           nis-PFV-AFF-NoPrefix ;
 @U.VV.S@@R.PREFIX.INNER@                     nis-PFV-AFF-InnerPrefix ;
-@U.VV.S@@R.PREFIX.MIDDLE@                    nis-PFV-AFF-InnerPrefix ;
+@U.VV.S@@R.PREFIX.MIDDLE@                    nis-PFV-AFF-MiddlePrefix ;
 @U.VV.S@@R.PREFIX.OUTER@                     nis-PFV-AFF-OuterPrefix ;
 
 @U.VV.I@@D.PREFIX@                           nii-PFV-AFF-NoPrefix ;
 @U.VV.I@@R.PREFIX.INNER@                     nii-PFV-AFF-InnerPrefix ;
-@U.VV.I@@R.PREFIX.MIDDLE@                    nii-PFV-AFF-InnerPrefix ;
+@U.VV.I@@R.PREFIX.MIDDLE@                    nii-PFV-AFF-MiddlePrefix ;
 @U.VV.I@@R.PREFIX.OUTER@                     nii-PFV-AFF-OuterPrefix ;
 
 LEXICON ni-PFV-AFF-NoPrefix
@@ -695,8 +695,8 @@ LEXICON ni-PFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@^Pní   #; ! FLOATING L-TONE
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pní   #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ní    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ní    #;
 
 LEXICON ni-PFV-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@^Pnis  #; ! FLOATING L-TONE (M/L -> L)
@@ -709,6 +709,19 @@ LEXICON ni-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@^Pní   #; ! FLOATING L-TONE
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pní   #; ! FLOATING L-TONE
 
+LEXICON ni-PFV-AFF-MiddlePrefix
+! Throughout the ni-PFV paradigm, middle-prefix forms containing a direct
+! object prefix appear with floating L tone (e.g., násigìnístín "they both
+! took me home", not *násiginístín).
+!
+! By contrast, middle-prefix forms without a direct object prefix (e.g.,
+! with gi– 3PL.SBJ and ts'i- 4SG.SBJ) do not appear with low tone (e.g.,
+! nàts'iníʔón "someone put it down (solid object)", not nàts'ìníʔón).  We
+! model this here by checking for the presence of object marking on the
+! verb via the flag diacritic OBJECTPERSON.
+@R.OBJECTPERSON@                             ni-PFV-AFF-InnerPrefix;
+@D.OBJECTPERSON@                             ni-PFV-AFF-OuterPrefix;
+
 LEXICON ni-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní    #;
@@ -717,8 +730,8 @@ LEXICON ni-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@^Pní   #; ! FLOATING L-TONE
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pní   #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ní    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ní    #;
 
 
 LEXICON nis-PFV-AFF-NoPrefix
@@ -730,8 +743,8 @@ LEXICON nis-PFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@^Pnís  #; ! FLOATING L-TONE
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pnís  #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@nís   #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@nís   #;
 
 LEXICON nis-PFV-AFF-InnerPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@^Pnis  #; ! FLOATING L-TONE
@@ -743,6 +756,10 @@ LEXICON nis-PFV-AFF-InnerPrefix
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@^Pnas2 #; ! FLOATING L-TONE
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@^Pnís  #; ! FLOATING L-TONE
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pnís  #; ! FLOATING L-TONE
+
+LEXICON nis-PFV-AFF-MiddlePrefix
+@R.OBJECTPERSON@                             nis-PFV-AFF-InnerPrefix;
+@D.OBJECTPERSON@                             nis-PFV-AFF-OuterPrefix;
 
 LEXICON nis-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
@@ -765,8 +782,8 @@ LEXICON nii-PFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@^Pníí  #;	! FLOATING L-TONE
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pníí  #; ! FLOATING L-TONE
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@níí   #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@níí   #;
 
 LEXICON nii-PFV-AFF-InnerPrefix
 ! FIXME: no documentation for this form; dummy values below
@@ -780,16 +797,20 @@ LEXICON nii-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@^Pníí  #; ! FLOATING L-TONE
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pníí  #; ! FLOATING L-TONE
 
+LEXICON nii-PFV-AFF-MiddlePrefix
+@R.OBJECTPERSON@                             nii-PFV-AFF-InnerPrefix;
+@D.OBJECTPERSON@                             nii-PFV-AFF-OuterPrefix;
+
 LEXICON nii-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níí   #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #; 
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@naà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@íí    #;	
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #;	 
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@íí    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #; 
 
 
 !
