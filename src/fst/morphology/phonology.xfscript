@@ -246,7 +246,9 @@ define aTAMAAssimilation [ á "." í í | á "." i i | á "." á á ] -> á á  
                          [ á "." í   | á "." i   | á "." á   ] -> á    .o.
                            a "." í                             -> á    .o.
                            a "." i i                           -> a a  .o.
-                           a "." i                             -> a;
+                           a "." i                             -> a    .o.
+                           à "." i i                           -> à à  .o.
+                           à "." i                             -> à;
 
 # In complex prefix combinations, we can sometimes end up with a sequence
 # of three adjacent vowels (e.g., dà- í- isaà-, as in daásaàzi "we are all
