@@ -718,9 +718,9 @@ LEXICON ni-PFV-AFF-MiddlePrefix
 ! with gi– 3PL.SBJ and ts'i- 4SG.SBJ) do not appear with low tone (e.g.,
 ! nàts'iníʔón "someone put it down (solid object)", not nàts'ìníʔón).  We
 ! model this here by checking for the presence of object marking on the
-! verb via the flag diacritic OBJECTPERSON.
-@R.OBJECTPERSON@                             ni-PFV-AFF-InnerPrefix;
-@D.OBJECTPERSON@                             ni-PFV-AFF-OuterPrefix;
+! verb via the flag diacritic DIRECTOBJECTPRESENT.
+@R.DIRECTOBJECTPRESENT.ON@                   ni-PFV-AFF-InnerPrefix;
+@D.DIRECTOBJECTPRESENT@                      ni-PFV-AFF-OuterPrefix;
 
 LEXICON ni-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
@@ -758,8 +758,8 @@ LEXICON nis-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pnís  #; ! FLOATING L-TONE
 
 LEXICON nis-PFV-AFF-MiddlePrefix
-@R.OBJECTPERSON@                             nis-PFV-AFF-InnerPrefix;
-@D.OBJECTPERSON@                             nis-PFV-AFF-OuterPrefix;
+@R.DIRECTOBJECTPRESENT.ON@                   nis-PFV-AFF-InnerPrefix;
+@D.DIRECTOBJECTPRESENT@                      nis-PFV-AFF-OuterPrefix;
 
 LEXICON nis-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
@@ -798,8 +798,8 @@ LEXICON nii-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pníí  #; ! FLOATING L-TONE
 
 LEXICON nii-PFV-AFF-MiddlePrefix
-@R.OBJECTPERSON@                             nii-PFV-AFF-InnerPrefix;
-@D.OBJECTPERSON@                             nii-PFV-AFF-OuterPrefix;
+@R.DIRECTOBJECTPRESENT.ON@                   nii-PFV-AFF-InnerPrefix;
+@D.DIRECTOBJECTPRESENT@                      nii-PFV-AFF-OuterPrefix;
 
 LEXICON nii-PFV-AFF-OuterPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
