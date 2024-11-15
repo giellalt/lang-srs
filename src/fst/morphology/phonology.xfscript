@@ -239,8 +239,8 @@ define uTAMAAssimilation [ u "." i i | ú "." ì ì | ù "." í í ]  -> u u  .o
                          [ u "." í | ú "." í | ú "." i ]        -> ú    .o.
                          [ u "." ì | ù "." i | ù "." ì ]        -> ù;
 
-# When /á/ appears before /ii/ or /i/ in a TAMA chunk (e.g., with the inner
-# prefix ná- in násʔí "look at"), we need to make sure that the /á/ becomes
+# When /a/ appears before /ii/ or /i/ in a TAMA chunk (e.g., with the inner
+# prefix ná- in násʔí "look at"), we need to make sure that the /a/ becomes
 # long before /ii/ and picks up the appropriate tone.
 define aTAMAAssimilation [ á "." í í | á "." i i | á "." á á ] -> á á  .o.
                          [ á "." í   | á "." i   | á "." á   ] -> á    .o.
