@@ -2,9 +2,19 @@ Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRA
 
 LEXICON Root
 
+@U.VALENCE.INTRANSITIVE@                              TAMA;
+@U.VALENCE.OBLIQUEOBJECT@                             TAMA;
+@U.VALENCE.TRANSITIVE@                                Transitional;
+@U.VALENCE.DITRANSITIVE@                              Transitional;
+@U.VALENCE.IMPERSONAL@                                TAMA;
+@U.VALENCE.DO-EXPERIENCER@                            TAMA;
+@U.VALENCE.OO-EXPERIENCER@                            TAMA;
+
+
+LEXICON Transitional
+
 @U.TRANSITIONAL.ON@                                    TransitionalPrefix;
 @D.TRANSITIONAL@                                       TAMA;
-
 
 LEXICON TransitionalPrefix
 
