@@ -13,17 +13,24 @@ define consonant [b|c|d|g|h|j|k|l|ł|m|n|p|s|t|w|x|y|z|ʔ|%'];
 # Morphophonological adjustments to tone.
 #
 
-# The distributive plural dà- has slightly different tonal behaviour compared
-# to other low-tone prefixes in Tsuut'ina: before 0-IPFV 1PL isaà-/isiì-, dà-
-# combines to form dààsaà-/dààsiì- (i.e., LM -> LL, e.g., dààsaàtsiy "each and
-# every one of us is crying", from dà- + isaàtsiy), rather than the expected
-# *daasaà-/*daasiì- (i.e., LM -> MM, as is found in all other LM contexts).
-# In all other contexts, dà- behaves tonally like any other low-marked prefix.
+# The 0-IPFV 1PL.SBJ allomorph isaà-/isiì- has slightly different tonal
+# behaviour from other prefixes that begin with i- in Tsuut'ina: before 0-IPFV
+# 1PL.SBJ isaà-/isiì-, low-tone inflectional prefixes (e.g., dà- distributive
+# plural) and lexical prefixes (e.g., nà- in lexemes like nàkuy "vomit" and
+# nàmo "swim/bathe") combine to form Cv̀v̀saà-/Cv̀v̀siì- (i.e., LM -> LL, e.g.,
+# dààsaàtsiy "each and every one of us is crying", from distributive plural
+# dà- + isaàtsiy; or nààsaàmo "we both will swim/bathe", from lexical nà- + 
+# isaàmo), rather than the expected *Caasaà-/*Caasiì- (i.e., LM -> MM, as is
+# found in all other LM contexts).
 #
-# We model this by representing the low-tone à in distributive plural dà- with
-# the multi-character symbol <à2>, then targetting the <i2> moraic /i/ that 
-# represents the initial vowel in 0-IPFV 1PL isaà-/isiì-.
-define distributivePlural1PLToneSandhi [ à2 "." i2 -> à ì ];
+# We model this by representing the initial vowel in isaà-/isiì- with the
+# multi-character symbol <i2>, then handle this sandhi behaviour with a
+# targetted rewrite rule.  (We currently only have evidence for this sandhi
+# pattern after à–, so it's possible that this pattern actually only applies
+# to that one vowel, rather than all low vowels.  If we come across instances
+# of ì=, ò=, or ù= appearing immediately before 0-IPFV 1PL.SBJ that share
+# this behaviour, this rule will need to be rewritten/expanded)
+define toneSandhi1PL [ [ à2 | à ] "." i2 -> à ì ];
 
 # Define LH -> MH (e.g., shì-á -> shaá, as in shaásʔín "I prepared food, made
 # a feast", dà-á -> daá, as in daátłiyaàʔí "each and every one of us saw each
@@ -332,7 +339,7 @@ regex [ encliticMidToHighTone
 .o. perfectiveToneLowering
 .o. lToneLowering
 .o. hToneSpreading
-.o. distributivePlural1PLToneSandhi
+.o. toneSandhi1PL
 .o. distributivePluralBefore2PL
 .o. iAssimilation
 .o. iTAMAAssimilation
