@@ -1,4 +1,4 @@
-Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OBJECTPERSON.INDEF@ @D.OBJECTPERSON.INDEF@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0-STAT@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.TRANSITIONAL.ON@ @U.VALENCE.TRANSITIVE@ @U.VV.%0@ @U.VV.S@ @U.VV.I@ @D.TRANSITIONAL@ @D.OBJECTPERSON.3@ @D.OBJECTNUMBER.SG@ @D.SUBJECTPERSON.3@ @U.DIRECTOBJECT.GIVEN@ @D.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @D.DIRECTOBJECT.EMPHATIC@ @U.DIRECTOBJECT.NONE@ @U.DIALECT.BIGCROW@ @U.DIALECT.BIGPLUME@ @U.DIALECT.CROWCHIEF@ @R.LOWTONE.ON@ @P.LOWTONE.ON@ @D.LOWTONE@ @R.DIRECTOBJECTPRESENT.ON@ @D.DIRECTOBJECTPRESENT@ i2 s2 s3 ^L ^P
+Multichar_Symbols @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.4@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OBJECTPERSON.INDEF@ @D.OBJECTPERSON.INDEF@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.%0-STAT@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.DO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.TRANSITIONAL.ON@ @U.VALENCE.TRANSITIVE@ @U.VV.%0@ @U.VV.S@ @U.VV.I@ @D.TRANSITIONAL@ @D.OBJECTPERSON.3@ @D.OBJECTNUMBER.SG@ @D.SUBJECTPERSON.3@ @U.DIRECTOBJECT.GIVEN@ @D.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @D.DIRECTOBJECT.EMPHATIC@ @U.DIRECTOBJECT.NONE@ @U.DIALECT.BIGCROW@ @U.DIALECT.BIGPLUME@ @U.DIALECT.CROWCHIEF@ @R.LOWTONE.ON@ @P.LOWTONE.ON@ @D.LOWTONE@ @R.DIRECTOBJECTPRESENT.ON@ @D.DIRECTOBJECTPRESENT@ @U.NITONE.MID@ @R.NITONE.MID@ @D.NITONE@ i2 s2 s3 ^L ^P
 
 LEXICON Root
 
@@ -466,6 +466,26 @@ LEXICON 0-IPFV-STAT
 !
 ! ni-IPFV
 !
+! There are two major variants of ni-IPFV:
+!
+!   1. One in which 3SG, 3PL, and 4SG forms are accompanied by a high tone
+!      after an inner or middle prefix (e.g., ch'àdít'a "he/she/it is holy",
+!      ch'àgidít'a "they both are holy", ch'àts'idít'a "someone is holy",
+!      with dí-, rather than *di-).
+!
+!   2. Another in which 3SG, 3PL, and 4SG forms are accompanied by a mid tone
+!      after an inner or middle prefix (e.g., ts'ilo "he/she/it is lazy",
+!      ts'igilo "they both are lazy", ts'its'ilo "someone is lazy", with
+!      3SG ts'i- rather than *ts'í-, 3PL gi- rather than *gí-, 4SG ts'i-
+!      rather than *ts'í-)
+!
+! Besides the tonal differences in these specific forms, the two variants are
+! identical.  Since the first of these two variants (with high tone) is by far
+! the more common one, we treat it as the default when @U.TAMA.ni@ is
+! specified, and use the additional flag @U.NITONE.MID@ to handle cases where
+! the second variant (with mid tone) is needed, requiring that flag to be set
+! in the lexical entries for verb phrases that take that inflection.
+!      
 LEXICON ni-IPFV
 @U.ASPECT.IPFV@@U.TAMA.ni@                   ni-IPFV-AFF ;
 
@@ -486,49 +506,77 @@ LEXICON ni-IPFV-AFF
 @U.VV.I@@R.PREFIX.OUTER@                     nii-IPFV-AFF-OuterPrefix ;
 
 LEXICON ni-IPFV-AFF-NoPrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní    #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ni    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis                      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní                       #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ni                       #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@naà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@      #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2                     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@                         #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@                         #;
 
 LEXICON ni-IPFV-AFF-InnerPrefix
+@U.NITONE.MID@                      ni-IPFV-AFF-InnerPrefix-Forms;
+@D.NITONE@                          ni-IPFV-AFF-InnerPrefix-Forms;
+
+LEXICON ni-IPFV-AFF-InnerPrefix-Forms
 ! Three forms of 2SG ni-IPFV after an inner prefix are attested and freely
 ! interchangeable: ní-, níni-, and íni- (e.g., ch'àdinít'a ~ ch'àdinínit'a ~
 ! ch'àdiínit'a "you (sg.) are holy", after inner prefix di-; cf. TLQ-20210510).
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní    #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níni  #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@iíni  #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@í     #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis                      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní                       #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níni                     #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@iíni                     #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.NITONE.MID@           #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.NITONE@í              #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@naà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@í     #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@í     #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2                     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.NITONE.MID@           #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.NITONE@í              #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.NITONE.MID@           #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.NITONE@í              #;
 
 LEXICON ni-IPFV-AFF-MiddlePrefix
-! Three forms of 2SG ni-IPFV -- ní-, níni-, and íni- -- are attested and freely
-! interchangeable after certain middle prefixes (e.g., máguníshón ~
-! mágunínishón ~ mágúunishón "you (sg.) know him/her/it", after middle prefix
-! gu-; cf. TLQ-20210510), in exactly the same way as they appear after inner
-! prefixes.
+! Three different classes of middle prefixes are shunted into this contlex,
+! each of which show slightly different morphological behaviour in ni-IPFV:
 !
-! However, these variants are not acceptable after direct object middle
-! prefixes (e.g., nàsìnístà "you (sg.) will put me down / set me down", but
-! not *nàsìnínistà or *nàsiínistà; cf. TLQ-20210616).  If any direct object
-! marking is present, we proceed to a more restrictive continuation where
-! only ní- is defined for 2SG inflection.  Otherwise, we can reuse the existing
-! inner prefix TAMA chunk forms.
-@R.DIRECTOBJECTPRESENT.ON@                   ni-IPFV-AFF-MiddlePrefix-DObj;
-@D.DIRECTOBJECTPRESENT@                      ni-IPFV-AFF-InnerPrefix;          
+!   1. Forms that include ^L, whether as part of their lexical make-up (e.g.,
+!      átłàyidìʔò "close it (solid obj.)") or introduced inflectionally (e.g.,
+!      with transitional transitives, where ^L accompanies any direct object
+!      inflection that is marked on the verb, as in nàyìʔò "put it down (solid
+!      obj.)").  These use the same TAMA forms as ni-IPFV after an outer
+!      prefix.
+!
+!   2. The indefinite direct object prefix i_ (when not accompanied by ^L as
+!      part of a transitional transitive).  This takes its own distinctive set
+!      of TAMA forms.
+!
+!   3. All other middle prefixes (e.g., lexical ts'i_ in ts'ilo "he/she/it is
+!      lazy", lexical gu_ in mágunishó "I know it", inflectional 3PL subject
+!      gi_ in gítsìtł'a "they both are small").  These use the same TAMA forms
+!      as ni-IPFV after an inner prefix.
+!
+! TODO: In theory, other definite object prefixes could end up as part of that
+! third class of middle prefixes, too, but all ni-IPFV (and ni-PFV) transitive
+! verbs appear to be transitional transitives.  In the future, it might make
+! sense to capture that observation in the TAMA chunk definitions for ni-IPFV
+! and ni-PFV (and 0-STAT) directly, rather than as a separate argument struct-
+! ure class (assuming we don't need transitional transitive to capture any
+! instances of transitional transitive ^L that crop up in PROG, REP, or POT
+! forms; we would need to look into those in more detail to find out).
+@R.LOWTONE.ON@                              ni-IPFV-AFF-OuterPrefix;
+@D.LOWTONE@@D.DIRECTOBJECTPRESENT@          ni-IPFV-AFF-InnerPrefix;
+@D.LOWTONE@@R.DIRECTOBJECTPRESENT.ON@@R.OBJECTPERSON.INDEF@ ni-IPFV-AFF-MiddlePrefix-Indef;
 
-LEXICON ni-IPFV-AFF-MiddlePrefix-DObj
+LEXICON ni-IPFV-AFF-MiddlePrefix-Indef
+! Indefinite direct objects in ni-IPFV have only 2SG ní- (e.g., moghaaníʔò "you
+! (sg.) hand something to him/her/it (solid obj.)"), with high tone in
+! 3SG/3PL/4SG forms (e.g., yoghaáʔò "he/she/it hands something to him/her/it
+! (solid obj.), giyoghaáʔò "they both hand something to him/her/it (solid
+! obj.), moghaats'íʔò "someone hands something to him/her/it (solid obj.)).
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ní    #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@í     #;
@@ -559,30 +607,38 @@ LEXICON nis-IPFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@s     #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s     #;
-
-LEXICON nis-IPFV-AFF-InnerPrefix
-! Three forms of 2SG nis-IPFV after an inner prefix are attested and freely
-! interchangeable: nís-, nínis-, and ínis- (e.g., diníssúl ~ dinínisúl ~
-! diínisúl "you (sg.) are hairy")
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@nís   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@nínis #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@iínis #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ís    #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@naà  #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ís    #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ís    #;
 
-LEXICON nis-IPFV-AFF-MiddlePrefix
-@R.DIRECTOBJECTPRESENT.ON@                   nis-IPFV-AFF-MiddlePrefix-DObj;
-@D.DIRECTOBJECTPRESENT@                      nis-IPFV-AFF-InnerPrefix;          
+LEXICON nis-IPFV-AFF-InnerPrefix
+@U.NITONE.MID@                     nis-IPFV-AFF-InnerPrefix-Forms;
+@D.NITONE@                         nis-IPFV-AFF-InnerPrefix-Forms;
 
-LEXICON nis-IPFV-AFF-MiddlePrefix-DObj
+LEXICON nis-IPFV-AFF-InnerPrefix-Forms
+! Three forms of 2SG nis-IPFV after an inner prefix are attested and freely
+! interchangeable: nís-, nínis-, and ínis- (e.g., diníssúl ~ dinínisúl ~
+! diínisúl "you (sg.) are hairy")
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis                      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@nís                      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@nínis                    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@iínis                    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.NITONE.MID@s          #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.NITONE@ís             #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@naà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2                     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.NITONE.MID@s          #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.NITONE@ís             #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.NITONE.MID@s          #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.NITONE@ís             #;
+
+LEXICON nis-IPFV-AFF-MiddlePrefix
+@R.LOWTONE.ON@                              nis-IPFV-AFF-OuterPrefix;
+@D.LOWTONE@@D.DIRECTOBJECTPRESENT@          nis-IPFV-AFF-InnerPrefix;
+@D.LOWTONE@@R.DIRECTOBJECTPRESENT.ON@@R.OBJECTPERSON.INDEF@ nis-IPFV-AFF-MiddlePrefix-Indef;
+
+LEXICON nis-IPFV-AFF-MiddlePrefix-Indef
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@nís   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ís    #;
@@ -614,30 +670,38 @@ LEXICON nii-IPFV-AFF-NoPrefix
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@nii   #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@nii   #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@ii    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@ii    #;
 
 LEXICON nii-IPFV-AFF-InnerPrefix
+@U.NITONE.MID@                     nii-IPFV-AFF-InnerPrefix-Forms;
+@D.NITONE@                         nii-IPFV-AFF-InnerPrefix-Forms;
+
+LEXICON nii-IPFV-AFF-InnerPrefix-Forms
 ! Three forms of 2SG nii-IPFV after an inner prefix are attested and freely
 ! interchangeable: níí-, niínii-, and iínii- (e.g., tłítsiníínì ~
 ! tłítsiniíniinì ~ tłítsiíniinì "you (sg.) are tasty, taste good")
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níí   #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@niínii #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@iínii #;
-@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis                      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níí                      #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@niínii                   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@iínii                    #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@R.NITONE.MID@ii         #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@@D.NITONE@ii             #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@naà  #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
-@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
-@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@íí    #;
-@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2                     #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@R.NITONE.MID@ii         #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@@D.NITONE@íí             #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@R.NITONE.MID@ii         #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@@D.NITONE@íí             #;
 
 LEXICON nii-IPFV-AFF-MiddlePrefix
-@R.DIRECTOBJECTPRESENT.ON@                   nii-IPFV-AFF-MiddlePrefix-DObj;
-@D.DIRECTOBJECTPRESENT@                      nii-IPFV-AFF-InnerPrefix;          
+@R.LOWTONE.ON@                              nii-IPFV-AFF-OuterPrefix;
+@D.LOWTONE@@D.DIRECTOBJECTPRESENT@          nii-IPFV-AFF-InnerPrefix;
+@D.LOWTONE@@R.DIRECTOBJECTPRESENT.ON@@R.OBJECTPERSON.INDEF@ nii-IPFV-AFF-MiddlePrefix-Indef;
 
-LEXICON nii-IPFV-AFF-MiddlePrefix-DObj
+LEXICON nii-IPFV-AFF-MiddlePrefix-Indef
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níí   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@íí    #;
