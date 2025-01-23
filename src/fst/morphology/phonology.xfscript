@@ -198,6 +198,10 @@ define aVowelAlternation a -> o, á -> ó, à -> ò || s h _ "^A" .o. "^A" -> 0 
 # lexical entries, then handle the corresponding phonological alternation here.
 define n2FinalStems [ "n2" -> [ 0 | n ] || _ [ .#. | "-" ]  .o.  "n2" -> n ];
 
+# Likewise, but for optional, word-final /g/ (e.g., ástłà ~ ástłàg "I made it,
+# I did it"), which is represented as <g2> in lexical entries.
+define g2FinalStems [ "g2" -> [ 0 | g ] || _ [ .#. | "-" ]  .o.  "g2" -> g ];
+
 # Change szh -> sh (mách'ìguniszhoh -> mách'ìgunisshoh "I don't know") (This
 # rule may need to change; some people prefer to spell these forms without the
 # second /s/)
@@ -361,6 +365,7 @@ regex [ encliticMidToHighTone
 .o. y2InitialStemAfterS 
 .o. aVowelAlternation
 .o. n2FinalStems
+.o. g2FinalStems
 .o. zhDevoicing 
 .o. zDevoicing
 #.o. ghDevoicing
