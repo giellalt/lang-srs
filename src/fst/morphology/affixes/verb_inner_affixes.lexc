@@ -53,6 +53,7 @@ LEXICON TAMA
   isi-PFV       ;
 
    yi-PROG      ;
+    0-PROG      ;
 
    yi-POT       ;
 
@@ -1458,6 +1459,22 @@ LEXICON yii-PROG-AFF-OuterPrefix
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@yas2  #;
 @R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@yii   #;
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@yii   #;
+
+
+!
+! 0-PROG
+!
+! In some verb phrases, the forms that express the Progressive actually take
+! 0-IPFV, rather than yi-PROG, inflection (e.g., Bruce states that the PROG
+! form of tadììtł'á "start to dance" is taatł'ásh "he/she/it is dancing",
+! which inflects like a regular 0-IPFV verb).
+!
+! We represent this overlap by analyzing such forms as serving the role of
+! Progressives, while reusing all of the inflectional chunks defined for
+! 0-IPFV.
+! 
+LEXICON 0-PROG
+@U.ASPECT.PROG@@U.TAMA.%0@                   0-IPFV-AFF ;
 
 
 !
