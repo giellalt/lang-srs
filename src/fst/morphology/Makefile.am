@@ -129,7 +129,7 @@ lexicon.%: lexicon.tmp.% verb_lexicon.%
 			[ @\"$<\" | @\"verb_lexicon.$*\" ] \
 			;\n\
 		save stack $@\n\
--		quit\n" | $(XFST_TOOL)
+		quit\n" | $(XFST_TOOL)
 
 
 
