@@ -110,9 +110,6 @@ SRS_VERBS=
 if CAN_HFST
 SRS_VERBS+=verb_lexicon.hfst
 endif # CAN_HFST
-if CAN_XFST
-SRS_VERBS+=verb_lexicon.xfst
-endif # CAN_XFST
 if CAN_FOMA
 SRS_VERBS+=verb_lexicon.foma
 endif # CAN_FOMA
