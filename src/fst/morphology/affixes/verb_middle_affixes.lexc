@@ -1,4 +1,4 @@
-Multichar_Symbols @D.GI@ @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @D.TAMA.si@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.GI.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.GI@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OUTERSUBJECT.ON@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @R.TAMA.si@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @U.DIRECTOBJECT.NONE@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.OBJECTPERSON.INDEF@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.RECIP@ @U.OBLIQUEPERSON.REFL@ @U.OUTERSUBJECT.ON@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIVE@ @P.CONATIVE.ON@ @D.CONATIVE@ @R.CONATIVE.ON@ @D.PREFIX.MIDDLE@ @P.PREFIX.OUTER@ @P.CONATIVE.OFF@ @R.CONATIVE.OFF@ @U.VV.I@ @U.VV.%0@ @U.OBJECTPERSON.AREAL@ @U.OBLIQUEPERSON.AREAL@ @U.VALENCE.DO-EXPERIENCER@ @P.PREFIX.INNER@ @U.CONATIVE.ON@ @U.CONATIVE.OFF@ @D.PREFIX.OUTER@ @D.OBJECTPERSON.REFL@ @D.OBLIQUEPERSON.REFL@ @D.OBJECTPERSON.RECIP@ @D.OBLIQUEPERSON.RECIP@ @D.OBLIQUEPERSON.3@ @U.DIRECTOBJECTPRESENT.ON@ ^H
+Multichar_Symbols @D.GI@ @D.OBJECTPERSON@ @D.PREFIX@ @D.SUBJECTPERSON.1@ @D.SUBJECTPERSON.2@ @D.SUBJECTPERSON.3@ @D.TAMA.si@ @D.VALENCE.TRANSITIVE@ @P.DISTRIBUTIVE.OFF@ @P.DISTRIBUTIVE.ON@ @P.GI.ON@ @P.PREFIX.MIDDLE@ @R.DISTRIBUTIVE.OFF@ @R.DISTRIBUTIVE.ON@ @R.GI@ @R.OBJECTNUMBER.PL@ @R.OBJECTNUMBER.SG@ @R.OBJECTPERSON.1@ @R.OBJECTPERSON.2@ @R.OBJECTPERSON.3@ @R.OBJECTPERSON.4@ @R.OBJECTPERSON.INDEF@ @R.OBJECTPERSON.RECIP@ @R.OBJECTPERSON.REFL@ @R.OUTERSUBJECT.ON@ @R.PREFIX.INNER@ @R.PREFIX.MIDDLE@ @R.PREFIX.OUTER@ @R.SUBJECTNUMBER.PL@ @R.SUBJECTNUMBER.SG@ @R.SUBJECTPERSON.3@ @R.SUBJECTPERSON.4@ @R.TAMA.si@ @U.ASPECT.IPFV@ @U.ASPECT.PFV@ @U.ASPECT.POT@ @U.ASPECT.PROG@ @U.DIRECTOBJECT.GIVEN@ @U.DIRECTOBJECT.EMPHATIC@ @U.DIRECTOBJECT.NONE@ @U.OBJECTNUMBER.PL@ @U.OBJECTNUMBER.SG@ @U.OBJECTPERSON.1@ @U.OBJECTPERSON.2@ @U.OBJECTPERSON.3@ @U.OBJECTPERSON.4@ @U.OBJECTPERSON.RECIP@ @U.OBJECTPERSON.REFL@ @U.OBJECTPERSON.INDEF@ @U.OBLIQUENUMBER.PL@ @U.OBLIQUENUMBER.SG@ @U.OBLIQUEPERSON.1@ @U.OBLIQUEPERSON.2@ @U.OBLIQUEPERSON.3@ @U.OBLIQUEPERSON.4@ @U.OBLIQUEPERSON.RECIP@ @U.OBLIQUEPERSON.REFL@ @U.OUTERSUBJECT.ON@ @U.PREFIX.OUTER@ @U.SUBJECTNUMBER.PL@ @U.SUBJECTNUMBER.SG@ @U.SUBJECTPERSON.1@ @U.SUBJECTPERSON.2@ @U.SUBJECTPERSON.3@ @U.SUBJECTPERSON.4@ @U.TAMA.%0@ @U.TAMA.i@ @U.TAMA.isi@ @U.TAMA.ni@ @U.TAMA.si@ @U.TAMA.yi-a@ @U.TAMA.yi-y@ @U.TAMA.yi@ @U.VALENCE.DITRANSITIVE@ @U.VALENCE.OO-EXPERIENCER@ @U.VALENCE.IMPERSONAL@ @U.VALENCE.INTRANSITIVE@ @U.VALENCE.OBLIQUEOBJECT@ @U.VALENCE.TRANSITIVE@ @P.CONATIVE.ON@ @D.CONATIVE@ @R.CONATIVE.ON@ @D.PREFIX.MIDDLE@ @P.PREFIX.OUTER@ @P.CONATIVE.OFF@ @R.CONATIVE.OFF@ @U.VV.I@ @U.VV.%0@ @U.OBJECTPERSON.AREAL@ @U.OBLIQUEPERSON.AREAL@ @U.VALENCE.DO-EXPERIENCER@ @P.PREFIX.INNER@ @U.CONATIVE.ON@ @U.CONATIVE.OFF@ @D.PREFIX.OUTER@ @D.OBJECTPERSON.INDEF@ @D.OBJECTPERSON.REFL@ @D.OBLIQUEPERSON.REFL@ @D.OBJECTPERSON.RECIP@ @D.OBLIQUEPERSON.RECIP@ @D.OBLIQUEPERSON.3@ @U.DIRECTOBJECTPRESENT.ON@ ^H
 
 
 LEXICON Root
@@ -343,30 +343,46 @@ LEXICON Outer-Subjects-3PL
 
 LEXICON Outer-Subjects-3PL-WithGi
 
-! We need three paths to produce gi- here:
+! We need four paths to produce gi- here:
 !
 !   1. If this verb contains a conative prefix, then we don't fiddle with
 !      any of the flag diacritics (since the conative already sets these
 !      to PREFIX.OUTER);
 !
-!   2. If there isn't a conative prefix and gi- is preceded by another middle
-!      prefix (e.g., a direct object  marker of some kind), then gi- should
-!      be treated as an inner prefix, instead;
+!   2. If there isn't a conative prefix and gi- is preceded by the middle
+!      prefix for the indefinite object i- "something", then gi- should be
+!      treated as a middle prefix;
 !
-!   3. Likewise, if there isn't a conative prefix and gi- isn't preceded by
-!      a middle prefix, then we should treat is as an inner prefix, like
-!      usual.
+!   3. If there isn't a conative prefix and gi- is preceded by any middle
+!      prefix other than the indefinite object i- "something", then gi-
+!      should be treated as an inner prefix;
 !
-! Case (2) is really only necessary because of the behaviour of tone marking
-! in si-PFV paradigms.  If gi- is preceded by gu- or another direct object
-! marker, then gi- appears with low tone (e.g., tágu_gìs_chíízh "they painted
-! it (a place or space)").  If there aren't any other preceding middle
-! prefixes, then gi- appears with mid tone (e.g., sinì tádà_gis_chíízh "each
-! and every one of them painted my face"; see Goddard-20210622), as it does
-! in stative si-IPFV paradigms, as well.
+!   4. If there isn't a conative prefix and gi- isn't preceded by a middle
+!      prefix, then we should treat it as a middle prefix, like usual.
+!
+! Cases 2 and 3 are really only necessary because of the behaviour of tone
+! marking in paradigms like si-PFV and ni-PFV, where inner prefixes and
+! direct object markers other than indefinite object i- are associated
+! with TAMA chunks that may include a floating low tone.  Middle prefixes
+! do not appear with this tone, e.g.,
+!
+!  (1) tágugìschíízh
+!      "they both painted it (a place or space)" (si-PFV with preceding areal
+!       direct object marker gu-; not *tágugischíízh, with mid-tone gi-)
+!
+!  (2) sinì tágischíízh
+!      "they both painted my face" (si-PFV with no middle prefixes before gi-;
+!       not *tágìschíízh, with low-tone on gi-) [cf. Goddard-20210622]
+!
+!  (3) náagisʔoł(t)
+!      "they both butchered something" (si-PFV with preceding indefinite direct
+!       object marker i-; not *náagìsʔoł(t), with low-tone on gi-)
+!       [TLL-20250422]
+
 @R.CONATIVE.ON@                                             Filter-SBJ-DO;
+@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@R.OBJECTPERSON.INDEF@     Filter-SBJ-DO;
+@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@D.OBJECTPERSON.INDEF@@P.PREFIX.INNER@ Filter-SBJ-DO;
 @R.CONATIVE.OFF@@D.PREFIX.MIDDLE@@P.PREFIX.MIDDLE@          Filter-SBJ-DO;
-@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@P.PREFIX.INNER@           Filter-SBJ-DO;
 
 LEXICON Outer-Subjects-4SG
 ! Same, but for ts'i-. (This would be much simpler if we treated inflectional
@@ -375,9 +391,10 @@ LEXICON Outer-Subjects-4SG
 ! If that approach worked, then the presence of high-tone í- would result in 
 ! full TAMA chunks being selected, without needing to monkey around with
 ! prefix flags like this...)
-@R.CONATIVE.ON@                                     Outer-Subjects-4SG-Form;
-@R.CONATIVE.OFF@@D.PREFIX.MIDDLE@@P.PREFIX.MIDDLE@  Outer-Subjects-4SG-Form;
-@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@P.PREFIX.INNER@   Outer-Subjects-4SG-Form;
+@R.CONATIVE.ON@                                             Outer-Subjects-4SG-Form;
+@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@R.OBJECTPERSON.INDEF@     Outer-Subjects-4SG-Form;
+@R.CONATIVE.OFF@@R.PREFIX.MIDDLE@@D.OBJECTPERSON.INDEF@@P.PREFIX.INNER@ Outer-Subjects-4SG-Form;
+@R.CONATIVE.OFF@@D.PREFIX.MIDDLE@@P.PREFIX.MIDDLE@          Outer-Subjects-4SG-Form;
 
 LEXICON Outer-Subjects-4SG-Form
 ! 4SG subject forms with reflexive direct objects are treated here as already
