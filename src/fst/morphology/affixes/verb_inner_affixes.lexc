@@ -873,10 +873,61 @@ LEXICON nii-PFV-AFF-InnerPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@^Pníí  #; ! FLOATING L-TONE
 
 LEXICON nii-PFV-AFF-MiddlePrefix
-@R.DIRECTOBJECTPRESENT.ON@                   nii-PFV-AFF-InnerPrefix;
-@D.DIRECTOBJECTPRESENT@                      nii-PFV-AFF-OuterPrefix;
+! Like nii-IPFV, nii-PFV has distinctive TAMA forms after the indefinite
+! object prefix i_ (e.g., idoghaanisgha "I dressed myself", involving
+! idogha=i_gha; 3SG idoghaágha "he/she dressed himself/herself", 3PL
+! idoghaagíígha "they both dressed themselves"; TLL-20250407, a.o.). Unlike
+! nii-IPFV, nii-PFV uses these same TAMA forms with gi- 3PL.SBJ and ts'i-
+! 4SG.SBJ, as well.
+!
+! FIXME: There is no documentation of nii-PFV forms with either direct object
+! prefixes, so shunting those forms to the inner prefix contlex above is only
+! a guess -- and those forms themselves may well need to be corrected if a
+! verb of this kind turns up.
+@R.DIRECTOBJECTPRESENT.ON@@D.OBJECTPERSON.INDEF@ nii-PFV-AFF-InnerPrefix;
+@R.DIRECTOBJECTPRESENT.ON@@R.OBJECTPERSON.INDEF@ nii-PFV-AFF-MiddlePrefix-Indef;
+@D.DIRECTOBJECTPRESENT@                          nii-PFV-AFF-MiddlePrefix-Indef;
+
+LEXICON nii-PFV-AFF-MiddlePrefix-Indef
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níí   #;
+@U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@íí    #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGPLUME@naà  #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.BIGCROW@niì   #;
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@@U.DIALECT.CROWCHIEF@niì #;
+@U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@nas2  #;
+@R.SUBJECTPERSON.3@@R.SUBJECTNUMBER.PL@íí    #;
+@R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@íí    #;
+
 
 LEXICON nii-PFV-AFF-OuterPrefix
+! nii-PFV inflection after outer prefixes and the indefinite direct object
+! marker i_ has a distinct set of 3SG, 3PL, and 4SG TAMA chunks that do not
+! parallel ni-PFV and nis-PFV forms in the same morphological environment,
+! instead more closely resembling nii-IPFV forms:
+!
+! +---------+------------------------------+---------------------------------+
+! |         |          ni-PFV              |             nii-PFV             |
+! |         |   (after outer prefix nà=)   |     (after outer prefix nà=)    |
+! +---------+------------------------------+---------------------------------+
+! | 3SG.SBJ |  nàníya                      |   nààtł'o                       |
+! |         |  "he/she arrived (walking)"  |   "he/she/it arrived (running)" |
+! |         |  (with ní-)                  |   (no ní-)                      |
+! +---------+------------------------------+---------------------------------+
+! | 3PL.SBJ |  nàginíya                    |   nàgíítl'o                     |
+! |         |  "they both arrived"         |   "they both arrived (running)" |
+! |         |  (with ní-)                  |   (no ní-)                      |
+! +---------+------------------------------+---------------------------------+
+! | 4SG.SBJ |  nàts'iníya                  |   nàts'íítł'o                   |
+! |         |  "someone arrived"           |   "someone arrived (running)"   |
+! |         |  (with ní-)                  |   (no ní-)                      |
+! +---------+------------------------------+---------------------------------+
+!
+! This is possibly the only instance in Tsuut'ina where the difference between
+! Ci-, Cis-, and Cii- variants of an inflectional paradigm (i.e., those forms
+! associated with the Proto-Dene voice-valence markers *∅-, *ł-, and *l-,
+! respectively) goes beyond vowel length (Cii-) and/or a recurring coda
+! consonant (Cis-).
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@nis   #;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@níí   #;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ii    #;
@@ -959,7 +1010,7 @@ LEXICON si-AFF-NoPrefix
 @R.SUBJECTPERSON.4@@R.SUBJECTNUMBER.SG@s3    #; 
 
 LEXICON si-AFF-InnerPrefix
-@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ìsis  #; ! FLOATING L-TONE
+@U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@^Psis  #; ! FLOATING L-TONE
 ! When an inner prefix is present, 1SG forms also appear as Cas (e.g.,
 ! dìsists'ón ~ dasts'ón "I heard (it)", zìsisyín ~ zasyín "I killed (it)".
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@as    #;
