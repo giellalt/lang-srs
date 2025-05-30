@@ -133,11 +133,12 @@ define encliticMidToHighTone a -> á, i -> í, o -> ó, u -> ú || _ "^Encl" .o.
 # si-PFV inner prefix TAMA chunk <sis> is preceded by a floating low tone
 # represented in the FST by the symbol <^P>, which causes <di> to become <dì>).
 #
-# The only vowel that is attested in the morphological environment in which
-# this floating low tone appears is /i/, making this process straightforward
-# to model phonologically.  In all other environments, the floating low tone
-# is not realized.
-define perfectiveToneLowering i -> ì || _ "." "^P"  .o.  "^P" -> 0;
+# The only vowels that are attested in the morphological environment in which
+# this floating low tone appears are /i/ and /u/ (e.g., areal direct object
+# gu-, as in tágùsischíízh "I painted it [a place or space]"), making this
+# process straightforward to model phonologically.  In all other environments,
+# the floating low tone is not realized.
+define perfectiveToneLowering i -> ì, u -> ù || _ "." "^P"  .o.  "^P" -> 0;
 
 
 #
