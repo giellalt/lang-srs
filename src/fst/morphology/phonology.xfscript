@@ -160,7 +160,8 @@ define slDissimilation s [ l | ł ] -> s t ł;
 # In the si-PFV, verb stems that begin with /l/ dissimilate to /dl/ when
 # immediately preceded by an /s/ belonging to a 3SG, 3PL, or 4SG form. As
 # the following partial paradigm for "manage to get well" (PFV stem <lít>)
-# shows, this process does not appear with 1SG or 2PL forms, which 
+# shows, this process does not appear with 1SG or 2PL forms, which behave
+# phonologically as they do with /l/-initial stems in all other paradigms:
 #
 #   1SG.SBJ  dinásistłít        "I managed to get well" (Onespot-Sapir os07036)
 #   2SG.SBJ  dinásílít          "you managed to get well"
@@ -264,8 +265,9 @@ define aTAMAAssimilation [ á "." í í | á "." i i | á "." á á ] -> á á  
 
 # In complex prefix combinations, we can sometimes end up with a sequence
 # of three adjacent vowels (e.g., dà- í- isaà-, as in daásaàzi "we are all
-# calling him/her/it"). If the last vowel is an /i/, we can safely drop it.
-define noThreeVowelSequences i -> 0 || vowel vowel _;
+# calling him/her/it"). After vowel and tone assimilation has taken place,
+# we can safely drop the final vowel in these sequences.
+define noThreeVowelSequences vowel -> 0 || vowel vowel _;
 
 # /u/ before /a/ is realized as a glide, but may still contribute a high tone
 # to the following vowel.  Change uá -> wá, ua -> wa, uà -> wà (mid-tone u,
@@ -352,7 +354,6 @@ regex [ encliticMidToHighTone
 .o. aTAMAAssimilation
 .o. removeInnerBoundaryMarker
 .o. cleanupMoraicI
-.o. noThreeVowelSequences
 .o. iAssimilation
 .o. uGliding
 .o. uDeletionBeforeO
@@ -365,6 +366,7 @@ regex [ encliticMidToHighTone
 .o. slDissimilation
 .o. y2InitialStemAfterS 
 .o. aVowelAlternation
+.o. noThreeVowelSequences
 .o. n2FinalStems
 .o. g2FinalStems
 .o. zhDevoicing 
