@@ -75,7 +75,7 @@ define hToneSpreading;
 # prefixes without adding a mora (e.g., gùja ánìstłàg "I did you (sg.) good",
 # from á= ni_ ^L . is làg, with L . is -> ìs; gùja ásilàg "you (sg.) did me
 # good", from á= si_ ^L . í làg, with ^L . í -> i).  This prefix does not
-# affect the tone of vowels in outer prefixes, but instead behaves phonologī-
+# affect the tone of vowels in outer prefixes, but instead behaves phonologi-
 # cally like a moraic low-tone /ì/ (e.g., náayisʔoł "I am butchering it
 # (progressive)", from ná= ^L . yis ʔoł, not *náyisʔoł or *nayisʔoł).
 # 
@@ -176,7 +176,7 @@ define slDissimilation s [ l | ł ] -> s t ł;
 define lInitialStemsSiPFV s3 l -> s d l;
 
 # Some <y>-initial stems alternate with <sh> when preceded by /s/ (e.g., -yón
-# "grow (perfective)", as in nìsishón "I grew up" vs. sìsíyón "you (sg.) grew
+# "grow (perfective)", as in nìsishón "I grew up" vs. nìsíyón "you (sg.) grew
 # up").  We represent the <y> in these stems in lexical entries as <y2>, then
 # define the corresponding phonological alternation here.
 define y2InitialStemAfterS [ s "y2" -> s h  .o.  "y2" -> y ];
@@ -274,7 +274,7 @@ define noThreeVowelSequences vowel -> 0 || vowel vowel _;
 # e.g., gwàgúdìlo "someone is sick" < gu- àgúdìlo), as well as úá -> wá, 
 # úa -> wá (high-tone u, e.g., kwásdàł "you (pl.) go in" < kú- asdàł).
 # 
-# (Phoneticlaly, /wa/ can be realized as [wa] or [ɔa]~[ɔˑ], but this isn't
+# (Phonetically, /wa/ can be realized as [wa] or [ɔa]~[ɔˑ], but this isn't
 # represented orthographically).
 define uGliding u -> w || _ [á|a|à] .o. ú [a|á] -> w á;
 
