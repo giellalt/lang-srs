@@ -4,7 +4,7 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-srs%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-srs/main/badge.svg)](https://github.com/giellalt/lang-srs/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-srs?label=CI)](https://builds.giellalt.org/pipelines/lang-srs/builds/latest)
 
 This page documents the work on the [Sarsi language model](http://github.com/giellalt/lang-srs). 
 
