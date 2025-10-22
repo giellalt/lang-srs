@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-srs?label=CI)](https://builds.giellalt.org/pipelines/lang-srs/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/sars1236)
 
 This page documents the work on the [Sarsi language model](http://github.com/giellalt/lang-srs). 
 
