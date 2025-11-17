@@ -31,17 +31,4 @@ LEXICON SYMBOL_NO_suff
  +Sg+Nom: # ;
 
 LEXICON SYMBOL_suff
- +Sg+Gen:n       # ;
- +Sg+Acc:m       # ;
- +Sg+Ill:se      # ;
- +Sg+Ine:sne     # ;
- +Sg+Ela:ste     # ;
- +Sg+Com:ine     # ;
-    +Ess:ine     # ;
- +Pl+Nom:h       # ;
- +Pl+Gen:ij      # ;
- +Pl+Acc:ide     # ;
- +Pl+Ill:ide     # ;
- +Pl+Ine:ine     # ;
- +Pl+Ela:jste    # ;
- +Pl+Com:jgujmie # ;
+# ;
