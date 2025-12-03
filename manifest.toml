@@ -28,7 +28,7 @@ version = "0.1.1"
 name = "Sarsi"
 version = "0.1.0"
 
-[package.tts-text-proc]
+[package.tts-textproc]
 name = "Sarsi"
 version = "0.1.0"
 
