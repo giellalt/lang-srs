@@ -41,25 +41,25 @@ z
 @@
 
 ## Transition pair specifications + weight:
-a	ā	0.4
-a	á	0.4
-a	à	0.6
-i	ī	0.4
-i	í	0.4
-i	ì	0.6
-o	ō	0.4
-o	ó	0.4
-o	ò	0.6
-u	ū	0.4
-u	ú	0.4
-u	ù	0.6
-l	ɫ	0.4
-?	ʔ	0.4
-'	ʔ	0.8
+a	ā	1
+a	á	1
+a	à	2
+i	ī	1
+i	í	1
+i	ì	2
+o	ō	1
+o	ó	1
+o	ò	2
+u	ū	1
+u	ú	1
+u	ù	2
+l	ɫ	1
+?	ʔ	1
+'	ʔ	2
 
 ## Swaps. NB! Please note that these depend on the variable
 ## USE_SWAPS in Makefile.am in this directory. Also note that
 ## enabling swaps is computationally expensive. See note in
 ## Makefile.am.
-## Change dh into hd with the weight 0.5:
-d,h	h,d	0.5
+## Change dh into hd with the weight 3:
+d,h	h,d	3
