@@ -1,12 +1,12 @@
 The Tsuut'ina morphology and tools
 ==================================
 
-[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-srs%2Fgh-pages%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
-![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-srs%2Fgh-pages%2Fbadgedata%2Ffst-lemmacount.json)
+[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-srs%2Fmain%2Fdocs%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-srs%2Fmain%2Fdocs%2Fbadgedata%2Ffst-lemmacount.json)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/issues)
 [![License](https://img.shields.io/github/license/giellalt/lang-srs)](https://github.com/giellalt/lang-srs/blob/main/LICENSE)
-[![Doc Build Status](https://github.com/giellalt/lang-srs/workflows/Docs/badge.svg)](https://github.com/giellalt/lang-srs/actions)
-[![CI/CD Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-srs/main/badge.svg)](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-srs/main/latest)
+[![Doc build](https://img.shields.io/github/actions/workflow/status/giellalt/lang-srs/docs.yml?logo=github&label=DocCI)](https://github.com/giellalt/lang-srs/actions/workflows/docs.yml)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-srs?logo=buildkite&label=CoreCI)](https://builds.giellalt.org/pipelines/lang-srs/builds/latest)
 
 Download nightly / CI/CD installation packages for testing (contains the core zhfst file(s)):
 
