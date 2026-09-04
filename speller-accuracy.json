@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "srs",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Sarsi spellchecker"
+        }
+      ],
+      "description": "A spellchecker for Sarsi, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway.",
+      "producer": "Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Sarsi speller lexicon"
+        }
+      ],
+      "description": "Sarsi speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Sarsi error model"
+        }
+      ],
+      "description": "Error model for Sarsi."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null
+  },
+  "summary": {
+    "total_words": 8,
+    "first_position": 7,
+    "top_five": 8,
+    "any_position": 8,
+    "no_suggestions": 0,
+    "only_wrong": 0,
+    "false_accept": 0,
+    "true_positive": 8,
+    "false_negative": 0,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 2444777
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 1619945
+    },
+    "average_time": {
+      "secs": 0,
+      "subsec_nanos": 1964196
+    },
+    "average_time_95pc": {
+      "secs": 0,
+      "subsec_nanos": 1964196
+    },
+    "average_position_of_correct": 1.125,
+    "average_suggestions_for_correct": 7.75
+  },
+  "results": [
+    {
+      "input": "guunizh",
+      "expected": "guuniizh",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "guuniizh",
+          "weight": 7.0
+        },
+        {
+          "value": "guunijà",
+          "weight": 35.0
+        },
+        {
+          "value": "iguunijà",
+          "weight": 55.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2256077
+      },
+      "false_accept": false
+    },
+    {
+      "input": "istli",
+      "expected": "ístłí",
+      "distance": 3,
+      "suggestions": [
+        {
+          "value": "ístłí",
+          "weight": 25.0
+        },
+        {
+          "value": "ístłíká",
+          "weight": 55.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1802545
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mas",
+      "expected": "más",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "más",
+          "weight": 5.0
+        },
+        {
+          "value": "dá",
+          "weight": 35.0
+        },
+        {
+          "value": "mázà",
+          "weight": 40.0
+        },
+        {
+          "value": "ídá",
+          "weight": 45.0
+        },
+        {
+          "value": "mídá",
+          "weight": 53.0
+        },
+        {
+          "value": "mítsí",
+          "weight": 53.0
+        },
+        {
+          "value": "tsí",
+          "weight": 55.0
+        },
+        {
+          "value": "ítsí",
+          "weight": 55.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1619945
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mida",
+      "expected": "mídá",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "mídá",
+          "weight": 18.0
+        },
+        {
+          "value": "miízá",
+          "weight": 33.0
+        },
+        {
+          "value": "ídá",
+          "weight": 35.0
+        },
+        {
+          "value": "dídá",
+          "weight": 38.0
+        },
+        {
+          "value": "nídá",
+          "weight": 38.0
+        },
+        {
+          "value": "sídá",
+          "weight": 38.0
+        },
+        {
+          "value": "yídá",
+          "weight": 38.0
+        },
+        {
+          "value": "mázà",
+          "weight": 40.0
+        },
+        {
+          "value": "dá",
+          "weight": 45.0
+        },
+        {
+          "value": "gúdá",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1949676
+      },
+      "false_accept": false
+    },
+    {
+      "input": "miits'a",
+      "expected": "miíts'a",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "miíts'a",
+          "weight": 5.0
+        },
+        {
+          "value": "iíts'a",
+          "weight": 25.0
+        },
+        {
+          "value": "diíts'a",
+          "weight": 28.0
+        },
+        {
+          "value": "niíts'a",
+          "weight": 28.0
+        },
+        {
+          "value": "siíts'a",
+          "weight": 28.0
+        },
+        {
+          "value": "yiíts'a",
+          "weight": 28.0
+        },
+        {
+          "value": "gimiíts'a",
+          "weight": 43.0
+        },
+        {
+          "value": "gidiíts'a",
+          "weight": 46.0
+        },
+        {
+          "value": "giyiíts'a",
+          "weight": 46.0
+        },
+        {
+          "value": "nihiíts'a",
+          "weight": 46.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2444777
+      },
+      "false_accept": false
+    },
+    {
+      "input": "miiza",
+      "expected": "miízá",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "miízá",
+          "weight": 15.0
+        },
+        {
+          "value": "iízá",
+          "weight": 35.0
+        },
+        {
+          "value": "diízá",
+          "weight": 38.0
+        },
+        {
+          "value": "niízá",
+          "weight": 38.0
+        },
+        {
+          "value": "siízá",
+          "weight": 38.0
+        },
+        {
+          "value": "yiízá",
+          "weight": 38.0
+        },
+        {
+          "value": "mázà",
+          "weight": 40.0
+        },
+        {
+          "value": "mimázà",
+          "weight": 43.0
+        },
+        {
+          "value": "gimiízá",
+          "weight": 53.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2087807
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mitsi",
+      "expected": "mítsí",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "mítsí",
+          "weight": 18.0
+        },
+        {
+          "value": "ítsí",
+          "weight": 35.0
+        },
+        {
+          "value": "dítsí",
+          "weight": 38.0
+        },
+        {
+          "value": "nítsí",
+          "weight": 38.0
+        },
+        {
+          "value": "sítsí",
+          "weight": 38.0
+        },
+        {
+          "value": "yítsí",
+          "weight": 38.0
+        },
+        {
+          "value": "miíts'a",
+          "weight": 43.0
+        },
+        {
+          "value": "gútsí",
+          "weight": 45.0
+        },
+        {
+          "value": "tsí",
+          "weight": 45.0
+        },
+        {
+          "value": "gimítsí",
+          "weight": 53.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1697836
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tlich'a",
+      "expected": "tłích'á",
+      "distance": 3,
+      "suggestions": [
+        {
+          "value": "tłích'à",
+          "weight": 20.0
+        },
+        {
+          "value": "tłích'á",
+          "weight": 20.0
+        },
+        {
+          "value": "ilích'à",
+          "weight": 35.0
+        },
+        {
+          "value": "lích'à",
+          "weight": 35.0
+        },
+        {
+          "value": "itłích'à",
+          "weight": 40.0
+        },
+        {
+          "value": "gulích'à",
+          "weight": 50.0
+        },
+        {
+          "value": "tłích'àká",
+          "weight": 50.0
+        },
+        {
+          "value": "tłích'áká",
+          "weight": 50.0
+        },
+        {
+          "value": "dilích'à",
+          "weight": 53.0
+        },
+        {
+          "value": "gutłích'à",
+          "weight": 55.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1854907
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1788556799,
+    "subsec_nanos": 482627285
+  },
+  "total_time": {
+    "secs": 0,
+    "subsec_nanos": 4403745
+  }
+}
